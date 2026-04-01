@@ -1,0 +1,16 @@
+---
+name: "Long-Form Manifesto / Letter Ad"
+number: 23
+category: editorial-authority
+tag: "Copy-dominant. The writing IS the ad."
+best_for: "Premium brands justifying price. Craft, artisan, luxury products. Brands with a strong story or philosophy."
+required_fields:
+  - provocative_headline
+  - core_brand_tension
+  - body_copy (12-18 lines of short punchy sentences)
+  - product_description
+---
+
+# Template 23: Long-Form Manifesto / Letter Ad
+
+Use the attached images as brand reference. Match exact brand typography style and tone. Create: a copy-dominant manifesto ad on a clean white background. No background imagery — text is the entire creative. Top: oversized bold black serif or sans-serif headline reading "[PROVOCATIVE HEADLINE like They're not cheap.]" spanning the top 15%. Below: left-aligned body copy in smaller regular-weight black text, structured as short punchy sentences and line breaks (NOT paragraphs), building a persuasive argument about [CORE BRAND TENSION like why the price is justified]. The copy should flow through: acknowledging the objection, listing what you'd lose if they cut corners, reframing as a positive, closing with a confident brand statement. Approximately [12-18 LINES] of copy. Bottom 20%: [YOUR PRODUCT] centered or slightly right, product-only on white, clean studio shot angle. No icons, no badges, no CTA button. The writing IS the ad. 1:1 aspect ratio.

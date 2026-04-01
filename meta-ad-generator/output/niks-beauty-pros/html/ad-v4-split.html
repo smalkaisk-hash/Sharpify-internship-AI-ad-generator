@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1B2A4A;
+      --color-accent: #E8A838;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    .split-container {
+      width: 1080px;
+      height: 1080px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .split-image {
+      position: relative;
+      width: 100%;
+      height: 540px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .split-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .split-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(180deg, transparent 0%, var(--color-primary) 100%);
+    }
+
+    .split-text {
+      flex: 1;
+      background-color: var(--color-primary);
+      padding: 44px 56px 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .split-text .headline {
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 66px;
+      font-weight: 800;
+      line-height: 1.14;
+      margin-bottom: 16px;
+    }
+
+    .split-text .headline .accent {
+      color: var(--color-accent);
+    }
+
+    .split-text .body-text {
+      color: rgba(255, 255, 255, 0.8);
+      font-family: var(--font-body);
+      font-size: 34px;
+      max-width: 900px;
+      line-height: 1.45;
+    }
+
+    .split-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .split-bottom .cta-button {
+      flex-shrink: 0;
+      min-width: 680px;
+      height: 130px;
+      font-size: 46px;
+      padding: 0 56px;
+      border-radius: 18px;
+      background-color: var(--color-accent);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      border: none;
+      box-shadow: 0 6px 24px rgba(232, 168, 56, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="split-container">
+    <div class="split-image">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/niks-beauty-pros/images/salon-hero.png" alt="">
+    </div>
+
+    <div class="split-text">
+      <div>
+        <h1 class="headline">Meklējam <span class="accent">skaistumkopšanas</span><br>speciālistus sadarbībai</h1>
+        <p class="body-text">Palīdzam aizpildīt pierakstu ar jauniem klientiem<br>caur mērķētām reklāmām sociālajos tīklos</p>
+      </div>
+      <div class="split-bottom">
+        <button class="cta-button">Aizpildi anketu</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

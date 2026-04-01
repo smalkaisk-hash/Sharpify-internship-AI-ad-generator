@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #00665e;
+      --color-secondary: #051c20;
+      --color-accent: #cedc00;
+      --color-cta-bg: #cedc00;
+      --color-cta-text: #051c20;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+    .bold-container {
+      width: 1080px; height: 1080px;
+      background-color: var(--color-secondary);
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+    }
+    .geo-circle { position: absolute; border-radius: 50%; border: 3px solid var(--color-accent); opacity: 0.12; }
+    .geo-1 { width: 500px; height: 500px; top: -120px; right: -120px; }
+    .geo-2 { width: 300px; height: 300px; bottom: 180px; left: -100px; }
+    .bold-content {
+      flex: 1; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      padding: 60px var(--pad-outer); position: relative; z-index: 2;
+    }
+    .bold-content .headline {
+      color: #FFFFFF; font-size: 100px; line-height: 1.05;
+      max-width: 960px; margin-bottom: 32px;
+    }
+    .headline-accent { color: var(--color-accent); }
+    .accent-line { width: 100px; height: 6px; background-color: var(--color-accent); border-radius: 3px; margin-bottom: 36px; }
+    .bold-content .body-text {
+      color: rgba(255, 255, 255, 0.8); font-size: 44px;
+      line-height: 1.35; max-width: 880px; margin-bottom: 48px;
+    }
+    .bold-content .cta-button {
+      min-width: 680px; height: 160px; font-size: 52px;
+      padding: 0 60px; border-radius: 20px;
+    }
+    .bold-footer {
+      display: flex; align-items: center; justify-content: center;
+      padding: 28px var(--pad-outer);
+      background: rgba(0, 0, 0, 0.3); position: relative; z-index: 2;
+    }
+    .footer-text { font-family: var(--font-body); font-size: 22px; color: rgba(255, 255, 255, 0.6); }
+  </style>
+</head>
+<body>
+  <div class="bold-container">
+    <div class="geo-circle geo-1"></div>
+    <div class="geo-circle geo-2"></div>
+    <div class="bold-content">
+      <h1 class="headline"><span class="headline-accent">2 stundas.</span><br>1 sistēma.<br>10+ ietaupītas<br>stundas nedēļā.</h1>
+      <div class="accent-line"></div>
+      <p class="body-text">Praktisks AI workshops uzņēmējiem. 9. aprīlī, Rīgā.</p>
+      <button class="cta-button">Iegādāties biļeti — €15</button>
+    </div>
+  </div>
+</body>
+</html>

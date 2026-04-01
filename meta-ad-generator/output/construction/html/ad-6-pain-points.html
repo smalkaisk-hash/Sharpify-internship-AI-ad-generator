@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #E8930C;
+      --color-bg: #1A1A1A;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      width: 1080px;
+      height: 1080px;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-glow {
+      position: absolute;
+      bottom: -200px; right: -200px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 147, 12, 0.08) 0%, transparent 65%);
+    }
+
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 52px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .headline .accent {
+      color: var(--color-primary);
+    }
+
+    .sub {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 44px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pain-card {
+      padding: 24px 22px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .pain-title {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .pain-desc {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.45);
+      line-height: 1.4;
+    }
+
+    .bottom-text {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .bottom-text .accent {
+      color: var(--color-primary);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-btn {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-bg);
+      background: var(--color-primary);
+      border: none;
+      border-radius: 14px;
+      padding: 24px 56px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bg-glow"></div>
+
+    <h1 class="headline">Know Your Job Costs —<br>Or You'll <span class="accent">Always Guess</span></h1>
+    <p class="sub">The few decision points that decide profit:</p>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-title">Job Costing</div>
+        <div class="pain-desc">Real numbers, not hope. Know your cost before the job closes.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-title">Margin Control</div>
+        <div class="pain-desc">Set it before the job starts. Protect it while it runs.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-title">Schedule + Crew</div>
+        <div class="pain-desc">Planning that prevents delays, rework, and overtime.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-title">Materials & Workflow</div>
+        <div class="pain-desc">Eliminate rework. Stop paying twice for the same mistake.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-title">Cashflow</div>
+        <div class="pain-desc">Billing and tracking tight enough that cash never dries up.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-title">Decision Points</div>
+        <div class="pain-desc">The 3-4 moments on every job where profit is won or lost.</div>
+      </div>
+    </div>
+
+    <div class="bottom-text">You stop reacting. <span class="accent">You start controlling.</span></div>
+
+    <div class="footer">
+      <button class="cta-btn">See What's Costing You →</button>
+    </div>
+  </div>
+</body>
+</html>

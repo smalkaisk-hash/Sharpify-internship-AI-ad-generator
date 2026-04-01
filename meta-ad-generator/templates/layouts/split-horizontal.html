@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* === TEMPLATE: Split Horizontal ===
+       Image on top half, text + CTA on bottom half with brand background.
+       Best for: product showcases, clear message delivery, professional brands.
+    */
+    :root {
+      --color-primary: {{color_primary}};
+      --color-secondary: {{color_secondary}};
+      --color-accent: {{color_accent}};
+      --color-bg: {{color_bg}};
+      --color-text: {{color_text}};
+      --color-cta-bg: {{color_cta_bg}};
+      --color-cta-text: {{color_cta_text}};
+      --font-heading: '{{font_heading}}', 'Montserrat', sans-serif;
+      --font-body: '{{font_body}}', 'Inter', sans-serif;
+    }
+
+    .split-container {
+      width: 1080px;
+      height: 1080px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .split-image {
+      position: relative;
+      width: 100%;
+      height: 540px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .split-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .split-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(180deg, transparent 0%, var(--color-primary) 100%);
+    }
+
+    .split-text {
+      flex: 1;
+      background-color: var(--color-primary);
+      padding: 44px var(--pad-outer) var(--pad-outer);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .split-text .headline {
+      color: #FFFFFF;
+      font-size: 72px;
+      margin-bottom: 16px;
+    }
+
+    .split-text .body-text {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 38px;
+      margin-bottom: 24px;
+      max-width: 950px;
+      line-height: 1.4;
+    }
+
+    .split-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .split-bottom .cta-button {
+      flex-shrink: 0;
+      min-width: 520px;
+      height: 120px;
+      font-size: 42px;
+      padding: 0 50px;
+      border-radius: 18px;
+    }
+
+    .logo-container {
+      position: static;
+      z-index: auto;
+      flex-shrink: 1;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .logo-container img {
+      height: 80px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="split-container">
+    <!-- Top: Image -->
+    <div class="split-image">
+      <img src="{{hero_image}}" alt="">
+    </div>
+
+    <!-- Bottom: Text + CTA -->
+    <div class="split-text">
+      <div>
+        <h1 class="headline">{{headline}}</h1>
+        <p class="body-text">{{primary_text}}</p>
+      </div>
+      <div class="split-bottom">
+        <button class="cta-button">{{cta_text}}</button>
+        <div class="logo-container">
+          <img src="{{logo_url}}" alt="{{client_name}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

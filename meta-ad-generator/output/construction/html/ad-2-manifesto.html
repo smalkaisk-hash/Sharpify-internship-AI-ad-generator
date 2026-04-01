@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #E8930C;
+      --color-bg: #FFFFFF;
+      --color-text: #1A1A1A;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      width: 1080px;
+      height: 1080px;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .left-bar {
+      position: absolute;
+      top: 0; left: 0;
+      width: 8px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--color-primary) 0%, #C47200 100%);
+    }
+
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 52px;
+      font-weight: 900;
+      color: var(--color-text);
+      line-height: 1.15;
+      margin-bottom: 44px;
+    }
+
+    .headline .accent {
+      color: var(--color-primary);
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-bottom: 48px;
+    }
+
+    .line {
+      font-family: var(--font-body);
+      font-size: 26px;
+      font-weight: 500;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    .line .dim {
+      color: rgba(26, 26, 26, 0.35);
+    }
+
+    .line .bold {
+      font-weight: 800;
+      color: var(--color-primary);
+    }
+
+    .close {
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--color-primary);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 56px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .cta-btn {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--color-primary);
+      border: none;
+      border-radius: 14px;
+      padding: 20px 44px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-bar"></div>
+
+    <h1 class="headline">If You Own a<br>Construction Business,<br><span class="accent">Read This.</span></h1>
+
+    <div class="body">
+      <div class="line"><span class="dim">You're booked. The crew is working.</span><br>But the profit doesn't match the effort.</div>
+      <div class="line">That's not a sales problem.<br><span class="bold">It's an operations + numbers problem.</span></div>
+      <div class="line"><span class="dim">Once you understand how your business actually works —</span><br>you stop reacting and start tightening the system<br>that creates profit.</div>
+    </div>
+
+    <div class="close">No fluff. No theory. Just the core pieces.</div>
+
+    <div class="footer">
+      <button class="cta-btn">See What's Costing You →</button>
+    </div>
+  </div>
+</body>
+</html>

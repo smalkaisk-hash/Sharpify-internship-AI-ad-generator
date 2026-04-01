@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="c:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1B2A4A;
+      --color-secondary: #2C4070;
+      --color-accent: #E8A838;
+      --color-bg: #F5F3EF;
+      --color-text: #1B2A4A;
+      --color-cta-bg: #E8A838;
+      --color-cta-text: #FFFFFF;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    .benefit-container {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      padding: var(--pad-outer);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-accent {
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      opacity: 0.06;
+    }
+
+    .bg-accent-2 {
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      opacity: 0.05;
+    }
+
+    .benefit-header {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .benefit-badge {
+      display: inline-block;
+      padding: 14px 30px;
+      background-color: var(--color-accent);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .benefit-header .headline {
+      font-size: 64px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .benefit-header .subheadline {
+      font-size: 32px;
+      color: var(--color-text);
+      opacity: 0.6;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .benefits-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+      padding: 20px 0;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 24px 28px;
+      background: rgba(0, 0, 0, 0.025);
+      border-radius: 16px;
+      border-left: 5px solid var(--color-accent);
+    }
+
+    .benefit-icon {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .benefit-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: #FFFFFF;
+    }
+
+    .benefit-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .benefit-title {
+      font-family: var(--font-heading);
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .benefit-desc {
+      font-family: var(--font-body);
+      font-size: 26px;
+      color: var(--color-text);
+      opacity: 0.6;
+      line-height: 1.4;
+    }
+
+    .benefit-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+      padding-top: 20px;
+    }
+
+    .benefit-footer .cta-button {
+      min-width: 680px;
+      height: 140px;
+      font-size: 42px;
+      padding: 0 56px;
+      border-radius: 20px;
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="benefit-container">
+    <div class="bg-accent"></div>
+    <div class="bg-accent-2"></div>
+
+    <div class="benefit-header">
+      <div class="benefit-badge">Sadarbība</div>
+      <h1 class="headline">Meklējam skaistumkopšanas<br>speciālistus</h1>
+      <p class="subheadline">Kam nepieciešams stabils klientu pieraksts</p>
+    </div>
+
+    <div class="benefits-list">
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">Strādā patstāvīgi</span>
+          <span class="benefit-desc">Vēlies aizpildīt brīvos laikus pierakstā ar jauniem klientiem</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">Jauns kabinets vai salons</span>
+          <span class="benefit-desc">Tikko atvēries un vēl nav izveidota klientu bāze</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">Paaugstinātas cenas</span>
+          <span class="benefit-desc">Klienti atkrīt un pieraksts paliek pusē tukšs</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">Vairāk kontroles</span>
+          <span class="benefit-desc">Paredzama klientu plūsma, nevis cerības uz ieteikumiem</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefit-footer">
+      <button class="cta-button">Aizpildi anketu zemāk</button>
+    </div>
+  </div>
+</body>
+</html>

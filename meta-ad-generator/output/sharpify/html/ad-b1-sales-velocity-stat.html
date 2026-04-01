@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* === TEMPLATE: Sales Velocity Stat ===
+       Big stat numbers as the hero element. Numbers DO the talking.
+       Best for: brands with impressive volume/revenue/client stats.
+    */
+    :root {
+      --color-primary: #00665E;
+      --color-secondary: #0A1A2E;
+      --color-accent: #00C9B7;
+      --color-bg: #0A1A2E;
+      --color-text: #FFFFFF;
+      --color-cta-bg: #00C9B7;
+      --color-cta-text: #0A1A2E;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    .stat-container {
+      width: 1080px;
+      height: 1080px;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 56px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative glow */
+    .glow-1 {
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 201, 183, 0.15) 0%, transparent 70%);
+    }
+
+    .glow-2 {
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 102, 94, 0.2) 0%, transparent 70%);
+    }
+
+    /* Top label */
+    .top-label {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stat-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 82px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1;
+    }
+
+    .stat-number .accent {
+      color: var(--color-accent);
+    }
+
+    .stat-label {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .stat-divider {
+      width: 2px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 1px;
+    }
+
+    /* Tagline */
+    .tagline {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.3;
+      max-width: 750px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tagline .highlight {
+      color: var(--color-accent);
+    }
+
+    /* Subtitle */
+    .subtitle {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Brand footer */
+    .brand-footer {
+      position: absolute;
+      bottom: 56px;
+      left: 56px;
+      right: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 2;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--color-accent);
+      letter-spacing: 0.04em;
+    }
+
+    .brand-tagline {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="stat-container">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+
+    <div class="top-label">Sharpify rezultāti skaitļos</div>
+
+    <div class="stats-row">
+      <div class="stat-block">
+        <div class="stat-number">€50<span class="accent">M+</span></div>
+        <div class="stat-label">Klientu ieņēmumi</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <div class="stat-number">2 300<span class="accent">+</span></div>
+        <div class="stat-label">Apkalpoti klienti</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <div class="stat-number">26</div>
+        <div class="stat-label">Valstis</div>
+      </div>
+    </div>
+
+    <div class="tagline">Mārketinga un pārdošanas<br>sistēma, kas <span class="highlight">strādā</span></div>
+    <div class="subtitle">Uzbūvējam. Palaižam. Vadām.</div>
+
+    <div class="brand-footer">
+      <span class="brand-name">sharpify</span>
+      <span class="brand-tagline">Stay Sharp & Make a Move</span>
+    </div>
+  </div>
+</body>
+</html>

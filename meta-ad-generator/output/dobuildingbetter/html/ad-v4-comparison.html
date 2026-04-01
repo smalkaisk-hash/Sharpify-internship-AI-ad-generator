@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #054b81;
+      --color-secondary: #D14299;
+      --color-accent: #2ecc71;
+      --color-bg: #FFFFFF;
+      --color-text: #222222;
+      --color-cta-bg: #D14299;
+      --color-cta-text: #FFFFFF;
+      --font-heading: 'Poppins', 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', 'Inter', sans-serif;
+    }
+
+    .compare-container {
+      width: 1080px;
+      height: 1080px;
+      background: linear-gradient(160deg, #032d4f 0%, #054b81 50%, #06609e 100%);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .compare-header {
+      padding: 48px 56px 28px;
+      text-align: center;
+    }
+
+    .compare-header h1 {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.15;
+    }
+
+    .compare-header .accent {
+      color: #FF7063;
+    }
+
+    .compare-body {
+      flex: 1;
+      display: flex;
+      padding: 0 40px;
+      gap: 0;
+    }
+
+    .compare-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 28px 24px;
+      gap: 18px;
+      border-radius: 20px;
+    }
+
+    .side-before {
+      background: rgba(231, 76, 60, 0.08);
+      border: 2px solid rgba(231, 76, 60, 0.25);
+      margin-right: 10px;
+    }
+
+    .side-after {
+      background: rgba(46, 204, 113, 0.08);
+      border: 2px solid rgba(46, 204, 113, 0.25);
+      margin-left: 10px;
+    }
+
+    .side-label {
+      font-family: var(--font-heading);
+      font-size: 26px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-bottom: 14px;
+      border-bottom: 3px solid;
+      margin-bottom: 2px;
+    }
+
+    .side-before .side-label {
+      color: #e74c3c;
+      border-color: #e74c3c;
+    }
+
+    .side-after .side-label {
+      color: #2ecc71;
+      border-color: #2ecc71;
+    }
+
+    .compare-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .compare-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .compare-text {
+      font-family: var(--font-body);
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 1.3;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .side-before .compare-text {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .compare-footer {
+      padding: 28px 56px 44px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta-btn {
+      font-family: var(--font-heading);
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--color-cta-bg);
+      border: none;
+      border-radius: 16px;
+      padding: 24px 64px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(209, 66, 153, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="compare-container">
+    <div class="compare-header">
+      <h1>From <span class="accent">Builder</span> to<br>Construction <span class="accent">CEO</span></h1>
+    </div>
+
+    <div class="compare-body">
+      <div class="compare-side side-before">
+        <div class="side-label">Before</div>
+        <div class="compare-item">
+          <span class="compare-icon">🔥</span>
+          <span class="compare-text">Putting out fires all day</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">🎲</span>
+          <span class="compare-text">Guessing on job costs</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">📉</span>
+          <span class="compare-text">Margins erode by close-out</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">🔄</span>
+          <span class="compare-text">Rework from poor planning</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">💸</span>
+          <span class="compare-text">Cashflow gaps every month</span>
+        </div>
+      </div>
+
+      <div class="compare-side side-after">
+        <div class="side-label">After</div>
+        <div class="compare-item">
+          <span class="compare-icon">📊</span>
+          <span class="compare-text">Clear job cost tracking</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">🎯</span>
+          <span class="compare-text">Margins locked before start</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">📅</span>
+          <span class="compare-text">Scheduling that prevents delays</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">💰</span>
+          <span class="compare-text">Billing and tracking are tight</span>
+        </div>
+        <div class="compare-item">
+          <span class="compare-icon">🏗️</span>
+          <span class="compare-text">Company runs without you in every job</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare-footer">
+      <button class="cta-btn">Get Your Free Profit Health Check →</button>
+    </div>
+  </div>
+</body>
+</html>

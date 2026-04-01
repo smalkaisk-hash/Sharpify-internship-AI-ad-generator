@@ -1,0 +1,245 @@
+{
+  "source_url": "https://reg.sharpify.lv/",
+  "scraped_at": "2026-03-31T11:07:28.338Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#333333",
+        "usage_count": 418,
+        "contexts": [
+          "text:body",
+          "text:section",
+          "text:div",
+          "text:img",
+          "text:ul"
+        ]
+      },
+      {
+        "hex": "#75868a",
+        "usage_count": 76,
+        "contexts": [
+          "text:p",
+          "text:span",
+          "text:div",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#222222",
+        "usage_count": 72,
+        "contexts": [
+          "text:h1",
+          "text:h3",
+          "text:div",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#00665e",
+        "usage_count": 43,
+        "contexts": [
+          "text:div",
+          "text:em",
+          "bg:a",
+          "text:span",
+          "text:a"
+        ]
+      },
+      {
+        "hex": "#f0f6f7",
+        "usage_count": 19,
+        "contexts": [
+          "bg:section",
+          "bg:div",
+          "bg:span",
+          "bg:button"
+        ]
+      },
+      {
+        "hex": "#deedec",
+        "usage_count": 16,
+        "contexts": [
+          "bg:div",
+          "bg:span"
+        ]
+      },
+      {
+        "hex": "#051c20",
+        "usage_count": 8,
+        "contexts": [
+          "bg:div",
+          "text:a",
+          "text:div",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#cedc00",
+        "usage_count": 7,
+        "contexts": [
+          "text:span",
+          "text:div",
+          "text:h3",
+          "bg:a",
+          "bg:div"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#00665e",
+      "secondary": "#051c20",
+      "accent": "#cedc00",
+      "background": "#FFFFFF",
+      "text": "#222222"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Montserrat",
+        "usage_count": 400,
+        "weights": [
+          "600",
+          "700",
+          "400",
+          "800",
+          "500",
+          "900"
+        ],
+        "contexts": [
+          "div",
+          "span",
+          "h1",
+          "p",
+          "a",
+          "h3",
+          "h2",
+          "button"
+        ]
+      },
+      {
+        "family": "Arial",
+        "usage_count": 3,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "button"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Montserrat",
+      "body": "Montserrat"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.webp",
+        "originalUrl": "https://reg.sharpify.lv/assets/examples/screencapture-niksjansons-2026-03-26-10_21_52.webp",
+        "width": 246,
+        "height": 280
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.webp",
+        "originalUrl": "https://reg.sharpify.lv/assets/examples/screencapture-sportfactory-netlify-app-2026-03-26-10_22_32.webp",
+        "width": 246,
+        "height": 280
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.webp",
+        "originalUrl": "https://reg.sharpify.lv/assets/examples/screencapture-worldwide-security-demo-netlify-app-2026-03-26-10_22_14.webp",
+        "width": 246,
+        "height": 280
+      },
+      {
+        "type": "hero",
+        "filename": "hero-4.webp",
+        "originalUrl": "https://reg.sharpify.lv/assets/examples/screencapture-vaditajuskola-2026-03-31.webp",
+        "width": 246,
+        "height": 280
+      },
+      {
+        "type": "hero",
+        "filename": "hero-5.png",
+        "originalUrl": "https://reg.sharpify.lv/assets/kaspar-review.png",
+        "width": 301,
+        "height": 99
+      }
+    ],
+    "logos": [],
+    "all_found": 5
+  },
+  "content": {
+    "page_title": "Profesionāla mājaslapa pakalpojumu sniedzējiem — sākot no €59 | Sharpify",
+    "meta_description": "Moderna, profesionāla mājaslapa, kas palīdzēs iegūt vairāk klientu. Izveidota pakalpojumu sniedzējiem dažu dienu laikā. Sākot no €59.",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Mēs uzbūvēsim Tev mājaslapu, kas palīdzēs iegūt vairāk klientu"
+      },
+      {
+        "tag": "H3",
+        "text": "🚀 Šīs nedēļas kapacitāte"
+      },
+      {
+        "tag": "H2",
+        "text": "Ko Tu saņemsi?"
+      },
+      {
+        "tag": "H2",
+        "text": "Vai šis ir domāts Tev?"
+      },
+      {
+        "tag": "H3",
+        "text": "Šis ir Tev, ja:"
+      },
+      {
+        "tag": "H3",
+        "text": "Šis NAV Tev, ja:"
+      },
+      {
+        "tag": "H2",
+        "text": "Pazīstami?"
+      },
+      {
+        "tag": "H3",
+        "text": "Nav mājaslapas = nav uzticamības"
+      },
+      {
+        "tag": "H3",
+        "text": "Tava mājaslapa izskatās lēta"
+      },
+      {
+        "tag": "H3",
+        "text": "Tradicionālais process ir lēns un sarežģīts"
+      }
+    ],
+    "key_paragraphs": [
+      "Profesionāla, moderna mājaslapa, kas neizskatās tā, it kā būtu būvēta 2000. gadā. Sākot no €59.",
+      "Piemēri, tam ko Tu iegūsi.",
+      "Šis pakalpojums ir paredzēts pakalpojumu sniedzējiem.",
+      "Kāpēc eksperti un pakalpojumu sniedzēji zaudē klientus katru dienu."
+    ],
+    "cta_buttons_found": [
+      "Iegūsti mājaslapu",
+      "Es izvēlos B →",
+      "Sākt — €59",
+      "Iegūt Pro mājaslapu — €199",
+      "Iegūsti mājaslapu tagad",
+      "Uzdod jautājumu",
+      "info@sharpify.io",
+      "+371 29 427 717",
+      "Maksāt €59 — Iegūt mājaslapu",
+      "Apskatīt piedāvājumu"
+    ]
+  }
+}

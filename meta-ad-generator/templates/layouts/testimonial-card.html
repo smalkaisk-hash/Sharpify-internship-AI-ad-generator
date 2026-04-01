@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <style>
+    /* === TEMPLATE: Testimonial Card (Ironic Review) ===
+       IMPORTANT: The review/testimonial MUST be a REAL customer review.
+       NEVER generate or make up fake testimonials. Use only verified,
+       real reviews from the client's actual customers.
+
+       Concept: Ironic/humorous — show LOW star rating (1-2 stars) with
+       a sarcastic "complaint" that is actually a compliment.
+       Example: "Šausmīgi! Pasūtīju reizi un tagad visa ģimene atkarīga."
+       (Terrible! Ordered once and now the whole family is addicted.)
+
+       Best for: scroll-stopping humor, warm audiences, retargeting.
+    */
+    :root {
+      --color-primary: {{color_primary}};
+      --color-secondary: {{color_secondary}};
+      --color-accent: {{color_accent}};
+      --color-bg: {{color_bg}};
+      --color-text: {{color_text}};
+      --color-cta-bg: {{color_cta_bg}};
+      --color-cta-text: {{color_cta_text}};
+      --font-heading: '{{font_heading}}', 'Montserrat', sans-serif;
+      --font-body: '{{font_body}}', 'Inter', sans-serif;
+    }
+
+    .testimonial-container {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      padding: var(--pad-outer);
+      position: relative;
+    }
+
+    .quote-mark {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 0.8;
+      opacity: 0.2;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+
+    .testimonial-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--color-text);
+      font-style: italic;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+
+    .author-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .author-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-accent);
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .author-name {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .author-title {
+      font-family: var(--font-body);
+      font-size: 20px;
+      color: var(--color-text);
+      opacity: 0.6;
+    }
+
+    .testimonial-divider {
+      width: 60px;
+      height: 4px;
+      background-color: var(--color-accent);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .testimonial-footer .cta-button {
+      flex-shrink: 0;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 1;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .footer-brand img {
+      height: 50px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .footer-brand-name {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    /* Stars row */
+    .stars {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .star {
+      width: 40px;
+      height: 40px;
+      color: #F5A623;
+    }
+
+    .star-empty {
+      width: 40px;
+      height: 40px;
+      color: #D0D0D0;
+    }
+
+    .testimonial-footer .cta-button {
+      min-width: 420px;
+      height: 120px;
+      font-size: 40px;
+      padding: 0 48px;
+      border-radius: 18px;
+    }
+
+    .quote-text {
+      font-size: 42px;
+    }
+
+    .ironic-label {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="testimonial-container">
+    <!-- Decorative quote mark -->
+    <div class="quote-mark">"</div>
+
+    <!-- Main content -->
+    <div class="testimonial-body">
+      <!-- Star rating — LOW stars for ironic effect -->
+      <div class="stars">
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star-empty" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+
+      <div class="testimonial-divider"></div>
+
+      <!-- Quote -->
+      <p class="quote-text">"{{testimonial_text}}"</p>
+
+      <!-- Author -->
+      <div class="author-row">
+        <img class="author-photo" src="{{author_photo}}" alt="">
+        <div class="author-info">
+          <span class="author-name">{{author_name}}</span>
+          <span class="author-title">{{author_title}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="testimonial-footer">
+      <div class="footer-brand">
+        <img src="{{logo_url}}" alt="{{client_name}}">
+      </div>
+      <button class="cta-button">{{cta_text}}</button>
+    </div>
+  </div>
+</body>
+</html>

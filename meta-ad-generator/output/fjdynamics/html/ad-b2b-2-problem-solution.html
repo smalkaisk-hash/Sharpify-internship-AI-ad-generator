@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1DB954;
+      --color-secondary: #0B1D0F;
+      --color-accent: #1DB954;
+      --color-bg: #F5F5F5;
+      --color-text: #1A1A1A;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      width: 1080px;
+      height: 1080px;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Headline bar */
+    .headline-bar {
+      padding: 48px 56px 36px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--color-text);
+      line-height: 1.2;
+    }
+
+    .headline .accent {
+      color: var(--color-primary);
+    }
+
+    /* Split columns */
+    .split {
+      flex: 1;
+      display: flex;
+      gap: 0;
+      padding: 0 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 32px 28px;
+      gap: 18px;
+    }
+
+    .col-problem {
+      background: #2C1A1A;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .col-solution {
+      background: #0B1D0F;
+      border-radius: 0 20px 20px 0;
+    }
+
+    .col-header {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding-bottom: 16px;
+      margin-bottom: 4px;
+    }
+
+    .col-problem .col-header {
+      color: #E85454;
+      border-bottom: 2px solid rgba(232, 84, 84, 0.2);
+    }
+
+    .col-solution .col-header {
+      color: var(--color-primary);
+      border-bottom: 2px solid rgba(29, 185, 84, 0.2);
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .item-icon {
+      flex-shrink: 0;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    .item-text {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .col-problem .item-text {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .col-solution .item-text {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .col-solution .item-text .bold {
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    /* Footer */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--color-primary);
+    }
+
+    .brand .model {
+      color: rgba(26, 26, 26, 0.45);
+      font-weight: 600;
+    }
+
+    .cta-btn {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--color-primary);
+      border: none;
+      border-radius: 14px;
+      padding: 18px 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Headline -->
+    <div class="headline-bar">
+      <h1 class="headline">Gudrāks risinājums <span class="accent">stadionu<br>un parku</span> uzturēšanai</h1>
+    </div>
+
+    <!-- Split columns -->
+    <div class="split">
+      <div class="col col-problem">
+        <div class="col-header">Tradicionāli</div>
+        <div class="item">
+          <span class="item-icon">❌</span>
+          <span class="item-text">Liels darbaspēks un cilvēkresursu slodze</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">❌</span>
+          <span class="item-text">Dārga tehnika un degvielas izmaksas</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">❌</span>
+          <span class="item-text">Nepārtraukta iesaiste un uzraudzība</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">❌</span>
+          <span class="item-text">Nevienmērīgs pļaušanas rezultāts</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">❌</span>
+          <span class="item-text">Ierobežots darba laiks un atkarība no laika apstākļiem</span>
+        </div>
+      </div>
+
+      <div class="col col-solution">
+        <div class="col-header">FJDynamics FRX</div>
+        <div class="item">
+          <span class="item-icon">✅</span>
+          <span class="item-text"><span class="bold">Autonoma</span> darbība bez operatora</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">✅</span>
+          <span class="item-text">Būtiski <span class="bold">mazākas izmaksas</span> uz tehniku</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">✅</span>
+          <span class="item-text">Strādā <span class="bold">24/7</span> bez pārtraukuma</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">✅</span>
+          <span class="item-text"><span class="bold">RTK-GPS + LiDAR</span> precizitāte</span>
+        </div>
+        <div class="item">
+          <span class="item-icon">✅</span>
+          <span class="item-text">Teritorijas līdz <span class="bold">96 000 m²</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span class="brand">FJDynamics <span class="model">FRX</span></span>
+      <button class="cta-btn">Piesakies konsultācijai →</button>
+    </div>
+  </div>
+</body>
+</html>

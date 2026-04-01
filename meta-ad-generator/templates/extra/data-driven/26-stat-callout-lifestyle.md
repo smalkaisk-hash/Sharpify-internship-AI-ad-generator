@@ -1,0 +1,18 @@
+---
+name: "Stat Callout (Data-Driven Lifestyle)"
+number: 26
+category: data-driven
+tag: "The statistic IS the headline. No separate subhead needed."
+best_for: "Brands with compelling usage statistics or clinical results. Health, beauty, personal care, SaaS."
+required_fields:
+  - scene_description
+  - mood
+  - brand_logo
+  - dark_color
+  - stat_headline (with specific percentages)
+  - accent_color
+---
+
+# Template 26: Stat Callout (Data-Driven Lifestyle)
+
+Use the attached images as brand reference. Match exact brand colors and typography. Create: a statistic-led ad. Top 50%: lifestyle product photography — [SCENE like a woman's hands holding the product pad / person using the product in context] on a [MOOD like warm, skin-toned, soft-focus] background. Product packaging visible in frame. Middle: brand logo centered with thin horizontal rules on either side as a visual divider. Bottom 50%: dark gradient overlay (fading from transparent to [DARK COLOR like deep brown/black]). Large bold uppercase sans-serif text: "[STAT-DRIVEN HEADLINE with specific percentages like AFTER SWITCHING TO [BRAND], [X]% OF USERS [RESULT], WHILE [Y]% [SECOND RESULT]]." Key result phrases highlighted in [ACCENT COLOR like soft pink / brand secondary color]. The statistic IS the headline — no separate subhead needed. 1:1 aspect ratio.

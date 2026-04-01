@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #054b81;
+      --color-secondary: #D14299;
+      --color-accent: #FF7063;
+      --color-bg: #FFFFFF;
+      --color-text: #222222;
+      --color-cta-bg: #D14299;
+      --color-cta-text: #FFFFFF;
+      --font-heading: 'Poppins', 'Montserrat', sans-serif;
+      --font-body: 'Montserrat', 'Inter', sans-serif;
+    }
+
+    .bold-container {
+      width: 1080px;
+      height: 1080px;
+      background: linear-gradient(160deg, #032d4f 0%, #054b81 50%, #06609e 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .geo-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid var(--color-accent);
+      opacity: 0.1;
+    }
+
+    .geo-1 { width: 500px; height: 500px; top: -150px; right: -150px; }
+    .geo-2 { width: 300px; height: 300px; bottom: 120px; left: -100px; }
+
+    .bold-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 72px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .top-label {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 48px;
+    }
+
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 72px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.1;
+      max-width: 900px;
+      margin-bottom: 32px;
+    }
+
+    .headline .accent {
+      color: var(--color-accent);
+    }
+
+    .accent-line {
+      width: 80px;
+      height: 5px;
+      background: var(--color-accent);
+      border-radius: 3px;
+      margin-bottom: 32px;
+    }
+
+    .body-text {
+      font-family: var(--font-body);
+      font-size: 30px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.5;
+      max-width: 750px;
+      margin-bottom: 48px;
+    }
+
+    .cta-btn {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: var(--color-cta-bg);
+      border: none;
+      border-radius: 16px;
+      padding: 28px 64px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(209, 66, 153, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="bold-container">
+    <div class="geo-circle geo-1"></div>
+    <div class="geo-circle geo-2"></div>
+
+    <div class="bold-content">
+      <div class="top-label">For Construction Business Owners</div>
+      <h1 class="headline">Stop <span class="accent">Leaking Profit</span><br>on Every Job</h1>
+      <div class="accent-line"></div>
+      <p class="body-text">You don't go broke from lack of work —<br>you go broke from poor job control.</p>
+      <button class="cta-btn">See What to Fix First →</button>
+    </div>
+  </div>
+</body>
+</html>

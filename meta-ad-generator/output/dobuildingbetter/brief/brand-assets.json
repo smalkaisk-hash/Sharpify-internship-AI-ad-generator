@@ -1,0 +1,239 @@
+{
+  "source_url": "https://www.dobuildingbetter.com/",
+  "scraped_at": "2026-04-02T10:04:59.713Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#222222",
+        "usage_count": 642,
+        "contexts": [
+          "text:div",
+          "text:ul",
+          "text:li",
+          "text:img",
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#808080",
+        "usage_count": 217,
+        "contexts": [
+          "text:li",
+          "text:img",
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#0b0b0b",
+        "usage_count": 85,
+        "contexts": [
+          "text:div",
+          "text:p",
+          "text:br",
+          "text:em"
+        ]
+      },
+      {
+        "hex": "#054b81",
+        "usage_count": 30,
+        "contexts": [
+          "text:span",
+          "text:strong",
+          "bg:div",
+          "bg:button",
+          "text:br"
+        ]
+      },
+      {
+        "hex": "#6f7880",
+        "usage_count": 15,
+        "contexts": [
+          "text:span",
+          "text:strong"
+        ]
+      },
+      {
+        "hex": "#7d7d7d",
+        "usage_count": 7,
+        "contexts": [
+          "text:span",
+          "text:em",
+          "text:strong"
+        ]
+      },
+      {
+        "hex": "#f9fafb",
+        "usage_count": 7,
+        "contexts": [
+          "bg:div"
+        ]
+      },
+      {
+        "hex": "#70787f",
+        "usage_count": 7,
+        "contexts": [
+          "text:p"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#054b81",
+      "secondary": "#D14299",
+      "accent": "#FF7063",
+      "background": "#FFFFFF",
+      "text": "#222222"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Poppins",
+        "usage_count": 755,
+        "weights": [
+          "400",
+          "450",
+          "500"
+        ],
+        "contexts": [
+          "div",
+          "p",
+          "span",
+          "h1",
+          "button",
+          "h2",
+          "h3",
+          "a"
+        ]
+      },
+      {
+        "family": "Montserrat",
+        "usage_count": 8,
+        "weights": [
+          "700"
+        ],
+        "contexts": [
+          "button",
+          "div",
+          "a"
+        ]
+      },
+      {
+        "family": "Raleway",
+        "usage_count": 4,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "div",
+          "p",
+          "span"
+        ]
+      },
+      {
+        "family": "Times New Roman",
+        "usage_count": 3,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "div",
+          "a"
+        ]
+      },
+      {
+        "family": "Varela Round",
+        "usage_count": 2,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "button",
+          "div"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Poppins",
+      "body": "Montserrat"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.png",
+        "originalUrl": "https://d1yei2z3i6k35z.cloudfront.net/14901483/69a1ac80810ed_Tania--Ebook-design.png",
+        "width": 312,
+        "height": 393
+      }
+    ],
+    "logos": [],
+    "products": [],
+    "all_found": 1
+  },
+  "product_category": {
+    "type": "intangible",
+    "confidence": "manual",
+    "signals": [
+      "content: \"materials\"",
+      "content: \"session\"",
+      "content: \"app\""
+    ],
+    "product_images": []
+  },
+  "content": {
+    "page_title": "Opt-in page",
+    "meta_description": "",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "The Fastest Way to Turn Stuck Construction Business Into an 8-Figure Machine"
+      },
+      {
+        "tag": "H2",
+        "text": "Booked up doesn’t always mean profitable"
+      },
+      {
+        "tag": "H3",
+        "text": "Poor Visibility"
+      },
+      {
+        "tag": "H3",
+        "text": "Constant Firefighting"
+      },
+      {
+        "tag": "H3",
+        "text": "Stalled Growth"
+      },
+      {
+        "tag": "H3",
+        "text": "BONUS: Treadmill to Traction"
+      },
+      {
+        "tag": "H2",
+        "text": "What You’ll Get in Your Free Profit Health Check"
+      },
+      {
+        "tag": "H2",
+        "text": "About Me"
+      },
+      {
+        "tag": "H2",
+        "text": "Ready to Get More Control of Your Construction Business?"
+      }
+    ],
+    "key_paragraphs": [
+      "Exclusively for Construction Business Owners",
+      "You didn’t start a construction business to feel on-call 24/7 just to keep jobs from falling apart.",
+      "In this Free Profit Health Check, you’ll uncover where profit is leaking across job costing, scheduling, crew planning, materials, and cashflow so you can stop reacting and start running a company with more control.",
+      "We will not send spam messages"
+    ],
+    "cta_buttons_found": [
+      "Book My Free Strategy Call + Get The PDF →",
+      "profitable.",
+      "Today",
+      "Submit"
+    ]
+  }
+}

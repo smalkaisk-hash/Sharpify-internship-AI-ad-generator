@@ -1,0 +1,69 @@
+{
+  "client_name": "Elīna Luše",
+  "client_slug": "elina-luse",
+  "email": "eliina.luse@inbox.lv",
+  "phone": "+37122041970",
+  "website": "https://elinaluse.com",
+  "language": "lv",
+  "target_audience": {
+    "raw": "Cilvēki, kuri interesējas par veselību, kvalitatīvu ūdeni un vēlmi izveidot savu biznesu. Aktīvas mammas, kurām ir svarīga ģimenes veselība un vēlme iegūt papildus ienākumus.",
+    "demographics": "Aktīvas sievietes/mammas Latvijā, interesējas par veselību un papildus ienākumiem",
+    "psychographics": "Rūpējas par ģimenes veselību, meklē kvalitatīvākus risinājumus ikdienā, vēlas papildus ienākumu avotu vai savu biznesu",
+    "pain_points": [
+      "Bažas par ūdens un ikdienas produktu kvalitāti ģimenei",
+      "Vēlme uzlabot ģimenes veselību, bet nezina, kur sākt",
+      "Meklē papildus ienākumu avotu, kas savienojams ar ģimenes dzīvi",
+      "Trūkst uzticama biznesa modeļa ar reālu atbalstu"
+    ],
+    "desires": [
+      "Kvalitatīvs, veselīgs ūdens ģimenei katru dienu",
+      "Papildus ienākumi vai savs bizness no mājām",
+      "Drošība par produktu kvalitāti — sertifikāti un pierādījumi",
+      "Atbalsts un kopiena ceļā uz savu biznesu"
+    ]
+  },
+  "offer": {
+    "main_offer": "Japānas kvalitātes ūdens jonizators + online biznesa iespēja ar unikālu kompensāciju plānu",
+    "secondary_offer": null,
+    "result_promise": "Kvalitatīvs jonizēts ūdens ģimenei + iespēja veidot savu biznesu ar pierādītu sistēmu",
+    "duration": null,
+    "price_mentioned": false
+  },
+  "differentiator": {
+    "raw": "Augtas kvalitātes ūdens jonizators no Japānas, zelta ISO sertifikāti, unikāls kompensāciju plāns, otra tāda pasaulē nav.",
+    "key_points": [
+      "Ūdens jonizators no Japānas — augstākā kvalitāte",
+      "Zelta ISO sertifikāti — starptautiski atzīta kvalitāte",
+      "Unikāls kompensāciju plāns — otra tāda nav pasaulē"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Dalos ar pieredzi lietojot produktu un stāstu par biznesa iespēju.",
+    "credentials": [
+      "Zelta ISO sertifikāti",
+      "Japānas ražošanas kvalitāte"
+    ],
+    "social_proof": [
+      "Personīgā pieredze ar produktu lietošanu",
+      "Reāls biznesa stāsts un rezultāti"
+    ],
+    "personal_story": "Dalās ar personīgo pieredzi — gan produkta lietošanā, gan biznesa veidošanā"
+  },
+  "client_acquisition": {
+    "method": "Reklāmas sociālajos tīklos",
+    "funnel": "Reklāma → Interese → Klātienes/online tikšanās → Biznesa plāna prezentācija"
+  },
+  "bonuses": [
+    "Klātienes vai online tikšanās konsultācija",
+    "Personīgs atbalsts biznesa uzsākšanā"
+  ],
+  "guarantees": [
+    "14 dienu bez riska iepazīšanās ar biznesa plānu"
+  ],
+  "capacity": "30 jauni klienti/mēnesī",
+  "ad_strategy": {
+    "recommended_objective": "Lead Generation",
+    "recommended_cta": "Learn More",
+    "funnel_stage_focus": "Top of funnel — awareness + lead gen via free consultation"
+  }
+}

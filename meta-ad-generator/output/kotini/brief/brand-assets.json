@@ -1,0 +1,254 @@
+{
+  "source_url": "https://www.kotini.lv",
+  "scraped_at": "2026-03-30T16:55:05.606Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#b39d00",
+        "usage_count": 394,
+        "contexts": [
+          "text:body",
+          "text:script",
+          "text:noscript",
+          "text:div",
+          "text:header"
+        ]
+      },
+      {
+        "hex": "#333333",
+        "usage_count": 135,
+        "contexts": [
+          "text:a",
+          "text:img",
+          "text:span",
+          "text:h3",
+          "text:div"
+        ]
+      },
+      {
+        "hex": "#bc992c",
+        "usage_count": 103,
+        "contexts": [
+          "bg:span",
+          "bg:a",
+          "text:span",
+          "text:bdi",
+          "text:div"
+        ]
+      },
+      {
+        "hex": "#848484",
+        "usage_count": 34,
+        "contexts": [
+          "text:a",
+          "text:span",
+          "text:img"
+        ]
+      },
+      {
+        "hex": "#212529",
+        "usage_count": 26,
+        "contexts": [
+          "text:div",
+          "text:input"
+        ]
+      },
+      {
+        "hex": "#777777",
+        "usage_count": 20,
+        "contexts": [
+          "text:div",
+          "text:ul",
+          "text:li"
+        ]
+      },
+      {
+        "hex": "#242424",
+        "usage_count": 14,
+        "contexts": [
+          "text:span",
+          "text:h4",
+          "text:label",
+          "text:textarea"
+        ]
+      },
+      {
+        "hex": "#a5a5a5",
+        "usage_count": 13,
+        "contexts": [
+          "text:a",
+          "text:div"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#b39d00",
+      "secondary": "#F7F3E8",
+      "accent": "#8B6914",
+      "background": "#FFFFFF",
+      "text": "#242424"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Arial",
+        "usage_count": 664,
+        "weights": [
+          "400",
+          "500",
+          "600",
+          "300",
+          "700"
+        ],
+        "contexts": [
+          "div",
+          "a",
+          "span",
+          "p",
+          "h3",
+          "h4",
+          "button"
+        ]
+      },
+      {
+        "family": "Helvetica",
+        "usage_count": 1,
+        "weights": [
+          "600"
+        ],
+        "contexts": [
+          "h2"
+        ]
+      },
+      {
+        "family": "Gothic A1",
+        "usage_count": 1,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "div"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Playfair Display",
+      "body": "Open Sans"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.jpg",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2025/09/kotini-sakums-optimized.jpg",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.png",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2025/10/background-footer.png",
+        "width": 1440,
+        "height": 504
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.jpg",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2024/06/brauc_cienmos_birojs.jpg",
+        "width": 308,
+        "height": 648
+      },
+      {
+        "type": "hero",
+        "filename": "hero-4.jpg",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2024/06/dzirnavas_galds.jpg",
+        "width": 308,
+        "height": 648
+      },
+      {
+        "type": "hero",
+        "filename": "hero-5.jpg",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2023/10/RapsuElla-2-682x1024.jpg",
+        "width": 249,
+        "height": 360
+      }
+    ],
+    "logos": [
+      {
+        "type": "logo",
+        "filename": "logo-1.png",
+        "originalUrl": "https://kotinuveikals.lv/wp-content/uploads/2025/03/ZS_KOTINI_logo_vector_2024_W12.png",
+        "width": 240,
+        "height": 97
+      }
+    ],
+    "all_found": 26
+  },
+  "content": {
+    "page_title": "Sākums - Kotiņu labumu veikals",
+    "meta_description": "Kvalitatīvi, zināmas izcelsmes pārtikas produkti",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Izvēlies Kotiņos audzētus un ražotus produktus!"
+      },
+      {
+        "tag": "H3",
+        "text": "Rapšu eļļa"
+      },
+      {
+        "tag": "H3",
+        "text": "Pērļu grūbas"
+      },
+      {
+        "tag": "H3",
+        "text": "Kviešu milti"
+      },
+      {
+        "tag": "H3",
+        "text": "Speltas kviešu milti"
+      },
+      {
+        "tag": "H3",
+        "text": "Pilngraudu speltas kviešu manna"
+      },
+      {
+        "tag": "H3",
+        "text": "Pelēkie zirņi"
+      },
+      {
+        "tag": "H3",
+        "text": "Rudzu milti"
+      },
+      {
+        "tag": "H3",
+        "text": "Miežu putraimi"
+      },
+      {
+        "tag": "H3",
+        "text": "“Veselīgais” – Miltu maisījums pankūkām"
+      }
+    ],
+    "key_paragraphs": [
+      "Kvalitatīvi, zināmas izcelsmes pārtikas produkti",
+      "Tiek plānots kolektīva izbrauciens, draugu tikšanās, radu salidojums, klases ekskursija vai cits pasākums, taču nav ideju kā interesanti pavadīt laiku? Mums ir risinājums! Brauciet ciemos uz Kotiņiem!",
+      "Rekovas Dziernovas ir unikāla vieta Austrumu pierobežā un atrodas 4 km no zemnieku saimniecības Kotiņi.",
+      "Δdocument.getElementById(\"ak_js_1\").setAttribute(\"value\",(new Date()).getTime())"
+    ],
+    "cta_buttons_found": [
+      "Meklēt",
+      "Sākums",
+      "Veikals",
+      "Pārtikas produkti",
+      "Citi produkti",
+      "Dāvanas",
+      "Kotiņu lietas",
+      "Sertificēta sēkla",
+      "Lopbarība",
+      "Noteikumi"
+    ]
+  }
+}

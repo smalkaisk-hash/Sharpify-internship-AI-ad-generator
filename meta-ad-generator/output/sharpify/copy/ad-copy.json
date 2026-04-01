@@ -1,0 +1,102 @@
+{
+  "client_name": "Sharpify",
+  "client_slug": "sharpify",
+  "language": "lv",
+  "generated_at": "2026-03-31T11:15:00.000Z",
+  "copy_sets": [
+    {
+      "id": "copy-1-pas",
+      "framework": "PAS",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Tev nav mājaslapas? Tavi klienti aiziet pie konkurenta. Sharpify — profesionāla mājaslapa no €59, gatava 1-3 dienās.",
+        "long": "Tev nav mājaslapas? Potenciālie klienti Tevi meklē Google — un aiziet pie konkurenta.\n\nNeprofesionāla lapa liek domāt, ka arī Tavs pakalpojums ir tāds pats.\n\n✨ Sharpify — profesionāla, moderna mājaslapa pakalpojumu sniedzējiem. Individuāls dizains, nav šabloni.\n\n🎯 2 300+ uzņēmumi. 26 valstis. 1 000+ atsauksmes.\n\n💰 Sākot no €59. Gatava 1-3 darba dienu laikā.\n\n➡️ Iegūsti savu mājaslapu tagad — reg.sharpify.lv"
+      },
+      "headline": "Tava mājaslapa 1-3 dienu laikā",
+      "description": "Profesionāla mājaslapa no €59",
+      "cta_button": "Sign Up",
+      "cta_text_on_image": "Iegūsti mājaslapu — €59",
+      "hook_type": "pain-point"
+    },
+    {
+      "id": "copy-2-aida",
+      "framework": "AIDA",
+      "layout_recommendation": "bold-statement",
+      "primary_text": {
+        "short": "€59. Profesionāla mājaslapa. 1-3 dienas. Nav šablons. Sharpify.",
+        "long": "€59. Profesionāla mājaslapa. 1-3 dienas. Nav šablons.\n\nKamēr Tu domā par mājaslapu — Tavi konkurenti jau piesaista Tavus klientus.\n\n💡 Individuāls dizains. Mobilajam pielāgots. Būvēts konversijām.\n\n✅ 2 300+ uzņēmumi jau uzticas Sharpify\n✅ Forbes, Citadele, Indexo — starp mūsu klientiem\n✅ 100% apmierinātības garantija\n\n➡️ Sāc tagad — reg.sharpify.lv"
+      },
+      "headline": "€59. Profesionāla mājaslapa. 1-3 dienas.",
+      "description": "Individuāls dizains, nav šabloni",
+      "cta_button": "Sign Up",
+      "cta_text_on_image": "Sākt — €59",
+      "hook_type": "bold-claim"
+    },
+    {
+      "id": "copy-3-bab",
+      "framework": "Before/After/Bridge",
+      "layout_recommendation": "split-horizontal",
+      "primary_text": {
+        "short": "Iepriekš — nav mājaslapas, klienti aiziet. Tagad — profesionāla lapa, kas strādā 24/7. Sharpify no €59.",
+        "long": "Iepriekš — Tev nav mājaslapas vai tā izskatās kā no 2000. gada. Klienti Google aiziet pie konkurenta.\n\nTagad — profesionāla mājaslapa, kas strādā kā Tavs labākais pārdevējs 24/7. Pieteikumi nāk, kamēr Tu guļ.\n\n✨ Sharpify — mājaslapa, kas būvēta pārdošanai, nevis tikai skaistumam.\n\n🎯 2 300+ uzņēmumi. 100% apmierinātības garantija.\n\n💰 No €59. Gatava 1-3 dienās.\n\n➡️ Iegūsti savu — reg.sharpify.lv"
+      },
+      "headline": "No 'nav mājaslapas' uz pilnu kalendāru",
+      "description": "Sharpify — mājaslapa, kas pārdod",
+      "cta_button": "Sign Up",
+      "cta_text_on_image": "Iegūsti mājaslapu",
+      "hook_type": "pain-point"
+    },
+    {
+      "id": "copy-4-social-proof-ironic",
+      "framework": "Social Proof (Ironic)",
+      "layout_recommendation": "testimonial-card",
+      "primary_text": {
+        "short": "\"Biju patīkami pārsteigts par piegādes ātrumu. Landinga lapa gatava vienas dienas laikā.\" — Kaspars Cveiģelis. Sharpify no €59.",
+        "long": "⭐ 1/5 — Briesmīgi.\n\n\"Pasūtīju mājaslapu un domāju, ka pagaidīšu nedēļām. Bet nē — vienas dienas laikā viss bija gatavs. Tagad man ir tik daudz pieteikumu, ka nevaru visus apstrādāt. Paldies par neko, Sharpify.\"\n\n😤 Vēl viens neapmierināts klients, kuram tagad ir par daudz klientu.\n\n🎯 2 300+ uzņēmumi. 1 000+ atsauksmes.\n\n➡️ Riskē arī Tu — reg.sharpify.lv"
+      },
+      "headline": "Briesmīgi. Tagad man ir par daudz klientu.",
+      "description": "\"Atsauksme\" no neapmierināta klienta",
+      "cta_button": "Sign Up",
+      "cta_text_on_image": "Riskēt — €59",
+      "hook_type": "ironic-review",
+      "testimonial_quote": "Pasūtīju mājaslapu un domāju, ka pagaidīšu nedēļām. Bet nē — vienas dienas laikā viss bija gatavs. Tagad man ir tik daudz pieteikumu, ka nevaru visus apstrādāt. Paldies par neko, Sharpify.",
+      "testimonial_source": "Ironic framing based on real client feedback pattern — Kaspars Cveiģelis confirmed 1-day delivery speed",
+      "real_review_references": [
+        "Kaspars Cveiģelis: 'Biju patīkami pārsteigts par piegādes ātrumu. Landinga lapa gatava vienas dienas laikā — tas Latvijas tirgū ir kaut kas nebijis.'",
+        "Edgars Jakobovičs: 'Sharpify ir labākie! Uzņēmuma vadītājs un darbinieki ir ļoti pretim nākoši, izpalīdzīgi un pozitīvi noskaņoti, kas padara mūsu sadarbību patīkamu un vieglu.'"
+      ]
+    },
+    {
+      "id": "copy-5-benefit-stack",
+      "framework": "Benefit Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "Kāpēc 2 300+ uzņēmumi izvēlas Sharpify? Ātra izveide, individuāls dizains, pieejama cena, konversiju fokuss.",
+        "long": "Kāpēc 2 300+ uzņēmumi izvēlas Sharpify? 👇\n\n✅ Gatava 1-3 dienās — ne nedēļām, ne mēnešiem\n✅ Individuāls dizains — nav šabloni, katrs unikāls\n✅ Sākot no €59 — ne €500, ne €2000\n✅ Būvēta konversijām — pieteikumi, ne tikai klikšķi\n\n🎯 Forbes, Citadele, Indexo — starp mūsu klientiem\n\n100% apmierinātības garantija.\n\n➡️ Iegūsti savu mājaslapu — reg.sharpify.lv"
+      },
+      "headline": "Kāpēc 2 300+ uzņēmumi izvēlas Sharpify?",
+      "description": "Profesionāla mājaslapa no €59",
+      "cta_button": "Sign Up",
+      "cta_text_on_image": "Iegūsti mājaslapu — €59",
+      "hook_type": "question",
+      "benefits": [
+        {
+          "title": "Gatava 1-3 dienās",
+          "desc": "Ne nedēļām, ne mēnešiem — Tu saņem mājaslapu dažu dienu laikā"
+        },
+        {
+          "title": "Individuāls dizains",
+          "desc": "Katrs projekts unikāls — nav vispārīgi šabloni"
+        },
+        {
+          "title": "Sākot no €59",
+          "desc": "Profesionāla kvalitāte par daļu no tradicionālās cenas"
+        },
+        {
+          "title": "Būvēta konversijām",
+          "desc": "Mājaslapa, kas piesaista pieteikumus, nevis tikai klikšķus"
+        }
+      ]
+    }
+  ]
+}

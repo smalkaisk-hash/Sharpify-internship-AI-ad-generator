@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* === TEMPLATE: Benefit Stack ===
+       Headline + 3-4 benefit rows with icons/checkmarks + CTA.
+       Best for: listing program features, service packages, coaching offers.
+    */
+    :root {
+      --color-primary: {{color_primary}};
+      --color-secondary: {{color_secondary}};
+      --color-accent: {{color_accent}};
+      --color-bg: {{color_bg}};
+      --color-text: {{color_text}};
+      --color-cta-bg: {{color_cta_bg}};
+      --color-cta-text: {{color_cta_text}};
+      --font-heading: '{{font_heading}}', 'Montserrat', sans-serif;
+      --font-body: '{{font_body}}', 'Inter', sans-serif;
+    }
+
+    .benefit-container {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      padding: var(--pad-outer);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative background accent */
+    .bg-accent {
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      opacity: 0.06;
+    }
+
+    .bg-accent-2 {
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      opacity: 0.05;
+    }
+
+    /* Header section */
+    .benefit-header {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 16px;
+    }
+
+    .benefit-badge {
+      display: inline-block;
+      padding: 14px 30px;
+      background-color: var(--color-accent);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .benefit-header .headline {
+      font-size: 72px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .benefit-header .subheadline {
+      font-size: 36px;
+      color: var(--color-text);
+      opacity: 0.7;
+      font-weight: 400;
+    }
+
+    /* Benefits list */
+    .benefits-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+      padding: 20px 0;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 24px 28px;
+      background: rgba(0, 0, 0, 0.025);
+      border-radius: 16px;
+      border-left: 5px solid var(--color-accent);
+    }
+
+    .benefit-icon {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-accent);
+      color: #FFFFFF;
+      border-radius: 50%;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .benefit-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: #FFFFFF;
+    }
+
+    .benefit-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .benefit-title {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .benefit-desc {
+      font-family: var(--font-body);
+      font-size: 28px;
+      color: var(--color-text);
+      opacity: 0.65;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .benefit-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+      padding-top: 20px;
+    }
+
+    .benefit-footer .cta-button {
+      min-width: 680px;
+      height: 140px;
+      font-size: 46px;
+      padding: 0 56px;
+      border-radius: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="benefit-container">
+    <!-- Decorative elements -->
+    <div class="bg-accent"></div>
+    <div class="bg-accent-2"></div>
+
+    <!-- Header -->
+    <div class="benefit-header">
+      <div class="benefit-badge">{{badge_text}}</div>
+      <h1 class="headline">{{headline}}</h1>
+      <p class="subheadline">{{subheadline}}</p>
+    </div>
+
+    <!-- Benefits -->
+    <div class="benefits-list">
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">{{benefit_1_title}}</span>
+          <span class="benefit-desc">{{benefit_1_desc}}</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">{{benefit_2_title}}</span>
+          <span class="benefit-desc">{{benefit_2_desc}}</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">{{benefit_3_title}}</span>
+          <span class="benefit-desc">{{benefit_3_desc}}</span>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <span class="benefit-title">{{benefit_4_title}}</span>
+          <span class="benefit-desc">{{benefit_4_desc}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="benefit-footer">
+      <button class="cta-button">{{cta_text}}</button>
+    </div>
+  </div>
+</body>
+</html>

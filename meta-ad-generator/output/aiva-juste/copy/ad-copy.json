@@ -1,0 +1,97 @@
+{
+  "client_name": "Aiva Juste",
+  "client_slug": "aiva-juste",
+  "language": "lv",
+  "generated_at": "2026-03-30T17:00:00.000Z",
+  "copy_sets": [
+    {
+      "id": "copy-1-pas",
+      "framework": "PAS",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Vai iekšā jūties apjukusi, pat ja ārēji viss ir kārtībā? Tu neesi viena. Atgūsti skaidrību par sevi 8 nedēļās.",
+        "long": "Vai iekšā jūties apjukusi, pat ja ārēji viss ir kārtībā?\n\nTu dari visu pareizi — darbs, attiecības, ikdiena. Bet iekšā nav skaidrības. Šaubies par katru lēmumu un jūties nogurusi no sevis.\n\n✨ \"Iekšējā skaidrība\" — 8 nedēļu 1:1 koučinga programma, kur soli pa solim atgūsti pārliecību par sevi.\n\nNe padomi, bet dziļa klausīšanās, struktūra un reāli soļi.\n\n➡️ Piesakies bezmaksas sarunai un uzzini, vai šis ir tavs nākamais solis."
+      },
+      "headline": "Atgūsti pārliecību par sevi",
+      "description": "8 nedēļu koučinga programma",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies sarunai",
+      "hook_type": "question"
+    },
+    {
+      "id": "copy-2-aida",
+      "framework": "AIDA",
+      "layout_recommendation": "bold-statement",
+      "primary_text": {
+        "short": "Kad pārstāsi šaubīties — tu jau zini, ko vēlies. Vajag tikai drošību to izdarīt.",
+        "long": "Kad pārstāsi šaubīties — tu jau zini, ko vēlies.\n\nTev nav vajadzīga motivācija. Tev vajag drošu telpu, kur atklāt to, ko jau iekšēji zini, bet vēl neuzdrošinies.\n\n💡 Koučinga programmā \"Iekšējā skaidrība\" mēs strādājam ar maziem, reāliem soļiem — lai tu pieņemtu lēmumus bez bailēm un justos stabilāk katru dienu.\n\n🎯 Sertificēts koučs. 40+ sesijas ar sievietēm. Reāli rezultāti 2-6 mēnešos.\n\n➡️ Piesakies bezmaksas skaidrības sarunai."
+      },
+      "headline": "Tu jau zini. Uzdrošinies.",
+      "description": "Individuāla koučinga programma",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Sāc ar bezmaksas sarunu",
+      "hook_type": "bold-claim"
+    },
+    {
+      "id": "copy-3-bab",
+      "framework": "Before/After/Bridge",
+      "layout_recommendation": "split-horizontal",
+      "primary_text": {
+        "short": "Šobrīd — šaubies par katru lēmumu. Pēc 8 nedēļām — skaidrība un miers iekšā.",
+        "long": "Šobrīd tu šaubies par katru lēmumu. Jūties nogurusi no iekšējā dialoga, kurš nekad nebeidzas.\n\nIedomājies: pēc 8 nedēļām tu zini, ko vēlies. Pieņem lēmumus bez bailēm. Jūties mierīga un pārliecināta.\n\n✨ \"Iekšējā skaidrība\" ir tilts no šaubām uz pārliecību. Individuāls 1:1 koučings, kur tavs temps un tavas prioritātes ir centrā.\n\n✅ Struktūra + accountability + personalizēts atbalsts\n\n➡️ Piesakies bezmaksas iepazīšanās sarunai."
+      },
+      "headline": "No šaubām uz pārliecību",
+      "description": "Tavs ceļš sākas ar sarunu",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies sarunai",
+      "hook_type": "pain-point"
+    },
+    {
+      "id": "copy-4-social-proof",
+      "framework": "Social Proof",
+      "layout_recommendation": "testimonial-card",
+      "primary_text": {
+        "short": "\"Pirmo reizi jūtos droša savos lēmumos.\" Pārliecība sākas ar vienu sarunu.",
+        "long": "\"Pirmo reizi ilgā laikā jūtos droša savos lēmumos. Zinu, ko vēlos, un vairs nešaubos par katru soli.\"\n\n💪 Vairāk nekā 40 sievietes jau atradušas iekšējo skaidrību ar koučinga programmu.\n\nSertificēts koučs ar pieredzi darbā ar sievietēm ilgtermiņā. Klientes sasniedz iekšējo mieru 2-6 mēnešu laikā.\n\n✨ Bezmaksas skaidrības saruna — lai saprastu, vai šis ir tavs nākamais solis.\n\n➡️ Piesakies tagad — vietu skaits ir ierobežots."
+      },
+      "headline": "40+ sievietes jau uzticas sev",
+      "description": "Iekšējā skaidrība 8 nedēļās",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies sarunai",
+      "hook_type": "story",
+      "testimonial_quote": "Pirmo reizi ilgā laikā jūtos droša savos lēmumos. Zinu, ko vēlos, un vairs nešaubos par katru soli. Koučings deva man struktūru un drošu telpu, kur atklāt to, ko jau iekšēji zināju."
+    },
+    {
+      "id": "copy-5-benefit-stack",
+      "framework": "Benefit Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "Ko tu iegūsi 8 nedēļās? Skaidrību, pārliecību, mieru. Bez motivācijas runas — ar reāliem soļiem.",
+        "long": "Ko tu iegūsi 8 nedēļās? 👇\n\n✅ Skaidras prioritātes — zini, kas tev patiesi svarīgs\n✅ Pārliecība lēmumos — pieņem izvēles bez bailēm\n✅ Mazāk stresa ikdienā — iekšējs miers un stabilitāte\n✅ Spēja pateikt NĒ bez vainas sajūtas\n\n🎯 Individuāla 1:1 koučinga programma \"Iekšējā skaidrība\" ar sertificētu kouču.\n\nNe motivācija, bet struktūra + klausīšanās + accountability.\n\n➡️ Piesakies bezmaksas sarunai — tikai 10 vietas mēnesī."
+      },
+      "headline": "Kas mainās 8 nedēļās?",
+      "description": "Individuāla koučinga programma",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies sarunai",
+      "hook_type": "question",
+      "benefits": [
+        {
+          "title": "Skaidras prioritātes",
+          "desc": "Zini, kas tev patiesi svarīgs un kurp dodies"
+        },
+        {
+          "title": "Pārliecība lēmumos",
+          "desc": "Pieņem izvēles droši, bez šaubām un bailēm"
+        },
+        {
+          "title": "Mazāk stresa ikdienā",
+          "desc": "Iekšējs miers, stabilitāte un emocionāls līdzsvars"
+        },
+        {
+          "title": "Drosmīga komunikācija",
+          "desc": "Spēja pateikt NĒ bez vainas sajūtas"
+        }
+      ]
+    }
+  ]
+}

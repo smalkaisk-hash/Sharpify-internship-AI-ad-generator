@@ -1,0 +1,74 @@
+{
+  "client_name": "Kotiņi",
+  "client_slug": "kotini",
+  "contact_name": "Evelīna Ločmele",
+  "email": "locmele.evelin@gmail.com",
+  "phone": "+37120205752",
+  "website": "https://www.kotini.lv",
+  "language": "lv",
+  "target_audience": {
+    "raw": "Sievietes un vīrieši vecuma posmā 25-60 gadi, ar vidējiem un augustiem ienākumiem, Latvijā. Interesē produktu izcelsme, zīmols, kvalitāte, uzturvērtība. Iepērkas online, produktu kvalitāti vērtē augstāk par cenu. Izmanto sociālos tīklus.",
+    "demographics": "Sievietes un vīrieši 25-60 gadi, vidēji un augsti ienākumi, Latvijā",
+    "psychographics": "Vērtē produktu izcelsmi, kvalitāti un uzturvērtību. Gatavi maksāt vairāk par kvalitāti. Aktīvi sociālajos tīklos, iepērkas online.",
+    "pain_points": [
+      "Grūti atrast patiesi Latvijā audzētus un ražotus produktus",
+      "Nezina, kāda ir produktu izcelsme un ražošanas process",
+      "Vēlas veselīgus produktus, bet tie bieži nav garšīgi vai ērti gatavošanā",
+      "Sarežģīta un laikietilpīga veselīga ēdiena pagatavošana"
+    ],
+    "desires": [
+      "Kvalitatīvi, Latvijā audzēti produkti ar skaidru izcelsmi",
+      "Augsta uzturvērtība un lieliska garša vienā produktā",
+      "Vienkārša un ātra pagatavošana",
+      "Uzticams zīmols ar caurspīdīgu ražošanu"
+    ]
+  },
+  "offer": {
+    "main_offer": "Kotiņi produktu klāsts — Latvijā audzēti un ražoti produkti ar augstu uzturvērtību, lielisku garšu un viegli pagatavojami",
+    "secondary_offer": null,
+    "result_promise": "100% Latvijā audzēti produkti ar augstu uzturvērtību, lielisku garšu, viegli pagatavojami — zupas, putras, biezeņi, deserti un vēl",
+    "duration": null,
+    "price_mentioned": true,
+    "price_range": "1.50-5.00 EUR par vienību, vidējais pirkums 15-20 EUR"
+  },
+  "differentiator": {
+    "raw": "Mēs paši audzējam, pārstrādājam, ražojam - neko papildus neiepērkam, līdz ar to 100% varam izsekot un nodrošināt procesu caurspīdību. Audzēšanai atlasām piemērotākās šķirnes, kas nodrošina produkta vienmērīgu pagatavošanos un izcilo garšu. Produktiem ir liela daudzveidība, augsta kvalitāte un pieejama cena.",
+    "key_points": [
+      "Paši audzē, pārstrādā, ražo — pilna ražošanas ķēde no lauka līdz galdam",
+      "100% izsekojams un caurspīdīgs process",
+      "Speciāli atlasītas šķirnes izcilai garšai",
+      "Liela daudzveidība, augsta kvalitāte, pieejama cena"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Gadu pieredze, pozitīvas atsauksmes, augsti apbalvojumi no ministrijām, citām institucijām, Zaļās karotītes piešķiršana produktiem, Novada Garšas un kvalitātes konkursu iegūtie apbalvojumi. Latvijas restorāni un ēdinātāji izvēlas mūsu produktus.",
+    "credentials": [
+      "Zaļā karotīte produktiem",
+      "Novada Garšas un kvalitātes konkursu apbalvojumi",
+      "Augsti apbalvojumi no ministrijām un institucijām"
+    ],
+    "social_proof": [
+      "Latvijas restorāni un ēdinātāji izvēlas Kotiņi produktus",
+      "Pieejami Rimi, Klēts un citos veikalos visā Latvijā",
+      "Pozitīvas klientu atsauksmes",
+      "Vairāk nekā 40+ klientes atradušas iekšējo līdzsvaru"
+    ],
+    "personal_story": "Silts un vienkāršs balss tonis — cilvēki atpazīst zīmolu ar pozitīvām emocijām un atzinību"
+  },
+  "client_acquisition": {
+    "method": "Klātienes pasākumi (zaļie tirdziņi katru nedēļu), izstādes, konferences, 2 klātienes veikali Latgalē, veikali visā Latvijā (Rimi, Klēts), e-veikals",
+    "funnel": "Sociālie tīkli / Tirdziņi / Veikali → Zīmola atpazīšana → E-veikals vai klātienes pirkums"
+  },
+  "bonuses": [
+    "Papildus +1 produkts izmēģināšanai, kas nav bijis iepirkuma grozā"
+  ],
+  "guarantees": [
+    "Papildus +1 bezmaksas produkts izmēģināšanai pie pirkuma"
+  ],
+  "capacity": "300 jauni klienti/mēnesī",
+  "ad_strategy": {
+    "recommended_objective": "Conversions",
+    "recommended_cta": "Shop Now",
+    "funnel_stage_focus": "Top of funnel — awareness + e-shop traffic"
+  }
+}

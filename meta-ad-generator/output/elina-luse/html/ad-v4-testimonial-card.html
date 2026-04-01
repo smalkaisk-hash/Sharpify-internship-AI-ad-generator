@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #152825;
+      --color-secondary: #607179;
+      --color-accent: #ff974d;
+      --color-bg: #F5F7F6;
+      --color-text: #2f2f2f;
+      --color-cta-bg: #ff974d;
+      --color-cta-text: #FFFFFF;
+      --font-heading: 'Lato', 'Arial', sans-serif;
+      --font-body: 'Roboto', 'Arial', sans-serif;
+    }
+
+    .testimonial-container {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      padding: var(--pad-outer);
+      position: relative;
+    }
+
+    .quote-mark {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 0.8;
+      opacity: 0.2;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+
+    .testimonial-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--color-text);
+      font-style: italic;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+
+    .author-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .author-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-accent);
+      background-color: #dde3e1;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .author-name {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .author-title {
+      font-family: var(--font-body);
+      font-size: 20px;
+      color: var(--color-text);
+      opacity: 0.6;
+    }
+
+    .testimonial-divider {
+      width: 60px;
+      height: 4px;
+      background-color: var(--color-accent);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-brand img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .stars {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .star {
+      width: 32px;
+      height: 32px;
+      color: #ff974d;
+    }
+  </style>
+</head>
+<body>
+  <div class="testimonial-container">
+    <div class="quote-mark">&ldquo;</div>
+
+    <div class="testimonial-body">
+      <div class="stars">
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+
+      <div class="testimonial-divider"></div>
+
+      <p class="quote-text">&ldquo;Kopš sāku lietot jonizēto ūdeni, visa ģimene jūtas enerģiskāk. Un biznesa iespēja deva man brīvību strādāt no mājām — blakus saviem bērniem.&rdquo;</p>
+
+      <div class="author-row">
+        <div class="author-photo"></div>
+        <div class="author-info">
+          <span class="author-name">Apmierināta klienta pieredze</span>
+          <span class="author-title">Mamma · Uzņēmēja</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-footer">
+      <div class="footer-brand">
+        <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator/output/elina-luse/brief/images/logo-1.png" alt="Become The Change">
+      </div>
+      <button class="cta-button">Uzzini vairāk</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* === TEMPLATE: Bold Statement ===
+       Large centered text hook with subtle background texture/image.
+       Best for: cold audience awareness, scroll-stopping hooks, question ads.
+    */
+    :root {
+      --color-primary: #785e26;
+      --color-secondary: #e9ddcf;
+      --color-accent: #9E3B1B;
+      --color-bg: #FBF2EB;
+      --color-text: #20303C;
+      --color-cta-bg: #9E3B1B;
+      --color-cta-text: #FFFFFF;
+      --font-heading: 'EB Garamond', 'Montserrat', sans-serif;
+      --font-body: 'Quicksand', 'Inter', sans-serif;
+    }
+
+    .bold-container {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--color-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle background image — optional, low opacity */
+    .bg-image {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.12;
+      filter: grayscale(60%);
+    }
+
+    /* Geometric decoration */
+    .geo-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid var(--color-accent);
+      opacity: 0.15;
+    }
+
+    .geo-1 {
+      width: 400px;
+      height: 400px;
+      top: -100px;
+      right: -100px;
+    }
+
+    .geo-2 {
+      width: 250px;
+      height: 250px;
+      bottom: 150px;
+      left: -80px;
+    }
+
+    /* Content */
+    .bold-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px var(--pad-outer);
+      position: relative;
+      z-index: 2;
+    }
+
+    .bold-content .headline {
+      color: #FFFFFF;
+      font-size: 68px;
+      line-height: 1.1;
+      max-width: 900px;
+      margin-bottom: 32px;
+    }
+
+    .accent-line {
+      width: 80px;
+      height: 5px;
+      background-color: var(--color-accent);
+      border-radius: 3px;
+      margin-bottom: 32px;
+    }
+
+    .bold-content .body-text {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 30px;
+      line-height: 1.5;
+      max-width: 750px;
+      margin-bottom: 48px;
+    }
+
+    /* Footer bar */
+    .bold-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px var(--pad-outer);
+      background: rgba(0, 0, 0, 0.25);
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-brand {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .footer-text {
+      font-family: var(--font-body);
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="bold-container">
+    <!-- Optional subtle background image -->
+    <img class="bg-image" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator/output/aiva-juste/brief/images/hero-2.jpg" alt="">
+
+    <!-- Geometric decorations -->
+    <div class="geo-circle geo-1"></div>
+    <div class="geo-circle geo-2"></div>
+
+    <!-- Main content -->
+    <div class="bold-content">
+      <h1 class="headline">Tu jau zini. Uzdrošinies.</h1>
+      <div class="accent-line"></div>
+      <p class="body-text">Kad pārstāsi šaubīties — tu jau zini, ko vēlies. Vajag tikai drošību to izdarīt.</p>
+      <button class="cta-button">Sāc ar bezmaksas sarunu</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="bold-footer">
+      <span class="footer-brand">Aiva Juste</span>
+      <span class="footer-text">Sertificēts koučs · Iekšējā skaidrība</span>
+    </div>
+  </div>
+</body>
+</html>

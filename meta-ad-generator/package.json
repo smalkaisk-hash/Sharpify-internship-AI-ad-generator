@@ -1,0 +1,13 @@
+{
+  "name": "meta-ad-generator",
+  "version": "1.0.0",
+  "description": "Full Meta ad creation pipeline — from client brief to production-ready 1080x1080 PNG ads",
+  "private": true,
+  "scripts": {
+    "export": "node scripts/export-png.js",
+    "scrape": "node scripts/scrape-brand.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "client_name": "Elīna Luše",
+  "client_slug": "elina-luse",
+  "language": "lv",
+  "generated_at": "2026-03-30T17:30:00.000Z",
+  "copy_sets": [
+    {
+      "id": "copy-1-pas",
+      "framework": "PAS",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Vai zini, ko dzer tava ģimene? Japānas jonizēts ūdens maina veselību. Uzzini vairāk!",
+        "long": "Vai zini, ko dzer tava ģimene katru dienu?\n\nParasts krāna ūdens satur piemaisījumus, ko mēs pat neredzam. Un pudelēs pārdotais — ne vienmēr ir labāks.\n\n✨ Japānas ūdens jonizators ar zelta ISO sertifikātiem — augstākā kvalitāte pasaulē. Tīrs, jonizēts ūdens tavai ģimenei katru dienu.\n\n💡 Plus — unikāla biznesa iespēja, kādas citur nav.\n\n➡️ 14 dienas bez riska. Uzzini vairāk!"
+      },
+      "headline": "Tīrs ūdens. Vesela ģimene.",
+      "description": "Japānas kvalitāte ar ISO sertifikātu",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini vairāk",
+      "hook_type": "question"
+    },
+    {
+      "id": "copy-2-aida",
+      "framework": "AIDA",
+      "layout_recommendation": "bold-statement",
+      "primary_text": {
+        "short": "Iedomājies — veselīgāks ūdens ģimenei UN savs bizness no mājām. Tas ir iespējams.",
+        "long": "Iedomājies — veselīgāks ūdens ģimenei UN savs bizness no mājām.\n\nŪdens jonizators no Japānas ar zelta ISO sertifikātiem nodrošina augstāko kvalitāti. Un unikāls kompensāciju plāns, kāda nav nekur citur pasaulē.\n\n🎯 Veselība + papildus ienākumi = dzīve, par kuru sapņoji.\n\n✅ Personīgs atbalsts katru soli\n✅ 14 dienu bez riska iepazīšanās\n\n➡️ Piesakies bezmaksas konsultācijai!"
+      },
+      "headline": "Veselība + bizness no mājām",
+      "description": "Unikāla iespēja, kādas citur nav",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini vairāk",
+      "hook_type": "bold-claim"
+    },
+    {
+      "id": "copy-3-bab",
+      "framework": "Before/After/Bridge",
+      "layout_recommendation": "split-horizontal",
+      "primary_text": {
+        "short": "Pirms — uztraucies par ūdens kvalitāti un ienākumiem. Pēc — veselīga ģimene un savs bizness.",
+        "long": "Pirms — uztraucies par ūdens kvalitāti, meklē veidus, kā nodrošināt ģimeni. Ienākumi tik tikko pietiek.\n\nPēc — tava ģimene katru dienu dzer tīrāko ūdeni. Un tu pelni papildus ienākumus, strādājot no mājām.\n\n✨ Japānas ūdens jonizators + unikāls biznesa modelis ar personīgu atbalstu.\n\n🎯 Zelta ISO sertifikāti. Otra tāda iespēja pasaulē nav.\n\n➡️ Sāc ar bezmaksas tikšanos — klātienē vai online."
+      },
+      "headline": "Mainies tu. Mainās dzīve.",
+      "description": "Sāc ar bezmaksas tikšanos",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Piesakies tikšanās",
+      "hook_type": "pain-point"
+    },
+    {
+      "id": "copy-4-social-proof",
+      "framework": "Social Proof",
+      "layout_recommendation": "testimonial-card",
+      "primary_text": {
+        "short": "\"Mana ģimene jūtas labāk, un man ir bizness, kas aug.\" Uzzini, kā sākt!",
+        "long": "\"Kopš sāku lietot jonizēto ūdeni, visa ģimene jūtas enerģiskāk. Un biznesa iespēja deva man brīvību strādāt no mājām — blakus saviem bērniem.\"\n\n💪 Japānas kvalitāte ar zelta ISO sertifikātiem.\n\n✨ Unikāls kompensāciju plāns — otra tāda nav pasaulē.\n\n✅ 14 dienas bez riska. Personīgs atbalsts.\n\n➡️ Piesakies bezmaksas konsultācijai ar Elīnu!"
+      },
+      "headline": "Veselība un brīvība vienā solī",
+      "description": "14 dienas bez riska",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini vairāk",
+      "hook_type": "story",
+      "testimonial_quote": "Kopš sāku lietot jonizēto ūdeni, visa ģimene jūtas enerģiskāk. Un biznesa iespēja deva man brīvību strādāt no mājām — blakus saviem bērniem."
+    },
+    {
+      "id": "copy-5-benefit-stack",
+      "framework": "Benefit Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "Ko tu iegūsti? Japānas jonizatoru, biznesa iespēju, atbalstu un 14 dienas bez riska.",
+        "long": "Ko tu iegūsti? 👇\n\n✅ Japānas ūdens jonizators — zelta ISO sertifikāti\n✅ Unikāls biznesa modelis — papildus ienākumi no mājām\n✅ Personīgs atbalsts — klātienē vai online\n✅ 14 dienas bez riska iepazīšanās ar biznesa plānu\n\n🎯 Veselība tavai ģimenei + brīvība veidot dzīvi pēc saviem noteikumiem.\n\n➡️ Piesakies bezmaksas sarunai ar Elīnu!"
+      },
+      "headline": "Tavs nākamais solis",
+      "description": "Veselība + bizness vienuviet",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Piesakies konsultācijai",
+      "hook_type": "question",
+      "benefits": [
+        {
+          "title": "Japānas jonizators",
+          "desc": "Augstākā kvalitāte ar zelta ISO sertifikātiem"
+        },
+        {
+          "title": "Unikāls bizness",
+          "desc": "Kompensāciju plāns, kāda nav nekur citur pasaulē"
+        },
+        {
+          "title": "Personīgs atbalsts",
+          "desc": "Klātienes vai online tikšanās — katru soli kopā"
+        },
+        {
+          "title": "14 dienas bez riska",
+          "desc": "Iepazīsties ar biznesa plānu pilnīgi bez saistībām"
+        }
+      ]
+    }
+  ]
+}
