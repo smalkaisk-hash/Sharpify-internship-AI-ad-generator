@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: linear-gradient(165deg, #1a0a2e 0%, #0f0a1e 40%, #0a0f1a 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 52px 56px 48px;
+  position: relative;
+}
+
+.ig-header {
+  width: 100%; max-width: 780px;
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.ig-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  display: flex; align-items: center; justify-content: center;
+  padding: 3px;
+}
+.ig-avatar-inner {
+  width: 100%; height: 100%; border-radius: 50%;
+  background: #1a0a2e;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 24px; color: #fff;
+}
+.ig-name { font-weight: 800; font-size: 24px; }
+.ig-verified { color: #3b82f6; font-size: 22px; }
+.ig-handle { font-size: 18px; color: #8696a0; }
+
+/* DM bubbles */
+.dm-chat {
+  width: 100%; max-width: 780px;
+  display: flex; flex-direction: column; gap: 14px;
+  flex: 1;
+}
+
+.dm-msg {
+  max-width: 82%; padding: 20px 26px; border-radius: 22px;
+  font-size: 26px; line-height: 1.5;
+}
+.dm-msg.them {
+  background: #2a2a3e; align-self: flex-start;
+  border-bottom-left-radius: 6px;
+  color: #e2e8f0;
+}
+.dm-msg.me {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  align-self: flex-end;
+  border-bottom-right-radius: 6px;
+  color: #fff;
+}
+.dm-msg .emoji { font-size: 28px; }
+.dm-highlight {
+  background: rgba(16,185,129,0.2); color: #10b981;
+  padding: 2px 8px; border-radius: 6px; font-weight: 800;
+}
+
+/* Reaction */
+.dm-reaction {
+  align-self: flex-end;
+  margin-top: -8px; margin-right: 16px;
+  font-size: 32px;
+}
+
+/* Input bar */
+.dm-input {
+  width: 100%; max-width: 780px;
+  background: #2a2a3e; border-radius: 28px;
+  padding: 18px 28px;
+  display: flex; align-items: center; gap: 16px;
+  margin-top: 20px;
+}
+.dm-input-text { font-size: 22px; color: #6b7280; flex: 1; }
+.dm-input-send {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+
+/* Bottom CTA overlay */
+.cta-bar {
+  width: 100%; max-width: 780px;
+  background: rgba(16,185,129,0.1);
+  border: 2px solid rgba(16,185,129,0.3);
+  border-radius: 18px; padding: 24px 32px;
+  margin-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.cta-text {
+  font-size: 26px; font-weight: 700;
+}
+.cta-text span { color: #10b981; font-weight: 900; font-size: 32px; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 18px 44px; border-radius: 14px;
+  font-weight: 800; font-size: 26px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="ig-header">
+    <div class="ig-avatar">
+      <div class="ig-avatar-inner">N</div>
+    </div>
+    <div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <div class="ig-name">niksjansons</div>
+        <div class="ig-verified">●</div>
+      </div>
+      <div class="ig-handle">Aktīvs pirms 2 min</div>
+    </div>
+  </div>
+
+  <div class="dm-chat">
+    <div class="dm-msg them">
+      Yo, kā tu uztaisīji tik labu mājaslapu? <span class="emoji">🔥</span> Mans bizness arī vajag kautko tādu
+    </div>
+
+    <div class="dm-msg me">
+      Man to uztaisīja Sharpify par <span class="dm-highlight">€59</span> — bija gatava nākamajā dienā <span class="emoji">💪</span>
+    </div>
+
+    <div class="dm-msg them">
+      Kādu €59?? <span class="emoji">😳</span> Man aģentūra prasīja 1500
+    </div>
+
+    <div class="dm-msg me">
+      Jā, man arī tā bija. Tagad ir profesionāla lapa, strādā uz mobilā, ar kontaktu formu — viss iekļauts
+    </div>
+    <div class="dm-reaction">🤯</div>
+
+    <div class="dm-msg them">
+      Bro, sūti linku ASAP
+    </div>
+
+    <div class="dm-msg me">
+      reg.sharpify.lv — pamēģini, 100% garantija ir arī <span class="emoji">✅</span>
+    </div>
+  </div>
+
+  <div class="cta-bar">
+    <div class="cta-text">Profesionāla mājaslapa no <span>€59</span></div>
+    <div class="cta-btn">Sākt →</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --color-primary: #051c20; --color-teal: #00665e; --color-accent: #cedc00;
+      --font-heading: 'Poppins', sans-serif; --font-body: 'Montserrat', sans-serif; }
+    .bold-container { width: 1080px; height: 1080px;
+      background: linear-gradient(160deg, #031215 0%, #051c20 40%, #00665e 100%);
+      display: flex; flex-direction: column; position: relative; overflow: hidden; }
+    .geo-circle { position: absolute; border-radius: 50%; border: 3px solid var(--color-accent); opacity: 0.08; }
+    .geo-1 { width: 500px; height: 500px; top: -150px; right: -150px; }
+    .geo-2 { width: 300px; height: 300px; bottom: 120px; left: -100px; }
+    .bold-content { flex: 1; display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; padding: 80px 72px; position: relative; z-index: 2; }
+    .top-label { font-family: var(--font-body); font-size: 24px; font-weight: 700;
+      color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 40px; }
+    .headline { font-family: var(--font-heading); font-size: 72px; font-weight: 800;
+      color: #FFFFFF; line-height: 1.1; max-width: 920px; margin-bottom: 32px; }
+    .headline .accent { color: var(--color-accent); }
+    .accent-line { width: 80px; height: 5px; background: var(--color-accent); border-radius: 3px; margin-bottom: 32px; }
+    .body-text { font-family: var(--font-body); font-size: 32px; font-weight: 400;
+      color: rgba(255,255,255,0.65); line-height: 1.5; max-width: 800px; margin-bottom: 48px; }
+    .cta-btn { font-family: var(--font-heading); font-size: 38px; font-weight: 700;
+      color: #051c20; background: var(--color-accent); border: none;
+      border-radius: 16px; padding: 36px 80px; cursor: pointer;
+      box-shadow: 0 4px 24px rgba(206,220,0,0.3); }
+  </style>
+</head>
+<body>
+  <div class="bold-container">
+    <div class="geo-circle geo-1"></div>
+    <div class="geo-circle geo-2"></div>
+    <div class="bold-content">
+      <div class="top-label">Electrical Contractors</div>
+      <h1 class="headline">Your Skills Fill<br>the Job. Let Us <span class="accent">Fill</span><br><span class="accent">Your Calendar</span>.</h1>
+      <div class="accent-line"></div>
+      <p class="body-text">The system electrical contractors use to<br>stay booked weeks in advance.</p>
+      <button class="cta-btn">Get the Playbook →</button>
+    </div>
+  </div>
+</body>
+</html>

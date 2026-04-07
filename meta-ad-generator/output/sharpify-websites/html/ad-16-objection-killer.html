@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #050508;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 52px 64px 48px;
+  position: relative;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 40px;
+}
+.headline span { color: #10b981; }
+
+.objections {
+  flex: 1; display: flex; flex-direction: column; gap: 16px;
+}
+
+.objection {
+  display: flex; gap: 20px; align-items: flex-start;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px; padding: 22px 28px;
+}
+
+.obj-icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; flex-shrink: 0;
+}
+.obj-icon.fear { background: rgba(239,68,68,0.12); }
+.obj-icon.answer { background: rgba(16,185,129,0.12); }
+
+.obj-content { flex: 1; }
+.obj-fear {
+  font-size: 24px; color: #ef4444; font-weight: 700;
+  margin-bottom: 6px; font-style: italic;
+}
+.obj-answer {
+  font-size: 24px; color: #10b981; font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Combined row */
+.obj-row {
+  display: flex; gap: 16px;
+}
+.obj-side {
+  flex: 1; border-radius: 14px; padding: 20px 22px;
+}
+.obj-side.q {
+  background: rgba(239,68,68,0.05);
+  border: 1px solid rgba(239,68,68,0.12);
+}
+.obj-side.a {
+  background: rgba(16,185,129,0.05);
+  border: 1px solid rgba(16,185,129,0.15);
+}
+.obj-side .label {
+  font-size: 14px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; margin-bottom: 8px;
+}
+.obj-side.q .label { color: #ef4444; }
+.obj-side.a .label { color: #10b981; }
+.obj-side .text { font-size: 24px; line-height: 1.4; }
+.obj-side.q .text { color: #f87171; }
+.obj-side.a .text { color: #34d399; font-weight: 600; }
+
+.bottom {
+  display: flex; justify-content: center; align-items: center;
+  gap: 32px; margin-top: 28px;
+}
+.bottom-text { font-size: 24px; color: #64748b; }
+.bottom-text strong { color: #10b981; font-size: 32px; font-family: 'Montserrat', sans-serif; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 26px 56px; border-radius: 16px;
+  font-weight: 800; font-size: 32px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">"Bet kas ja..." — <span>Atbilžu laiks.</span></div>
+
+  <div class="objections">
+    <div class="obj-row">
+      <div class="obj-side q">
+        <div class="label">😰 Bažas</div>
+        <div class="text">"Kas ja man nepatiks dizains?"</div>
+      </div>
+      <div class="obj-side a">
+        <div class="label">✅ Realitāte</div>
+        <div class="text">Labojam, līdz esi apmierināts. 100%&nbsp;garantija.</div>
+      </div>
+    </div>
+
+    <div class="obj-row">
+      <div class="obj-side q">
+        <div class="label">😰 Bažas</div>
+        <div class="text">"Par €59 noteikti būs slikti..."</div>
+      </div>
+      <div class="obj-side a">
+        <div class="label">✅ Realitāte</div>
+        <div class="text">2 300+ uzņēmumi uzticas. AI + eksperti = kvalitāte par&nbsp;mazāk.</div>
+      </div>
+    </div>
+
+    <div class="obj-row">
+      <div class="obj-side q">
+        <div class="label">😰 Bažas</div>
+        <div class="text">"Man nav laika tam visam..."</div>
+      </div>
+      <div class="obj-side a">
+        <div class="label">✅ Realitāte</div>
+        <div class="text">10 min anketa. Mēs darām pārējo. Viss caur&nbsp;WhatsApp.</div>
+      </div>
+    </div>
+
+    <div class="obj-row">
+      <div class="obj-side q">
+        <div class="label">😰 Bažas</div>
+        <div class="text">"Vai strādās uz mobilā?"</div>
+      </div>
+      <div class="obj-side a">
+        <div class="label">✅ Realitāte</div>
+        <div class="text">Jā! Katra lapa ir 100% responsīva — telefons, planšete,&nbsp;dators.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="bottom-text">Sākot no <strong>€59</strong></div>
+    <div class="cta-btn">Pamēģini →</div>
+  </div>
+</body>
+</html>

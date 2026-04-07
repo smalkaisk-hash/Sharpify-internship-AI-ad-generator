@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(160deg, #111 0%, #0a0a0a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone {
+    width: 560px;
+    background: #1c1c1e;
+    border-radius: 44px;
+    padding: 14px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 0 3px #333;
+  }
+
+  .screen {
+    background: #1c1c1e;
+    border-radius: 34px;
+    overflow: hidden;
+  }
+
+  .notes-header {
+    padding: 20px 24px 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .notes-back {
+    font-size: 20px;
+    color: #F59E0B;
+    font-weight: 500;
+  }
+
+  .notes-title {
+    font-size: 20px;
+    color: #8e8e93;
+  }
+
+  .notes-body {
+    padding: 10px 28px 28px 28px;
+  }
+
+  .note-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .note-date {
+    font-size: 16px;
+    color: #636366;
+    margin-bottom: 24px;
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #2c2c2e;
+  }
+
+  .checkbox {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2.5px solid #48484a;
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkbox.checked {
+    background: #F59E0B;
+    border-color: #F59E0B;
+  }
+
+  .checkbox.checked::after {
+    content: '✓';
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .check-text {
+    font-size: 24px;
+    color: #e5e7eb;
+    line-height: 1.35;
+  }
+
+  .check-text.done {
+    text-decoration: line-through;
+    color: #636366;
+  }
+
+  .check-text .sub {
+    display: block;
+    font-size: 17px;
+    color: #636366;
+    margin-top: 2px;
+  }
+
+  .checklist-item.highlight .checkbox {
+    border-color: #F59E0B;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+  }
+
+  .checklist-item.highlight .check-text {
+    color: #F59E0B;
+    font-weight: 700;
+  }
+
+  .checklist-item.highlight .check-text .sub {
+    color: #d4a248;
+  }
+
+  .note-footer {
+    margin-top: 20px;
+    padding: 18px;
+    background: rgba(245, 158, 11, 0.08);
+    border: 1.5px solid rgba(245, 158, 11, 0.2);
+    border-radius: 14px;
+    text-align: center;
+  }
+
+  .note-footer-text {
+    font-size: 20px;
+    color: #F59E0B;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="phone">
+      <div class="screen">
+        <div class="notes-header">
+          <div class="notes-back">‹ Notes</div>
+          <div class="notes-title">Edited today</div>
+        </div>
+
+        <div class="notes-body">
+          <div class="note-heading">Things I need for my business</div>
+          <div class="note-date">April 7, 2025</div>
+
+          <div class="checklist-item">
+            <div class="checkbox checked"></div>
+            <div class="check-text done">Register business</div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="checkbox checked"></div>
+            <div class="check-text done">Set up business bank account</div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="checkbox checked"></div>
+            <div class="check-text done">Get business cards</div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="checkbox checked"></div>
+            <div class="check-text done">Create social media accounts</div>
+          </div>
+
+          <div class="checklist-item highlight">
+            <div class="checkbox"></div>
+            <div class="check-text">Get a professional website<span class="sub">web.sharpify.lv — starting at €59</span></div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="checkbox"></div>
+            <div class="check-text">Start running ads<span class="sub">Need website first...</span></div>
+          </div>
+
+          <div class="checklist-item">
+            <div class="checkbox"></div>
+            <div class="check-text">Get first client online</div>
+          </div>
+
+          <div class="note-footer">
+            <div class="note-footer-text">Check this off in 48 hours ⚡</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

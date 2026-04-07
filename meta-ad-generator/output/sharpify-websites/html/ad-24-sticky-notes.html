@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #1a1a2e;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 48px 44px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-conic-gradient(rgba(255,255,255,0.008) 0% 25%, transparent 0% 50%) 0 0 / 40px 40px;
+  pointer-events: none;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 32px;
+  position: relative; z-index: 1;
+}
+.headline span { color: #10b981; }
+
+.board {
+  flex: 1; display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px; position: relative; z-index: 1;
+}
+
+.sticky {
+  border-radius: 4px;
+  padding: 32px 28px;
+  position: relative;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+  display: flex; flex-direction: column;
+}
+.sticky::before {
+  content: '📌'; position: absolute;
+  top: -10px; left: 50%; transform: translateX(-50%);
+  font-size: 28px;
+}
+
+.sticky.yellow { background: #fef08a; color: #1a1a1a; transform: rotate(-1.5deg); }
+.sticky.pink { background: #fda4af; color: #1a1a1a; transform: rotate(1.5deg); }
+.sticky.green { background: #86efac; color: #1a1a1a; transform: rotate(-1deg); }
+.sticky.big-green { background: #10b981; color: #000; transform: rotate(1deg); }
+
+.sticky-title {
+  font-family: 'Caveat', cursive;
+  font-size: 36px; font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sticky-check {
+  font-family: 'Caveat', cursive;
+  font-size: 32px; font-weight: 600;
+  line-height: 1.5;
+}
+.strikethrough { text-decoration: line-through; opacity: 0.45; }
+
+.sticky-text {
+  font-family: 'Caveat', cursive;
+  font-size: 30px; line-height: 1.4;
+}
+
+/* Big green Sharpify card */
+.sticky.big-green {
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center;
+}
+.sticky.big-green .sticky-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px; font-weight: 900;
+  margin-bottom: 12px;
+}
+.sticky.big-green .sticky-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 84px; font-weight: 900;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.sticky.big-green .sticky-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px; font-weight: 600;
+  line-height: 1.4;
+}
+.sticky.big-green .sticky-cta {
+  margin-top: 20px;
+  background: #000; color: #10b981;
+  padding: 16px 44px; border-radius: 12px;
+  font-weight: 800; font-size: 28px;
+  font-family: 'Inter', sans-serif;
+}
+</style>
+</head>
+<body>
+  <div class="headline">Tavs biznesa <span>to-do list</span></div>
+
+  <div class="board">
+    <div class="sticky yellow">
+      <div class="sticky-title">❌ Vecais plāns:</div>
+      <div class="sticky-check"><span class="strikethrough">Sameklēt dizaineri</span></div>
+      <div class="sticky-check"><span class="strikethrough">Gaidīt 6 nedēļas</span></div>
+      <div class="sticky-check"><span class="strikethrough">Samaksāt €2000</span></div>
+      <div class="sticky-check"><span class="strikethrough">Vēl labojumi...</span></div>
+    </div>
+
+    <div class="sticky pink">
+      <div class="sticky-title">⚠️ Realitāte:</div>
+      <div class="sticky-text">
+        Katru dienu bez mājaslapas = zaudēti klienti.<br><br>
+        Tavi konkurenti jau ir online.
+      </div>
+    </div>
+
+    <div class="sticky green">
+      <div class="sticky-title">✅ Jaunais plāns:</div>
+      <div class="sticky-check">✅ Aizpildīt anketu</div>
+      <div class="sticky-check">✅ Saņemt WhatsApp</div>
+      <div class="sticky-check">✅ Mājaslapa gatava!</div>
+      <div class="sticky-text" style="margin-top: 14px; font-weight: 700; font-size: 28px;">Kopā: 10 min 🚀</div>
+    </div>
+
+    <div class="sticky big-green">
+      <div class="sticky-title">Sharpify</div>
+      <div class="sticky-price">€59</div>
+      <div class="sticky-desc">Profesionāla mājaslapa.<br>Gatava 1-3 dienās.</div>
+      <div class="sticky-cta">Pasūtīt →</div>
+    </div>
+  </div>
+</body>
+</html>

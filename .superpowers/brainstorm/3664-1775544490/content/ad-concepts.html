@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reklāmu koncepti — reg.sharpify.lv</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; padding: 40px 20px; }
+h1 { font-family: 'Montserrat', sans-serif; font-size: 28px; text-align: center; margin-bottom: 8px; }
+.subtitle { text-align: center; color: #888; margin-bottom: 48px; font-size: 15px; }
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.concept-card {
+  background: #151515;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #222;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.concept-card:hover { border-color: #10b981; transform: translateY(-4px); box-shadow: 0 12px 40px rgba(16,185,129,0.15); }
+.concept-card.selected { border-color: #10b981; box-shadow: 0 0 0 3px rgba(16,185,129,0.3); }
+
+.concept-label {
+  position: absolute; top: 12px; left: 12px;
+  background: #10b981; color: #000; font-weight: 700;
+  padding: 4px 12px; border-radius: 6px; font-size: 13px;
+  z-index: 2;
+}
+
+/* ========== AD MOCKUP 1: Price Disruption ========== */
+.ad-mock-1 {
+  width: 100%; aspect-ratio: 1/1;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 40px; position: relative; overflow: hidden;
+}
+.ad-mock-1::before {
+  content: ''; position: absolute; top: -50%; right: -50%;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%);
+}
+.ad-mock-1 .price-old {
+  font-family: 'Montserrat', sans-serif; font-size: 72px; font-weight: 900;
+  color: #ef4444; text-decoration: line-through; opacity: 0.6;
+  text-decoration-thickness: 4px; position: relative;
+}
+.ad-mock-1 .vs { color: #555; font-size: 20px; margin: 4px 0; font-weight: 600; }
+.ad-mock-1 .price-new {
+  font-family: 'Montserrat', sans-serif; font-size: 96px; font-weight: 900;
+  color: #10b981; position: relative;
+  text-shadow: 0 0 60px rgba(16,185,129,0.3);
+}
+.ad-mock-1 .tagline {
+  font-size: 22px; color: #94a3b8; margin-top: 16px; text-align: center;
+  max-width: 320px; line-height: 1.4; position: relative;
+}
+.ad-mock-1 .tagline strong { color: #fff; }
+.ad-mock-1 .cta-btn {
+  margin-top: 24px; background: #10b981; color: #000;
+  padding: 16px 48px; border-radius: 12px; font-weight: 800;
+  font-size: 18px; position: relative;
+}
+
+/* ========== AD MOCKUP 2: WhatsApp Chat ========== */
+.ad-mock-2 {
+  width: 100%; aspect-ratio: 1/1;
+  background: #0b141a;
+  display: flex; flex-direction: column;
+  padding: 0; position: relative;
+}
+.wa-header {
+  background: #1f2c34; padding: 14px 16px;
+  display: flex; align-items: center; gap: 12px;
+}
+.wa-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #10b981; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px; color: #000;
+}
+.wa-name { font-weight: 600; font-size: 15px; }
+.wa-status { font-size: 11px; color: #8696a0; }
+.wa-chat { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 8px; overflow: hidden; }
+.wa-msg {
+  max-width: 85%; padding: 10px 14px; border-radius: 10px;
+  font-size: 14px; line-height: 1.45; position: relative;
+}
+.wa-msg.them { background: #1f2c34; align-self: flex-start; border-top-left-radius: 2px; }
+.wa-msg.me { background: #005c4b; align-self: flex-end; border-top-right-radius: 2px; }
+.wa-msg .time { font-size: 10px; color: #8696a0; float: right; margin-left: 8px; margin-top: 4px; }
+.wa-msg .check { color: #53bdeb; font-size: 11px; }
+.wa-highlight { background: #10b981; color: #000; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+.wa-link-preview {
+  background: #1a2730; border-radius: 8px; margin-top: 6px; overflow: hidden;
+  border-left: 3px solid #10b981;
+}
+.wa-link-preview .wa-lp-body { padding: 8px 10px; }
+.wa-link-preview .wa-lp-title { font-size: 12px; font-weight: 600; color: #e9edef; }
+.wa-link-preview .wa-lp-desc { font-size: 11px; color: #8696a0; margin-top: 2px; }
+
+/* ========== AD MOCKUP 3: Comparison ========== */
+.ad-mock-3 {
+  width: 100%; aspect-ratio: 1/1;
+  background: #0f172a;
+  display: flex; flex-direction: column;
+  padding: 32px; position: relative;
+}
+.ad-mock-3 .comp-title {
+  font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900;
+  text-align: center; margin-bottom: 24px; line-height: 1.2;
+}
+.ad-mock-3 .comp-title span { color: #10b981; }
+.comp-columns { display: flex; gap: 16px; flex: 1; }
+.comp-col {
+  flex: 1; border-radius: 12px; padding: 20px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.comp-col.bad { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); }
+.comp-col.good { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2); }
+.comp-col h3 { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
+.comp-col.bad h3 { color: #ef4444; }
+.comp-col.good h3 { color: #10b981; }
+.comp-item { font-size: 13px; display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; color: #cbd5e1; }
+.comp-item .icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.ad-mock-3 .comp-cta {
+  margin-top: 16px; background: #10b981; color: #000;
+  padding: 14px 40px; border-radius: 12px; font-weight: 800;
+  font-size: 16px; text-align: center; align-self: center;
+}
+
+/* ========== AD MOCKUP 4: Receipt ========== */
+.ad-mock-4 {
+  width: 100%; aspect-ratio: 1/1;
+  background: #fafaf5;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 28px; position: relative;
+  font-family: 'Courier New', monospace; color: #1a1a1a;
+}
+.receipt-header { text-align: center; border-bottom: 2px dashed #ccc; padding-bottom: 12px; width: 100%; }
+.receipt-header h3 { font-size: 22px; font-weight: 900; letter-spacing: 2px; font-family: 'Montserrat', sans-serif; }
+.receipt-header p { font-size: 11px; color: #888; margin-top: 4px; }
+.receipt-items { width: 100%; margin-top: 16px; }
+.receipt-item {
+  display: flex; justify-content: space-between; padding: 7px 0;
+  border-bottom: 1px dotted #ddd; font-size: 13px;
+}
+.receipt-item .label { color: #333; }
+.receipt-item .value { font-weight: 700; color: #333; }
+.receipt-item .value.strike { text-decoration: line-through; color: #999; }
+.receipt-total {
+  display: flex; justify-content: space-between; padding: 14px 0;
+  border-top: 2px dashed #ccc; border-bottom: 2px dashed #ccc;
+  margin-top: 8px; font-size: 20px; font-weight: 900; width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.receipt-total .value { color: #10b981; }
+.receipt-footer { margin-top: auto; text-align: center; padding-top: 12px; }
+.receipt-footer p { font-size: 11px; color: #888; }
+.receipt-footer .brand { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 14px; color: #1a1a1a; margin-top: 6px; }
+.receipt-saved {
+  background: #10b981; color: #000; padding: 8px 20px;
+  border-radius: 8px; font-family: 'Inter', sans-serif;
+  font-weight: 800; font-size: 14px; margin-top: 12px; text-align: center;
+}
+
+/* ========== Card details ========== */
+.concept-info { padding: 20px; }
+.concept-info h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; margin-bottom: 8px; }
+.concept-info p { color: #999; font-size: 13px; line-height: 1.5; }
+.concept-info .tags { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.concept-info .tag {
+  background: #1e1e1e; color: #10b981; padding: 4px 10px;
+  border-radius: 6px; font-size: 11px; font-weight: 600;
+}
+
+.select-hint {
+  text-align: center; margin-top: 40px; color: #555; font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<h1>Reklāmu koncepti priekš reg.sharpify.lv</h1>
+<p class="subtitle">Noklikšķini uz konceptiem, kas patīk. Var izvēlēties vairākus.</p>
+
+<div class="concepts-grid">
+
+  <!-- CONCEPT 1: Price Disruption -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">A</span>
+    <div class="ad-mock-1">
+      <div class="price-old">€2 000</div>
+      <div class="vs">aģentūra parasti prasa</div>
+      <div class="price-new">€59</div>
+      <div class="tagline"><strong>Profesionāla mājaslapa.</strong><br>Gatava 1-3 dienās.</div>
+      <div class="cta-btn">Iegūsti mājaslapu →</div>
+    </div>
+    <div class="concept-info">
+      <h3>Cenas šoks</h3>
+      <p>Uzreiz piesaista uzmanību ar dramatisko cenas starpību. Ļoti efektīvs scroll-stopper — cilvēki nevar nepamanīt €2000 vs €59.</p>
+      <div class="tags">
+        <span class="tag">Scroll-stopper</span>
+        <span class="tag">Price anchor</span>
+        <span class="tag">Bold statement</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT 2: WhatsApp Chat -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">B</span>
+    <div class="ad-mock-2">
+      <div class="wa-header">
+        <div class="wa-avatar">S</div>
+        <div>
+          <div class="wa-name">Sharpify komanda</div>
+          <div class="wa-status">tiešsaistē</div>
+        </div>
+      </div>
+      <div class="wa-chat">
+        <div class="wa-msg them">
+          Čau! Man vajag mājaslapu savam biznesam, bet aģentūras prasa 2000€+ 😅
+          <span class="time">14:22</span>
+        </div>
+        <div class="wa-msg me">
+          Mēs uzbūvēsim par <span class="wa-highlight">€59</span> 🔥 Profesionālu, modernu, gatavu 1-3 dienās
+          <span class="time">14:23 <span class="check">✓✓</span></span>
+        </div>
+        <div class="wa-msg them">
+          Wait, seriously? Kas tajā iekļauts?
+          <span class="time">14:23</span>
+        </div>
+        <div class="wa-msg me">
+          Individuāls dizains, mobilā versija, kontaktu forma, SEO pamati. Nav šabloni. Visu pielāgojam Tavam biznesam 💪
+          <span class="time">14:24 <span class="check">✓✓</span></span>
+        </div>
+        <div class="wa-msg them">
+          Ok bet kā es zinu ka būs labi?
+          <span class="time">14:24</span>
+        </div>
+        <div class="wa-msg me">
+          2 300+ uzņēmumi jau uzticas. Plus 100% apmierinātības garantija — labojam līdz esi apmierināts ✅
+          <span class="time">14:25 <span class="check">✓✓</span></span>
+          <div class="wa-link-preview">
+            <div class="wa-lp-body">
+              <div class="wa-lp-title">reg.sharpify.lv</div>
+              <div class="wa-lp-desc">Profesionāla mājaslapa sākot no €59</div>
+            </div>
+          </div>
+        </div>
+        <div class="wa-msg them">
+          Nākamais solis? 👀
+          <span class="time">14:26</span>
+        </div>
+      </div>
+    </div>
+    <div class="concept-info">
+      <h3>WhatsApp saruna</h3>
+      <p>Izskatās kā reāla WhatsApp saruna — native feel feedā. Cilvēki apstājas, jo domā, ka tas ir čats. Parāda procesu caur dialogu.</p>
+      <div class="tags">
+        <span class="tag">Native format</span>
+        <span class="tag">Storytelling</span>
+        <span class="tag">UGC feel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT 3: Comparison -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">C</span>
+    <div class="ad-mock-3">
+      <div class="comp-title">Aģentūra vs <span>Sharpify</span></div>
+      <div class="comp-columns">
+        <div class="comp-col bad">
+          <h3>❌ Tradicionāli</h3>
+          <div class="comp-item"><span class="icon">💸</span> €500 — €2 000+</div>
+          <div class="comp-item"><span class="icon">🐌</span> 4-12 nedēļas gaidīšana</div>
+          <div class="comp-item"><span class="icon">😵</span> Bezgalīgas sarakstītes</div>
+          <div class="comp-item"><span class="icon">🎰</span> Nav garantijas, ka strādās</div>
+          <div class="comp-item"><span class="icon">📱</span> Bieži salauzta uz mobilā</div>
+        </div>
+        <div class="comp-col good">
+          <h3>✅ Sharpify</h3>
+          <div class="comp-item"><span class="icon">💰</span> Sākot no €59</div>
+          <div class="comp-item"><span class="icon">⚡</span> Gatava 1-3 dienās</div>
+          <div class="comp-item"><span class="icon">💬</span> Viss caur WhatsApp</div>
+          <div class="comp-item"><span class="icon">🛡️</span> 100% apmierinātības garantija</div>
+          <div class="comp-item"><span class="icon">📱</span> Perfekta uz visām ierīcēm</div>
+        </div>
+      </div>
+      <div class="comp-cta">Iegūsti mājaslapu par €59 →</div>
+    </div>
+    <div class="concept-info">
+      <h3>Salīdzinājums</h3>
+      <p>Klasisks "mēs vs viņi" formāts. Uzreiz redzams, kāpēc Sharpify ir labāka izvēle. Ļoti efektīvs racionāliem pircējiem.</p>
+      <div class="tags">
+        <span class="tag">Comparison</span>
+        <span class="tag">Logical appeal</span>
+        <span class="tag">Clear value</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT 4: Receipt -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">D</span>
+    <div class="ad-mock-4">
+      <div class="receipt-header">
+        <h3>SHARPIFY</h3>
+        <p>Rēķins #2301 • 07.04.2026</p>
+      </div>
+      <div class="receipt-items">
+        <div class="receipt-item"><span class="label">Profesionāla mājaslapa</span><span class="value strike">€2 000</span></div>
+        <div class="receipt-item"><span class="label">Mobilā versija</span><span class="value strike">€300</span></div>
+        <div class="receipt-item"><span class="label">Kontaktu forma</span><span class="value strike">€150</span></div>
+        <div class="receipt-item"><span class="label">SEO optimizācija</span><span class="value strike">€200</span></div>
+        <div class="receipt-item"><span class="label">WhatsApp čata poga</span><span class="value strike">€100</span></div>
+        <div class="receipt-item"><span class="label">Individuāls dizains</span><span class="value strike">€500</span></div>
+        <div class="receipt-item"><span class="label">1-3 dienu piegāde</span><span class="value strike">€250</span></div>
+      </div>
+      <div class="receipt-total">
+        <span class="label">KOPĀ:</span>
+        <span class="value">€59</span>
+      </div>
+      <div class="receipt-saved">Tu ietaupi €3 441 💰</div>
+      <div class="receipt-footer">
+        <p>2 300+ apmierināti uzņēmumi</p>
+        <p class="brand">reg.sharpify.lv</p>
+      </div>
+    </div>
+    <div class="concept-info">
+      <h3>Rēķina formāts</h3>
+      <p>Unikāls "čeka" stils — cilvēki feedā to nekad neredz. Vizuāli parāda visu, ko saņem, un cik daudz ietaupa. Super scroll-stopper.</p>
+      <div class="tags">
+        <span class="tag">Unikāls formāts</span>
+        <span class="tag">Value stack</span>
+        <span class="tag">Scroll-stopper</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="select-hint">Noklikšķini uz konceptiem, kas patīk — var izvēlēties vairākus. Atbildi terminālā.</p>
+
+</body>
+</html>

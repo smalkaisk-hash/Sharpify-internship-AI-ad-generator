@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .track-header {
+    background: #F59E0B;
+    padding: 36px 50px;
+  }
+
+  .track-label {
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .track-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #000000;
+  }
+
+  .track-id {
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .track-body {
+    flex: 1;
+    padding: 40px 50px;
+  }
+
+  .status-badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 30px;
+    margin-bottom: 36px;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    bottom: 10px;
+    width: 4px;
+    background: #e5e7eb;
+  }
+
+  .step {
+    position: relative;
+    padding-bottom: 36px;
+  }
+
+  .step:last-child {
+    padding-bottom: 0;
+  }
+
+  .step-dot {
+    position: absolute;
+    left: -50px;
+    top: 4px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    z-index: 1;
+  }
+
+  .step-dot.done {
+    background: #16a34a;
+    color: white;
+  }
+
+  .step-dot.done::after { content: '✓'; }
+
+  .step-dot.current {
+    background: #F59E0B;
+    color: white;
+    box-shadow: 0 0 0 8px rgba(245, 158, 11, 0.2);
+  }
+
+  .step-dot.current::after { content: '⚡'; font-size: 20px; }
+
+  .step-dot.pending {
+    background: #e5e7eb;
+    color: #9ca3af;
+  }
+
+  .step-dot.pending::after { content: '·'; font-size: 26px; }
+
+  .step-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+
+  .step-desc {
+    font-size: 20px;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+
+  .step-time {
+    font-size: 17px;
+    color: #9ca3af;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .step.active .step-title { color: #F59E0B; }
+
+  .delivery-box {
+    margin-top: 36px;
+    background: #fffbeb;
+    border: 2px solid #F59E0B;
+    border-radius: 18px;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .delivery-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .delivery-icon {
+    font-size: 40px;
+  }
+
+  .delivery-text {
+    font-size: 22px;
+    color: #92400e;
+    font-weight: 600;
+  }
+
+  .delivery-text .bold {
+    font-weight: 800;
+    color: #000;
+  }
+
+  .delivery-price {
+    text-align: right;
+  }
+
+  .delivery-old {
+    font-size: 20px;
+    color: #9ca3af;
+    text-decoration: line-through;
+  }
+
+  .delivery-new {
+    font-size: 42px;
+    font-weight: 900;
+    color: #16a34a;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="track-header">
+      <div class="track-label">Order Tracking</div>
+      <div class="track-title">Your Website</div>
+      <div class="track-id">Sharpify &middot; Order #SHP-2025</div>
+    </div>
+
+    <div class="track-body">
+      <div class="status-badge">● On Track — Estimated delivery: Wednesday</div>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="step-dot done"></div>
+          <div class="step-title">Order Placed</div>
+          <div class="step-desc">You chose your plan and filled out the questionnaire</div>
+          <div class="step-time">Monday, 9:14 AM</div>
+        </div>
+
+        <div class="step">
+          <div class="step-dot done"></div>
+          <div class="step-title">Design Started</div>
+          <div class="step-desc">Our team is building your custom website</div>
+          <div class="step-time">Monday, 11:30 AM</div>
+        </div>
+
+        <div class="step active">
+          <div class="step-dot current"></div>
+          <div class="step-title">Being Built Right Now</div>
+          <div class="step-desc">Custom design, mobile optimization, contact forms, SEO</div>
+          <div class="step-time">Tuesday, 2:45 PM</div>
+        </div>
+
+        <div class="step">
+          <div class="step-dot pending"></div>
+          <div class="step-title">Review on WhatsApp</div>
+          <div class="step-desc">We send it to you. You request any changes.</div>
+        </div>
+
+        <div class="step">
+          <div class="step-dot pending"></div>
+          <div class="step-title">Website Live 🎉</div>
+          <div class="step-desc">Your professional website is online</div>
+        </div>
+      </div>
+
+      <div class="delivery-box">
+        <div class="delivery-left">
+          <div class="delivery-icon">📦</div>
+          <div class="delivery-text">Delivered in <span class="bold">1-3 days</span><br>Not 6-8 weeks.</div>
+        </div>
+        <div class="delivery-price">
+          <div class="delivery-old">€299</div>
+          <div class="delivery-new">€59</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

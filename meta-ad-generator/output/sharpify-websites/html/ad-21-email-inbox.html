@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0f172a;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 48px 44px;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 10px;
+}
+.headline span { color: #10b981; }
+.sub { font-size: 24px; color: #64748b; text-align: center; margin-bottom: 32px; }
+
+/* Email client */
+.email-app {
+  flex: 1; background: #1e293b;
+  border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex; flex-direction: column;
+}
+
+.email-toolbar {
+  background: #0f172a; padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.email-toolbar-left { display: flex; align-items: center; gap: 12px; }
+.toolbar-dot { width: 12px; height: 12px; border-radius: 50%; }
+.toolbar-dot.r { background: #ef4444; }
+.toolbar-dot.y { background: #f59e0b; }
+.toolbar-dot.g { background: #10b981; }
+.email-tab {
+  font-size: 16px; font-weight: 600; padding: 6px 16px;
+  border-radius: 8px; margin-left: 16px;
+}
+.email-tab.active { background: rgba(16,185,129,0.12); color: #10b981; }
+.email-tab.inactive { color: #475569; }
+.inbox-count {
+  background: #ef4444; color: #fff; padding: 4px 12px;
+  border-radius: 12px; font-size: 14px; font-weight: 700;
+}
+
+.email-list { flex: 1; overflow: hidden; }
+
+.email-row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.email-row.unread { background: rgba(16,185,129,0.04); }
+.email-row.unread .email-sender { color: #fff; font-weight: 700; }
+.email-row.unread .email-subject { color: #e2e8f0; font-weight: 600; }
+
+.email-dot-new {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #10b981; flex-shrink: 0;
+}
+.email-dot-read {
+  width: 10px; height: 10px; flex-shrink: 0;
+}
+
+.email-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 18px; flex-shrink: 0;
+}
+.av1 { background: #3b82f6; color: #fff; }
+.av2 { background: #f59e0b; color: #000; }
+.av3 { background: #8b5cf6; color: #fff; }
+.av4 { background: #ec4899; color: #fff; }
+.av5 { background: #10b981; color: #000; }
+.av6 { background: #ef4444; color: #fff; }
+.av7 { background: #6366f1; color: #fff; }
+
+.email-content { flex: 1; min-width: 0; }
+.email-sender { font-size: 18px; color: #94a3b8; }
+.email-subject { font-size: 20px; color: #cbd5e1; margin-top: 2px; }
+.email-preview { font-size: 16px; color: #475569; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.email-time { font-size: 14px; color: #475569; white-space: nowrap; flex-shrink: 0; }
+.email-time.new { color: #10b981; font-weight: 600; }
+
+/* Bottom CTA */
+.bottom {
+  display: flex; justify-content: center; margin-top: 24px;
+}
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 26px 64px; border-radius: 16px;
+  font-weight: 800; font-size: 34px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Tavs inbox pēc <span>1 nedēļas</span></div>
+  <div class="sub">ar profesionālu mājaslapu 👇</div>
+
+  <div class="email-app">
+    <div class="email-toolbar">
+      <div class="email-toolbar-left">
+        <div class="toolbar-dot r"></div>
+        <div class="toolbar-dot y"></div>
+        <div class="toolbar-dot g"></div>
+        <div class="email-tab active">📥 Ienākošie</div>
+        <div class="email-tab inactive">⭐ Svarīgie</div>
+      </div>
+      <div class="inbox-count">7 jauni</div>
+    </div>
+
+    <div class="email-list">
+      <div class="email-row unread">
+        <div class="email-dot-new"></div>
+        <div class="email-avatar av1">A</div>
+        <div class="email-content">
+          <div class="email-sender">Andris Kalniņš</div>
+          <div class="email-subject">Vēlos pieteikties konsultācijai</div>
+          <div class="email-preview">Sveiki! Atradu jūsu mājaslapu Google un gribētu uzzināt vairāk par...</div>
+        </div>
+        <div class="email-time new">Tikko</div>
+      </div>
+
+      <div class="email-row unread">
+        <div class="email-dot-new"></div>
+        <div class="email-avatar av2">S</div>
+        <div class="email-content">
+          <div class="email-sender">SIA "Nordic Build"</div>
+          <div class="email-subject">Sadarbības piedāvājums</div>
+          <div class="email-preview">Labdien, mūs interesē jūsu pakalpojumi. Vai varētu sarunāt tikšanos...</div>
+        </div>
+        <div class="email-time new">12 min</div>
+      </div>
+
+      <div class="email-row unread">
+        <div class="email-dot-new"></div>
+        <div class="email-avatar av3">L</div>
+        <div class="email-content">
+          <div class="email-sender">Līga Bērziņa</div>
+          <div class="email-subject">Jautājums par cenām</div>
+          <div class="email-preview">Čau! Redzēju jūsu lapu — ļoti profesionāli izskatās. Cik maksā...</div>
+        </div>
+        <div class="email-time new">34 min</div>
+      </div>
+
+      <div class="email-row unread">
+        <div class="email-dot-new"></div>
+        <div class="email-avatar av4">M</div>
+        <div class="email-content">
+          <div class="email-sender">Marta Ozoliņa</div>
+          <div class="email-subject">Rekomendēja draudzene</div>
+          <div class="email-preview">Man draudzene ieteica jūsu pakalpojumus, vēlos uzzināt...</div>
+        </div>
+        <div class="email-time new">1 st</div>
+      </div>
+
+      <div class="email-row unread">
+        <div class="email-dot-new"></div>
+        <div class="email-avatar av5">J</div>
+        <div class="email-content">
+          <div class="email-sender">Jānis Pētersons</div>
+          <div class="email-subject">Pasūtījums no mājaslapas</div>
+          <div class="email-preview">Aizpildīju formu jūsu lapā. Vēlos sākt pēc iespējas ātrāk...</div>
+        </div>
+        <div class="email-time new">2 st</div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-dot-read"></div>
+        <div class="email-avatar av6">K</div>
+        <div class="email-content">
+          <div class="email-sender">Kristaps Vanags</div>
+          <div class="email-subject">Re: Piedāvājums</div>
+          <div class="email-preview">Paldies, esam gatavi turpināt. Kad varam sākt?</div>
+        </div>
+        <div class="email-time">vakar</div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-dot-read"></div>
+        <div class="email-avatar av7">R</div>
+        <div class="email-content">
+          <div class="email-sender">Raivis Liepiņš</div>
+          <div class="email-subject">Apmaksāts rēķins #147</div>
+          <div class="email-preview">Rēķins ir apmaksāts. Paldies par ātro darbu!</div>
+        </div>
+        <div class="email-time">vakar</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta-btn">Iegūsti mājaslapu — €59 →</div>
+  </div>
+</body>
+</html>

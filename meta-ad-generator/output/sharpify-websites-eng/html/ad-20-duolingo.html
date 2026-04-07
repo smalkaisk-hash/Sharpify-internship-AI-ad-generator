@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(170deg, #111 0%, #0a0a0a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .notif-card {
+    width: 700px;
+    background: #1c1c1e;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+
+  .notif-top {
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #1c1c1e;
+  }
+
+  .notif-icon {
+    width: 52px;
+    height: 52px;
+    background: #58CC02;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .notif-app {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8e8e93;
+  }
+
+  .notif-time {
+    font-size: 16px;
+    color: #636366;
+    margin-left: auto;
+  }
+
+  .notif-body-area {
+    padding: 0 30px 30px 30px;
+  }
+
+  .notif-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .notif-text {
+    font-size: 22px;
+    color: #aeaeb2;
+    line-height: 1.45;
+  }
+
+  .streak-section {
+    background: #2c2c2e;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .streak-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .streak-fire {
+    font-size: 40px;
+  }
+
+  .streak-text {
+    font-size: 20px;
+    color: #aeaeb2;
+  }
+
+  .streak-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ef4444;
+  }
+
+  .streak-label {
+    font-size: 16px;
+    color: #636366;
+  }
+
+  .days-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .day {
+    width: 80px;
+    text-align: center;
+  }
+
+  .day-label {
+    font-size: 16px;
+    color: #636366;
+    margin-bottom: 8px;
+  }
+
+  .day-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  .day-circle.missed {
+    background: #3a3a3c;
+    border: 2px solid #48484a;
+  }
+
+  .day-circle.missed::after {
+    content: '✗';
+    color: #ef4444;
+    font-weight: 700;
+  }
+
+  .day-circle.today {
+    background: rgba(245, 158, 11, 0.15);
+    border: 3px solid #F59E0B;
+  }
+
+  .day-circle.today::after {
+    content: '?';
+    color: #F59E0B;
+    font-weight: 800;
+    font-size: 28px;
+  }
+
+  .bottom-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .bottom-headline {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .bottom-headline .accent {
+    color: #F59E0B;
+  }
+
+  .bottom-sub {
+    font-size: 22px;
+    color: #6b7280;
+  }
+
+  .bottom-sub .green { color: #58CC02; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="notif-card">
+      <div class="notif-top">
+        <div class="notif-icon">🦉</div>
+        <div class="notif-app">Your Business</div>
+        <div class="notif-time">just now</div>
+      </div>
+
+      <div class="notif-body-area">
+        <div class="notif-title">You still don't have a website.</div>
+        <div class="notif-text">Your competitors do. Your clients are looking for you online and finding nothing. This is your sign. Fix it today.</div>
+      </div>
+
+      <div class="streak-section">
+        <div class="streak-left">
+          <div class="streak-fire">🔥</div>
+          <div class="streak-text">Days without a website</div>
+        </div>
+        <div>
+          <div class="streak-number">365</div>
+          <div class="streak-label">day streak</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="days-row">
+      <div class="day">
+        <div class="day-label">Mon</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Tue</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Wed</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Thu</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Fri</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Sat</div>
+        <div class="day-circle missed"></div>
+      </div>
+      <div class="day">
+        <div class="day-label">Today</div>
+        <div class="day-circle today"></div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="bottom-headline">Break the streak. <span class="accent">€59.</span></div>
+      <div class="bottom-sub"><span class="green">web.sharpify.lv</span> — ready in 1-3 days</div>
+    </div>
+  </div>
+</body>
+</html>

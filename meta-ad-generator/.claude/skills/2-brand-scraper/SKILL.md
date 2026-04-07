@@ -35,32 +35,44 @@ Run this skill after `/ad-intake` when you have the client's website URL and nee
    - If set: this overrides the scraper's auto-detection. After scraping, update `brand-assets.json → product_category.type` to match the client brief value, and set confidence to `"manual"`.
    - If `null` or not set: use the scraper's auto-detected category as-is.
 
-4. **Review the scraped results** by reading `brand-assets.json`.
+4. **Resolve `ad_type` if still null**:
+   - Read `client-brief.json → ad_type`
+   - If it's `null`, resolve it from the scraped `product_category.type`:
+     - `"tangible"` → set `ad_type` to `"client-tangible"`
+     - `"intangible"` → set `ad_type` to `"client-intangible"`
+   - Write the resolved `ad_type` back to `client-brief.json`
 
-4. **Refine the color suggestions** if needed:
+5. **Flag product image availability** for tangible clients:
+   - Add `has_product_images: true/false` to `brand-assets.json`
+   - Set to `true` if any images were downloaded to `images/product-*.{ext}`
+   - Set to `false` if no product images were found — the pipeline will ask the user for photos later
+
+6. **Review the scraped results** by reading `brand-assets.json`.
+
+7. **Refine the color suggestions** if needed:
    - The script auto-suggests primary/secondary/accent from frequency data
    - For Wix sites: check `wix_variables` for the site's actual color scheme
    - Verify contrast: ensure suggested `text` color has >= 4.5:1 ratio against `background`
    - If the scraped colors look wrong (e.g., all grays from a framework), examine the Wix color variables or page-specific styles
 
-5. **Review product category detection**:
+8. **Review product category detection**:
    - Check `brand-assets.json → product_category` for the detected type and confidence
    - The scraper now auto-detects whether the client sells tangible (physical) or intangible (services/digital) products
    - If confidence is `"low"`: review the signals and correct if needed — look at the website manually
    - If `"tangible"`: verify that product images were downloaded to `images/product-*.{ext}`
    - The category determines which templates, copy rules, and design rules are used downstream
 
-6. **Verify image downloads**:
+9. **Verify image downloads**:
    - Check `output/{client-slug}/brief/images/` for downloaded files
    - Confirm at least 1 usable hero image exists
    - For tangible products: confirm usable product images exist. If scraper missed them, manually download product photos from the site.
    - If logo wasn't auto-detected, manually note which image is the logo
 
-7. **Update brand-assets.json** if manual corrections are needed:
+10. **Update brand-assets.json** if manual corrections are needed:
    - Fix `suggested.primary` / `secondary` / `accent` if auto-detection missed the real brand colors
    - Update `suggested.heading` / `body` font if the most-used font is a system font and a branded font was found lower in the list
 
-8. **Print summary**: colors found, primary/secondary/accent hex values, heading font, number of images downloaded, product category (tangible/intangible + confidence).
+11. **Print summary**: colors found, primary/secondary/accent hex values, heading font, number of images downloaded, product category (tangible/intangible + confidence).
 
 ## Fallback — If Scraper Fails
 If the Puppeteer script fails (CORS, heavy JavaScript site, etc.):

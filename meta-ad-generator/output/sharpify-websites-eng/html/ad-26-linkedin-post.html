@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: #f3f2ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post {
+    width: 700px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .post-header {
+    padding: 20px 24px 14px 24px;
+    display: flex;
+    gap: 14px;
+  }
+
+  .post-avatar {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #0077b5, #00a0dc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .post-user-info { flex: 1; }
+
+  .post-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .post-title-li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.3;
+  }
+
+  .post-time {
+    font-size: 15px;
+    color: #999;
+    margin-top: 2px;
+  }
+
+  .post-body {
+    padding: 0 24px 20px 24px;
+  }
+
+  .post-text {
+    font-size: 21px;
+    color: #191919;
+    line-height: 1.55;
+  }
+
+  .post-text .bold { font-weight: 700; }
+  .post-text .hashtag { color: #0a66c2; font-weight: 600; }
+
+  .post-text p {
+    margin-bottom: 14px;
+  }
+
+  .post-engagement {
+    padding: 12px 24px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reactions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .reaction-icons {
+    display: flex;
+  }
+
+  .reaction-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: -4px;
+  }
+
+  .reaction-icon.like { background: #0a66c2; }
+  .reaction-icon.love { background: #df704d; }
+  .reaction-icon.clap { background: #6dae4f; }
+
+  .reaction-count {
+    font-size: 16px;
+    color: #666;
+    margin-left: 8px;
+  }
+
+  .comments-count {
+    font-size: 16px;
+    color: #666;
+  }
+
+  .post-actions {
+    padding: 8px 24px 14px 24px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .post-action {
+    font-size: 17px;
+    color: #666;
+    font-weight: 600;
+    padding: 10px 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="post">
+      <div class="post-header">
+        <div class="post-avatar">M</div>
+        <div class="post-user-info">
+          <div class="post-name">Mark Thompson</div>
+          <div class="post-title-li">Founder @ Thompson Consulting | Business Strategy</div>
+          <div class="post-time">2d • 🌐</div>
+        </div>
+      </div>
+
+      <div class="post-body">
+        <div class="post-text">
+          <p>I need to be honest about something.</p>
+
+          <p>I ran my consulting business for <span class="bold">14 months</span> without a website.</p>
+
+          <p>I told myself I didn't need one. "Referrals are enough." "I'll get to it eventually." "It's too expensive."</p>
+
+          <p>Meanwhile, potential clients were Googling my name and finding <span class="bold">nothing</span>.</p>
+
+          <p>Last week I finally got one. Took <span class="bold">2 days</span>. Cost me <span class="bold">€59</span>.</p>
+
+          <p>This week? 4 new enquiries. All from people who said "I checked out your website first."</p>
+
+          <p>14 months of lost opportunities because I kept putting it off.</p>
+
+          <p>If you're a service business without a website — <span class="bold">stop waiting</span>. It's not 2005 anymore. You don't need to spend thousands. You don't need to learn code. You just need to do it.</p>
+
+          <p><span class="hashtag">#SmallBusiness</span> <span class="hashtag">#Entrepreneurship</span> <span class="hashtag">#LessonLearned</span></p>
+        </div>
+      </div>
+
+      <div class="post-engagement">
+        <div class="reactions">
+          <div class="reaction-icons">
+            <div class="reaction-icon like">👍</div>
+            <div class="reaction-icon love">❤️</div>
+            <div class="reaction-icon clap">👏</div>
+          </div>
+          <div class="reaction-count">2,847</div>
+        </div>
+        <div class="comments-count">312 comments • 89 reposts</div>
+      </div>
+
+      <div class="post-actions">
+        <div class="post-action">👍 Like</div>
+        <div class="post-action">💬 Comment</div>
+        <div class="post-action">🔄 Repost</div>
+        <div class="post-action">📤 Send</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

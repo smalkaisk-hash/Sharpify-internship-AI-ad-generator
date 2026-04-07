@@ -65,6 +65,8 @@ Run this skill when a user pastes raw client information (name, website, target 
   "guarantees": ["Guarantee 1", "Guarantee 2"],
   "capacity": "10 clients/month",
   "product_type": "tangible / intangible / null",
+  "ad_type": "client-tangible / client-intangible / null",
+  "ad_count": 6,
   "ad_strategy": {
     "recommended_objective": "Lead Generation / Conversions / Awareness",
     "recommended_cta": "Book Now / Sign Up / Learn More / Send Message",
@@ -79,12 +81,23 @@ Run this skill when a user pastes raw client information (name, website, target 
    - `null` — if the client data doesn't make it clear. The brand scraper will auto-detect from the website.
    - This field overrides the scraper's auto-detection when set, so only set it when you're confident.
 
-6. **Fill in the `ad_strategy` section** based on your analysis:
+6. **Set `ad_type`** based on `product_type`:
+   - If `product_type` is `"tangible"` → set `"ad_type": "client-tangible"`
+   - If `product_type` is `"intangible"` → set `"ad_type": "client-intangible"`
+   - If `product_type` is `null` → set `"ad_type": null` (the brand scraper will resolve it)
+
+7. **Set `ad_count`** — default is `6`. Increase to `7-8` if the client data is rich:
+   - Has 3+ testimonials/reviews → +1
+   - Has specific stats/numbers (revenue, client count, etc.) → +1
+   - Has clear competitor differentiators AND active promotions → +1
+   - Maximum is `8`.
+
+8. **Fill in the `ad_strategy` section** based on your analysis:
    - If client gets clients via discovery calls → recommend Lead Generation objective with "Book Now" CTA
    - If client sells products directly → recommend Conversions with "Shop Now" CTA
    - If client is new/building awareness → recommend Awareness with "Learn More" CTA
 
-7. **Print a summary** after saving, confirming: client name, language detected, product type (if set), number of pain points extracted, recommended ad objective.
+9. **Print a summary** after saving, confirming: client name, language detected, product type (if set), ad type, ad count, number of pain points extracted, recommended ad objective.
 
 ## Important Rules
 - NEVER invent or fabricate client data. Only use what was provided.

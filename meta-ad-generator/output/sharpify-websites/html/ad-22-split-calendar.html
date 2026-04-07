@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #050508;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex;
+  position: relative;
+}
+
+.side {
+  flex: 1; display: flex; flex-direction: column;
+  padding: 48px 36px;
+}
+.side.left { background: rgba(239,68,68,0.03); }
+.side.right { background: rgba(16,185,129,0.03); }
+
+.divider {
+  position: absolute; left: 50%; top: 0; bottom: 0;
+  width: 3px; background: linear-gradient(180deg, transparent, rgba(255,255,255,0.06), transparent);
+  z-index: 2;
+}
+
+.side-label {
+  font-size: 22px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 20px; text-align: center;
+}
+.side.left .side-label { color: #ef4444; }
+.side.right .side-label { color: #10b981; }
+
+/* Calendar widget */
+.cal {
+  border-radius: 16px; overflow: hidden; margin-bottom: 20px;
+}
+.side.left .cal { background: #1a1117; border: 1px solid rgba(239,68,68,0.12); }
+.side.right .cal { background: #111a17; border: 1px solid rgba(16,185,129,0.15); }
+
+.cal-header {
+  padding: 14px 16px; text-align: center;
+  font-weight: 700; font-size: 20px;
+}
+.side.left .cal-header { background: rgba(239,68,68,0.08); color: #f87171; }
+.side.right .cal-header { background: rgba(16,185,129,0.08); color: #34d399; }
+
+.cal-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  gap: 4px; padding: 12px;
+}
+.cal-day {
+  aspect-ratio: 1; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 500; color: #475569;
+}
+.cal-day.head { font-size: 11px; color: #64748b; font-weight: 700; aspect-ratio: auto; padding: 4px 0; }
+.cal-day.empty { background: transparent; }
+.cal-day.busy {
+  background: rgba(16,185,129,0.15); color: #10b981; font-weight: 700;
+  position: relative;
+}
+.cal-day.busy::after {
+  content: ''; position: absolute; bottom: 4px;
+  width: 6px; height: 6px; border-radius: 50%; background: #10b981;
+}
+.cal-day.dead { color: #333; }
+
+/* Stats under calendar */
+.cal-stats {
+  display: flex; flex-direction: column; gap: 14px;
+  margin-top: 12px;
+}
+.cal-stat {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 26px;
+}
+.side.left .cal-stat { color: #f87171; }
+.side.right .cal-stat { color: #34d399; }
+.cal-stat-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900;
+  width: 110px; text-align: right;
+}
+.side.left .cal-stat-num { color: #ef4444; }
+.side.right .cal-stat-num { color: #10b981; }
+
+/* Bottom CTA */
+.bottom-cta {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  z-index: 3;
+  background: #10b981; color: #000;
+  padding: 32px 72px; border-radius: 18px;
+  font-weight: 800; font-size: 38px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+  <div class="side left">
+    <div class="side-label">Bez mājaslapas</div>
+    <div class="cal">
+      <div class="cal-header">Aprīlis 2026</div>
+      <div class="cal-grid">
+        <div class="cal-day head">P</div><div class="cal-day head">O</div><div class="cal-day head">T</div><div class="cal-day head">C</div><div class="cal-day head">Pk</div><div class="cal-day head">S</div><div class="cal-day head">Sv</div>
+        <div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day dead">1</div><div class="cal-day dead">2</div><div class="cal-day dead">3</div><div class="cal-day dead">4</div><div class="cal-day dead">5</div>
+        <div class="cal-day dead">6</div><div class="cal-day dead">7</div><div class="cal-day dead">8</div><div class="cal-day dead">9</div><div class="cal-day dead">10</div><div class="cal-day dead">11</div><div class="cal-day dead">12</div>
+        <div class="cal-day dead">13</div><div class="cal-day dead">14</div><div class="cal-day dead">15</div><div class="cal-day dead">16</div><div class="cal-day dead">17</div><div class="cal-day dead">18</div><div class="cal-day dead">19</div>
+        <div class="cal-day dead">20</div><div class="cal-day dead">21</div><div class="cal-day dead">22</div><div class="cal-day dead">23</div><div class="cal-day dead">24</div><div class="cal-day dead">25</div><div class="cal-day dead">26</div>
+        <div class="cal-day dead">27</div><div class="cal-day dead">28</div><div class="cal-day dead">29</div><div class="cal-day dead">30</div>
+      </div>
+    </div>
+    <div class="cal-stats">
+      <div class="cal-stat"><div class="cal-stat-num">0</div> pieteikumi</div>
+      <div class="cal-stat"><div class="cal-stat-num">0</div> tikšanās</div>
+      <div class="cal-stat"><div class="cal-stat-num">€0</div> ieņēmumi</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="side right">
+    <div class="side-label">Ar Sharpify mājaslapu</div>
+    <div class="cal">
+      <div class="cal-header">Aprīlis 2026</div>
+      <div class="cal-grid">
+        <div class="cal-day head">P</div><div class="cal-day head">O</div><div class="cal-day head">T</div><div class="cal-day head">C</div><div class="cal-day head">Pk</div><div class="cal-day head">S</div><div class="cal-day head">Sv</div>
+        <div class="cal-day empty"></div><div class="cal-day empty"></div><div class="cal-day busy">1</div><div class="cal-day">2</div><div class="cal-day busy">3</div><div class="cal-day busy">4</div><div class="cal-day">5</div>
+        <div class="cal-day busy">6</div><div class="cal-day busy">7</div><div class="cal-day">8</div><div class="cal-day busy">9</div><div class="cal-day busy">10</div><div class="cal-day">11</div><div class="cal-day busy">12</div>
+        <div class="cal-day busy">13</div><div class="cal-day">14</div><div class="cal-day busy">15</div><div class="cal-day busy">16</div><div class="cal-day busy">17</div><div class="cal-day">18</div><div class="cal-day busy">19</div>
+        <div class="cal-day">20</div><div class="cal-day busy">21</div><div class="cal-day busy">22</div><div class="cal-day">23</div><div class="cal-day busy">24</div><div class="cal-day busy">25</div><div class="cal-day">26</div>
+        <div class="cal-day busy">27</div><div class="cal-day busy">28</div><div class="cal-day">29</div><div class="cal-day busy">30</div>
+      </div>
+    </div>
+    <div class="cal-stats">
+      <div class="cal-stat"><div class="cal-stat-num">23</div> pieteikumi</div>
+      <div class="cal-stat"><div class="cal-stat-num">14</div> tikšanās</div>
+      <div class="cal-stat"><div class="cal-stat-num">7</div> jauni klienti</div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">Aizpildi kalendāru — €59 →</div>
+</body>
+</html>

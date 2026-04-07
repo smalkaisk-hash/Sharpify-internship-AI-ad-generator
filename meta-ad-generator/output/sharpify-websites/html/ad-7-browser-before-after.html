@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0a0a0f;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 48px 48px 40px;
+  position: relative;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px; font-weight: 900; text-align: center;
+  margin-bottom: 36px; line-height: 1.15;
+}
+.title .before-t { color: #ef4444; }
+.title .after-t { color: #10b981; }
+.title .arrow { color: #475569; font-size: 48px; }
+
+.browsers {
+  display: flex; gap: 24px; flex: 1;
+}
+
+/* Browser chrome */
+.browser {
+  flex: 1; border-radius: 14px; overflow: hidden;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.browser.old { border: 2px solid rgba(239,68,68,0.25); }
+.browser.new { border: 2px solid rgba(16,185,129,0.3); }
+
+.browser-bar {
+  height: 36px; display: flex; align-items: center;
+  padding: 0 14px; gap: 8px;
+}
+.browser.old .browser-bar { background: #2a1a1a; }
+.browser.new .browser-bar { background: #1a2a24; }
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.r { background: #ef4444; }
+.dot.y { background: #f59e0b; }
+.dot.g { background: #10b981; }
+.browser-url {
+  flex: 1; background: rgba(0,0,0,0.3); border-radius: 6px;
+  padding: 4px 10px; font-size: 11px; color: #6b7280;
+  margin-left: 8px;
+}
+
+/* OLD website content */
+.old-site {
+  flex: 1; background: #f0f0e8;
+  padding: 16px; overflow: hidden;
+}
+.old-nav {
+  background: #1a3a7a; padding: 8px 12px;
+  display: flex; gap: 12px; border-radius: 0;
+  margin-bottom: 12px;
+}
+.old-nav span { font-size: 10px; color: #aabbdd; }
+.old-hero {
+  background: linear-gradient(135deg, #2a5ab8 0%, #1a3a7a 100%);
+  padding: 20px 16px; text-align: center; margin-bottom: 12px;
+}
+.old-hero h3 {
+  font-size: 16px; color: #fff; font-weight: 700;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.old-hero p { font-size: 9px; color: #ccd; margin-top: 4px; }
+.old-content { display: flex; gap: 8px; }
+.old-sidebar {
+  width: 35%; background: #ddd;
+  padding: 8px; border: 1px solid #bbb;
+}
+.old-sidebar div {
+  background: #c0c0c0; height: 14px; margin-bottom: 4px; border-radius: 2px;
+  font-size: 7px; color: #555; padding: 2px 4px; display: flex; align-items: center;
+}
+.old-main { flex: 1; }
+.old-main .text-block {
+  background: #e8e8e0; height: 8px; margin-bottom: 4px; border-radius: 1px;
+}
+.old-main .text-block.short { width: 60%; }
+.old-main .text-block.med { width: 80%; }
+.old-img {
+  background: #ccc; height: 60px; margin: 8px 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 8px; color: #888; border: 1px dashed #aaa;
+}
+.old-counter {
+  background: #ff0000; color: #ffff00; text-align: center;
+  padding: 4px; font-size: 8px; font-weight: 700;
+  margin-top: 8px; font-family: 'Comic Sans MS', cursive;
+}
+
+/* NEW website content */
+.new-site {
+  flex: 1; background: #0f172a;
+  overflow: hidden;
+}
+.new-nav {
+  padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.new-logo { font-size: 14px; font-weight: 800; color: #fff; }
+.new-nav-links { display: flex; gap: 14px; }
+.new-nav-links span { font-size: 10px; color: #94a3b8; }
+.new-nav-btn {
+  background: #10b981; color: #000; padding: 4px 12px;
+  border-radius: 6px; font-size: 9px; font-weight: 700;
+}
+.new-hero {
+  padding: 32px 24px; text-align: center;
+}
+.new-hero .badge-sm {
+  display: inline-block; background: rgba(16,185,129,0.12);
+  color: #10b981; padding: 4px 12px; border-radius: 20px;
+  font-size: 9px; font-weight: 600; margin-bottom: 10px;
+}
+.new-hero h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px; font-weight: 900; color: #fff;
+  line-height: 1.25; margin-bottom: 8px;
+}
+.new-hero h3 span { color: #10b981; }
+.new-hero p { font-size: 11px; color: #94a3b8; line-height: 1.4; max-width: 340px; margin: 0 auto; }
+.new-hero .btn {
+  display: inline-block; margin-top: 14px;
+  background: #10b981; color: #000; padding: 8px 24px;
+  border-radius: 8px; font-size: 12px; font-weight: 700;
+}
+.new-stats {
+  display: flex; justify-content: center; gap: 20px;
+  margin-top: 16px; padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.new-stat { text-align: center; }
+.new-stat .num { font-size: 16px; font-weight: 800; color: #10b981; }
+.new-stat .label { font-size: 8px; color: #64748b; margin-top: 1px; }
+
+/* Labels */
+.label-tag {
+  position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+  padding: 10px 24px; border-radius: 10px;
+  font-size: 22px; font-weight: 800; z-index: 2;
+}
+.browser.old .label-tag { background: #ef4444; color: #fff; }
+.browser.new .label-tag { background: #10b981; color: #000; }
+
+/* Bottom CTA */
+.bottom {
+  display: flex; justify-content: center; align-items: center;
+  margin-top: 28px; gap: 24px;
+}
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 30px 76px; border-radius: 16px;
+  font-weight: 800; font-size: 38px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+.bottom-note { font-size: 18px; color: #475569; }
+.bottom-note strong { color: #10b981; }
+</style>
+</head>
+<body>
+  <div class="title">
+    <span class="before-t">Tava vecā lapa</span>
+    <span class="arrow"> → </span>
+    <span class="after-t">Ar Sharpify</span>
+  </div>
+
+  <div class="browsers">
+    <div class="browser old">
+      <div class="browser-bar">
+        <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <div class="browser-url">http://mans-bizness.lv</div>
+      </div>
+      <div class="old-site">
+        <div class="old-nav">
+          <span>SĀKUMS</span><span>PAR MUMS</span><span>PAKALPOJUMI</span><span>KONTAKTI</span>
+        </div>
+        <div class="old-hero">
+          <h3>Laipni lūdzam mūsu<br>uzņēmuma mājaslapā!</h3>
+          <p>Mēs piedāvājam kvalitatīvus pakalpojumus</p>
+        </div>
+        <div class="old-content">
+          <div class="old-sidebar">
+            <div>▸ Par mums</div>
+            <div>▸ Pakalpojumi</div>
+            <div>▸ Galerija</div>
+            <div>▸ Kontakti</div>
+          </div>
+          <div class="old-main">
+            <div class="text-block"></div>
+            <div class="text-block med"></div>
+            <div class="text-block short"></div>
+            <div class="old-img">📷 bilde.jpg (nav atrasta)</div>
+            <div class="text-block"></div>
+            <div class="text-block short"></div>
+          </div>
+        </div>
+        <div class="old-counter">⚠️ Jūs esat 00234. apmeklētājs!</div>
+      </div>
+      <div class="label-tag">Tava pašreizējā 😬</div>
+    </div>
+
+    <div class="browser new">
+      <div class="browser-bar">
+        <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <div class="browser-url">🔒 tavs-bizness.lv</div>
+      </div>
+      <div class="new-site">
+        <div class="new-nav">
+          <div class="new-logo">TavsBizness</div>
+          <div class="new-nav-links">
+            <span>Pakalpojumi</span><span>Par mums</span><span>Atsauksmes</span>
+          </div>
+          <div class="new-nav-btn">Pieteikties</div>
+        </div>
+        <div class="new-hero">
+          <div class="badge-sm">✦ #1 Pakalpojums Latvijā</div>
+          <h3>Mēs palīdzam Tavam biznesam <span>augt&nbsp;ātrāk</span></h3>
+          <p>Profesionāli risinājumi, kas nes reālus rezultātus. Sāc šodien.</p>
+          <div class="btn">Sākt sadarbību →</div>
+        </div>
+        <div class="new-stats">
+          <div class="new-stat"><div class="num">150+</div><div class="label">Klienti</div></div>
+          <div class="new-stat"><div class="num">98%</div><div class="label">Apmierināti</div></div>
+          <div class="new-stat"><div class="num">5★</div><div class="label">Vērtējums</div></div>
+        </div>
+      </div>
+      <div class="label-tag">Ar Sharpify 🔥</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta-btn">Iegūsti savu par €59 →</div>
+  </div>
+</body>
+</html>

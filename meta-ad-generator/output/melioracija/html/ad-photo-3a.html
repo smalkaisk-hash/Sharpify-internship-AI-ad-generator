@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    .container {
+      width: 1080px;
+      height: 1080px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-image {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.25) 30%,
+        rgba(0, 0, 0, 0.82) 65%,
+        rgba(0, 0, 0, 0.93) 100%
+      );
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0 64px 64px;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .headline {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 62px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .headline .accent {
+      color: #22D3EE;
+    }
+
+    .body-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.5;
+      margin-bottom: 36px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+      background: #0891B2;
+      border: none;
+      border-radius: 16px;
+      padding: 30px 72px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(8, 145, 178, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="bg-image" src="../images/photo-3-landscape-drainage.png" alt="">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="headline">Sakārto teritorijas <span class="accent">ūdens novadīšanu</span>, pirms problēma kļūst dārgāka</h1>
+      <p class="body-text">Grāvju rakšana, laukumu susināšana un zemes atbrīvošana no saknēm — ar savu tehniku.</p>
+      <button class="cta-btn">Pieteikties apskatei →</button>
+    </div>
+  </div>
+</body>
+</html>

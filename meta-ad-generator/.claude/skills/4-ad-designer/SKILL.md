@@ -43,17 +43,24 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
    product_image    → (Tangible only) Absolute path to best product image in brief/images/product-*.{ext}
    ```
 
-4. **For each of the 5 copy sets** in `ad-copy.json`:
+4. **For each copy set** in `ad-copy.json` (6-8 ads based on `ad_count`):
 
-   a. **Select the layout template** based on `layout_recommendation`, filtered by category eligibility (see table below):
+   a. **Select the layout** based on `layout_recommendation`:
+   
+      **Base templates** (direct file):
       - `"hero-overlay"` → `templates/layouts/hero-overlay.html`
       - `"bold-statement"` → `templates/layouts/bold-statement.html`
       - `"split-horizontal"` → `templates/layouts/split-horizontal.html`
       - `"comparison"` → `templates/layouts/comparison.html`
       - `"benefit-stack"` → `templates/layouts/benefit-stack.html`
-      - `"editorial"` → Custom inline (Playfair Display serif, white bg, gold accents — no template file, build from scratch each time)
+      - `"testimonial-card"` → `templates/layouts/testimonial-card.html`
+      - `"editorial"` → Custom inline (Playfair Display serif, white bg, gold accents)
+      
+      **Extra templates** (generate HTML from description):
+      - When `layout_recommendation` starts with `"extra:"` → see "Generating HTML from Extra Templates" section below
+      - Parse the path: `"extra:social-proof/17-verified-review-card"` → category `social-proof`, template `17-verified-review-card`
 
-   b. **Read the template file** and replace ALL placeholders:
+   b. **For base templates**, read the template file and replace ALL placeholders:
       - `{{color_primary}}` → hex color
       - `{{color_secondary}}` → hex color
       - `{{color_accent}}` → hex color
@@ -194,3 +201,56 @@ If a copy set's `layout_recommendation` maps to a template that is NOT eligible 
 - Logo images get `max-width: 100%` so they scale down within their container rather than overflowing
 - After generating HTML, mentally verify: "Can the CTA button (min-width 280px) + logo + gap (24px) + padding (2×56px) fit within 1080px?" If not, reduce the logo height or switch to a text brand name
 - This applies to: `.split-bottom`, `.bold-footer`, `.testimonial-footer`, `.benefit-footer`, and any custom footer rows
+
+---
+
+## Generating HTML from Extra Templates
+
+When `layout_recommendation` starts with `"extra:"`, you generate the HTML inline (the same approach used for the editorial template). This is how the pipeline uses the 116+ extended templates without pre-built HTML files.
+
+### Process
+
+1. **Parse the template reference**: `"extra:social-proof/17-verified-review-card"` → look for:
+   - First: `templates/extra/social-proof/17-verified-review-card.md` (if `.md` file exists)
+   - Fallback: the template description in `.claude/skills/8-extra-templates/SKILL.md`
+
+2. **Read the template description**:
+   - If `.md` file exists: read the frontmatter (`required_fields`, `best_for`) and the body (visual layout description)
+   - If no `.md` file: use the one-line description from the template registry index table
+
+3. **Map client data to template fields**:
+   - Read `template_fields` from the copy set in `ad-copy.json` — the copy generator pre-fills template-specific data
+   - Map standard fields: brand colors, fonts, headline, body text, CTA
+   - Map template-specific fields: `reviewer_name`, `stat_1`, `before_items`, etc.
+
+4. **Build the HTML** following the template description:
+   - Start with `<!DOCTYPE html>` and the standard 1080x1080 canvas
+   - Link `base.css` (absolute path) + Google Fonts
+   - Set CSS custom properties from brand assets (same as base templates)
+   - Build the layout following the `.md` description literally — every visual element mentioned must appear
+   - Use CSS flexbox/grid for layout positioning
+   - Apply all design rules from above (contrast, spacing, anti-overlap, anti-AI slop)
+
+5. **Apply ad type rules**:
+   - **Tangible**: include product images where the template calls for them. Use `image_requirements` from the copy set
+   - **Intangible**: no generic photos. Use solid gradients, CSS-built visual elements (phone UI mockups, social post cards, etc.), or brand color backgrounds
+   - If the template description mentions lifestyle/product photography and the ad is intangible, replace with a CSS gradient or color block
+
+6. **Handle AI-generated images** (tangible only):
+   - If `image_requirements.type` is `"ai-generated"`, run:
+     ```bash
+     node scripts/generate-image.js "{ai_prompt}" "output/{client-slug}/brief/images/generated-{n}.png"
+     ```
+   - Use the generated image path in the HTML
+
+7. **Save the file** as `output/{client-slug}/html/ad-{n}-{template-name}.html`
+   - Example: `output/client-slug/html/ad-3-verified-review-card.html`
+   - Note: file naming is now `ad-{n}-{name}` not `ad-v{n}-{layout}` — the numbering matches the copy set order
+
+### Quality Checks for Extra Template HTML
+- Does the HTML render at exactly 1080x1080px?
+- Is all text readable (contrast >= 4.5:1)?
+- Does the layout match the template description?
+- Are brand colors applied correctly?
+- Is the CTA button prominent and not overlapping other elements?
+- Does on-image text pass the anti-AI slop check?
