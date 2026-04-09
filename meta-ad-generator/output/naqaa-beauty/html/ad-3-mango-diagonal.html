@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg-dark{position:absolute;top:0;left:0;width:100%;height:100%;background:#100C04}
+    .bg-orange{position:absolute;top:0;right:0;width:100%;height:100%;background:linear-gradient(135deg,#F57C00 0%,#FFB74D 50%,#FFF3E0 100%);clip-path:polygon(60% 0,100% 0,100% 100%,20% 100%)}
+    /* Product — cuts through diagonal, almost full height */
+    .product{position:absolute;top:50%;left:50%;transform:translate(-50%,-48%);z-index:3}
+    .product img{height:1000px;width:auto;filter:drop-shadow(-20px 10px 60px rgba(0,0,0,0.35))}
+    /* Text top left on dark */
+    .text{position:absolute;top:52px;left:52px;z-index:4;max-width:460px}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#FFB74D;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;padding:10px 24px;background:rgba(255,183,77,0.15);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:72px;font-weight:900;color:#FFF;line-height:0.95;margin-bottom:16px}
+    .h1 .color{color:#FFB74D}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.5);line-height:1.35}
+    /* Bottom right on orange — dark text */
+    .bot{position:absolute;bottom:52px;right:52px;z-index:4;text-align:right}
+    .price{font-family:'Montserrat',sans-serif;font-size:60px;font-weight:900;color:#3E2723}
+    .sub{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:600;color:rgba(62,39,35,0.5)}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="bg-dark"></div>
+    <div class="bg-orange"></div>
+    <div class="text">
+      <div class="tag">Dušas vitamīnu filtrs</div>
+      <div class="h1">Tava āda<br>jūt <span class="color">ūdeni.</span></div>
+      <div class="desc">Mango aromāts — attīra hloru, pievieno vitamīnus</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-mango-rain-with-box-cutout.png" alt="">
+    </div>
+    <div class="bot">
+      <div class="price">34,99€</div>
+      <div class="sub">Kalpo 2-3 mēnešus</div>
+    </div>
+  </div>
+</body>
+</html>

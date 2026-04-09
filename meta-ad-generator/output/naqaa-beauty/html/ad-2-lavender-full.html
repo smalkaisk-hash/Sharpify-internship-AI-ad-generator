@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg-left{position:absolute;top:0;left:0;width:48%;height:100%;background:linear-gradient(180deg,#E1BEE7 0%,#CE93D8 40%,#AB47BC 100%);z-index:1}
+    .bg-right{position:absolute;top:0;right:0;width:52%;height:100%;background:linear-gradient(180deg,#1A0E24 0%,#0E0816 100%);z-index:1}
+    /* Product — massive, overlapping both halves */
+    .product{position:absolute;top:50%;left:48%;transform:translate(-50%,-48%);z-index:3}
+    .product img{height:1020px;width:auto;filter:drop-shadow(10px 10px 50px rgba(0,0,0,0.35))}
+    /* Text on dark right side */
+    .text{position:absolute;top:56px;right:44px;z-index:4;max-width:400px;text-align:right}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#CE93D8;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;padding:10px 24px;background:rgba(206,147,216,0.15);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:62px;font-weight:900;color:#FFF;line-height:0.95;margin-bottom:16px}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.5);line-height:1.35}
+    /* Bottom pills on right */
+    .bot{position:absolute;bottom:52px;right:44px;z-index:4;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .pill{padding:10px 24px;background:rgba(206,147,216,0.12);border:1px solid rgba(206,147,216,0.25);border-radius:50px;font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;color:#CE93D8}
+    .price{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#FFF;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="text">
+      <div class="tag">Dušas vitamīnu filtrs</div>
+      <div class="h1">Attīra.<br>Nomierina.<br>Atjauno.</div>
+      <div class="desc">Lavandas aromāts — aromterapija katrā dušā</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-with-box-cutout.png" alt="">
+    </div>
+    <div class="bot">
+      <span class="pill">Bez hlora</span>
+      <span class="pill">Vitamīni ādai</span>
+      <span class="pill">Jutīgai ādai drošs</span>
+      <div class="price">34,99€</div>
+    </div>
+  </div>
+</body>
+</html>

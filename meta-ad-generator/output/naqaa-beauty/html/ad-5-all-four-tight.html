@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    /* 2x2 grid — each quadrant is a scent color */
+    .ad{width:1080px;height:1080px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;overflow:hidden;position:relative}
+    .quad{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:20px}
+    .q1{background:linear-gradient(135deg,#FCE4EC,#E91E63)}
+    .q2{background:linear-gradient(135deg,#F3E5F5,#9C27B0)}
+    .q3{background:linear-gradient(135deg,#FFF3E0,#FF9800)}
+    .q4{background:linear-gradient(135deg,#EFEBE9,#5D4037)}
+    .quad img{height:420px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 30px rgba(0,0,0,0.25));position:relative;z-index:2}
+    .q-name{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#FFF;text-shadow:0 2px 10px rgba(0,0,0,0.3);z-index:3}
+    /* Center overlay badge */
+    .center-badge{
+      position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;
+      width:320px;height:320px;border-radius:50%;
+      background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);
+      border:3px solid rgba(184,150,12,0.4);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:8px;
+    }
+    .cb-tag{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.15em}
+    .cb-title{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:900;color:#FFF;text-align:center;line-height:1.1}
+    .cb-sub{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:500;color:rgba(255,255,255,0.4);text-align:center}
+    .cb-price{font-family:'Montserrat',sans-serif;font-size:36px;font-weight:900;color:#B8960C;margin-top:4px}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="quad q1">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-precious-rose-labeled-cutout.png" alt="">
+      <div class="q-name">Precious Rose</div>
+    </div>
+    <div class="quad q2">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-labeled-cutout.png" alt="">
+      <div class="q-name">Lavender Meadows</div>
+    </div>
+    <div class="quad q3">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-mango-rain-labeled-cutout.png" alt="">
+      <div class="q-name">Mango Rain</div>
+    </div>
+    <div class="quad q4">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-amberwood-labeled-cutout.png" alt="">
+      <div class="q-name">Amberwood</div>
+    </div>
+    <div class="center-badge">
+      <span class="cb-tag">Naqaa Beauty</span>
+      <span class="cb-title">Vitamīnu<br>dušas filtri</span>
+      <span class="cb-sub">4 aromāti · Bez hlora</span>
+      <span class="cb-price">No 34,99€</span>
+    </div>
+  </div>
+</body>
+</html>

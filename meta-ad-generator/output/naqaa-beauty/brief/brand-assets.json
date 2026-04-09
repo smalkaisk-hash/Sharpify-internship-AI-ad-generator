@@ -1,0 +1,80 @@
+{
+  "website": "https://www.naqaa-beauty.com",
+  "platform": "Wix",
+  "colors": {
+    "raw_frequencies": {
+      "#B8960C": "gold — logo and accents",
+      "#00B4D8": "cyan/turquoise — product photo backgrounds",
+      "#FFFFFF": "white — site background, product labels",
+      "#1A1A2E": "dark navy — text",
+      "#8B7D3C": "dark gold — headings, CTA borders",
+      "#F5F5F5": "light grey — secondary backgrounds"
+    },
+    "suggested": {
+      "primary": "#0097B2",
+      "secondary": "#B8960C",
+      "accent": "#B8960C",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E",
+      "cta_bg": "#B8960C",
+      "cta_text": "#FFFFFF"
+    }
+  },
+  "typography": {
+    "found": ["Forum", "Arial", "Helvetica"],
+    "suggested": {
+      "heading": "Playfair Display",
+      "body": "Inter"
+    },
+    "notes": "Site uses a luxury serif-feel for headings. Playfair Display matches the elegant brand identity. Forum is used on site but not on Google Fonts."
+  },
+  "images": {
+    "products": [
+      "brief/images/product-amberwood-labeled.jpg",
+      "brief/images/product-clear-labeled.jpg",
+      "brief/images/product-precious-rose-labeled.jpg",
+      "brief/images/product-mango-rain-labeled.jpg",
+      "brief/images/product-lavender-meadows-labeled.jpg",
+      "brief/images/product-lineup-all-4.jpg",
+      "brief/images/product-clear-inner.jpg",
+      "brief/images/product-filter-inner-pink.jpg",
+      "brief/images/product-filter-inner-yellow.jpg",
+      "brief/images/product-mango-rain-with-box.jpg",
+      "brief/images/product-amberwood-with-box.jpg",
+      "brief/images/product-precious-rose-with-box.jpg",
+      "brief/images/product-lavender-meadows-with-box.jpg",
+      "brief/images/product-two-filters-crossed.jpg",
+      "brief/images/product-all-4-pile.jpg",
+      "brief/images/product-all-4-pile-landscape.jpg",
+      "brief/images/product-closeup-precious-rose.jpg",
+      "brief/images/product-clear-plus-closeup-1.jpg",
+      "brief/images/product-clear-plus-closeup-2.jpg"
+    ],
+    "hero": [],
+    "logo": null
+  },
+  "product_category": {
+    "type": "tangible",
+    "confidence": "manual",
+    "signals": ["Physical shower filter products sold via e-commerce", "Multiple SKUs with pricing", "Product photos with packaging"]
+  },
+  "has_product_images": true,
+  "content": {
+    "tagline": "Dāvā savai ādai dabisku mirdzumu!",
+    "subtagline": "Dušas filtri ar dabas spēku!",
+    "mission": "Radīts ar mērķi sniegt augstvērtīgu un ilgtspējīgu risinājumu Jūsu ikdienas skaistumkopšanas rituāliem.",
+    "values": ["Kvalitāte", "Ilgtspējība", "Inovācija"],
+    "key_benefits": [
+      "Aromātiski ūdens filtri",
+      "Pārbaudīta kvalitāte",
+      "Ūdens attīrīšana un aizsardzība",
+      "Vitaminizācija un ādas kopšana",
+      "Matu veselība"
+    ],
+    "tone": "Luxury, warm, nature-inspired, feminine"
+  },
+  "social_media": {
+    "instagram": "https://www.instagram.com/naqaa_beauty/",
+    "tiktok": "https://www.tiktok.com/@naqaa_beauty"
+  }
+}

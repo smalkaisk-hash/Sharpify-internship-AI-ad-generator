@@ -1,0 +1,96 @@
+{
+  "client_name": "Naqaa Beauty",
+  "client_slug": "naqaa-beauty",
+  "email": null,
+  "phone": null,
+  "website": "https://www.naqaa-beauty.com",
+  "language": "lv",
+  "target_audience": {
+    "raw": "Sievietes Latvijā, kas rūpējas par ādu, matiem un labsajūtu. Interesē skaistumkopšana, dabīgi produkti, ilgtspējība.",
+    "demographics": "Sievietes 22-45, Latvijā, pilsētās (Rīga, Jūrmala), vidējie-augsti ienākumi",
+    "psychographics": "Rūpējas par ādas veselību, novērtē dabīgus produktus, vēlas luksusa sajūtu ikdienā, seko skaistumkopšanas trendiem Instagram/TikTok",
+    "pain_points": [
+      "Ciets ūdens izraisa ādas sausumu un jutīgumu",
+      "Mati ir blāvi un nedzīvi pēc mazgāšanas",
+      "Hlors un smagie metāli ūdenī kairina ādu",
+      "Vēlas labāku dušas pieredzi, bet nezina risinājumu",
+      "Ikdienas rutīna jūtas garlaicīga un bez rituāla sajūtas"
+    ],
+    "desires": [
+      "Mīkstāka, mirdzošāka āda bez papildu krēmiem",
+      "Veselīgi, spīdīgi mati",
+      "Luksusa spa sajūta mājās katru dienu",
+      "Dabīgi, ekoloģiski produkti bez ķīmijas",
+      "Smarža un aromterapijas efekts dušā"
+    ]
+  },
+  "offer": {
+    "main_offer": "Vitaminizētie aromātiskie dušas ūdens filtri — 4 smaržas (Precious Rose, Lavender Meadows, Mango Rain, Amberwood)",
+    "secondary_offer": "CLEAR+ rūsas noņemšanas filtrs, 3-Zonu dušas uzgalis, komplekti",
+    "result_promise": "Tīrāks ūdens, maigāka āda, veselīgāki mati, aromterapijas efekts katrā dušā",
+    "duration": "Viens filtrs pietiek aptuveni 2-3 mēnešiem",
+    "price_mentioned": true
+  },
+  "differentiator": {
+    "raw": "Aromātiski vitamīnu filtri ar dabīgām sastāvdaļām, dermatoloģiski pārbaudīti, videi draudzīgi, Latvijas zīmols",
+    "key_points": [
+      "Vienīgie aromātiskie dušas filtri Latvijā",
+      "Dermatoloģiski pārbaudīts — piemērots jutīgai ādai",
+      "100% pārstrādājami materiāli, ekoloģisks iepakojums",
+      "4 unikālas smaržas — roze, lavanda, mango, dzintarkoks",
+      "Filtrs samazina hloru, smagos metālus un citas kaitīgās vielas"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Dermatoloģiski pārbaudīts, videi draudzīgs, pārbaudīta kvalitāte",
+    "credentials": [
+      "Dermatoloģiski pārbaudīts",
+      "Piemērots visiem ādas tipiem, ieskaitot jutīgu ādu",
+      "Pārbaudīta kvalitāte"
+    ],
+    "social_proof": [
+      "Aktīva Instagram un TikTok kopiena (@naqaa_beauty)"
+    ],
+    "personal_story": null
+  },
+  "client_acquisition": {
+    "method": "E-commerce (Wix veikals), sociālie tīkli (Instagram, TikTok)",
+    "funnel": "Social media / Ad → Product page → Add to cart → Checkout"
+  },
+  "bonuses": [
+    "Dāvanu kaste L bez maksas pirkumiem virs 100 EUR",
+    "Dāvanu kartes pieejamas",
+    "Abonementa iespēja"
+  ],
+  "guarantees": [],
+  "capacity": null,
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 8,
+  "ad_strategy": {
+    "recommended_objective": "Conversions",
+    "recommended_cta": "Shop Now",
+    "funnel_stage_focus": "Top of funnel — awareness + interest, mid-funnel — consideration"
+  },
+  "products": {
+    "vitamin_filters": {
+      "name": "Vitaminizētie dušas filtri",
+      "scents": ["Precious Rose", "Lavender Meadows", "Mango Rain", "Amberwood"],
+      "price": "34,99€"
+    },
+    "clear_plus": {
+      "name": "CLEAR+ Rūsas noņemšanas filtrs",
+      "price": "24,99€"
+    },
+    "shower_head": {
+      "name": "3-Zonu Dušas Uzgalis",
+      "price": "29,99€"
+    },
+    "bundles": {
+      "Macadamia": "42,49€",
+      "Care": "58,64€",
+      "SmartCare": "59,49€",
+      "Platinum": "42,49€"
+    }
+  }
+}

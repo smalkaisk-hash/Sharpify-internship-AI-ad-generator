@@ -121,3 +121,10 @@ After the main pipeline, the user can optionally run:
 /ad-variations
 ```
 This generates 3-6 additional A/B test variations and a test matrix.
+
+## Optional: Video Ad Generation
+After static ads are complete, offer to generate video ads using the Remotion pipeline:
+```
+cd ../remotion-videos && node scripts/bridge-config.js {client-slug}
+```
+Then follow the `remotion-videos/.claude/skills/video-pipeline/SKILL.md` skill to configure scenes and render MP4 video ads (feed 1:1, Reels 9:16). The video pipeline reuses the same `client-brief.json` and `brand-assets.json` — no duplicate data entry needed.

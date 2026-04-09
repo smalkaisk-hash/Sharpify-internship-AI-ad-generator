@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0a0a0f;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 48px 48px 44px;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 32px;
+}
+.headline span { color: #10b981; }
+
+/* Ride options card */
+.ride-card {
+  width: 100%;
+  background: #1a1a2e;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  flex: 1; display: flex; flex-direction: column;
+}
+
+.ride-header {
+  background: #0f0f1e; padding: 20px 28px;
+  font-size: 22px; font-weight: 700; color: #94a3b8;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.ride-route {
+  padding: 24px 28px;
+  display: flex; align-items: center; gap: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.route-dots {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.route-dot { width: 14px; height: 14px; border-radius: 50%; }
+.route-dot.start { background: #ef4444; }
+.route-dot.end { background: #10b981; }
+.route-line { width: 3px; height: 32px; background: #333; }
+.route-texts { flex: 1; }
+.route-from { font-size: 22px; color: #ef4444; font-weight: 600; margin-bottom: 16px; }
+.route-to { font-size: 22px; color: #10b981; font-weight: 600; }
+
+/* Ride options */
+.rides { flex: 1; padding: 8px 0; }
+
+.ride-option {
+  display: flex; align-items: center; gap: 20px;
+  padding: 20px 28px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  position: relative;
+}
+.ride-option.disabled { opacity: 0.35; }
+.ride-option.selected {
+  background: rgba(16,185,129,0.06);
+  border: 2px solid rgba(16,185,129,0.2);
+  border-radius: 14px;
+  margin: 4px 12px;
+  padding: 18px 20px;
+}
+
+.ride-icon { font-size: 44px; flex-shrink: 0; }
+.ride-info { flex: 1; }
+.ride-name { font-size: 26px; font-weight: 700; }
+.ride-desc { font-size: 18px; color: #64748b; margin-top: 2px; }
+.ride-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+  text-align: right;
+}
+.ride-time { font-size: 16px; color: #64748b; text-align: right; margin-top: 2px; }
+
+.ride-option.disabled .ride-price { color: #ef4444; text-decoration: line-through; }
+.ride-option.selected .ride-price { color: #10b981; }
+.ride-option.selected .ride-name { color: #10b981; }
+
+.ride-selected-badge {
+  position: absolute; top: -10px; right: 16px;
+  background: #10b981; color: #000;
+  padding: 4px 14px; border-radius: 8px;
+  font-size: 14px; font-weight: 800;
+}
+
+/* Bottom CTA */
+.ride-cta {
+  padding: 20px 28px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.cta-btn {
+  width: 100%;
+  background: #10b981; color: #000;
+  padding: 26px; border-radius: 16px;
+  font-weight: 800; font-size: 34px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Izvēlies savu <span>maršrutu</span></div>
+
+  <div class="ride-card">
+    <div class="ride-header">📍 Kur Tavs bizness brauc?</div>
+
+    <div class="ride-route">
+      <div class="route-dots">
+        <div class="route-dot start"></div>
+        <div class="route-line"></div>
+        <div class="route-dot end"></div>
+      </div>
+      <div class="route-texts">
+        <div class="route-from">📌 Nav mājaslapas — klienti Tevi neatrod</div>
+        <div class="route-to">📌 Profesionāla mājaslapa — klienti nāk paši</div>
+      </div>
+    </div>
+
+    <div class="rides">
+      <div class="ride-option disabled">
+        <div class="ride-icon">🐌</div>
+        <div class="ride-info">
+          <div class="ride-name">Aģentūras Klasika</div>
+          <div class="ride-desc">Lēni, dārgi, bezgalīgas tikšanās</div>
+        </div>
+        <div>
+          <div class="ride-price">€2 000</div>
+          <div class="ride-time">4-12 nedēļas</div>
+        </div>
+      </div>
+
+      <div class="ride-option disabled">
+        <div class="ride-icon">🤷</div>
+        <div class="ride-info">
+          <div class="ride-name">DIY ar Wix</div>
+          <div class="ride-desc">40 stundas + frustācija</div>
+        </div>
+        <div>
+          <div class="ride-price">€0*</div>
+          <div class="ride-time">∞ nedēļas</div>
+        </div>
+      </div>
+
+      <div class="ride-option selected">
+        <div class="ride-selected-badge">IETEICAMAIS</div>
+        <div class="ride-icon">🚀</div>
+        <div class="ride-info">
+          <div class="ride-name">Sharpify Pro</div>
+          <div class="ride-desc">Profesionāli, ātri, garantēti</div>
+        </div>
+        <div>
+          <div class="ride-price">€59</div>
+          <div class="ride-time">1-3 dienas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ride-cta">
+      <div class="cta-btn">Pasūtīt Sharpify →</div>
+    </div>
+  </div>
+</body>
+</html>

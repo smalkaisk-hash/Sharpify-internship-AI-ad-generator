@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<link rel="stylesheet" href="../base-mockup.css">
+<style>
+html, body { width: 1920px; height: 1080px; overflow: hidden; }
+body {
+  background: linear-gradient(155deg, var(--mockup-bg) 0%, var(--mockup-bg-end) 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.device-book .book-cover {
+  width: 380px; height: 520px;
+  transform: rotateY(-18deg);
+}
+</style>
+</head>
+<body>
+  <div class="device-book">
+    <div class="book-cover">
+      <div class="book-spine"></div>
+      <div class="book-front">
+        <img src="{{screenshot}}" alt="Book cover">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

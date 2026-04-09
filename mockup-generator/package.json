@@ -1,0 +1,14 @@
+{
+  "name": "mockup-generator",
+  "version": "1.0.0",
+  "description": "Device & product mockup generation — website screenshots composited into professional device frames via HTML/CSS + Puppeteer",
+  "private": true,
+  "scripts": {
+    "capture": "node scripts/capture-screenshot.js",
+    "export": "node scripts/export-mockup.js",
+    "bridge": "node scripts/bridge-config.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

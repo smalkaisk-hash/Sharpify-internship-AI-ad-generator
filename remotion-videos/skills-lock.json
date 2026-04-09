@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "remotion-ads": {
+      "source": "Maartenlouis/remotion-ads",
+      "sourceType": "github",
+      "computedHash": "8b0d95989578d4be600352960701fd7744878e2c1ab3fc81cbea28648e39cc77"
+    },
+    "remotion-best-practices": {
+      "source": "remotion-dev/skills",
+      "sourceType": "github",
+      "computedHash": "6f22ccc0dd7103de270a465b30e44b001bcee4751e43197bba60680e69928635"
+    }
+  }
+}

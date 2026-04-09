@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<link rel="stylesheet" href="../../../templates/base-mockup.css">
+<style>
+:root {
+  --mockup-bg: #0a1628;
+  --mockup-bg-end: #162033;
+  --mockup-accent: #10b981;
+}
+html, body {
+  width: 1920px; height: 1080px; overflow: hidden;
+}
+body {
+  background: linear-gradient(155deg, var(--mockup-bg) 0%, #0c1222 40%, var(--mockup-bg-end) 100%);
+  position: relative;
+}
+
+/* === Ambient glow effects === */
+.glow-1 {
+  width: 700px; height: 700px;
+  top: -150px; left: 150px;
+  position: absolute; border-radius: 50%;
+  background: var(--mockup-accent); opacity: 0.06; filter: blur(140px);
+  pointer-events: none;
+}
+.glow-2 {
+  width: 500px; height: 500px;
+  bottom: -120px; right: 250px;
+  position: absolute; border-radius: 50%;
+  background: #6366f1; opacity: 0.04; filter: blur(100px);
+  pointer-events: none;
+}
+.glow-3 {
+  width: 400px; height: 400px;
+  top: 300px; right: 600px;
+  position: absolute; border-radius: 50%;
+  background: #10b981; opacity: 0.03; filter: blur(80px);
+  pointer-events: none;
+}
+
+/* === Text section (left) === */
+.text-section {
+  position: absolute; left: 80px; top: 50%; transform: translateY(-50%);
+  width: 440px; z-index: 10;
+}
+.text-section .mockup-badge { margin-bottom: 22px; font-size: 15px; }
+.text-section .mockup-headline {
+  font-family: var(--font-heading);
+  font-weight: 900; font-size: 52px; line-height: 1.08;
+  color: #fff; margin-bottom: 18px;
+}
+.text-section .mockup-headline .accent { color: var(--mockup-accent); }
+.text-section .mockup-subheadline {
+  font-family: var(--font-body);
+  font-size: 18px; color: #94a3b8; line-height: 1.55;
+  margin-bottom: 32px;
+}
+.cta-btn {
+  display: inline-block;
+  background: var(--mockup-accent); color: #000;
+  padding: 20px 48px; border-radius: 14px;
+  font-weight: 800; font-size: 22px;
+  font-family: var(--font-body);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.3);
+  letter-spacing: -0.3px;
+}
+
+/* === Devices === */
+
+/* Monitor — back center */
+.monitor-wrap {
+  position: absolute;
+  top: 60px; left: 560px;
+  transform: perspective(1400px) rotateY(-6deg) rotateX(2deg);
+  z-index: 1;
+}
+.monitor-wrap .device-monitor .device-screen-wrap {
+  width: 720px; height: 450px;
+}
+.monitor-wrap .device-monitor .device-chin { width: 720px; }
+
+/* MacBook — front-left */
+.macbook-wrap {
+  position: absolute;
+  bottom: 90px; left: 440px;
+  transform: perspective(1200px) rotateY(6deg) rotateX(3deg);
+  z-index: 3;
+}
+.macbook-wrap .device-macbook .device-screen-wrap {
+  width: 540px; height: 337px;
+}
+.macbook-wrap .device-macbook .device-base {
+  width: 612px; left: -36px;
+}
+
+/* iPad — right */
+.ipad-wrap {
+  position: absolute;
+  top: 140px; right: 50px;
+  transform: perspective(1000px) rotateY(-14deg) rotateX(3deg);
+  z-index: 2;
+}
+.ipad-wrap .device-ipad {
+  width: 330px; height: 440px;
+}
+
+/* iPhone — front-right */
+.iphone-wrap {
+  position: absolute;
+  bottom: 80px; right: 160px;
+  transform: perspective(800px) rotateY(-10deg);
+  z-index: 4;
+}
+.iphone-wrap .device-iphone {
+  width: 230px; height: 470px;
+}
+
+/* Floating labels */
+.float-label {
+  position: absolute;
+  background: var(--mockup-accent); color: #000;
+  padding: 10px 22px; border-radius: 10px;
+  font-weight: 800; font-size: 14px;
+  font-family: var(--font-body);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+  z-index: 10;
+}
+.label-responsive { bottom: 340px; right: 400px; transform: rotate(-3deg); }
+.label-fast { top: 100px; right: 380px; transform: rotate(2deg); }
+
+/* Stats bar */
+.stats-bar {
+  position: absolute; bottom: 30px; left: 80px;
+  display: flex; gap: 48px; z-index: 10;
+}
+.stat {
+  font-family: var(--font-body);
+}
+.stat-number {
+  font-family: var(--font-heading);
+  font-weight: 900; font-size: 32px; color: var(--mockup-accent);
+}
+.stat-label {
+  font-size: 13px; color: #64748b; margin-top: 2px;
+}
+</style>
+</head>
+<body>
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+  <div class="glow-3"></div>
+
+  <!-- Text Section -->
+  <div class="text-section">
+    <div class="mockup-badge">Sharpify Web Solutions</div>
+    <div class="mockup-headline">
+      Profesionāla<br>
+      <span class="accent">mājaslapa</span><br>
+      jebkuram biznesam.
+    </div>
+    <div class="mockup-subheadline">
+      Moderna, ātra un mobilajam optimizēta mājaslapa, kas pārvērš apmeklētājus klientos.
+    </div>
+    <div class="cta-btn">Sākt projektu →</div>
+  </div>
+
+  <!-- Monitor (back center) — shows Sharpify main page -->
+  <div class="monitor-wrap">
+    <div class="device-monitor">
+      <div class="device-screen-wrap">
+        <div class="device-screen">
+          <img src="../../../../sharpify-full.png" alt="Sharpify desktop">
+        </div>
+      </div>
+      <div class="device-chin"><div class="logo-dot"></div></div>
+      <div class="device-stand-neck"></div>
+      <div class="device-stand-base"></div>
+    </div>
+  </div>
+
+  <!-- MacBook (front-left) — shows Sport Factory portfolio -->
+  <div class="macbook-wrap">
+    <div class="device-macbook">
+      <div class="device-screen-wrap">
+        <div class="device-screen">
+          <img src="../../../../portfolio-sportfactory.png" alt="Sport Factory">
+        </div>
+      </div>
+      <div class="device-base"></div>
+    </div>
+  </div>
+
+  <!-- iPad (right) — shows MrYeti portfolio -->
+  <div class="ipad-wrap">
+    <div class="device-ipad">
+      <div class="device-screen">
+        <img src="../../../../portfolio-mryeti.png" alt="MrYeti">
+      </div>
+      <div class="device-home-indicator"></div>
+    </div>
+  </div>
+
+  <!-- iPhone (front-right) — shows Sharpify homepage (reuse desktop for now) -->
+  <div class="iphone-wrap">
+    <div class="device-iphone">
+      <div class="device-screen">
+        <div class="device-notch"></div>
+        <img src="../../../../sharpify-full.png" alt="Sharpify mobile">
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating labels -->
+  <div class="float-label label-responsive">100% Responsīva</div>
+  <div class="float-label label-fast">Gatava 1-3 dienās</div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-number">50+</div>
+      <div class="stat-label">Izveidotas mājaslapas</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Garantija</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Atbalsts</div>
+    </div>
+  </div>
+</body>
+</html>

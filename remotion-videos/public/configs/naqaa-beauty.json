@@ -1,0 +1,116 @@
+{
+  "brand": {
+    "name": "Naqaa Beauty",
+    "colors": {
+      "primary": "#0097B2",
+      "secondary": "#B8960C",
+      "accent": "#B8960C",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E",
+      "ctaBg": "#B8960C",
+      "ctaText": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": "Playfair Display",
+      "body": "Inter"
+    },
+    "tagline": "Dāvā savai ādai dabisku mirdzumu!",
+    "website": "https://www.naqaa-beauty.com"
+  },
+  "format": "1:1",
+  "language": "lv",
+  "rawData": {
+    "painPoints": [
+      "Ciets ūdens izraisa ādas sausumu un jutīgumu",
+      "Mati ir blāvi un nedzīvi pēc mazgāšanas",
+      "Hlors un smagie metāli ūdenī kairina ādu",
+      "Vēlas labāku dušas pieredzi, bet nezina risinājumu",
+      "Ikdienas rutīna jūtas garlaicīga un bez rituāla sajūtas"
+    ],
+    "desires": [
+      "Mīkstāka, mirdzošāka āda bez papildu krēmiem",
+      "Veselīgi, spīdīgi mati",
+      "Luksusa spa sajūta mājās katru dienu",
+      "Dabīgi, ekoloģiski produkti bez ķīmijas",
+      "Smarža un aromterapijas efekts dušā"
+    ],
+    "mainOffer": "Vitaminizētie aromātiskie dušas ūdens filtri — 4 smaržas (Precious Rose, Lavender Meadows, Mango Rain, Amberwood)",
+    "resultPromise": "Tīrāks ūdens, maigāka āda, veselīgāki mati, aromterapijas efekts katrā dušā",
+    "differentiators": [
+      "Vienīgie aromātiskie dušas filtri Latvijā",
+      "Dermatoloģiski pārbaudīts — piemērots jutīgai ādai",
+      "100% pārstrādājami materiāli, ekoloģisks iepakojums",
+      "4 unikālas smaržas — roze, lavanda, mango, dzintarkoks",
+      "Filtrs samazina hloru, smagos metālus un citas kaitīgās vielas"
+    ],
+    "trustSignals": [
+      "Dermatoloģiski pārbaudīts",
+      "Piemērots visiem ādas tipiem, ieskaitot jutīgu ādu",
+      "Pārbaudīta kvalitāte"
+    ],
+    "socialProof": [
+      "Aktīva Instagram un TikTok kopiena (@naqaa_beauty)"
+    ],
+    "products": {
+      "vitamin_filters": {
+        "name": "Vitaminizētie dušas filtri",
+        "scents": [
+          "Precious Rose",
+          "Lavender Meadows",
+          "Mango Rain",
+          "Amberwood"
+        ],
+        "price": "34,99€"
+      },
+      "clear_plus": {
+        "name": "CLEAR+ Rūsas noņemšanas filtrs",
+        "price": "24,99€"
+      },
+      "shower_head": {
+        "name": "3-Zonu Dušas Uzgalis",
+        "price": "29,99€"
+      },
+      "bundles": {
+        "Macadamia": "42,49€",
+        "Care": "58,64€",
+        "SmartCare": "59,49€",
+        "Platinum": "42,49€"
+      }
+    },
+    "bonuses": [
+      "Dāvanu kaste L bez maksas pirkumiem virs 100 EUR",
+      "Dāvanu kartes pieejamas",
+      "Abonementa iespēja"
+    ],
+    "keyBenefits": [
+      "Aromātiski ūdens filtri",
+      "Pārbaudīta kvalitāte",
+      "Ūdens attīrīšana un aizsardzība",
+      "Vitaminizācija un ādas kopšana",
+      "Matu veselība"
+    ],
+    "mission": "Radīts ar mērķi sniegt augstvērtīgu un ilgtspējīgu risinājumu Jūsu ikdienas skaistumkopšanas rituāliem.",
+    "tone": "Luxury, warm, nature-inspired, feminine",
+    "productImages": [
+      "photos/naqaa-beauty/product-amberwood-labeled.jpg",
+      "photos/naqaa-beauty/product-clear-labeled.jpg",
+      "photos/naqaa-beauty/product-precious-rose-labeled.jpg",
+      "photos/naqaa-beauty/product-mango-rain-labeled.jpg",
+      "photos/naqaa-beauty/product-lavender-meadows-labeled.jpg",
+      "photos/naqaa-beauty/product-lineup-all-4.jpg",
+      "photos/naqaa-beauty/product-clear-inner.jpg",
+      "photos/naqaa-beauty/product-filter-inner-pink.jpg",
+      "photos/naqaa-beauty/product-filter-inner-yellow.jpg",
+      "photos/naqaa-beauty/product-mango-rain-with-box.jpg",
+      "photos/naqaa-beauty/product-amberwood-with-box.jpg",
+      "photos/naqaa-beauty/product-precious-rose-with-box.jpg",
+      "photos/naqaa-beauty/product-lavender-meadows-with-box.jpg",
+      "photos/naqaa-beauty/product-two-filters-crossed.jpg",
+      "photos/naqaa-beauty/product-all-4-pile.jpg",
+      "photos/naqaa-beauty/product-all-4-pile-landscape.jpg",
+      "photos/naqaa-beauty/product-closeup-precious-rose.jpg",
+      "photos/naqaa-beauty/product-clear-plus-closeup-1.jpg",
+      "photos/naqaa-beauty/product-clear-plus-closeup-2.jpg"
+    ]
+  }
+}

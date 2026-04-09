@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0f1115;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 48px 40px;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 28px;
+}
+.headline span { color: #ff9900; }
+
+/* Product listing */
+.listing {
+  flex: 1; background: #1a1d24;
+  border-radius: 18px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+}
+
+/* Left - product image area */
+.listing-left {
+  width: 380px; background: #0f1115;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 32px;
+  border-right: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+}
+
+.product-box {
+  width: 280px; height: 280px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 24px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 16px 40px rgba(16,185,129,0.2);
+}
+.product-icon { font-size: 80px; margin-bottom: 12px; }
+.product-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900; color: #000;
+}
+
+.best-seller {
+  background: #ff9900; color: #000;
+  padding: 8px 20px; border-radius: 8px;
+  font-weight: 800; font-size: 18px;
+}
+
+/* Right - product details */
+.listing-right {
+  flex: 1; padding: 28px 32px;
+  display: flex; flex-direction: column;
+}
+
+.product-title {
+  font-size: 30px; font-weight: 700; color: #e2e8f0;
+  line-height: 1.35; margin-bottom: 10px;
+}
+
+.product-by { font-size: 18px; color: #10b981; margin-bottom: 12px; }
+.product-by span { color: #10b981; font-weight: 600; }
+
+.product-rating {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 16px;
+}
+.stars { color: #ff9900; font-size: 24px; letter-spacing: 1px; }
+.rating-count { font-size: 18px; color: #64748b; }
+
+.product-price-row {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 6px;
+}
+.price-now {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; color: #10b981;
+}
+.price-was {
+  font-size: 24px; color: #64748b; text-decoration: line-through;
+}
+.price-save {
+  font-size: 18px; color: #10b981; font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.product-features {
+  display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: auto;
+}
+.pf {
+  font-size: 22px; color: #cbd5e1;
+  display: flex; align-items: center; gap: 10px;
+}
+.pf .dot { color: #10b981; font-weight: 900; font-size: 18px; }
+
+.delivery {
+  font-size: 20px; color: #94a3b8;
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.delivery strong { color: #10b981; }
+
+.buy-btn {
+  margin-top: 16px;
+  background: #ff9900; color: #000;
+  padding: 20px; border-radius: 28px;
+  font-weight: 800; font-size: 26px;
+  text-align: center;
+}
+
+.cart-btn {
+  margin-top: 10px;
+  background: #ffa41c; color: #000;
+  padding: 16px; border-radius: 28px;
+  font-weight: 700; font-size: 22px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="headline">Ja mājaslapu varētu <span>pasūtīt</span> kā preci</div>
+
+  <div class="listing">
+    <div class="listing-left">
+      <div class="product-box">
+        <div class="product-icon">🌐</div>
+        <div class="product-label">Mājaslapa</div>
+      </div>
+      <div class="best-seller">⭐ #1 Bestseller</div>
+    </div>
+
+    <div class="listing-right">
+      <div class="product-title">Profesionāla mājaslapa pakalpojumu sniedzējiem — individuāls dizains, mobilā versija, SEO</div>
+      <div class="product-by">by <span>Sharpify</span> | 2 300+ pārdoti</div>
+      <div class="product-rating">
+        <span class="stars">★★★★★</span>
+        <span class="rating-count">(1 000+ vērtējumi)</span>
+      </div>
+
+      <div class="product-price-row">
+        <span class="price-now">€59</span>
+        <span class="price-was">€299</span>
+      </div>
+      <div class="price-save">Ietaupi €240 (80%)</div>
+
+      <div class="product-features">
+        <div class="pf"><span class="dot">●</span> Individuāls dizains — nav šabloni</div>
+        <div class="pf"><span class="dot">●</span> Mobilajam pilnībā pielāgota</div>
+        <div class="pf"><span class="dot">●</span> Kontaktu forma + WhatsApp poga</div>
+        <div class="pf"><span class="dot">●</span> SEO optimizācija iekļauta</div>
+        <div class="pf"><span class="dot">●</span> 100% apmierinātības garantija</div>
+      </div>
+
+      <div class="delivery">🚀 Piegāde: <strong>1-3 darba dienās</strong></div>
+
+      <div class="buy-btn">Pasūtīt tagad →</div>
+    </div>
+  </div>
+</body>
+</html>

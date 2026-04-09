@@ -1,0 +1,37 @@
+{
+  "name": "remotion-videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx remotion studio",
+    "build": "npx remotion render DynamicAd-Feed out/video-feed.mp4",
+    "build:reels": "npx remotion render DynamicAd-Reels out/video-reels.mp4",
+    "bridge": "node scripts/bridge-config.js",
+    "preview": "npx remotion preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/captions": "^4.0.446",
+    "@remotion/cli": "^4.0.446",
+    "@remotion/google-fonts": "^4.0.446",
+    "@remotion/tailwind": "^4.0.446",
+    "@remotion/transitions": "^4.0.446",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.446",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.446",
+    "@remotion/renderer": "^4.0.446"
+  }
+}

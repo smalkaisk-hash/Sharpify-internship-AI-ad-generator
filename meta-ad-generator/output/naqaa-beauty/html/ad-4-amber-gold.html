@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;background:#060504;position:relative;overflow:hidden}
+    /* Gold streaks filling the frame */
+    .s{position:absolute;background:linear-gradient(90deg,transparent,rgba(184,150,12,0.05),transparent);transform:rotate(-30deg)}
+    .s1{width:400px;height:1800px;top:-300px;left:50px}
+    .s2{width:250px;height:1800px;top:-300px;left:400px;opacity:0.7}
+    .s3{width:200px;height:1800px;top:-300px;left:700px;opacity:0.5}
+    .glow{position:absolute;top:45%;left:42%;transform:translate(-50%,-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(184,150,12,0.15) 0%,transparent 55%);filter:blur(50px)}
+    /* Product — left side, massive, bleeds bottom */
+    .product{position:absolute;bottom:-50px;left:-30px;z-index:3}
+    .product img{height:1020px;width:auto;filter:drop-shadow(20px -10px 70px rgba(184,150,12,0.2))}
+    /* Text right side */
+    .text{position:absolute;top:56px;right:52px;z-index:4;max-width:460px;text-align:right}
+    .tag{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#B8960C;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;padding:10px 24px;background:rgba(184,150,12,0.15);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:68px;font-weight:900;color:#FFF;line-height:0.95;margin-bottom:16px}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.45);line-height:1.35;margin-bottom:28px}
+    .bens{display:flex;flex-direction:column;gap:10px;align-items:flex-end;margin-bottom:32px}
+    .ben{display:flex;align-items:center;gap:12px}
+    .bt{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:600;color:rgba(255,255,255,0.6)}
+    .dot{width:10px;height:10px;border-radius:50%;background:#B8960C;flex-shrink:0}
+    .price{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#B8960C}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="s s1"></div><div class="s s2"></div><div class="s s3"></div>
+    <div class="glow"></div>
+    <div class="text">
+      <div class="tag">Dušas vitamīnu filtrs</div>
+      <div class="h1">Spa sajūta<br>katrā<br>dušā.</div>
+      <div class="desc">Dzintarkoka aromāts — luksusa rituāls ar vitamīniem</div>
+      <div class="bens">
+        <div class="ben"><span class="bt">Attīra hloru</span><div class="dot"></div></div>
+        <div class="ben"><span class="bt">Vitamīni ādai</span><div class="dot"></div></div>
+        <div class="ben"><span class="bt">100% eko</span><div class="dot"></div></div>
+      </div>
+      <div class="price">34,99€</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-amberwood-with-box-cutout.png" alt="">
+    </div>
+  </div>
+</body>
+</html>

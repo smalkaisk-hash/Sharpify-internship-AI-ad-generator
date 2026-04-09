@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0a0a12;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 48px 56px 44px;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 32px;
+}
+.headline span { color: #10b981; }
+
+/* Delivery card */
+.delivery-card {
+  width: 100%; max-width: 800px;
+  background: #141420;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 36px 40px;
+  flex: 1; display: flex; flex-direction: column;
+}
+
+.delivery-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 28px;
+}
+.delivery-status {
+  display: flex; align-items: center; gap: 10px;
+}
+.status-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 12px rgba(16,185,129,0.4);
+}
+.status-text { font-size: 22px; font-weight: 700; color: #10b981; }
+.delivery-id { font-size: 16px; color: #475569; }
+
+/* Progress tracker */
+.tracker {
+  display: flex; align-items: flex-start;
+  gap: 0; margin-bottom: 32px;
+  position: relative;
+}
+
+.track-step {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  position: relative; z-index: 1;
+}
+.track-circle {
+  width: 64px; height: 64px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; font-weight: 900; margin-bottom: 14px;
+}
+.track-circle.done { background: #10b981; color: #000; }
+.track-circle.current {
+  background: transparent; border: 4px solid #10b981; color: #10b981;
+  box-shadow: 0 0 20px rgba(16,185,129,0.3);
+}
+.track-circle.pending { background: #1e293b; color: #475569; }
+.track-label { font-size: 20px; font-weight: 700; text-align: center; color: #e2e8f0; }
+.track-time { font-size: 16px; color: #475569; margin-top: 4px; text-align: center; }
+
+/* Line between circles */
+.track-line {
+  position: absolute; top: 32px;
+  left: 12%; right: 12%;
+  height: 4px; background: #1e293b;
+  z-index: 0;
+}
+.track-line-fill {
+  height: 100%; width: 60%;
+  background: #10b981;
+  border-radius: 4px;
+}
+
+/* Order details */
+.order-details {
+  background: rgba(16,185,129,0.04);
+  border: 1px solid rgba(16,185,129,0.15);
+  border-radius: 16px;
+  padding: 24px 28px;
+  flex: 1;
+}
+.order-title {
+  font-size: 20px; font-weight: 700; color: #10b981;
+  margin-bottom: 16px; text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.order-items { display: flex; flex-direction: column; gap: 10px; }
+.order-item {
+  display: flex; justify-content: space-between;
+  font-size: 22px; color: #cbd5e1;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.order-item:last-child { border-bottom: none; }
+.order-item .check { color: #10b981; margin-right: 8px; }
+
+.order-total {
+  display: flex; justify-content: space-between;
+  align-items: center;
+  padding-top: 16px; margin-top: 12px;
+  border-top: 2px solid rgba(16,185,129,0.2);
+}
+.order-total-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+}
+.order-total-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; color: #10b981;
+}
+
+.bottom { display: flex; justify-content: center; margin-top: 24px; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 28px 64px; border-radius: 16px;
+  font-weight: 800; font-size: 34px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Tava mājaslapa ir <span>ceļā</span> 📦</div>
+
+  <div class="delivery-card">
+    <div class="delivery-header">
+      <div class="delivery-status">
+        <div class="status-dot"></div>
+        <div class="status-text">Tiek būvēta</div>
+      </div>
+      <div class="delivery-id">Pasūtījums #2301</div>
+    </div>
+
+    <div style="position: relative; margin-bottom: 32px;">
+      <div class="track-line"><div class="track-line-fill"></div></div>
+      <div class="tracker">
+        <div class="track-step">
+          <div class="track-circle done">✓</div>
+          <div class="track-label">Pasūtīts</div>
+          <div class="track-time">2 min</div>
+        </div>
+        <div class="track-step">
+          <div class="track-circle done">✓</div>
+          <div class="track-label">Anketa<br>aizpildīta</div>
+          <div class="track-time">10 min</div>
+        </div>
+        <div class="track-step">
+          <div class="track-circle current">📱</div>
+          <div class="track-label">Būvējam</div>
+          <div class="track-time">1-2 dienas</div>
+        </div>
+        <div class="track-step">
+          <div class="track-circle pending">🚀</div>
+          <div class="track-label">Gatava!</div>
+          <div class="track-time">3. diena</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-details">
+      <div class="order-title">📋 Tavā pasūtījumā</div>
+      <div class="order-items">
+        <div class="order-item"><span><span class="check">✓</span> Profesionāla mājaslapa</span></div>
+        <div class="order-item"><span><span class="check">✓</span> Individuāls dizains</span></div>
+        <div class="order-item"><span><span class="check">✓</span> Mobilajam optimizēta</span></div>
+        <div class="order-item"><span><span class="check">✓</span> Kontaktu forma + WhatsApp</span></div>
+        <div class="order-item"><span><span class="check">✓</span> SEO pamati</span></div>
+        <div class="order-item"><span><span class="check">✓</span> 100% garantija</span></div>
+      </div>
+      <div class="order-total">
+        <div class="order-total-label">Kopā:</div>
+        <div class="order-total-price">€59</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta-btn">Pasūtīt savu →</div>
+  </div>
+</body>
+</html>
