@@ -1,6 +1,6 @@
 ---
 name: 9-ad-copywriting
-description: Write paid ad copy (Meta, Google, LinkedIn, TikTok, YouTube) using Niks Jansons' proven frameworks — headlines, body copy, variations, and client ad sets
+description: Standalone ad copywriting reference using Niks Jansons' proven frameworks — for writing paid ad copy in isolation (Google Ads headlines, LinkedIn copy, TikTok scripts, YouTube pre-roll, standalone Meta headlines). Use this when the user wants copywriting help for a SINGLE ad or platform OUTSIDE the full client pipeline. NOT for generating a full ad set — use 3-ad-copy or full-pipeline for that.
 ---
 
 # Skill: Ad Copywriting

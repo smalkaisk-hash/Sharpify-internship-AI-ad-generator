@@ -1,6 +1,6 @@
 ---
 name: reklamas-meta-sharpify-eng
-description: Use when making ads for Sharpify's ENGLISH account — ENG niche ads, "make ads for English account", "English ads for [niche]", "B2B Playbook ads". This is for OUR OWN brand (Sharpify/Niks Jansons), not client work. Product is B2B Playbook.
+description: Use when making ads for Sharpify's ENGLISH account — trigger on "make ads for English account", "English ads for [niche]", "ENG ads for coaches/consultants/trades", "B2B Playbook ads", "Website Offer ads" (eu.sharpify.lv/ms/ or web.sharpify.lv). Two products run here: B2B Playbook (lead-gen for consultants/coaches) and Website Offer (€299→€59 direct purchase). This is for OUR OWN brand (Sharpify/Niks Jansons), NOT client work — if user names a third-party business, use full-pipeline instead.
 ---
 
 # Sharpify English Ad Creator — B2B Playbook

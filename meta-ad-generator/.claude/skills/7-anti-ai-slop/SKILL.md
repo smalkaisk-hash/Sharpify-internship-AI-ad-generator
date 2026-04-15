@@ -1,6 +1,6 @@
 ---
 name: 7-anti-ai-slop
-description: Mandatory writing quality rules — no AI-sounding phrases, corporate filler, or vague language in ANY written output
+description: Writing quality rules for all human-facing text (ad copy, headlines, on-image text, email drafts, social posts). Apply this skill BEFORE producing any written output — it catches AI-sounding phrases ("delve into", "unlock", "seamless"), corporate filler, and generic openers. Reach for this skill whenever writing copy for ads, marketing, or anything that should sound human. Returns a pass/fail check against a banned-phrase list plus rewrite suggestions.
 ---
 
 # Anti-AI Slop Rules (MANDATORY for ALL Writing)

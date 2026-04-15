@@ -1,6 +1,6 @@
 ---
 name: 6-variations
-description: Create A/B test variations from existing ad creatives
+description: Create 3-6 A/B test variations from existing ad creatives — hook swaps, CTA color changes, layout swaps, background treatments, product image swaps. Trigger this skill whenever base ads exist and the user wants more variants to test — or says "make variations", "create A/B versions", "generate more creatives from these", "test different angles". Optional step after the main pipeline.
 ---
 
 # Ad Variations — Generate A/B Test Variants

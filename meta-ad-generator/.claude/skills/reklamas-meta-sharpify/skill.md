@@ -1,6 +1,6 @@
 ---
 name: reklamas-meta-sharpify
-description: Use when making ads for Sharpify's LATVIAN account — LV niche ads, "make ads for LV account", "Latvian ads for [niche]", "reklāmas priekš [niša]". This is for OUR OWN brand (Sharpify/Niks Jansons), not client work. Product is MP Risinājums™.
+description: Use when making ads for Sharpify's LATVIAN account — trigger on "make ads for LV account", "Latvian ads for [niche]", "LV ads for būvnieki/skaistumkopšana/IT etc", "reklāmas priekš [niša]", "MP Risinājums ads", "jauniklienti campaign". Product is MP Risinājums™ (Latvian client-acquisition system). This is for OUR OWN brand (Sharpify/Niks Jansons), NOT client work — if user names a third-party business, use full-pipeline instead.
 ---
 
 # Sharpify Meta Ad Creator

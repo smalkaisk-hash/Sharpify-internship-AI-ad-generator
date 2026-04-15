@@ -1,6 +1,6 @@
 ---
 name: 4-ad-designer
-description: Generate HTML/CSS ad creatives by combining brand assets, copy, and layout templates
+description: Generate final 1080x1080 HTML ad creatives by combining brand assets, copy, and layout templates (both base HTML files and inline-generated HTML from extra template descriptions). Trigger this skill whenever ad copy has been generated and the user says "design the ads", "build the HTML", "make the creatives", "render the ads", or "do step 4". Handles tangible (product imagery mandatory) and intangible (no stock photos, CSS visuals). Step 4 of the client ad pipeline.
 ---
 
 # Ad Designer — Build Visual Ad Creatives as HTML/CSS
@@ -114,7 +114,17 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
    - Convert backslashes to forward slashes for browser compatibility
    - Example: `file:///<absolute-project-path>/meta-ad-generator/output/<client-slug>/brief/images/hero-1.jpg`
 
-8. **Print summary**: List all generated HTML files with their layout type, copy framework, and product category applied.
+8. **Run the three sanity checks on every generated ad** (before presenting to user):
+
+   **Scroll-stop test:** Imagine the ad rendered at 40% thumbnail size in a phone feed. Can the hook still be read? Is there a visual anchor someone would notice while thumb-scrolling? If no to either → the ad fails in the feed, redesign.
+
+   **Read-aloud test:** Mentally read every line on the ad out loud. Flag anything a human wouldn't actually say. Look for: stiff phrasing, direct LV↔ENG translations that read awkward ("You roof homes"), plural-noun traps (windows/tiles/shingles with multiple meanings), corporate filler.
+
+   **Generic-swap test:** Mentally replace the brand name with "Brand X". Does the ad still specifically describe this exact business? If yes → the ad is too generic, rewrite with more brief-specific detail. If no → it's properly brand-anchored.
+
+   If any ad fails any test, regenerate that ad before moving on. Don't ship a failed ad hoping the user won't notice.
+
+9. **Print summary**: List all generated HTML files with their layout type, copy framework, and product category applied.
 
 ## Design Rules by Ad Type
 

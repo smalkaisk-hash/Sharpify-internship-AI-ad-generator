@@ -1,6 +1,6 @@
 ---
 name: 8-extra-templates
-description: Template registry — complete index of all available ad templates. The AI chooses freely from these based on what serves each client best.
+description: Complete index of 120+ ad layout templates (6 base HTML + 56 extended .md descriptions + 60+ unlinked patterns) organized by category — comparison, data-driven, editorial, lifestyle, product-hero, promotional, social-proof, ugc-native. Read this skill whenever picking layouts for an ad set — skill 3-ad-copy uses it to select templates, skill 4-ad-designer uses it to generate HTML. Contains the placeholder reference table for base templates and creative briefs for extended templates.
 ---
 
 # Template Registry — Ad Creative Library

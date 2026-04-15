@@ -1,6 +1,6 @@
 ---
 name: 5-export-png
-description: Export HTML ad creatives to 1080x1080 PNG images using Puppeteer
+description: Export HTML ad creatives to 1080x1080 PNG files via Puppeteer headless browser. Trigger this skill whenever HTML ads exist and need to become PNGs for Meta upload — or when the user says "export to PNG", "render the ads", "finalize the creatives", "run the export", or "do step 5". Final step of the client ad pipeline before review.
 ---
 
 # PNG Export — Convert HTML Ads to Production-Ready PNG Images

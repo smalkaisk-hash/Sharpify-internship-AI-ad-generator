@@ -1,6 +1,6 @@
 ---
 name: 3-ad-copy
-description: Generate Meta ad copy sets with dynamic template selection based on client ad type (tangible/intangible)
+description: Generate 6-8 Meta ad copy sets (primary text, headline, CTA) with dynamic template selection per client, pairing each copy variant with a template from the registry. Trigger this skill whenever client-brief.json and brand-assets.json exist and the user says "write the copy", "generate ad text", "make the ads", or "do step 3" — or any mention of ad copy generation in the client pipeline. Step 3 of the client ad pipeline.
 ---
 
 # Ad Copy Generator — Persuasive Copy + Dynamic Template Selection
@@ -21,13 +21,25 @@ Run this skill after `/ad-intake` (and optionally `/ad-brand`) to generate ad co
    - `reference/meta-ad-specs.md` (for character limits)
    - `.claude/skills/8-extra-templates/SKILL.md` — the template registry (for template selection)
 
-2. **Determine ad count**: read `client-brief.json → ad_count` (default 6, max 8).
+2. **Calibrate voice from real samples** (critical for avoiding AI-sounding copy):
+   Before writing any copy, pull 2-5 real voice samples from the client:
+   - `brand-assets.json → content.headings` and `content.key_paragraphs` (scraped from their website)
+   - Client's social posts, past ads, testimonials, or founder writing — if available in the brief
+   - Save these as `voice_samples` in your working memory
+   
+   **Why it matters:** Few-shot examples of real voice beat any descriptive "write in this tone" instruction. Reading 3 real ads the client wrote themselves teaches Claude the cadence, quirks, and phrasing that instructions alone can't.
+   
+   If no voice samples exist anywhere, flag it to the user and ask for 2-3 examples of how they (or their client) actually write. Don't proceed without some voice anchor — you'll default to generic AI cadence.
 
-3. **Select templates** based on `ad_type` (see Template Selection below).
+3. **Determine ad count**: read `client-brief.json → ad_count` (default 6, max 8).
 
-4. **Generate copy sets** — one per selected template. Each copy set pairs a copywriting framework with the selected template.
+4. **Select templates** based on `ad_type` (see Template Selection below).
 
-5. **Save output** to `output/{client-slug}/copy/ad-copy.json`.
+5. **Generate copy sets** — one per selected template. Each copy set pairs a copywriting framework with the selected template.
+
+6. **Apply sentence-rhythm variance** — this is the single highest-leverage anti-AI-slop rule. AI writing defaults to uniform 12-18 word sentences; mixing 3-word sentences with 25+ word ones removes ~60% of the AI smell by itself. Target: every 3rd sentence under 6 words, every 5th sentence over 20 words, never two similar-length sentences in a row.
+
+7. **Save output** to `output/{client-slug}/copy/ad-copy.json`.
 
 ---
 

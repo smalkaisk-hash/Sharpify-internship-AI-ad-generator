@@ -1,6 +1,6 @@
 ---
 name: 2-brand-scraper
-description: Scrape a client website to extract brand colors, fonts, images, and tone
+description: Scrape a client website via Puppeteer to extract brand colors, fonts, hero images, logos, and content tone into brand-assets.json. Trigger this skill whenever a client brief has a URL and the pipeline needs visual brand assets, or the user says "grab the brand from [URL]", "scrape [site]", or "pull the colors/fonts from the website". Auto-detects tangible vs intangible product category. Step 2 of the client ad pipeline.
 ---
 
 # Brand Scraper — Extract Brand Assets from Client Website

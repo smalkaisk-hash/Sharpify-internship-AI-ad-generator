@@ -1,6 +1,6 @@
 ---
 name: 1-client-intake
-description: Parse pasted client information into a structured brief JSON file
+description: Parse pasted raw client information (name, website, target audience, offer details) into a structured client-brief.json. Trigger this skill whenever the user pastes unstructured client data for a new ad project — typed notes, form-field dumps, copy-pasted proposals, bullet points. Auto-detects language and classifies product_type (tangible/intangible) for downstream pipeline routing. Step 1 of the client ad pipeline.
 ---
 
 # Client Intake — Parse Client Data into Structured Brief
