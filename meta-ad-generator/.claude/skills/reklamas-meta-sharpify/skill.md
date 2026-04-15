@@ -46,6 +46,20 @@ Before doing anything else, **read `notes.md`** (sibling file in this skill dire
 
 When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
 
+## VIDEO ADS — use `remotion-superpowers`
+
+When the user asks for **video ads** (not static images) for the LV account — triggers like "make video ads for [niche]", "video reklāmas", "Remotion ads" — switch to the `remotion-superpowers` plugin. Don't try to hand-code Remotion components from scratch.
+
+Use our proven 4-scene structure (~13-15s total) as the plugin's scene spec:
+- Scene 1: HOOK (3s pattern interrupt)
+- Scene 2: PROBLEM/DEMO (4-5s)
+- Scene 3: PROOF/DETAILS (3-4s)
+- Scene 4: PRICE + CTA (3s)
+
+The plugin handles voiceovers, music, TikTok captions, transitions, and AI scene-review — things we'd otherwise build manually. Video hits 3-5% CTR vs 1-2% for static (per account history), so prefer video when budget allows.
+
+For **static image ads**, follow the image pipeline below (Steps 1-5).
+
 ## CRITICAL RULES
 
 1. **NEVER launch to Meta without explicit user approval** — always present creatives + copy first and ask

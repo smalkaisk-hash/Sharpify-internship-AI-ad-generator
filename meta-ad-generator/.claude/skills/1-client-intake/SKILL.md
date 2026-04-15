@@ -32,6 +32,7 @@ Run this skill when a user pastes raw client information (name, website, target 
   "email": "email@example.com",
   "phone": "+371...",
   "website": "https://...",
+  "figma_file_url": "https://www.figma.com/file/... or null",
   "language": "lv",
   "target_audience": {
     "raw": "Original text from client",
@@ -75,29 +76,31 @@ Run this skill when a user pastes raw client information (name, website, target 
 }
 ```
 
-5. **Classify `product_type`** if determinable from client data:
+5. **Extract Figma file URL if provided** (any `https://www.figma.com/file/...` or `https://www.figma.com/design/...` link in the pasted data). Save to `figma_file_url`. This becomes the preferred brand-asset source over web scraping — the scraper in step 2 will check here first. If no Figma link is provided, leave as `null`.
+
+6. **Classify `product_type`** if determinable from client data:
    - `"tangible"` — physical products the customer can touch/hold (candles, clothing, electronics, food products, etc.)
    - `"intangible"` — services, digital products, courses, coaching, consulting, memberships, SaaS, etc.
    - `null` — if the client data doesn't make it clear. The brand scraper will auto-detect from the website.
    - This field overrides the scraper's auto-detection when set, so only set it when you're confident.
 
-6. **Set `ad_type`** based on `product_type`:
+7. **Set `ad_type`** based on `product_type`:
    - If `product_type` is `"tangible"` → set `"ad_type": "client-tangible"`
    - If `product_type` is `"intangible"` → set `"ad_type": "client-intangible"`
    - If `product_type` is `null` → set `"ad_type": null` (the brand scraper will resolve it)
 
-7. **Set `ad_count`** — default is `6`. Increase to `7-8` if the client data is rich:
+8. **Set `ad_count`** — default is `6`. Increase to `7-8` if the client data is rich:
    - Has 3+ testimonials/reviews → +1
    - Has specific stats/numbers (revenue, client count, etc.) → +1
    - Has clear competitor differentiators AND active promotions → +1
    - Maximum is `8`.
 
-8. **Fill in the `ad_strategy` section** based on your analysis:
+9. **Fill in the `ad_strategy` section** based on your analysis:
    - If client gets clients via discovery calls → recommend Lead Generation objective with "Book Now" CTA
    - If client sells products directly → recommend Conversions with "Shop Now" CTA
    - If client is new/building awareness → recommend Awareness with "Learn More" CTA
 
-9. **Print a summary** after saving, confirming: client name, language detected, product type (if set), ad type, ad count, number of pain points extracted, recommended ad objective.
+10. **Print a summary** after saving, confirming: client name, language detected, product type (if set), ad type, ad count, figma URL (if provided), number of pain points extracted, recommended ad objective.
 
 ## Important Rules
 - NEVER invent or fabricate client data. Only use what was provided.

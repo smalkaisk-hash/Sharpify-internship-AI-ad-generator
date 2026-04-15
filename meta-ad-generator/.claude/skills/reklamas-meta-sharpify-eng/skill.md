@@ -35,6 +35,20 @@ Before doing anything else, **read `notes.md`** (sibling file in this skill dire
 
 When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
 
+## VIDEO ADS — use `remotion-superpowers`
+
+When the user asks for **video ads** (not text-only) for the ENG account — triggers like "make video ads for [niche]", "ENG video ads", "Remotion ads" — switch to the `remotion-superpowers` plugin. Don't hand-code Remotion components.
+
+Use our proven 4-scene structure (~13-15s total):
+- Scene 1: HOOK (3s pattern interrupt)
+- Scene 2: PROBLEM/DEMO (4-5s)
+- Scene 3: PROOF/DETAILS (3-4s)
+- Scene 4: PRICE + CTA (3s)
+
+Adapt copy for the English audience + B2B Playbook or Website Offer product (per the two-product split). The plugin handles voiceovers, music, captions, transitions, AI review.
+
+For **text-only static ads** (the default ENG workflow), follow the pipeline below.
+
 ## CRITICAL RULES
 
 1. **NEVER launch to Meta without explicit user approval** — always present copy first and ask

@@ -99,6 +99,36 @@ Google/ChatGPT/iMessage/iPhone Notes mockups work as scroll-stoppers the FIRST e
 
 ---
 
+## 4.4. Plugin Integrations
+
+### Figma (`figma@claude-plugins-official`)
+**Preferred source of truth for brand assets.** When a client provides a Figma file URL in the brief, the `2-brand-scraper` skill uses the Figma MCP instead of web scraping:
+- Colors → from Figma variables / style guide / color styles
+- Typography → from text styles (font family, weight, size)
+- Logo assets → from logo frames/components
+- Branded imagery → from pages marked as brand assets
+
+Figma wins over web scraping because it's the designer's source of truth (scraped CSS colors often pull random greys from framework defaults, not actual brand intent).
+
+**Sharpify's own brand kit:** We should maintain Sharpify's brand in a Figma file so LV/ENG ads pull from it automatically rather than relying on scattered hex values in notes. TODO: set up canonical Sharpify Figma file.
+
+**If no Figma URL is in the brief** → fall back to web scraper.
+
+### Remotion Superpowers (`remotion-superpowers`)
+**Video ad production upgrade** for the LV/ENG Sharpify workflows and (eventually) client video ads. Bundles:
+- AI voiceover generation
+- Music library integration
+- Stock footage search
+- TikTok-style captions
+- Scene transitions
+- AI review loop (critiques each scene before finalizing)
+
+Our existing 4-scene structure (HOOK / PROBLEM / PROOF / CTA, ~13-15s) maps directly to the plugin. When the user asks for a video ad, the LV/ENG skills should call this plugin instead of hand-rolled Remotion code.
+
+Videos hit 3-5% CTR vs 1-2% for static (per LV account history) — worth using when budget allows.
+
+---
+
 ## 4.5. Design Taste — Anti-AI-Slop Heuristics
 
 These are the principles that separate forgettable AI-looking ads from ones people actually stop for. Apply on every ad design decision.
