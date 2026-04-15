@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;background:#0A0A0F;position:relative;overflow:hidden}
+    /* Red ambient glow */
+    .glow{position:absolute;top:45%;left:55%;transform:translate(-50%,-50%);width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,0.1) 0%,transparent 60%);filter:blur(40px)}
+    /* Product — top right */
+    .product{position:absolute;top:36px;right:36px;z-index:3}
+    .product img{height:550px;width:auto;filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5))}
+    /* Text left */
+    .text{position:absolute;top:56px;left:56px;z-index:4;max-width:600px;display:flex;flex-direction:column;justify-content:space-between;height:calc(100% - 112px)}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;padding:10px 24px;background:rgba(239,68,68,0.15);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:90px;font-weight:900;color:#FFF;line-height:0.95;margin-bottom:20px}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.45);line-height:1.35;margin-bottom:28px}
+    .bens{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+    .ben{display:flex;align-items:center;gap:12px}
+    .dot{width:10px;height:10px;border-radius:50%;background:#EF4444;flex-shrink:0}
+    .bt{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:600;color:rgba(255,255,255,0.65)}
+    .price-row{display:flex;align-items:center;gap:16px}
+    .price{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#FFF}
+    .price-badge{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:800;color:#FFF;background:#EF4444;padding:8px 18px;border-radius:8px}
+    .kit{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:500;color:rgba(255,255,255,0.35);margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="glow"></div>
+    <div class="text">
+      <div class="tag">Ajax mini komplekts</div>
+      <div class="h1">Kameras<br>skatās.<br>Bet kurš<br>reaģē?</div>
+      <div class="desc">Ajax sistēma ziņo telefonā uzreiz — tu kontrolē situāciju</div>
+      <div class="bens">
+        <div class="ben"><div class="dot"></div><span class="bt">Tūlītēji paziņojumi</span></div>
+        <div class="ben"><div class="dot"></div><span class="bt">Vadi no telefona</span></div>
+        <div class="ben"><div class="dot"></div><span class="bt">Mājai, birojam, noliktavai</span></div>
+      </div>
+      <div class="price-row">
+        <span class="price">130€</span>
+        <span class="price-badge">ATLAIDE</span>
+      </div>
+      <div class="kit">+ PVN · Centrāle + kustību detektors</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/cutouts/ajax-kit-white-bg-cutout.png" alt="">
+    </div>
+  </div>
+</body>
+</html>

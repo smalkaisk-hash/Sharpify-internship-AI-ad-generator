@@ -15,8 +15,8 @@
 - **Center safe zone**: 900 x 810 px (main content area)
 
 ### Text Overlay Guidelines
-- Meta no longer enforces a strict 20% text rule, but **ads with less text perform better**
-- Recommended: keep text overlay under 20% of image area
+- Meta removed the 20% text rule in 2020, but **ads with less text still perform better** (their own research)
+- Keep text overlay light — punchy headline + short body, avoid large blocks of copy baked into the image
 - Always ensure text contrast ratio >= 4.5:1 against background (WCAG AA)
 - Use text shadows or overlay gradients to ensure readability over photos
 

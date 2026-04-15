@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.hero-stats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  position: relative; z-index: 1;
+}
+
+.main-stat {
+  background: rgba(16,185,129,0.06);
+  border: 1px solid rgba(16,185,129,0.35);
+  border-radius: 18px;
+  padding: 32px 34px;
+  display: flex; flex-direction: column; justify-content: center;
+  box-shadow: 0 0 40px rgba(16,185,129,0.08);
+}
+.main-stat .label {
+  font-size: 13px; letter-spacing: 3px;
+  text-transform: uppercase; font-weight: 700;
+  color: #10b981; margin-bottom: 14px;
+}
+.main-stat .value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 108px; font-weight: 900;
+  line-height: 0.95;
+  background: linear-gradient(180deg, #34d399 0%, #10b981 50%, #059669 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-stat .unit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 800;
+  color: #fff; margin-top: 4px;
+}
+.main-stat .desc {
+  font-size: 14px; color: #94a3b8;
+  line-height: 1.5; margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.side-stats { display: flex; flex-direction: column; gap: 20px; }
+.side-stat {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 22px 24px;
+  flex: 1;
+  display: flex; flex-direction: column; justify-content: center;
+  gap: 6px;
+}
+.side-stat .ic-wrap {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; letter-spacing: 2px; color: #daa520;
+  text-transform: uppercase; font-weight: 700;
+  margin-bottom: 4px;
+}
+.side-stat .value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px; font-weight: 900;
+  color: #fff; line-height: 1;
+}
+.side-stat .value.gold {
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.side-stat .sub {
+  font-size: 13px; color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* Header */
+.hdr-row {
+  text-align: center; margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.hdr-row .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.1;
+}
+
+/* Bottom */
+.btm-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.btm-row .price-info {
+  display: flex; align-items: baseline; gap: 8px;
+  color: #94a3b8;
+}
+.btm-row .price-old { text-decoration: line-through; color: #64748b; }
+.btm-row .price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900; color: #10b981;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="hdr-row">
+    <div class="eyebrow">REĀLS IEGULDĪJUMS</div>
+    <div class="title">28 sekundes setup. <span class="gold-italic">Mūžīgs ieguvums.</span></div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="main-stat">
+      <div class="label">Taupi katru dienu</div>
+      <div class="value">2–5h</div>
+      <div class="unit">ietaupītas stundas</div>
+      <div class="desc">No pirmās dienas. Bez eksperimentēšanas. Bez prompt rakstīšanas no&nbsp;nulles.</div>
+    </div>
+
+    <div class="side-stats">
+      <div class="side-stat">
+        <div class="ic-wrap">
+          <svg class="ic sm gold" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 4v4"/><path d="M16 4v4"/></svg>
+          GATAVS
+        </div>
+        <div class="value gold">28 sek</div>
+        <div class="sub">vidējais instalācijas laiks</div>
+      </div>
+      <div class="side-stat">
+        <div class="ic-wrap">
+          <svg class="ic sm gold" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          SETUP
+        </div>
+        <div class="value gold">25 min</div>
+        <div class="sub">pilna CLAUDE.md konfigurācija</div>
+      </div>
+    </div>
+
+    <div class="side-stats">
+      <div class="side-stat">
+        <div class="ic-wrap">
+          <svg class="ic sm" viewBox="0 0 24 24"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3L14 10"/><path d="M3 21l7-7"/></svg>
+          SKILLS + WORKFLOWS
+        </div>
+        <div class="value">27 + 10</div>
+        <div class="sub">gatavas AI skills un pipelines</div>
+      </div>
+      <div class="side-stat">
+        <div class="ic-wrap">
+          <svg class="ic sm" viewBox="0 0 24 24"><path d="M20 7L9 18l-5-5"/></svg>
+          GARANTIJA
+        </div>
+        <div class="value">7 dien.</div>
+        <div class="sub">naudas atgriešana bez jautājumiem</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btm-row">
+    <div class="price-info">
+      AI Rīku Komplekts ·
+      <span class="price-old">€99</span>
+      <span class="price-new">€19</span>
+      · mūžīga piekļuve
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

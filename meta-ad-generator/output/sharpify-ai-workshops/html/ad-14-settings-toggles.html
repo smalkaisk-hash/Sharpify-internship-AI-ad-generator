@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #000;
+  font-family: -apple-system, 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 40px 40px 36px;
+  position: relative;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 10px;
+}
+.headline span { color: #10b981; }
+.sub {
+  font-size: 22px; color: #64748b; text-align: center;
+  margin-bottom: 28px;
+}
+
+/* iOS-style settings panel */
+.settings {
+  flex: 1;
+  background: #1c1c1e;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+.settings-header {
+  padding: 22px 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid #2c2c2e;
+}
+.sh-title {
+  font-size: 24px; font-weight: 700;
+}
+.sh-right {
+  font-size: 14px; color: #10b981;
+  display: flex; align-items: center; gap: 6px;
+  font-weight: 700;
+}
+.sh-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.settings-section {
+  padding: 0 28px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.section-label {
+  font-size: 13px; color: #8e8e93;
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 18px 0 10px;
+  font-weight: 700;
+}
+
+.toggle-row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #2c2c2e;
+}
+.toggle-row:last-child { border-bottom: none; }
+.toggle-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.toggle-info { flex: 1; }
+.toggle-name {
+  font-size: 19px; font-weight: 600; color: #fff;
+}
+.toggle-desc {
+  font-size: 14px; color: #8e8e93; margin-top: 2px;
+}
+
+/* iOS toggle switch */
+.switch {
+  width: 54px; height: 32px;
+  background: #10b981;
+  border-radius: 16px;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(16,185,129,0.3);
+}
+.switch::after {
+  content: ''; position: absolute;
+  top: 2px; right: 2px;
+  width: 28px; height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Different icon backgrounds */
+.ic-market { background: rgba(239,68,68,0.15); }
+.ic-sales { background: rgba(245,158,11,0.15); }
+.ic-content { background: rgba(59,130,246,0.15); }
+.ic-brand { background: rgba(139,92,246,0.15); }
+.ic-workflow { background: rgba(16,185,129,0.15); }
+.ic-research { background: rgba(236,72,153,0.15); }
+
+/* Bottom CTA */
+.bottom {
+  margin-top: 18px;
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 22px 28px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.bottom-left {
+  display: flex; align-items: center; gap: 14px;
+}
+.bottom-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 900; color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.bottom-text {}
+.bottom-title {
+  font-size: 22px; font-weight: 800;
+}
+.bottom-sub { font-size: 15px; color: #8e8e93; margin-top: 2px; }
+.bottom-sub s { color: #ef4444; }
+.bottom-sub strong { color: #10b981; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 18px 38px; border-radius: 14px;
+  font-weight: 800; font-size: 22px;
+}
+</style>
+</head>
+<body>
+  <div class="headline">Ieslēdz <span>visas AI skills</span></div>
+  <div class="sub">Instalē vienreiz — un viss strādā</div>
+
+  <div class="settings">
+    <div class="settings-header">
+      <div class="sh-title">AI Skills</div>
+      <div class="sh-right"><div class="sh-dot"></div>27/27 Aktīvas</div>
+    </div>
+
+    <div class="settings-section">
+      <div class="section-label">Mārketings</div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-market">📣</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Marketing Skill</div>
+          <div class="toggle-desc">Meta ads, emails, hooks — ar Tava brand voice</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-brand">🎯</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Brand Voice</div>
+          <div class="toggle-desc">Konsekvents tonis visos kanālos</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-content">✍️</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Copywriting</div>
+          <div class="toggle-desc">Long-form, sales pages, landing copy</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+
+      <div class="section-label">Pārdošana</div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-sales">💰</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Sales Call</div>
+          <div class="toggle-desc">Objection handling, scripts, closing</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-research">🔍</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Lead Research</div>
+          <div class="toggle-desc">Pilnīga informācija par katru leadu</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+
+      <div class="section-label">Workflow</div>
+
+      <div class="toggle-row">
+        <div class="toggle-icon ic-workflow">⚡</div>
+        <div class="toggle-info">
+          <div class="toggle-name">Workflow Automation</div>
+          <div class="toggle-desc">End-to-end pipelines — 10 iekļautas</div>
+        </div>
+        <div class="switch"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="bottom-left">
+      <div class="bottom-icon">S</div>
+      <div class="bottom-text">
+        <div class="bottom-title">+ vēl 21 skills iekļautas</div>
+        <div class="bottom-sub"><s>€99</s> · <strong>€19</strong> · mūžīga piekļuve</div>
+      </div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>

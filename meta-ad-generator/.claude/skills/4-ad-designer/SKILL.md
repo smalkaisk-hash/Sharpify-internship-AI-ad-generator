@@ -23,9 +23,10 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
    - Ad copy (for text content + layout recommendations)
    - Reference: `reference/color-theory.md` and `reference/meta-ad-specs.md`
 
-2. **Check product category** from `brand-assets.json → product_category.type`:
-   - This determines which templates are eligible and which design rules apply
-   - See "Template Eligibility by Category" and "Category-Specific Design Rules" sections below
+2. **Check `ad_type`** from `client-brief.json → ad_type`:
+   - `"client-tangible"` → every ad must feature product imagery (see "Design Rules by Ad Type" below)
+   - `"client-intangible"` → no generic stock photos, use gradients/CSS-built visuals
+   - The AI freely picks any template from the library — no eligibility filtering
 
 3. **Prepare brand variables** from `brand-assets.json`:
    ```
@@ -114,37 +115,18 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
 
 8. **Print summary**: List all generated HTML files with their layout type, copy framework, and product category applied.
 
-## Template Eligibility by Category
-
-Before selecting a layout template, check `brand-assets.json → product_category.type` and filter to eligible templates:
-
-| Template | Tangible | Intangible | Notes |
-|---|---|---|---|
-| hero-overlay | Yes | Yes | Tangible: product photo as background. Intangible: gradient background |
-| bold-statement | No | Yes | Text-only layout — great for outcomes, not for product showcase |
-| split-horizontal | Yes | Yes | Tangible: product image + text. Intangible: before/after transformation |
-| comparison | No | Yes | Before vs After is transformation-focused |
-| testimonial-card | Yes | Yes | Social proof works universally |
-| benefit-stack | Yes | Yes | Works for product specs or service benefits |
-| editorial | Yes | Yes | Works for both — elegant product showcase or service presentation |
-
-If a copy set's `layout_recommendation` maps to a template that is NOT eligible for the detected category, substitute the closest eligible template instead (e.g., tangible PAS → hero-overlay with product photo instead of bold-statement).
-
-## Category-Specific Design Rules
+## Design Rules by Ad Type
 
 ### Tangible Products (physical items)
-- **Product photos ARE allowed and encouraged** as hero elements and backgrounds
-- Use product images from `brand-assets.json → images.products` (paths: `brief/images/product-*.{ext}`)
-- The product image should be the centerpiece of the ad — text supports the image
-- Clean layouts that let the product speak — don't overcrowd with text
-- hero-overlay: use product photo as the background with gradient overlay for text readability
-- split-horizontal: product image on one side, benefits/text on the other
+- **Product images are mandatory in every ad** — viewers must understand what the product is without reading
+- Use product photos from `brief/images/product-*.{ext}` or AI-generated images from `image_requirements`
+- The product should be visually prominent — text supports the image, not the other way around
+- Adapt any template to feature the product: hero shots, lifestyle contexts, diagrams, grids, etc.
 
-### Intangible Products (services, courses, digital) — Default Rules
-- **DO NOT use background images or hero photos in any ad.** Use solid brand color backgrounds or gradients instead.
-- This applies to ALL intangible layouts: hero-overlay, bold-statement, split-horizontal, etc.
-- Use brand primary/secondary colors for gradients (e.g., `linear-gradient(160deg, secondary 0%, primary 50%, secondary 100%)`)
-- For split-horizontal: replace the image top half with a color block featuring key info (price, event name, etc.)
+### Intangible Products (services, courses, digital)
+- **No generic stock photos.** Default to solid color gradients or brand-colored backgrounds
+- Template-specific visuals are fine — phone UI mockups, social post screenshots, review cards, comparison columns, etc. Build these with CSS/HTML
+- Some templates (like UGC-native, lifestyle) may call for specific visual treatments — follow the template description
 
 ### No Logos
 - **DO NOT include logos** in V2 (bold-statement) or V5 (benefit-stack) layouts — they are already removed from templates.

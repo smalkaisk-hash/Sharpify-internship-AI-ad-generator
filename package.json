@@ -1,0 +1,13 @@
+{
+  "name": "meta-ad-generator-v2",
+  "private": true,
+  "scripts": {
+    "cleanup": "node scripts/cleanup.js",
+    "cleanup:dry": "node scripts/cleanup.js --dry-run",
+    "recover": "node scripts/cleanup.js recover"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "unzipper": "^0.12.3"
+  }
+}

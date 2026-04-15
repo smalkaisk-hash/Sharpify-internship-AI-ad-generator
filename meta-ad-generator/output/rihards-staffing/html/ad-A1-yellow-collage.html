@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;overflow:hidden;position:relative}
+    .yellow-block{grid-column:1;grid-row:1/span 2;background:#F5A623;padding:48px 40px;display:flex;flex-direction:column;justify-content:center}
+    .yellow-tag{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;color:rgba(30,30,30,0.55);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:12px}
+    .yellow-headline{font-family:'Montserrat',sans-serif;font-size:80px;font-weight:900;color:#FFFFFF;line-height:0.95;text-transform:uppercase;margin-bottom:20px;letter-spacing:-0.02em}
+    .yellow-sub{display:inline-block;background:#FFFFFF;color:#1A1A1A;font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;padding:14px 24px;text-transform:uppercase;letter-spacing:0.05em;width:fit-content;margin-bottom:14px}
+    .yellow-line{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#FFFFFF;text-transform:uppercase;letter-spacing:0.05em}
+    .img-top{grid-column:2;grid-row:1;overflow:hidden}
+    .img-top img{width:100%;height:100%;object-fit:cover}
+    .img-bot{grid-column:2;grid-row:2;overflow:hidden;position:relative}
+    .img-bot img{width:100%;height:100%;object-fit:cover}
+    .benefits-box{position:absolute;bottom:92px;right:32px;width:340px;background:rgba(255,255,255,0.95);padding:20px 24px;border-radius:8px;z-index:3}
+    .ben{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .ben:last-child{margin-bottom:0}
+    .check{width:22px;height:22px;border-radius:50%;background:#F5A623;color:#FFF;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0}
+    .ben-text{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:600;color:#1A1A1A}
+    .ben-text b{font-weight:900}
+    .bottom-bar{position:absolute;bottom:0;left:0;right:0;background:#1A1A1A;padding:18px 48px;display:flex;justify-content:space-between;align-items:center;z-index:4}
+    .bottom-brand{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.1em}
+    .bottom-cta{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:#F5A623;text-transform:uppercase;letter-spacing:0.05em}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="yellow-block">
+      <div class="yellow-tag">EU Workforce Supply</div>
+      <div class="yellow-headline">Crew<br>in 7<br>days.</div>
+      <div class="yellow-sub">No HR headache</div>
+      <div class="yellow-line">For big job sites</div>
+    </div>
+    <div class="img-top">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/claude-ad/output/rihards-staffing/brief/images/backgrounds/bg-bus-flex.png" alt="">
+    </div>
+    <div class="img-bot">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/claude-ad/output/rihards-staffing/brief/images/backgrounds/bg-team-walking.png" alt="">
+      <div class="benefits-box">
+        <div class="ben"><div class="check">✓</div><div class="ben-text"><b>10+ workers</b> mobilized</div></div>
+        <div class="ben"><div class="check">✓</div><div class="ben-text"><b>EU citizens</b> only</div></div>
+        <div class="ben"><div class="check">✓</div><div class="ben-text"><b>Full-service</b> delivery</div></div>
+        <div class="ben"><div class="check">✓</div><div class="ben-text"><b>English</b>-speaking</div></div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <span class="bottom-brand">Reliable staffing at scale</span>
+      <span class="bottom-cta">Free Consultation →</span>
+    </div>
+  </div>
+</body>
+</html>

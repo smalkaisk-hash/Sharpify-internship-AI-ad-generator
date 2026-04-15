@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(160deg,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.25) 60%,rgba(0,0,0,0.75) 100%)}
+    /* Text top left */
+    .text{position:absolute;top:48px;left:48px;z-index:4;max-width:560px}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;padding:10px 24px;background:rgba(239,68,68,0.2);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:60px;font-weight:900;color:#FFF;line-height:1.0;margin-bottom:16px;text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.6);line-height:1.35;margin-bottom:28px}
+    .bens{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+    .ben{display:flex;align-items:center;gap:12px}
+    .check{font-size:22px}
+    .bt{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:600;color:rgba(255,255,255,0.75)}
+    /* Product bottom left */
+    .product{position:absolute;bottom:30px;left:48px;z-index:3}
+    .product img{height:300px;width:auto;filter:drop-shadow(5px -5px 20px rgba(0,0,0,0.4))}
+    /* Price bottom right */
+    .bot-right{position:absolute;bottom:48px;right:48px;z-index:4;text-align:right}
+    .price{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#FFF}
+    .price-note{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.4)}
+    .cta{display:inline-block;margin-top:12px;font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#FFF;background:#EF4444;padding:14px 36px;border-radius:12px;border:none}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/backgrounds/bg-phone-alert.png" alt="">
+    <div class="overlay"></div>
+    <div class="text">
+      <div class="tag">Ajax drošības sistēma</div>
+      <div class="h1">Signalizācija<br>nepalīdzēs, ja<br>neviens nezinās.</div>
+      <div class="desc">Ajax ziņo telefonā uzreiz — tu zini kas notiek pat 100km no mājām</div>
+      <div class="bens">
+        <div class="ben"><span class="check">✔</span><span class="bt">Paziņojums telefonā sekundēs</span></div>
+        <div class="ben"><span class="check">✔</span><span class="bt">Ieslēdz/izslēdz no telefona</span></div>
+        <div class="ben"><span class="check">✔</span><span class="bt">Mājai, birojam vai noliktavai</span></div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/cutouts/ajax-kit-white-bg-cutout.png" alt="">
+    </div>
+    <div class="bot-right">
+      <div class="price">130€</div>
+      <div class="cta">Saņemt piedāvājumu →</div>
+    </div>
+  </div>
+</body>
+</html>

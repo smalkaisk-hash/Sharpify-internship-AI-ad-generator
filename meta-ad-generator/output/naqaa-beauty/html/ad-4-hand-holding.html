@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.05) 30%,rgba(0,0,0,0.05) 60%,rgba(0,0,0,0.7) 100%)}
+    /* Top headline */
+    .top{position:absolute;top:40px;left:0;right:0;text-align:center;z-index:4}
+    .h1{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#FFF;line-height:1.05;text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .h1 .accent{color:#E91E63}
+    .sub{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.6);margin-top:10px;text-shadow:0 2px 10px rgba(0,0,0,0.4)}
+    /* Product overlay — bottom right, overlapping the hand scene */
+    .product{position:absolute;bottom:-20px;right:-10px;z-index:3}
+    .product img{height:620px;width:auto;filter:drop-shadow(-15px -5px 40px rgba(0,0,0,0.4))}
+    /* Bottom */
+    .bot{position:absolute;bottom:0;left:0;right:0;z-index:4;padding:28px 48px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.8));display:flex;align-items:flex-end;justify-content:space-between}
+    .bot-left{max-width:500px}
+    .tag{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:800;color:#E91E63;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px}
+    .desc{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:600;color:rgba(255,255,255,0.7);line-height:1.3}
+    .price{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#FFF}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/backgrounds/bg-hand-holding.png" alt="">
+    <div class="overlay"></div>
+    <div class="top">
+      <div class="h1">Vienkāršākais veids<br>kā <span class="accent">uzlabot dušu</span></div>
+      <div class="sub">Uzskrūvē. Ieslēdz. Sajūti atšķirību.</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-precious-rose-with-box-cutout.png" alt="">
+    </div>
+    <div class="bot">
+      <div class="bot-left">
+        <div class="tag">Vitamīnu dušas filtrs</div>
+        <div class="desc">Attīra hloru, pievieno vitamīnus un rožu aromātu</div>
+      </div>
+      <div class="price">34,99€</div>
+    </div>
+  </div>
+</body>
+</html>

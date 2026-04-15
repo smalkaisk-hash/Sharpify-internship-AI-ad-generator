@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,700;1,900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1280px; height: 720px; overflow: hidden; }
+body {
+  width: 1280px; height: 720px;
+  background: linear-gradient(145deg, #0a0a14 0%, #0f1020 50%, #0a0a12 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  padding: 40px 52px 32px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(218,165,32,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(16,185,129,0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.header {
+  text-align: center; margin-bottom: 24px;
+  position: relative; z-index: 1;
+}
+.eyebrow {
+  font-size: 14px; letter-spacing: 5px;
+  color: #daa520; font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.title-row {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px; font-weight: 900;
+  line-height: 1.05;
+}
+.title-row .gold {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sub-title {
+  font-size: 15px; color: #94a3b8;
+  margin-top: 8px;
+}
+
+/* Nested system diagram */
+.system {
+  flex: 1;
+  background: rgba(255,255,255,0.015);
+  border: 1.5px solid rgba(218,165,32,0.3);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex; flex-direction: column;
+  gap: 12px;
+  position: relative; z-index: 1;
+}
+
+.layer-label {
+  text-align: center;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; font-weight: 700;
+}
+.layer-label.outer { color: #10b981; }
+.layer-label.middle { color: #3b82f6; }
+.layer-label.inner { color: #daa520; }
+
+.outer-layer {
+  background: rgba(16,185,129,0.04);
+  border: 1px solid rgba(16,185,129,0.25);
+  border-radius: 12px;
+  padding: 14px;
+  position: relative;
+}
+.outer-layer .layer-label {
+  position: absolute; top: -8px; left: 50%; transform: translateX(-50%);
+  background: #0a0a14; padding: 0 10px;
+  font-size: 11px;
+}
+
+.middle-layer {
+  background: rgba(59,130,246,0.04);
+  border: 1px solid rgba(59,130,246,0.25);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  position: relative;
+}
+.middle-layer .layer-label {
+  position: absolute; top: -8px; left: 50%; transform: translateX(-50%);
+  background: #0a0a14; padding: 0 10px;
+}
+
+.skills-layer {
+  display: flex; justify-content: space-around; align-items: center;
+  gap: 10px; margin-top: 12px;
+}
+.skill-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 12px 14px;
+  flex: 1;
+  text-align: center;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 4px;
+}
+.skill-icon { font-size: 24px; }
+.skill-name {
+  font-size: 13px; font-weight: 700; color: #fff;
+}
+
+.context-layer {
+  text-align: center;
+  font-size: 11px; color: #64748b;
+  letter-spacing: 1px;
+}
+
+/* Bottom row */
+.bottom-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+}
+
+.price-info {
+  display: flex; align-items: baseline; gap: 12px;
+}
+.price-old {
+  font-size: 16px; color: #64748b; text-decoration: line-through;
+}
+.price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+  color: #10b981;
+}
+.price-sub {
+  font-size: 12px; color: #94a3b8; letter-spacing: 0.5px;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="eyebrow">AI OPERĒTĀJSISTĒMA</div>
+    <div class="title-row">Tavs bizness ar <span class="gold">AI apvalku</span></div>
+    <div class="sub-title">Nav viens rīks — bet slāņu sistēma ap Tavu biznesu</div>
+  </div>
+
+  <div class="system">
+    <div class="outer-layer">
+      <div class="layer-label outer">AUTOMATIZĀCIJA & WORKFLOWS</div>
+      <div class="middle-layer" style="margin-top: 14px;">
+        <div class="layer-label middle">PROCESI (mārketings, pārdošana, saturs, follow-up)</div>
+
+        <div class="skills-layer">
+          <div class="skill-card">
+            <div class="skill-icon">📣</div>
+            <div class="skill-name">Mārketings</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">💰</div>
+            <div class="skill-name">Pārdošana</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">✍️</div>
+            <div class="skill-name">Saturs</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">Workflow</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📚</div>
+            <div class="skill-name">Zināšanas</div>
+          </div>
+        </div>
+
+        <div class="context-layer" style="margin-top: 12px;">
+          ● CLAUDE.md — KONTEKSTS: kas Tu esi, ko pārdod, Tava balss, vērtības
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="price-info">
+      <div>
+        <div class="price-sub" style="margin-bottom: 2px;">AI Rīku Komplekts · mūžīga piekļuve</div>
+        <div>
+          <span class="price-old">€99</span>
+          <span class="price-new">€19</span>
+        </div>
+      </div>
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

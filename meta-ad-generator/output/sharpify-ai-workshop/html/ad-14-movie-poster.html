@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background:
+      radial-gradient(ellipse at 50% 20%, rgba(245,158,11,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 90%, rgba(220,38,38,0.3) 0%, transparent 60%),
+      linear-gradient(180deg, #1a0a2e 0%, #0a0a0a 50%, #1a0505 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Light rays effect */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 600px;
+    background: conic-gradient(from 180deg at 50% 0%,
+      transparent 0deg,
+      rgba(245,158,11,0.1) 10deg,
+      transparent 20deg,
+      transparent 30deg,
+      rgba(245,158,11,0.12) 40deg,
+      transparent 50deg,
+      transparent 150deg,
+      rgba(245,158,11,0.1) 160deg,
+      transparent 170deg,
+      transparent 180deg,
+      rgba(245,158,11,0.15) 190deg,
+      transparent 200deg,
+      transparent 330deg,
+      rgba(245,158,11,0.1) 340deg,
+      transparent 350deg,
+      transparent 360deg);
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  .top-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .presents {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #F59E0B;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 38px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .title-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .movie-title {
+    font-family: 'Bebas Neue', 'Inter', sans-serif;
+    font-size: 180px;
+    color: #ffffff;
+    line-height: 0.85;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow:
+      0 0 40px rgba(245,158,11,0.4),
+      0 4px 20px rgba(0,0,0,0.8);
+  }
+
+  .movie-title .accent {
+    color: #F59E0B;
+    font-family: 'Bebas Neue', 'Inter', sans-serif;
+  }
+
+  .tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    color: #d1d5db;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 16px;
+    margin-bottom: 28px;
+    max-width: 700px;
+    line-height: 1.4;
+  }
+
+  .cast-credits {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    font-weight: 600;
+  }
+
+  .cast-credits .star {
+    color: #F59E0B;
+    font-weight: 700;
+  }
+
+  .bottom-section {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .ratings-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  .rating-badge {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .runtime {
+    font-family: 'Bebas Neue', 'Inter', sans-serif;
+    font-size: 48px;
+    color: #F59E0B;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+
+  .runtime-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .price-wrap {
+    text-align: right;
+  }
+
+  .coming-soon {
+    font-family: 'Bebas Neue', 'Inter', sans-serif;
+    font-size: 32px;
+    color: #F59E0B;
+    letter-spacing: 3px;
+    line-height: 1;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .price-old {
+    font-size: 22px;
+    color: rgba(255,255,255,0.4);
+    text-decoration: line-through;
+  }
+
+  .price-new {
+    font-family: 'Bebas Neue', 'Inter', sans-serif;
+    font-size: 82px;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-label">Niks Jansons · Sharpify Studios</div>
+    <div class="presents">— SPECIĀLĀ PRODUKCIJA —</div>
+
+    <div class="title-wrap">
+      <div class="movie-title">DIGITĀLAIS</div>
+      <div class="movie-title"><span class="accent">DUBULTNIEKS</span></div>
+
+      <div class="tagline">Viens uzņēmējs. 27 AI skills. Bezgalīgi daudz klientu. Šogad tu kļūsi par to, kurš lieto AI — pirms to dara tavs konkurents.</div>
+
+      <div class="cast-credits">
+        Starring: <span class="star">CLAUDE CODE</span> · AI AĢENTI · TAVS BIZNESS<br>
+        Directed by: NIKS JANSONS · Forbes 30 Under 30<br>
+        Based on: REĀLA SISTĒMA · 1.3M+ PIETEIKUMIEM
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div>
+        <div class="ratings-row">
+          <div class="rating-badge">⭐ 2,300+</div>
+          <div class="rating-badge">26 valstis</div>
+          <div class="rating-badge">Oriģināls</div>
+        </div>
+        <div class="runtime">74 MIN</div>
+        <div class="runtime-label">+ 128 slaidi · 27 skills</div>
+      </div>
+
+      <div class="price-wrap">
+        <div class="coming-soon">PIEEJAMS TAGAD</div>
+        <div class="price-row">
+          <div class="price-old">€99</div>
+          <div class="price-new">€19</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

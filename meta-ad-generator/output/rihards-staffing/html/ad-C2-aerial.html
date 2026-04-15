@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .image{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden}
+    .image img{width:100%;height:100%;object-fit:cover}
+    .dark-panel{position:absolute;bottom:0;left:0;width:62%;height:46%;background:#1A1A1A;clip-path:polygon(0 15%, 100% 0, 100% 100%, 0 100%);padding:90px 44px 44px;z-index:3;display:flex;flex-direction:column;justify-content:center}
+    .dp-tag{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;color:#F5A623;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:10px}
+    .dp-title{font-family:'Montserrat',sans-serif;font-size:60px;font-weight:900;color:#FFFFFF;line-height:0.9;text-transform:uppercase;margin-bottom:16px;letter-spacing:-0.02em}
+    .dp-title .yellow{color:#F5A623}
+    .dp-desc{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:500;color:rgba(255,255,255,0.75);line-height:1.4;max-width:460px}
+    .dp-desc b{color:#F5A623;font-weight:700}
+    .yellow-panel{position:absolute;bottom:0;right:0;width:42%;height:30%;background:#F5A623;clip-path:polygon(15% 0, 100% 0, 100% 100%, 0 100%);padding:50px 40px 32px 80px;z-index:4;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right}
+    .yp-free{font-family:'Montserrat',sans-serif;font-size:40px;font-weight:900;color:#1A1A1A;text-transform:uppercase;line-height:1;letter-spacing:-0.01em}
+    .yp-sub{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#1A1A1A;margin-top:6px;display:flex;align-items:center;gap:10px}
+    .yp-arrow{font-size:22px;font-weight:900}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="image">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/claude-ad/output/rihards-staffing/brief/images/backgrounds/bg-aerial-site.png" alt="">
+    </div>
+    <div class="dark-panel">
+      <div class="dp-tag">Full-Service Workforce</div>
+      <div class="dp-title">From 0 to 10+<br>in <span class="yellow">7 days.</span></div>
+      <div class="dp-desc">Deadlines tight? Local hiring slow? We supply <b>motivated EU workers</b> and handle all the logistics.</div>
+    </div>
+    <div class="yellow-panel">
+      <div class="yp-free">FREE</div>
+      <div class="yp-sub">Initial Consultation <span class="yp-arrow">▶</span></div>
+    </div>
+  </div>
+</body>
+</html>

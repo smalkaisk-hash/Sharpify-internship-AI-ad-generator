@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #060810;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 40px 40px;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 24px;
+}
+.headline span { color: #10b981; }
+
+/* VS Code / Cursor IDE window */
+.ide {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+}
+
+.ide-titlebar {
+  background: #2d2d30; padding: 10px 16px;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid #1a1a1a;
+}
+.tb-dot { width: 12px; height: 12px; border-radius: 50%; }
+.tb-dot.r { background: #ef4444; }
+.tb-dot.y { background: #f59e0b; }
+.tb-dot.g { background: #10b981; }
+.tb-title {
+  flex: 1; text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: #858585;
+  margin-right: 40px;
+}
+
+/* Main IDE area */
+.ide-main { flex: 1; display: flex; overflow: hidden; }
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #252526;
+  border-right: 1px solid #1a1a1a;
+  padding: 12px 8px;
+  overflow: hidden;
+}
+.sidebar-header {
+  font-size: 10px; color: #858585;
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 4px 12px 8px; font-weight: 700;
+}
+
+.file-tree-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #cccccc;
+  border-radius: 4px;
+}
+.file-tree-item.folder { color: #e8e8e8; font-weight: 600; }
+.file-tree-item.active { background: #094771; color: #fff; }
+.file-icon { width: 14px; color: #519aba; }
+.file-icon.md { color: #519aba; }
+.file-icon.folder { color: #dcb67a; }
+
+/* Editor */
+.editor {
+  flex: 1;
+  background: #1e1e1e;
+  display: flex; flex-direction: column;
+}
+
+.tabs {
+  display: flex; background: #2d2d30;
+  border-bottom: 1px solid #1a1a1a;
+}
+.tab {
+  padding: 10px 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #858585;
+  border-right: 1px solid #1a1a1a;
+}
+.tab.active {
+  background: #1e1e1e; color: #fff;
+  border-top: 2px solid #10b981;
+  margin-top: -1px;
+}
+.tab-close { margin-left: 8px; opacity: 0.4; }
+
+.code-area {
+  flex: 1; padding: 16px 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px; line-height: 1.65;
+  overflow: hidden;
+  position: relative;
+}
+.code-line { display: flex; }
+.line-num {
+  color: #858585;
+  min-width: 32px; text-align: right;
+  margin-right: 16px;
+  user-select: none;
+}
+
+.c-comment { color: #6a9955; }
+.c-keyword { color: #c586c0; }
+.c-heading { color: #569cd6; font-weight: 700; }
+.c-string { color: #ce9178; }
+.c-tag { color: #4fc1ff; }
+.c-key { color: #9cdcfe; }
+.c-punct { color: #d4d4d4; }
+.c-text { color: #d4d4d4; }
+.c-highlight { background: rgba(16,185,129,0.15); padding: 0 4px; border-radius: 3px; }
+
+/* Status bar */
+.status-bar {
+  background: #10b981; color: #000;
+  padding: 8px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; font-weight: 700;
+}
+
+/* Bottom CTA */
+.bottom {
+  margin-top: 20px;
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 22px 28px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.bottom-left {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px; font-weight: 900;
+}
+.bottom-sub { font-size: 18px; color: #94a3b8; margin-top: 3px; }
+.bottom-sub s { color: #ef4444; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 20px 44px; border-radius: 14px;
+  font-weight: 800; font-size: 26px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Gatavas .md skills <span>Tavam Claude</span></div>
+
+  <div class="ide">
+    <div class="ide-titlebar">
+      <div class="tb-dot r"></div>
+      <div class="tb-dot y"></div>
+      <div class="tb-dot g"></div>
+      <div class="tb-title">.claude/skills — Cursor</div>
+    </div>
+
+    <div class="ide-main">
+      <div class="sidebar">
+        <div class="sidebar-header">SHARPIFY AI KIT</div>
+        <div class="file-tree-item folder"><span class="file-icon folder">📁</span>.claude</div>
+        <div class="file-tree-item folder" style="padding-left: 24px;"><span class="file-icon folder">📁</span>skills</div>
+        <div class="file-tree-item active" style="padding-left: 36px;"><span class="file-icon md">📄</span>marketing.md</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>sales-call.md</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>copywriting.md</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>brand-voice.md</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>email-seq.md</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>lead-research.md</div>
+        <div class="file-tree-item" style="padding-left: 36px; color: #858585;">... +21 more</div>
+        <div class="file-tree-item folder" style="padding-left: 24px; margin-top: 8px;"><span class="file-icon folder">📁</span>workflows</div>
+        <div class="file-tree-item" style="padding-left: 36px;"><span class="file-icon md">📄</span>content-pipeline</div>
+        <div class="file-tree-item" style="padding-left: 36px; color: #858585;">... +9 more</div>
+        <div class="file-tree-item" style="padding-left: 12px; margin-top: 8px;"><span class="file-icon md">📄</span>CLAUDE.md</div>
+      </div>
+
+      <div class="editor">
+        <div class="tabs">
+          <div class="tab active">marketing.md <span class="tab-close">×</span></div>
+          <div class="tab">CLAUDE.md <span class="tab-close">×</span></div>
+        </div>
+        <div class="code-area">
+          <div class="code-line"><span class="line-num">1</span><span class="c-comment">---</span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="c-key">name</span><span class="c-punct">:</span> <span class="c-string">marketing-skill</span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="c-key">description</span><span class="c-punct">:</span> <span class="c-string">Write Meta ads, email sequences, hooks</span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="c-key">version</span><span class="c-punct">:</span> <span class="c-string">1.0</span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="c-comment">---</span></div>
+          <div class="code-line"><span class="line-num">6</span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="c-heading"># Marketing Skill</span></div>
+          <div class="code-line"><span class="line-num">8</span></div>
+          <div class="code-line"><span class="line-num">9</span><span class="c-text">You are an expert marketer trained on</span></div>
+          <div class="code-line"><span class="line-num">10</span><span class="c-text">Niks Jansons' proven frameworks.</span></div>
+          <div class="code-line"><span class="line-num">11</span></div>
+          <div class="code-line"><span class="line-num">12</span><span class="c-heading">## Hook Formula</span></div>
+          <div class="code-line"><span class="line-num">13</span><span class="c-text">1. Pattern interrupt</span></div>
+          <div class="code-line"><span class="line-num">14</span><span class="c-text">2. Specific promise</span></div>
+          <div class="code-line"><span class="line-num">15</span><span class="c-text">3. Proof point</span></div>
+          <div class="code-line"><span class="line-num">16</span></div>
+          <div class="code-line"><span class="line-num">17</span><span class="c-comment"># <span class="c-highlight">→ Copy-paste ready. Works immediately.</span></span></div>
+        </div>
+        <div class="status-bar">
+          <span>● 27 skills loaded · Ready</span>
+          <span>main · UTF-8</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="bottom-left">
+      <div class="bottom-title">Instalē vienreiz. Izmanto mūžīgi.</div>
+      <div class="bottom-sub"><s>€99</s> · tikai €19 · 7 dienu garantija</div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>

@@ -10,15 +10,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Load .env from project root
-const envPath = path.resolve(__dirname, '../../.env');
-if (fs.existsSync(envPath)) {
-  const envContent = fs.readFileSync(envPath, 'utf-8');
-  envContent.split('\n').forEach(line => {
-    const [key, ...vals] = line.split('=');
-    if (key && vals.length) process.env[key.trim()] = vals.join('=').trim();
-  });
-}
+// Load .env from project root (handles quoted values, comments, keys containing '=')
+require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const prompt = process.argv[2];
@@ -39,10 +32,13 @@ async function generateImage() {
   console.log(`Prompt: ${prompt.substring(0, 100)}...`);
 
   const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${API_KEY}`,
+    'https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict',
     {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': API_KEY,
+      },
       body: JSON.stringify({
         instances: [{ prompt: prompt }],
         parameters: {

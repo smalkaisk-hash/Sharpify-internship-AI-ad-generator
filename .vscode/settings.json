@@ -1,0 +1,17 @@
+{
+  "files.watcherExclude": {
+    "**/storage/**": true,
+    "**/node_modules/**": true,
+    "**/remotion-videos/node_modules/**": true,
+    "**/remotion-videos/out/**": true
+  },
+  "search.exclude": {
+    "**/storage/**": true,
+    "**/node_modules/**": true,
+    "**/remotion-videos/node_modules/**": true,
+    "**/remotion-videos/out/**": true
+  },
+  "files.exclude": {
+    "**/storage": true
+  }
+}

@@ -8,6 +8,7 @@
     "scrape": "node scripts/scrape-brand.js"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "puppeteer": "^23.0.0"
   }
 }

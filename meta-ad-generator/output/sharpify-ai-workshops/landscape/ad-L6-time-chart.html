@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.hdr-row {
+  text-align: center; margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.hdr-row .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.1;
+}
+.hdr-row .sub {
+  font-size: 15px; color: #94a3b8; margin-top: 10px;
+}
+
+.chart-area {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 36px;
+  align-items: stretch;
+  position: relative; z-index: 1;
+}
+
+/* Bar chart */
+.chart {
+  display: flex; flex-direction: column;
+  gap: 22px;
+  padding: 10px 0;
+}
+.bar-row {}
+.bar-label {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.bar-label .name { color: #cbd5e1; }
+.bar-label .hrs {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; font-weight: 900;
+}
+.bar-row.bad .bar-label .hrs { color: #ef4444; }
+.bar-row.good .bar-label .hrs { color: #10b981; }
+
+.bar-track {
+  height: 18px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 9px;
+  position: relative;
+}
+.bar-row.bad .bar-fill {
+  background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 0 20px rgba(239,68,68,0.3);
+}
+.bar-row.good .bar-fill {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 0 20px rgba(16,185,129,0.3);
+}
+.bar-sub {
+  margin-top: 6px;
+  font-size: 12px; color: #64748b;
+}
+
+/* Right — savings breakdown */
+.savings {
+  background: rgba(16,185,129,0.05);
+  border: 1px solid rgba(16,185,129,0.3);
+  border-radius: 16px;
+  padding: 22px 24px;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+.savings-label {
+  font-size: 12px; letter-spacing: 3px;
+  text-transform: uppercase; font-weight: 700;
+  color: #10b981;
+}
+.savings-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px; font-weight: 900;
+  line-height: 0.95;
+  background: linear-gradient(180deg, #34d399 0%, #10b981 50%, #059669 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.savings-unit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; font-weight: 800;
+  color: #fff;
+}
+.savings-breakdown {
+  display: flex; flex-direction: column; gap: 10px;
+  font-size: 13px;
+  padding-top: 14px;
+  margin-top: 6px;
+  border-top: 1px solid rgba(16,185,129,0.2);
+}
+.brk-row { display: flex; justify-content: space-between; color: #cbd5e1; }
+.brk-row b { color: #fff; }
+
+/* Bottom */
+.btm-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.btm-row .price-info {
+  display: flex; align-items: baseline; gap: 8px;
+  color: #94a3b8;
+}
+.btm-row .price-old { text-decoration: line-through; color: #64748b; }
+.btm-row .price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900; color: #10b981;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="hdr-row">
+    <div class="eyebrow">LAIKS = NAUDA</div>
+    <div class="title">40h nedēļā <span class="gold-italic">→</span> 20h nedēļā</div>
+    <div class="sub">Kur tiek tērēts Tavs laiks un cik var atgūt ar AI sistēmu</div>
+  </div>
+
+  <div class="chart-area">
+    <div class="chart">
+      <div class="bar-row bad">
+        <div class="bar-label">
+          <span class="name">Mārketings & saturs</span>
+          <span class="hrs">12h</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div>
+        <div class="bar-sub">Prompt rakstīšana, piemēru meklēšana, labošana</div>
+      </div>
+      <div class="bar-row bad">
+        <div class="bar-label">
+          <span class="name">Pārdošana & follow-up</span>
+          <span class="hrs">10h</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div>
+        <div class="bar-sub">Manual skripti, objection handling, proposals</div>
+      </div>
+      <div class="bar-row bad">
+        <div class="bar-label">
+          <span class="name">Atkārtoti uzdevumi</span>
+          <span class="hrs">8h</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: 68%;"></div></div>
+        <div class="bar-sub">Manuāls darbs, kas nav automatizēts</div>
+      </div>
+      <div class="bar-row good">
+        <div class="bar-label">
+          <span class="name">Ar AI Rīku Komplektu</span>
+          <span class="hrs">~20h</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: 50%;"></div></div>
+        <div class="bar-sub">27 skills + 10 workflows dara lielāko daļu</div>
+      </div>
+    </div>
+
+    <div class="savings">
+      <div class="savings-label">TU ATGŪSTI</div>
+      <div class="savings-num">~20h</div>
+      <div class="savings-unit">katru nedēļu</div>
+      <div class="savings-breakdown">
+        <div class="brk-row"><span>Mārketings</span><b>-7h</b></div>
+        <div class="brk-row"><span>Pārdošana</span><b>-6h</b></div>
+        <div class="brk-row"><span>Automatizācija</span><b>-7h</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btm-row">
+    <div class="price-info">
+      AI Rīku Komplekts ·
+      <span class="price-old">€99</span>
+      <span class="price-new">€19</span>
+      · mūžīga piekļuve
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

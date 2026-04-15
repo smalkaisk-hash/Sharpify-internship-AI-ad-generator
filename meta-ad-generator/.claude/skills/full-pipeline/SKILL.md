@@ -13,6 +13,12 @@ Run this skill when you want to go from raw client info to finished Meta ad crea
 2. Paste the client's information (any format — form fields, bullet points, free text)
 3. Claude will run the full pipeline automatically
 
+## FIRST STEP (always)
+
+Before starting the pipeline, **read `notes.md`** (sibling file in this skill directory). It contains client-pipeline-specific learnings from past sessions — template preferences, design patterns, copy quirks, things to avoid.
+
+When the user gives feedback during this session, **append it to `notes.md`** using the format defined in that file. This builds the system's memory over time without you having to re-explain.
+
 ## Pipeline Steps
 
 ### Step 1: Client Intake
@@ -43,12 +49,12 @@ Run this skill when you want to go from raw client info to finished Meta ad crea
   - If user chooses AI generation: note this — the ad designer will generate images during Step 4
 
 ### Step 3: Ad Copy + Template Selection
-- Read the template registry (`.claude/skills/8-extra-templates/SKILL.md`)
-- **Dynamically select templates** based on `ad_type` and client data — NOT hardcoded
-  - Tangible: product-focused templates with mandatory imagery
-  - Intangible: scored categories, unique template mix per client
-- Generate 6-8 ad copy sets, each paired with a selected template
-- Copy frameworks matched to template types (not forced)
+- Browse the full template library (`.claude/skills/8-extra-templates/SKILL.md` + `templates/extra/*.md` + `template-pages/` PNG previews)
+- **Choose templates freely** — pick whatever 6-8 templates best serve this client's story
+- No mandatory templates, no category restrictions — just pick what works
+- For tangible: every ad needs product imagery
+- For intangible: no stock photos, use gradients/CSS visuals
+- Generate copy sets paired with selected templates
 - Save `ad-copy.json`
 - **Follows**: `.claude/skills/3-ad-copy/SKILL.md`
 
@@ -56,8 +62,7 @@ Run this skill when you want to go from raw client info to finished Meta ad crea
 - For **base templates**: fill HTML template with brand colors, fonts, and copy
 - For **extra templates** (`layout_recommendation` starting with `"extra:"`): generate HTML inline from the template's `.md` description or registry entry
 - For **tangible ads**: ensure every ad features product imagery. Run AI generation if needed
-- For **intangible ads**: use solid color gradients as default, CSS-built visuals for template-specific elements
-- NO logos on bold-statement and benefit-stack layouts
+- For **intangible ads**: no generic stock photos. Use gradients, CSS-built visuals, or template-specific treatments
 - Center all text by default, break long headlines with `<br>`
 - Validate contrast and readability
 - Save HTML files to `output/{client-slug}/html/`

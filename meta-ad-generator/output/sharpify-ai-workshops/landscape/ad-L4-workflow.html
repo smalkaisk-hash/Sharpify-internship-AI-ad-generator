@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.hdr-row {
+  text-align: center; margin-bottom: 22px;
+  position: relative; z-index: 1;
+}
+.hdr-row .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.1;
+}
+
+/* Two workflow columns */
+.flows {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  position: relative; z-index: 1;
+}
+
+.flow {
+  border-radius: 16px;
+  padding: 22px 24px 20px;
+  display: flex; flex-direction: column;
+}
+.flow.bad {
+  background: rgba(239,68,68,0.04);
+  border: 1px solid rgba(239,68,68,0.18);
+}
+.flow.good {
+  background: rgba(16,185,129,0.05);
+  border: 1px solid rgba(16,185,129,0.3);
+}
+
+.flow-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.flow-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.flow.bad .flow-title { color: #ef4444; }
+.flow.good .flow-title { color: #10b981; }
+.flow-time {
+  margin-left: auto;
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-weight: 900;
+  font-size: 20px;
+}
+.flow.bad .flow-time { color: #f87171; }
+.flow.good .flow-time { color: #10b981; }
+
+.step-list {
+  display: flex; flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.step {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 10px;
+  font-size: 13px; line-height: 1.4;
+  color: #cbd5e1;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800;
+  margin-top: 1px;
+}
+.flow.bad .step-num {
+  background: rgba(239,68,68,0.12);
+  color: #f87171;
+  border: 1px solid rgba(239,68,68,0.25);
+}
+.flow.good .step-num {
+  background: rgba(16,185,129,0.12);
+  color: #10b981;
+  border: 1px solid rgba(16,185,129,0.3);
+}
+.step b { color: #fff; font-weight: 700; }
+
+/* Bottom */
+.btm-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.btm-row .price-info {
+  display: flex; align-items: baseline; gap: 8px;
+  color: #94a3b8;
+}
+.btm-row .price-old { text-decoration: line-through; color: #64748b; }
+.btm-row .price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900; color: #10b981;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="hdr-row">
+    <div class="eyebrow">TAVS DARBA PROCESS</div>
+    <div class="title">45 minūtes <span class="gold-italic">vs</span> 2 minūtes</div>
+  </div>
+
+  <div class="flows">
+    <div class="flow bad">
+      <div class="flow-header">
+        <svg class="ic red" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6"/><path d="M9 9l6 6"/></svg>
+        <div class="flow-title">Bez komplekta</div>
+        <div class="flow-time">~45 min</div>
+      </div>
+      <div class="step-list">
+        <div class="step"><div class="step-num">1</div><div>Raksti <b>promptu no nulles</b> ar kontekstu, piemēriem, noteikumiem</div></div>
+        <div class="step"><div class="step-num">2</div><div>Pirmā atbilde <b>par vispārīgu</b> — brand tonis nav pareizs</div></div>
+        <div class="step"><div class="step-num">3</div><div>Labo promptu, pievieno <b>10 piemēru</b>, mēģini vēlreiz</div></div>
+        <div class="step"><div class="step-num">4</div><div>Rezultāts OK, bet <b>nekonsekvents</b> nākamajā sesijā</div></div>
+        <div class="step"><div class="step-num">5</div><div>Nākamreiz sāc <b>no sākuma</b> — nekas nav saglabāts</div></div>
+      </div>
+    </div>
+
+    <div class="flow good">
+      <div class="flow-header">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M20 7L9 18l-5-5"/></svg>
+        <div class="flow-title">Ar AI Rīku Komplektu</div>
+        <div class="flow-time">~2 min</div>
+      </div>
+      <div class="step-list">
+        <div class="step"><div class="step-num">1</div><div>Atver Claude, izsauc <b>marketing-skill</b> vai citu skill</div></div>
+        <div class="step"><div class="step-num">2</div><div>Skill <b>jau zina</b> Tavu brand voice no CLAUDE.md</div></div>
+        <div class="step"><div class="step-num">3</div><div>Saņem <b>3 variācijas</b>, katra ar hook + body + CTA</div></div>
+        <div class="step"><div class="step-num">4</div><div>Copy-paste gatavo tekstu uz Meta Ads Manager</div></div>
+        <div class="step"><div class="step-num">5</div><div>Katrā nākamajā sesijā — <b>tādi paši rezultāti</b></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btm-row">
+    <div class="price-info">
+      AI Rīku Komplekts ·
+      <span class="price-old">€99</span>
+      <span class="price-new">€19</span>
+      · mūžīga piekļuve
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

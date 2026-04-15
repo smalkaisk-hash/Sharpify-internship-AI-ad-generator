@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #070c15;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 56px 52px 48px;
+  position: relative;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; text-align: center;
+  margin-bottom: 40px; line-height: 1.15;
+}
+.title span { color: #10b981; }
+
+.columns {
+  display: flex; gap: 28px; flex: 1;
+}
+
+.col {
+  flex: 1; border-radius: 20px; padding: 36px 32px;
+  display: flex; flex-direction: column;
+}
+.col.bad {
+  background: rgba(239,68,68,0.06);
+  border: 2px solid rgba(239,68,68,0.2);
+}
+.col.good {
+  background: rgba(16,185,129,0.06);
+  border: 2px solid rgba(16,185,129,0.25);
+}
+
+.col-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+  margin-bottom: 28px; display: flex; align-items: center; gap: 12px;
+}
+.col.bad .col-header { color: #ef4444; }
+.col.good .col-header { color: #10b981; }
+
+.item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 22px; line-height: 1.45; color: #cbd5e1;
+}
+.item:last-child { border-bottom: none; }
+.item .emoji { font-size: 26px; flex-shrink: 0; margin-top: 2px; }
+.item strong { color: #fff; font-weight: 700; }
+
+.cta-row {
+  display: flex; justify-content: center; margin-top: 36px;
+}
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 32px 80px; border-radius: 18px;
+  font-weight: 800; font-size: 38px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="title">Bez AI sistēmas <span>vs</span> Ar&nbsp;komplektu</div>
+
+  <div class="columns">
+    <div class="col bad">
+      <div class="col-header">❌ Tagad</div>
+      <div class="item"><span class="emoji">⏳</span> <div>Raksti prompt-us no nulles <strong>katru reizi</strong></div></div>
+      <div class="item"><span class="emoji">🔧</span> <div>Skills eksistē, bet Tu nelieto <strong>nevienu</strong></div></div>
+      <div class="item"><span class="emoji">🎯</span> <div>Vispārīgi promptu = <strong>vispārīgi rezultāti</strong></div></div>
+      <div class="item"><span class="emoji">🔄</span> <div>Katru nedēļu jauns rīks — <strong>nekas nepaliek</strong></div></div>
+      <div class="item"><span class="emoji">😵</span> <div>Stundas eksperimentēšanas ar&nbsp;formulējumiem</div></div>
+    </div>
+
+    <div class="col good">
+      <div class="col-header">✅ Ar komplektu</div>
+      <div class="item"><span class="emoji">⚡</span> <div>Gatavi prompt-i — <strong>copy-paste, gatavs</strong></div></div>
+      <div class="item"><span class="emoji">🛠️</span> <div><strong>27 AI skills</strong> instalētas un konfigurētas</div></div>
+      <div class="item"><span class="emoji">🎯</span> <div>Konsekventi rezultāti <strong>katrā sesijā</strong></div></div>
+      <div class="item"><span class="emoji">📚</span> <div>Skaidra sistēma, kas <strong>strādā katru dienu</strong></div></div>
+      <div class="item"><span class="emoji">💰</span> <div>Taupi <strong>2-5 stundas nedēļā</strong> no 1. dienas</div></div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <div class="cta-btn">Iegūt par €19 →</div>
+  </div>
+</body>
+</html>

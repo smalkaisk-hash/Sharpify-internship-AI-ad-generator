@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: linear-gradient(160deg, #0a1628 0%, #0f172a 50%, #0c1220 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 52px 64px 48px;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 36px;
+}
+.header .price-tag {
+  display: inline-block;
+  background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3);
+  color: #10b981; padding: 10px 24px; border-radius: 50px;
+  font-size: 22px; font-weight: 800; margin-bottom: 16px;
+}
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px; font-weight: 900; line-height: 1.15;
+}
+.header h1 span { color: #10b981; }
+
+.checklist {
+  flex: 1; display: flex; flex-direction: column; gap: 14px;
+}
+
+.check-item {
+  display: flex; align-items: center; gap: 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px; padding: 18px 26px;
+}
+.check-box {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: #10b981;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 900; color: #000;
+  flex-shrink: 0;
+}
+.check-text {
+  font-size: 26px; font-weight: 600; color: #e2e8f0;
+}
+.check-text .note {
+  font-size: 18px; color: #64748b; font-weight: 400;
+  display: block; margin-top: 2px;
+}
+
+.bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 28px; padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.price-block {}
+.price-block .old-price {
+  font-size: 28px; color: #ef4444; text-decoration: line-through;
+  font-weight: 600; opacity: 0.6;
+}
+.price-block .new-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 76px; font-weight: 900; color: #10b981;
+  line-height: 1;
+}
+.price-block .note { font-size: 20px; color: #64748b; margin-top: 4px; }
+
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 28px 64px; border-radius: 16px;
+  font-weight: 800; font-size: 34px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="price-tag">Tikai €19 — taupi 81%</div>
+    <h1>Ko Tu saņem<br>AI Rīku <span>Komplektā</span></h1>
+  </div>
+
+  <div class="checklist">
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">128 slaidu AI prezentācija <span class="note">No pamatiem līdz ekspertu līmenim</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">74 min video apmācība <span class="note">Soli pa solim — no nulles līdz sistēmai</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">27 AI skills + 10 workflows <span class="note">Gatavi .md faili — instalē vienreiz</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">CLAUDE.md biznesa šablons <span class="note">Personalizē AI savam biznesam</span></div>
+    </div>
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">Ātrais iestatīšanas ceļvedis</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box">✓</div>
+      <div class="check-text">Mūžīga piekļuve + 7 dienu garantija</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="price-block">
+      <div class="old-price">€99</div>
+      <div class="new-price">€19</div>
+      <div class="note">Vienreizējs maksājums</div>
+    </div>
+    <div class="cta-btn">Iegūt tagad →</div>
+  </div>
+</body>
+</html>

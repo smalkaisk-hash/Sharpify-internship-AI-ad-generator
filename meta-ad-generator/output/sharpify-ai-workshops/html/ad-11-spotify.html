@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #121212;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+
+/* Spotify-like playlist view */
+.playlist-header {
+  padding: 40px 44px 30px;
+  background: linear-gradient(180deg, #1db954 0%, #0a6530 60%, #121212 100%);
+  position: relative;
+}
+
+.playlist-top {
+  display: flex; gap: 28px; align-items: flex-end;
+}
+
+.playlist-cover {
+  width: 220px; height: 220px;
+  background: linear-gradient(135deg, #10b981, #0a6530);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.playlist-cover::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 60%);
+}
+.cover-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px; font-weight: 900;
+  color: #000; text-align: center;
+  line-height: 0.9;
+  position: relative;
+}
+.cover-text .sub {
+  font-size: 18px; margin-top: 8px; font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.playlist-info {}
+.playlist-type {
+  font-size: 13px; font-weight: 700;
+  margin-bottom: 10px;
+}
+.playlist-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 68px; font-weight: 900;
+  line-height: 1; margin-bottom: 18px;
+}
+.playlist-desc {
+  font-size: 17px; color: rgba(255,255,255,0.7);
+  margin-bottom: 14px;
+}
+.playlist-meta {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 15px; color: rgba(255,255,255,0.9);
+}
+.meta-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.5); }
+.meta-item strong { font-weight: 800; }
+
+/* Tracks list */
+.tracks-header {
+  padding: 14px 44px; display: grid;
+  grid-template-columns: 40px 1fr 200px 100px;
+  gap: 16px;
+  font-size: 12px; font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.tracks {
+  padding: 8px 32px 12px;
+  flex: 1;
+  overflow: hidden;
+}
+.track {
+  display: grid;
+  grid-template-columns: 40px 1fr 200px 100px;
+  gap: 16px; align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.track.current { background: rgba(255,255,255,0.06); }
+.track-num {
+  color: rgba(255,255,255,0.5);
+  text-align: center; font-weight: 500;
+}
+.track.current .track-num { color: #1db954; }
+.track-title {
+  font-weight: 600; color: #fff;
+  display: flex; align-items: center; gap: 12px;
+}
+.track.current .track-title { color: #1db954; }
+.track-icon {
+  width: 32px; height: 32px; border-radius: 5px;
+  background: rgba(16,185,129,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.track-sub { font-size: 13px; color: rgba(255,255,255,0.6); font-weight: 400; margin-top: 1px; }
+.track-cat { color: rgba(255,255,255,0.6); font-size: 14px; }
+.track-time { color: rgba(255,255,255,0.6); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Now Playing bar */
+.now-playing {
+  background: rgba(16,185,129,0.12);
+  border-top: 2px solid #10b981;
+  padding: 20px 44px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.np-left { display: flex; align-items: center; gap: 16px; }
+.np-cover {
+  width: 56px; height: 56px; border-radius: 6px;
+  background: linear-gradient(135deg, #10b981, #0a6530);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+.np-info {}
+.np-title { font-size: 17px; font-weight: 700; }
+.np-artist { font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+.np-status {
+  display: flex; align-items: center; gap: 8px;
+  color: #10b981; font-size: 14px; font-weight: 700;
+}
+.np-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+.cta-btn {
+  background: #1db954; color: #000;
+  padding: 16px 36px; border-radius: 50px;
+  font-weight: 800; font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="playlist-header">
+  <div class="playlist-top">
+    <div class="playlist-cover">
+      <div class="cover-text">AI<br>SKILLS<div class="sub">SHARPIFY</div></div>
+    </div>
+    <div class="playlist-info">
+      <div class="playlist-type">PLAYLIST</div>
+      <div class="playlist-title">Tava AI Komanda</div>
+      <div class="playlist-desc">27 skills, 10 workflows · Instalē vienreiz, izmanto mūžīgi</div>
+      <div class="playlist-meta">
+        <span class="meta-item"><strong>Sharpify</strong></span>
+        <span class="meta-dot"></span>
+        <span class="meta-item">2 300+ klausītāji</span>
+        <span class="meta-dot"></span>
+        <span class="meta-item">37 skaņdarbi</span>
+        <span class="meta-dot"></span>
+        <span class="meta-item"><strong>€19</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tracks-header">
+  <div>#</div>
+  <div>Nosaukums</div>
+  <div>Kategorija</div>
+  <div style="text-align:right;">Taupi</div>
+</div>
+
+<div class="tracks">
+  <div class="track current">
+    <div class="track-num">▶</div>
+    <div class="track-title">
+      <div class="track-icon">📣</div>
+      <div>marketing-skill<div class="track-sub">Meta ads, email, hooks</div></div>
+    </div>
+    <div class="track-cat">Mārketings</div>
+    <div class="track-time">2h/ned</div>
+  </div>
+  <div class="track">
+    <div class="track-num">2</div>
+    <div class="track-title">
+      <div class="track-icon">💰</div>
+      <div>sales-call<div class="track-sub">Objections, scripts, closing</div></div>
+    </div>
+    <div class="track-cat">Pārdošana</div>
+    <div class="track-time">1h/ned</div>
+  </div>
+  <div class="track">
+    <div class="track-num">3</div>
+    <div class="track-title">
+      <div class="track-icon">✍️</div>
+      <div>copywriting<div class="track-sub">Long-form, sales, ads</div></div>
+    </div>
+    <div class="track-cat">Saturs</div>
+    <div class="track-time">3h/ned</div>
+  </div>
+  <div class="track">
+    <div class="track-num">4</div>
+    <div class="track-title">
+      <div class="track-icon">🎯</div>
+      <div>brand-voice<div class="track-sub">Consistent tone everywhere</div></div>
+    </div>
+    <div class="track-cat">Mārketings</div>
+    <div class="track-time">1h/ned</div>
+  </div>
+  <div class="track">
+    <div class="track-num">5</div>
+    <div class="track-title">
+      <div class="track-icon">⚡</div>
+      <div>workflow-auto<div class="track-sub">End-to-end automation</div></div>
+    </div>
+    <div class="track-cat">Workflow</div>
+    <div class="track-time">4h/ned</div>
+  </div>
+  <div class="track">
+    <div class="track-num">...</div>
+    <div class="track-title" style="color: rgba(255,255,255,0.5);">
+      <div class="track-icon">+</div>
+      <div>un vēl 32 skills...</div>
+    </div>
+    <div class="track-cat" style="color: rgba(255,255,255,0.4);">Viss iekļauts</div>
+    <div class="track-time" style="color: rgba(255,255,255,0.4);">—</div>
+  </div>
+</div>
+
+<div class="now-playing">
+  <div class="np-left">
+    <div class="np-cover">🎧</div>
+    <div class="np-info">
+      <div class="np-title">AI Rīku Komplekts · <span style="text-decoration: line-through; color: #666;">€99</span> €19</div>
+      <div class="np-artist">Mūžīga piekļuve · 7 dienu garantija</div>
+    </div>
+  </div>
+  <div class="cta-btn">Iegūt tagad →</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #050810;
+  font-family: 'Inter', sans-serif; color: #fff;
+  position: relative;
+}
+
+#canvas {
+  position: absolute; top: 0; left: 0;
+  width: 1080px; height: 1080px;
+  display: block;
+}
+
+.overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 56px 48px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.top {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(10,15,25,0.75);
+  border: 1px solid rgba(16,185,129,0.5);
+  color: #10b981;
+  padding: 10px 24px; border-radius: 50px;
+  font-size: 20px; font-weight: 800;
+  font-family: 'JetBrains Mono', monospace;
+  backdrop-filter: blur(16px);
+  margin-bottom: 24px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 86px; font-weight: 900;
+  line-height: 0.98;
+  text-shadow: 0 8px 40px rgba(0,0,0,1), 0 4px 16px rgba(0,0,0,0.8);
+}
+.headline span {
+  color: #10b981;
+  text-shadow: 0 0 50px rgba(16,185,129,0.6), 0 8px 40px rgba(0,0,0,1);
+}
+
+.sub-headline {
+  font-size: 24px; color: #cbd5e1;
+  margin-top: 20px;
+  text-shadow: 0 2px 16px rgba(0,0,0,1);
+  font-weight: 500;
+}
+
+.bottom-card {
+  background: rgba(5,10,18,0.88);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(16,185,129,0.4);
+  border-radius: 18px;
+  padding: 28px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 40px rgba(16,185,129,0.15);
+}
+
+.bottom-info {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px; font-weight: 900;
+  color: #fff;
+}
+.bottom-sub { font-size: 18px; color: #94a3b8; margin-top: 4px; }
+.bottom-sub s { color: #ef4444; }
+.bottom-sub strong { color: #10b981; font-weight: 700; }
+
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 24px 52px; border-radius: 14px;
+  font-weight: 800; font-size: 30px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.5), 0 0 60px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div class="overlay">
+    <div class="top">
+      <div class="badge">// 27 SKILLS · 10 WORKFLOWS</div>
+      <div class="headline">Tava AI <span>komanda</span><br>3D telpā</div>
+      <div class="sub-headline">Pilna AI sistēma — instalē vienreiz, izmanto mūžīgi</div>
+    </div>
+
+    <div class="bottom-card">
+      <div class="bottom-info">
+        <div class="bottom-title">AI Rīku Komplekts</div>
+        <div class="bottom-sub"><s>€99</s> · <strong>€19</strong> · mūžīga piekļuve · 7 dienu garantija</div>
+      </div>
+      <div class="cta-btn">Iegūt →</div>
+    </div>
+  </div>
+
+<script>
+// ===== Three.js 3D Scene =====
+const canvas = document.getElementById('canvas');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x030610);
+scene.fog = new THREE.Fog(0x030610, 10, 32);
+
+const camera = new THREE.PerspectiveCamera(65, 1, 0.1, 100);
+camera.position.set(0, 0, 11);
+camera.lookAt(0, 0, 0);
+
+const renderer = new THREE.WebGLRenderer({
+  canvas: canvas,
+  antialias: true,
+  alpha: false,
+  preserveDrawingBuffer: true
+});
+renderer.setSize(1080, 1080, false);
+renderer.setPixelRatio(2);
+renderer.setClearColor(0x030610, 1);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.4;
+
+// ===== Lighting =====
+scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+
+const keyLight = new THREE.DirectionalLight(0xffffff, 0.7);
+keyLight.position.set(-8, 6, 12);
+scene.add(keyLight);
+
+const rimLight = new THREE.DirectionalLight(0x10b981, 2.0);
+rimLight.position.set(10, -4, -5);
+scene.add(rimLight);
+
+const rimLight2 = new THREE.DirectionalLight(0x3b82f6, 1.2);
+rimLight2.position.set(-10, 4, -5);
+scene.add(rimLight2);
+
+const centerGlow = new THREE.PointLight(0x10b981, 8, 30);
+centerGlow.position.set(0, 0, 5);
+scene.add(centerGlow);
+
+// ===== Card texture generator =====
+const skillNames = [
+  'marketing-skill',
+  'sales-call',
+  'copywriting',
+  'brand-voice',
+  'email-seq',
+  'lead-research',
+  'objection',
+  'workflow-auto',
+  'proposal',
+  'video-scripts',
+  'brainstorm',
+  'social-posts',
+];
+
+function createCardTexture(title, bright = false) {
+  const c = document.createElement('canvas');
+  c.width = 512;
+  c.height = 768;
+  const ctx = c.getContext('2d');
+
+  // Background gradient (more teal/emerald)
+  const gradient = ctx.createLinearGradient(0, 0, 0, 768);
+  if (bright) {
+    gradient.addColorStop(0, '#0a3828');
+    gradient.addColorStop(0.5, '#062218');
+    gradient.addColorStop(1, '#04140e');
+  } else {
+    gradient.addColorStop(0, '#0a2520');
+    gradient.addColorStop(0.5, '#051612');
+    gradient.addColorStop(1, '#030c0a');
+  }
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, 512, 768);
+
+  // Radial inner glow
+  const innerGlow = ctx.createRadialGradient(256, 384, 0, 256, 384, 450);
+  innerGlow.addColorStop(0, bright ? 'rgba(16,185,129,0.3)' : 'rgba(16,185,129,0.12)');
+  innerGlow.addColorStop(1, 'rgba(16,185,129,0)');
+  ctx.fillStyle = innerGlow;
+  ctx.fillRect(0, 0, 512, 768);
+
+  // Thick bright border
+  ctx.strokeStyle = '#10b981';
+  ctx.lineWidth = bright ? 10 : 6;
+  ctx.strokeRect(6, 6, 500, 756);
+
+  // Inner border
+  ctx.strokeStyle = bright ? 'rgba(16,185,129,0.6)' : 'rgba(16,185,129,0.35)';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(24, 24, 464, 720);
+
+  // Corner brackets
+  ctx.strokeStyle = '#5eeab3';
+  ctx.lineWidth = 6;
+  const bSize = 50;
+  ctx.beginPath();
+  ctx.moveTo(38, 38 + bSize); ctx.lineTo(38, 38); ctx.lineTo(38 + bSize, 38);
+  ctx.moveTo(474 - bSize, 38); ctx.lineTo(474, 38); ctx.lineTo(474, 38 + bSize);
+  ctx.moveTo(38, 730 - bSize); ctx.lineTo(38, 730); ctx.lineTo(38 + bSize, 730);
+  ctx.moveTo(474 - bSize, 730); ctx.lineTo(474, 730); ctx.lineTo(474, 730 - bSize);
+  ctx.stroke();
+
+  // Top label with glow
+  ctx.shadowColor = '#10b981';
+  ctx.shadowBlur = 20;
+  ctx.fillStyle = '#5eeab3';
+  ctx.font = 'bold 28px "JetBrains Mono", monospace';
+  ctx.textAlign = 'center';
+  ctx.fillText('● AI SKILL', 256, 130);
+  ctx.shadowBlur = 0;
+
+  // Skill name (large)
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 48px "JetBrains Mono", monospace';
+  ctx.textAlign = 'center';
+  ctx.shadowColor = 'rgba(16,185,129,0.5)';
+  ctx.shadowBlur = 16;
+
+  const words = title.split('-');
+  if (words.length === 2) {
+    ctx.fillText(words[0], 256, 360);
+    ctx.fillText('-' + words[1], 256, 420);
+  } else {
+    ctx.fillText(title, 256, 390);
+  }
+  ctx.shadowBlur = 0;
+
+  // Accent divider
+  const gradDiv = ctx.createLinearGradient(150, 0, 362, 0);
+  gradDiv.addColorStop(0, 'rgba(16,185,129,0)');
+  gradDiv.addColorStop(0.5, '#10b981');
+  gradDiv.addColorStop(1, 'rgba(16,185,129,0)');
+  ctx.fillStyle = gradDiv;
+  ctx.fillRect(150, 500, 212, 3);
+
+  // Bottom status
+  ctx.shadowColor = '#10b981';
+  ctx.shadowBlur = 14;
+  ctx.fillStyle = '#10b981';
+  ctx.font = 'bold 24px "JetBrains Mono", monospace';
+  ctx.fillText('[ ACTIVE ]', 256, 680);
+  ctx.shadowBlur = 0;
+
+  const texture = new THREE.CanvasTexture(c);
+  texture.needsUpdate = true;
+  texture.anisotropy = 16;
+  return texture;
+}
+
+// ===== Position cards around the edges (avoiding center where text is) =====
+const cardPositions = [
+  // Foreground — sides (avoid center where text is)
+  { x: -5.8, y: 2.0, z: 2.0, rx: -0.05, ry: 0.45, rz: -0.08, s: 1.15, bright: true, name: 0 },
+  { x: 5.8, y: 2.0, z: 2.0, rx: -0.05, ry: -0.45, rz: 0.08, s: 1.15, bright: true, name: 1 },
+  { x: -5.5, y: -2.5, z: 1.5, rx: 0.12, ry: 0.4, rz: 0.08, s: 1.1, bright: true, name: 2 },
+  { x: 5.5, y: -2.5, z: 1.5, rx: 0.12, ry: -0.4, rz: -0.08, s: 1.1, bright: true, name: 3 },
+
+  // Mid layer — wider sides
+  { x: -8.5, y: 4.5, z: -1, rx: -0.15, ry: 0.6, rz: 0.08, s: 1.0, bright: false, name: 4 },
+  { x: 8.5, y: 4.5, z: -1, rx: -0.15, ry: -0.6, rz: -0.08, s: 1.0, bright: false, name: 5 },
+  { x: -8.2, y: -5.0, z: -1, rx: 0.2, ry: 0.55, rz: 0.1, s: 0.95, bright: false, name: 6 },
+  { x: 8.2, y: -5.0, z: -1, rx: 0.2, ry: -0.55, rz: -0.1, s: 0.95, bright: false, name: 7 },
+  { x: -9.5, y: 0, z: -2.5, rx: 0, ry: 0.7, rz: 0.05, s: 0.9, bright: false, name: 8 },
+  { x: 9.5, y: 0, z: -2.5, rx: 0, ry: -0.7, rz: -0.05, s: 0.9, bright: false, name: 9 },
+
+  // Background layer
+  { x: -11.5, y: 3.5, z: -6, rx: -0.12, ry: 0.75, rz: 0.08, s: 0.75, bright: false, name: 10 },
+  { x: 11.5, y: -3.5, z: -6, rx: 0.12, ry: -0.75, rz: -0.08, s: 0.75, bright: false, name: 11 },
+];
+
+const cardGeo = new THREE.BoxGeometry(2.8, 4.2, 0.15);
+
+cardPositions.forEach((pos) => {
+  const name = skillNames[pos.name];
+  const texture = createCardTexture(name, pos.bright);
+
+  // Front face material (with texture)
+  const frontMat = new THREE.MeshStandardMaterial({
+    map: texture,
+    metalness: 0.3,
+    roughness: 0.45,
+    emissive: new THREE.Color(pos.bright ? 0x10b981 : 0x064438),
+    emissiveIntensity: pos.bright ? 0.6 : 0.3,
+    emissiveMap: texture
+  });
+
+  const sideMat = new THREE.MeshStandardMaterial({
+    color: 0x082015,
+    metalness: 0.7,
+    roughness: 0.3,
+    emissive: 0x041a10,
+    emissiveIntensity: 0.4
+  });
+
+  // Box has 6 faces: [right, left, top, bottom, front, back]
+  const materials = [sideMat, sideMat, sideMat, sideMat, frontMat, sideMat];
+  const card = new THREE.Mesh(cardGeo, materials);
+
+  card.position.set(pos.x, pos.y, pos.z);
+  card.rotation.set(pos.rx, pos.ry, pos.rz);
+  card.scale.set(pos.s, pos.s, pos.s);
+  scene.add(card);
+
+  // Glowing edges
+  const edgeGeo = new THREE.EdgesGeometry(cardGeo);
+  const edgeMat = new THREE.LineBasicMaterial({
+    color: 0x10b981,
+    transparent: true,
+    opacity: pos.bright ? 1.0 : 0.7
+  });
+  const edges = new THREE.LineSegments(edgeGeo, edgeMat);
+  card.add(edges);
+
+  // Add a wireframe "glow" layer (slightly bigger box)
+  if (pos.bright) {
+    const glowGeo = new THREE.BoxGeometry(2.9, 4.3, 0.2);
+    const glowWire = new THREE.EdgesGeometry(glowGeo);
+    const glowMat = new THREE.LineBasicMaterial({
+      color: 0x5eeab3,
+      transparent: true,
+      opacity: 0.4
+    });
+    const glowLine = new THREE.LineSegments(glowWire, glowMat);
+    card.add(glowLine);
+  }
+});
+
+// ===== Particles (data points in space) =====
+const particleCount = 800;
+const particleGeo = new THREE.BufferGeometry();
+const pPositions = new Float32Array(particleCount * 3);
+for (let i = 0; i < particleCount; i++) {
+  pPositions[i * 3] = (Math.random() - 0.5) * 40;
+  pPositions[i * 3 + 1] = (Math.random() - 0.5) * 40;
+  pPositions[i * 3 + 2] = (Math.random() - 0.5) * 30 - 3;
+}
+particleGeo.setAttribute('position', new THREE.BufferAttribute(pPositions, 3));
+
+const particleMat = new THREE.PointsMaterial({
+  color: 0x10b981,
+  size: 0.09,
+  transparent: true,
+  opacity: 0.85,
+  sizeAttenuation: true,
+  blending: THREE.AdditiveBlending
+});
+const particles = new THREE.Points(particleGeo, particleMat);
+scene.add(particles);
+
+// Blue accent particles
+const bGeo = new THREE.BufferGeometry();
+const bCount = 300;
+const bPos = new Float32Array(bCount * 3);
+for (let i = 0; i < bCount; i++) {
+  bPos[i * 3] = (Math.random() - 0.5) * 35;
+  bPos[i * 3 + 1] = (Math.random() - 0.5) * 35;
+  bPos[i * 3 + 2] = (Math.random() - 0.5) * 25 - 5;
+}
+bGeo.setAttribute('position', new THREE.BufferAttribute(bPos, 3));
+const bMat = new THREE.PointsMaterial({
+  color: 0x3b82f6,
+  size: 0.07,
+  transparent: true,
+  opacity: 0.5,
+  sizeAttenuation: true,
+  blending: THREE.AdditiveBlending
+});
+const bParticles = new THREE.Points(bGeo, bMat);
+scene.add(bParticles);
+
+// ===== Grid floor (futuristic feel) =====
+const gridHelper = new THREE.GridHelper(40, 40, 0x10b981, 0x0a2520);
+gridHelper.position.y = -9;
+gridHelper.material.transparent = true;
+gridHelper.material.opacity = 0.25;
+scene.add(gridHelper);
+
+// ===== Render =====
+function render() {
+  renderer.render(scene, camera);
+}
+render();
+requestAnimationFrame(() => {
+  render();
+  requestAnimationFrame(() => {
+    render();
+    requestAnimationFrame(() => {
+      render();
+      window.__sceneReady = true;
+    });
+  });
+});
+</script>
+</body>
+</html>

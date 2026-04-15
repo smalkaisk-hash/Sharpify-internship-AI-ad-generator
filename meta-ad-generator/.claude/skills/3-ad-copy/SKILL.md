@@ -33,27 +33,20 @@ Run this skill after `/ad-intake` (and optionally `/ad-brand`) to generate ad co
 
 ## Template Selection
 
-### For `client-tangible`
+You have access to the full template library — 6 base HTML templates in `templates/layouts/` and 56+ extended templates described in `.claude/skills/8-extra-templates/SKILL.md` and `templates/extra/*.md` files. There are also 319 PNG previews in `template-pages/` for visual reference.
 
-Every ad MUST feature product imagery prominently. Viewers should understand what the ad is about without reading.
+**There are no mandatory templates.** Choose whatever templates best serve this specific client. Variety is the goal — each ad should use a different template to give the client a diverse ad set.
 
-**Step 1 — Select 2 base template anchors:**
-- `hero-overlay` — product as hero image with gradient overlay + text
-- `split-horizontal` — product on one side, benefits on the other
+### How to choose:
 
-**Step 2 — Select 4-6 extra templates from these priority categories:**
-1. `product-hero/` — always include 1-2 (the product IS the ad)
-2. `data-driven/` — if client has stats, review counts, ingredients
-3. `social-proof/` — if client has reviews/testimonials
-4. `comparison/` — if client has competitive advantages or before/after
-5. `promotional/` — if client has active offers, discounts, bundles
+1. **Read the client brief thoroughly** — understand who they are, what they sell, what data they have (testimonials, stats, competitors, offers, awards, etc.)
+2. **Browse the template registry** (skill 8) and the `.md` files in `templates/extra/` — find templates that match this client's story
+3. **Pick 6-8 templates** that create a varied, compelling ad set. Mix categories — don't pick 6 social-proof templates. Use different visual approaches (text-heavy, image-centric, comparison, social mock-up, editorial, etc.)
+4. **Match a copywriting framework to each template** naturally — a social-proof template gets Social-Proof copy, a comparison template gets Comparison copy, etc.
 
-**Step 3 — Filter by eligibility:**
-- Only select templates marked `Tangible: Yes` in the template registry
-- Check `required_fields` can be filled from client data
-- If a template needs product photos and none exist → skip it or flag for AI generation
+### The only rule — tangible vs intangible:
 
-**Step 4 — Add `image_requirements` per copy set:**
+**Tangible** (physical products): every ad must include product imagery so viewers understand the product without reading. Use product photos from `brief/images/` or AI-generated images. Add `image_requirements` to each copy set:
 ```json
 "image_requirements": {
   "type": "product-photo | lifestyle | ai-generated",
@@ -62,48 +55,8 @@ Every ad MUST feature product imagery prominently. Viewers should understand wha
   "ai_prompt": null
 }
 ```
-- Use product photos from `brief/images/product-*.{ext}` when available
-- If no product photos exist, set `"type": "ai-generated"` with a prompt describing the product based on the client brief
 
-### For `client-intangible`
-
-Each client should get a **unique mix of templates**. No two clients should get the same 6.
-
-**Step 1 — Score template categories:**
-
-Read the client brief and score each category (0-3 points):
-
-| Category | +3 points | +2 points | +1 point |
-|---|---|---|---|
-| social-proof | Has testimonials/reviews | Has social proof credentials | Has user count |
-| comparison | Has differentiator vs named competitors | Has pain points with clear before/after | Has pricing advantage |
-| data-driven | Has specific numbers/stats | Has quantifiable results | Has review counts |
-| editorial-authority | Has press coverage or awards | Has professional credentials | Has industry recognition |
-| lifestyle | — | Brand is personality-driven | Audience is emotionally motivated |
-| ugc-native | — | Audience is social-media-savvy (18-35) | Brand voice is casual |
-| promotional | Has active offer/discount | Has pricing/bundle info | Has seasonal hook |
-| product-hero | — | Has app/digital product | Has features to diagram |
-
-**Step 2 — Select top categories:**
-- Sort categories by score descending
-- Take the top 4-5 scoring categories (skip any scoring 0)
-
-**Step 3 — Pick 1 template per selected category:**
-- From each top category, pick the single best template whose description matches the client data
-- Only select templates marked `Intangible: Yes` in the registry
-- Prefer templates with `[.md]` files (richer descriptions) but any template in the registry is valid
-
-**Step 4 — Add 1-2 base template anchors:**
-- `hero-overlay` (with gradient background, no hero photo) — for the main hook/PAS copy
-- `benefit-stack` — for the feature/benefit summary
-- OR `comparison` — if Before vs After scored high
-
-**Step 5 — Rotation check:**
-- Look at `output/` directory for the last 3 client folders
-- Read their `ad-copy.json` files to see which extra template IDs were used
-- Avoid reusing the same extra template IDs if possible (swap for another template from the same category)
-
-**Result:** 6-8 templates, each unique to this client's data profile.
+**Intangible** (services/digital): no generic stock photos. Use solid color gradients, CSS-built visuals (phone mockups, social screenshots, review cards), or template-specific treatments. `image_requirements` is `null`.
 
 ---
 
@@ -147,25 +100,6 @@ When using an extra template, include any template-specific fields the designer 
 }
 ```
 This lets the designer fill template-specific placeholders beyond the standard headline/body/CTA.
-
----
-
-## Matching Frameworks to Templates
-
-Don't force a framework onto a template — match them naturally:
-
-| Template Type | Best Frameworks |
-|---|---|
-| hero-overlay, bold-statement | PAS, AIDA, Curiosity-Gap |
-| split-horizontal, comparison | Before-After, Comparison |
-| benefit-stack | Benefit-Stack, Direct-Offer |
-| social-proof templates | Social-Proof, Story |
-| editorial-authority templates | Editorial, Story |
-| lifestyle templates | AIDA, Curiosity-Gap, Story |
-| ugc-native templates | Social-Proof, Story, Curiosity-Gap |
-| product-hero templates | Benefit-Stack, Direct-Offer, AIDA |
-| data-driven templates | Social-Proof, Direct-Offer |
-| promotional templates | Direct-Offer, AIDA |
 
 ---
 

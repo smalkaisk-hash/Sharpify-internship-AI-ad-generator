@@ -28,22 +28,40 @@ const imagesDir = path.join(outputDir, 'images');
 fs.mkdirSync(imagesDir, { recursive: true });
 
 /**
- * Download a file from URL to local path
+ * Download a file from URL to local path.
+ * Follows up to 5 redirects to prevent infinite loops / stack overflow.
  */
-function downloadFile(fileUrl, destPath) {
+const MAX_REDIRECTS = 5;
+
+function downloadFile(fileUrl, destPath, redirectCount = 0) {
   return new Promise((resolve, reject) => {
+    if (redirectCount > MAX_REDIRECTS) {
+      return reject(new Error(`Too many redirects (>${MAX_REDIRECTS}) for ${fileUrl}`));
+    }
     const protocol = fileUrl.startsWith('https') ? https : http;
     const file = fs.createWriteStream(destPath);
     protocol.get(fileUrl, (response) => {
       if (response.statusCode === 301 || response.statusCode === 302) {
-        downloadFile(response.headers.location, destPath).then(resolve).catch(reject);
+        file.close();
+        fs.unlink(destPath, (unlinkErr) => {
+          if (unlinkErr && unlinkErr.code !== 'ENOENT') {
+            console.warn(`Warning: could not clean up ${destPath}: ${unlinkErr.message}`);
+          }
+          downloadFile(response.headers.location, destPath, redirectCount + 1)
+            .then(resolve)
+            .catch(reject);
+        });
         return;
       }
       response.pipe(file);
       file.on('finish', () => { file.close(); resolve(destPath); });
     }).on('error', (err) => {
-      fs.unlink(destPath, () => {});
-      reject(err);
+      fs.unlink(destPath, (unlinkErr) => {
+        if (unlinkErr && unlinkErr.code !== 'ENOENT') {
+          console.warn(`Warning: could not clean up ${destPath}: ${unlinkErr.message}`);
+        }
+        reject(err);
+      });
     });
   });
 }

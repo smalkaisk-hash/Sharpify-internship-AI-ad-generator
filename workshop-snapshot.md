@@ -1,0 +1,493 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]: Ietaupi 81% — tikai €19
+    - link "Iegādāties" [ref=e5] [cursor=pointer]:
+      - /url: "#pricing"
+  - generic [ref=e7]:
+    - paragraph [ref=e8]: AI sistēma uzņēmējiem
+    - heading "Kā ar AI aģentiem un Claude Code izveidot savu digitālo dubultnieku" [level=1] [ref=e9]
+    - paragraph [ref=e10]: Paredzēts uzņēmējiem un pakalpojumu sniedzējiem, kas grib automatizēt mārketingu un pārdošanu — bet nezina, kur sākt.
+    - img "AI Rīku Komplekts — digitālais produkts" [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]: 🎯 128 slaidu prezentācija
+      - generic [ref=e16]: ⚙️ 27 AI skills
+      - generic [ref=e17]: 💻 Claude Code
+      - generic [ref=e18]: ⚡ Tūlītēja piekļuve
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - img "Sundar Pichai" [ref=e23]
+      - paragraph [ref=e24]: "\"AI is probably the most important thing humanity has ever worked on.\""
+      - paragraph [ref=e25]: Sundar Pichai
+      - paragraph [ref=e26]: Google CEO
+    - generic [ref=e27]:
+      - img "Satya Nadella" [ref=e28]
+      - paragraph [ref=e29]: "\"In the next 5 years, AI will transform every business. Those who don't adapt will be left behind.\""
+      - paragraph [ref=e30]: Satya Nadella
+      - paragraph [ref=e31]: Microsoft CEO
+    - generic [ref=e32]:
+      - img "Jensen Huang" [ref=e33]
+      - paragraph [ref=e34]: "\"AI won't replace you. A person using AI will.\""
+      - paragraph [ref=e35]: Jensen Huang
+      - paragraph [ref=e36]: NVIDIA CEO
+  - separator [ref=e37]
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: Atpazīsti sevi?
+      - heading "Tu zini, ka AI var palīdzēt. Bet kā tieši?" [level=2] [ref=e42]:
+        - text: Tu zini, ka AI var palīdzēt.
+        - emphasis [ref=e43]: Bet kā tieši?
+      - paragraph [ref=e44]: Lielākā daļa uzņēmēju palaiž garām 80% AI iespēju — ne nezināšanas dēļ, bet gan tāpēc, ka trūkst pareizo rīku.
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e48]: ⏳
+        - generic [ref=e49]:
+          - heading "Katru reizi raksti prompt-us no nulles" [level=4] [ref=e50]
+          - paragraph [ref=e51]: "Nevienam nav laika tos sakārtot un saglabāt. Rezultāts: nekonsekvence, aizkaitinājums, laika zudums katru dienu."
+      - generic [ref=e52]:
+        - generic [ref=e54]: 🔧
+        - generic [ref=e55]:
+          - heading "Claude Code skills eksistē — bet tu neizmanto nevienu" [level=4] [ref=e56]
+          - paragraph [ref=e57]: Skills, hooks, memory — tas viss ir klāt. Bet nav neviena skaidra ceļveža, kur sākt. YouTube video atbild uz neīsto jautājumu.
+      - generic [ref=e58]:
+        - generic [ref=e60]: 🎯
+        - generic [ref=e61]:
+          - heading "Vispārīgs prompts dod vispārīgus rezultātus" [level=4] [ref=e62]
+          - paragraph [ref=e63]: Bezmaksas kolekcijas ir veidotas visiem un nevienam. Tavs bizness ir specifisks — tavai AI sistēmai arī jābūt specifiskai.
+      - generic [ref=e64]:
+        - generic [ref=e66]: 🔄
+        - generic [ref=e67]:
+          - heading "Katru nedēļu jauns rīks — nekas nepaliek" [level=4] [ref=e68]
+          - paragraph [ref=e69]: Pārāk daudz iespēju, pārāk maz sistēmas. Bez sakārtotas bāzes katrs rīks paliek "izmēģināts vienreiz" un aizmirsts.
+    - generic [ref=e70]:
+      - heading "Tu zini, ka AI var dot rezultātus. Tev trūkst sistēmas, kas to izdara." [level=3] [ref=e71]:
+        - text: Tu zini, ka AI var dot rezultātus.
+        - emphasis [ref=e72]: Tev trūkst sistēmas, kas to izdara.
+      - paragraph [ref=e73]: Šī programma dod tev gatavu sistēmu — no pirmās dienas tu zini, ko darīt, kādus rīkus lietot un kā ar AI pārdot vairāk, atrast klientus un automatizēt ikdienu.
+  - separator [ref=e74]
+  - generic [ref=e76]:
+    - generic [ref=e77]:
+      - paragraph [ref=e78]: Ko tu iemācīsies
+      - heading "Pēc šīs programmas tu varēsi:" [level=2] [ref=e79]:
+        - text: Pēc šīs programmas tu
+        - emphasis [ref=e80]: "varēsi:"
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e84]: 🤖
+        - heading "Lietot Claude, Co-work un Claude Code" [level=3] [ref=e86]
+      - generic [ref=e87]:
+        - generic [ref=e89]: 🔍
+        - heading "Ar AI atrast jaunus klientus" [level=3] [ref=e91]
+      - generic [ref=e92]:
+        - generic [ref=e94]: 📧
+        - heading "Automātiski sūtīt e-pastus klientiem" [level=3] [ref=e96]
+      - generic [ref=e97]:
+        - generic [ref=e99]: 🏗️
+        - heading "Izveidot savu AI aģentu" [level=3] [ref=e101]
+      - generic [ref=e102]:
+        - generic [ref=e104]: 📢
+        - heading "Veidot reklāmas un mājas lapas ar AI" [level=3] [ref=e106]
+      - generic [ref=e107]:
+        - generic [ref=e109]: ⏱️
+        - heading "Ietaupīt 2–10 stundas katru nedēļu" [level=3] [ref=e111]
+      - generic [ref=e112]:
+        - generic [ref=e114]: 📊
+        - heading "Analizēt datus un pieņemt labākus lēmumus" [level=3] [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e119]: ✍️
+        - heading "Rakstīt saturu, piedāvājumus un prezentācijas" [level=3] [ref=e121]
+      - generic [ref=e122]:
+        - generic [ref=e124]: 🔄
+        - heading "Automatizēt ikdienas rutīnu savā biznesā" [level=3] [ref=e126]
+      - generic [ref=e127]:
+        - generic [ref=e129]: 💰
+        - heading "Pārdot vairāk ar mazāk piepūles" [level=3] [ref=e131]
+    - link "Gribu iemācīties →" [ref=e133] [cursor=pointer]:
+      - /url: "#pricing"
+  - separator [ref=e134]
+  - generic [ref=e136]:
+    - generic [ref=e137]:
+      - paragraph [ref=e138]: AI Ekosistēma
+      - heading "Kurā līmenī esi Tu?" [level=2] [ref=e139]:
+        - text: Kurā līmenī
+        - emphasis [ref=e140]: esi Tu?
+      - paragraph [ref=e141]: No vienkārša čata līdz autonomai AI sistēmai — starpība ir milzīga.
+    - generic [ref=e142]:
+      - img "5 AI līmeņi"
+    - link "Gribu sasniegt augstāko līmeni →" [ref=e144] [cursor=pointer]:
+      - /url: "#pricing"
+  - separator [ref=e145]
+  - generic [ref=e147]:
+    - paragraph [ref=e148]: Tavs instruktors
+    - generic [ref=e149]:
+      - img "Niks Jansons" [ref=e151]
+      - generic [ref=e152]:
+        - generic [ref=e153]: Niks Jansons
+        - generic [ref=e154]: Uzņēmējs · Traks zinātnieks · AI eksperts · Spīkeris
+        - list [ref=e155]:
+          - listitem [ref=e156]:
+            - generic [ref=e157]: ✓
+            - text: 2,300+ apkalpoti uzņēmumi 26 valstīs
+          - listitem [ref=e158]:
+            - generic [ref=e159]: ✓
+            - text: Forbes 30 Under 30
+          - listitem [ref=e160]:
+            - generic [ref=e161]: ✓
+            - text: 1.3M+ pieteikumi ar AI sistēmām
+          - listitem [ref=e162]:
+            - generic [ref=e163]: ✓
+            - text: 85K+ sekotāji sociālajos tīklos
+          - listitem [ref=e164]:
+            - generic [ref=e165]: ✓
+            - text: Top mārketinga eksperts Latvijā
+  - generic [ref=e166]:
+    - paragraph [ref=e167]: Kur esam parādījušies
+    - generic [ref=e168]:
+      - img "Forbes" [ref=e169]
+      - img "BlackBox Show" [ref=e170]
+      - img "The Baltic Times" [ref=e171]
+      - img "Latvijas Radio" [ref=e172]
+      - img "Dienas Bizness" [ref=e173]
+      - img "Clutch" [ref=e174]
+      - img "Latka" [ref=e175]
+      - img "MirrorReview" [ref=e176]
+      - img "Clinton Courier" [ref=e177]
+      - img "Forbes" [ref=e178]
+      - img "BlackBox Show" [ref=e179]
+      - img "The Baltic Times" [ref=e180]
+      - img "Latvijas Radio" [ref=e181]
+      - img "Dienas Bizness" [ref=e182]
+      - img "Clutch" [ref=e183]
+      - img "Latka" [ref=e184]
+      - img "MirrorReview" [ref=e185]
+      - img "Clinton Courier" [ref=e186]
+  - separator [ref=e187]
+  - generic [ref=e189]:
+    - generic [ref=e190]:
+      - paragraph [ref=e191]: Atsauksmes
+      - heading "Ko saka tie, kas jau izgāja šo programmu" [level=2] [ref=e192]:
+        - text: Ko saka tie, kas jau
+        - emphasis [ref=e193]: izgāja šo programmu
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]: ★★★★★
+        - paragraph [ref=e197]: Ļoti patika progresīva, cilvēcīga, atbalstoša attieksme. Paldies.
+        - paragraph [ref=e198]: Inga Zaharova
+      - generic [ref=e199]:
+        - generic [ref=e200]: ★★★★★
+        - paragraph [ref=e201]: Lielisks praktisks workshop par to, kā izmantot AI rīkus biznesa procesu efektivizēšanai. Nevaru sagaidīt, kad to ieviesīšu savos procesos.
+        - paragraph [ref=e202]: Rita Majore
+      - generic [ref=e203]:
+        - generic [ref=e204]: ★★★★★
+        - paragraph [ref=e205]: Great oversight of up-to-date AI tools. Much appreciated!
+        - paragraph [ref=e206]: Andrejs Arnautovs
+      - generic [ref=e207]:
+        - generic [ref=e208]: ★★★★★
+        - paragraph [ref=e209]: Niks, bija vērtīgi šodien uzzināt pa Claude Code, iesaku apmeklēt līdzīgus seminārus. Stay Sharp!
+        - paragraph [ref=e210]: Irina Zebcuka
+      - generic [ref=e211]:
+        - generic [ref=e212]: ★★★★★
+        - paragraph [ref=e213]: Superīga enerģija. Iedvesma strādāt vēl jaudīgāk.
+        - paragraph [ref=e214]: Kaspars Meilands
+      - generic [ref=e215]:
+        - generic [ref=e216]: ★★★★★
+        - paragraph [ref=e217]: Super, ļoti noderīga tikšanās! Paldies, noteikti noderēs savam uzņēmumam!
+        - paragraph [ref=e218]: Viduskalns
+  - separator [ref=e219]
+  - generic [ref=e221]:
+    - generic [ref=e222]:
+      - paragraph [ref=e223]: Izvēlies savu plānu
+      - heading "Investē vienreiz — ietaupi 2–10 stundas katru nedēļu" [level=2] [ref=e224]:
+        - text: Investē vienreiz —
+        - emphasis [ref=e225]: ietaupi 2–10 stundas katru nedēļu
+    - generic [ref=e226]:
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - heading "Apmācība" [level=3] [ref=e229]
+          - paragraph [ref=e230]: Iemācies lietot AI soli pa solim
+        - generic [ref=e231]:
+          - generic [ref=e232]: €99
+          - generic [ref=e233]: €19
+        - paragraph [ref=e234]: Vienreizējs maksājums · Mūžīga piekļuve
+        - list [ref=e235]:
+          - listitem [ref=e236]:
+            - generic [ref=e237]: 🎬
+            - text: 74 min video apmācība — soli pa solim
+          - listitem [ref=e238]:
+            - generic [ref=e239]: 📊
+            - text: 128 slaidu prezentācija
+          - listitem [ref=e240]:
+            - generic [ref=e241]: 💡
+            - text: 20 praktiskas idejas tavam biznesam
+          - listitem [ref=e242]:
+            - generic [ref=e243]: 🛠️
+            - text: 27 labākie AI rīki ar saitēm
+          - listitem [ref=e244]:
+            - generic [ref=e245]: 📋
+            - text: Ātrais iestatīšanas ceļvedis
+          - listitem [ref=e246]:
+            - generic [ref=e247]: 🔍
+            - text: 14 demonstrācijas no reāla biznesa
+          - listitem [ref=e248]:
+            - generic [ref=e249]: 🧠
+            - text: Eksperta haki — padari AI gudrāku
+          - separator [ref=e250]
+          - listitem [ref=e251]:
+            - generic [ref=e252]: 🎁
+            - text: 14 dienu bezmaksas CRM izmēģinājums
+          - listitem [ref=e253]:
+            - generic [ref=e254]: 🔒
+            - text: 7 dienu naudas atgriešanas garantija
+        - button "Iegādāties par €19" [ref=e255] [cursor=pointer]
+      - generic [ref=e256]:
+        - generic [ref=e257]: Populārākā izvēle
+        - generic [ref=e258]:
+          - heading "Apmācība + Rīki" [level=3] [ref=e259]
+          - paragraph [ref=e260]: Iemācies + saņem gatavu AI sistēmu
+        - generic [ref=e261]:
+          - generic [ref=e262]: €199
+          - generic [ref=e263]: €49
+        - paragraph [ref=e264]: Vienreizējs maksājums · Mūžīga piekļuve
+        - list [ref=e265]:
+          - listitem [ref=e266]:
+            - generic [ref=e267]: ✅
+            - strong [ref=e268]: Viss no "Apmācība" plāna
+          - separator [ref=e269]
+          - listitem [ref=e270]:
+            - generic [ref=e271]: 📣
+            - text: 5 mārketinga rīki — reklāmas, e-pasti, satura plāns
+          - listitem [ref=e272]:
+            - generic [ref=e273]: 💰
+            - text: 6 pārdošanas rīki — piedāvājumi, follow-up, CRM
+          - listitem [ref=e274]:
+            - generic [ref=e275]: ✍️
+            - text: 2 satura rīki — raksti un video scenāriji
+          - listitem [ref=e276]:
+            - generic [ref=e277]: 📁
+            - text: 4 organizēšanas rīki — piezīmes, uzdevumi, faili
+          - listitem [ref=e278]:
+            - generic [ref=e279]: ⚡
+            - text: 10 automātiskie procesi — ietaupi laiku katru dienu
+          - separator [ref=e280]
+          - listitem [ref=e281]:
+            - generic [ref=e282]: 🎁
+            - text: 14 dienu bezmaksas CRM izmēģinājums
+          - listitem [ref=e283]:
+            - generic [ref=e284]: 🔒
+            - text: 7 dienu naudas atgriešanas garantija
+        - button "Iegādāties par €49" [ref=e285] [cursor=pointer]
+  - separator [ref=e286]
+  - generic [ref=e289]:
+    - generic [ref=e290]:
+      - generic [ref=e291]: "7"
+      - generic [ref=e292]: Dienu
+      - generic [ref=e293]: Naudas
+      - generic [ref=e294]: Atgriešana
+    - generic [ref=e295]:
+      - paragraph [ref=e296]: Garantija
+      - heading "7 dienas. Nepatīk — atgriežam naudu." [level=2] [ref=e297]:
+        - text: 7 dienas.
+        - emphasis [ref=e298]: Nepatīk — atgriežam naudu.
+      - paragraph [ref=e299]: Ja 7 dienu laikā neesi apmierināts — raksti uz info@sharpify.io un atgriezīsim visu summu. Bez jautājumiem.
+  - separator [ref=e300]
+  - generic [ref=e302]:
+    - generic [ref=e303]:
+      - paragraph [ref=e304]: Jautājumi un atbildes
+      - heading "Vēl ir jautājumi?" [level=2] [ref=e305]:
+        - text: Vēl ir
+        - emphasis [ref=e306]: jautājumi?
+    - generic [ref=e307]:
+      - group [ref=e308]:
+        - generic "Ko tieši es saņemšu pēc pirkuma?" [ref=e309] [cursor=pointer]:
+          - text: Ko tieši es saņemšu pēc pirkuma?
+          - img [ref=e310]
+      - group [ref=e312]:
+        - generic "Kā notiek maksājums?" [ref=e313] [cursor=pointer]:
+          - text: Kā notiek maksājums?
+          - img [ref=e314]
+      - group [ref=e316]:
+        - generic "Vai es varu saņemt rēķinu?" [ref=e317] [cursor=pointer]:
+          - text: Vai es varu saņemt rēķinu?
+          - img [ref=e318]
+      - group [ref=e320]:
+        - generic "Cik ātri varu sākt lietot?" [ref=e321] [cursor=pointer]:
+          - text: Cik ātri varu sākt lietot?
+          - img [ref=e322]
+      - group [ref=e324]:
+        - generic "Vai vajag programmēšanas zināšanas?" [ref=e325] [cursor=pointer]:
+          - text: Vai vajag programmēšanas zināšanas?
+          - img [ref=e326]
+      - group [ref=e328]:
+        - generic "Vai darbojas ar bezmaksas Claude versiju?" [ref=e329] [cursor=pointer]:
+          - text: Vai darbojas ar bezmaksas Claude versiju?
+          - img [ref=e330]
+      - group [ref=e332]:
+        - generic "Kāda ir naudas atgriešanas garantija?" [ref=e333] [cursor=pointer]:
+          - text: Kāda ir naudas atgriešanas garantija?
+          - img [ref=e334]
+      - group [ref=e336]:
+        - generic "Man ir cits jautājums. Kā sazināties?" [ref=e337] [cursor=pointer]:
+          - text: Man ir cits jautājums. Kā sazināties?
+          - img [ref=e338]
+    - link "Iegādāties →" [ref=e341] [cursor=pointer]:
+      - /url: "#pricing"
+  - separator [ref=e342]
+  - generic [ref=e344]:
+    - generic [ref=e345]:
+      - paragraph [ref=e346]: Tev ir divas izvēles
+      - heading "Ko tu dari tālāk?" [level=2] [ref=e347]:
+        - text: Ko tu dari
+        - emphasis [ref=e348]: tālāk
+        - text: "?"
+    - generic [ref=e349]:
+      - generic [ref=e350]:
+        - generic [ref=e351]: Izvēle 1
+        - heading "Aizver šo lapu" [level=3] [ref=e352]
+        - paragraph [ref=e353]: Turpini darīt visu pats. Nekas nemainās.
+      - generic [ref=e354]:
+        - generic [ref=e355]: Izvēle 2
+        - heading "Sāc lietot AI savā biznesā" [level=3] [ref=e356]
+        - paragraph [ref=e357]: Iemācies soli pa solim un sāc taupīt laiku katru dienu.
+        - link "Gribu sākt →" [ref=e358] [cursor=pointer]:
+          - /url: "#pricing"
+    - paragraph [ref=e359]: Lēmums ir tavā rokā.
+  - separator [ref=e360]
+  - generic [ref=e363]:
+    - paragraph [ref=e364]: Ierobežota laika piedāvājums
+    - heading "Iegūsti pilnu AI sistēmu — par palaišanas cenu" [level=2] [ref=e366]:
+      - text: Iegūsti pilnu AI sistēmu —
+      - emphasis [ref=e367]: par palaišanas cenu
+    - paragraph [ref=e368]:
+      - text: Šī cena ir pieejama tikai
+      - strong [ref=e369]: ierobežotu laiku
+    - link "Skatīt piedāvājumu →" [ref=e370] [cursor=pointer]:
+      - /url: "#pricing"
+      - text: Skatīt piedāvājumu
+      - generic [ref=e371]: →
+    - generic [ref=e372]:
+      - generic [ref=e373]: ⚡ Tūlītēja piekļuve
+      - generic [ref=e375]: 🔒 7 dienu naudas atgriešanas garantija
+      - generic [ref=e377]: 💳 No €19
+  - generic:
+    - generic:
+      - button "✕"
+      - img "No! God! Please! No!"
+      - paragraph: Pagaidi!
+      - paragraph:
+        - text: Sāc taupīt 2–10 stundas nedēļā ar AI.
+        - text: Tikai
+        - strong: €19
+        - text: .
+      - link "Gribu ietaupīt laiku →":
+        - /url: "#pricing"
+  - contentinfo [ref=e378]:
+    - generic [ref=e380]:
+      - link "Sharpify." [ref=e381] [cursor=pointer]:
+        - /url: "#"
+        - text: Sharpify
+        - emphasis [ref=e382]: .
+      - generic [ref=e383]:
+        - link "+371 29 427 717" [ref=e384] [cursor=pointer]:
+          - /url: tel:+37129427717
+        - generic [ref=e385]: ·
+        - link "info@sharpify.io" [ref=e386] [cursor=pointer]:
+          - /url: mailto:info@sharpify.io
+        - generic [ref=e387]: ·
+        - generic [ref=e388]: Vilandes iela 8, Rīga, Latvia
+      - paragraph [ref=e389]: © 2026 Sharpify. Visas tiesības aizsargātas.
+  - link "Jautāt WhatsApp" [ref=e390] [cursor=pointer]:
+    - /url: https://wa.me/37129427717?text=Sveiki%2C%20grib%C4%93tu%20uzzin%C4%81t%20vair%C4%81k%20par%20AI%20programmu
+    - generic: Uzdot jautājumu
+    - img [ref=e391]
+  - generic:
+    - generic:
+      - button "✕"
+      - generic:
+        - generic:
+          - heading "Pasūtīt Pro" [level=3]:
+            - text: Pasūtīt
+            - emphasis: Pro
+          - generic:
+            - generic: €49
+            - text: · Vienreizējs maksājums
+        - generic:
+          - generic:
+            - generic:
+              - generic: Vārds
+              - textbox "Jānis"
+            - generic:
+              - generic: E-pasts
+              - textbox "janis@example.com"
+            - generic:
+              - generic: Telefons
+              - textbox "+371 20 123 456"
+            - generic:
+              - generic: Uzņēmums
+              - textbox "SIA Tavs Uzņēmums"
+          - generic:
+            - text: Kartes dati
+            - generic:
+              - generic:
+                - iframe [ref=e394]:
+                  - generic [ref=f2e1]:
+                    - generic: 0123456789０１２３４５６７８９
+                    - textbox [disabled]
+                    - generic [ref=f2e2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                            - generic:
+                              - img
+                      - generic [ref=f2e3]:
+                        - generic [ref=f2e4]:
+                          - generic: Number
+                          - generic [ref=f2e6]:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - img
+                                  - generic:
+                                    - img
+                            - textbox "Credit or debit card number" [ref=f2e9]:
+                              - /placeholder: Card number
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - textbox:
+                                  - /placeholder: MM / YY
+                          - generic:
+                            - generic:
+                              - generic:
+                                - textbox:
+                                  - /placeholder: CVC
+                    - textbox [disabled]
+                    - button
+                - textbox
+                - iframe [ref=e396]:
+                  - button "Autofill with Link" [ref=f11e3] [cursor=pointer]:
+                    - generic [ref=f11e4]: Autofill
+          - button "Apmaksāt €49 →":
+            - text: Apmaksāt
+            - generic: €49
+            - text: →
+          - generic:
+            - generic:
+              - iframe [ref=e397]:
+                - generic [ref=f15e1]:
+                  - generic: 0123456789０１２３４５６７８９
+                  - textbox [disabled]
+                  - button "Pay with Link" [ref=f15e3] [cursor=pointer]:
+                    - generic [ref=f15e4]:
+                      - generic [ref=f15e5]:
+                        - text: Pay with
+                        - img [ref=f15e6]
+                      - generic [ref=f15e9]:
+                        - img [ref=f15e10]
+                        - generic [ref=f15e17]: "0000"
+                  - textbox [disabled]
+                  - button
+              - textbox
+          - paragraph: 🔒 Droša apmaksa ar Stripe · Tūlītēja digitālā piegāde

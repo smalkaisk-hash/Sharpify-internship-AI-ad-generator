@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #060810;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 36px 40px;
+  position: relative;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 46px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 28px;
+}
+.headline span { color: #10b981; }
+
+/* Two chat windows side by side */
+.chats {
+  display: flex; gap: 20px; flex: 1;
+}
+
+.chat-col {
+  flex: 1; border-radius: 16px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.chat-col.basic {
+  background: #1a1a1a;
+  border: 2px solid rgba(239,68,68,0.2);
+}
+.chat-col.pro {
+  background: #141118;
+  border: 2px solid rgba(16,185,129,0.3);
+}
+
+.chat-header {
+  padding: 14px 18px;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.chat-avatar {
+  width: 32px; height: 32px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+.basic .chat-avatar { background: #404040; color: #9ca3af; }
+.pro .chat-avatar { background: linear-gradient(135deg, #d97757, #c2410c); color: #fff; }
+.chat-name { font-size: 16px; font-weight: 700; }
+.basic .chat-name { color: #9ca3af; }
+.pro .chat-name { color: #fff; }
+
+.label-tag {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  padding: 4px 14px; border-radius: 12px;
+  font-size: 14px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1px;
+  z-index: 2;
+}
+.basic .label-tag { background: #ef4444; color: #fff; }
+.pro .label-tag { background: #10b981; color: #000; }
+
+.chat-body {
+  padding: 18px 20px;
+  flex: 1;
+  display: flex; flex-direction: column; gap: 14px;
+  overflow: hidden;
+}
+
+.msg-u {
+  align-self: flex-end;
+  max-width: 92%;
+  padding: 10px 14px;
+  border-radius: 12px 12px 3px 12px;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+.basic .msg-u { background: rgba(255,255,255,0.05); }
+.pro .msg-u { background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.2); }
+
+.msg-a {
+  align-self: flex-start;
+  max-width: 96%;
+  padding: 12px 15px;
+  border-radius: 12px 12px 12px 3px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.basic .msg-a {
+  background: rgba(255,255,255,0.03);
+  color: #9ca3af;
+}
+.pro .msg-a {
+  background: rgba(16,185,129,0.06);
+  border: 1px solid rgba(16,185,129,0.15);
+  color: #e2e8f0;
+}
+.msg-a strong { color: #fff; font-weight: 700; }
+.pro .msg-a .green { color: #10b981; font-weight: 700; }
+
+.basic .dots {
+  color: #6b7280; font-style: italic;
+  padding: 8px 0;
+}
+
+/* Time stamp */
+.time-badge {
+  margin-top: auto; padding-top: 12px;
+  display: flex; justify-content: center; gap: 8px;
+}
+.time-badge .time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900;
+}
+.time-badge .label {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
+  color: #64748b; padding-top: 4px;
+}
+.basic .time-badge .time { color: #ef4444; }
+.pro .time-badge .time { color: #10b981; }
+
+.pills-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.pill {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 8px; border-radius: 10px;
+}
+.pro .pill {
+  background: rgba(16,185,129,0.15);
+  color: #10b981;
+  border: 1px solid rgba(16,185,129,0.25);
+}
+
+/* Bottom CTA */
+.bottom {
+  margin-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 20px 28px;
+}
+.bottom-left {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px; font-weight: 900;
+}
+.bottom-sub { font-size: 17px; color: #94a3b8; margin-top: 3px; }
+.bottom-sub s { color: #ef4444; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 20px 44px; border-radius: 14px;
+  font-weight: 800; font-size: 26px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Parasts AI <span>vs</span> AI ar Skills</div>
+
+  <div class="chats">
+    <div class="chat-col basic">
+      <div class="label-tag">Parasti</div>
+      <div class="chat-header">
+        <div class="chat-avatar">AI</div>
+        <div class="chat-name">Parasts čatbots</div>
+      </div>
+      <div class="chat-body">
+        <div class="msg-u">Uzraksti Meta reklāmas tekstu maniem produktiem</div>
+        <div class="msg-a">
+          Protams! Lai jums palīdzētu, man vajag vairāk informācijas:<br><br>
+          — Kas ir jūsu produkts?<br>
+          — Kas ir mērķauditorija?<br>
+          — Kāds ir jūsu zīmola tonis?<br>
+          — Kādi ir jūsu unikālie priekšrocības?
+        </div>
+        <div class="msg-u">(20 min vēlāk — atbildi uz visiem jautājumiem)</div>
+        <div class="msg-a">
+          Šeit ir vispārīgs reklāmas teksts...
+        </div>
+        <div class="dots">...un tas joprojām neizskatās kā tavs brands</div>
+        <div class="time-badge">
+          <span class="time">~45 min</span>
+          <span class="label">+ nekonsekventi rezultāti</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-col pro">
+      <div class="label-tag">Ar Sharpify</div>
+      <div class="chat-header">
+        <div class="chat-avatar">C</div>
+        <div class="chat-name">Claude + 27 skills</div>
+      </div>
+      <div class="chat-body">
+        <div class="msg-u">Uzraksti Meta reklāmas tekstu maniem produktiem</div>
+        <div class="msg-a">
+          Izmantoju <span class="green">marketing-skill</span> + <span class="green">brand-voice</span>.<br><br>
+          Jau zinu Tavu zīmolu no CLAUDE.md. Šeit ir <strong>3 variācijas</strong> ar hook, body un CTA — gatavas copy-paste uz Meta.
+          <div class="pills-row">
+            <span class="pill">✓ marketing-skill</span>
+            <span class="pill">✓ brand-voice</span>
+            <span class="pill">✓ copywriting</span>
+          </div>
+        </div>
+        <div class="msg-u">Perfekti! Uztaisi arī headline variācijas</div>
+        <div class="msg-a">
+          Gatavs. <strong>5 headlines</strong> ar A/B test prioritāti.
+        </div>
+        <div class="time-badge">
+          <span class="time">~2 min</span>
+          <span class="label">+ konsekventi rezultāti</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="bottom-left">
+      <div class="bottom-title">27 AI skills. Mūžīga piekļuve.</div>
+      <div class="bottom-sub"><s>€99</s> · tikai €19 · 7 dienu garantija</div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>

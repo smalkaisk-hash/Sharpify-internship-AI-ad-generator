@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0.3) 60%,rgba(0,0,0,0.85) 100%)}
+    /* Top — fear hook */
+    .top{position:absolute;top:44px;left:48px;z-index:4;max-width:700px}
+    .warning{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;padding:10px 24px;background:rgba(239,68,68,0.2);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:76px;font-weight:900;color:#FFF;line-height:1.0;text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .h1 .red{color:#EF4444}
+    .sub{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:500;color:rgba(255,255,255,0.6);margin-top:12px;line-height:1.3}
+    /* Product — bottom right */
+    .product{position:absolute;bottom:30px;right:30px;z-index:3}
+    .product img{height:380px;width:auto;filter:drop-shadow(-10px -5px 30px rgba(0,0,0,0.5))}
+    /* Bottom left — offer */
+    .bot{position:absolute;bottom:44px;left:48px;z-index:4}
+    .price-box{display:flex;align-items:center;gap:16px;margin-bottom:12px}
+    .price{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#FFF}
+    .price-note{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:600;color:rgba(255,255,255,0.4)}
+    .kit{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.5)}
+    .cta{display:inline-block;margin-top:14px;font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;color:#FFF;background:#EF4444;padding:16px 40px;border-radius:12px;border:none}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/backgrounds/bg-burglar-window.png" alt="">
+    <div class="overlay"></div>
+    <div class="top">
+      <div class="warning">Drošības sistēma</div>
+      <div class="h1">Zagļiem pietiek<br>ar <span class="red">dažām minūtēm.</span></div>
+      <div class="sub">Ajax drošības sistēma ziņo uzreiz —<br>paziņojums telefonā sekundēs.</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/cutouts/ajax-kit-white-bg-cutout.png" alt="">
+    </div>
+    <div class="bot">
+      <div class="price-box">
+        <span class="price">130€</span>
+      </div>
+      <div class="kit">Ajax centrāle + kustību detektors</div>
+      <div class="cta">Pieteikties piedāvājumam →</div>
+    </div>
+  </div>
+</body>
+</html>

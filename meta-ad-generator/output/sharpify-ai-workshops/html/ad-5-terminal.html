@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: linear-gradient(145deg, #050810 0%, #0a0f1f 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 48px 56px 44px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 20%, rgba(16,185,129,0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 32px;
+  position: relative; z-index: 1;
+}
+.headline span { color: #10b981; }
+
+/* Terminal window */
+.terminal {
+  width: 100%;
+  background: #0a0e1a;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(16,185,129,0.08);
+  flex: 1; display: flex; flex-direction: column;
+}
+
+.term-bar {
+  background: #151b2e; padding: 14px 20px;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.term-dot { width: 13px; height: 13px; border-radius: 50%; }
+.term-dot.r { background: #ef4444; }
+.term-dot.y { background: #f59e0b; }
+.term-dot.g { background: #10b981; }
+.term-title {
+  flex: 1; text-align: center;
+  font-size: 14px; color: #64748b;
+  font-family: 'JetBrains Mono', monospace;
+  margin-right: 40px;
+}
+
+.term-body {
+  flex: 1; padding: 28px 32px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px; line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.prompt-line { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.prompt-char { color: #10b981; font-weight: 700; }
+.prompt-user { color: #8b5cf6; }
+.prompt-sep { color: #475569; }
+.prompt-path { color: #3b82f6; }
+.prompt-cmd { color: #fff; }
+
+.output {
+  color: #94a3b8; margin-bottom: 18px;
+  padding-left: 12px;
+  border-left: 2px solid rgba(16,185,129,0.15);
+  padding-top: 4px; padding-bottom: 4px;
+}
+.output.success { color: #34d399; }
+.output strong { color: #fff; font-weight: 700; }
+.output .green { color: #10b981; font-weight: 700; }
+
+.cursor {
+  display: inline-block;
+  width: 12px; height: 22px;
+  background: #10b981;
+  margin-left: 4px; vertical-align: middle;
+}
+
+/* Bottom price card */
+.bottom-card {
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin-top: 20px;
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative; z-index: 1;
+}
+.bottom-info {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px; font-weight: 900; color: #fff;
+}
+.bottom-sub { font-size: 20px; color: #94a3b8; margin-top: 4px; }
+.bottom-sub s { color: #ef4444; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 22px 48px; border-radius: 14px;
+  font-weight: 800; font-size: 28px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">AI sistēma 3 <span>komandās</span></div>
+
+  <div class="terminal">
+    <div class="term-bar">
+      <div class="term-dot r"></div>
+      <div class="term-dot y"></div>
+      <div class="term-dot g"></div>
+      <div class="term-title">~/sharpify-ai-kit</div>
+    </div>
+    <div class="term-body">
+      <div class="prompt-line">
+        <span class="prompt-char">$</span>
+        <span class="prompt-cmd">install sharpify-ai-kit</span>
+      </div>
+      <div class="output success">✓ Installing 27 AI skills...<br>✓ Installing 10 workflows...<br>✓ Loading CLAUDE.md template...<br><strong>✓ Done in 28 seconds.</strong></div>
+
+      <div class="prompt-line">
+        <span class="prompt-char">$</span>
+        <span class="prompt-cmd">claude --use marketing-skill</span>
+      </div>
+      <div class="output">→ <span class="green">Gatavs.</span> Skills aktivizētas. Promptus vairs nav jāraksta&nbsp;no&nbsp;nulles.</div>
+
+      <div class="prompt-line">
+        <span class="prompt-char">$</span>
+        <span class="prompt-cmd">time-saved --daily</span>
+      </div>
+      <div class="output success"><span class="green">+2-5 stundas dienā</span><br>No pirmās dienas. Bez eksperimentēšanas.</div>
+
+      <div class="prompt-line">
+        <span class="prompt-char">$</span>
+        <span class="prompt-cmd">_<span class="cursor"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-card">
+    <div class="bottom-info">
+      <div class="bottom-title">AI Rīku Komplekts</div>
+      <div class="bottom-sub"><s>€99</s> · tikai €19 · mūžīga piekļuve</div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>
