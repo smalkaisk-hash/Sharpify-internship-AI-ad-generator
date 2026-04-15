@@ -22,6 +22,7 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
    - Brand assets (for colors, fonts, image paths)
    - Ad copy (for text content + layout recommendations)
    - Reference: `reference/color-theory.md` and `reference/meta-ad-specs.md`
+   - **Design taste rules in `CLAUDE.md` section 4.5** — commit to a bold aesthetic direction, avoid default fonts (Inter/Roboto/Arial) for headlines, no purple-gradient-on-white, dominant color + sharp accent over timid even palettes, vary theme between clients. These are non-negotiable for avoiding AI-slop look.
 
 2. **Check `ad_type`** from `client-brief.json → ad_type`:
    - `"client-tangible"` → every ad must feature product imagery (see "Design Rules by Ad Type" below)
