@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="lv"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:#F5F5F7;overflow:hidden;padding:56px}
+  .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+  .brand{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;letter-spacing:4px;color:#0F1114}
+  .chip{font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:3px;color:#0F1114;padding:8px 14px;border:1px solid #0F1114;border-radius:4px}
+  .accent{width:56px;height:3px;background:#0066FF;margin-bottom:20px}
+  h1{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:72px;line-height:0.98;letter-spacing:-1.2px;color:#0F1114;margin-bottom:16px}
+  h1 span{color:#0066FF}
+  .sub{font-size:18px;color:rgba(15,17,20,0.6);margin-bottom:36px;max-width:640px}
+  .services{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:32px}
+  .svc{background:#0F1114;color:#F5F5F7;padding:32px 24px;border-radius:8px;display:flex;flex-direction:column;justify-content:space-between;min-height:200px;position:relative;overflow:hidden}
+  .svc:nth-child(1){background:url('../brief/images/hero-2.webp') center/cover no-repeat}
+  .svc:nth-child(3){background:url('../brief/images/hero-1.webp') center/cover no-repeat}
+  .svc:nth-child(5){background:url('../brief/images/hero-3.webp') center/cover no-repeat}
+  .svc:nth-child(1)::before,.svc:nth-child(3)::before,.svc:nth-child(5)::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,20,0.3) 0%,rgba(15,17,20,0.85) 100%)}
+  .svc > *{position:relative;z-index:1}
+  .svc-num{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:2px;color:rgba(245,245,247,0.5);font-weight:600}
+  .svc-name{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:500;line-height:1.05;letter-spacing:-0.5px}
+  .cta-row{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid rgba(15,17,20,0.12)}
+  .cta-text{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:500;color:#0F1114}
+  .cta{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;background:#0066FF;color:#fff;font-weight:600;font-size:15px;border-radius:4px}
+</style></head>
+<body><div class="ad">
+  <div class="top"><div class="brand">ALUSTAR</div><div class="chip">PAKALPOJUMI</div></div>
+  <div class="accent"></div>
+  <h1>Viss alumīnijā<br>un <span>stiklā</span>.</h1>
+  <div class="sub">No skices līdz objekta nodošanai — sešas konstrukciju kategorijas, viens partneris.</div>
+  <div class="services">
+    <div class="svc"><div class="svc-num">01</div><div class="svc-name">Fasādes</div></div>
+    <div class="svc"><div class="svc-num">02</div><div class="svc-name">Logi & durvis</div></div>
+    <div class="svc"><div class="svc-num">03</div><div class="svc-name">Ugunsdrošās durvis</div></div>
+    <div class="svc"><div class="svc-num">04</div><div class="svc-name">Stiklotas margas</div></div>
+    <div class="svc"><div class="svc-num">05</div><div class="svc-name">Ziemas dārzi</div></div>
+    <div class="svc"><div class="svc-num">06</div><div class="svc-name">Virsgaismas</div></div>
+  </div>
+  <div class="cta-row">
+    <div class="cta-text">Bezmaksas konsultācija · 19 gadu pieredze</div>
+    <div class="cta">Apskatīt pakalpojumus →</div>
+  </div>
+</div></body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 6 — Bold Statement</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;color:#2A1F2E;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:linear-gradient(160deg,#FBF3EA 0%,#F5D5DC 60%,#D8C7E8 100%)}
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(42,31,46,0.04) 1px,transparent 1px);background-size:4px 4px;opacity:0.5}
+  .badge{position:absolute;top:60px;right:60px;width:120px;height:120px;border-radius:50%;background:#2A1F2E;color:#FBF3EA;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(8deg);font-family:'Instrument Serif',serif}
+  .badge-from{font-size:11px;letter-spacing:3px;font-weight:500;font-family:'Inter'}
+  .badge-price{font-size:38px;line-height:1;margin-top:4px}
+  .badge-sub{font-size:11px;letter-spacing:2px;font-family:'Inter';margin-top:6px;opacity:0.7}
+  .product{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:680px;height:480px;background:url('../brief/images/product-2.jpg') center/contain no-repeat;filter:drop-shadow(0 30px 50px rgba(139,74,94,0.15))}
+  .content{position:absolute;bottom:110px;left:0;right:0;text-align:center;padding:0 70px}
+  h1{font-family:'Instrument Serif',serif;font-size:74px;line-height:1.0;letter-spacing:-0.5px}
+  h1 em{font-style:italic;color:#8B4A5E}
+  .sub{margin-top:22px;font-size:19px;color:rgba(42,31,46,0.75)}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:17px 38px;background:#2A1F2E;color:#FBF3EA;border-radius:999px;font-weight:600;font-size:16px}
+  .brand-top{position:absolute;top:74px;left:60px;font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:rgba(42,31,46,0.75)}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="grain"></div>
+  <div class="brand-top">ballītei.lv</div>
+  <div class="badge">
+    <div class="badge-from">NO</div>
+    <div class="badge-price">34€</div>
+    <div class="badge-sub">KOMPLEKTS</div>
+  </div>
+  <div class="product"></div>
+  <div class="content">
+    <h1>Tev nav jābūt <em>dekoratoram</em>,<br>lai svētki izskatās skaisti.</h1>
+    <div class="sub">Gatavs komplekts — visas detaļas saskaņotas vienā kastē.</div>
+    <div class="cta">Apskatīt komplektus →</div>
+  </div>
+</div>
+</body>
+</html>

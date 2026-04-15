@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="lv"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:#0F1114;overflow:hidden;padding:60px}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(245,245,247,0.035) 1px,transparent 1px);background-size:100% 54px;pointer-events:none}
+  .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;position:relative;z-index:2}
+  .brand{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;letter-spacing:4px;color:#F5F5F7}
+  .chip{font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:3px;color:#0066FF;padding:8px 14px;border:1px solid rgba(0,102,255,0.4);border-radius:4px}
+  .accent{position:relative;z-index:2;width:56px;height:3px;background:#0066FF;margin-bottom:24px}
+  h1{position:relative;z-index:2;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:86px;line-height:0.96;letter-spacing:-1.6px;color:#F5F5F7;margin-bottom:20px}
+  h1 span{color:#0066FF;font-style:italic}
+  .sub{position:relative;z-index:2;font-size:20px;color:rgba(245,245,247,0.68);margin-bottom:48px;max-width:700px;line-height:1.4}
+  .steps{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;border-top:1px solid rgba(245,245,247,0.15);border-bottom:1px solid rgba(245,245,247,0.15);margin-bottom:44px}
+  .step{padding:34px 22px;border-right:1px solid rgba(245,245,247,0.12);position:relative}
+  .step:last-child{border-right:none}
+  .step-num{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:3px;color:#0066FF;font-weight:600;margin-bottom:14px}
+  .step-name{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:500;color:#F5F5F7;letter-spacing:-0.5px;line-height:1.05}
+  .arrow{position:absolute;right:-8px;top:50%;transform:translateY(-50%);color:#0066FF;font-size:18px;z-index:3}
+  .step:last-child .arrow{display:none}
+  .cta-row{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center}
+  .note{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:2px;color:rgba(245,245,247,0.5);text-transform:uppercase}
+  .cta{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;background:#0066FF;color:#fff;font-weight:600;font-size:16px;border-radius:4px}
+</style></head>
+<body><div class="ad">
+  <div class="grid-bg"></div>
+  <div class="top"><div class="brand">ALUSTAR</div><div class="chip">PILNS CIKLS</div></div>
+  <div class="accent"></div>
+  <h1>Viens līgums.<br><span>Viens atbildīgais.</span></h1>
+  <div class="sub">Pilns cikls vienā uzņēmumā — bez apakšuzņēmēju ķēdes, bez atbildības pāradreses.</div>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><div class="step-name">Projektēšana</div><div class="arrow">→</div></div>
+    <div class="step"><div class="step-num">02</div><div class="step-name">Izgatavošana</div><div class="arrow">→</div></div>
+    <div class="step"><div class="step-num">03</div><div class="step-name">Piegāde</div><div class="arrow">→</div></div>
+    <div class="step"><div class="step-num">04</div><div class="step-name">Uzstādīšana</div></div>
+  </div>
+  <div class="cta-row">
+    <div class="note">APDROŠINĀTAS GARANTIJAS · CAURREDZAMI LĪGUMI</div>
+    <div class="cta">Pieteikt tāmi →</div>
+  </div>
+</div></body></html>

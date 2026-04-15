@@ -1,0 +1,79 @@
+{
+  "client_name": "Konstantīns (Alustar)",
+  "client_slug": "alustar",
+  "email": "lari@alustar.lv",
+  "phone": "+37129265665",
+  "website": "https://www.alustar.lv/",
+  "figma_file_url": null,
+  "language": "lv",
+  "target_audience": {
+    "raw": "B2B, B2C",
+    "demographics": "B2B: ģenerāluzņēmēji, arhitekti, projektu vadītāji; B2C: privātmāju īpašnieki, kas būvē vai renovē",
+    "psychographics": "Grib uzticamu partneri garam projekta ciklam — ne apakšuzņēmēju, kas pazūd pēc parakstīšanas. Baidās no nekvalitatīva darba, termiņu kavēšanas, garantijas strīdiem.",
+    "pain_points": [
+      "Apakšuzņēmēji, kas pazūd pēc līguma parakstīšanas",
+      "Termiņu kavēšana un haoss objektā",
+      "Nav vienota atbildīgā par projektēšanu + uzstādīšanu",
+      "Bailes no 'lētā piedāvājuma', kas beigās izmaksā vairāk",
+      "Garantijas strīdi ar jauniem, mazpieredzes uzņēmumiem"
+    ],
+    "desires": [
+      "Viens uzņēmums — no skices līdz uzstādīšanai",
+      "Caurredzami līgumi, apdrošinātas garantijas",
+      "Pieredze, kas nav pazīstama tikai no mājaslapas",
+      "Bezmaksas tāme pirms apņemšanās"
+    ]
+  },
+  "offer": {
+    "main_offer": "Stiklotas alumīnija konstrukcijas: logi, durvis, fasādes, ugunsdrošās alumīnija durvis, stiklotas margas, stiklotas virsgaismas, ziemas dārzi",
+    "secondary_offer": "Pilns cikls: projektēšana + izgatavošana + piegāde + uzstādīšana",
+    "result_promise": "Viens atbildīgs partneris no skices līdz objekta nodošanai — bez apakšuzņēmēju haosa",
+    "duration": null,
+    "price_mentioned": false
+  },
+  "differentiator": {
+    "raw": "Projektēšana, izgatavošana, piegāde un uzstadīšana. Atbildīgs uzņēmums ar 20+ gadu pieredzi",
+    "key_points": [
+      "Pilns cikls vienā uzņēmumā (nav apakšuzņēmēju ķēdes)",
+      "19 gadi uzņēmumam (dib. 2007), 25+ gadi dibinātājiem",
+      "200+ realizēti projekti, 150 000+ m² būvētu objektu",
+      "Viens nosaukums + viens reģ. nr. 19 gadus"
+    ]
+  },
+  "trust_signals": {
+    "raw": "20+ gadu pieredze, atbildīgs uzņēmums, strādā ar vienu nosaukumu un vienu reģ. nr. jau 20 gadus",
+    "credentials": [
+      "Dibināts 2007. gadā Rīgā",
+      "19+ gadi tirgū zem vienota nosaukuma",
+      "Dibinātāju pieredze 25+ gadi"
+    ],
+    "social_proof": [
+      "200+ realizēti projekti",
+      "150 000+ m² būvēto objektu",
+      "Klientu ieteikumi"
+    ],
+    "personal_story": "Inženieriska pieeja un juridiska atbildība par pieņemtajiem risinājumiem"
+  },
+  "client_acquisition": {
+    "method": "Bezmaksas konsultācija, bezmaksas tāmju sagatavošana, esošo klientu ieteikumi paziņām",
+    "funnel": "Aukstais pieprasījums → Bezmaksas konsultācija/tāme → Līgums → Projekts"
+  },
+  "bonuses": [
+    "Bezmaksas tāmes sagatavošana",
+    "Atlaides un individuāla pieeja"
+  ],
+  "guarantees": [
+    "Sadarbība uz līguma pamata",
+    "Caurredzami līgumu nosacījumi",
+    "Apdrošināšanas kompāniju garantijas"
+  ],
+  "capacity": "Mērķis: 10 jauni klienti 90 dienās",
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 6,
+  "ad_strategy": {
+    "recommended_objective": "Lead Generation (bezmaksas tāme)",
+    "recommended_cta": "Pieteikt bezmaksas tāmi",
+    "funnel_stage_focus": "Mid-funnel — pieredze + uzticamība + bezmaksas tāmes hook"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:#0F1114;overflow:hidden;display:grid;grid-template-rows:1fr 1fr}
+  .img{background:url('../brief/images/hero-1.webp') center/cover no-repeat;position:relative;overflow:hidden}
+  .img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,20,0.15) 0%,rgba(15,17,20,0.65) 100%)}
+  .img-top{position:absolute;top:48px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+  .brand{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;letter-spacing:4px;color:#F5F5F7}
+  .chip{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;color:#F5F5F7;padding:10px 16px;background:#0066FF;border-radius:4px}
+  .badge{position:absolute;bottom:48px;left:48px;z-index:2;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(15,17,20,0.6);border:1px solid rgba(245,245,247,0.15);border-radius:4px;backdrop-filter:blur(8px)}
+  .pulse{width:8px;height:8px;border-radius:50%;background:#0066FF}
+  .badge-text{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:2.5px;color:#F5F5F7;font-weight:500}
+  .content{padding:56px;display:flex;flex-direction:column;justify-content:center;position:relative;background:#0F1114}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(245,245,247,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(245,245,247,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+  .accent{position:relative;z-index:2;width:56px;height:3px;background:#0066FF;margin-bottom:22px}
+  h1{position:relative;z-index:2;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:84px;line-height:0.98;letter-spacing:-1.6px;color:#F5F5F7;margin-bottom:22px}
+  h1 span{color:#0066FF}
+  .sub{position:relative;z-index:2;font-size:19px;color:rgba(245,245,247,0.7);line-height:1.4;margin-bottom:34px;max-width:720px}
+  .cta-row{position:relative;z-index:2;display:flex;align-items:center;gap:18px}
+  .cta{display:inline-flex;align-items:center;gap:10px;padding:18px 32px;background:#0066FF;color:#fff;font-weight:600;font-size:16px;border-radius:4px}
+  .micro{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:2px;color:rgba(245,245,247,0.45);text-transform:uppercase}
+</style></head>
+<body><div class="ad">
+  <div class="img">
+    <div class="img-top"><div class="brand">ALUSTAR</div><div class="chip">BEZMAKSAS TĀME</div></div>
+    <div class="badge"><span class="pulse"></span><span class="badge-text">INŽENIERISKA EKSPERTĪZE</span></div>
+  </div>
+  <div class="content">
+    <div class="grid-bg"></div>
+    <div class="accent"></div>
+    <h1>Bezmaksas <span>tāme</span>.<br>Bez saistībām.</h1>
+    <div class="sub">Juridiska atbildība par pieņemtajiem risinājumiem. Caurredzami līgumi. Apdrošinātas garantijas.</div>
+    <div class="cta-row">
+      <div class="cta">Sākt ar tāmi →</div>
+      <div class="micro">19 GADI · 200+ PROJEKTI</div>
+    </div>
+  </div>
+</div></body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 5 — Themed Grid</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;color:#2A1F2E;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:#FBF3EA;padding:56px}
+  .chip{display:block;width:fit-content;margin:0 auto 20px;font-size:12px;letter-spacing:4px;font-weight:600;color:#2A1F2E;padding:8px 18px;border:1px solid rgba(42,31,46,0.2);border-radius:999px}
+  h1{font-family:'Instrument Serif',serif;font-size:58px;line-height:1.0;text-align:center;letter-spacing:-0.3px}
+  h1 em{font-style:italic;color:#8B4A5E}
+  .sub{text-align:center;font-size:17px;color:rgba(42,31,46,0.7);margin-top:14px;margin-bottom:32px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;height:660px}
+  .tile{position:relative;border-radius:24px;overflow:hidden;background-size:cover;background-position:center}
+  .tile:nth-child(1){background-image:url('../brief/images/hero-4.jpg')}
+  .tile:nth-child(2){background-image:url('../brief/images/hero-5.jpg')}
+  .tile:nth-child(3){background-image:url('../brief/images/hero-3.jpg')}
+  .tile:nth-child(4){background-image:url('../brief/images/product-1.jpg')}
+  .tile::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,46,0) 55%,rgba(42,31,46,0.6) 100%)}
+  .tile-label{position:absolute;bottom:18px;left:22px;color:#FFFFFF;font-family:'Instrument Serif',serif;font-style:italic;font-size:26px;z-index:2;text-shadow:0 2px 16px rgba(0,0,0,0.5)}
+  .cta{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);padding:16px 36px;background:#2A1F2E;color:#FBF3EA;border-radius:999px;font-weight:600;font-size:16px;display:inline-flex;align-items:center;gap:10px}
+</style>
+</head>
+<body>
+<div class="ad">
+  <span class="chip">TEMATISKIE KOMPLEKTI · 40+</span>
+  <h1>Viena tēma.<br>Visi baloni <em>saskaņoti</em>.</h1>
+  <div class="sub">Safari, dinozauri, mašīnas, Baby Shower, Bride To Be — viss vienā kastē.</div>
+  <div class="grid">
+    <div class="tile"><div class="tile-label">Safari</div></div>
+    <div class="tile"><div class="tile-label">Suņi &amp; kucēni</div></div>
+    <div class="tile"><div class="tile-label">Mašīnas</div></div>
+    <div class="tile"><div class="tile-label">Bride To Be</div></div>
+  </div>
+  <div class="cta">Redzēt visas tēmas →</div>
+</div>
+</body>
+</html>

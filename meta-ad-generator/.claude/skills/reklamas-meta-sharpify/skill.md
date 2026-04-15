@@ -46,17 +46,49 @@ Before doing anything else, **read `notes.md`** (sibling file in this skill dire
 
 When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
 
-## VIDEO ADS — use `remotion-superpowers`
+## VIDEO ADS — use `remotion-superpowers` plugin
 
-When the user asks for **video ads** (not static images) for the LV account — triggers like "make video ads for [niche]", "video reklāmas", "Remotion ads" — switch to the `remotion-superpowers` plugin. Don't try to hand-code Remotion components from scratch.
+When the user asks for **video ads** (not static images) for the LV account — triggers like "make video ads for [niche]", "video reklāmas", "Remotion ads" — delegate to the `remotion-superpowers` plugin. Don't hand-code Remotion components.
 
-Use our proven 4-scene structure (~13-15s total) as the plugin's scene spec:
-- Scene 1: HOOK (3s pattern interrupt)
-- Scene 2: PROBLEM/DEMO (4-5s)
-- Scene 3: PROOF/DETAILS (3-4s)
-- Scene 4: PRICE + CTA (3s)
+Video hits 3-5% CTR vs 1-2% for static (per account history), so prefer video when budget allows.
 
-The plugin handles voiceovers, music, TikTok captions, transitions, and AI scene-review — things we'd otherwise build manually. Video hits 3-5% CTR vs 1-2% for static (per account history), so prefer video when budget allows.
+### Video workflow (LV)
+
+1. **Read `notes.md` + this skill + CLAUDE.md §4.4** (you should have done this already).
+
+2. **Confirm the niche and core message with the user** if not provided. Pull niche-specific pain points from notes.md or past winners (e.g., "Salona īpašniece" formula, "Tu parūpējies, lai..." framing).
+
+3. **Write the 4-scene script** in Latvian using our proven structure:
+   - **Scene 1 — HOOK (3s):** Pattern interrupt. Niche-specific question or bold claim. NOT generic cinematic b-roll (per `feedback_veo_no_generic_cinematic.md`). Examples: "Kamēr tu [activity], nākamais klients paiet garām konkurentiem." / "5 būvnieki Rīgā jau izmanto šo sistēmu."
+   - **Scene 2 — PROBLEM/DEMO (4-5s):** Show the pain — client acquisition gap, manual follow-up, referrals running dry. Visual: UGC/phone footage, split-screen, screen recording of empty calendar.
+   - **Scene 3 — PROOF/DETAILS (3-4s):** Real numbers ("2'300+ uzņēmēji", "€50m+ apgrozījumu", "1-10 klienti dienā"). Notification stack, dashboard screen, client testimonial card.
+   - **Scene 4 — PRICE + CTA (3s):** MP Risinājums system + "Piesakies zemāk" + lead form URL.
+
+4. **Delegate to the plugin** — use ONE of these approaches depending on scope:
+
+   **Full-auto path (fastest):** Invoke the `video-director` agent with the 4-scene script + tone/style notes. It orchestrates media-scout (footage) + post-producer (transitions, polish) + review.
+
+   **Manual control path (more precision):**
+   - `/find-footage` — source niche-relevant stock clips (or use `media-scout` agent for curated picks)
+   - `/create-video` — build the 4-scene structure with timings
+   - `/add-voiceover` — AI voice in Latvian (specify male/female, tone). Use `generate_speech` MCP for specific control.
+   - `/add-music` — match the tone (dramatic for warning ads, upbeat for prosperity/success ads). Strict Sharpify palette applies — avoid trendy synthwave if the niche is trades/industrial.
+   - `/add-captions` — TikTok-style Latvian subtitles, all-caps bold yellow-on-black
+   - `/add-transitions` — cuts/wipes, never cheap white flashes (per notes.md rule)
+   - `/review-video` — run the post-producer AI review. Iterate on flagged weaknesses.
+
+5. **Strict Sharpify video rules** (enforce through every step):
+   - Brand palette only: yellow `#E8D500`, black `#0a0a0a`, white, red `#FF3344` for price slash, green `#22C55E` for savings. Never trendy purple/pink.
+   - No generic cinematic b-roll (handshakes, typing montages). Pattern interrupt in first 0.5-1s.
+   - Scale text big: headlines 56-72px equivalent, CTA button ≥48px. Phone-feed viewable at 40% thumbnail.
+   - CTA button on final scene uses "Piesakies" / "Uzzināt vairāk" — NOT "Learn More" (English).
+
+6. **Output destination:** save rendered MP4 to `output/sharpify-leadgen/videos/{niche}-v{n}.mp4` or `remotion-videos/out/{niche}-{timestamp}.mp4` depending on setup.
+
+7. **Present to user for approval before Meta upload** (same as static ads — never launch without explicit OK).
+
+### Fallback if plugin fails
+If `remotion-superpowers` is unavailable mid-render, fall back to hand-coded Remotion using the existing `remotion-videos/` project — the 4-scene structure in `AIToolkitProShowcase.tsx` is the proven reference. Flag the fallback to the user so they know they're getting a lower-polish version without AI voiceover.
 
 For **static image ads**, follow the image pipeline below (Steps 1-5).
 

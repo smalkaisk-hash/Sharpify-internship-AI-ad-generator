@@ -114,18 +114,38 @@ Figma wins over web scraping because it's the designer's source of truth (scrape
 
 **If no Figma URL is in the brief** → fall back to web scraper.
 
-### Remotion Superpowers (`remotion-superpowers`)
-**Video ad production upgrade** for the LV/ENG Sharpify workflows and (eventually) client video ads. Bundles:
-- AI voiceover generation
-- Music library integration
-- Stock footage search
-- TikTok-style captions
-- Scene transitions
-- AI review loop (critiques each scene before finalizing)
+### Remotion Superpowers (`remotion-superpowers`) — INSTALLED
 
-Our existing 4-scene structure (HOOK / PROBLEM / PROOF / CTA, ~13-15s) maps directly to the plugin. When the user asks for a video ad, the LV/ENG skills should call this plugin instead of hand-rolled Remotion code.
+**Video ad production** for LV/ENG Sharpify workflows and (eventually) client video ads. Plugin ships:
 
-Videos hit 3-5% CTR vs 1-2% for static (per LV account history) — worth using when budget allows.
+**3 agents** (auto-invoke contextually):
+- `video-director` — orchestrates the full video creation (script → scenes → media → review)
+- `media-scout` — finds/curates stock footage, recommends clips
+- `post-producer` — handles transitions, polish, AI review loop
+
+**15 slash commands:**
+- `/create-video`, `/create-short` — full production
+- `/add-voiceover`, `/add-music`, `/add-captions`, `/add-transitions` — layer-by-layer
+- `/generate-image`, `/generate-clip` — asset generation
+- `/find-footage`, `/analyze-footage` — stock sourcing
+- `/review-video` — AI critique before render
+- `/transcribe`, `/setup`, `/generate-image`
+
+**MCP tools** (`mcp__plugin_remotion-superpowers_remotion-media__*`):
+- `generate_image`, `generate_music`, `generate_speech`, `generate_subtitles`
+- `generate_video_from_image`, `generate_video_from_text`
+- `backup_asset`, `get_asset`, `list_assets`
+
+**Our 4-scene structure** (HOOK / PROBLEM / PROOF / CTA, ~13-15s) maps directly into the plugin. The LV/ENG skills call `video-director` or the slash commands — they don't hand-code Remotion.
+
+Videos hit 3-5% CTR vs 1-2% for static (per LV account history) — worth the effort when budget allows.
+
+**Brand constraints that override plugin defaults:**
+- Sharpify palette only (yellow `#E8D500`, black `#0a0a0a`, no trendy purple/pink gradients)
+- No cheap white flash transitions
+- No generic cinematic b-roll (typing → website → handshake)
+- Pattern interrupt in first 0.5-1s
+- Text ≥56px equivalent (phone-feed readable at 40% thumbnail)
 
 ---
 

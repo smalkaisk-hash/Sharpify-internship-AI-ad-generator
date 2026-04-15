@@ -1,0 +1,217 @@
+{
+  "source_url": "https://www.alustar.lv/",
+  "scraped_at": "2026-04-15T12:36:31.681Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#242424",
+        "usage_count": 161,
+        "contexts": [
+          "text:body",
+          "text:style",
+          "text:nav",
+          "text:div",
+          "text:a"
+        ]
+      },
+      {
+        "hex": "#0188fe",
+        "usage_count": 46,
+        "contexts": [
+          "text:a",
+          "bg:a",
+          "text:svg",
+          "text:path",
+          "text:rect"
+        ]
+      },
+      {
+        "hex": "#3d3d3d",
+        "usage_count": 44,
+        "contexts": [
+          "text:svg",
+          "text:path",
+          "text:rect",
+          "text:a",
+          "text:button"
+        ]
+      },
+      {
+        "hex": "#fafafa",
+        "usage_count": 39,
+        "contexts": [
+          "bg:body",
+          "bg:div",
+          "text:span",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#fafafa",
+        "usage_count": 25,
+        "contexts": [
+          "text:p",
+          "text:a",
+          "text:svg",
+          "text:path",
+          "text:rect"
+        ]
+      },
+      {
+        "hex": "#e0e0e0",
+        "usage_count": 9,
+        "contexts": [
+          "bg:div",
+          "bg:input",
+          "bg:textarea"
+        ]
+      },
+      {
+        "hex": "#e5e5e5",
+        "usage_count": 8,
+        "contexts": [
+          "text:h1",
+          "text:p"
+        ]
+      },
+      {
+        "hex": "#242424",
+        "usage_count": 6,
+        "contexts": [
+          "text:a"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#242424",
+      "secondary": "#0188fe",
+      "accent": "#3d3d3d",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Inter",
+        "usage_count": 203,
+        "weights": [
+          "400",
+          "700",
+          "500",
+          "600",
+          "300",
+          "800"
+        ],
+        "contexts": [
+          "div",
+          "a",
+          "span",
+          "button",
+          "h1",
+          "p",
+          "h2",
+          "h4"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Inter",
+      "body": "Inter"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.webp",
+        "originalUrl": "https://www.alustar.lv/assets/hero-construction.webp",
+        "width": 792,
+        "height": 780
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.webp",
+        "originalUrl": "https://www.alustar.lv/assets/hero-glass.webp",
+        "width": 778,
+        "height": 780
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.webp",
+        "originalUrl": "https://www.alustar.lv/assets/asset2.webp",
+        "width": 550,
+        "height": 367
+      }
+    ],
+    "logos": [],
+    "products": [],
+    "all_found": 3
+  },
+  "product_category": {
+    "type": "intangible",
+    "confidence": "low",
+    "signals": [
+      "content: \"konsultācija\""
+    ],
+    "product_images": []
+  },
+  "content": {
+    "page_title": "Stikla konstrukcijas un būvniecība - AluStar",
+    "meta_description": "AluStar piedāvā augstākās kvalitātes stikla konstrukcijas un pilna cikla būvniecības pakalpojumus dzīvojamiem un komerciāliem objektiem.",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "STIKLA KONSTRUKCIJAS"
+      },
+      {
+        "tag": "H1",
+        "text": "BŪVNIECĪBA"
+      },
+      {
+        "tag": "H1",
+        "text": "STIKLA KONSTRUKCIJAS"
+      },
+      {
+        "tag": "H1",
+        "text": "BŪVNIECĪBA"
+      },
+      {
+        "tag": "H2",
+        "text": "Pilna inženiertehniskā un juridiskā atbildība"
+      },
+      {
+        "tag": "H2",
+        "text": "Uzticamība pierādīta praksē"
+      },
+      {
+        "tag": "H2",
+        "text": "Darba formāts"
+      },
+      {
+        "tag": "H2",
+        "text": "Pieprasīt tehnisko piedāvājumu"
+      }
+    ],
+    "key_paragraphs": [
+      "Fasādes, logi, durvis, starpsienas",
+      "Pilna cikla būvniecības pakalpojumi",
+      "Fasādes, logi, durvis, starpsienas",
+      "Pilna cikla būvniecības pakalpojumi"
+    ],
+    "cta_buttons_found": [
+      "info@alustar.lv",
+      "+371 29 265 665",
+      "LV",
+      "RU",
+      "EN",
+      "Būvniecība",
+      "Renovācija",
+      "Stikla konstrukcijas",
+      "Projekti",
+      "Par mums"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "client_name": "Santa Vikija Petraviča",
+  "client_slug": "ballitei",
+  "email": "santavikija@gmail.com",
+  "phone": "+37127419542",
+  "website": "https://www.ballitei.lv/",
+  "figma_file_url": null,
+  "language": "lv",
+  "target_audience": {
+    "raw": "Māmiņas; Jaunas sievietes, kam patīk skaisti svētki (preces arī jebkura vecuma ballītēm); Dekoratori; Pasākumu organizatori",
+    "demographics": "Sievietes Latvijā, 20-45 g., māmiņas + pasākumu dekoratori/organizatori",
+    "psychographics": "Grib skaistus, Pinterest-cienīgus svētkus, bet bez stresa un bez pārmaksas; estētika + ērtums svarīgāks par lēto cenu",
+    "pain_points": [
+      "Svētku dekorēšana prasa laiku un ideju meklēšanu",
+      "Atsevišķu baloniņu pirkšana un salikšana pašam aizņem stundas",
+      "Lielveikalu baloni izskatās lēti un nesaskan savā starpā",
+      "Grūti atrast 'tematisku' komplektu vienā vietā"
+    ],
+    "desires": [
+      "Pinterestīgi skaisti svētki bez pūlēm",
+      "Gatavi saskaņoti komplekti — atver un uzstādi",
+      "Ātra piegāde — nākamā diena",
+      "Laba kvalitāte par saprātīgu cenu"
+    ]
+  },
+  "offer": {
+    "main_offer": "Baloni un svētku atribūtika — gatavi tematiski komplekti (Safari, Dinozauri, Pirāti, Gaming, Baby Shower u.c.), folijas + lateksa baloni, galda piederumi, torte toperi",
+    "secondary_offer": "Manifestācijas žurnāli",
+    "result_promise": "Pinterestīgi skaisti svētki bez stresa — atver komplektu un uzstādi",
+    "duration": null,
+    "price_mentioned": true,
+    "price_examples": "Folijas baloni 2.40€–7.40€, gatavi komplekti 34.30€–40.50€"
+  },
+  "differentiator": {
+    "raw": "Pinterestīgas dekorācijas par labu cenu un labu kvalitāti",
+    "key_points": [
+      "Pinterest-estētika par pieejamu cenu",
+      "Gatavi saskaņoti tematiski komplekti (reti konkurentu piedāvājumā)",
+      "Bezmaksas piegāde no 45€",
+      "Nākamās dienas piegāde (pasūtot līdz 12:00)"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Preces kvalitāte un atbildība pret to, ko dara.",
+    "credentials": [],
+    "social_proof": [],
+    "personal_story": "Īpašniece Santa — personīga pieeja, atbildība par kvalitāti"
+  },
+  "client_acquisition": {
+    "method": "Bezmaksas posti sociālajos tīklos",
+    "funnel": "Social media → Website → Pirkums"
+  },
+  "bonuses": [
+    "Atlaide pirmajam pirkumam",
+    "Atlaide par dalīšanos sociālajos tīklos"
+  ],
+  "guarantees": [
+    "14 dienu atgriešanas politika",
+    "Bezmaksas piegāde no 45€",
+    "Nākamās darba dienas piegāde (pasūtot līdz 12:00)"
+  ],
+  "capacity": "Mērķis: 500 jauni klienti 90 dienās",
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 6,
+  "ad_strategy": {
+    "recommended_objective": "Conversions (Purchase) / secondary: Traffic",
+    "recommended_cta": "Shop Now / Iepirkties",
+    "funnel_stage_focus": "Top + mid funnel — estētika + konvertējoša piedāvājuma fokuss (komplekti, piegāde nākamajā dienā)"
+  }
+}

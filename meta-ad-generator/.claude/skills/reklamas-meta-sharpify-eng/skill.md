@@ -35,17 +35,54 @@ Before doing anything else, **read `notes.md`** (sibling file in this skill dire
 
 When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
 
-## VIDEO ADS — use `remotion-superpowers`
+## VIDEO ADS — use `remotion-superpowers` plugin
 
-When the user asks for **video ads** (not text-only) for the ENG account — triggers like "make video ads for [niche]", "ENG video ads", "Remotion ads" — switch to the `remotion-superpowers` plugin. Don't hand-code Remotion components.
+When the user asks for **video ads** (not text-only) for the ENG account — triggers like "make video ads for [niche]", "ENG video ads", "Remotion ads" — delegate to the `remotion-superpowers` plugin. Don't hand-code Remotion components.
 
-Use our proven 4-scene structure (~13-15s total):
-- Scene 1: HOOK (3s pattern interrupt)
-- Scene 2: PROBLEM/DEMO (4-5s)
-- Scene 3: PROOF/DETAILS (3-4s)
-- Scene 4: PRICE + CTA (3s)
+### Video workflow (ENG)
 
-Adapt copy for the English audience + B2B Playbook or Website Offer product (per the two-product split). The plugin handles voiceovers, music, captions, transitions, AI review.
+1. **Read `notes.md` + this skill + CLAUDE.md §4.4** (you should have done this already).
+
+2. **Clarify which ENG product the video promotes:**
+   - **B2B Playbook** (`eu.sharpify.lv/ms/`) — lead-gen for consultants/coaches/agencies. Long-form empathetic tone.
+   - **Website Offer** (`web.sharpify.lv`) — direct purchase at €299→€59 for solo founders/trades/local services. Scrappier, more direct tone.
+   Different product = different script framing. Ask the user if unclear.
+
+3. **Write the 4-scene script in English** using our proven structure:
+   - **Scene 1 — HOOK (3s):** Identity question / pain statement the target audience instantly recognizes ("Still relying on referrals to fill your calendar?"). NOT generic cinematic b-roll.
+   - **Scene 2 — PROBLEM/DEMO (4-5s):** Show the pain — inconsistent revenue, posting without leads, manual follow-up. UGC-style phone footage, split-screen before/after.
+   - **Scene 3 — PROOF/DETAILS (3-4s):** Real credibility numbers — "2,300+ businesses", "€50M+ generated", case study mention. Never claim unverified stars/ratings (per ENG notes.md rule).
+   - **Scene 4 — CTA (3s):** Product-specific close:
+     - Playbook: "Download the Playbook" + eu.sharpify.lv/ms
+     - Website Offer: "Get yours for €59" + web.sharpify.lv
+
+4. **Delegate to the plugin** — use ONE of these approaches:
+
+   **Full-auto path:** Invoke the `video-director` agent with the 4-scene script + tone/style notes.
+
+   **Manual control path:**
+   - `/find-footage` or `media-scout` agent — source niche-relevant clips
+   - `/create-video` — build the 4-scene structure
+   - `/add-voiceover` — AI voice in English (native speaker, match the target market — US/UK/AU depending on campaign geo)
+   - `/add-music` — match the tone (confident/authoritative for Playbook, practical/urgent for Website Offer)
+   - `/add-captions` — clean English subtitles (auto-scroll at comfortable reading pace)
+   - `/add-transitions` — clean cuts, no cheap flashes
+   - `/review-video` — post-producer AI review
+
+5. **Strict ENG Sharpify video rules:**
+   - No "FREE Playbook" language ever — Playbook is paid (per CLAUDE.md §3)
+   - Website bonus CAN say "Free website included" — it IS free (LV and ENG MS funnel)
+   - No fake reviews or unverified star ratings
+   - Brand palette matches the LV rules: yellow `#E8D500`, black `#0a0a0a`, white, red price slash, green savings
+   - CTA button uses "Download", "Get Started", "Get the Playbook" — match Meta CTA button library
+   - No interface mockups as the core format (ChatGPT/Google/iMessage fatigue fast at scale per CLAUDE.md §4)
+
+6. **Output destination:** save rendered MP4 to `output/sharpify-eng/videos/{niche}-{product}-v{n}.mp4`.
+
+7. **Present to user for approval before Meta upload** (never launch without explicit OK).
+
+### Fallback if plugin fails
+Fall back to hand-coded Remotion using the existing `remotion-videos/` project. Flag the fallback to the user so they know they're getting a lower-polish version without AI voiceover.
 
 For **text-only static ads** (the default ENG workflow), follow the pipeline below.
 

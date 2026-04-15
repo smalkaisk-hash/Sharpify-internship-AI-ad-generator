@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;overflow:hidden;
+    background:radial-gradient(ellipse at 30% 20%, #FBF3EA 0%, #F5D5DC 45%, #E8A0B4 100%);}
+  .grain{position:absolute;inset:0;opacity:0.18;mix-blend-mode:overlay;
+    background-image:radial-gradient(circle at 1px 1px, rgba(42,31,46,0.3) 1px, transparent 0);background-size:3px 3px}
+  .chip{position:absolute;top:48px;left:48px;padding:12px 22px;background:rgba(42,31,46,0.92);color:#FBF3EA;font-size:13px;font-weight:700;letter-spacing:3px;border-radius:999px}
+  .tagline{position:absolute;top:54px;right:52px;font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:#2A1F2E;opacity:0.7}
+  .product{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:620px;height:620px;
+    filter:drop-shadow(0 40px 60px rgba(200,162,123,0.35))}
+  .product img{width:100%;height:100%;object-fit:contain}
+  .serif-top{position:absolute;top:130px;left:0;right:0;text-align:center;font-family:'Instrument Serif',serif;font-style:italic;font-size:30px;color:#2A1F2E;opacity:0.65;letter-spacing:0.5px}
+  .bottom{position:absolute;bottom:60px;left:0;right:0;text-align:center;padding:0 48px}
+  h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:74px;line-height:0.98;letter-spacing:-1px;color:#2A1F2E;margin-bottom:16px}
+  .sub{font-size:19px;color:#2A1F2E;opacity:0.78;max-width:720px;margin:0 auto 26px;line-height:1.4}
+  .cta{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:#2A1F2E;color:#FBF3EA;font-weight:600;font-size:17px;border-radius:999px}
+  .cta svg{width:16px;height:16px}
+  .gold-line{position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#C8A27B 0%,#E8A0B4 50%,#D8C7E8 100%)}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="grain"></div>
+  <div class="gold-line"></div>
+  <div class="chip">BALLĪTEI.LV</div>
+  <div class="tagline">est. svētkiem</div>
+  <div class="serif-top">— skaisti svētki sākas ar detaļām —</div>
+  <div class="product"><img src="../brief/images/product-5.jpg" alt=""></div>
+  <div class="bottom">
+    <h1>Folijas baloni, toperi,<br>galda piederumi.</h1>
+    <div class="sub">Viss, kas vajadzīgs Pinterestīgiem svētkiem — vienā vietā.</div>
+    <div class="cta">Iepazīties ar klāstu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+  </div>
+</div>
+</body></html>

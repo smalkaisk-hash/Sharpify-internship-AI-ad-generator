@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 4 — Offer Chip</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;font-family:'Inter',sans-serif;color:#2A1F2E;overflow:hidden}
+  .ad{position:relative;width:1080px;height:1080px;background:#FBF3EA}
+  .bg{position:absolute;inset:0;background:url('../brief/images/hero-3.jpg') center/cover no-repeat}
+  .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,46,0.15) 0%,rgba(42,31,46,0.05) 35%,rgba(42,31,46,0.7) 100%)}
+  .offer-badge{position:absolute;top:70px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:14px 26px;background:#FBF3EA;border-radius:999px;box-shadow:0 12px 40px rgba(42,31,46,0.25)}
+  .pulse{width:10px;height:10px;border-radius:50%;background:#D14A6B}
+  .offer-text{font-size:13px;font-weight:600;letter-spacing:3px;color:#2A1F2E}
+  .content{position:absolute;bottom:100px;left:0;right:0;text-align:center;padding:0 80px;color:#FFFFFF}
+  h1{font-family:'Instrument Serif',serif;font-size:88px;line-height:1.0;letter-spacing:-1px;text-shadow:0 4px 40px rgba(42,31,46,0.5)}
+  h1 em{font-style:italic;color:#F5D5DC}
+  .sub{margin-top:22px;font-size:20px;color:rgba(255,255,255,0.95);letter-spacing:0.3px}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:36px;padding:18px 40px;background:#FBF3EA;color:#2A1F2E;border-radius:999px;font-weight:600;font-size:17px}
+  .brand{position:absolute;bottom:44px;left:0;right:0;text-align:center;font-family:'Instrument Serif',serif;font-style:italic;font-size:18px;color:rgba(255,255,255,0.8);letter-spacing:1px}
+  .counter{position:absolute;top:75px;right:70px;font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:rgba(255,255,255,0.85);line-height:1.2;text-align:right}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="bg"></div>
+  <div class="scrim"></div>
+  <div class="offer-badge">
+    <span class="pulse"></span>
+    <span class="offer-text">NĀKAMĀS DIENAS PIEGĀDE</span>
+  </div>
+  <div class="content">
+    <h1>Pasūti līdz 12:00 —<br>svētki <em>rīt</em> rokās.</h1>
+    <div class="sub">Bezmaksas piegāde pasūtījumiem no 45€.</div>
+    <div class="cta">Pasūtīt tagad →</div>
+  </div>
+  <div class="brand">ballītei.lv</div>
+</div>
+</body>
+</html>
