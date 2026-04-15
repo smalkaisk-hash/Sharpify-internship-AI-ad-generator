@@ -111,7 +111,7 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
 7. **Image path handling**:
    - Use **absolute file paths** with `file://` protocol for local rendering
    - Convert backslashes to forward slashes for browser compatibility
-   - Example: `file:///C:/Users/Ritvars Volfs/meta-ad-generator/output/aiva-juste/brief/images/hero-1.jpg`
+   - Example: `file:///<absolute-project-path>/meta-ad-generator/output/<client-slug>/brief/images/hero-1.jpg`
 
 8. **Print summary**: List all generated HTML files with their layout type, copy framework, and product category applied.
 
