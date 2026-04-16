@@ -42,9 +42,21 @@ digraph ad_flow {
 
 ## FIRST STEP (always)
 
-Before doing anything else, **read `notes.md`** (sibling file in this skill directory). It contains workflow-specific learnings accumulated from past sessions — style patterns, niche-specific rules, targeting preferences, mistakes to avoid.
+Before doing anything else, read IN ORDER:
+1. **`sharpify/CLAUDE.md`** — Sharpify cross-language rules (brand palette, video workflow, Page/IG IDs)
+2. **`sharpify/lv/CLAUDE.md`** — LV-specific rules (parūpējies formula, quiz funnel rule, MP Risinājums, lead form ID)
+3. **`sharpify/notes.md`** — cross-language learnings
+4. **`sharpify/lv/notes.md`** — LV-specific learnings
+5. **`sharpify/formats/*.md`** — proven Sharpify ad formats (arched-saas, sticker-card, notification-card, documentary-photo-leadgen, landscape-16-9-workshop). Pick one based on the ad type/niche.
 
-When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
+When the user gives feedback this session, append to the right workspace:
+- LV-only learning → `sharpify/lv/notes.md`
+- Cross-language (also applies to ENG) → `sharpify/notes.md`
+- New proven format → create a file in `sharpify/formats/` and reference it here
+
+You CAN read `sharpify/eng/` when the user asks to clone ads across languages.
+
+**Output path:** all LV ad outputs go to `sharpify/lv/output/{niche}/`.
 
 ## VIDEO ADS — use `remotion-superpowers` plugin
 
@@ -107,7 +119,7 @@ For **static image ads**, follow the image pipeline below (Steps 1-5).
 - **Generator root:** `c:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/`
 - **Export script:** `scripts/export-png.js`
 - **Image generator:** `scripts/generate-image.js` (Gemini Imagen 4)
-- **Output pattern:** `output/niks-{niche}/images/`, `output/niks-{niche}/html/`, `output/niks-{niche}/png/`
+- **Output pattern:** `sharpify/lv/output/{niche}/images/`, `sharpify/lv/output/{niche}/html/`, `sharpify/lv/output/{niche}/png/`
 - **API keys:** `.env` in project root (GEMINI_API_KEY, META_ACCESS_TOKEN)
 
 ## Step 1: Generate Photos
@@ -126,7 +138,7 @@ Generate 2 images per niche using Gemini Imagen 4:
 - If result looks AI-generated, add "overcast sky", "muddy/gritty", "raw" to prompt
 
 ```bash
-node scripts/generate-image.js "<prompt>" "output/niks-{niche}/images/{name}.png"
+node scripts/generate-image.js "<prompt>" "sharpify/lv/output/{niche}/images/{name}.png"
 ```
 
 ## Step 2: Create HTML Ad Creatives
@@ -177,7 +189,7 @@ The CTA button must be the most visually dominant interactive element — large 
 ## Step 3: Export to PNG
 
 ```bash
-node scripts/export-png.js "output/niks-{niche}/html/" "output/niks-{niche}/png/"
+node scripts/export-png.js "sharpify/lv/output/{niche}/html/" "sharpify/lv/output/{niche}/png/"
 ```
 
 Exports at 1080x1080px via Puppeteer headless browser.

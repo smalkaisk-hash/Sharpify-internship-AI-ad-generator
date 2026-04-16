@@ -9,9 +9,9 @@ description: Generate final 1080x1080 HTML ad creatives by combining brand asset
 Run this skill after `/ad-copy` to produce the actual ad creative files. This combines brand colors, fonts, images, ad copy, and layout templates into self-contained HTML files that render at exactly 1080x1080px.
 
 ## Prerequisites
-- `output/{client-slug}/brief/client-brief.json`
-- `output/{client-slug}/brief/brand-assets.json`
-- `output/{client-slug}/copy/ad-copy.json`
+- `clients/output/{client-slug}/brief/client-brief.json`
+- `clients/output/{client-slug}/brief/brand-assets.json`
+- `clients/output/{client-slug}/copy/ad-copy.json`
 - Layout templates in `templates/layouts/`
 - Base styles in `templates/base.css`
 
@@ -95,7 +95,7 @@ Run this skill after `/ad-copy` to produce the actual ad creative files. This co
       - For benefit-stack: text color on background color — verify
       - If contrast fails: darken the overlay, switch text to dark, or adjust background
 
-   f. **Write the output HTML** to `output/{client-slug}/html/ad-v{n}-{layout}.html`
+   f. **Write the output HTML** to `clients/output/{client-slug}/html/ad-v{n}-{layout}.html`
       Example: `output/aiva-juste/html/ad-v1-hero-overlay.html`
 
 5. **For the benefit-stack template**, extract benefits:
@@ -232,11 +232,11 @@ When `layout_recommendation` starts with `"extra:"`, you generate the HTML inlin
 6. **Handle AI-generated images** (tangible only):
    - If `image_requirements.type` is `"ai-generated"`, run:
      ```bash
-     node scripts/generate-image.js "{ai_prompt}" "output/{client-slug}/brief/images/generated-{n}.png"
+     node scripts/generate-image.js "{ai_prompt}" "clients/output/{client-slug}/brief/images/generated-{n}.png"
      ```
    - Use the generated image path in the HTML
 
-7. **Save the file** as `output/{client-slug}/html/ad-{n}-{template-name}.html`
+7. **Save the file** as `clients/output/{client-slug}/html/ad-{n}-{template-name}.html`
    - Example: `output/client-slug/html/ad-3-verified-review-card.html`
    - Note: file naming is now `ad-{n}-{name}` not `ad-v{n}-{layout}` — the numbering matches the copy set order
 

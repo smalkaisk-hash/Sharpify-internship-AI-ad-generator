@@ -31,9 +31,21 @@ digraph ad_flow {
 
 ## FIRST STEP (always)
 
-Before doing anything else, **read `notes.md`** (sibling file in this skill directory). It contains workflow-specific learnings accumulated from past sessions — style patterns, niche-specific rules, targeting preferences, mistakes to avoid.
+Before doing anything else, read IN ORDER:
+1. **`sharpify/CLAUDE.md`** — Sharpify cross-language rules (brand palette, video workflow)
+2. **`sharpify/eng/CLAUDE.md`** — ENG-specific rules (Playbook not free, Website Offer pricing, no unverified stars, two-product split)
+3. **`sharpify/notes.md`** — cross-language learnings
+4. **`sharpify/eng/notes.md`** — ENG-specific learnings
+5. **`sharpify/formats/*.md`** — proven formats (some LV-specific — check applicability)
 
-When the user gives feedback or corrections during this session, **append it to `notes.md`** using the format defined in that file. This is how the system gets smarter over time without you having to re-explain.
+When the user gives feedback this session, append to the right workspace:
+- ENG-only learning → `sharpify/eng/notes.md`
+- Cross-language (also applies to LV) → `sharpify/notes.md`
+- New proven format → create a file in `sharpify/formats/` and reference it here
+
+You CAN read `sharpify/lv/` when the user asks to clone ads across languages.
+
+**Output path:** all ENG ad outputs go to `sharpify/eng/output/{niche-or-product}/`.
 
 ## VIDEO ADS — use `remotion-superpowers` plugin
 

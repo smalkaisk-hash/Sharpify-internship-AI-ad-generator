@@ -9,25 +9,25 @@ description: Export HTML ad creatives to 1080x1080 PNG files via Puppeteer headl
 Run this skill after `/ad-design` to export all generated HTML ad files to PNG images ready for Meta Ads upload.
 
 ## Prerequisites
-- HTML ad files must exist in `output/{client-slug}/html/`
+- HTML ad files must exist in `clients/output/{client-slug}/html/`
 - Puppeteer must be installed (`npm install` in project root)
 
 ## Instructions
 
 1. **Identify the client's HTML directory**:
    ```bash
-   ls output/{client-slug}/html/
+   ls clients/output/{client-slug}/html/
    ```
    Confirm HTML files exist.
 
 2. **Run the PNG export script**:
    ```bash
-   node scripts/export-png.js "output/{client-slug}/html" "output/{client-slug}/png"
+   node scripts/export-png.js "clients/output/{client-slug}/html" "clients/output/{client-slug}/png"
    ```
 
 3. **Verify the output**:
    ```bash
-   ls -la output/{client-slug}/png/
+   ls -la clients/output/{client-slug}/png/
    ```
    - Each HTML file should have a corresponding PNG
    - File sizes should be 200KB–3MB (very small = something didn't render; very large = uncompressed)

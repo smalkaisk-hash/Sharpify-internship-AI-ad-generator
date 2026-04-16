@@ -9,14 +9,14 @@ description: Generate 6-8 Meta ad copy sets (primary text, headline, CTA) with d
 Run this skill after `/ad-intake` (and optionally `/ad-brand`) to generate ad copy with matched templates for Meta feed ads.
 
 ## Prerequisites
-- `client-brief.json` must exist in `output/{client-slug}/brief/`
+- `client-brief.json` must exist in `clients/output/{client-slug}/brief/`
 - `client-brief.json` must have `ad_type` set (`"client-tangible"` or `"client-intangible"`)
 
 ## Instructions
 
 1. **Read the client brief and reference files**:
-   - `output/{client-slug}/brief/client-brief.json`
-   - `output/{client-slug}/brief/brand-assets.json` — check `product_category.type` and `content` for client's language
+   - `clients/output/{client-slug}/brief/client-brief.json`
+   - `clients/output/{client-slug}/brief/brand-assets.json` — check `product_category.type` and `content` for client's language
    - `reference/copy-frameworks.md`
    - `reference/meta-ad-specs.md` (for character limits)
    - `.claude/skills/8-extra-templates/SKILL.md` — the template registry (for template selection)
@@ -39,7 +39,7 @@ Run this skill after `/ad-intake` (and optionally `/ad-brand`) to generate ad co
 
 6. **Apply sentence-rhythm variance** — this is the single highest-leverage anti-AI-slop rule. AI writing defaults to uniform 12-18 word sentences; mixing 3-word sentences with 25+ word ones removes ~60% of the AI smell by itself. Target: every 3rd sentence under 6 words, every 5th sentence over 20 words, never two similar-length sentences in a row.
 
-7. **Save output** to `output/{client-slug}/copy/ad-copy.json`.
+7. **Save output** to `clients/output/{client-slug}/copy/ad-copy.json`.
 
 ---
 
@@ -187,7 +187,7 @@ Use these frameworks. You're not limited to 6 — pick whichever fits each templ
 
 ## Output
 
-Save to `output/{client-slug}/copy/ad-copy.json`:
+Save to `clients/output/{client-slug}/copy/ad-copy.json`:
 
 ```json
 {

@@ -15,9 +15,11 @@ Run this skill when you want to go from raw client info to finished Meta ad crea
 
 ## FIRST STEP (always)
 
-Before starting the pipeline, **read `notes.md`** (sibling file in this skill directory). It contains client-pipeline-specific learnings from past sessions — template preferences, design patterns, copy quirks, things to avoid.
+Before starting the pipeline, read BOTH:
+1. **`clients/CLAUDE.md`** — client-workspace rules (routing, tangible/intangible, design, voice calibration)
+2. **`clients/notes.md`** — accumulated client-pipeline learnings from past sessions
 
-When the user gives feedback during this session, **append it to `notes.md`** using the format defined in that file. This builds the system's memory over time without you having to re-explain.
+When the user gives feedback during this session, **append it to `clients/notes.md`** using the format defined in that file. This builds the system's memory over time without you having to re-explain.
 
 ## Pipeline Steps
 
@@ -45,7 +47,7 @@ When the user gives feedback during this session, **append it to `notes.md`** us
 **Image check after Step 2 (tangible only):**
 - If `ad_type` is `"client-tangible"` and `has_product_images` is `false`:
   - Ask user: "No product images were found on the website. Can you provide product photos? Or should I generate them with AI?"
-  - If user provides photos: save to `output/{slug}/brief/images/product-*.{ext}`
+  - If user provides photos: save to `clients/output/{slug}/brief/images/product-*.{ext}`
   - If user chooses AI generation: note this — the ad designer will generate images during Step 4
 
 ### Step 3: Ad Copy + Template Selection
@@ -65,12 +67,12 @@ When the user gives feedback during this session, **append it to `notes.md`** us
 - For **intangible ads**: no generic stock photos. Use gradients, CSS-built visuals, or template-specific treatments
 - Center all text by default, break long headlines with `<br>`
 - Validate contrast and readability
-- Save HTML files to `output/{client-slug}/html/`
+- Save HTML files to `clients/output/{client-slug}/html/`
 - **Follows**: `.claude/skills/4-ad-designer/SKILL.md`
 
 ### Step 5: PNG Export
 - Run Puppeteer to screenshot each HTML file at 1080x1080
-- Save PNGs to `output/{client-slug}/png/`
+- Save PNGs to `clients/output/{client-slug}/png/`
 - Verify file sizes and dimensions
 - **Follows**: `.claude/skills/5-export-png/SKILL.md`
 
@@ -89,11 +91,11 @@ Ad Type:      {ad_type}
 Website:      {website}
 
 Generated:
-  - Client Brief:      output/{slug}/brief/client-brief.json
-  - Brand Assets:      output/{slug}/brief/brand-assets.json
-  - Ad Copy ({n} sets): output/{slug}/copy/ad-copy.json
-  - HTML Ads ({n}):    output/{slug}/html/
-  - PNG Ads ({n}):     output/{slug}/png/
+  - Client Brief:      clients/output/{slug}/brief/client-brief.json
+  - Brand Assets:      clients/output/{slug}/brief/brand-assets.json
+  - Ad Copy ({n} sets): clients/output/{slug}/copy/ad-copy.json
+  - HTML Ads ({n}):    clients/output/{slug}/html/
+  - PNG Ads ({n}):     clients/output/{slug}/png/
 
 Ad Creatives:
   1. ad-1-{template-name}.png  — {framework} ({category})
@@ -106,7 +108,7 @@ Ad Creatives:
   [8. ad-8-... if ad_count > 7]
 
 Next Steps:
-  - Review PNGs in output/{slug}/png/
+  - Review PNGs in clients/output/{slug}/png/
   - Run /ad-variations for A/B test versions
   - Upload to Meta Ads Manager
 ============================================

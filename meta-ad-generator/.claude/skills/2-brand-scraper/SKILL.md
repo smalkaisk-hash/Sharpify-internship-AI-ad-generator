@@ -9,14 +9,14 @@ description: Scrape a client website via Puppeteer to extract brand colors, font
 Run this skill after `/ad-intake` when you have the client's website URL and need to extract visual brand assets for ad creation.
 
 ## Prerequisites
-- `client-brief.json` must exist in `output/{client-slug}/brief/`
+- `client-brief.json` must exist in `clients/output/{client-slug}/brief/`
 - Node.js and Puppeteer must be installed (`npm install` in project root)
 
 ## Instructions
 
 1. **Read the client brief** to check for both a Figma file URL AND a website URL:
    ```bash
-   cat output/{client-slug}/brief/client-brief.json
+   cat clients/output/{client-slug}/brief/client-brief.json
    ```
 
 2. **Check for Figma file URL first** (`figma_file_url` field). If present:
@@ -32,14 +32,14 @@ Run this skill after `/ad-intake` when you have the client's website URL and nee
 
 3. **If no Figma URL**, run the full brand scraper script (fallback):
    ```bash
-   node scripts/scrape-brand.js "{website-url}" "output/{client-slug}/brief"
+   node scripts/scrape-brand.js "{website-url}" "clients/output/{client-slug}/brief"
    ```
    This will:
    - Visit the website in a headless browser
    - Extract all CSS colors used on the page, ranked by frequency
    - Extract font families and weights
-   - Download hero images and logo candidates to `output/{client-slug}/brief/images/`
-   - Save everything to `output/{client-slug}/brief/brand-assets.json`
+   - Download hero images and logo candidates to `clients/output/{client-slug}/brief/images/`
+   - Save everything to `clients/output/{client-slug}/brief/brand-assets.json`
 
 4. **Check for manual product_type override**:
    - Read `client-brief.json` and check if `product_type` is set (`"tangible"` or `"intangible"`)
@@ -74,7 +74,7 @@ Run this skill after `/ad-intake` when you have the client's website URL and nee
    - The category determines which templates, copy rules, and design rules are used downstream
 
 10. **Verify image downloads**:
-   - Check `output/{client-slug}/brief/images/` for downloaded files
+   - Check `clients/output/{client-slug}/brief/images/` for downloaded files
    - Confirm at least 1 usable hero image exists
    - For tangible products: confirm usable product images exist. If scraper missed them, manually download product photos from the site.
    - If logo wasn't auto-detected, manually note which image is the logo

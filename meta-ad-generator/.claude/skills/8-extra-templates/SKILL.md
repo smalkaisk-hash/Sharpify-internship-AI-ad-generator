@@ -217,7 +217,7 @@ Per-template additional fields:
    - All text centered by default, broken with `<br>` for natural line breaks
 4. **For tangible ads**: product images MUST be included
 5. **For intangible ads**: no generic photos. Use gradients, CSS-built visuals, or template-specific treatments
-6. **Save to** `output/{client-slug}/html/ad-{number}-{template-name}.html`
+6. **Save to** `clients/output/{client-slug}/html/ad-{number}-{template-name}.html`
 7. **All output must pass the anti-AI slop check** (skill 7)
 8. **Visual reference**: check `template-pages/` for 319 PNG previews of rendered templates
 

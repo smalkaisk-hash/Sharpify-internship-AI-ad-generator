@@ -1,0 +1,18 @@
+- [Ad design preferences](feedback_ad_design.md) — No images, no logos on v2/v5, centered text, comparison v4, no repeated info, no fake reviews
+- [Ad copy variation rules](feedback_ad_copy.md) — Never duplicate text across ads, each ad needs unique copy
+- [Wait for launch approval](feedback_launch_approval.md) — Never upload/launch ads to Meta without explicit user approval
+- [No "gatavi augt līdz €10k+" claim](feedback_no_10k_growth_claim.md) — Use "kas gatavi uzņemt jaunus klientus katru mēnesi ar AI mārketinga sistēmu" instead in LV warning ads
+- [Playbook is not free](feedback_playbook_not_free.md) — B2B Playbook (eu.sharpify.lv/ms/) is NOT free, never say "free" in ads
+- [ENG MS funnel — free website bonus](feedback_eng_free_website.md) — ENG MS/Playbook ads promote "🎁 Free website included" (same bonus as LV MP Risinājums)
+- [Full QA before presenting](feedback_self_qa_before_presenting.md) — View every PNG, native-speaker check every headline, verify offer claims, re-render ALL after layout changes
+- [LV "parūpējies" formula](feedback_lv_parupejies_formula.md) — Frame as "Tu parūpējies, lai [client outcome], kamēr nākamais X jau gaida rindā" — NOT "par [product noun]"
+- [Emoji pattern in ad copy](feedback_emojis_in_ads.md) — ✅ for pain points, 🔹 for features. No other decorative emojis in B2B ads
+- [Ad routing system](project_ad_routing.md) — Three paths: client ads (full-pipeline), Sharpify LV (niche+images), Sharpify ENG (B2B Playbook + Website Offer, text-only)
+- [LV — no quiz funnels](project_lv_no_quiz_funnels.md) — Account history confirms 0 leads across €35+ on quiz funnels; use direct lead form
+- [Delete HTML when deleting PNG](project_delete_html_with_png.md) — export-png.js regenerates PNGs from any HTML; always scrub both folders
+- [Sharpify website pricing](project_sharpify_website_pricing.md) — €299 → €59 (savings €240). €2,000/€2,500 is the agency comparison only
+- [Always fetch live landing page first](project_fetch_landing_page_first.md) — Verify language + offer + price on current live page before writing copy
+- [Veo prompts — no generic cinematic b-roll](feedback_veo_no_generic_cinematic.md) — Polished "types → website → handshake" has no hook, gets scrolled. Lead with pattern interrupt, not aesthetic
+- [Interface mockups fatigue fast](feedback_interface_mockups_fatigue.md) — Google/ChatGPT/iMessage mockups scroll-stop once, don't scale; mix with editorial/documentary
+- [Meta API quirks](reference_meta_api_quirks.md) — Deprecated fields, Advantage Audience age_max=65, THRUPLAY, PAUSED status, Sharpify page/IG IDs
+- [Imagen 4 generation quirks](reference_imagen_generation.md) — 503 retry strategy, off-topic outputs, output path gotcha, proven persona prompt formula

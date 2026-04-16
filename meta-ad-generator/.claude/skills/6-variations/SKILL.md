@@ -9,14 +9,14 @@ description: Create 3-6 A/B test variations from existing ad creatives — hook 
 Run this skill after you have base ads (from `/ad-design` + `/ad-export`) and want to create systematic variations for split testing on Meta.
 
 ## Prerequisites
-- Base HTML ads in `output/{client-slug}/html/`
-- `output/{client-slug}/brief/brand-assets.json`
-- `output/{client-slug}/copy/ad-copy.json`
+- Base HTML ads in `clients/output/{client-slug}/html/`
+- `clients/output/{client-slug}/brief/brand-assets.json`
+- `clients/output/{client-slug}/copy/ad-copy.json`
 
 ## Instructions
 
 1. **Read existing ads and assets**:
-   - List HTML files in `output/{client-slug}/html/`
+   - List HTML files in `clients/output/{client-slug}/html/`
    - Read `brand-assets.json` for color palette
    - Read `ad-copy.json` for all copy sets
 
@@ -55,14 +55,14 @@ Run this skill after you have base ads (from `/ad-design` + `/ad-export`) and wa
    - 1-2 layout swaps (Axis C)
    - 1-2 product image swaps (Axis E) — only if `product_category.type` is `"tangible"` and multiple product images exist
 
-4. **Save all variation HTML files** to `output/{client-slug}/html/`
+4. **Save all variation HTML files** to `clients/output/{client-slug}/html/`
 
 5. **Export all new variations to PNG**:
    ```bash
-   node scripts/export-png.js "output/{client-slug}/html" "output/{client-slug}/png"
+   node scripts/export-png.js "clients/output/{client-slug}/html" "clients/output/{client-slug}/png"
    ```
 
-6. **Create a test matrix** at `output/{client-slug}/test-matrix.md`:
+6. **Create a test matrix** at `clients/output/{client-slug}/test-matrix.md`:
 
 ```markdown
 # A/B Test Matrix — {Client Name}

@@ -16,14 +16,14 @@ Run this skill when a user pastes raw client information (name, website, target 
 
 3. **Create the client output directory**:
    ```bash
-   mkdir -p output/{client-slug}/brief
-   mkdir -p output/{client-slug}/copy
-   mkdir -p output/{client-slug}/html
-   mkdir -p output/{client-slug}/png
+   mkdir -p clients/output/{client-slug}/brief
+   mkdir -p clients/output/{client-slug}/copy
+   mkdir -p clients/output/{client-slug}/html
+   mkdir -p clients/output/{client-slug}/png
    ```
    Use a URL-safe slug of the client name (e.g., "Aiva Juste" → "aiva-juste").
 
-4. **Generate `client-brief.json`** at `output/{client-slug}/brief/client-brief.json` with this exact schema:
+4. **Generate `client-brief.json`** at `clients/output/{client-slug}/brief/client-brief.json` with this exact schema:
 
 ```json
 {
