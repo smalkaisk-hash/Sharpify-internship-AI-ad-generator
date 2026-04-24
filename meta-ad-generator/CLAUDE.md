@@ -11,8 +11,16 @@ Rules that apply to ALL ad work regardless of workspace (clients, Sharpify LV, S
 
 ## 1. Launch & QA (universal)
 
-### Never launch without approval
-Always present creatives + copy first and ask "Palaižam Meta?" (or similar). Only call Meta's API after explicit user approval. Applies to API creation, not just UI uploads.
+### Never launch without the exact launch phrase
+Do NOT call any Meta Graph API write endpoint (uploading ad images, creating campaigns/adsets/ads) until the user types the exact phrase: **"lets push em out to meta"** (case-insensitive, punctuation optional).
+
+Read-only Graph calls (insights, status checks, interest searches) are always fine.
+
+Words that are NOT authorization: "make em", "launch", "go", "push", "palaižam", "do it", "ship it", "send", "publish". They all mean *build/iterate locally*.
+
+If context suggests the user wants to launch but they haven't said the exact phrase, STOP and ask: *"To confirm launch — please type 'lets push em out to meta' so I have the explicit push signal."*
+
+If I push by mistake, immediately DELETE via Graph API (ads first, then adset) and confirm each deletion to the user.
 
 ### Always create as PAUSED via API
 Set `status: "PAUSED"` on every ad creation call. User flips to ACTIVE manually after verification.
@@ -127,6 +135,9 @@ Brand constraints that override plugin defaults are documented per-workspace (`s
 
 ### Deprecated fields
 Don't include `degrees_of_freedom_spec.standard_enhancements.enroll_status` on ad creative creation — returns `error_subcode: 3858504`.
+
+### Deprecated placements (v21.0)
+Don't include `video_feeds` in `facebook_positions` — returns `error_subcode: 2490562` ("Facebook Video Feeds Placement Is Deprecated"). Safe FB positions as of 2026-04: `feed, story, marketplace, search, facebook_reels`. Instagram positions unchanged: `stream, story, explore, reels, profile_feed`.
 
 ### Advantage Audience + age_max
 If `targeting_automation.advantage_audience: 1`, Meta enforces `age_max >= 65`. Use 65 as hard max. Error: `error_subcode: 1870189`.

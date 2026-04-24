@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif;background:#D9BFA3}
+    .ad{width:1080px;height:1080px;padding:44px;position:relative}
+    .frame{width:100%;height:100%;position:relative;overflow:hidden;border:1.5px solid rgba(250,246,240,0.5)}
+    /* Hero photo fills frame */
+    .hero{position:absolute;inset:0}
+    .hero img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+    /* Top-left category tag */
+    .tag{position:absolute;top:32px;left:32px;padding:10px 18px;background:rgba(250,246,240,0.92);backdrop-filter:blur(6px);font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.32em;color:#8B7D3C;text-transform:uppercase;z-index:3}
+    /* Top-right 3-step badge column */
+    .steps{position:absolute;top:28px;right:28px;display:flex;flex-direction:column;gap:10px;z-index:3}
+    .step{padding:14px 18px;background:rgba(26,26,46,0.78);backdrop-filter:blur(8px);color:#F5E6D3;border-left:2px solid #D4A93A;min-width:180px}
+    .step-num{font-family:'Playfair Display',serif;font-style:italic;font-size:11px;font-weight:500;color:#D4A93A;letter-spacing:0.15em;text-transform:uppercase}
+    .step-text{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;margin-top:3px;letter-spacing:0.04em;line-height:1.15}
+    /* Headline overlay mid-bottom */
+    .headline{position:absolute;left:40px;right:40px;bottom:260px;z-index:3;color:#FAF6F0}
+    .h-eye{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.38em;color:#FAF6F0;text-transform:uppercase;margin-bottom:14px;text-shadow:0 2px 8px rgba(0,0,0,0.55)}
+    .h-main{font-family:'Playfair Display',serif;font-size:92px;font-weight:400;line-height:0.92;letter-spacing:-0.01em;text-shadow:0 4px 22px rgba(0,0,0,0.55)}
+    .h-main em{font-style:italic;color:#D4A93A;text-shadow:0 4px 22px rgba(0,0,0,0.45)}
+    /* Bottom framed info card */
+    .card{position:absolute;left:24px;right:24px;bottom:24px;padding:22px 28px;background:rgba(26,26,46,0.88);backdrop-filter:blur(10px);border:1.5px solid #D4A93A;display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:26px;z-index:3}
+    .card-seal{width:56px;height:56px;border-radius:50%;background:#D4A93A;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-size:22px;font-weight:500;color:#1A1A0A;line-height:1;flex-shrink:0}
+    .card-text{display:flex;flex-direction:column;gap:3px;color:#F5E6D3}
+    .card-name{font-family:'Playfair Display',serif;font-size:26px;font-weight:500;line-height:1}
+    .card-sub{font-family:'Inter',sans-serif;font-size:12px;color:#D4A93A;letter-spacing:0.12em;font-weight:500}
+    .card-price{font-family:'Playfair Display',serif;font-size:38px;font-weight:600;color:#F5E6D3;line-height:1;padding-left:24px;border-left:1px solid rgba(212,169,58,0.5)}
+    .cta{padding:16px 28px;background:#D4A93A;color:#1A1A0A;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase}
+    /* Subtle side gradient so steps stay legible */
+    .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,0) 55%,rgba(0,0,0,0.15) 100%),linear-gradient(180deg,rgba(0,0,0,0.08) 0%,transparent 30%,transparent 55%,rgba(0,0,0,0.45) 100%);pointer-events:none;z-index:2}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="frame">
+      <div class="hero"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-filter-installed.png"></div>
+      <div class="shade"></div>
+      <div class="tag">Vitamīnu dušas filtrs</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">Solis 01</div>
+          <div class="step-text">Uzskrūvē</div>
+        </div>
+        <div class="step">
+          <div class="step-num">Solis 02</div>
+          <div class="step-text">Ieslēdz dušu</div>
+        </div>
+        <div class="step">
+          <div class="step-num">Solis 03</div>
+          <div class="step-text">Jūti atšķirību</div>
+        </div>
+      </div>
+      <div class="headline">
+        <div class="h-eye">Bez santehniķa · 30 sekundes</div>
+        <div class="h-main">Uzskrūvē.<br>Jūti <em>atšķirību.</em></div>
+      </div>
+      <div class="card">
+        <div class="card-seal">NB</div>
+        <div class="card-text">
+          <div class="card-name">Mango Rain</div>
+          <div class="card-sub">2–3 mēneši · dermatoloģiski pārbaudīts</div>
+        </div>
+        <div class="card-price">34,99 €</div>
+        <div class="cta">Iepirkties</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

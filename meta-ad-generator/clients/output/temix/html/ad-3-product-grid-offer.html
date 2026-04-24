@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1E2E24;
+      --color-secondary: #181616;
+      --color-accent: #DAB453;
+      --color-bg: #F5F1E8;
+      --color-text: #181616;
+      --font-heading: 'Playfair Display', 'Georgia', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      width: 1080px; height: 1080px;
+      position: relative;
+      background: var(--color-secondary);
+      overflow: hidden;
+    }
+
+    .grid-3x3 {
+      width: 1080px; height: 1080px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 4px;
+      background: var(--color-secondary);
+    }
+
+    .cell {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-secondary);
+    }
+    .cell img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .cell::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(24,22,22,0) 55%, rgba(24,22,22,0.35) 100%);
+      pointer-events: none;
+    }
+
+    /* Center overlay panel — spans 2 cols × 2 rows over the grid */
+    .center-panel {
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 640px;
+      height: 640px;
+      background: var(--color-primary);
+      color: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 56px 48px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.55);
+      z-index: 10;
+    }
+
+    .center-wordmark {
+      font-family: var(--font-heading);
+      font-size: 56px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.01em;
+      margin-bottom: 8px;
+    }
+
+    .center-eyebrow {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.62);
+      margin-bottom: 36px;
+    }
+
+    .center-headline {
+      font-family: var(--font-heading);
+      font-size: 62px;
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+      margin-bottom: 22px;
+    }
+    .center-headline em {
+      font-style: italic;
+      color: var(--color-accent);
+      font-weight: 500;
+    }
+
+    .center-sub {
+      font-family: var(--font-body);
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: rgba(245,241,232,0.72);
+      max-width: 420px;
+      margin-bottom: 40px;
+    }
+
+    .cta-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 78px;
+      min-width: 300px;
+      padding: 0 44px;
+      background: var(--color-accent);
+      color: var(--color-secondary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 44px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="grid-3x3">
+      <!-- Row 1 -->
+      <div class="cell"><img src="../brief/images/hero-4.jpg" alt=""></div>
+      <div class="cell"><img src="../brief/images/hero-2.jpg" alt=""></div>
+      <div class="cell"><img src="../brief/images/hero-3.jpg" alt=""></div>
+      <!-- Row 2 -->
+      <div class="cell"><img src="../brief/images/hero-1.jpg" alt=""></div>
+      <div class="cell"><!-- center panel sits here visually --></div>
+      <div class="cell"><img src="../brief/images/product-4.jpg" alt=""></div>
+      <!-- Row 3 -->
+      <div class="cell"><img src="../brief/images/product-2.jpg" alt=""></div>
+      <div class="cell"><img src="../brief/images/product-5.jpg" alt=""></div>
+      <div class="cell"><img src="../brief/images/hero-1.jpg" alt="" style="object-position:right center"></div>
+    </div>
+
+    <div class="center-panel">
+      <div class="center-wordmark">TeMix</div>
+      <div class="center-eyebrow">Vairumtirdzniecība · Rīga</div>
+      <div class="center-headline">Kļūsti par<br><em>TeMix partneri</em></div>
+      <p class="center-sub">Interjera akcenti. Dāvanu idejas. Praktiskās preces. Viens sortiments. Viens partneris.</p>
+      <div class="cta-gold">Uzzināt vairāk</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0a0a0a;display:flex;flex-direction:column}
+.stripes{height:58px;flex-shrink:0;background:repeating-linear-gradient(-45deg,#DC2626 0 44px,#0a0a0a 44px 88px);position:relative}
+.stripes::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#FCA5A5;opacity:0.6}
+.stripes::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:#FCA5A5;opacity:0.6}
+
+.body-w{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px 60px;position:relative;text-align:center}
+
+.bolt{position:absolute;color:#DC2626;opacity:0.85}
+.bolt.b1{top:38px;left:60px;font-size:52px;transform:rotate(-12deg)}
+.bolt.b2{top:38px;right:60px;font-size:52px;transform:rotate(12deg)}
+
+.chip{display:inline-flex;align-items:center;gap:10px;background:#DC2626;color:#fff;padding:10px 22px;border-radius:6px;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:0.24em;margin-bottom:18px;box-shadow:0 0 20px rgba(220,38,38,0.4)}
+.chip .dot{width:8px;height:8px;background:#fff;border-radius:50%}
+.big{font-family:'Space Grotesk',sans-serif;font-weight:900;font-size:68px;color:#fff;line-height:0.95;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:52px;text-shadow:4px 4px 0 rgba(220,38,38,0.4),0 0 40px rgba(220,38,38,0.2)}
+.big span{color:#DC2626}
+
+.frame{position:relative;width:580px;height:360px;margin-bottom:26px}
+.frame::before{content:"";position:absolute;inset:-12px;background:#DC2626;border-radius:4px;z-index:1}
+.frame::after{content:"";position:absolute;inset:-22px;border:3px dashed #DC2626;border-radius:6px;opacity:0.5;z-index:0}
+.photo{position:relative;width:100%;height:100%;z-index:2;overflow:hidden;border-radius:2px;background:#111}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.frame-label{position:absolute;top:-46px;left:0;background:#0a0a0a;color:#DC2626;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:900;padding:7px 16px;letter-spacing:0.25em;text-transform:uppercase;z-index:3;border:2px solid #DC2626}
+.frame-corner{position:absolute;bottom:-46px;right:0;background:#DC2626;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:900;padding:7px 16px;letter-spacing:0.2em;text-transform:uppercase;z-index:3}
+
+.sub{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#fff;line-height:1.3;max-width:820px;margin-bottom:26px;margin-top:10px}
+.sub em{font-style:normal;color:#DC2626;font-weight:900}
+.cta{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:900;color:#fff;background:#DC2626;padding:24px 54px;border-radius:10px;display:inline-flex;align-items:center;gap:16px;text-transform:uppercase;letter-spacing:0.08em;box-shadow:6px 6px 0 rgba(220,38,38,0.3),0 0 30px rgba(220,38,38,0.4)}
+.cta .arr{width:38px;height:38px;background:#0a0a0a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.cta .arr svg{display:block}
+.proof{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);margin-top:18px;text-transform:uppercase;letter-spacing:0.22em}
+.proof b{color:#DC2626;font-weight:900}
+</style>
+</head>
+<body>
+<div class="ad">
+<div class="stripes"></div>
+<div class="body-w">
+<div class="bolt b1">⚡</div>
+<div class="bolt b2">⚡</div>
+<div class="chip"><span class="dot"></span>Atlase 2026<span class="dot"></span></div>
+<div class="big">Vadi savu<br><span>elektroinstalācijas</span> biznesu?</div>
+<div class="frame">
+<div class="frame-label">Pievienojies → Latvija</div>
+<div class="photo"><img src="file:///C:/Users/Ritvars%20Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/lv/output/niks-majokla-uzlabojumi-3/images/elektriki.png"></div>
+<div class="frame-corner">Top 5% elektriķi</div>
+</div>
+<div class="sub">Meklējam <em>5 elektriķus</em> ar savu firmu, kas gatavi uzņemt jaunus klientus katru mēnesi ar AI mārketinga sistēmu.</div>
+<div class="cta">Pieteikties <span class="arr"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+<div class="proof"><b>2'300+ uzņēmēju</b> · jau sadarbībā ar Sharpify</div>
+</div>
+<div class="stripes"></div>
+</div>
+</body>
+</html>

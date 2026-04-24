@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1E2E24;
+      --color-secondary: #181616;
+      --color-accent: #DAB453;
+      --color-bg: #F5F1E8;
+      --color-text: #181616;
+      --font-heading: 'Playfair Display', 'Georgia', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      width: 1080px; height: 1080px;
+      position: relative;
+      background:
+        radial-gradient(ellipse at 70% 110%, rgba(218,180,83,0.15) 0%, rgba(218,180,83,0) 55%),
+        radial-gradient(ellipse at 10% -10%, rgba(245,241,232,0.06) 0%, rgba(245,241,232,0) 50%),
+        linear-gradient(150deg, #1E2E24 0%, #151F1A 55%, #0d1411 100%);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Subtle grain overlay via inline noise */
+    .ad-frame::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(218,180,83,0.04) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(245,241,232,0.03) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    /* Top-bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 48px 56px 0;
+      position: relative;
+      z-index: 2;
+    }
+    .brand-wordmark {
+      font-family: var(--font-heading);
+      font-size: 44px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.01em;
+    }
+    .top-tag {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.65);
+    }
+
+    /* Manifesto area */
+    .manifesto {
+      flex: 1;
+      padding: 40px 72px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .eyebrow-mark::before {
+      content: "";
+      display: inline-block;
+      width: 48px;
+      height: 2px;
+      background: var(--color-accent);
+    }
+    .eyebrow-mark-text {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-accent);
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+    }
+
+    .manifesto-text {
+      font-family: var(--font-heading);
+      font-size: 112px;
+      font-weight: 500;
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      color: var(--color-bg);
+    }
+    .manifesto-text em {
+      font-style: italic;
+      color: var(--color-accent);
+      font-weight: 500;
+    }
+    .manifesto-text .faded {
+      color: rgba(245,241,232,0.45);
+    }
+
+    .manifesto-sub {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(245,241,232,0.68);
+      margin-top: 36px;
+      max-width: 640px;
+    }
+
+    /* Footer */
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 56px 48px;
+      position: relative;
+      z-index: 2;
+    }
+    .footer-sig {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.58);
+    }
+    .cta-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 84px;
+      min-width: 340px;
+      padding: 0 44px;
+      background: var(--color-accent);
+      color: var(--color-secondary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="top-bar">
+      <div class="brand-wordmark">TeMix</div>
+      <div class="top-tag">Vairumtirdzniecība · Rīga</div>
+    </div>
+
+    <div class="manifesto">
+      <div class="eyebrow-mark">
+        <span class="eyebrow-mark-text">Partneriem</span>
+      </div>
+      <div class="manifesto-text">
+        <span class="faded">Mēs neesam</span><br>
+        <span class="faded">vēl viens</span><br>
+        <span>vairumtirgotājs.</span><br>
+        <em>Mēs esam plaukts</em><br>
+        <em>tavam veikalam.</em>
+      </div>
+      <p class="manifesto-sub">Nepārdodam tev visu. Pārdodam to, kas pārdodas. TeMix — vairumtirdzniecība cilvēkiem ar gaumi.</p>
+    </div>
+
+    <div class="footer-row">
+      <div class="footer-sig">temix.lv · Eiropas piegādātāji</div>
+      <div class="cta-gold">Sazināties</div>
+    </div>
+  </div>
+</body>
+</html>

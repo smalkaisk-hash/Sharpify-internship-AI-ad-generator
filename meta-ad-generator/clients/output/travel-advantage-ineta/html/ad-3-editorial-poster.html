@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 3 — Editorial poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background:
+      radial-gradient(ellipse at 15% 10%, rgba(212,166,87,0.22) 0%, transparent 45%),
+      radial-gradient(ellipse at 92% 95%, rgba(212,166,87,0.12) 0%, transparent 45%),
+      linear-gradient(160deg, #0A3D2E 0%, #072b20 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 68px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(245,239,226,0.035) 1px, transparent 0);
+    background-size: 4px 4px;
+    pointer-events: none;
+  }
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
+  .wordmark {
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    color: #F5EFE2;
+    letter-spacing: 0.02em;
+  }
+  .issue {
+    font-size: 13px;
+    color: rgba(245,239,226,0.55);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  .issue strong { display: block; color: #D4A657; font-weight: 500; margin-top: 2px; }
+  .tag-line {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    color: #D4A657;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+  }
+  .tag-line .rule { flex: 1; height: 1px; background: rgba(212,166,87,0.35); }
+  .big-text {
+    margin-top: 72px;
+    font-family: 'Instrument Serif', serif;
+    color: #F5EFE2;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    z-index: 2;
+    position: relative;
+  }
+  .big-text .line1 { font-size: 172px; display: block; }
+  .big-text .line2 {
+    font-size: 172px; display: block;
+    font-style: italic;
+    color: #D4A657;
+    margin-top: -14px;
+  }
+  .divider {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+  }
+  .divider .rule { flex: 1; height: 1px; background: rgba(212,166,87,0.5); }
+  .divider .glyph {
+    color: #D4A657;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+  }
+  .body {
+    margin-top: 36px;
+    font-size: 26px;
+    line-height: 1.42;
+    color: rgba(245,239,226,0.85);
+    max-width: 840px;
+    z-index: 2;
+    position: relative;
+  }
+  .body strong { color: #F5EFE2; font-weight: 500; }
+  .body em { color: #D4A657; font-style: italic; font-family: 'Instrument Serif', serif; font-size: 30px; }
+  .footer-row {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 40px;
+    z-index: 2;
+    position: relative;
+  }
+  .since {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 48px;
+    color: #D4A657;
+    line-height: 1;
+  }
+  .since small { display: block; font-family: 'Space Grotesk', sans-serif; font-style: normal; font-size: 13px; color: rgba(245,239,226,0.55); letter-spacing: 0.24em; text-transform: uppercase; margin-top: 8px; }
+  .cta {
+    text-align: right;
+  }
+  .cta .label {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 34px;
+    color: #F5EFE2;
+    line-height: 1.15;
+  }
+  .cta .arrow {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #D4A657;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="top-row">
+      <div class="wordmark">Travel Advantage<sup style="font-size:14px;">™</sup></div>
+      <div class="issue">Izdevums № 01<strong>2026</strong></div>
+    </div>
+
+    <div class="tag-line"><span>Cenas, ko redz tikai iekšējie</span><span class="rule"></span></div>
+
+    <div class="big-text">
+      <span class="line1">Tu maksā</span>
+      <span class="line1">pilno cenu.</span>
+      <span class="line2">Daži — nē.</span>
+    </div>
+
+    <div class="divider"><span class="rule"></span><span class="glyph">·  ·  ·</span><span class="rule"></span></div>
+
+    <div class="body">
+      Atšķirība nav veiksme. Tā ir <em>piekļuve</em>. Mūsu biedri redz tās pašas viesnīcas — tikai par cenām, kādas parasti paliek tūrisma industrijas iekšienē.
+    </div>
+
+    <div class="footer-row">
+      <div class="since">Kopš 2013<small>MWR Life · Travel Advantage</small></div>
+      <div class="cta">
+        <div class="label">Tu vari arī.</div>
+        <div class="arrow">Uzzini, kā → </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

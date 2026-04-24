@@ -1,7 +1,29 @@
 const https = require('https');
 const querystring = require('querystring');
+const fs = require('fs');
+const path = require('path');
 
-const TOKEN = 'REDACTED_TOKEN';
+function loadEnv() {
+  let dir = __dirname;
+  while (dir !== path.parse(dir).root) {
+    const envPath = path.join(dir, '.env');
+    if (fs.existsSync(envPath)) {
+      fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
+        if (line.includes('=') && !line.trimStart().startsWith('#')) {
+          const idx = line.indexOf('=');
+          const k = line.slice(0, idx).trim();
+          const v = line.slice(idx + 1).trim();
+          if (k && !process.env[k]) process.env[k] = v;
+        }
+      });
+      return;
+    }
+    dir = path.dirname(dir);
+  }
+}
+loadEnv();
+
+const TOKEN = process.env.META_ACCESS_TOKEN;
 const ACCT = 'act_549172712351324';
 const ADSET_ID = '120248038619730460';
 const PAGE_ID = '116359515734204';

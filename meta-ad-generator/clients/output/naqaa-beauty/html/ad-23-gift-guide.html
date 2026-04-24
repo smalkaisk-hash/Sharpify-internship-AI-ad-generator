@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif;background:linear-gradient(180deg,#EFC9C6 0%,#F5E6D3 60%,#E8D5B8 100%)}
+    .ad{width:1080px;height:1080px;padding:50px;position:relative}
+    .frame{width:100%;height:100%;border:1.5px solid #8B3A2E;background:rgba(250,246,240,0.85);backdrop-filter:blur(4px);padding:38px 40px;display:flex;flex-direction:column;position:relative}
+    /* Header */
+    .header{text-align:center;padding-bottom:20px;border-bottom:1.5px dashed #8B3A2E}
+    .ribbon{display:inline-block;padding:8px 22px;background:#8B3A2E;color:#F5E6D3;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.32em;text-transform:uppercase;margin-bottom:14px}
+    .title{font-family:'Playfair Display',serif;font-size:60px;font-weight:400;color:#1A1A2E;line-height:1;letter-spacing:-0.01em}
+    .title em{font-style:italic;color:#8B3A2E}
+    .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;color:#6B2A22;margin-top:10px}
+    /* Bundle row */
+    .bundles{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    .bundle{background:#FAF6F0;border:1.5px solid #8B3A2E;padding:22px 18px 18px;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden;justify-content:flex-start}
+    .bundle-rank{position:absolute;top:10px;left:12px;font-family:'Playfair Display',serif;font-style:italic;font-size:28px;font-weight:500;color:#8B3A2E;opacity:0.5;line-height:1}
+    .bundle-fav{position:absolute;top:10px;right:10px;padding:5px 10px;background:#D4A93A;color:#1A1A2E;font-family:'Inter',sans-serif;font-size:9px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase}
+    .bundle-img{flex:1;width:100%;display:flex;align-items:center;justify-content:center;margin:18px 0 8px;min-height:260px}
+    .bundle-img img{max-height:320px;height:auto;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 8px 20px rgba(139,58,46,0.22))}
+    .bundle-name{font-family:'Playfair Display',serif;font-size:24px;font-weight:500;color:#1A1A2E;line-height:1;text-align:center}
+    .bundle-note{font-family:'Inter',sans-serif;font-size:11px;color:#6B2A22;text-align:center;margin-top:6px;letter-spacing:0.04em;line-height:1.35;min-height:32px}
+    .bundle-price{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:#8B3A2E;margin-top:10px;padding-top:10px;border-top:1px dashed rgba(139,58,46,0.5);width:100%;text-align:center}
+    /* Footer */
+    .gift-strip{margin-top:18px;padding:18px 24px;background:#1A1A2E;color:#F5E6D3;display:flex;justify-content:space-between;align-items:center}
+    .gift-text{display:flex;align-items:center;gap:14px}
+    .gift-icon{font-size:30px}
+    .gift-lines{display:flex;flex-direction:column;gap:2px}
+    .gift-l1{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;line-height:1}
+    .gift-l2{font-family:'Inter',sans-serif;font-size:12px;color:#D4A93A;letter-spacing:0.12em}
+    .cta{padding:14px 26px;background:#D4A93A;color:#1A1A0A;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="frame">
+      <div class="header">
+        <div class="ribbon">Dāvanu ceļvedis</div>
+        <div class="title">Dāvani <em>rituālu.</em></div>
+        <div class="sub">trīs komplekti — trim sievietēm</div>
+      </div>
+      <div class="bundles">
+        <div class="bundle">
+          <div class="bundle-rank">01</div>
+          <div class="bundle-img"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-precious-rose-labeled-cutout.png"></div>
+          <div class="bundle-name">Macadamia</div>
+          <div class="bundle-note">filtrs + maināma kasete</div>
+          <div class="bundle-price">42,49 €</div>
+        </div>
+        <div class="bundle">
+          <div class="bundle-rank">02</div>
+          <div class="bundle-fav">Populārs</div>
+          <div class="bundle-img"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-two-filters-crossed-cutout.png"></div>
+          <div class="bundle-name">Care</div>
+          <div class="bundle-note">2 filtri · dāvanai un sev</div>
+          <div class="bundle-price">58,64 €</div>
+        </div>
+        <div class="bundle">
+          <div class="bundle-rank">03</div>
+          <div class="bundle-img"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-with-box-cutout.png"></div>
+          <div class="bundle-name">SmartCare</div>
+          <div class="bundle-note">filtrs + 3-zonu uzgalis</div>
+          <div class="bundle-price">59,49 €</div>
+        </div>
+      </div>
+      <div class="gift-strip">
+        <div class="gift-text">
+          <div class="gift-icon">🎁</div>
+          <div class="gift-lines">
+            <div class="gift-l1">Dāvanu kaste L</div>
+            <div class="gift-l2">BEZMAKSAS PIRKUMIEM VIRS 100 €</div>
+          </div>
+        </div>
+        <div class="cta">Iepirkties</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

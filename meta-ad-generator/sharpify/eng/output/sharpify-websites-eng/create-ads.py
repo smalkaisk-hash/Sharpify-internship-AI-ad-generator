@@ -1,8 +1,20 @@
 import json, urllib.request, urllib.parse, sys, os
+from pathlib import Path
 os.environ['PYTHONIOENCODING'] = 'utf-8'
 sys.stdout.reconfigure(encoding='utf-8')
 
-TOKEN = "REDACTED_TOKEN"
+def load_env():
+    for parent in Path(__file__).resolve().parents:
+        env = parent / '.env'
+        if env.exists():
+            for line in env.read_text().splitlines():
+                if '=' in line and not line.lstrip().startswith('#'):
+                    k, _, v = line.partition('=')
+                    os.environ.setdefault(k.strip(), v.strip())
+            return
+
+load_env()
+TOKEN = os.environ['META_ACCESS_TOKEN']
 ACCOUNT = "act_1184056475376090"
 PAGE_ID = "116359515734204"
 INSTAGRAM_ID = "17841401853795292"

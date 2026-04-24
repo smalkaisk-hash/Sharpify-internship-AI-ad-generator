@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #0A0A0A;
+      --color-secondary: #1A1A1A;
+      --color-accent: #C6FF3D;
+      --color-text: #FAFAF7;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Figtree', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      position: relative;
+      width: 1080px; height: 1080px;
+      background: var(--color-primary);
+      color: var(--color-text);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Subtle texture */
+    .ad-frame::before {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 85% 95%, rgba(198,255,61,0.08) 0%, rgba(198,255,61,0) 45%);
+      pointer-events: none;
+    }
+
+    .header {
+      padding: 48px 56px 24px;
+      position: relative;
+      z-index: 2;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .brand-wordmark {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .top-tag {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: rgba(250,250,247,0.55);
+    }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 72px;
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+    }
+    .headline .lime { color: var(--color-accent); }
+    .sub-line {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 400;
+      color: rgba(250,250,247,0.68);
+      margin-top: 20px;
+      max-width: 680px;
+      line-height: 1.4;
+    }
+
+    /* Rows */
+    .rows {
+      flex: 1;
+      padding: 18px 56px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 22px 28px;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(250,250,247,0.08);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 14px;
+    }
+
+    .row-icon {
+      width: 64px; height: 64px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(198,255,61,0.12);
+      border: 1px solid rgba(198,255,61,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent);
+    }
+    .row-icon svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    .row-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .row-title {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+    }
+    .row-desc {
+      font-family: var(--font-body);
+      font-size: 19px;
+      font-weight: 400;
+      color: rgba(250,250,247,0.62);
+      line-height: 1.35;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 28px 56px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid rgba(250,250,247,0.08);
+      margin-top: 14px;
+    }
+    .footer-note {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: rgba(250,250,247,0.55);
+      letter-spacing: 0.12em;
+    }
+    .cta-lime {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 74px;
+      min-width: 240px;
+      padding: 0 38px;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 19px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="header">
+      <div class="top-row">
+        <div class="brand-wordmark">FJDynamics</div>
+        <div class="top-tag">FL3000 · LiDAR Mower</div>
+      </div>
+      <div class="eyebrow">Reliability · by design</div>
+      <h1 class="headline">Built where<br>other mowers <span class="lime">quit.</span></h1>
+      <p class="sub-line">Boundary-wire mowers stop when the wire breaks. RTK mowers stop when the signal drops. The FL3000 doesn't.</p>
+    </div>
+
+    <div class="rows">
+      <div class="row">
+        <div class="row-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div>
+        <div class="row-body">
+          <div class="row-title">360° LiDAR</div>
+          <div class="row-desc">Reads every corner — no signal drops under trees or near walls.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="row-body">
+          <div class="row-title">Semantic Vision</div>
+          <div class="row-desc">Sees rocks, toys, and branches before they become a problem.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon"><svg viewBox="0 0 24 24"><path d="M17 8a5 5 0 0 0-9.58-1.5A4 4 0 0 0 6 14h11a4 4 0 0 0 0-8 5 5 0 0 0 0 0zM8 18l-1 3M12 18l-1 3M16 18l-1 3"/></svg></div>
+        <div class="row-body">
+          <div class="row-title">Rain Sensor</div>
+          <div class="row-desc">Drives itself home when the sky opens. IPX5 mower, IP65 dock.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 5.5 9 11 9 11s9-5.5 9-11c0-5-4-9-9-9z"/><circle cx="12" cy="11" r="3"/></svg></div>
+        <div class="row-body">
+          <div class="row-title">Real-time GPS</div>
+          <div class="row-desc">Anti-theft built in. Know where it is, every minute.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-note">3,000 m² · 180 min · 33° max climb · IPX5</div>
+      <div class="cta-lime">Shop Now</div>
+    </div>
+  </div>
+</body>
+</html>

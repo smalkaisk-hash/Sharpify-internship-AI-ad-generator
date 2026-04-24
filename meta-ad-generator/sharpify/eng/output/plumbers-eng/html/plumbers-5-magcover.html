@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0a0a0a;color:#fff}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:contrast(1.05) saturate(0.95)}
+.tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.15) 35%,rgba(0,0,0,0.25) 65%,rgba(0,0,0,0.75) 100%)}
+.grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.03) 1px,transparent 1px);background-size:3px 3px;opacity:0.7;pointer-events:none;mix-blend-mode:overlay}
+
+/* Masthead wordmark — runs across top */
+.masthead{position:absolute;top:58px;left:50px;right:50px;z-index:5;text-align:center}
+.masthead h1{font-family:'Fraunces',serif;font-weight:900;font-size:150px;line-height:0.85;letter-spacing:-0.045em;color:#fff;text-transform:uppercase;font-variation-settings:"opsz" 144;text-shadow:0 4px 24px rgba(0,0,0,0.5)}
+.masthead h1 .and{font-style:italic;font-weight:400;font-size:96px;vertical-align:middle;padding:0 4px}
+
+/* Issue line under masthead */
+.issue{position:absolute;top:260px;left:50px;right:50px;z-index:5;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:#fff}
+.issue .rule{flex:1;height:1px;background:rgba(255,255,255,0.45);margin:0 22px}
+
+/* Cover lines over the photo */
+.line{position:absolute;z-index:5;color:#fff}
+.line1{top:330px;left:60px;right:360px;font-family:'Fraunces',serif;font-weight:700;font-size:72px;line-height:0.98;letter-spacing:-0.025em;text-shadow:0 4px 18px rgba(0,0,0,0.65)}
+.line1 em{font-style:italic;font-weight:500;color:#E8D500}
+.pg{display:inline-block;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:17px;letter-spacing:0.14em;text-transform:uppercase;color:#E8D500;vertical-align:middle;margin-left:14px;padding:6px 10px;border:1.5px solid #E8D500}
+
+.line2{top:538px;left:60px;max-width:540px;font-family:'Inter',sans-serif;font-weight:500;font-size:22px;line-height:1.45;color:rgba(255,255,255,0.88);text-shadow:0 2px 10px rgba(0,0,0,0.6)}
+.line2 b{font-weight:700;color:#fff}
+
+.line3{top:632px;left:60px;max-width:540px;font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:22px;line-height:1.45;color:rgba(255,255,255,0.82);text-shadow:0 2px 10px rgba(0,0,0,0.6)}
+.line3::before{content:"— ";color:#E8D500;font-style:normal}
+.line3 span{color:#fff;font-style:normal;font-weight:500}
+
+/* Yellow burst sticker */
+.burst{position:absolute;top:348px;right:54px;z-index:6;width:220px;height:220px;background:#E8D500;color:#0a0a0a;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-9deg);box-shadow:0 18px 40px rgba(0,0,0,0.5),inset 0 0 0 3px rgba(10,10,10,0.12);font-family:'Fraunces',serif;text-align:center;padding:14px}
+.burst .plus{font-family:'Fraunces',serif;font-weight:900;font-size:58px;line-height:0.9;letter-spacing:-0.04em}
+.burst .txt{font-family:'Fraunces',serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-0.015em;margin-top:2px;text-transform:none}
+.burst .inc{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;margin-top:6px;opacity:0.75}
+
+/* Star corner — editorial flourish */
+.star{position:absolute;top:588px;right:60px;z-index:5;font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:19px;line-height:1.3;color:#E8D500;transform:rotate(4deg);text-align:center;width:200px;text-shadow:0 2px 10px rgba(0,0,0,0.7)}
+.star::before{content:"★";display:block;font-size:24px;margin-bottom:6px;font-style:normal;color:#E8D500}
+
+/* Cover list teasers */
+.teasers{position:absolute;bottom:210px;left:60px;right:60px;z-index:5;display:flex;gap:32px;border-top:1px solid rgba(255,255,255,0.35);border-bottom:1px solid rgba(255,255,255,0.35);padding:20px 0}
+.teaser{flex:1;font-family:'Inter',sans-serif;font-size:15px;line-height:1.45;color:rgba(255,255,255,0.85);font-weight:500}
+.teaser b{font-family:'Fraunces',serif;font-weight:700;font-style:italic;font-size:18px;color:#fff;display:block;margin-bottom:3px}
+.teaser .num{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.2em;color:#E8D500;display:block;margin-bottom:3px}
+
+/* Bottom footer — barcode left + CTA right */
+.bottom{position:absolute;bottom:58px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;z-index:6}
+.barcode{display:flex;flex-direction:column;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.16em;color:rgba(255,255,255,0.75);text-transform:uppercase}
+.bars{display:flex;gap:2px;height:42px;align-items:flex-end}
+.bars span{width:2px;background:#fff;height:100%}
+.bars span:nth-child(3n){width:3px;height:85%}
+.bars span:nth-child(5n){width:1px;height:70%}
+.bars span:nth-child(7n){width:4px;height:95%}
+
+.cta{font-family:'Fraunces',serif;font-weight:700;font-size:26px;color:#0a0a0a;background:#E8D500;padding:20px 38px;border-radius:100px;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:14px;box-shadow:0 14px 36px rgba(232,213,0,0.35),0 4px 10px rgba(0,0,0,0.3)}
+.cta .arr{width:34px;height:34px;background:#0a0a0a;color:#E8D500;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;font-family:'Fraunces',serif}
+</style>
+</head>
+<body>
+<div class="ad">
+<img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/eng/output/plumbers-eng/images/plumber-wide.png">
+<div class="tint"></div>
+<div class="grain"></div>
+
+<div class="masthead">
+<h1>Over<span class="and">&amp;</span>booked</h1>
+</div>
+
+<div class="issue">
+<span>Vol. XII</span>
+<span class="rule"></span>
+<span>The Trades Digest</span>
+<span class="rule"></span>
+<span>N&deg; 047 &middot; 04&middot;2026</span>
+</div>
+
+<div class="line line1">The <em>quiet-phone</em> era<br>is over. <span class="pg">p.08</span></div>
+
+<div class="burst">
+<span class="plus">+</span>
+<span class="txt">Free<br>website</span>
+<span class="inc">Included</span>
+</div>
+
+<div class="star">&ldquo;Every call<br>came inbound.&rdquo;</div>
+
+<div class="line line2">How <b>2,300+ tradespeople</b> rebuilt their week &mdash; and stopped chasing referrals that arrive once, then vanish for a month.</div>
+
+<div class="line line3"><span>Niks Jansons</span>, CEO at Sharpify, on the system behind the new default.</div>
+
+<div class="teasers">
+<div class="teaser"><span class="num">01</span><b>Paid ads</b>that bring inbound leads every day.</div>
+<div class="teaser"><span class="num">02</span><b>AI follow-up</b>that closes quotes at 2&nbsp;a.m.</div>
+<div class="teaser"><span class="num">03</span><b>A CRM</b>that remembers every job.</div>
+</div>
+
+<div class="bottom">
+<div class="barcode">
+<div class="bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<span>9&nbsp;771234&nbsp;567890 &middot; sharpify.lv/ms</span>
+</div>
+<div class="cta">Read the issue <span class="arr">&rarr;</span></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --bg: #F4F1E8; --text: #F4F1E8; --text-dark: #0D1411;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad {
+      position: relative; width: 1080px; height: 1080px; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 60%, #234A36 0%, #0F2017 75%);
+      color: var(--text);
+      display: flex; flex-direction: column;
+    }
+
+    .top { padding: 40px 56px 0; display: flex; justify-content: space-between; align-items: center; z-index: 5; position: relative; }
+    .wm { font-family: var(--fh); font-size: 28px; font-weight: 500; letter-spacing: -0.01em; }
+    .wm .dot { color: var(--accent-bright); }
+    .badge-mini { font-family: var(--fb); font-size: 11px; font-weight: 600; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(244,241,232,0.55); }
+
+    .header { padding: 28px 56px 0; text-align: center; z-index: 5; position: relative; }
+    .eye { font-family: var(--fb); font-size: 13px; font-weight: 600; color: var(--accent-bright); letter-spacing: 0.34em; text-transform: uppercase; margin-bottom: 10px; }
+    h1 { font-family: var(--fh); font-size: 62px; font-weight: 500; line-height: 1; letter-spacing: -0.025em; margin: 0; }
+    h1 .l { color: var(--accent-bright); font-style: italic; }
+
+    /* Cycle diagram */
+    .cycle {
+      flex: 1;
+      position: relative;
+      padding: 20px 56px 0;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 5;
+    }
+
+    .cycle-wrap {
+      position: relative;
+      width: 620px; height: 480px;
+    }
+
+    /* Center circle */
+    .cycle-center {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 2px solid var(--accent-bright);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(180,224,97,0.15);
+    }
+    .cycle-center-label { font-family: var(--fb); font-size: 10px; font-weight: 700; color: var(--accent-bright); letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 8px; }
+    .cycle-center-name { font-family: var(--fh); font-size: 24px; font-weight: 500; color: var(--text); line-height: 1.1; }
+    .cycle-center-name em { color: var(--accent-bright); font-style: italic; }
+
+    /* Dashed orbit ring */
+    .orbit {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 480px; height: 380px;
+      border: 1.5px dashed rgba(180,224,97,0.35);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Nodes positioned around the center */
+    .node {
+      position: absolute;
+      width: 220px;
+      text-align: center;
+    }
+    .node-icon {
+      width: 76px; height: 76px;
+      border-radius: 50%;
+      background: rgba(244,241,232,0.07);
+      border: 1px solid rgba(180,224,97,0.5);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 12px;
+      backdrop-filter: blur(4px);
+    }
+    .node-icon svg {
+      width: 34px; height: 34px;
+      fill: none; stroke: var(--accent-bright);
+      stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .node-title {
+      font-family: var(--fb); font-size: 12px; font-weight: 700;
+      color: var(--accent-bright); letter-spacing: 0.22em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .node-sub {
+      font-family: var(--fh); font-size: 18px; font-weight: 500;
+      color: rgba(244,241,232,0.9); line-height: 1.2;
+    }
+
+    /* Position nodes clockwise: 1 top, 2 right, 3 bottom, 4 left */
+    .node.n1 { top: 0; left: 50%; transform: translate(-50%, 0); }
+    .node.n2 { top: 50%; right: -50px; transform: translate(0, -50%); }
+    .node.n3 { bottom: 0; left: 50%; transform: translate(-50%, 0); }
+    .node.n4 { top: 50%; left: -50px; transform: translate(0, -50%); }
+
+    /* Footer */
+    .footer {
+      padding: 20px 56px 36px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(244,241,232,0.12);
+      z-index: 5; position: relative;
+    }
+    .footer-note { font-family: var(--fb); font-size: 13px; color: rgba(244,241,232,0.6); letter-spacing: 0.1em; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 72px; min-width: 260px; padding: 0 40px;
+      background: var(--accent-bright); color: var(--secondary);
+      font-family: var(--fb); font-weight: 700; font-size: 17px;
+      letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="top">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="badge-mini">Bioloģiskais cikls</div>
+    </div>
+
+    <div class="header">
+      <div class="eye">Viena sistēma · četri rezultāti</div>
+      <h1>Dabisks cikls.<br><span class="l">Nulle atkritumu.</span></h1>
+    </div>
+
+    <div class="cycle">
+      <div class="cycle-wrap">
+        <div class="orbit"></div>
+
+        <!-- Node 1: Notekūdens (top) -->
+        <div class="node n1">
+          <div class="node-icon"><svg viewBox="0 0 24 24"><path d="M12 3c-4 4-7 7-7 11a7 7 0 0 0 14 0c0-4-3-7-7-11z"/></svg></div>
+          <div class="node-title">01 · Ievads</div>
+          <div class="node-sub">Notekūdens no mājas</div>
+        </div>
+
+        <!-- Node 2: Tīrs ūdens (right) -->
+        <div class="node n2">
+          <div class="node-icon"><svg viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></svg></div>
+          <div class="node-title">02 · Tīrs ūdens</div>
+          <div class="node-sub">Dārza laistīšanai</div>
+        </div>
+
+        <!-- Node 3: Biodūņas (bottom) -->
+        <div class="node n3">
+          <div class="node-icon"><svg viewBox="0 0 24 24"><path d="M12 4C9 8 7 10 7 14a5 5 0 0 0 10 0c0-4-2-6-5-10zM10 14c0 1 1 2 2 2"/></svg></div>
+          <div class="node-title">03 · Biodūņas</div>
+          <div class="node-sub">Mēslojums dārzam</div>
+        </div>
+
+        <!-- Node 4: Mēneša rēķini (left, crossed out) -->
+        <div class="node n4">
+          <div class="node-icon" style="border-color: rgba(244,241,232,0.2);"><svg viewBox="0 0 24 24" style="stroke: rgba(244,241,232,0.4);"><path d="M5 19 19 5M5 5l14 14"/></svg></div>
+          <div class="node-title" style="color: rgba(244,241,232,0.5);">04 · Nav rēķinu</div>
+          <div class="node-sub" style="color: rgba(244,241,232,0.55);">0€ ekspluatācija</div>
+        </div>
+
+        <!-- Center -->
+        <div class="cycle-center">
+          <div class="cycle-center-label">Divfāžu</div>
+          <div class="cycle-center-name"><em>Biofiltrācija</em></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-note">Viena vienreizēja investīcija · Uz mūžu · 5 gadu garantija</div>
+      <div class="cta">Uzzināt vairāk</div>
+    </div>
+  </div>
+</body>
+</html>

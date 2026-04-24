@@ -1,0 +1,78 @@
+{
+  "client_name": "FJDynamics — FL3000 LiDAR Robotic Mower",
+  "client_slug": "fjdynamics-fl3000",
+  "contact_person": null,
+  "email": null,
+  "phone": null,
+  "website": "https://landscaping.fjdynamics.com/product/fl3000-lidar-robotic-mower",
+  "parent_site": "https://www.fjdynamics.com/",
+  "figma_file_url": null,
+  "language": "en",
+  "target_audience": {
+    "raw": "Homeowners with lawns up to 3,000 m² (0.75 acre) wanting wire-free robotic mowing. Inferred from website positioning — no intake form provided.",
+    "demographics": "Homeowners, 35-65, suburban/semi-rural, mid-to-upper income, US/UK/EU/AU markets, lawn size 500-3000 m²",
+    "psychographics": "Hates yardwork, values weekends back, skeptical of boundary-wire setup hassle, tech-forward enough to consider robots, wants premium without fiddling. Has rejected or returned Husqvarna/Worx because wire install was a project.",
+    "pain_points": [
+      "Boundary-wire installation takes a full weekend and looks ugly crossing the yard",
+      "RTK-based mowers lose signal under trees or near walls — exactly where you need reliability",
+      "Every Saturday morning is mowing morning; weekends feel like chores",
+      "Traditional mowers miss edges near flowerbeds, fences, patios",
+      "Paying £2,000+ and still having to do the edges by hand feels like a con"
+    ],
+    "desires": [
+      "Robot that sets up in 10 minutes, not a weekend",
+      "Works under trees, near walls, in tight corners — no 'dead zones'",
+      "Cuts edges cleanly, not just open lawn",
+      "Handles slopes and rain without babysitting",
+      "Premium build that survives multiple seasons",
+      "Anti-theft (it's sitting in the garden every day)"
+    ]
+  },
+  "offer": {
+    "main_offer": "FJD FL3000 LiDAR Robotic Mower — wire-free, RTK-free autonomous lawn care for up to 3,000 m²",
+    "secondary_offer": null,
+    "result_promise": "10-minute setup. Perfect lawn. No more Saturdays behind a push-mower.",
+    "duration": "One-time purchase",
+    "price_mentioned": false
+  },
+  "differentiator": {
+    "raw": "LiDAR + vision fusion navigation — no boundary wire, no RTK. Works reliably under trees, next to walls, in tight corners where both wire-based and RTK-based competitors fail. 10-minute setup.",
+    "key_points": [
+      "No wire — no ugly install, no digging, no cut-wire callouts",
+      "No RTK — no signal drops under trees or near buildings",
+      "360° LiDAR + semantic vision for real obstacle avoidance",
+      "10-minute setup out of the box",
+      "Smart edge trimming (LiDAR+vision fusion at the perimeter)",
+      "Automatic rain detection, auto-return, IPX5 waterproof",
+      "Electric deck auto-lifting, fast blade swap",
+      "Real-time GPS anti-theft"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Global FJDynamics brand — parent company is a major agtech / autonomous vehicle manufacturer (autonomous tractors, construction nav, GNSS/RTK). Precision-robotics lineage applied to residential mowing.",
+    "credentials": [
+      "FJDynamics — agtech and autonomous vehicle manufacturer",
+      "LiDAR + vision fusion (the same sensor-stack used in autonomous tractors)",
+      "IPX5 mower / IP65 charging station",
+      "Hardware specs exposed publicly (190WH battery, 180min runtime, 33° max climb)"
+    ],
+    "social_proof": [],
+    "personal_story": null
+  },
+  "client_acquisition": {
+    "method": "Online product page with 'Buy Now' (external store) and 'Free Quote' lead form",
+    "funnel": "Ad → product page → Buy Now (DTC) or Free Quote (dealer lead)"
+  },
+  "bonuses": [],
+  "guarantees": [],
+  "capacity": null,
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 7,
+  "ad_strategy": {
+    "recommended_objective": "Conversions (Shop Now) primary; Landing Page Views as a cheaper prospecting layer",
+    "recommended_cta": "Shop Now (primary) / Learn More (top-of-funnel prospecting)",
+    "funnel_stage_focus": "Mid-funnel prospecting + retargeting — category-aware homeowners who've searched 'robot lawn mower' or seen competitor ads",
+    "audience_notes": "This is DTC, not B2B. Visuals are product-forward. Copy speaks to the buyer (the homeowner) directly. Lead angles: (1) No wire / 10-min setup, (2) Works where RTK fails, (3) Premium spec at the price, (4) Reclaim your Saturdays. Position against Husqvarna Automower (wire) and Mammotion Luba (RTK) without naming them directly — let the spec comparison do the work."
+  }
+}

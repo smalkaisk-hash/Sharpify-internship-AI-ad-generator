@@ -1,0 +1,57 @@
+{
+  "account": "1184056475376090",
+  "campaign_id": "120242983953540328",
+  "adset_id": "120243370892200328",
+  "adset_name": "Home Improvement 3 - Male 25-65",
+  "form_id": "1458253571971724",
+  "ads": [
+    {
+      "name": "Electricians - Circle - Next job booked",
+      "png": "electricians-1-circle.png",
+      "image_hash": "2c6d82af74dc68cb1405b5d78e4d28f8",
+      "creative_id": "1707524883933722",
+      "ad_id": "120243370912290328",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Electricians - Voltage - Selecting 5 pros",
+      "png": "electricians-3-voltage.png",
+      "image_hash": "c11898d0c3d5a349156e6891306d3ce8",
+      "creative_id": "3386218241546179",
+      "ad_id": "120243370917210328",
+      "cta_type": "APPLY_NOW"
+    },
+    {
+      "name": "Flooring - Circle - Next room booked",
+      "png": "flooring-1-circle.png",
+      "image_hash": "35cb8eb7ee811719e13eadbe0a58a2d2",
+      "creative_id": "2020760498820699",
+      "ad_id": "120243370922030328",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Flooring - Polaroid - Leads land while you sand",
+      "png": "flooring-2-polaroid.png",
+      "image_hash": "b52bfc8b13362e1fd70d05699f498d28",
+      "creative_id": "1474027231122771",
+      "ad_id": "120243370926610328",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "HVAC - Circle - Next install booked",
+      "png": "hvac-1-circle.png",
+      "image_hash": "569de27b518fa628b2c403e3b2766ea9",
+      "creative_id": "1349276013591251",
+      "ad_id": "120243370930910328",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "HVAC - Voltage - Selecting 5 installers",
+      "png": "hvac-3-voltage.png",
+      "image_hash": "d39cd3ab5c54b047a4e909edb335ae99",
+      "creative_id": "984410060692906",
+      "ad_id": "120243370934740328",
+      "cta_type": "APPLY_NOW"
+    }
+  ]
+}

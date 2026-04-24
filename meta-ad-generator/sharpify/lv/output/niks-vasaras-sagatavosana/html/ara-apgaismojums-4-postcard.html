@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#E8D9B8}
+.paper{position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,#F4E7C8 0%,#E8D9B8 45%,#D4C094 100%)}
+.grain{position:absolute;inset:0;background-image:radial-gradient(rgba(120,80,40,0.07) 1px,transparent 1px),radial-gradient(rgba(0,0,0,0.04) 1px,transparent 1px);background-size:4px 4px,7px 7px;opacity:0.85}
+.card{position:absolute;left:60px;right:60px;top:60px;bottom:60px;background:#FFFCF2;border-radius:10px;box-shadow:0 24px 60px rgba(60,40,20,0.35),inset 0 0 0 1px rgba(0,0,0,0.06);padding:48px 52px;transform:rotate(-0.6deg)}
+.card::before{content:"";position:absolute;inset:14px;border:2px dashed rgba(20,20,20,0.18);border-radius:4px;pointer-events:none}
+.top-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px;position:relative;z-index:2}
+.kicker{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;color:#6B4A1F;letter-spacing:0.35em;text-transform:uppercase;padding-top:8px}
+.stamp{width:118px;height:138px;background:#F4E07A;border:3px double rgba(20,20,20,0.45);padding:10px 8px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;transform:rotate(4deg);position:relative;box-shadow:0 6px 14px rgba(0,0,0,0.15);flex-shrink:0}
+.stamp::before{content:"";position:absolute;inset:-3px;background:radial-gradient(circle,transparent 3px,#F4E07A 3.5px);background-size:10px 10px;background-position:-5px -5px;z-index:-1;border-radius:2px}
+.stamp-top{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:14px;color:#1a1a1a;line-height:1;letter-spacing:0.04em}
+.stamp-mid{font-family:'Playfair Display',serif;font-weight:900;font-size:28px;color:#1a1a1a;line-height:1}
+.stamp-bot{font-family:'Space Grotesk',sans-serif;font-size:9px;font-weight:800;color:#1a1a1a;letter-spacing:0.18em}
+.photo{position:relative;width:100%;height:430px;border-radius:6px;overflow:hidden;box-shadow:0 12px 30px rgba(60,40,20,0.25),inset 0 0 0 6px #FFFCF2,inset 0 0 0 7px rgba(0,0,0,0.2);margin-bottom:20px;z-index:2}
+.photo img{width:100%;height:100%;object-fit:cover;filter:saturate(0.88) contrast(0.96) sepia(0.08)}
+.postmark{position:absolute;top:32px;right:150px;width:180px;height:180px;border:3px solid rgba(120,40,40,0.6);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);color:rgba(120,40,40,0.7);z-index:3;mix-blend-mode:multiply}
+.postmark-top{font-family:'Playfair Display',serif;font-weight:900;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:2px}
+.postmark-mid{font-family:'Playfair Display',serif;font-weight:900;font-size:24px;letter-spacing:0.02em}
+.postmark-bot{font-family:'Playfair Display',serif;font-weight:700;font-style:italic;font-size:12px;margin-top:2px;letter-spacing:0.08em}
+.postmark::before{content:"";position:absolute;left:-28px;right:-28px;top:50%;height:2px;background:rgba(120,40,40,0.35);transform:rotate(18deg)}
+.script{font-family:'Caveat',cursive;font-size:76px;color:#3D2813;line-height:0.95;font-weight:700;margin-top:6px;letter-spacing:-0.005em;position:relative;z-index:2}
+.script em{font-family:'Playfair Display',serif;font-weight:700;font-style:italic;color:#C44513}
+.divider{display:flex;align-items:center;gap:10px;margin-top:16px;position:relative;z-index:2}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:rgba(60,40,20,0.25)}
+.divider-text{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#6B4A1F;letter-spacing:0.3em;text-transform:uppercase}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:22px;position:relative;z-index:2}
+.cities{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600;color:#6B4A1F;letter-spacing:0.04em}
+.cities b{color:#3D2813;font-weight:800}
+.cta{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:800;color:#FFFCF2;background:#3D2813;padding:20px 42px;border-radius:100px;display:inline-flex;align-items:center;gap:12px;box-shadow:0 8px 20px rgba(60,40,20,0.3)}
+.cta .arr{width:30px;height:30px;background:#F4E07A;color:#3D2813;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:900}
+.brand{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;font-weight:700;color:#3D2813;letter-spacing:0.04em}
+.brand b{color:#C44513;font-weight:900}
+</style>
+</head>
+<body>
+<div class="ad">
+<div class="paper"></div>
+<div class="grain"></div>
+<div class="card">
+<div class="top-row">
+<div class="kicker">No: Niks Jansons &nbsp;·&nbsp; Sharpify HQ</div>
+<div class="stamp">
+<div class="stamp-top">LATVIJA</div>
+<div class="stamp-mid">★</div>
+<div class="stamp-bot">GAIS. · 2026</div>
+</div>
+</div>
+<div class="photo">
+<img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/lv/output/niks-vasaras-sagatavosana/images/ara-apgaismojums.png">
+<div class="postmark">
+<div class="postmark-top">Vasara</div>
+<div class="postmark-mid">2026</div>
+<div class="postmark-bot">sezona · atvērta</div>
+</div>
+</div>
+<div class="script">Sveicieni no silta<br>vakara pagalmā!</div>
+<div class="divider"><span class="divider-text">MP Risinājums™</span></div>
+<div class="footer">
+<div class="cities">📍 <b>Ogre · Garkalne · Sigulda</b></div>
+<div class="cta">Pieteikties <span class="arr">→</span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -68,6 +68,24 @@ The mājaslapa bonus can be labeled "🎁 BEZMAKSAS mājaslapa dāvanā" — it'
 
 ---
 
+## Output Requirements
+
+### Every niche ships 2-3 NEW PNG formats (never just raw photos)
+
+**Rule:** Every new niche output folder must contain at least 2-3 distinct HTML templates rendered through `scripts/export-png.js` into `png/`. Raw documentary photos alone are not sufficient output.
+
+**Novelty is expected.** Don't default to the previous session's winners (e.g. arched / sticker / magazine / warning from `niks-majokla-uzlabojumi-2`). Each day's session should produce at least one format the account has not seen before — pull from `.claude/skills/8-extra-templates/` (120+ briefs), from the extended templates folder, or invent a new layout that fits the niche. Re-using yesterday's 4 templates unchanged is the failure mode.
+
+**How to apply:**
+1. Before picking formats, read ALL files in `sharpify/formats/` AND scan `.claude/skills/8-extra-templates/` for unused briefs. Don't short-circuit to one format.
+2. Pick 2-3 structurally different layouts — at least one should be new (not appearing in the previous session's niche output folders).
+3. The documentary photo can be variant #4 or a supplementary photo-only ad, but never the only output.
+4. A completed niche folder must contain: `images/`, `html/`, `png/` (all populated), and `copy.md` documenting each variant. Empty `png/` at end of session = incomplete work, flag to user.
+
+**Why:** In a past session the assistant defaulted to documentary-photo-only output for a new santehniķi niche, producing zero HTML/PNG creatives. User's feedback: novelty matters — fresh formats every day, not yesterday's approved set recycled.
+
+---
+
 ## Funnel Rules
 
 ### No quiz funnels

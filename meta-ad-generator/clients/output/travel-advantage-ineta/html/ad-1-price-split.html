@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 1 — Price split</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background: #F5EFE2;
+    position: relative;
+    overflow: hidden;
+    padding: 72px 68px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 8% 10%, rgba(212,166,87,0.15) 0%, transparent 40%),
+      radial-gradient(circle at 92% 92%, rgba(10,61,46,0.08) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .top-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0A3D2E;
+    z-index: 2;
+  }
+  .top-label .dot { width: 8px; height: 8px; background: #D4A657; border-radius: 50%; }
+  .headline {
+    margin-top: 28px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 78px;
+    line-height: 0.98;
+    color: #0A3D2E;
+    letter-spacing: -0.01em;
+    z-index: 2;
+  }
+  .hotel-row {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(10,61,46,0.2);
+    z-index: 2;
+  }
+  .hotel-row .stars { color: #D4A657; font-size: 20px; letter-spacing: 2px; }
+  .hotel-row .name { font-size: 22px; color: #1A1A1A; font-weight: 500; }
+  .hotel-row .meta { font-size: 18px; color: #1A1A1A; opacity: 0.6; }
+  .split {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .split::before {
+    content: '';
+    position: absolute;
+    left: 50%; top: 12px; bottom: 12px;
+    width: 1px;
+    background: rgba(10,61,46,0.2);
+  }
+  .col { padding: 18px 24px; }
+  .col .src-label {
+    font-size: 14px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    opacity: 0.55;
+    margin-bottom: 14px;
+  }
+  .col .price {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .col.left .price { color: #D64545; text-decoration: line-through; text-decoration-thickness: 5px; }
+  .col.right .price { color: #0A3D2E; }
+  .col .per {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #1A1A1A;
+    opacity: 0.6;
+  }
+  .savings-bar {
+    margin-top: 56px;
+    background: #0A3D2E;
+    border-radius: 18px;
+    padding: 34px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
+  .savings-bar .label {
+    font-size: 16px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #D4A657;
+  }
+  .savings-bar .sub {
+    margin-top: 6px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 30px;
+    color: #F5EFE2;
+    font-style: italic;
+  }
+  .savings-bar .amount {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 98px;
+    line-height: 1;
+    color: #F5EFE2;
+    letter-spacing: -0.03em;
+  }
+  .savings-bar .amount small { font-size: 36px; color: #D4A657; margin-right: 4px; }
+  .footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    z-index: 2;
+    position: relative;
+  }
+  .footer .brand {
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    color: #0A3D2E;
+    letter-spacing: 0.02em;
+  }
+  .footer .tag {
+    font-size: 15px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    opacity: 0.55;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="top-label"><span class="dot"></span>Reāls piemērs — ROMA, 3 naktis</div>
+
+    <div class="headline">Booking rāda<br>vienu cenu.<br><em style="color:#D4A657; font-style: italic;">Mēs redzam citu.</em></div>
+
+    <div class="hotel-row">
+      <div class="stars">★★★★</div>
+      <div class="name">Hotel Artemide</div>
+      <div class="meta">· superior double · 3 naktis</div>
+    </div>
+
+    <div class="split">
+      <div class="col left">
+        <div class="src-label">Booking.com</div>
+        <div class="price">€450</div>
+        <div class="per">publiskā cena</div>
+      </div>
+      <div class="col right">
+        <div class="src-label">Travel Advantage</div>
+        <div class="price">€135</div>
+        <div class="per">biedra cena</div>
+      </div>
+    </div>
+
+    <div class="savings-bar">
+      <div>
+        <div class="label">Tava ekonomija</div>
+        <div class="sub">par vienu rezervāciju</div>
+      </div>
+      <div class="amount"><small>−</small>€315</div>
+    </div>
+
+    <div class="footer">
+      <div class="brand">Travel Advantage<sup style="font-size:14px;">™</sup></div>
+      <div class="tag">Kopš 2013</div>
+    </div>
+  </div>
+</body>
+</html>

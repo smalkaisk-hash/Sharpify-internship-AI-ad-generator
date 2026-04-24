@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif;background:#EFE8DD}
+    .ad{width:1080px;height:1080px;padding:52px;position:relative}
+    .frame{width:100%;height:100%;display:flex;flex-direction:column}
+    /* Header */
+    .header{text-align:center;padding-bottom:14px}
+    .tag{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.2em;color:#8B7D3C;text-transform:uppercase}
+    .title{font-family:'Playfair Display',serif;font-size:54px;font-weight:400;color:#1A1A2E;line-height:1;margin-top:10px;letter-spacing:-0.01em}
+    .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:#6B5B3E;margin-top:8px}
+    /* Film strip */
+    .film{flex:1;margin-top:18px;background:#1A1A1A;padding:22px 0;position:relative;display:flex;gap:0}
+    .sprocket-top,.sprocket-bot{position:absolute;left:0;right:0;height:14px;background-image:repeating-linear-gradient(90deg,transparent 0,transparent 22px,#EFE8DD 22px,#EFE8DD 36px);background-size:44px 14px}
+    .sprocket-top{top:4px}
+    .sprocket-bot{bottom:4px}
+    .cell{flex:1;position:relative;overflow:hidden;margin:0 6px;background:#000}
+    .cell:first-child{margin-left:22px}
+    .cell:last-child{margin-right:22px}
+    .cell img{width:100%;height:100%;object-fit:cover;display:block}
+    .frame-num{position:absolute;top:10px;left:10px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;color:#FAF6F0;text-shadow:0 1px 3px rgba(0,0,0,0.8);letter-spacing:0.1em}
+    .frame-cap{position:absolute;bottom:0;left:0;right:0;padding:10px 12px 12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.85));color:#FAF6F0;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase}
+    /* Footer */
+    .footer{margin-top:22px;display:flex;justify-content:space-between;align-items:center;padding:22px 30px;background:#1A1A2E;color:#F5E6D3}
+    .f-left{display:flex;flex-direction:column;gap:2px}
+    .f-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.2em;color:#B8A878;text-transform:uppercase}
+    .f-h{font-family:'Playfair Display',serif;font-size:28px;font-weight:500;line-height:1}
+    .f-right{display:flex;align-items:center;gap:18px}
+    .f-price{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#F5E6D3}
+    .cta{padding:14px 24px;background:#D4A93A;color:#1A1A0A;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="frame">
+      <div class="header">
+        <div class="tag">ROLL 01 · VITAMĪNU DUŠAS FILTRS</div>
+        <div class="title">Katra diena — jauns kadrs</div>
+        <div class="sub">rīts, duša, spogulis, nakts</div>
+      </div>
+      <div class="film">
+        <div class="sprocket-top"></div>
+        <div class="sprocket-bot"></div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-strip-hair.png">
+          <div class="frame-num">01</div>
+          <div class="frame-cap">Rīta rituāls</div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-strip-shower-face.png">
+          <div class="frame-num">02</div>
+          <div class="frame-cap">Tīrs ūdens</div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-strip-hand-skin.png">
+          <div class="frame-num">03</div>
+          <div class="frame-cap">Maiga āda</div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-strip-candle.png">
+          <div class="frame-num">04</div>
+          <div class="frame-cap">Vakara miers</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="f-left">
+          <div class="f-label">VIENS FILTRS — 2–3 MĒNEŠI</div>
+          <div class="f-h">Naqaa Beauty</div>
+        </div>
+        <div class="f-right">
+          <div class="f-price">no 34,99 €</div>
+          <div class="cta">Izvēlies</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

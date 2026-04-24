@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;inset:0}
+    .bg img{width:100%;height:100%;object-fit:cover}
+    .bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.08),rgba(26,26,46,0.25) 65%,rgba(26,26,46,0.78) 100%)}
+    /* Outer framing border */
+    .outer{position:absolute;inset:52px;border:1.5px solid rgba(245,230,211,0.55);padding:40px;display:flex;flex-direction:column}
+    /* Top header */
+    .top{display:flex;justify-content:space-between;align-items:flex-start}
+    .tag{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.34em;color:#F5E6D3;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,0.35)}
+    .brand{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#F5E6D3;text-shadow:0 2px 8px rgba(0,0,0,0.35)}
+    /* Gift badge */
+    .gift{position:absolute;top:110px;right:40px;padding:14px 22px;background:#D4A93A;color:#1A1A2E;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;transform:rotate(3deg);box-shadow:0 10px 24px rgba(0,0,0,0.25)}
+    .gift-line2{display:block;font-size:11px;font-weight:500;letter-spacing:0.12em;margin-top:3px;opacity:0.9}
+    /* Headline */
+    .headline-zone{margin-top:28px;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:40px}
+    .h-eyebrow{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.32em;color:#D4A93A;text-transform:uppercase}
+    .h-main{font-family:'Playfair Display',serif;font-size:80px;font-weight:400;color:#F5E6D3;line-height:0.95;letter-spacing:-0.01em;margin-top:14px;text-shadow:0 4px 20px rgba(0,0,0,0.35)}
+    .h-sub{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:#F5E6D3;margin-top:14px;opacity:0.9;text-shadow:0 2px 10px rgba(0,0,0,0.5)}
+    /* Product row framed at bottom */
+    .products{height:280px;border:1.5px solid rgba(212,169,58,0.6);background:rgba(26,26,46,0.55);backdrop-filter:blur(6px);display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:20px 24px;align-items:center}
+    .prod{display:flex;flex-direction:column;align-items:center;gap:8px}
+    .prod img{height:200px;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,0.5))}
+    .prod-name{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;color:#F5E6D3;text-transform:uppercase;opacity:0.85}
+    /* Footer CTA bar */
+    .footer{position:absolute;left:52px;right:52px;bottom:52px;display:flex;justify-content:space-between;align-items:center;padding:22px 30px;background:#1A1A2E;color:#F5E6D3;border:1.5px solid #D4A93A}
+    .f-left{display:flex;flex-direction:column;gap:2px}
+    .f-label{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.22em;color:#D4A93A;text-transform:uppercase}
+    .f-price{font-family:'Playfair Display',serif;font-size:40px;font-weight:600;line-height:1}
+    .cta{padding:18px 32px;background:#D4A93A;color:#1A1A0A;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="bg"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-bundle-vanity.png"></div>
+    <div class="bg-overlay"></div>
+    <div class="outer">
+      <div class="top">
+        <div class="tag">Komplekts SmartCare</div>
+        <div class="brand">Naqaa Beauty</div>
+      </div>
+      <div class="headline-zone">
+        <div class="h-eyebrow">Pilns dušas komplekts</div>
+        <div class="h-main">Viss, ko vēlas<br>tava āda.</div>
+        <div class="h-sub">filtrs · 3-zonu uzgalis · maināma kasete</div>
+      </div>
+      <div class="products">
+        <div class="prod">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-precious-rose-labeled-cutout.png">
+          <div class="prod-name">Rose</div>
+        </div>
+        <div class="prod">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-labeled-cutout.png">
+          <div class="prod-name">Lavender</div>
+        </div>
+        <div class="prod">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-mango-rain-labeled-cutout.png">
+          <div class="prod-name">Mango</div>
+        </div>
+        <div class="prod">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-amberwood-labeled-cutout.png">
+          <div class="prod-name">Amberwood</div>
+        </div>
+      </div>
+    </div>
+    <div class="gift">
+      🎁 Dāvanu kaste L
+      <span class="gift-line2">bezmaksas pirkumiem virs 100 €</span>
+    </div>
+    <div class="footer">
+      <div class="f-left">
+        <div class="f-label">Komplekts SmartCare</div>
+        <div class="f-price">59,49 €</div>
+      </div>
+      <div class="cta">Iepirkties</div>
+    </div>
+  </div>
+</body>
+</html>

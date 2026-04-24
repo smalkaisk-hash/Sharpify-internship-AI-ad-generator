@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #0A0A0A;
+      --color-secondary: #1A1A1A;
+      --color-accent: #C6FF3D;
+      --color-text: #FAFAF7;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Figtree', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      position: relative;
+      width: 1080px; height: 1080px;
+      background:
+        radial-gradient(ellipse at 80% 120%, rgba(198,255,61,0.08) 0%, rgba(198,255,61,0) 60%),
+        linear-gradient(155deg, #141414 0%, #070707 100%);
+      overflow: hidden;
+      color: var(--color-text);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top bar */
+    .top-bar {
+      padding: 44px 56px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 5;
+    }
+    .brand-wordmark {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .top-tag {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: rgba(250,250,247,0.58);
+    }
+
+    /* Manifesto */
+    .manifesto {
+      flex: 1;
+      padding: 60px 64px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 48px; height: 2px;
+      background: var(--color-accent);
+    }
+
+    .statement {
+      font-family: var(--font-heading);
+      font-size: 140px;
+      font-weight: 500;
+      line-height: 0.96;
+      letter-spacing: -0.045em;
+    }
+    .line-1, .line-2, .line-3 {
+      display: block;
+    }
+    .line-1 { color: rgba(250,250,247,0.35); }
+    .line-2 { color: rgba(250,250,247,0.65); }
+    .line-3 { color: var(--color-accent); font-style: italic; }
+
+    .statement-sub {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(250,250,247,0.7);
+      margin-top: 40px;
+      max-width: 640px;
+    }
+
+    /* Product strip at bottom */
+    .product-strip {
+      position: relative;
+      padding: 24px 56px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(250,250,247,0.1);
+    }
+    .product-mini {
+      width: 240px;
+      flex-shrink: 0;
+    }
+    .product-mini img {
+      width: 100%; height: auto;
+      display: block;
+    }
+    .product-meta {
+      flex: 1;
+      padding: 0 32px;
+      font-family: var(--font-body);
+    }
+    .product-meta-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-text);
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
+    }
+    .product-meta-sub {
+      font-size: 14px;
+      color: rgba(250,250,247,0.6);
+      letter-spacing: 0.12em;
+    }
+    .cta-lime {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 72px;
+      min-width: 220px;
+      padding: 0 36px;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 48px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="top-bar">
+      <div class="brand-wordmark">FJDynamics</div>
+      <div class="top-tag">FL3000 · LiDAR Mower</div>
+    </div>
+
+    <div class="manifesto">
+      <div class="eyebrow">Arriving now</div>
+      <div class="statement">
+        <span class="line-1">No wire.</span>
+        <span class="line-2">No RTK.</span>
+        <span class="line-3">No weekends.</span>
+      </div>
+      <p class="statement-sub">The FL3000 reads your lawn with 360° LiDAR and semantic vision. Setup takes 10 minutes. The boundary wire stays in the box — because there isn't one.</p>
+    </div>
+
+    <div class="product-strip">
+      <div class="product-mini"><img src="../brief/images/hero-2.png" alt=""></div>
+      <div class="product-meta">
+        <div class="product-meta-name">FL3000 · LiDAR Robotic Mower</div>
+        <div class="product-meta-sub">3,000 m² · 180 min · 33° max · IPX5</div>
+      </div>
+      <div class="cta-lime">Shop Now</div>
+    </div>
+  </div>
+</body>
+</html>

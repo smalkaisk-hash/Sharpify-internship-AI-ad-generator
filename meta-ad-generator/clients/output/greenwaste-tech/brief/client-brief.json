@@ -1,0 +1,103 @@
+{
+  "client_name": "Greenwaste Tech — Bioloģiskā kanalizācija",
+  "client_slug": "greenwaste-tech",
+  "contact_person": null,
+  "email": null,
+  "phone": null,
+  "website": "https://www.greenwaste-tech.com/",
+  "figma_file_url": null,
+  "language": "lv",
+  "target_audience": {
+    "raw": "Latvijas mājsaimniecības (privātmāju īpašnieki) bez centralizētās kanalizācijas pieslēguma — vai nu vēl nav atrisinājuši kanalizācijas jautājumu (jaunbūves) vai meklē septiķa/izsūknējamās akas nomaiņu.",
+    "demographics": "Latvijas privātmāju īpašnieki, 30-65 g.v., ārpus pilsētas vai priekšpilsētā, vidēji-augsts ienākumu līmenis, īpašumi 500-5000 m² zemes, bieži vien ar dārzu",
+    "psychographics": "Noguris no septiķa problēmām — asenizatora izsaukumi, smaka, raizes par pārpildījumu. Domā par ilgtermiņa risinājumu. Svarīga neatkarība no pašvaldības pakalpojumiem. Interesējas par ekoloģiskiem risinājumiem, ja tie atmaksājas. Vērtē garantijas un sertifikāciju.",
+    "pain_points": [
+      "Regulāri asenizatora izsaukumi un maksājumi (350–900€ gadā)",
+      "Smaka no septiķa, it īpaši vasarā",
+      "Bailes no pārpildījuma, it īpaši atvaļinājuma laikā",
+      "Papildu izdevumi par baktērijām, ķīmiju, remontiem",
+      "Septiķa/izsūknējamās akas vietā zaudē dārza platību",
+      "Likumdošanas prasības kļūst stingrākas — vecie septiķi vairs neder",
+      "Nav skaidra, vai sistēma strādās, kamēr nav mājās"
+    ],
+    "desires": [
+      "Automātiska sistēma, kas strādā bez iejaukšanās",
+      "Reāli nulles ekspluatācijas izdevumi",
+      "Īpašuma vērtības pieaugums",
+      "Ekoloģiski pārstrādāts ūdens dārzam + biodūņas kā mēslojums",
+      "Uzticama garantija — 5 gadi gan iekārtai, gan montāžai",
+      "Sertificēts risinājums ar CE un EN12566-3 atzīmi",
+      "Viens investīciju maksājums, nevis mūžīgas rēķina rindas"
+    ]
+  },
+  "offer": {
+    "main_offer": "Divfāžu biofiltrācijas automātiskā kanalizācijas sistēma — sertificēts risinājums ar 0€ ekspluatācijas izmaksām",
+    "secondary_offer": "Bezmaksas īpašuma 'veselības novērtējums' kā leadmagnēts",
+    "result_promise": "Vienreizēja investīcija, kas atmaksājas 3–6 gados. €350–900 ietaupījumi gadā. Nulles ekspluatācijas izmaksas. Bezmaksas dārza ūdens + biodūņas kā mēslojums.",
+    "duration": "Vienreizēja investīcija ilgtermiņā",
+    "price_mentioned": false,
+    "current_promo": "-10% atlaide darījumam, kas noslēgts līdz 1. februārim"
+  },
+  "differentiator": {
+    "raw": "Divfāžu biofiltrācijas tehnoloģija — atdarina dabisko sistēmu. Vienīgais šāda veida risinājums Latvijā. Nav jāsūknē aka. Nav papildus baktēriju. Nav bezjēdzīgu izdevumu.",
+    "key_points": [
+      "NAV JĀSŪKNĒ AKA — asenizatora zvani beidzas",
+      "NAV PAPILDUS BAKTĒRIJU — pašregulējošs bioloģiskais cikls",
+      "NAV BEZJĒDZĪGU IZDEVUMU — 0€ ekspluatācijas izmaksas",
+      "Vienīgais šāda veida risinājums Latvijā",
+      "Strādā autonomi — pat, kamēr neesi mājās",
+      "Divi blakusprodukti: tīrs ūdens dārzam + biodūņas kā mēslojums"
+    ]
+  },
+  "trust_signals": {
+    "raw": "EN12566-3 + CE sertifikāts, 5 gadu garantija, tikai sertificēti speciālisti drīkst uzstādīt, reāli klientu atsauksmes.",
+    "credentials": [
+      "EN12566-3 sertifikāts",
+      "CE marķējums",
+      "Laboratorijas pārbaudīts",
+      "5 gadu garantija — iekārtai UN montāžai",
+      "Tikai sertificēti speciālisti drīkst uzstādīt",
+      "Vienīgais šāda veida risinājums Latvijā"
+    ],
+    "social_proof": [
+      {
+        "author": "Aleksandrs",
+        "text": "Pasūtījums tika izpildīts laikā, precīzi, bez papildus izdevumiem, viss darbojās ok."
+      },
+      {
+        "author": "Klients",
+        "text": "Sadarbība bija laba, un dienas laikā viss tika uzstādīts... ļoti akurāti un labi paveikts darbs."
+      },
+      {
+        "author": "Klients",
+        "text": "Lielisks serviss — ļoti ātri un profesionāli. Arī nestandarta problēmu atrisināja."
+      }
+    ],
+    "personal_story": null
+  },
+  "client_acquisition": {
+    "method": "Mājaslapa + pieteikuma forma. Bezmaksas 'īpašuma veselības novērtējums' kā leadmagnēts.",
+    "funnel": "Reklāma → mājaslapa → bezmaksas novērtējuma pieteikums → konsultācija → līguma slēgšana"
+  },
+  "bonuses": [
+    "-10% atlaide, slēdzot līgumu līdz 1. februārim",
+    "Bezmaksas īpašuma 'veselības novērtējums' pirms pasūtījuma",
+    "Bezmaksas tīrs ūdens dārza laistīšanai",
+    "Bezmaksas biodūņas kā mēslojums"
+  ],
+  "guarantees": [
+    "5 gadu garantija iekārtai",
+    "5 gadu garantija montāžai",
+    "Sertificēta uzstādīšana"
+  ],
+  "capacity": null,
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 7,
+  "ad_strategy": {
+    "recommended_objective": "Lead Generation — bezmaksas novērtējuma pieteikumi",
+    "recommended_cta": "Pieteikties bezmaksas novērtējumam / Uzzināt vairāk",
+    "funnel_stage_focus": "Lielākā daļa ads top-of-funnel (prospecting) priekš privātmāju īpašniekiem; 1-2 retargeting ar cenas atlaidi (-10% līdz 1.feb)",
+    "audience_notes": "DTC — privātmāju īpašnieki. Informāla 'tu' forma (atbilst zīmola balsij). Atslēgas emocionālie triggeri: 'beidz maksāt par asenizatoru' + 'beidz raizēties' + 'tīrs dārza ūdens'. Racionālie: 350-900€ gadā, 3-6 gadu atmaksa, 5 gadu garantija, CE sertifikāts. Vizuāli — Ziemeļvalstu cleantech + daba (zaļi + zemes toņi), NE korporatīvs zils, NE medicīnisks balts."
+  }
+}

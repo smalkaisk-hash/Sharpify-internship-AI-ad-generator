@@ -4,6 +4,16 @@ import { NaqaaAdVideo } from "./NaqaaAd";
 import { NaqaaV1PainPoint } from "./ads/NaqaaV1-PainPoint";
 import { NaqaaV2ProductCarousel } from "./ads/NaqaaV2-ProductCarousel";
 import { NaqaaV3BeforeAfter } from "./ads/NaqaaV3-BeforeAfter";
+import { NaqaaRealLifeV1 } from "./ads/NaqaaRealLifeV1-ProblemSolution";
+import { NaqaaRealLifeV2 } from "./ads/NaqaaRealLifeV2-MorningRitual";
+import { NaqaaRealLifeV3 } from "./ads/NaqaaRealLifeV3-FourScents";
+import { SharpifyConstructionLV } from "./ads/SharpifyConstructionLV-FreeWebsite";
+import { SharpifyConstructionLVv2 } from "./ads/SharpifyConstructionLV-V2-AIHook";
+import { SharpifyConstructionLVv3 } from "./ads/SharpifyConstructionLV-V3-GoogleFail";
+import { SharpifyConstructionLVv4 } from "./ads/SharpifyConstructionLV-V4-Calculator";
+import { SharpifyConstructionLVv5 } from "./ads/SharpifyConstructionLV-V5-VsCompetitor";
+import { SharpifyConstructionLVv6 } from "./ads/SharpifyConstructionLV-V6-AICrane";
+import { TravelAdvantageLV } from "./ads/TravelAdvantageLV-V1-BookingVS";
 import { SharpifyV1PriceSlash } from "./ads/SharpifyV1-PriceSlash";
 import { SharpifyV2BearPresenter } from "./ads/SharpifyV2-BearPresenter";
 import { SharpifyV3CodingToSites } from "./ads/SharpifyV3-CodingToSites";
@@ -174,6 +184,108 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1080}
+      />
+
+      {/* --- Naqaa Beauty Real-Life Ads (9:16 Reels, Pexels footage) --- */}
+
+      {/* RL V1: Problem → Solution — dirty water macro → clean shower reveal */}
+      <Composition
+        id="Naqaa-RealLife-V1-ProblemSolution"
+        component={NaqaaRealLifeV1}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* RL V2: Morning Ritual — sunrise bathroom → hair shine → soft CTA */}
+      <Composition
+        id="Naqaa-RealLife-V2-MorningRitual"
+        component={NaqaaRealLifeV2}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* RL V3: 4 Aromāti — hero aromatic shower → 4 scent cards → CTA */}
+      <Composition
+        id="Naqaa-RealLife-V3-FourScents"
+        component={NaqaaRealLifeV3}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* --- Sharpify Construction (LV) — €500k+ revenue = free website --- */}
+      <Composition
+        id="Sharpify-Construction-LV"
+        component={SharpifyConstructionLV}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* Same but AI-generated bulldozer hook instead of Pexels demolition */}
+      <Composition
+        id="Sharpify-Construction-LV-V2-AIHook"
+        component={SharpifyConstructionLVv2}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V3: Google search — competitors everywhere, TEVIS TUR NAV red stamp */}
+      <Composition
+        id="Sharpify-Construction-LV-V3-GoogleFail"
+        component={SharpifyConstructionLVv3}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V4: Calculator math — 50 × 30% × €3k = €45,000 lost/month */}
+      <Composition
+        id="Sharpify-Construction-LV-V4-Calculator"
+        component={SharpifyConstructionLVv4}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V5: Split-screen — Konkurents (has site, bookings) vs Tu (empty) */}
+      <Composition
+        id="Sharpify-Construction-LV-V5-VsCompetitor"
+        component={SharpifyConstructionLVv5}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V6: AI crane lifting giant iPhone over construction site (Veo 3) */}
+      <Composition
+        id="Sharpify-Construction-LV-V6-AICrane"
+        component={SharpifyConstructionLVv6}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* --- Travel Advantage (LV) — Ineta K referral ads --- */}
+      <Composition
+        id="TravelAdvantage-LV-V1-BookingVS"
+        component={TravelAdvantageLV}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
       />
 
       {/* --- Sharpify Ads --- */}

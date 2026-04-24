@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1E2E24;
+      --color-secondary: #181616;
+      --color-accent: #DAB453;
+      --color-bg: #F5F1E8;
+      --color-text: #181616;
+      --color-cta-bg: #DAB453;
+      --color-cta-text: #181616;
+      --font-heading: 'Playfair Display', 'Georgia', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    .ad-frame {
+      width: 1080px; height: 1080px;
+      position: relative;
+      background: var(--color-bg);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Top bar */
+    .top-bar {
+      height: 110px;
+      background: var(--color-secondary);
+      color: var(--color-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      flex-shrink: 0;
+    }
+    .brand-wordmark {
+      font-family: var(--font-heading);
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.02em;
+    }
+    .top-bar-tagline {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.75);
+    }
+
+    /* Grid */
+    .grid-2x2 {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .panel {
+      position: relative;
+      padding: 52px 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .panel-image {
+      padding: 0;
+    }
+    .panel-image img {
+      position: absolute; top:0; left:0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .panel-image::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(30,46,36,0.15) 0%,
+        rgba(30,46,36,0.55) 60%,
+        rgba(24,22,22,0.85) 100%
+      );
+    }
+    .panel-image .panel-content {
+      position: relative;
+      z-index: 2;
+      color: var(--color-bg);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .panel-cream { background: var(--color-bg); color: var(--color-text); }
+    .panel-charcoal { background: var(--color-secondary); color: var(--color-bg); }
+    .panel-gold { background: var(--color-accent); color: var(--color-secondary); }
+
+    .panel-icon {
+      width: 72px; height: 72px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      flex-shrink: 0;
+    }
+    .panel-icon svg { width: 34px; height: 34px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .panel-gold .panel-icon { border-color: var(--color-secondary); }
+
+    .panel-label {
+      font-family: var(--font-heading);
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .panel-subline {
+      font-family: var(--font-body);
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: 0.72;
+      margin-top: 10px;
+    }
+    .panel-number {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      opacity: 0.55;
+    }
+
+    /* Bottom strip */
+    .bottom-strip {
+      height: 160px;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      flex-shrink: 0;
+    }
+    .bottom-strip .headline-serif {
+      font-family: var(--font-heading);
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--color-bg);
+      line-height: 1.1;
+      max-width: 480px;
+    }
+    .cta-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 320px;
+      height: 82px;
+      padding: 0 44px;
+      background: var(--color-accent);
+      color: var(--color-secondary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 48px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="top-bar">
+      <div class="brand-wordmark">TeMix</div>
+      <div class="top-bar-tagline">Vairumtirdzniecība · Rīga</div>
+    </div>
+
+    <div class="grid-2x2">
+      <!-- Panel 1: Dizaina sortiments (hero image bg) -->
+      <div class="panel panel-image">
+        <img src="../brief/images/hero-1.jpg" alt="">
+        <div class="panel-content">
+          <div class="panel-number">01</div>
+          <div>
+            <div class="panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.5L20 9l-4.5 3.8L17 19l-5-3-5 3 1.5-6.2L4 9l5.8-.5z"/></svg>
+            </div>
+            <div class="panel-label" style="margin-top:20px">Dizaina<br>sortiments</div>
+            <div class="panel-subline">Atlasīts, ne nejaušs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Bezmaksas piegāde -->
+      <div class="panel panel-cream">
+        <div class="panel-number">02</div>
+        <div>
+          <div class="panel-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+          </div>
+          <div class="panel-label" style="margin-top:20px">Bezmaksas<br>piegāde</div>
+          <div class="panel-subline">Virs 300€ pasūtījuma</div>
+        </div>
+      </div>
+
+      <!-- Panel 3: Atliktais maksājums -->
+      <div class="panel panel-charcoal">
+        <div class="panel-number">03</div>
+        <div>
+          <div class="panel-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 9h18M8 3v4M16 3v4M8 14h3M8 17h8"/></svg>
+          </div>
+          <div class="panel-label" style="margin-top:20px">Atliktais<br>maksājums</div>
+          <div class="panel-subline">7–14 dienas</div>
+        </div>
+      </div>
+
+      <!-- Panel 4: Mārketinga materiāli -->
+      <div class="panel panel-gold">
+        <div class="panel-number">04</div>
+        <div>
+          <div class="panel-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 15l5-5 4 4 3-3 6 6M16 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+          </div>
+          <div class="panel-label" style="margin-top:20px">Mārketinga<br>materiāli</div>
+          <div class="panel-subline">Bildes, apraksti gatavi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-strip">
+      <div class="headline-serif">Sadarbība,<br>kas atmaksājas</div>
+      <div class="cta-pill">Sazināties</div>
+    </div>
+  </div>
+</body>
+</html>

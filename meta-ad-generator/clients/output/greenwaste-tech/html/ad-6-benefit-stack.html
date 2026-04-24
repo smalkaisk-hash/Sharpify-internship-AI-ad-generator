@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --bg: #F4F1E8; --text-dark: #0D1411; --text-light: #F4F1E8;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad {
+      position: relative; width: 1080px; height: 1080px;
+      background: var(--bg);
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      grid-template-rows: auto 1fr auto;
+      overflow: hidden;
+      color: var(--text-dark);
+    }
+
+    /* Left: vertical photo column spanning all rows */
+    .photo-col {
+      grid-column: 1;
+      grid-row: 1 / span 3;
+      position: relative;
+      overflow: hidden;
+      background: var(--primary);
+    }
+    .photo-col img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      filter: brightness(0.65);
+    }
+    .photo-col-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(170deg, rgba(29,58,44,0.1) 0%, rgba(29,58,44,0.85) 100%);
+      display: flex; flex-direction: column;
+      padding: 48px 40px;
+    }
+    .col-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 16px;
+      background: rgba(13,20,17,0.7);
+      border: 1px solid rgba(180,224,97,0.4);
+      border-radius: 30px;
+      font-family: var(--fb); font-size: 10px; font-weight: 600;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--accent-bright);
+      width: fit-content;
+      backdrop-filter: blur(6px);
+      margin-bottom: auto;
+    }
+    .col-tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-bright); }
+    .col-headline {
+      font-family: var(--fh); font-size: 110px; font-weight: 500;
+      line-height: 0.88; letter-spacing: -0.04em;
+      color: var(--text-light);
+      text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .col-headline .l { color: var(--accent-bright); font-style: italic; }
+
+    .col-footer-meta {
+      font-family: var(--fb); font-size: 11px;
+      color: rgba(244,241,232,0.65);
+      letter-spacing: 0.22em; text-transform: uppercase;
+      margin-top: 16px;
+    }
+
+    /* Right: top bar */
+    .top-right {
+      grid-column: 2;
+      grid-row: 1;
+      padding: 40px 48px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .wm { font-family: var(--fh); font-size: 28px; font-weight: 500; color: var(--primary); letter-spacing: -0.01em; }
+    .wm .dot { color: var(--accent); }
+    .badge-mini {
+      font-family: var(--fb); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(13,20,17,0.6);
+    }
+
+    /* Right: benefits */
+    .benefits {
+      grid-column: 2;
+      grid-row: 2;
+      padding: 32px 48px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      justify-content: center;
+    }
+    .sub-line {
+      font-family: var(--fb); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(13,20,17,0.55);
+      margin-bottom: 6px;
+    }
+
+    .row {
+      display: flex; align-items: center; gap: 22px;
+      padding: 22px 26px;
+      background: #FFFFFF;
+      border-radius: 14px;
+      box-shadow: 0 2px 0 rgba(76,175,80,0.22), 0 8px 20px rgba(13,20,17,0.06);
+      border-left: 4px solid var(--accent);
+    }
+    .num { font-family: var(--fh); font-size: 42px; font-weight: 600; color: var(--accent); width: 48px; flex-shrink: 0; line-height: 1; }
+    .body { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .title { font-family: var(--fb); font-size: 18px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--primary); }
+    .desc { font-family: var(--fh); font-size: 28px; font-weight: 500; color: rgba(13,20,17,0.82); line-height: 1.18; }
+
+    /* Right: footer CTA */
+    .footer-cta {
+      grid-column: 2;
+      grid-row: 3;
+      padding: 20px 48px 36px;
+      display: flex; justify-content: center;
+    }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 70px; min-width: 100%;
+      background: var(--primary); color: var(--text-light);
+      font-family: var(--fb); font-weight: 700; font-size: 16px;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      border-radius: 48px;
+    }
+    .cta span { color: var(--accent-bright); margin-left: 12px; }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="photo-col">
+      <img src="../brief/images/hero-1.jpg">
+      <div class="photo-col-overlay">
+        <div class="col-tag">Iekšskats</div>
+        <div class="col-headline">Trīs<br><span class="l">NAV.</span></div>
+        <div class="col-footer-meta">Biofiltrācija · Latvija</div>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="badge-mini">Bio · LV</div>
+    </div>
+
+    <div class="benefits">
+      <div class="sub-line">Trīs lietas, ko tev NAV jādara</div>
+
+      <div class="row">
+        <div class="num">01</div>
+        <div class="body">
+          <div class="title">Nav jāsūknē aka</div>
+          <div class="desc">Asenizatora zvani beidzas šodien</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="num">02</div>
+        <div class="body">
+          <div class="title">Nav papildus baktēriju</div>
+          <div class="desc">Pašregulējošs bioloģiskais cikls</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="num">03</div>
+        <div class="body">
+          <div class="title">Nav mēneša rēķinu</div>
+          <div class="desc">0€ ekspluatācijas izmaksas</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="num">+</div>
+        <div class="body">
+          <div class="title">5 gadu garantija</div>
+          <div class="desc">Iekārtai un montāžai</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <div class="cta">Pieteikties <span>→</span></div>
+    </div>
+  </div>
+</body>
+</html>
