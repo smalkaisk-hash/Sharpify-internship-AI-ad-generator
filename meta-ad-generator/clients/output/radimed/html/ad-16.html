@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#040e1c;}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif;background:#040e1c;}
+
+.mesh{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 900px 700px at -5% 110%,rgba(0,180,216,0.13) 0%,transparent 55%),
+    radial-gradient(ellipse 700px 500px at 110% -5%,rgba(0,100,200,0.09) 0%,transparent 55%),
+    radial-gradient(ellipse 400px 400px at 50% 60%,rgba(0,180,216,0.03) 0%,transparent 70%),
+    #040e1c;
+}
+
+/* ─── LOGO ─── */
+.logo{
+  position:absolute;top:48px;left:52px;
+  height:52px;width:auto;
+  filter:brightness(0) invert(1);
+  z-index:10;
+}
+
+/* ─── HEADLINE — left-aligned ─── */
+.headline{
+  position:absolute;top:108px;left:52px;
+  z-index:10;
+}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:86px;line-height:0.88;
+  font-weight:700;letter-spacing:-0.03em;
+  color:#fff;
+}
+h1 em{font-style:italic;font-weight:400;color:#00B4D8;}
+
+/* ─── STATS — prominent right column ─── */
+.stats{
+  position:absolute;top:108px;right:52px;
+  display:flex;flex-direction:column;gap:4px;
+  align-items:flex-end;
+  z-index:10;
+}
+.stat{display:flex;flex-direction:column;align-items:flex-end;}
+.stat-val{
+  font-family:'Playfair Display',serif;
+  font-size:62px;font-weight:700;
+  color:#fff;line-height:0.86;
+}
+.stat-val em{font-style:normal;color:#00B4D8;}
+.stat-lbl{
+  font-size:10px;font-weight:600;
+  color:rgba(255,255,255,0.32);
+  text-transform:uppercase;letter-spacing:0.18em;
+  margin-bottom:10px;
+}
+
+/* ─── CIRCLES — diagnostic aperture style ─── */
+/* c1: left, largest, highest */
+.c1{
+  position:absolute;
+  top:358px;left:52px;
+  width:358px;height:358px;
+  border-radius:50%;overflow:hidden;
+  border:2px solid rgba(0,180,216,0.32);
+  box-shadow:0 0 36px rgba(0,180,216,0.16),0 12px 40px rgba(0,0,0,0.55);
+  z-index:8;
+}
+/* c2: center, medium, lowest */
+.c2{
+  position:absolute;
+  top:412px;left:430px;
+  width:308px;height:308px;
+  border-radius:50%;overflow:hidden;
+  border:2px solid rgba(0,180,216,0.28);
+  box-shadow:0 0 28px rgba(0,180,216,0.14),0 12px 36px rgba(0,0,0,0.5);
+  z-index:8;
+}
+/* c3: right, smallest, mid-height */
+.c3{
+  position:absolute;
+  top:378px;left:756px;
+  width:272px;height:272px;
+  border-radius:50%;overflow:hidden;
+  border:2px solid rgba(0,180,216,0.24);
+  box-shadow:0 0 24px rgba(0,180,216,0.12),0 10px 32px rgba(0,0,0,0.45);
+  z-index:8;
+}
+
+/* 52 + 358 + 20 + 308 + 18 + 272 + 52 = 1080 */
+
+.c-img{width:100%;height:100%;object-fit:cover;object-position:center;}
+
+/* ─── BENEFIT TEXT — below each circle ─── */
+.tl1{position:absolute;top:734px;left:52px;width:358px;text-align:center;z-index:10;}
+.tl2{position:absolute;top:740px;left:430px;width:308px;text-align:center;z-index:10;}
+.tl3{position:absolute;top:668px;left:756px;width:272px;text-align:center;z-index:10;}
+
+.t-step{
+  font-size:9px;font-weight:700;
+  letter-spacing:0.24em;text-transform:uppercase;
+  color:#00B4D8;margin-bottom:7px;
+}
+.t-title{
+  font-family:'Playfair Display',serif;
+  font-size:23px;font-weight:700;
+  color:#fff;line-height:1.05;margin-bottom:7px;
+}
+.t-desc{
+  font-size:12px;font-weight:400;
+  color:rgba(255,255,255,0.52);
+  line-height:1.44;
+}
+
+/* ─── CTA — full width ─── */
+.cta{
+  position:absolute;
+  bottom:42px;left:52px;right:52px;
+  font-size:23px;font-weight:700;
+  color:#040e1c;background:#00B4D8;
+  padding:26px;
+  border-radius:14px;
+  text-align:center;
+  letter-spacing:0.02em;
+  z-index:10;
+  box-shadow:0 6px 52px rgba(0,180,216,0.46);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="mesh"></div>
+
+  <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+
+  <div class="headline">
+    <h1>Precīza.<br><em>Ātra.</em><br>Droša.</h1>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val">20<em>+</em></div>
+      <div class="stat-lbl">Gadu pieredze</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">4</div>
+      <div class="stat-lbl">Radiologi</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">24<em>h</em></div>
+      <div class="stat-lbl">Rezultāts</div>
+    </div>
+  </div>
+
+  <!-- Circle 1 — Nav radiācijas -->
+  <div class="c1">
+    <img class="c-img" src="../images/mri-patient.png" alt="">
+  </div>
+  <div class="tl1">
+    <div class="t-step">01 — Drošība</div>
+    <div class="t-title">Nav radiācijas</div>
+    <div class="t-desc">Pilnīgi drošs grūtniecēm, bērniem un visiem pacientiem</div>
+  </div>
+
+  <!-- Circle 2 — 1.5T MRI -->
+  <div class="c2">
+    <img class="c-img" src="../images/mri-brain.png" alt="" style="object-position:center 30%;">
+  </div>
+  <div class="tl2">
+    <div class="t-step">02 — Precizitāte</div>
+    <div class="t-title">1.5T MRI tehnoloģija</div>
+    <div class="t-desc">Atklāj audzējus, insulta pazīmes un locītavu bojājumus</div>
+  </div>
+
+  <!-- Circle 3 — Rezultāts 24h -->
+  <div class="c3">
+    <img class="c-img" src="../images/mri-data.png" alt="">
+  </div>
+  <div class="tl3">
+    <div class="t-step">03 — Ātrums</div>
+    <div class="t-title">Rezultāts 24 stundās</div>
+    <div class="t-desc">Pilns radioloģiskais ziņojums tieši jūsu ārstam</div>
+  </div>
+
+  <div class="cta">Pierakstīties →</div>
+</div>
+</body>
+</html>

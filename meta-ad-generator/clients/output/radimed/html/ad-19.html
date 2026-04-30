@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#020c18;}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif;background:#020c18;}
+
+/* Full-bleed editorial photo — treated as texture */
+.photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 40%;
+  opacity:0.28;
+}
+
+/* Strong top gradient — darkens top for headline legibility */
+.overlay-top{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:520px;
+  background:linear-gradient(180deg,
+    rgba(2,12,24,0.92) 0%,
+    rgba(2,12,24,0.70) 35%,
+    rgba(2,12,24,0.30) 68%,
+    rgba(2,12,24,0) 100%
+  );
+}
+
+/* Strong bottom gradient — darkens bottom for stats + CTA */
+.overlay-bottom{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:560px;
+  background:linear-gradient(0deg,
+    rgba(2,12,24,1) 0%,
+    rgba(2,12,24,0.92) 28%,
+    rgba(2,12,24,0.65) 55%,
+    rgba(2,12,24,0) 100%
+  );
+}
+
+/* Subtle horizontal scan-line texture — medical readout aesthetic */
+.scan-lines{
+  position:absolute;
+  top:320px;bottom:360px;
+  left:0;right:0;
+  background:repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 17px,
+    rgba(0,180,216,0.022) 17px,
+    rgba(0,180,216,0.022) 18px
+  );
+  pointer-events:none;
+}
+
+/* Cyan radial spotlight in center — draws eye to middle */
+.spotlight{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 560px 420px at 50% 52%, rgba(0,180,216,0.07) 0%, transparent 70%);
+}
+
+/* Logo */
+.logo{
+  position:absolute;top:52px;left:60px;
+  height:68px;width:auto;
+  filter:brightness(0) invert(1);
+  z-index:10;
+  filter:brightness(0) invert(1) drop-shadow(0 2px 12px rgba(0,0,0,0.8));
+}
+
+/* Badge */
+.badge{
+  position:absolute;top:60px;right:60px;
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.82);
+  border:1px solid rgba(0,180,216,0.4);
+  padding:9px 20px;border-radius:100px;
+  background:rgba(0,180,216,0.07);
+  letter-spacing:0.06em;
+  z-index:10;
+}
+
+/* Eyebrow — centered */
+.eyebrow{
+  position:absolute;top:162px;
+  left:0;right:0;
+  text-align:center;
+  font-size:14px;font-weight:600;
+  letter-spacing:0.24em;text-transform:uppercase;
+  color:#00B4D8;
+  z-index:10;
+}
+
+/* Big editorial headline — centered */
+h1{
+  position:absolute;top:200px;
+  left:60px;right:60px;
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:92px;line-height:0.91;
+  font-weight:700;letter-spacing:-0.03em;
+  color:#fff;
+  z-index:10;
+}
+h1 em{font-style:italic;font-weight:400;color:#00B4D8;}
+
+/* Sub copy — centered */
+.sub{
+  position:absolute;top:498px;
+  left:100px;right:100px;
+  text-align:center;
+  font-size:21px;font-weight:400;
+  color:rgba(255,255,255,0.55);
+  line-height:1.55;
+  z-index:10;
+}
+
+/* Stats bar — horizontal strip above CTA */
+.stats{
+  position:absolute;bottom:250px;
+  left:60px;right:60px;
+  display:flex;
+  border-top:1px solid rgba(0,180,216,0.14);
+  border-bottom:1px solid rgba(0,180,216,0.14);
+  z-index:10;
+}
+.stat{
+  flex:1;
+  padding:18px 0;
+  border-right:1px solid rgba(0,180,216,0.12);
+  text-align:center;
+}
+.stat:last-child{border-right:none;}
+.stat-num{
+  font-family:'Playfair Display',serif;
+  font-size:34px;font-weight:700;
+  color:#fff;line-height:1;
+  margin-bottom:5px;
+}
+.stat-num em{font-style:normal;color:#00B4D8;}
+.stat-lbl{
+  font-size:10px;font-weight:600;
+  color:rgba(255,255,255,0.36);
+  text-transform:uppercase;
+  letter-spacing:0.14em;
+}
+
+/* CTA — centered */
+.cta{
+  position:absolute;bottom:160px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:22px;font-weight:700;
+  color:#020c18;background:#00B4D8;
+  padding:24px 120px;
+  border-radius:13px;
+  white-space:nowrap;
+  letter-spacing:0.01em;
+  box-shadow:0 6px 52px rgba(0,180,216,0.50);
+  z-index:10;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="photo" src="../images/mri-hands.png">
+  <div class="overlay-top"></div>
+  <div class="overlay-bottom"></div>
+  <div class="scan-lines"></div>
+  <div class="spotlight"></div>
+
+  <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  <div class="badge">RĪGAS VADOŠĀ MRI KLĪNIKA</div>
+
+  <div class="eyebrow">Pilnīga ķermeņa diagnostika</div>
+
+  <h1>Tavs ķermenis<br>stāsta vairāk<br><em>nekā jūti.</em></h1>
+
+  <div class="sub">MRI diagnostika ar milimetru precizitāti. Bez radiācijas. Rezultāts tavā ārstam 24 stundās.</div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">20<em>+</em></div>
+      <div class="stat-lbl">Gadu pieredze</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><em>0</em></div>
+      <div class="stat-lbl">Radiācija</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4</div>
+      <div class="stat-lbl">Radiologi</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24<em>h</em></div>
+      <div class="stat-lbl">Rezultāts</div>
+    </div>
+  </div>
+
+  <div class="cta">Pierakstīties →</div>
+</div>
+</body>
+</html>

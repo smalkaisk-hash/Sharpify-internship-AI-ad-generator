@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;}
+.ad{
+  width:1080px;height:1080px;
+  display:grid;grid-template-columns:460px 1fr;
+  overflow:hidden;
+  font-family:'Sora',sans-serif;
+}
+
+/* ── LEFT: photo panel ── */
+.left{position:relative;overflow:hidden;}
+.left img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 25%;
+  filter:saturate(0.7) contrast(1.05);
+}
+.left-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,0.10) 0%,
+    rgba(0,0,0,0.05) 60%,
+    rgba(10,10,10,1.00) 100%
+  );
+}
+/* big stat overlay — bottom left */
+.left-stat{
+  position:absolute;bottom:60px;left:40px;
+}
+.left-stat-n{
+  font-size:100px;font-weight:800;line-height:1;
+  color:#E8721A;
+  text-shadow:0 0 40px rgba(232,114,26,0.55);
+}
+.left-stat-l{
+  font-size:16px;font-weight:600;
+  color:rgba(255,255,255,0.55);
+  text-transform:uppercase;letter-spacing:0.12em;
+  margin-top:4px;
+}
+
+/* ── RIGHT: process panel ── */
+.right{
+  background:#0A0A0A;
+  padding:52px 52px 0 44px;
+  display:flex;flex-direction:column;
+  position:relative;
+}
+
+/* subtle bg glow */
+.right::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 500px 600px at 100% 80%,rgba(232,114,26,0.07) 0%,transparent 60%);
+}
+
+.logo-pill{
+  display:inline-block;align-self:flex-start;
+  background:#E8721A;padding:10px 20px;border-radius:6px;
+  font-size:19px;font-weight:700;color:#fff;letter-spacing:0.06em;
+  margin-bottom:28px;
+  position:relative;z-index:2;
+}
+
+.headline{
+  font-size:60px;font-weight:800;line-height:0.92;
+  color:#fff;letter-spacing:-0.02em;
+  margin-bottom:12px;
+  position:relative;z-index:2;
+}
+.headline em{font-style:normal;color:#E8721A;}
+
+.sub{
+  font-size:17px;font-weight:400;
+  color:rgba(255,255,255,0.36);line-height:1.5;
+  margin-bottom:36px;
+  position:relative;z-index:2;
+}
+
+/* Steps */
+.steps{
+  display:flex;flex-direction:column;gap:0;
+  flex:1;
+  position:relative;z-index:2;
+}
+
+/* vertical orange connector — left of numbers */
+.steps::before{
+  content:'';
+  position:absolute;
+  left:22px;top:28px;bottom:28px;
+  width:2px;
+  background:linear-gradient(180deg,#E8721A 0%,rgba(232,114,26,0.20) 100%);
+  z-index:0;
+}
+
+.step{
+  display:flex;align-items:flex-start;gap:20px;
+  padding:16px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  position:relative;z-index:1;
+}
+.step:last-child{border-bottom:none;}
+
+.step-num{
+  width:46px;height:46px;flex-shrink:0;
+  background:#E8721A;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:#fff;
+}
+.step:nth-child(n+2) .step-num{
+  background:#141414;border:2px solid #E8721A;color:#E8721A;
+}
+
+.step-text{display:flex;flex-direction:column;gap:4px;padding-top:6px;}
+.step-title{
+  font-size:19px;font-weight:700;color:#fff;line-height:1.2;
+}
+.step-desc{
+  font-size:14px;font-weight:400;
+  color:rgba(255,255,255,0.36);line-height:1.50;
+}
+
+/* CTA */
+.cta-wrap{
+  padding:24px 0 52px;
+  position:relative;z-index:2;
+}
+.cta{
+  display:block;width:100%;
+  background:#E8721A;color:#fff;
+  font-size:20px;font-weight:700;
+  padding:22px;border-radius:10px;text-align:center;
+  letter-spacing:0.02em;
+  box-shadow:0 6px 40px rgba(232,114,26,0.38);
+  margin-bottom:14px;
+}
+.phone{
+  text-align:center;
+  font-size:14px;font-weight:500;
+  color:rgba(255,255,255,0.26);letter-spacing:0.06em;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- LEFT -->
+  <div class="left">
+    <img src="../brief/images/roof-workers-bg.png" alt="">
+    <div class="left-overlay"></div>
+    <div class="left-stat">
+      <div class="left-stat-n">500+</div>
+      <div class="left-stat-l">uzstādīti objekti</div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+    <div class="logo-pill">JP Solutions</div>
+
+    <div class="headline">No zvana<br>līdz <em>sertifikātam.</em></div>
+    <div class="sub">4 soļi — viss iekļauts, bez raizēm.</div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <div class="step-title">Bezmaksas konsultācija</div>
+          <div class="step-desc">Izvērtējam objektu un drošības vajadzības</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <div class="step-title">Projekta izstrāde</div>
+          <div class="step-desc">Sistēma projektēta pēc LVS EN standartiem</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <div class="step-title">Profesionāla uzstādīšana</div>
+          <div class="step-desc">Sertificēta montāža un darbu pieņemšana</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <div class="step-title">Sertifikāts un apkope</div>
+          <div class="step-desc">Derīgs dokuments + ikgadējs atgādinājums</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-wrap">
+      <div class="cta">Sākt ar bezmaksas konsultāciju →</div>
+      <div class="phone">+371 264 47394 · jpsolutions.lv</div>
+    </div>
+
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{document.title='fonts-ready';});</script>
+</body>
+</html>

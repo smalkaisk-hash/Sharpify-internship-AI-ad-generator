@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad {
+  width:1080px; height:1080px;
+  position:relative; overflow:hidden;
+  background:#f8eae8;
+  display:flex;
+}
+
+/* Left content panel */
+.left {
+  width:520px;
+  height:1080px;
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  z-index:10;
+}
+
+/* Dark header strip — holds white logo */
+.left-header {
+  height:112px;
+  flex-shrink:0;
+  background:linear-gradient(135deg,#1e0316 0%,#2a0520 60%,#220418 100%);
+  display:flex;
+  align-items:center;
+  padding:0 52px;
+  position:relative;
+}
+.left-header::after {
+  content:'';
+  position:absolute;
+  bottom:0; left:52px; right:0;
+  height:1px;
+  background:linear-gradient(90deg,rgba(232,150,184,0.65) 0%,rgba(232,150,184,0.18) 100%);
+}
+.logo-img { height:66px; display:block; }
+
+/* Cream content body */
+.left-body {
+  flex:1;
+  background:linear-gradient(160deg,#fdf5f0 0%,#f9eaec 50%,#f5e4e8 100%);
+  padding:42px 52px 0;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+/* Rose seam between panels */
+.left::after {
+  content:'';
+  position:absolute;
+  top:112px; right:0; bottom:80px;
+  width:1px;
+  background:linear-gradient(180deg,transparent 0%,rgba(181,68,90,0.42) 18%,rgba(181,68,90,0.62) 50%,rgba(181,68,90,0.42) 82%,transparent 100%);
+}
+
+.hook {
+  font-family:'DM Sans',sans-serif;
+  font-size:15px; font-weight:400; font-style:italic;
+  color:rgba(150,50,85,0.80);
+  letter-spacing:0.025em;
+  margin-bottom:16px;
+}
+
+.headline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:66px; line-height:0.88;
+  font-weight:300; font-style:italic;
+  color:#1e0416;
+  letter-spacing:-0.022em;
+  margin-bottom:16px;
+}
+.headline em {
+  font-style:italic; font-weight:700;
+  color:#b5445a;
+}
+
+.divider {
+  display:flex; align-items:center; gap:10px; margin-bottom:20px;
+}
+.divider-line {
+  flex:1; height:1px;
+  background:linear-gradient(90deg,rgba(181,68,90,0.44) 0%,transparent 100%);
+}
+.divider-gem {
+  width:5px; height:5px;
+  background:rgba(181,68,90,0.65);
+  transform:rotate(45deg);
+  flex-shrink:0;
+}
+
+.services {
+  display:flex; flex-direction:column;
+  gap:0;
+  flex:1;
+}
+.service-item {
+  display:flex; align-items:center; gap:18px;
+  padding:24px 0;
+  border-bottom:1px solid rgba(181,68,90,0.14);
+}
+.service-item:first-child { border-top:1px solid rgba(181,68,90,0.14); }
+.service-icon {
+  width:40px; height:40px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(181,68,90,0.08);
+  border-radius:50%;
+  border:1px solid rgba(181,68,90,0.18);
+}
+.service-meta { display:flex; flex-direction:column; gap:3px; }
+.service-name {
+  font-family:'DM Sans',sans-serif;
+  font-size:18px; font-weight:500;
+  color:#1e0416;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+.service-desc {
+  font-family:'DM Sans',sans-serif;
+  font-size:15px; font-weight:300; font-style:italic;
+  color:rgba(150,50,85,0.78);
+  letter-spacing:0.01em;
+}
+
+.cta {
+  margin-top:auto;
+  display:block;
+  background:linear-gradient(135deg,#9b1a52 0%,#c44880 52%,#d4607a 100%);
+  color:#fdf5f0;
+  font-family:'DM Sans',sans-serif;
+  font-size:19px; font-weight:600;
+  padding:26px 32px;
+  border-radius:10px;
+  text-align:center;
+  letter-spacing:0.05em;
+  box-shadow:0 8px 40px rgba(181,68,90,0.28),0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom:60px;
+}
+
+/* Right photo panel */
+.right {
+  flex:1;
+  position:relative;
+  overflow:hidden;
+}
+.right-img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:38% 8%;
+  filter:saturate(1.06) contrast(1.02) brightness(1.01);
+}
+.right-vignette-l {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg,rgba(253,241,239,1.00) 0%,rgba(253,241,239,0.88) 5%,rgba(252,239,237,0.62) 13%,rgba(252,239,237,0.34) 24%,rgba(252,239,237,0.13) 38%,rgba(252,239,237,0.04) 52%,transparent 68%);
+}
+.right-vignette-b {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(248,234,232,0.20) 75%,rgba(248,234,232,0.44) 100%);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- Left panel -->
+  <div class="left">
+
+    <div class="left-header">
+      <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+    </div>
+
+    <div class="left-body">
+      <div class="hook">Dari visu, lai izskatītos ideāli vasarai?</div>
+
+      <div class="headline">
+        Ideāla āda<br>sākas ar<br><em>izvēli</em>
+      </div>
+
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-gem"></div>
+      </div>
+
+      <div class="services">
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+              <path d="M11 2L12.4 9.6L20 11L12.4 12.4L11 20L9.6 12.4L2 11L9.6 9.6Z" stroke="rgba(181,68,90,0.88)" stroke-width="1.2" stroke-linejoin="round" fill="rgba(181,68,90,0.12)"/>
+              <circle cx="11" cy="11" r="2" fill="rgba(181,68,90,0.58)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">IPL</span>
+            <span class="service-desc">Ādas tonim, pigmentācijai un apsārtumam</span>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+              <circle cx="5" cy="5" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="11" cy="5" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="17" cy="5" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="5" cy="11" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="11" cy="11" r="2.2" fill="rgba(181,68,90,0.45)" stroke="rgba(181,68,90,0.88)" stroke-width="1"/>
+              <circle cx="17" cy="11" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="5" cy="17" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="11" cy="17" r="1.6" fill="rgba(181,68,90,0.82)"/>
+              <circle cx="17" cy="17" r="1.6" fill="rgba(181,68,90,0.82)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">RF mikro adatas</span>
+            <span class="service-desc">Ādas atjaunošanai</span>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="16" height="20" viewBox="0 0 18 22" fill="none">
+              <path d="M10.5 1L2 13H8.5L7 21L16 9H9.5L10.5 1Z" stroke="rgba(181,68,90,0.88)" stroke-width="1.2" stroke-linejoin="round" fill="rgba(181,68,90,0.12)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">Lāzerepilācija</span>
+            <span class="service-desc">Ilgstošam rezultātam</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cta">Rezervē savu vizīti →</div>
+    </div>
+
+  </div>
+
+  <!-- Right photo panel -->
+  <div class="right">
+    <img class="right-img" src="../images/woman-smooth.jpg" alt="">
+    <div class="right-vignette-l"></div>
+    <div class="right-vignette-b"></div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

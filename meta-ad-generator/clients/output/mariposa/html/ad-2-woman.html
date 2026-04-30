@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#100610; }
+
+/* Full-bleed woman — smooth skin hero */
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 8%;
+  filter:saturate(1.04) contrast(1.02) brightness(1.02);
+}
+
+/* Top vignette for logo */
+.vig-top {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(10,4,10,0.55) 0%,
+    rgba(10,4,10,0.12) 14%,
+    transparent 30%
+  );
+}
+
+/* Bottom gradient — lifts at 30%, dense by 58% */
+.vig-bottom {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent           28%,
+    rgba(10,4,10,0.25)   40%,
+    rgba(10,4,10,0.65)   52%,
+    rgba(10,4,10,0.90)   62%,
+    rgba(10,4,10,0.97)   72%,
+    rgba(10,4,10,1.00)   82%
+  );
+}
+
+/* Edge depth */
+.vig-edges {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 92% 92% at 50% 50%,
+    transparent 46%,
+    rgba(10,4,10,0.16) 72%,
+    rgba(10,4,10,0.40) 100%
+  );
+}
+
+/* Top bar */
+.top {
+  position:absolute; top:52px; left:60px; right:60px;
+  display:flex; justify-content:flex-end; align-items:center;
+  z-index:20;
+}
+.logo-img {
+  height:96px;
+  display:block;
+}
+
+/* Content block */
+.content {
+  position:absolute;
+  bottom:210px; left:60px; right:60px;
+  z-index:20;
+  text-align:center;
+}
+
+/* Hook question — one line */
+.hook {
+  font-family:'DM Sans', sans-serif;
+  font-size:19px; font-weight:400; font-style:italic;
+  color:rgba(214,175,130,0.88);
+  letter-spacing:0.03em;
+  margin-bottom:16px;
+}
+
+/* Main answer headline */
+.headline {
+  font-family:'Cormorant Garamond', serif;
+  font-size:82px; line-height:0.90;
+  font-weight:300; font-style:italic;
+  color:#f8f0ea;
+  letter-spacing:-0.02em;
+  margin-bottom:22px;
+  text-shadow:0 3px 36px rgba(10,4,10,0.50);
+}
+.headline em {
+  font-style:italic; font-weight:700;
+  color:#d4a97a;
+}
+
+/* Service labels */
+.chips {
+  display:flex; justify-content:center; gap:16px;
+  align-items:center;
+  margin-top:32px;
+}
+.chip {
+  display:flex; align-items:center; gap:12px;
+  font-family:'DM Sans', sans-serif;
+  font-size:15px; font-weight:500;
+  color:rgba(196,149,108,0.92);
+  text-transform:uppercase; letter-spacing:0.16em;
+  white-space:nowrap;
+  padding:12px 22px;
+  border-radius:40px;
+  border:1px solid rgba(196,149,108,0.30);
+  background:rgba(196,149,108,0.08);
+  backdrop-filter:blur(6px);
+}
+
+/* CTA */
+.cta-wrap {
+  position:absolute; bottom:90px; left:60px; right:60px;
+  z-index:20;
+}
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #a86e38 0%, #c4956c 52%, #d4a97c 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:20px; font-weight:600;
+  padding:26px; border-radius:10px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 56px rgba(196,149,108,0.22);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <img class="bg" src="../images/woman-smooth.jpg" alt="">
+
+  <div class="vig-top"></div>
+  <div class="vig-bottom"></div>
+  <div class="vig-edges"></div>
+
+  <!-- Top bar -->
+  <div class="top">
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Hook from Primary Text #1 -->
+    <div class="hook">Dari visu, lai izskatītos ideāli vasarai?</div>
+
+    <!-- Answer headline -->
+    <div class="headline">
+      Atjauno savu ādu<br>pirms <em>vasaras</em>
+    </div>
+
+    <!-- Services -->
+    <div class="chips">
+
+      <div class="chip">
+        <svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 2L12.4 9.6L20 11L12.4 12.4L11 20L9.6 12.4L2 11L9.6 9.6Z" stroke="rgba(196,149,108,0.92)" stroke-width="1.1" stroke-linejoin="round" fill="rgba(196,149,108,0.10)"/>
+          <circle cx="11" cy="11" r="2" fill="rgba(196,149,108,0.55)"/>
+        </svg>
+        IPL
+      </div>
+
+      <div class="chip">
+        <svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="5" cy="5" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="11" cy="5" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="17" cy="5" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="5" cy="11" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="11" cy="11" r="2.4" fill="rgba(196,149,108,0.55)" stroke="rgba(196,149,108,0.92)" stroke-width="1"/>
+          <circle cx="17" cy="11" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="5" cy="17" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="11" cy="17" r="1.8" fill="rgba(196,149,108,0.85)"/>
+          <circle cx="17" cy="17" r="1.8" fill="rgba(196,149,108,0.85)"/>
+        </svg>
+        RF mikro adatas
+      </div>
+
+      <div class="chip">
+        <svg width="22" height="28" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5 1L2 13H8.5L7 21L16 9H9.5L10.5 1Z" stroke="rgba(196,149,108,0.92)" stroke-width="1.1" stroke-linejoin="round" fill="rgba(196,149,108,0.10)"/>
+        </svg>
+        Lāzerepilācija
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <div class="cta">Rezervē savu vizīti →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

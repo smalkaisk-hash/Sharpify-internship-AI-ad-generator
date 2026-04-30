@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#020c18;}
+
+.ad{
+  width:1080px;height:1080px;
+  position:relative;overflow:hidden;
+  font-family:'DM Sans',sans-serif;
+  background:#020c18;
+}
+
+.photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center center;
+  opacity:0.22;
+}
+
+.overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(2,12,24,0.60) 0%,
+      rgba(2,12,24,0.10) 28%,
+      rgba(2,12,24,0.10) 68%,
+      rgba(2,12,24,0.95) 100%
+    ),
+    radial-gradient(ellipse 700px 600px at 50% 48%,rgba(0,180,216,0.055) 0%,transparent 65%);
+}
+
+/* Subtle horizontal scan lines texture */
+.scanlines{
+  position:absolute;inset:0;
+  background-image:repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,180,216,0.012) 3px,
+    rgba(0,180,216,0.012) 4px
+  );
+  pointer-events:none;
+}
+
+/* TOP */
+.topbar{
+  position:absolute;top:52px;left:64px;right:64px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:5;
+}
+.logo{height:78px;width:auto;filter:brightness(0) invert(1);}
+.badge{
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.82);
+  border:1px solid rgba(0,180,216,0.4);
+  padding:9px 20px;border-radius:100px;
+  background:rgba(0,180,216,0.07);
+  letter-spacing:0.06em;
+}
+
+/* CENTERED POSTER STATEMENT */
+.poster{
+  position:absolute;
+  top:50%;left:64px;right:64px;
+  transform:translateY(-55%);
+  z-index:5;
+  text-align:center;
+}
+
+.eyebrow{
+  font-size:17px;font-weight:600;
+  letter-spacing:0.26em;text-transform:uppercase;
+  color:#00B4D8;margin-bottom:36px;
+}
+
+.lines{
+  margin-bottom:36px;
+}
+.line{
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:122px;line-height:0.90;
+  font-weight:700;
+  letter-spacing:-0.03em;
+  color:#fff;
+}
+.line.accent{
+  font-style:italic;
+  font-weight:400;
+  color:#00B4D8;
+  font-size:110px;
+}
+
+.rule{
+  width:72px;height:2px;
+  background:linear-gradient(90deg,rgba(0,180,216,0),rgba(0,180,216,0.6) 40%,rgba(0,180,216,0.6) 60%,rgba(0,180,216,0));
+  margin:0 auto 32px;
+}
+
+.sub{
+  font-size:21px;font-weight:400;
+  color:rgba(255,255,255,0.58);
+  line-height:1.5;
+  max-width:580px;
+  margin:0 auto;
+}
+.sub strong{color:rgba(255,255,255,0.85);font-weight:600;}
+
+/* BOTTOM */
+.bottom{
+  position:absolute;
+  bottom:160px;left:64px;right:64px;
+  display:flex;align-items:center;justify-content:center;
+  gap:36px;
+  z-index:5;
+}
+.cta{
+  font-size:21px;font-weight:700;
+  color:#020c18;background:#00B4D8;
+  padding:21px 62px;
+  border-radius:12px;
+  letter-spacing:0.01em;
+  box-shadow:0 4px 28px rgba(0,180,216,0.38);
+}
+.phone{
+  font-size:18px;font-weight:500;
+  color:rgba(255,255,255,0.5);
+}
+.phone strong{color:#fff;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="photo" src="../images/mri-brain.png">
+  <div class="overlay"></div>
+  <div class="scanlines"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  </div>
+
+  <div class="poster">
+    <div class="eyebrow">MRI diagnostika</div>
+    <div class="lines">
+      <span class="line">Bez sāpēm.</span>
+      <span class="line">Bez rindas.</span>
+      <span class="line accent">Bez šaubām.</span>
+    </div>
+    <div class="sub">MRI izmeklējums. <strong>45 minūtes.</strong> Pilns radioloģiskais ziņojums <strong>24 stundās</strong> no 4 radiologiem.</div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta">Pierakstīties →</div>
+  </div>
+</div>
+</body>
+</html>

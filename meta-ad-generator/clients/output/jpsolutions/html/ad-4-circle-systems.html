@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#07090a;}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif;background:#07090a;}
+
+.mesh{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 900px 650px at -8% 108%,rgba(232,114,26,0.15) 0%,transparent 58%),
+    radial-gradient(ellipse 700px 500px at 112% -5%,rgba(180,70,0,0.09) 0%,transparent 55%),
+    radial-gradient(ellipse 500px 500px at 55% 55%,rgba(232,114,26,0.04) 0%,transparent 70%),
+    #07090a;
+}
+
+/* thin horizontal rule — design detail */
+.rule{
+  position:absolute;top:98px;left:52px;right:52px;
+  height:1px;background:rgba(255,255,255,0.06);
+  z-index:5;
+}
+
+/* LOGO */
+.logo-pill{
+  position:absolute;top:42px;left:52px;
+  background:#E8721A;padding:11px 22px;border-radius:6px;
+  font-family:'DM Sans',sans-serif;font-size:20px;font-weight:700;
+  color:#fff;letter-spacing:0.06em;
+  z-index:10;
+}
+
+/* HEADLINE — left */
+.headline{
+  position:absolute;top:120px;left:52px;
+  z-index:10;
+}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:84px;line-height:0.88;
+  font-weight:700;letter-spacing:-0.02em;
+  color:#fff;
+}
+h1 em{font-style:italic;font-weight:400;color:#E8721A;}
+
+/* STATS — right column */
+.stats{
+  position:absolute;top:120px;right:52px;
+  display:flex;flex-direction:column;gap:4px;
+  align-items:flex-end;
+  z-index:10;
+}
+.stat{display:flex;flex-direction:column;align-items:flex-end;}
+.stat-val{
+  font-family:'Playfair Display',serif;
+  font-size:58px;font-weight:700;
+  color:#fff;line-height:0.88;
+}
+.stat-val em{font-style:normal;color:#E8721A;}
+.stat-lbl{
+  font-size:9px;font-weight:700;
+  color:rgba(255,255,255,0.28);
+  text-transform:uppercase;letter-spacing:0.22em;
+  margin-bottom:10px;
+}
+
+/* CIRCLES — 348 / 300 / 264 wide */
+/* x-positions: 52, 416, 732 */
+.c1{
+  position:absolute;top:370px;left:52px;
+  width:348px;height:348px;border-radius:50%;overflow:hidden;
+  border:2px solid rgba(232,114,26,0.30);
+  box-shadow:0 0 40px rgba(232,114,26,0.16),0 12px 48px rgba(0,0,0,0.65);
+  z-index:8;
+}
+.c2{
+  position:absolute;top:408px;left:416px;
+  width:300px;height:300px;border-radius:50%;overflow:hidden;
+  border:2px solid rgba(232,114,26,0.22);
+  box-shadow:0 0 28px rgba(232,114,26,0.12),0 10px 36px rgba(0,0,0,0.55);
+  z-index:8;
+}
+.c3{
+  position:absolute;top:388px;left:732px;
+  width:264px;height:264px;border-radius:50%;overflow:hidden;
+  border:2px solid rgba(232,114,26,0.16);
+  box-shadow:0 0 20px rgba(232,114,26,0.08),0 10px 32px rgba(0,0,0,0.50);
+  z-index:8;
+}
+.c-img{width:100%;height:100%;object-fit:cover;}
+
+/* BENEFIT LABELS — below each circle */
+.tl1{position:absolute;top:728px;left:52px;width:348px;text-align:center;z-index:10;}
+.tl2{position:absolute;top:720px;left:416px;width:300px;text-align:center;z-index:10;}
+.tl3{position:absolute;top:664px;left:732px;width:264px;text-align:center;z-index:10;}
+
+.t-step{
+  font-size:9px;font-weight:700;
+  letter-spacing:0.24em;text-transform:uppercase;
+  color:#E8721A;margin-bottom:6px;
+}
+.t-title{
+  font-family:'Playfair Display',serif;
+  font-size:21px;font-weight:700;
+  color:#fff;line-height:1.05;margin-bottom:5px;
+}
+.t-desc{
+  font-size:11px;font-weight:400;
+  color:rgba(255,255,255,0.44);
+  line-height:1.44;
+}
+
+/* CTA */
+.cta{
+  position:absolute;
+  bottom:150px;left:52px;right:52px;
+  font-size:22px;font-weight:700;
+  color:#fff;background:#E8721A;
+  padding:24px;border-radius:12px;text-align:center;
+  letter-spacing:0.02em;z-index:10;
+  box-shadow:0 6px 52px rgba(232,114,26,0.42);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="mesh"></div>
+  <div class="rule"></div>
+
+  <div class="logo-pill">JP Solutions</div>
+
+  <div class="headline">
+    <h1>Droši.<br><em>Precīzi.</em><br>Sertificēti.</h1>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val">500<em>+</em></div>
+      <div class="stat-lbl">Uzstādīti objekti</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">15<em>+</em></div>
+      <div class="stat-lbl">Gadu pieredze</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">EN</div>
+      <div class="stat-lbl">Sertificēts</div>
+    </div>
+  </div>
+
+  <!-- Circle 1 — Horizontālās līnijas -->
+  <div class="c1">
+    <img class="c-img" src="../brief/images/roof-workers-bg.png" alt="">
+  </div>
+  <div class="tl1">
+    <div class="t-step">01 — Sistēmas</div>
+    <div class="t-title">Horizontālās drošības līnijas</div>
+    <div class="t-desc">Jumtiem, fasādēm un torņiem visā Latvijā</div>
+  </div>
+
+  <!-- Circle 2 — Enkurpunkti -->
+  <div class="c2">
+    <img class="c-img" src="../brief/images/roof-workers-bg.png" alt="" style="object-position:55% 40%;">
+  </div>
+  <div class="tl2">
+    <div class="t-step">02 — Stiprinājumi</div>
+    <div class="t-title">Enkurpunkti un sliedes</div>
+    <div class="t-desc">Sertificēti atbilstoši LVS EN standartiem</div>
+  </div>
+
+  <!-- Circle 3 — Inspekcijas -->
+  <div class="c3">
+    <img class="c-img" src="../brief/images/roof-workers-bg.png" alt="" style="object-position:75% 25%;">
+  </div>
+  <div class="tl3">
+    <div class="t-step">03 — Apkope</div>
+    <div class="t-title">Gada inspekcijas</div>
+    <div class="t-desc">Derīgs sertifikāts katru gadu</div>
+  </div>
+
+  <div class="cta">Saņemt bezmaksas piedāvājumu →</div>
+</div>
+<script>document.fonts.ready.then(()=>{document.title='fonts-ready';});</script>
+</body>
+</html>

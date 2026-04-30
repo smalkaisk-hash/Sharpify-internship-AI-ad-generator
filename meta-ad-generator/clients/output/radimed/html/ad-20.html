@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#020c18;}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif;background:#020c18;}
+
+/* ─── BAND 1: Top dark band (0–332px) ─── */
+.band-top{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:332px;
+  background:#020c18;
+  z-index:3;
+}
+
+/* Subtle cyan shimmer in top band */
+.band-top-glow{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:332px;
+  background:radial-gradient(ellipse 600px 200px at 50% 110%, rgba(0,180,216,0.10) 0%, transparent 70%);
+  z-index:4;
+}
+
+/* Logo in Band 1 */
+.logo{
+  position:absolute;top:44px;left:60px;
+  height:58px;width:auto;
+  filter:brightness(0) invert(1);
+  z-index:10;
+}
+
+/* MRI badge right side of Band 1 */
+.badge{
+  position:absolute;top:52px;right:60px;
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.80);
+  border:1px solid rgba(0,180,216,0.38);
+  padding:9px 20px;border-radius:100px;
+  background:rgba(0,180,216,0.06);
+  letter-spacing:0.06em;
+  z-index:10;
+}
+
+/* BIG ALL-CAPS editorial headline */
+h1{
+  position:absolute;top:128px;
+  left:0;right:0;
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:106px;line-height:0.91;
+  font-weight:700;
+  letter-spacing:-0.01em;
+  text-transform:uppercase;
+  color:#fff;
+  z-index:10;
+}
+h1 em{font-style:italic;font-weight:400;color:#00B4D8;}
+
+/* ─── BAND 2: Middle image strip (332px–700px) ─── */
+.band-mid{
+  position:absolute;
+  top:332px;left:0;right:0;
+  height:368px;
+  overflow:hidden;
+  z-index:2;
+}
+.band-mid img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 42%;
+  opacity:0.72;
+}
+
+/* Fade top edge of image band into Band 1 */
+.band-mid::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:72px;
+  background:linear-gradient(to bottom, #020c18, transparent);
+  z-index:1;
+}
+
+/* Fade bottom edge of image band into Band 3 */
+.band-mid::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:72px;
+  background:linear-gradient(to top, #020c18, transparent);
+  z-index:1;
+}
+
+/* Small caption label over image strip */
+.band-caption{
+  position:absolute;
+  top:352px;left:60px;
+  font-size:11px;font-weight:700;
+  color:rgba(255,255,255,0.45);
+  letter-spacing:0.24em;
+  text-transform:uppercase;
+  z-index:5;
+}
+
+/* ─── BAND 3: Bottom dark band (700px–1080px) ─── */
+.band-bot{
+  position:absolute;
+  top:700px;left:0;right:0;
+  height:380px;
+  background:#020c18;
+  z-index:3;
+}
+
+/* Eyebrow label in Band 3 */
+.eyebrow{
+  position:absolute;top:716px;left:60px;
+  font-size:13px;font-weight:600;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:#00B4D8;
+  z-index:10;
+}
+
+/* Sub copy in Band 3 */
+.sub{
+  position:absolute;top:746px;left:60px;right:60px;
+  font-size:22px;font-weight:400;
+  color:rgba(255,255,255,0.58);
+  line-height:1.50;
+  z-index:10;
+}
+
+/* Pills row */
+.pills{
+  position:absolute;bottom:248px;left:60px;
+  display:flex;gap:10px;
+  z-index:10;
+}
+.pill{
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.68);
+  padding:9px 18px;
+  border:1px solid rgba(255,255,255,0.13);
+  border-radius:100px;
+  letter-spacing:0.03em;
+}
+.pill.hi{
+  background:rgba(0,180,216,0.11);
+  border-color:rgba(0,180,216,0.46);
+  color:#00B4D8;
+}
+
+/* CTA */
+.cta{
+  position:absolute;bottom:160px;left:60px;
+  font-size:21px;font-weight:700;
+  color:#020c18;background:#00B4D8;
+  padding:22px 52px;
+  border-radius:12px;
+  display:inline-block;
+  letter-spacing:0.01em;
+  box-shadow:0 4px 40px rgba(0,180,216,0.44);
+  z-index:10;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- Band 1: Top dark -->
+  <div class="band-top"></div>
+  <div class="band-top-glow"></div>
+
+  <!-- Band 2: Image strip -->
+  <div class="band-mid">
+    <img src="../images/mri-room.png" alt="">
+  </div>
+  <div class="band-caption">Modernākā MRI iekārta Rīgā</div>
+
+  <!-- Band 3: Bottom dark -->
+  <div class="band-bot"></div>
+
+  <!-- Logos and UI -->
+  <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  <div class="badge">MRI DIAGNOSTIKA</div>
+
+  <!-- Big editorial headline in Band 1 -->
+  <h1>Zini.<br><em>Ārstē.</em></h1>
+
+  <!-- Copy in Band 3 -->
+  <div class="eyebrow">Rīgas vadošā MRI klīnika</div>
+  <div class="sub">Pilna ķermeņa MRI izmeklēšana. Bez radiācijas. Pilns ziņojums 24 stundās.</div>
+
+  <div class="pills">
+    <span class="pill hi">Nav radiācijas</span>
+    <span class="pill">Grūtniecēm droši</span>
+    <span class="pill">Pieraksts tajā pašā dienā</span>
+  </div>
+
+  <div class="cta">Pierakstīties →</div>
+</div>
+</body>
+</html>

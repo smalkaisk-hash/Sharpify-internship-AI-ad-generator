@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{
+  width:1080px;height:1080px;
+  overflow:hidden;
+  background:#020c18;
+}
+
+.ad{
+  width:1080px;height:1080px;
+  position:relative;overflow:hidden;
+  background:#020c18;
+  font-family:'DM Sans',sans-serif;
+}
+
+.photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center center;
+  opacity:0.4;
+}
+
+.vignette{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(2,12,24,0.50) 0%,
+      rgba(2,12,24,0.15) 22%,
+      rgba(2,12,24,0.35) 52%,
+      rgba(2,12,24,0.90) 75%,
+      rgba(2,12,24,1.00) 100%
+    );
+}
+
+/* TOP BAR — pinned to top */
+.topbar{
+  position:absolute;top:52px;left:64px;right:64px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:5;
+}
+.logo{
+  height:88px;
+  width:auto;
+  filter:brightness(0) invert(1);
+}
+.badge{
+  font-size:15px;font-weight:500;
+  color:rgba(255,255,255,0.85);
+  border:1px solid rgba(0,180,216,0.45);
+  padding:11px 24px;border-radius:100px;
+  background:rgba(0,180,216,0.08);
+  letter-spacing:0.05em;
+}
+.divider{
+  position:absolute;top:114px;left:64px;right:64px;
+  height:1px;background:rgba(0,180,216,0.2);
+  z-index:5;
+}
+
+/* CONTENT — anchored to bottom, grows upward freely */
+.content{
+  position:absolute;
+  bottom:100px;
+  left:64px;right:64px;
+  z-index:5;
+}
+
+.eyebrow{
+  font-size:16px;font-weight:500;letter-spacing:0.18em;
+  text-transform:uppercase;color:#00B4D8;
+  margin-bottom:20px;
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:118px;line-height:0.93;
+  color:#ffffff;font-weight:700;
+  letter-spacing:-0.025em;
+  margin-bottom:28px;
+}
+h1 em{
+  font-style:italic;font-weight:400;
+  color:#00B4D8;
+}
+
+.sub{
+  font-size:25px;font-weight:400;
+  color:rgba(255,255,255,0.68);
+  line-height:1.45;
+  margin-bottom:32px;
+}
+
+.pills{
+  display:flex;gap:10px;flex-wrap:nowrap;
+  margin-bottom:36px;
+}
+.pill{
+  font-size:14px;font-weight:500;
+  color:rgba(255,255,255,0.75);
+  padding:10px 20px;
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:100px;
+  letter-spacing:0.04em;
+  white-space:nowrap;
+}
+.pill.hi{
+  background:rgba(0,180,216,0.12);
+  border-color:rgba(0,180,216,0.5);
+  color:#00B4D8;
+}
+
+.row{display:flex;align-items:center;gap:36px;}
+
+.cta{
+  font-size:22px;font-weight:700;
+  color:#020c18;
+  background:#00B4D8;
+  padding:22px 50px;
+  border-radius:12px;
+  display:inline-block;
+  letter-spacing:0.01em;
+}
+
+.phone{
+  font-size:20px;font-weight:500;
+  color:rgba(255,255,255,0.6);
+  letter-spacing:0.02em;
+}
+.phone strong{color:#fff;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="photo" src="../images/mri-room.png">
+  <div class="vignette"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">Pilna ķermeņa izmeklēšana</div>
+    <h1>Zini.<br><em>Savlaicīgi.</em></h1>
+    <div class="sub">Agrīna atklāšana glābj dzīvības. Modernākā MRI iekārta Rīgā, rezultāts 24h.</div>
+    <div class="pills">
+      <span class="pill hi">Nav radiācijas</span>
+      <span class="pill">Droši grūtniecēm</span>
+      <span class="pill">Bezmaksas stāvvieta</span>
+      <span class="pill">Pieraksts tajā pašā dienā</span>
+    </div>
+    <div class="row">
+      <div class="cta">Pierakstīties →</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

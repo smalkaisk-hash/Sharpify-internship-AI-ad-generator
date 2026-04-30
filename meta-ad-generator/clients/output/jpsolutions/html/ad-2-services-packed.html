@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden;background:#0E0E0E}
+
+    .ad{
+      width:1080px;height:1080px;
+      display:grid;
+      grid-template-columns:510px 1fr;
+      overflow:hidden;
+      position:relative
+    }
+
+    /* ── LEFT PANEL ── */
+    .left{
+      background:#0E0E0E;
+      padding:44px 44px 44px 48px;
+      display:flex;flex-direction:column;
+      position:relative;z-index:2;
+      border-right:2px solid #E8721A
+    }
+
+    /* Logo row */
+    .logo-row{display:flex;align-items:center;gap:0;margin-bottom:28px}
+    .logo-pill{
+      background:#E8721A;padding:9px 18px;border-radius:6px 0 0 6px;
+      font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.08em;color:#fff
+    }
+    .logo-ext{
+      background:#1C1C1C;border:1px solid #2A2A2A;border-left:none;
+      padding:9px 16px;border-radius:0 6px 6px 0;
+      font-family:'Inter',sans-serif;font-size:12px;font-weight:700;
+      color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.15em;
+      align-self:stretch;display:flex;align-items:center
+    }
+
+    /* Headline */
+    .headline{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:86px;line-height:0.90;
+      color:#FFFFFF;letter-spacing:0.01em;
+      margin-bottom:10px
+    }
+    .headline .accent{color:#E8721A}
+
+    .sub{
+      font-family:'Inter',sans-serif;font-size:17px;font-weight:400;
+      color:rgba(255,255,255,0.45);line-height:1.5;
+      margin-bottom:22px;max-width:400px
+    }
+
+    /* Divider */
+    .divider{
+      display:flex;align-items:center;gap:12px;margin-bottom:20px
+    }
+    .div-line{flex:1;height:1px;background:#2A2A2A}
+    .div-label{
+      font-family:'Inter',sans-serif;font-size:11px;font-weight:700;
+      color:#E8721A;text-transform:uppercase;letter-spacing:0.18em
+    }
+
+    /* Service list */
+    .services{display:flex;flex-direction:column;gap:0;flex:1}
+
+    .svc{
+      display:flex;align-items:flex-start;gap:14px;
+      padding:13px 0;
+      border-bottom:1px solid #1E1E1E
+    }
+    .svc:last-child{border-bottom:none}
+
+    .svc-icon{
+      width:38px;height:38px;flex-shrink:0;
+      background:#1A1A1A;border:1.5px solid #2C2C2C;
+      border-radius:8px;
+      display:flex;align-items:center;justify-content:center;
+      margin-top:2px
+    }
+    .svc-icon svg{width:20px;height:20px}
+
+    .svc-body{display:flex;flex-direction:column;gap:2px}
+    .svc-title{
+      font-family:'Inter',sans-serif;font-size:17px;font-weight:700;
+      color:#FFFFFF;letter-spacing:0.01em
+    }
+    .svc-desc{
+      font-family:'Inter',sans-serif;font-size:14px;font-weight:400;
+      color:rgba(255,255,255,0.40);line-height:1.45
+    }
+
+    /* Bottom CTA area */
+    .bottom{margin-top:20px}
+
+    .cta{
+      display:block;width:100%;
+      background:#E8721A;color:#fff;
+      font-family:'Inter',sans-serif;font-size:18px;font-weight:800;
+      padding:17px 0;border-radius:8px;text-align:center;
+      letter-spacing:0.03em;
+      box-shadow:0 4px 24px rgba(232,114,26,0.35);
+      margin-bottom:14px
+    }
+
+    .contact-row{
+      display:flex;justify-content:space-between;align-items:center
+    }
+    .contact-item{
+      display:flex;align-items:center;gap:7px;
+      font-family:'Inter',sans-serif;font-size:13px;font-weight:500;
+      color:rgba(255,255,255,0.40)
+    }
+    .contact-item svg{width:14px;height:14px;opacity:0.5}
+
+    /* ── RIGHT PANEL ── */
+    .right{position:relative;overflow:hidden}
+    .right img{
+      width:100%;height:100%;
+      object-fit:cover;object-position:center top
+    }
+    /* left fade into dark panel */
+    .right-fade{
+      position:absolute;top:0;left:0;width:120px;height:100%;
+      background:linear-gradient(90deg,#0E0E0E 0%,transparent 100%)
+    }
+    /* bottom info strip */
+    .right-strip{
+      position:absolute;bottom:0;left:0;right:0;
+      background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.85) 100%);
+      padding:60px 28px 28px
+    }
+    .strip-badge{
+      display:inline-block;
+      background:rgba(232,114,26,0.90);
+      font-family:'Inter',sans-serif;font-size:12px;font-weight:800;
+      color:#fff;text-transform:uppercase;letter-spacing:0.14em;
+      padding:6px 14px;border-radius:4px;margin-bottom:10px
+    }
+    .strip-stat{
+      font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:1;
+      color:#fff;letter-spacing:0.02em
+    }
+    .strip-stat-label{
+      font-family:'Inter',sans-serif;font-size:14px;font-weight:500;
+      color:rgba(255,255,255,0.55);margin-top:4px
+    }
+  </style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- LEFT PANEL -->
+  <div class="left">
+
+    <div class="logo-row">
+      <div class="logo-pill">JP Solutions</div>
+      <div class="logo-ext">jpsolutions.lv</div>
+    </div>
+
+    <div class="headline">Droša<br>darba vieta<br><span class="accent">augstumā.</span></div>
+    <div class="sub">Projektēšana, piegāde, uzstādīšana un apkope — pilns cikls no konsultācijas līdz sertifikātam.</div>
+
+    <div class="divider">
+      <div class="div-line"></div>
+      <div class="div-label">Mūsu pakalpojumi</div>
+      <div class="div-line"></div>
+    </div>
+
+    <div class="services">
+
+      <!-- 1 — Horizontal safety lines -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Horizontālās drošības līnijas</div>
+          <div class="svc-desc">Trosēm un sliedēm — jumtiem, fasādēm un torņiem</div>
+        </div>
+      </div>
+
+      <!-- 2 — Vertical systems -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="20" x2="12" y2="4"/><polyline points="6 10 12 4 18 10"/>
+            <line x1="8" y1="20" x2="16" y2="20"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Vertikālās kāpšanas sistēmas</div>
+          <div class="svc-desc">Fiksētas sliedes un trošu sistēmas kāpšanai</div>
+        </div>
+      </div>
+
+      <!-- 3 — Anchor points -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="22"/>
+            <path d="M5 12H2a10 10 0 0 0 20 0h-3"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Enkurpunkti un stiprinājumi</div>
+          <div class="svc-desc">Jumtu, sienu un metāla konstrukciju enkuri</div>
+        </div>
+      </div>
+
+      <!-- 4 — Roof walkways -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="4" rx="1"/><rect x="3" y="17" width="18" height="4" rx="1"/>
+            <line x1="7" y1="7" x2="7" y2="17"/><line x1="12" y1="7" x2="12" y2="17"/><line x1="17" y1="7" x2="17" y2="17"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Jumtu ejas un kāpnes</div>
+          <div class="svc-desc">Stacionāras tehnikas apkopes celiņi un piekļuves kāpnes</div>
+        </div>
+      </div>
+
+      <!-- 5 — Annual inspection -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Gada tehniskās pārbaudes</div>
+          <div class="svc-desc">Sertificētas inspekcijas — atbilstība LVS EN standartiem</div>
+        </div>
+      </div>
+
+      <!-- 6 — Rental & consulting -->
+      <div class="svc">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <div class="svc-title">Noma un konsultācijas</div>
+          <div class="svc-desc">Augstuma darbu aprīkojuma noma un projektu izstrāde</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="bottom">
+      <div class="cta">Pieteikties bezmaksas konsultācijai →</div>
+      <div class="contact-row">
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5 19.79 19.79 0 0 1 1.07 2.82 2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+          +371 264 47394
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@proropes.com
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Rīga, Latvia
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
+    <img src="../brief/images/roof-workers-bg.png" alt="Workers on rooftop">
+    <div class="right-fade"></div>
+    <div class="right-strip">
+      <div class="strip-badge">Uzstādīto objektu</div>
+      <div class="strip-stat">500+</div>
+      <div class="strip-stat-label">drošības sistēmas visā Latvijā</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
