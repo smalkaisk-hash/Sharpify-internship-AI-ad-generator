@@ -1,0 +1,56 @@
+{
+  "campaign_id": "120247130463350460",
+  "adset_id": "120248851859810460",
+  "adset_name": "Mājokļa uzlabojumi 3 - Male 25-58",
+  "form_id": "1310571280985338",
+  "ads": [
+    {
+      "name": "Elektriki - Circle - Nakamais objekts",
+      "png": "elektriki-1-circle.png",
+      "image_hash": "996463753f92a0de3c0ed6bff5510414",
+      "creative_id": "1917641778886628",
+      "ad_id": "120248851871180460",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Elektriki - Voltage - Meklejam 5 firmas",
+      "png": "elektriki-3-voltage.png",
+      "image_hash": "bd2bd3cbce24054002c51e63264a8d2b",
+      "creative_id": "1355494909752507",
+      "ad_id": "120248851877990460",
+      "cta_type": "APPLY_NOW"
+    },
+    {
+      "name": "Parketa - Circle - Nakama istaba",
+      "png": "parketa-1-circle.png",
+      "image_hash": "7027a3dc4ce5b3ebdd42c6904d32452f",
+      "creative_id": "1540250054127854",
+      "ad_id": "120248851881710460",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Parketa - Polaroid - Pieteikumi nak pasi",
+      "png": "parketa-2-polaroid.png",
+      "image_hash": "6a72ac8d71acae6891ec81b9d93978c8",
+      "creative_id": "905347199170234",
+      "ad_id": "120248851885120460",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Siltumsukni - Circle - Nakamais siltumsuknis",
+      "png": "siltumsukni-1-circle.png",
+      "image_hash": "83616387a9006b465c0f6fe50a38c91b",
+      "creative_id": "1264846141970695",
+      "ad_id": "120248851890850460",
+      "cta_type": "LEARN_MORE"
+    },
+    {
+      "name": "Siltumsukni - Voltage - Meklejam 5 uzstaditajus",
+      "png": "siltumsukni-3-voltage.png",
+      "image_hash": "ac40a7ff9f092655b4e3837860e3c0b1",
+      "creative_id": "1289701832604595",
+      "ad_id": "120248851893250460",
+      "cta_type": "APPLY_NOW"
+    }
+  ]
+}

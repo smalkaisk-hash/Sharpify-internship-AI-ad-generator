@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#020c18;}
+
+.ad{
+  width:1080px;height:1080px;
+  position:relative;overflow:hidden;
+  font-family:'DM Sans',sans-serif;
+  background:#020c18;
+}
+
+.photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center center;
+  opacity:0.27;
+}
+
+.overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(2,12,24,0.68) 0%,
+      rgba(2,12,24,0.12) 30%,
+      rgba(2,12,24,0.12) 62%,
+      rgba(2,12,24,0.97) 100%
+    );
+}
+
+/* Radial focal glow behind headline */
+.glow{
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-56%);
+  width:780px;height:520px;
+  background:radial-gradient(ellipse at center,rgba(0,180,216,0.08) 0%,transparent 62%);
+  pointer-events:none;
+}
+
+/* TOP */
+.topbar{
+  position:absolute;top:52px;left:64px;right:64px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:5;
+}
+.logo{height:78px;width:auto;filter:brightness(0) invert(1);}
+.badge{
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.82);
+  border:1px solid rgba(0,180,216,0.4);
+  padding:9px 20px;border-radius:100px;
+  background:rgba(0,180,216,0.07);
+  letter-spacing:0.06em;
+}
+.divider-h{
+  position:absolute;top:148px;left:64px;right:64px;
+  height:1px;background:rgba(0,180,216,0.18);z-index:5;
+}
+
+/* CENTERED HERO */
+.hero{
+  position:absolute;
+  top:50%;left:64px;right:64px;
+  transform:translateY(-54%);
+  text-align:center;
+  z-index:5;
+}
+
+.eyebrow{
+  font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:#00B4D8;margin-bottom:32px;
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:102px;line-height:0.91;
+  font-weight:700;
+  letter-spacing:-0.03em;
+  margin-bottom:38px;
+}
+h1 .line-1{color:#fff;display:block;}
+h1 .line-2{color:#00B4D8;font-style:italic;font-weight:400;display:block;}
+
+.rule{
+  width:68px;height:2px;
+  background:linear-gradient(90deg,
+    rgba(0,180,216,0) 0%,
+    rgba(0,180,216,0.62) 35%,
+    rgba(0,180,216,0.62) 65%,
+    rgba(0,180,216,0) 100%
+  );
+  margin:0 auto 34px;
+}
+
+.sub{
+  font-size:28px;font-weight:400;
+  color:rgba(255,255,255,0.58);
+  line-height:1.52;
+  max-width:920px;
+  margin:0 auto;
+}
+.sub strong{color:rgba(255,255,255,0.88);font-weight:600;}
+
+/* BOTTOM */
+.bottom{
+  position:absolute;
+  bottom:160px;left:64px;right:64px;
+  display:flex;align-items:center;justify-content:center;
+  gap:34px;
+  z-index:5;
+}
+.cta{
+  font-size:20px;font-weight:700;
+  color:#020c18;background:#00B4D8;
+  padding:21px 50px;
+  border-radius:12px;
+  letter-spacing:0.01em;
+  white-space:nowrap;
+  box-shadow:0 4px 28px rgba(0,180,216,0.40);
+}
+.phone{
+  font-size:17px;font-weight:500;
+  color:rgba(255,255,255,0.5);
+}
+.phone strong{color:#fff;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="photo" src="../images/mri-tunnel.png">
+  <div class="overlay"></div>
+  <div class="glow"></div>
+
+  <div class="topbar">
+    <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">MRI diagnostika Rīgā</div>
+    <h1>
+      <span class="line-1">Jūs jau zināt,</span>
+      <span class="line-2">ka jāpārbauda.</span>
+    </h1>
+    <div class="sub">Tad kāpēc vēl gaidāt? MRI izmeklējums <strong>45 minūtes.</strong><br>Pilns radioloģiskais ziņojums <strong>24 stundās.</strong></div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta">Pierakstīties bez nosūtījuma →</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+{
+  "source_url": "https://www.ballitei.lv/",
+  "scraped_at": "2026-04-15T12:11:03.164Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#121212",
+        "usage_count": 6530,
+        "contexts": [
+          "text:body",
+          "text:div",
+          "text:link",
+          "text:style",
+          "text:script"
+        ]
+      },
+      {
+        "hex": "#121212",
+        "usage_count": 1003,
+        "contexts": [
+          "bg:a",
+          "text:summary",
+          "text:span",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#121212",
+        "usage_count": 189,
+        "contexts": [
+          "text:small",
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#f3f3f3",
+        "usage_count": 62,
+        "contexts": [
+          "bg:div"
+        ]
+      },
+      {
+        "hex": "#108474",
+        "usage_count": 50,
+        "contexts": [
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#333333",
+        "usage_count": 45,
+        "contexts": [
+          "text:p",
+          "text:div",
+          "text:span",
+          "text:img",
+          "text:form"
+        ]
+      },
+      {
+        "hex": "#121212",
+        "usage_count": 12,
+        "contexts": [
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#075e54",
+        "usage_count": 10,
+        "contexts": [
+          "text:div",
+          "text:svg",
+          "text:path",
+          "bg:div",
+          "text:input"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#121212",
+      "secondary": "#121212",
+      "accent": "#121212",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Poppins",
+        "usage_count": 4817,
+        "weights": [
+          "300",
+          "400",
+          "700",
+          "500"
+        ],
+        "contexts": [
+          "a",
+          "div",
+          "span",
+          "button",
+          "h2",
+          "h1",
+          "p",
+          "h3"
+        ]
+      },
+      {
+        "family": "JudgemeStar",
+        "usage_count": 50,
+        "weights": [
+          "700"
+        ],
+        "contexts": [
+          "span"
+        ]
+      },
+      {
+        "family": "Arial",
+        "usage_count": 16,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "button"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Poppins",
+      "body": "JudgemeStar"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.png",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/Screenshot_2026-03-25_at_20.55.14.png?v=1774464934&width=3840",
+        "width": 1440,
+        "height": 458
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/collections/KBT4_02_S_b8976b64-9cc7-4aa5-baaf-65699a339fde.jpg?v=1770884936&width=1500",
+        "width": 297,
+        "height": 297
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/collections/FB208_04_S_cb8d9a62-c4d4-4034-a550-f784d2a36a23.jpg?v=1770884690&width=1500",
+        "width": 297,
+        "height": 297
+      },
+      {
+        "type": "hero",
+        "filename": "hero-4.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/collections/KPM32_04_S_aae70dd9-ab7d-488b-a6b7-f76e3b19f33c.jpg?v=1770884908&width=1500",
+        "width": 297,
+        "height": 297
+      },
+      {
+        "type": "hero",
+        "filename": "hero-5.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/collections/FB249_02_S_1e09fd18-cd6f-42d9-a7bc-e370aa91d963.jpg?v=1770884641&width=1500",
+        "width": 297,
+        "height": 297
+      }
+    ],
+    "logos": [
+      {
+        "type": "logo",
+        "filename": "logo-1.png",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/Screenshot_2026-03-15_at_23.21.52.png?v=1773609733&width=600",
+        "width": 300,
+        "height": 114
+      }
+    ],
+    "products": [
+      {
+        "type": "product",
+        "filename": "product-1.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/ZB2_01_S_ef217013-6836-4a22-b417-be85b7ed5ef6.jpg?v=1771192867&width=533",
+        "width": 281,
+        "height": 281
+      },
+      {
+        "type": "product",
+        "filename": "product-2.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/FB205_06_H.jpg?v=1770586805&width=533",
+        "width": 281,
+        "height": 281
+      },
+      {
+        "type": "product",
+        "filename": "product-3.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/IMG_8331.jpg?v=1768039452&width=533",
+        "width": 281,
+        "height": 281
+      },
+      {
+        "type": "product",
+        "filename": "product-4.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/IMG_8385.jpg?v=1768060202&width=533",
+        "width": 281,
+        "height": 281
+      },
+      {
+        "type": "product",
+        "filename": "product-5.jpg",
+        "originalUrl": "https://www.ballitei.lv/cdn/shop/files/FB166_01_H.jpg?v=1768037082&width=533",
+        "width": 281,
+        "height": 281
+      }
+    ],
+    "all_found": 64
+  },
+  "product_category": {
+    "type": "tangible",
+    "confidence": "high",
+    "signals": [
+      "content: \"pirkt\"",
+      "content: \"piegāde\"",
+      "content: \"bezmaksas piegāde\"",
+      "url: \"/collections\"",
+      "url: \"/products\"",
+      "element: cart button",
+      "element: price display",
+      "element: product gallery",
+      "content: \"app\""
+    ],
+    "product_images": [
+      "images/product-1.jpg",
+      "images/product-2.jpg",
+      "images/product-3.jpg",
+      "images/product-4.jpg",
+      "images/product-5.jpg"
+    ]
+  },
+  "content": {
+    "page_title": "Ballītei.lv",
+    "meta_description": "Ballīšu dekorācijas, gatavi tematiskie ballīšu komplekti bērniem, dzimšanas dienas piederumi, banneri, papīra glāzes, šķīvji, salmiņi un tematiskie aksesuāri bērnu svētkiem. Iedvesma skaistām un pinterestīgām svinībām! 🎂✨",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Valsts/reģions"
+      },
+      {
+        "tag": "H2",
+        "text": "Valsts/reģions"
+      },
+      {
+        "tag": "H2",
+        "text": "Prece pievienota jūsu grozam"
+      },
+      {
+        "tag": "H2",
+        "text": "BESTSELLERI"
+      },
+      {
+        "tag": "H3",
+        "text": "Stāvošs folijas balons “Šūpuļzirgs”, 118 × 104 cm"
+      },
+      {
+        "tag": "H3",
+        "text": "Stāvošs folijas balons “Šūpuļzirgs”, 118 × 104 cm"
+      },
+      {
+        "tag": "H3",
+        "text": "\"Oh Baby\" pinterestīgs ballīšu komplekts(46 produkti)"
+      },
+      {
+        "tag": "H3",
+        "text": "\"Oh Baby\" pinterestīgs ballīšu komplekts(46 produkti)"
+      },
+      {
+        "tag": "H3",
+        "text": "Folija balons “Pērtiķis”, 51 × 88 cm"
+      },
+      {
+        "tag": "H3",
+        "text": "Folija balons “Pērtiķis”, 51 × 88 cm"
+      }
+    ],
+    "key_paragraphs": [
+      "Pasūtot līdz 12.00 piegāde nākamajā darba dienā",
+      "BEZMAKSAS piegādes sūtījumiem no 45.00 euro",
+      "Pinterestīgas lietas Tavai ballīte",
+      "Labākās cenas un kvalitāte"
+    ],
+    "cta_buttons_found": [
+      "Pāriet uz saturu",
+      "Jaunumi",
+      "Bestselleri",
+      "Visi produkti",
+      "Gatavie bērnu ballīšu komplekti",
+      "Visi ballīšu komplekti",
+      "Safari ballītes komplekts",
+      "Raudzību ballītes komplekts",
+      "1.Dzimšanas dienas komplekts",
+      "Suņu ballītes komplekts"
+    ]
+  }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gbar {
+    background: #ffffff;
+    padding: 32px 55px 0 55px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #dfe1e5;
+    border-radius: 32px;
+    padding: 20px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .g-logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 22px;
+    letter-spacing: -0.5px;
+  }
+  .g-logo .g-b { color: #4285F4; }
+  .g-logo .g-r { color: #EA4335; }
+  .g-logo .g-y { color: #FBBC05; }
+  .g-logo .g-g { color: #34A853; }
+
+  .search-text {
+    font-size: 26px;
+    color: #202124;
+    flex: 1;
+  }
+
+  .search-text .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background: #4285F4;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 32px;
+    padding: 0 6px;
+  }
+
+  .tab {
+    font-size: 20px;
+    color: #5f6368;
+    padding: 12px 0;
+  }
+
+  .tab.active {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+    font-weight: 600;
+  }
+
+  .results {
+    padding: 30px 55px;
+    flex: 1;
+  }
+
+  .result-count {
+    font-size: 18px;
+    color: #70757a;
+    margin-bottom: 24px;
+  }
+
+  .competitor {
+    margin-bottom: 18px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    opacity: 0.4;
+  }
+
+  .competitor .tag {
+    font-size: 15px;
+    color: #70757a;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .competitor .title {
+    font-size: 24px;
+    color: #1a0dab;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  .competitor .price {
+    font-size: 19px;
+    color: #70757a;
+    text-decoration: line-through;
+  }
+
+  .sharpify-result {
+    margin-top: 6px;
+    padding: 30px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 3px solid #F59E0B;
+    position: relative;
+    box-shadow: 0 6px 24px rgba(245, 158, 11, 0.2);
+  }
+
+  .sharpify-result .best-badge {
+    position: absolute;
+    top: -18px;
+    right: 30px;
+    background: #F59E0B;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 8px 22px;
+    border-radius: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+  }
+
+  .sharpify-result .url {
+    font-size: 20px;
+    color: #202124;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sharpify-result .url .shield {
+    color: #34A853;
+  }
+
+  .sharpify-result .title {
+    font-size: 32px;
+    color: #1a0dab;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .sharpify-result .desc {
+    font-size: 22px;
+    color: #4d5156;
+    line-height: 1.45;
+    margin-bottom: 16px;
+  }
+
+  .sharpify-result .meta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .sharpify-result .stars {
+    color: #F59E0B;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .sharpify-result .rating-text {
+    font-size: 20px;
+    color: #70757a;
+  }
+
+  .sharpify-result .price-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .sharpify-result .old-price {
+    font-size: 26px;
+    color: #9ca3af;
+    text-decoration: line-through;
+  }
+
+  .sharpify-result .new-price {
+    font-size: 40px;
+    font-weight: 800;
+    color: #16a34a;
+  }
+
+  .sharpify-result .save-tag {
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="gbar">
+      <div class="search-box">
+        <div class="g-logo"><span class="g-b">G</span><span class="g-r">o</span><span class="g-y">o</span><span class="g-b">g</span><span class="g-g">l</span><span class="g-r">e</span></div>
+        <div class="search-text">affordable professional website for my business<span class="cursor"></span></div>
+      </div>
+      <div class="tabs">
+        <div class="tab active">All</div>
+        <div class="tab">Images</div>
+        <div class="tab">Shopping</div>
+        <div class="tab">Maps</div>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="result-count">About 342,000,000 results (0.48 seconds)</div>
+
+      <div class="competitor">
+        <div class="tag">Sponsored</div>
+        <div class="title">Professional Website Design | Custom Solutions</div>
+        <div class="price">Starting from $2,500 &middot; 6-8 weeks</div>
+      </div>
+
+      <div class="competitor">
+        <div class="tag">Sponsored</div>
+        <div class="title">Build Your Website | DIY Templates</div>
+        <div class="price">$29/month &middot; You build it yourself</div>
+      </div>
+
+      <div class="sharpify-result">
+        <div class="best-badge">&#9733; Best Result</div>
+        <div class="url"><span class="shield">&#9679;</span> web.sharpify.lv</div>
+        <div class="title">Sharpify &mdash; We Build Your Website in&nbsp;48&nbsp;Hours</div>
+        <div class="desc">Professional, custom-designed website. Mobile-ready. SEO optimized. Contact forms + WhatsApp. 2,300+ businesses served.</div>
+        <div class="meta-row">
+          <div class="rating-text">2,300+ businesses served &middot; 26 countries</div>
+        </div>
+        <div class="price-row">
+          <div class="old-price">€299</div>
+          <div class="new-price">€59</div>
+          <div class="save-tag">Save 80%</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #050810;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 32px 48px 36px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, rgba(16,185,129,0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.header { text-align: center; margin-bottom: 20px; position: relative; z-index: 1; }
+.badge {
+  display: inline-block;
+  background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3);
+  color: #10b981; padding: 6px 18px; border-radius: 50px;
+  font-size: 17px; font-weight: 800;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 10px;
+}
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; line-height: 1.15;
+}
+.headline span { color: #10b981; }
+
+/* Skills grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  flex: 1;
+  position: relative; z-index: 1;
+}
+
+.skill {
+  background: rgba(16,185,129,0.05);
+  border: 1px solid rgba(16,185,129,0.15);
+  border-radius: 12px;
+  padding: 12px 8px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 5px;
+  position: relative;
+  aspect-ratio: 1;
+}
+.skill.highlight {
+  background: rgba(16,185,129,0.12);
+  border: 1px solid rgba(16,185,129,0.35);
+  box-shadow: 0 0 20px rgba(16,185,129,0.15);
+}
+
+.skill-icon { font-size: 28px; }
+.skill-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; font-weight: 600;
+  color: #cbd5e1; text-align: center;
+  line-height: 1.2;
+}
+.skill-cat {
+  font-size: 9px; color: #10b981; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* Active indicator dot */
+.skill::after {
+  content: ''; position: absolute;
+  top: 8px; right: 8px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16,185,129,0.6);
+}
+
+/* Bottom card */
+.bottom {
+  margin-top: 18px;
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 20px 28px;
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative; z-index: 1;
+}
+.bottom-left {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+}
+.bottom-sub { font-size: 18px; color: #94a3b8; margin-top: 4px; }
+.bottom-sub s { color: #ef4444; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 22px 48px; border-radius: 14px;
+  font-weight: 800; font-size: 28px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge">// 27 SKILLS + 10 WORKFLOWS</div>
+    <div class="headline">Pilna AI <span>komanda</span> Tavā datorā</div>
+  </div>
+
+  <div class="grid">
+    <div class="skill highlight">
+      <div class="skill-icon">📣</div>
+      <div class="skill-name">marketing-skill</div>
+      <div class="skill-cat">Mārketings</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">💰</div>
+      <div class="skill-name">sales-call</div>
+      <div class="skill-cat">Pārdošana</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">✍️</div>
+      <div class="skill-name">copywriting</div>
+      <div class="skill-cat">Saturs</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">📧</div>
+      <div class="skill-name">email-sequences</div>
+      <div class="skill-cat">Mārketings</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🎯</div>
+      <div class="skill-name">brand-voice</div>
+      <div class="skill-cat">Mārketings</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-icon">📊</div>
+      <div class="skill-name">ad-analysis</div>
+      <div class="skill-cat">Mārketings</div>
+    </div>
+    <div class="skill highlight">
+      <div class="skill-icon">🤝</div>
+      <div class="skill-name">objection-handler</div>
+      <div class="skill-cat">Pārdošana</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">📝</div>
+      <div class="skill-name">proposal-writer</div>
+      <div class="skill-cat">Pārdošana</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🎬</div>
+      <div class="skill-name">video-scripts</div>
+      <div class="skill-cat">Saturs</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🧠</div>
+      <div class="skill-name">brainstorming</div>
+      <div class="skill-cat">Zināšanas</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-icon">📱</div>
+      <div class="skill-name">social-posts</div>
+      <div class="skill-cat">Saturs</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🔍</div>
+      <div class="skill-name">lead-research</div>
+      <div class="skill-cat">Pārdošana</div>
+    </div>
+    <div class="skill highlight">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">workflow-auto</div>
+      <div class="skill-cat">Workflow</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">📞</div>
+      <div class="skill-name">call-prep</div>
+      <div class="skill-cat">Pārdošana</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">💡</div>
+      <div class="skill-name">idea-generator</div>
+      <div class="skill-cat">Zināšanas</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-icon">📋</div>
+      <div class="skill-name">meeting-notes</div>
+      <div class="skill-cat">Workflow</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">design-brief</div>
+      <div class="skill-cat">Saturs</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">📈</div>
+      <div class="skill-name">metrics-review</div>
+      <div class="skill-cat">Workflow</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">🔥</div>
+      <div class="skill-name">hook-writer</div>
+      <div class="skill-cat">Mārketings</div>
+    </div>
+    <div class="skill">
+      <div class="skill-icon">+7</div>
+      <div class="skill-name">un vēl...</div>
+      <div class="skill-cat">Viss iekļauts</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="bottom-left">
+      <div class="bottom-title">Katru — personīgs eksperts</div>
+      <div class="bottom-sub"><s>€99</s> · tikai €19 · mūžīga piekļuve</div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>

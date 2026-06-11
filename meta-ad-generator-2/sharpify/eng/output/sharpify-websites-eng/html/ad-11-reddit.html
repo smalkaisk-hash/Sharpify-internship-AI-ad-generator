@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #0e1113;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: #0e1113;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .reddit-header {
+    padding: 24px 50px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .reddit-icon {
+    width: 44px;
+    height: 44px;
+    background: #FF4500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 26px;
+    color: white;
+  }
+
+  .reddit-sub {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d7dadc;
+  }
+
+  .reddit-members {
+    font-size: 16px;
+    color: #818384;
+  }
+
+  .post {
+    padding: 30px 50px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .post-meta {
+    font-size: 16px;
+    color: #818384;
+    margin-bottom: 12px;
+  }
+
+  .post-meta .user { color: #d7dadc; font-weight: 600; }
+
+  .post-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #d7dadc;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+
+  .post-body {
+    font-size: 22px;
+    color: #b0b3b8;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .post-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .post-action {
+    font-size: 17px;
+    color: #818384;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .upvotes {
+    background: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #FF4500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .comments-section {
+    padding: 20px 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .comment {
+    padding: 18px 0 18px 28px;
+    border-left: 3px solid #343536;
+    margin-left: 10px;
+  }
+
+  .comment-meta {
+    font-size: 16px;
+    color: #818384;
+    margin-bottom: 8px;
+  }
+
+  .comment-meta .user { color: #d7dadc; font-weight: 600; }
+  .comment-meta .points { color: #FF4500; }
+
+  .comment-text {
+    font-size: 23px;
+    color: #d7dadc;
+    line-height: 1.45;
+  }
+
+  .comment-text .highlight {
+    color: #F59E0B;
+    font-weight: 700;
+  }
+
+  .comment.top {
+    border-left-color: #F59E0B;
+    background: rgba(245, 158, 11, 0.04);
+    padding: 20px 20px 20px 28px;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .comment.top .award {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.15);
+    color: #F59E0B;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="reddit-header">
+      <div class="reddit-icon">r/</div>
+      <div>
+        <div class="reddit-sub">r/smallbusiness</div>
+        <div class="reddit-members">1.2M members</div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-meta"><span class="user">u/newbizowner</span> &middot; 4h &middot; r/smallbusiness</div>
+      <div class="post-title">Where can I get a professional website without spending thousands?</div>
+      <div class="post-body">Just started my business. Every agency I've talked to wants €2,000+ and 6-8 weeks. I just need a clean, professional site with a contact form. What are my options?</div>
+      <div class="post-actions">
+        <div class="upvotes">&#9650; 847</div>
+        <div class="post-action">&#128172; 234 comments</div>
+        <div class="post-action">&#8593; Share</div>
+      </div>
+    </div>
+
+    <div class="comments-section">
+      <div class="comment top">
+        <div class="comment-meta"><span class="user">u/marketingpro_jake</span> &middot; <span class="points">1.2k points</span> &middot; 3h <span class="award">&#9733; Best Answer</span></div>
+        <div class="comment-text">Honestly? Check out <span class="highlight">Sharpify</span> (web.sharpify.lv). They built my site in 2 days for <span class="highlight">€59</span>. Custom design, not a template. Mobile-ready, SEO, contact forms, everything. I was skeptical at the price but they have 1,000+ five-star reviews. Best decision I made for my business.</div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-meta"><span class="user">u/solo_founder</span> &middot; <span class="points">486 points</span> &middot; 2h</div>
+        <div class="comment-text">Second this. <span class="highlight">Sharpify</span> did mine too. 2,300+ businesses use them. The regular price is €299 but right now it's €59. Absolute steal.</div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-meta"><span class="user">u/designerturnedbiz</span> &middot; <span class="points">312 points</span> &middot; 2h</div>
+        <div class="comment-text">I'm a designer and I still used them. Faster than doing it myself and the quality was solid. They communicate through WhatsApp which is nice.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

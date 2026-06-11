@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden;background:#111}
+
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'Inter',sans-serif}
+
+    /* Background */
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+
+    /* Gradient — heavy bottom, light top */
+    .overlay{
+      position:absolute;top:0;left:0;width:100%;height:100%;
+      background:linear-gradient(
+        180deg,
+        rgba(0,0,0,0.25) 0%,
+        rgba(0,0,0,0.10) 30%,
+        rgba(0,0,0,0.55) 62%,
+        rgba(0,0,0,0.92) 100%
+      )
+    }
+
+    /* Orange side bar accent */
+    .side-accent{
+      position:absolute;left:0;top:0;bottom:0;width:8px;
+      background:linear-gradient(180deg,#E8721A 0%,#C45A0E 100%);
+      z-index:5
+    }
+
+    /* Top — logo area */
+    .top{
+      position:absolute;top:52px;left:52px;z-index:6;
+      display:flex;align-items:center;gap:14px
+    }
+    .logo-box{
+      background:#E8721A;
+      padding:10px 20px;
+      border-radius:6px
+    }
+    .logo-text{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:34px;letter-spacing:0.08em;
+      color:#fff
+    }
+    .tagline-top{
+      font-family:'Inter',sans-serif;
+      font-size:18px;font-weight:600;
+      color:rgba(255,255,255,0.55);
+      text-transform:uppercase;letter-spacing:0.12em
+    }
+
+    /* Safety badge */
+    .badge{
+      position:absolute;top:52px;right:52px;z-index:6;
+      background:rgba(232,114,26,0.18);
+      border:1.5px solid rgba(232,114,26,0.55);
+      border-radius:8px;
+      padding:10px 22px;
+      font-family:'Inter',sans-serif;font-size:17px;font-weight:700;
+      color:#E8721A;text-transform:uppercase;letter-spacing:0.10em
+    }
+
+    /* Main content — bottom */
+    .content{
+      position:absolute;bottom:0;left:0;right:0;
+      padding:0 52px 52px 60px;
+      z-index:6
+    }
+
+    .kicker{
+      font-family:'Inter',sans-serif;
+      font-size:20px;font-weight:700;
+      color:#E8721A;
+      text-transform:uppercase;letter-spacing:0.15em;
+      margin-bottom:16px
+    }
+
+    .headline{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:118px;line-height:0.92;
+      color:#FFFFFF;
+      letter-spacing:0.01em;
+      text-shadow:0 4px 32px rgba(0,0,0,0.6);
+      margin-bottom:28px
+    }
+    .headline span{color:#E8721A}
+
+    .divider{
+      width:72px;height:4px;
+      background:#E8721A;border-radius:2px;
+      margin-bottom:26px
+    }
+
+    .body{
+      font-family:'Inter',sans-serif;
+      font-size:26px;font-weight:400;
+      color:rgba(255,255,255,0.80);
+      line-height:1.50;
+      max-width:780px;
+      margin-bottom:40px
+    }
+
+    .cta-row{display:flex;align-items:center;gap:28px}
+
+    .cta{
+      display:inline-block;
+      background:#E8721A;
+      color:#fff;
+      font-family:'Inter',sans-serif;font-size:24px;font-weight:700;
+      padding:22px 52px;border-radius:10px;
+      letter-spacing:0.02em;
+      box-shadow:0 6px 28px rgba(232,114,26,0.45)
+    }
+
+    .phone{
+      font-family:'Inter',sans-serif;font-size:22px;font-weight:600;
+      color:rgba(255,255,255,0.65)
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="../brief/images/roof-workers-bg.png" alt="">
+    <div class="overlay"></div>
+    <div class="side-accent"></div>
+
+    <!-- Top bar -->
+    <div class="top">
+      <div class="logo-box"><div class="logo-text">JP SOLUTIONS</div></div>
+      <div class="tagline-top">Drošība augstumā</div>
+    </div>
+    <div class="badge">Sertificēts aprīkojums</div>
+
+    <!-- Main copy -->
+    <div class="content">
+      <div class="kicker">Darbs augstumā</div>
+      <div class="headline">Augstumā nav<br>vietas <span>kļūdām.</span></div>
+      <div class="divider"></div>
+      <div class="body">
+        Drošības sistēmu projektēšana, piegāde un uzstādīšana —<br>
+        no enkurpunktiem līdz horizontālajām drošības līnijām.
+      </div>
+      <div class="cta-row">
+        <div class="cta">Saņemt piedāvājumu →</div>
+        <div class="phone">+371 264 47394</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

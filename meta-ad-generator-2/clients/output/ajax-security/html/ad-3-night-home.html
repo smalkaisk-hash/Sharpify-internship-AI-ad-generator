@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.15) 35%,rgba(0,0,0,0.15) 55%,rgba(0,0,0,0.8) 100%)}
+    /* Top */
+    .top{position:absolute;top:44px;left:0;right:0;text-align:center;z-index:4}
+    .tag{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#3B82F6;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;padding:12px 28px;background:rgba(59,130,246,0.2);backdrop-filter:blur(8px);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:80px;font-weight:900;color:#FFF;line-height:1.0;text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .sub{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.5);margin-top:10px}
+    /* Product — center bottom, big */
+    .product{position:absolute;bottom:120px;left:50%;transform:translateX(-50%);z-index:3}
+    .product img{height:400px;width:auto;filter:drop-shadow(0 10px 40px rgba(0,0,0,0.5))}
+    /* Bottom */
+    .bot{position:absolute;bottom:0;left:0;right:0;z-index:4;padding:28px 48px;display:flex;align-items:center;justify-content:space-between}
+    .bot-left{display:flex;gap:16px}
+    .pill{padding:10px 22px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:none;border-radius:50px;font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;color:#FFF}
+    .bot-right{display:flex;align-items:center;gap:16px}
+    .price{font-family:'Montserrat',sans-serif;font-size:48px;font-weight:900;color:#FFF}
+    .price-tag{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;color:#3B82F6;padding:8px 16px;background:rgba(59,130,246,0.15);border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/backgrounds/bg-night-home.png" alt="">
+    <div class="overlay"></div>
+    <div class="top">
+      <div class="tag">Ajax drošības sistēma</div>
+      <div class="h1">Tava māja.<br>Tava kontrole.</div>
+      <div class="sub">Centrāle + kustību detektors — vadi no telefona</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/cutouts/ajax-kit-white-bg-cutout.png" alt="">
+    </div>
+    <div class="bot">
+      <div class="bot-left">
+        <span class="pill">Mājas</span>
+        <span class="pill">Biroji</span>
+        <span class="pill">Noliktavas</span>
+        <span class="pill">Garāžas</span>
+      </div>
+      <div class="bot-right">
+        <span class="price">130€</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

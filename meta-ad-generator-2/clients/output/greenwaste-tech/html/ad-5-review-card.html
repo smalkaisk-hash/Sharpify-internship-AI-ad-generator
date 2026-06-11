@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --bg: #F4F1E8; --text: #F4F1E8;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad { position: relative; width: 1080px; height: 1080px; overflow: hidden;
+      background: linear-gradient(160deg, #1D3A2C 0%, #0F2017 100%);
+      color: var(--text); display: flex; flex-direction: column; }
+    .texture { position: absolute; inset: 0; pointer-events: none; background-image:
+        radial-gradient(circle at 20% 30%, rgba(180,224,97,0.05) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(76,175,80,0.05) 0%, transparent 40%); }
+
+    .top { padding: 44px 56px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 5; }
+    .wm { font-family: var(--fh); font-size: 28px; font-weight: 500; letter-spacing: -0.01em; }
+    .wm .dot { color: var(--accent-bright); }
+    .tag { font-family: var(--fb); font-size: 12px; font-weight: 500; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(244,241,232,0.6); }
+
+    .review-wrap { flex: 1; padding: 20px 64px; display: flex; flex-direction: column; justify-content: center; z-index: 5; }
+    .verified { display: inline-flex; align-items: center; gap: 10px; padding: 8px 18px; background: rgba(180,224,97,0.15); border: 1px solid rgba(180,224,97,0.5); border-radius: 30px; font-family: var(--fb); font-size: 12px; font-weight: 600; color: var(--accent-bright); letter-spacing: 0.26em; text-transform: uppercase; margin-bottom: 24px; width: fit-content; }
+    .verified-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-bright); }
+
+    .stars { display: flex; gap: 6px; margin-bottom: 20px; }
+    .star { color: var(--accent-bright); font-size: 30px; }
+
+    .review-quote { font-family: var(--fh); font-size: 54px; font-weight: 500; line-height: 1.18; letter-spacing: -0.015em; color: var(--text); font-style: italic; margin-bottom: 28px; }
+    .review-quote::before { content: "\201C"; color: var(--accent-bright); font-size: 84px; line-height: 0; vertical-align: -18px; margin-right: 4px; }
+    .review-quote::after { content: "\201D"; color: var(--accent-bright); font-size: 84px; line-height: 0; vertical-align: -38px; margin-left: 2px; }
+
+    .author-row { display: flex; align-items: center; gap: 18px; }
+    .author-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-family: var(--fb); font-weight: 700; color: var(--secondary); font-size: 20px; }
+    .author-name { font-family: var(--fb); font-size: 18px; font-weight: 600; color: var(--text); }
+    .author-sub { font-family: var(--fb); font-size: 13px; font-weight: 400; color: rgba(244,241,232,0.58); margin-top: 2px; }
+
+    .secondary-review { margin-top: 32px; padding: 20px 24px; background: rgba(244,241,232,0.04); border-left: 3px solid var(--accent-bright); border-radius: 8px; }
+    .secondary-text { font-family: var(--fb); font-size: 17px; font-weight: 400; line-height: 1.5; color: rgba(244,241,232,0.82); font-style: italic; }
+    .secondary-author { font-family: var(--fb); font-size: 12px; color: rgba(244,241,232,0.55); letter-spacing: 0.16em; margin-top: 10px; text-transform: uppercase; }
+
+    .footer-row { padding: 22px 56px 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(244,241,232,0.1); z-index: 5; }
+    .footer-sig { font-family: var(--fb); font-size: 13px; color: rgba(244,241,232,0.58); letter-spacing: 0.12em; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; height: 72px; min-width: 260px; padding: 0 40px; background: var(--accent-bright); color: var(--secondary); font-family: var(--fb); font-weight: 700; font-size: 17px; letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px; }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="texture"></div>
+
+    <div class="top">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="tag">Klientu atsauksmes</div>
+    </div>
+
+    <div class="review-wrap">
+      <div class="verified"><div class="verified-dot"></div>No greenwaste-tech.com · verificēta</div>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+      <div class="review-quote">Pasūtījums tika izpildīts laikā, precīzi, bez papildus izdevumiem, viss darbojās ok.</div>
+      <div class="author-row">
+        <div class="author-avatar">A</div>
+        <div>
+          <div class="author-name">Aleksandrs</div>
+          <div class="author-sub">Klients · Latvija</div>
+        </div>
+      </div>
+
+      <div class="secondary-review">
+        <div class="secondary-text">"...dienas laikā viss tika uzstādīts. ... Ļoti akurāti un labi paveikts darbs."</div>
+        <div class="secondary-author">— Klients · Latvija</div>
+      </div>
+    </div>
+
+    <div class="footer-row">
+      <div class="footer-sig">5 gadu garantija · CE + EN12566-3 · Sertificēta uzstādīšana</div>
+      <div class="cta">Uzzināt vairāk</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #000;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 56px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(16,185,129,0.08) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.content { position: relative; z-index: 1; text-align: center; max-width: 900px; }
+
+.eyebrow {
+  font-size: 24px; font-weight: 700; color: #10b981;
+  text-transform: uppercase; letter-spacing: 4px;
+  margin-bottom: 36px;
+}
+
+.hero-number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 240px; font-weight: 900; color: #10b981;
+  line-height: 0.9;
+  text-shadow: 0 0 100px rgba(16,185,129,0.25);
+  margin-bottom: 8px;
+}
+
+.hero-unit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; color: #fff;
+  margin-bottom: 12px;
+}
+.hero-unit span { color: #10b981; }
+
+.hero-desc {
+  font-size: 28px; color: #64748b;
+  margin-bottom: 48px;
+  line-height: 1.4;
+}
+
+.divider {
+  width: 100px; height: 4px;
+  background: rgba(16,185,129,0.3);
+  margin: 0 auto 32px; border-radius: 4px;
+}
+
+.stats-row {
+  display: flex; justify-content: center; gap: 48px;
+  margin-bottom: 40px;
+}
+.stat {
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; color: #10b981;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 18px; color: #64748b; margin-top: 8px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 30px 80px; border-radius: 16px;
+  font-weight: 800; font-size: 38px;
+  display: inline-block;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+
+.price-sub {
+  margin-top: 20px; font-size: 22px; color: #475569;
+}
+.price-sub strong { color: #10b981; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="eyebrow">Ar AI Rīku Komplektu</div>
+
+  <div class="hero-number">2-5</div>
+  <div class="hero-unit"><span>ietaupītas stundas</span> nedēļā</div>
+  <div class="hero-desc">No pirmās dienas. Bez eksperimentēšanas.<br>Bez laika tērēšanas.</div>
+
+  <div class="divider"></div>
+
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-num">128</div>
+      <div class="stat-label">slaidi</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">27</div>
+      <div class="stat-label">AI skills</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">74 min</div>
+      <div class="stat-label">video</div>
+    </div>
+  </div>
+
+  <div class="cta-btn">Iegūt par €19 →</div>
+  <div class="price-sub">Bija <s>€99</s> · <strong>Taupi 81%</strong> · Mūžīga piekļuve</div>
+</div>
+</body>
+</html>

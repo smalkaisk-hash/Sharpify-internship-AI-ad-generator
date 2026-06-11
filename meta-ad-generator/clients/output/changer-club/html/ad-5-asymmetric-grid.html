@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond%3Aital%2Cwght%400%2C300%3B0%2C600%3B0%2C700%3B1%2C400%7CMontserrat%3Awght%40400%3B500%3B600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;font-family:'Montserrat',sans-serif;position:relative}
+
+/* Layer 1 — base */
+.base{position:absolute;inset:0;background:#0d0b09}
+
+/* Layer 2 — noise */
+.noise{position:absolute;inset:0;opacity:0.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:300px 300px}
+
+/* Layer 3 — zone A: large left column (headline) */
+.zone-a{
+  position:absolute;top:0;left:0;width:580px;height:680px;
+  background:linear-gradient(135deg, #1a1612 0%, #0d0b09 100%);
+  border-right:1px solid #c8a86a22;
+  border-bottom:1px solid #c8a86a22}
+
+/* Layer 3b — zone A accent glow */
+.zone-a-glow{
+  position:absolute;top:0;left:0;width:580px;height:680px;
+  background:radial-gradient(ellipse 400px 400px at 30% 60%, #c8a86a18 0%, transparent 65%)}
+
+/* Layer 3c — zone B: top right */
+.zone-b{
+  position:absolute;top:0;left:580px;right:0;height:340px;
+  background:#0a0806;
+  border-bottom:1px solid #c8a86a22}
+
+/* Layer 3d — zone C: bottom right */
+.zone-c{
+  position:absolute;top:340px;left:580px;right:0;height:340px;
+  background:linear-gradient(135deg, #c8a86a18 0%, #0a0806 100%)}
+
+/* Layer 3e — zone D: bottom full-width CTA strip */
+.zone-d{
+  position:absolute;bottom:0;left:0;right:0;height:400px;
+  background:#0a0806;
+  border-top:1px solid #c8a86a33}
+
+/* Layer 4 — zone A content */
+.zone-a-content{
+  position:absolute;top:0;left:0;width:580px;height:680px;
+  padding:64px 60px;
+  display:flex;flex-direction:column;justify-content:flex-end}
+
+.eyebrow{
+  font-size:20px;font-weight:600;color:#c8a86a;
+  letter-spacing:7px;text-transform:uppercase;margin-bottom:28px}
+
+.headline{
+  font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:700;
+  line-height:1.0;color:#f5f0e8;margin-bottom:20px}
+.headline em{color:#c8a86a;font-style:normal;display:block}
+
+.tagline{
+  font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;
+  font-style:italic;color:#f5f0e866;line-height:1.5;max-width:440px}
+
+/* zone A accent line top */
+.a-rule{
+  position:absolute;top:64px;left:60px;width:40px;height:2px;background:#c8a86a}
+
+/* Layer 5 — zone B content */
+.zone-b-content{
+  position:absolute;top:0;left:580px;right:0;height:340px;
+  padding:48px 52px;
+  display:flex;flex-direction:column;justify-content:space-between}
+
+.b-label{
+  font-size:20px;font-weight:600;color:#b8a88a;
+  letter-spacing:5px;text-transform:uppercase}
+.b-stat{
+  font-family:'Cormorant Garamond',serif;font-size:88px;font-weight:700;
+  color:#c8a86a;line-height:1;letter-spacing:-2px}
+.b-desc{
+  font-size:22px;color:#f5f0e877;line-height:1.5}
+
+/* Layer 6 — zone C content */
+.zone-c-content{
+  position:absolute;top:340px;left:580px;right:0;height:340px;
+  padding:48px 52px;
+  display:flex;flex-direction:column;justify-content:space-between}
+
+.c-label{
+  font-size:20px;font-weight:600;color:#b8a88a;
+  letter-spacing:5px;text-transform:uppercase}
+.c-stat{
+  font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:700;
+  color:#f5f0e8;line-height:1;letter-spacing:-1px}
+.c-sub{color:#c8a86a;font-size:24px;display:block;margin-top:4px}
+.c-desc{font-size:22px;color:#f5f0e866;line-height:1.5}
+
+/* Layer 7 — bottom zone content */
+.zone-d-content{
+  position:absolute;bottom:0;left:0;right:0;height:400px;
+  padding:48px 64px 160px;
+  display:flex;flex-direction:column;justify-content:space-between}
+
+.d-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px}
+.d-col{flex:1}
+.d-col-head{
+  font-size:20px;font-weight:600;color:#c8a86a;
+  letter-spacing:5px;text-transform:uppercase;margin-bottom:14px;
+  padding-bottom:10px;border-bottom:1px solid #c8a86a33}
+.d-col-body{font-size:22px;color:#f5f0e877;line-height:1.6}
+
+.d-bottom{
+  display:flex;align-items:center;justify-content:space-between}
+.d-note{font-size:22px;color:#b8a88a;font-style:italic}
+.cta{
+  background:#c8a86a;color:#0d0b09;
+  padding:20px 48px;border-radius:4px;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  box-shadow:0 0 50px #c8a86a55}
+</style>
+</head>
+<body>
+<div class="base"></div>
+<div class="noise"></div>
+<div class="zone-a"></div>
+<div class="zone-a-glow"></div>
+<div class="zone-b"></div>
+<div class="zone-c"></div>
+<div class="zone-d"></div>
+
+<div class="zone-a-content">
+  <div class="a-rule"></div>
+  <div class="eyebrow">Changer Club</div>
+  <h1 class="headline">The next<br>chapter<br><em>isn't built</em><br>alone.</h1>
+  <p class="tagline">Not another business club. The operating system for the next chapter of wealth …</p>
+</div>
+
+<div class="zone-b-content">
+  <div class="b-label">Fulfilled Years Added</div>
+  <div class="b-stat">+7</div>
+  <div class="b-desc">Harvard research on purpose-aligned social networks and longevity.</div>
+</div>
+
+<div class="zone-c-content">
+  <div class="c-label">Angel Syndicate ROI</div>
+  <div class="c-stat">110%<span class="c-sub">last year</span></div>
+  <div class="c-desc">Top 5 in Europe. Zero losses in 3 years. From $10,000.</div>
+</div>
+
+<div class="zone-d-content">
+  <div class="d-top">
+    <div class="d-col">
+      <div class="d-col-head">Who Joins</div>
+      <div class="d-col-body">Post-exit founders and wealth families.<br>$5M+ liquid assets required.</div>
+    </div>
+    <div class="d-col">
+      <div class="d-col-head">What You Get</div>
+      <div class="d-col-body">20 private gatherings/year across Monaco and Dubai. Your peers.</div>
+    </div>
+    <div class="d-col">
+      <div class="d-col-head">The Network</div>
+      <div class="d-col-body">270+ families. $25B+ in capital. Marc Randolph. Mo Gawdat.</div>
+    </div>
+  </div>
+  <div class="d-bottom">
+    <div class="d-note">Serge El Dfouni (Sunset Hospitality Group, $500M): 'There is nothing …</div>
+    <div class="cta">See If You Qualify</div>
+  </div>
+</div>
+</body></html>

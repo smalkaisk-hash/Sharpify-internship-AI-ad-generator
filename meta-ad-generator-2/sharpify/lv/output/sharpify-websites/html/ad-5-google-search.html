@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Montserrat:wght@700;800;900&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #202124;
+  font-family: 'Roboto', arial, sans-serif;
+  color: #e8eaed;
+  display: flex; flex-direction: column;
+}
+
+/* Google top bar */
+.g-topbar {
+  padding: 20px 32px 0;
+  display: flex; align-items: center; gap: 24px;
+}
+.g-logo {
+  font-size: 36px; font-weight: 700; letter-spacing: -1px;
+}
+.g-logo .g-b { color: #4285f4; }
+.g-logo .g-r { color: #ea4335; }
+.g-logo .g-y { color: #fbbc05; }
+.g-logo .g-bl { color: #4285f4; }
+.g-logo .g-g { color: #34a853; }
+.g-logo .g-r2 { color: #ea4335; }
+
+/* Search bar */
+.g-searchbar {
+  flex: 1; max-width: 720px;
+  background: #303134; border-radius: 24px;
+  padding: 14px 24px;
+  display: flex; align-items: center; gap: 12px;
+  border: 1px solid #5f6368;
+}
+.g-searchbar svg { width: 20px; height: 20px; fill: #9aa0a6; flex-shrink: 0; }
+.g-searchbar .g-query { font-size: 20px; color: #e8eaed; flex: 1; }
+.g-searchbar .g-mic { width: 24px; height: 24px; }
+
+/* Tabs */
+.g-tabs {
+  display: flex; gap: 0; padding: 0 32px;
+  border-bottom: 1px solid #3c4043;
+  margin-top: 12px;
+}
+.g-tab {
+  padding: 12px 20px; font-size: 15px; color: #969ba1;
+  border-bottom: 3px solid transparent;
+}
+.g-tab.active { color: #8ab4f8; border-bottom-color: #8ab4f8; }
+
+/* Results area */
+.g-results {
+  flex: 1; padding: 24px 32px;
+  overflow: hidden;
+}
+
+.g-result-info {
+  font-size: 14px; color: #969ba1; margin-bottom: 20px;
+}
+
+/* Sponsored result */
+.g-sponsored {
+  margin-bottom: 24px;
+  position: relative;
+}
+.g-sponsored .g-ad-label {
+  display: inline-block;
+  font-size: 13px; font-weight: 700; color: #e8eaed;
+  background: transparent;
+  border: 1px solid #5f6368;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+.g-breadcrumb {
+  display: flex; align-items: center; gap: 6px;
+  margin-bottom: 4px;
+}
+.g-favicon {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #303134; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; color: #10b981;
+}
+.g-breadcrumb .g-site { font-size: 16px; color: #bdc1c6; }
+.g-breadcrumb .g-url { font-size: 14px; color: #969ba1; }
+.g-sponsored .g-title {
+  font-size: 26px; color: #8ab4f8; font-weight: 400;
+  line-height: 1.3; margin-bottom: 6px;
+  cursor: pointer;
+}
+.g-sponsored .g-desc {
+  font-size: 18px; color: #bdc1c6; line-height: 1.5;
+}
+
+/* Organic result - Sharpify (highlighted) */
+.g-organic-highlight {
+  background: rgba(16,185,129,0.04);
+  border: 2px solid rgba(16,185,129,0.2);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.g-organic-highlight .g-breadcrumb .g-site { color: #e8eaed; font-weight: 500; }
+.g-organic-highlight .g-title {
+  font-size: 30px; color: #8ab4f8; font-weight: 400;
+  line-height: 1.3; margin-bottom: 8px;
+}
+.g-organic-highlight .g-desc {
+  font-size: 20px; color: #bdc1c6; line-height: 1.5;
+}
+.g-organic-highlight .g-desc strong { color: #e8eaed; }
+
+/* Rating stars */
+.g-rating {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 10px;
+}
+.g-stars { color: #fbbc05; font-size: 18px; letter-spacing: 1px; }
+.g-rating-text { font-size: 16px; color: #969ba1; }
+
+/* Sitelinks */
+.g-sitelinks {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 8px 24px; margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #3c4043;
+}
+.g-sitelink {
+  font-size: 17px; color: #8ab4f8;
+}
+.g-sitelink-desc { font-size: 14px; color: #969ba1; margin-top: 2px; }
+
+/* Second organic result (dimmed) */
+.g-organic-dim {
+  opacity: 0.35; padding: 0 4px;
+}
+.g-organic-dim .g-title {
+  font-size: 24px; color: #8ab4f8; font-weight: 400;
+  line-height: 1.3; margin-bottom: 4px;
+}
+.g-organic-dim .g-desc { font-size: 16px; color: #969ba1; line-height: 1.4; }
+
+/* Hook banner at top */
+.hook-banner {
+  background: linear-gradient(135deg, #0f172a, #1a2744);
+  padding: 32px 40px;
+  text-align: center;
+  border-bottom: 3px solid #10b981;
+}
+.hook-banner h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; color: #fff;
+}
+.hook-banner h2 span { color: #10b981; }
+</style>
+</head>
+<body>
+  <div class="g-topbar" style="padding-top: 36px;">
+    <div class="g-logo">
+      <span class="g-b">G</span><span class="g-r">o</span><span class="g-y">o</span><span class="g-bl">g</span><span class="g-g">l</span><span class="g-r2">e</span>
+    </div>
+    <div class="g-searchbar">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      <span class="g-query">profesionāls mājaslapas pakalpojums biznesam</span>
+    </div>
+  </div>
+
+  <div class="g-tabs">
+    <div class="g-tab active">Viss</div>
+    <div class="g-tab">Attēli</div>
+    <div class="g-tab">Video</div>
+    <div class="g-tab">Ziņas</div>
+    <div class="g-tab">Maps</div>
+  </div>
+
+  <div class="g-results">
+    <div class="g-result-info">Aptuveni 2 450 000 rezultātu (0,42 sek.)</div>
+
+    <div class="g-organic-highlight">
+      <div class="g-breadcrumb">
+        <div class="g-favicon">S</div>
+        <div>
+          <div class="g-site">Sharpify</div>
+          <div class="g-url">https://reg.sharpify.lv</div>
+        </div>
+      </div>
+      <div class="g-title">Profesionāla mājaslapa pakalpojumu sniedzējiem — no €59</div>
+      <div class="g-desc">Individuāls dizains, mobilā versija, kontaktu forma. <strong>Nav šabloni.</strong> Gatava 1-3 dienās. Vienreizējs maksājums. <strong>100% apmierinātības garantija.</strong></div>
+      <div class="g-sitelinks">
+        <div><div class="g-sitelink">Starter plāns — €59</div><div class="g-sitelink-desc">Vienas lapas mājaslapa, gatava 1-2 dienās</div></div>
+        <div><div class="g-sitelink">Pro plāns — €199</div><div class="g-sitelink-desc">Paplašināta ar SEO, animācijām, 3 labojumu kārtām</div></div>
+        <div><div class="g-sitelink">2 300+ uzņēmumi</div><div class="g-sitelink-desc">26 valstīs uzticas Sharpify komandai</div></div>
+        <div><div class="g-sitelink">Kā tas strādā?</div><div class="g-sitelink-desc">3 soļi: anketa → WhatsApp → gatava mājaslapa</div></div>
+      </div>
+    </div>
+
+    <div class="g-organic-dim">
+      <div class="g-breadcrumb" style="margin-bottom: 4px;">
+        <div class="g-favicon" style="background:#3c4043; color: #969ba1;">W</div>
+        <div>
+          <div class="g-site" style="color:#969ba1;">WebDizains.lv</div>
+          <div class="g-url">https://webdizains.lv › pakalpojumi</div>
+        </div>
+      </div>
+      <div class="g-title">Mājaslapu izstrāde un dizains — no €800</div>
+      <div class="g-desc">Profesionāla mājaslapu izveide. Izstrādes laiks: 4-8 nedēļas. Sazinieties ar mums...</div>
+    </div>
+  </div>
+</body>
+</html>

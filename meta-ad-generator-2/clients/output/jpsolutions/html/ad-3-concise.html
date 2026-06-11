@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden;background:#0E0E0E}
+
+    .ad{
+      width:1080px;height:1080px;
+      display:grid;grid-template-columns:520px 1fr;
+      overflow:hidden
+    }
+
+    /* ── LEFT ── */
+    .left{
+      background:#0E0E0E;
+      padding:52px 48px 48px 52px;
+      display:flex;flex-direction:column;
+      border-right:3px solid #E8721A;
+      position:relative;z-index:2
+    }
+
+    /* Logo */
+    .logo-row{display:flex;align-items:center;gap:10px;margin-bottom:44px}
+    .logo-pill{
+      background:#E8721A;padding:10px 20px;border-radius:6px;
+      font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.08em;color:#fff
+    }
+    .logo-dot{width:6px;height:6px;border-radius:50%;background:#2C2C2C}
+    .logo-sub{
+      font-family:'Inter',sans-serif;font-size:13px;font-weight:600;
+      color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.16em
+    }
+
+    /* Headline */
+    .headline{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:104px;line-height:0.88;
+      color:#fff;letter-spacing:0.01em;
+      margin-bottom:20px
+    }
+    .headline .accent{color:#E8721A}
+
+    .tagline{
+      font-family:'Inter',sans-serif;font-size:18px;font-weight:400;
+      color:rgba(255,255,255,0.45);line-height:1.55;
+      margin-bottom:44px;max-width:380px
+    }
+
+    /* 3 service rows */
+    .services{display:flex;flex-direction:column;gap:6px;flex:1}
+
+    .svc{
+      display:flex;align-items:center;gap:16px;
+      padding:18px 20px;
+      background:#141414;
+      border-radius:10px;
+      border-left:3px solid transparent;
+      transition:border-color 0.2s
+    }
+    .svc.hl{border-left-color:#E8721A}
+
+    .icon{
+      width:44px;height:44px;flex-shrink:0;
+      background:#1E1E1E;border-radius:8px;
+      display:flex;align-items:center;justify-content:center
+    }
+    .icon svg{width:22px;height:22px}
+
+    .svc-text{display:flex;flex-direction:column;gap:3px}
+    .svc-title{
+      font-family:'Inter',sans-serif;font-size:18px;font-weight:700;
+      color:#fff
+    }
+    .svc-desc{
+      font-family:'Inter',sans-serif;font-size:14px;font-weight:400;
+      color:rgba(255,255,255,0.38)
+    }
+
+    /* CTA */
+    .cta-wrap{margin-top:32px}
+    .cta{
+      display:block;width:100%;
+      background:#E8721A;color:#fff;
+      font-family:'Inter',sans-serif;font-size:20px;font-weight:800;
+      padding:20px;border-radius:10px;text-align:center;
+      letter-spacing:0.02em;
+      box-shadow:0 6px 28px rgba(232,114,26,0.30);
+      margin-bottom:16px
+    }
+    .phone{
+      font-family:'Inter',sans-serif;font-size:14px;font-weight:500;
+      color:rgba(255,255,255,0.30);text-align:center;letter-spacing:0.05em
+    }
+
+    /* ── RIGHT ── */
+    .right{position:relative;overflow:hidden}
+    .right img{width:100%;height:100%;object-fit:cover;object-position:center top}
+    .fade-left{
+      position:absolute;top:0;left:0;width:100px;height:100%;
+      background:linear-gradient(90deg,#0E0E0E 0%,transparent 100%)
+    }
+    /* stat block bottom right */
+    .stat{
+      position:absolute;bottom:48px;right:36px;
+      text-align:right
+    }
+    .stat-num{
+      font-family:'Bebas Neue',sans-serif;font-size:96px;line-height:1;
+      color:#E8721A;text-shadow:0 0 40px rgba(232,114,26,0.4)
+    }
+    .stat-label{
+      font-family:'Inter',sans-serif;font-size:16px;font-weight:600;
+      color:rgba(255,255,255,0.60);text-transform:uppercase;letter-spacing:0.10em
+    }
+  </style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="left">
+
+    <div class="logo-row">
+      <div class="logo-pill">JP Solutions</div>
+      <div class="logo-dot"></div>
+      <div class="logo-sub">Drošība augstumā</div>
+    </div>
+
+    <div class="headline">Darbs<br>augstumā —<br><span class="accent">droši.</span></div>
+    <div class="tagline">Drošības sistēmu piegāde, uzstādīšana un apkope visā Latvijā.</div>
+
+    <div class="services">
+
+      <div class="svc hl">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="svc-text">
+          <div class="svc-title">Drošības līnijas un enkuri</div>
+          <div class="svc-desc">Horizontālas, vertikālas — jumtiem un fasādēm</div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <div class="svc-text">
+          <div class="svc-title">Gada tehniskās pārbaudes</div>
+          <div class="svc-desc">Sertificētas inspekcijas — EN standartiem</div>
+        </div>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E8721A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+          </svg>
+        </div>
+        <div class="svc-text">
+          <div class="svc-title">Noma un konsultācijas</div>
+          <div class="svc-desc">Aprīkojums un projektu izstrāde jebkuram objektam</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-wrap">
+      <div class="cta">Saņemt bezmaksas piedāvājumu →</div>
+      <div class="phone">+371 264 47394 · jpsolutions.lv</div>
+    </div>
+
+  </div>
+
+  <div class="right">
+    <img src="../brief/images/roof-workers-bg.png" alt="">
+    <div class="fade-left"></div>
+    <div class="stat">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">uzstādīti objekti</div>
+    </div>
+  </div>
+
+</div>
+<script>
+  // Signal Chrome headless to wait until fonts are ready before screenshotting
+  document.fonts.ready.then(() => { document.title = 'fonts-ready'; });
+</script>
+</body>
+</html>

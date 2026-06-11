@@ -1,0 +1,305 @@
+/* ============================================================
+   CHANGER CLUB — Design Tokens
+   Colors + Typography
+   "Be wealthy, not just rich."
+   ============================================================ */
+
+/* -- Fonts (Google substitutes for licensed faces) -----------
+   The brief calls for "Canela or equivalent" (a high-contrast
+   transitional serif). The wordmark is set in a heavy condensed
+   sans (visually closest to Anton / Druk Wide). Until the
+   licensed files arrive we substitute:
+      Canela  →  Playfair Display (display italic)
+                 + Cormorant Garamond (body serif)
+      Wordmark→  Anton (condensed sans display)
+      UI sans →  Inter (CTA labels, captions, microcopy)
+   ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Color: Core ---------- */
+  --cc-black:        #000000;            /* page / hero ground */
+  --cc-ink:          #0A0A0A;            /* preferred near-black */
+  --cc-ink-2:        #141414;            /* card surface on ink */
+  --cc-ink-3:        #1E1E1E;            /* raised surface */
+  --cc-cream:        #F4EFE6;            /* warm off-white text on dark */
+  --cc-cream-soft:   #E8E1D2;            /* dimmer cream */
+  --cc-paper:        #FBF8F2;            /* light page bg (rare) */
+
+  /* ---------- Color: Gold (the only accent) ---------- */
+  --cc-gold:         #C9A24A;            /* primary brand gold */
+  --cc-gold-bright:  #D9B860;            /* hover / highlight */
+  --cc-gold-deep:    #8E6F2C;            /* pressed / shadow side */
+  --cc-gold-soft:    rgba(201, 162, 74, 0.16); /* tints, hairlines */
+  --cc-gold-line:    rgba(201, 162, 74, 0.55); /* border / divider */
+
+  /* ---------- Color: Burgundy (sparingly, per brief) ---------- */
+  --cc-burgundy:     #4A1C24;            /* deep accent only */
+
+  /* ---------- Foreground / background semantics ---------- */
+  --cc-bg:           var(--cc-black);
+  --cc-bg-elev:      var(--cc-ink-2);
+  --cc-bg-elev-2:    var(--cc-ink-3);
+  --cc-fg:           var(--cc-cream);
+  --cc-fg-muted:     rgba(244, 239, 230, 0.72);
+  --cc-fg-dim:       rgba(244, 239, 230, 0.52);
+  --cc-fg-faint:     rgba(244, 239, 230, 0.32);
+  --cc-accent:       var(--cc-gold);
+  --cc-accent-fg:    #1A1208;            /* text on gold */
+  --cc-divider:      rgba(244, 239, 230, 0.12);
+  --cc-divider-gold: var(--cc-gold-line);
+
+  /* ---------- Type families ---------- */
+  --cc-font-display:  'Playfair Display', 'Canela Deck', 'Didot', Georgia, serif;
+  --cc-font-serif:    'Cormorant Garamond', 'Canela Text', Georgia, 'Times New Roman', serif;
+  --cc-font-wordmark: 'Anton', 'Druk Wide', 'Bebas Neue', 'Helvetica Neue', sans-serif;
+  --cc-font-sans:     'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+  --cc-font-mono:     ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ---------- Type scale (px @ desktop) ---------- */
+  --cc-fs-mega:    96px;   /* hero LEGACY-size display */
+  --cc-fs-h1:      64px;
+  --cc-fs-h2:      44px;
+  --cc-fs-h3:      32px;
+  --cc-fs-h4:      24px;
+  --cc-fs-lead:    20px;
+  --cc-fs-body:    17px;
+  --cc-fs-small:   14px;
+  --cc-fs-eyebrow: 12px;
+
+  /* ---------- Line-heights ---------- */
+  --cc-lh-tight:   1.02;   /* display */
+  --cc-lh-snug:    1.15;
+  --cc-lh-body:    1.55;
+  --cc-lh-loose:   1.7;
+
+  /* ---------- Letter-spacing ---------- */
+  --cc-tr-eyebrow: 0.22em; /* uppercase "BE WEALTHY, NOT JUST RICH" */
+  --cc-tr-wordmark:0.04em; /* CHANGER wordmark */
+  --cc-tr-caps:    0.14em;
+  --cc-tr-button:  0.02em;
+  --cc-tr-tight:   -0.01em;
+  --cc-tr-display: -0.015em;
+
+  /* ---------- Spacing scale (8pt-ish, plus generous luxury) ---------- */
+  --cc-space-1:  4px;
+  --cc-space-2:  8px;
+  --cc-space-3:  12px;
+  --cc-space-4:  16px;
+  --cc-space-5:  24px;
+  --cc-space-6:  32px;
+  --cc-space-7:  48px;
+  --cc-space-8:  64px;
+  --cc-space-9:  96px;
+  --cc-space-10: 128px;
+  --cc-space-11: 160px;
+
+  /* ---------- Radii (mostly capsule + sharp) ---------- */
+  --cc-radius-0:    0px;
+  --cc-radius-1:    2px;     /* hairline cards */
+  --cc-radius-2:    4px;
+  --cc-radius-3:    8px;
+  --cc-radius-pill: 999px;   /* gold CTA */
+
+  /* ---------- Borders ---------- */
+  --cc-border-hair:   1px solid var(--cc-divider);
+  --cc-border-gold:   1px solid var(--cc-gold-line);
+  --cc-border-frame:  1px solid var(--cc-gold);
+
+  /* ---------- Shadows / Elevation ---------- */
+  --cc-shadow-soft:  0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.35);
+  --cc-shadow-card:  0 2px 4px rgba(0,0,0,0.5), 0 24px 60px rgba(0,0,0,0.55);
+  --cc-shadow-cta:   0 1px 0 rgba(255,255,255,0.06) inset,
+                     0 -2px 0 var(--cc-gold-deep) inset,
+                     0 8px 24px rgba(201,162,74,0.18);
+  --cc-glow-gold:    0 0 0 1px rgba(201,162,74,0.35),
+                     0 0 32px rgba(201,162,74,0.18);
+
+  /* ---------- Motion ---------- */
+  --cc-ease:         cubic-bezier(0.22, 0.61, 0.36, 1); /* gentle, restrained */
+  --cc-ease-quiet:   cubic-bezier(0.4, 0.0, 0.2, 1);
+  --cc-dur-quick:    180ms;
+  --cc-dur-base:     320ms;
+  --cc-dur-slow:     560ms;
+  --cc-dur-fade:     900ms;  /* fades-to-black per VSL brief */
+
+  /* ---------- Layout ---------- */
+  --cc-container:     1240px;
+  --cc-container-narrow: 880px;
+  --cc-page-pad:      max(24px, 4vw);
+}
+
+/* ============================================================
+   Semantic typography (use these, not raw families/sizes)
+   ============================================================ */
+
+.cc-wordmark {
+  font-family: var(--cc-font-wordmark);
+  font-weight: 400;
+  letter-spacing: var(--cc-tr-wordmark);
+  text-transform: uppercase;
+  color: var(--cc-cream);
+  line-height: 1;
+}
+
+.cc-tagline {
+  font-family: var(--cc-font-sans);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: var(--cc-tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--cc-cream);
+}
+
+.cc-eyebrow {
+  font-family: var(--cc-font-sans);
+  font-weight: 500;
+  font-size: var(--cc-fs-eyebrow);
+  letter-spacing: var(--cc-tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--cc-gold);
+}
+
+.cc-display {              /* italic serif "Legacy", "Power Families"  */
+  font-family: var(--cc-font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--cc-fs-mega);
+  line-height: var(--cc-lh-tight);
+  letter-spacing: var(--cc-tr-display);
+  color: var(--cc-cream);
+}
+
+.cc-display--gold { color: var(--cc-gold); }
+.cc-display--caps {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+h1, .cc-h1 {
+  font-family: var(--cc-font-display);
+  font-weight: 600;
+  font-size: var(--cc-fs-h1);
+  line-height: var(--cc-lh-snug);
+  letter-spacing: var(--cc-tr-display);
+  color: var(--cc-cream);
+}
+
+h2, .cc-h2 {
+  font-family: var(--cc-font-display);
+  font-weight: 500;
+  font-size: var(--cc-fs-h2);
+  line-height: 1.12;
+  letter-spacing: var(--cc-tr-display);
+  color: var(--cc-cream);
+}
+
+h3, .cc-h3 {
+  font-family: var(--cc-font-display);
+  font-weight: 500;
+  font-size: var(--cc-fs-h3);
+  line-height: 1.2;
+  color: var(--cc-cream);
+}
+
+h4, .cc-h4 {
+  font-family: var(--cc-font-serif);
+  font-weight: 500;
+  font-size: var(--cc-fs-h4);
+  line-height: 1.3;
+  color: var(--cc-cream);
+}
+
+.cc-lead {
+  font-family: var(--cc-font-serif);
+  font-weight: 400;
+  font-size: var(--cc-fs-lead);
+  line-height: var(--cc-lh-body);
+  color: var(--cc-fg-muted);
+  text-wrap: pretty;
+}
+
+.cc-pull-quote {
+  font-family: var(--cc-font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  color: var(--cc-cream);
+  text-wrap: balance;
+}
+
+p, .cc-body {
+  font-family: var(--cc-font-sans);
+  font-weight: 400;
+  font-size: var(--cc-fs-body);
+  line-height: var(--cc-lh-body);
+  color: var(--cc-fg-muted);
+  text-wrap: pretty;
+}
+
+.cc-body--serif {
+  font-family: var(--cc-font-serif);
+  font-size: 18px;
+  line-height: var(--cc-lh-body);
+}
+
+.cc-small {
+  font-family: var(--cc-font-sans);
+  font-size: var(--cc-fs-small);
+  line-height: 1.5;
+  color: var(--cc-fg-dim);
+}
+
+.cc-caption {
+  font-family: var(--cc-font-sans);
+  font-size: 12px;
+  letter-spacing: var(--cc-tr-caps);
+  text-transform: uppercase;
+  color: var(--cc-fg-dim);
+}
+
+.cc-button-label {
+  font-family: var(--cc-font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: var(--cc-tr-button);
+  color: var(--cc-accent-fg);
+}
+
+/* ============================================================
+   Background helpers
+   ============================================================ */
+.cc-bg-ink   { background: var(--cc-bg); color: var(--cc-fg); }
+.cc-bg-elev  { background: var(--cc-bg-elev); color: var(--cc-fg); }
+.cc-bg-paper { background: var(--cc-paper); color: var(--cc-ink); }
+
+/* Subtle vignette used on most hero sections */
+.cc-vignette {
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(201,162,74,0.05), transparent 60%),
+    radial-gradient(140% 100% at 50% 100%, rgba(0,0,0,0.6), transparent 60%),
+    var(--cc-bg);
+}
+
+/* Hairline gold rule, used as section divider in social tiles */
+.cc-rule-gold {
+  height: 1px;
+  background: var(--cc-gold);
+  opacity: 0.85;
+  border: 0;
+}
+
+/* ============================================================
+   Reduced-motion: keep the brand's "restrained" register.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --cc-dur-quick: 0ms;
+    --cc-dur-base:  0ms;
+    --cc-dur-slow:  0ms;
+    --cc-dur-fade:  0ms;
+  }
+}

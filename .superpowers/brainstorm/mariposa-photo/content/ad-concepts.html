@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reklāmu koncepti — Mariposa</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0a; color:#fff; font-family:'Inter', sans-serif; padding:40px 20px; }
+h1 { font-family:'Montserrat', sans-serif; font-size:28px; text-align:center; margin-bottom:8px; }
+.subtitle { text-align:center; color:#888; margin-bottom:48px; font-size:15px; }
+
+.concepts-grid {
+  display:grid;
+  grid-template-columns:repeat(3, 360px);
+  gap:32px;
+  max-width:1200px;
+  margin:0 auto;
+  justify-content:center;
+}
+
+.concept-card {
+  background:#151515; border-radius:16px; overflow:hidden;
+  border:2px solid #222; cursor:pointer;
+  transition:all 0.3s ease; position:relative;
+}
+.concept-card:hover { border-color:#C56B62; transform:translateY(-4px); box-shadow:0 12px 40px rgba(197,107,98,0.20); }
+.concept-card.selected { border-color:#C56B62; box-shadow:0 0 0 3px rgba(197,107,98,0.28); }
+
+.concept-label {
+  position:absolute; top:12px; left:12px;
+  background:#C56B62; color:#fff; font-weight:700;
+  padding:4px 12px; border-radius:6px; font-size:13px;
+  z-index:20; pointer-events:none;
+}
+
+/* ── Pixel-perfect iframe preview ── */
+.preview-wrap {
+  width:360px; height:360px;
+  overflow:hidden; position:relative;
+  flex-shrink:0;
+}
+.preview-wrap iframe {
+  width:1080px; height:1080px;
+  transform:scale(0.3333);
+  transform-origin:top left;
+  border:none; pointer-events:none;
+  display:block;
+}
+
+/* ── Card info ── */
+.concept-info { padding:20px; }
+.concept-info h3 { font-family:'Montserrat', sans-serif; font-size:18px; margin-bottom:8px; }
+.concept-info p { color:#999; font-size:13px; line-height:1.5; }
+.concept-info .tags { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.concept-info .tag {
+  background:#1e1e1e; color:#C56B62;
+  padding:4px 10px; border-radius:6px;
+  font-size:11px; font-weight:600;
+}
+
+.select-hint { text-align:center; margin-top:40px; color:#555; font-size:13px; }
+</style>
+</head>
+<body>
+
+<h1>Reklāmu koncepti — Mariposa</h1>
+<p class="subtitle">Pikseļprecīzi priekšskatījumi · Noklikšķini uz konceptiem, kas patīk.</p>
+
+<div class="concepts-grid">
+
+  <!-- CONCEPT A -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">A</span>
+    <div class="preview-wrap">
+      <iframe src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/html/ad-4-bottomband.html"
+              scrolling="no"></iframe>
+    </div>
+    <div class="concept-info">
+      <h3>Apakšējā josla</h3>
+      <p>Seja pilnā fokusā augšā, krēmrozā josla apakšā ar tekstu. Gaisīgs un elegants.</p>
+      <div class="tags">
+        <span class="tag">Bottom band</span>
+        <span class="tag">Face hero</span>
+        <span class="tag">Blush palette</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT B -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">B</span>
+    <div class="preview-wrap">
+      <iframe src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/html/ad-5-frame.html"
+              scrolling="no"></iframe>
+    </div>
+    <div class="concept-info">
+      <h3>Centrētais portrets</h3>
+      <p>Foto ornamentālā rāmī uz krēmrozā fona. Augstā mode — juvelierizstrādājumu ēstetika.</p>
+      <div class="tags">
+        <span class="tag">Portrait frame</span>
+        <span class="tag">Luxury editorial</span>
+        <span class="tag">High fashion</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT C -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">C</span>
+    <div class="preview-wrap">
+      <iframe src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/html/ad-6-minimal.html"
+              scrolling="no"></iframe>
+    </div>
+    <div class="concept-info">
+      <h3>Pilns kadrs — minimāls</h3>
+      <p>Foto aizpilda visu kanvu. Teksts peld pār tumšo apakšdaļu. Augstākā scroll-stop vērtība.</p>
+      <div class="tags">
+        <span class="tag">Full-bleed</span>
+        <span class="tag">Minimal overlay</span>
+        <span class="tag">Scroll-stopper</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="select-hint">Noklikšķini uz konceptiem, kas patīk — var izvēlēties vairākus. Atbildi terminālā.</p>
+
+<script>
+// Wait for all iframes to fully load before marking page ready
+window.addEventListener('load', () => {
+  const iframes = document.querySelectorAll('iframe');
+  let loaded = 0;
+  iframes.forEach(iframe => {
+    iframe.addEventListener('load', () => {
+      loaded++;
+      if (loaded === iframes.length) {
+        document.title = 'iframes-ready';
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

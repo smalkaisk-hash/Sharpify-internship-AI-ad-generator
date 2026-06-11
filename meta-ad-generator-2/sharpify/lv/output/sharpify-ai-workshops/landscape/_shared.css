@@ -1,0 +1,50 @@
+/* Shared landscape ad styles — reusable tokens & SVG icons */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,700;1,900&family=Montserrat:wght@700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1280px; height: 720px; overflow: hidden; }
+
+/* Base body */
+.base {
+  width: 1280px; height: 720px;
+  background: linear-gradient(145deg, #0a0a14 0%, #0f1020 50%, #0a0a12 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  padding: 40px 52px 32px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.base::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(218,165,32,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(16,185,129,0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.gold-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.eyebrow {
+  font-size: 14px; letter-spacing: 5px;
+  color: #daa520; font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Inline SVG icon sizing */
+.ic { width: 28px; height: 28px; stroke: #10b981; stroke-width: 1.75; fill: none; stroke-linecap: round; stroke-linejoin: round; display: inline-block; vertical-align: middle; }
+.ic.sm { width: 18px; height: 18px; stroke-width: 2; }
+.ic.lg { width: 40px; height: 40px; stroke-width: 1.5; }
+.ic.gold { stroke: #daa520; }
+.ic.mute { stroke: #64748b; }
+.ic.red { stroke: #ef4444; }
+.ic.blue { stroke: #3b82f6; }
+.ic.violet { stroke: #8b5cf6; }

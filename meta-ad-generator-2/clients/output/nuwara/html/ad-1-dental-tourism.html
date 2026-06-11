@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Nuwara – Dental Tourism Egypt</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .canvas {
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+  }
+
+  /* ── TOP WHITE ZONE (logo + headline live here) ─────────────────── */
+  .top-white {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 460px;
+    background: linear-gradient(180deg,
+      #ffffff 0%,
+      #fdfaf6 70%,
+      rgba(252,248,242,0) 100%
+    );
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  /* ── SPLIT BACKGROUNDS — visible only in lower 55% ─────────────── */
+  /* Egypt left */
+  .bg-egypt {
+    position: absolute;
+    left: 0; top: 420px;
+    width: 580px; height: 440px;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+  }
+
+  .egypt-sky {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      #e8a030 0%,
+      #f5b840 20%,
+      #f7cc60 45%,
+      #f9dfa0 72%,
+      #faeec8 100%
+    );
+  }
+  .egypt-sun {
+    position: absolute;
+    top: 30px; left: 160px;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fffde7 0%, #ffe57f 35%, #ffc107 65%, rgba(255,152,0,0) 100%);
+    filter: blur(3px);
+  }
+  .egypt-haze {
+    position: absolute;
+    bottom: 140px; left: 0; right: 0;
+    height: 130px;
+    background: linear-gradient(180deg, transparent 0%, rgba(240,195,100,0.3) 100%);
+  }
+  .egypt-ground {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, #d4a050 0%, #c08030 50%, #a06820 100%);
+    border-radius: 50% 30% 0 0 / 40px 30px 0 0;
+  }
+  /* Pyramids */
+  .pyramid-a {
+    position: absolute;
+    bottom: 155px; left: 50px;
+    width: 0; height: 0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    border-bottom: 195px solid #c88830;
+    filter: drop-shadow(6px 0 18px rgba(160,90,10,0.5));
+  }
+  .pyramid-a::after {
+    content: '';
+    position: absolute;
+    top: 30px; left: -78px;
+    width: 0; height: 0;
+    border-left: 78px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 140px solid rgba(120,70,10,0.35);
+  }
+  .pyramid-b {
+    position: absolute;
+    bottom: 155px; left: 215px;
+    width: 0; height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 145px solid #b87820;
+    filter: drop-shadow(5px 0 14px rgba(140,80,10,0.4));
+  }
+  .pyramid-b::after {
+    content: '';
+    position: absolute;
+    top: 22px; left: -58px;
+    width: 0; height: 0;
+    border-left: 58px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 105px solid rgba(100,60,8,0.3);
+  }
+  .pyramid-c {
+    position: absolute;
+    bottom: 155px; left: 345px;
+    width: 0; height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 88px solid #c89038;
+  }
+  /* Palm trees */
+  .palm { position: absolute; }
+  .palm-trunk { width: 7px; background: linear-gradient(180deg,#6b4c2a,#3d2810); border-radius:3px; margin:0 auto; }
+  .frond {
+    position: absolute;
+    height: 9px;
+    background: linear-gradient(90deg,#1e5e22,#3a8c42);
+    border-radius: 0 5px 5px 0;
+    transform-origin: 3px 4px;
+  }
+  /* Nile */
+  .nile {
+    position: absolute;
+    bottom: 0; left: -10px; right: 0;
+    height: 155px;
+    background: linear-gradient(180deg,
+      rgba(55,105,160,0.55) 0%,
+      rgba(40,90,148,0.78) 40%,
+      rgba(30,75,130,0.92) 100%
+    );
+    border-radius: 15px 50px 0 0;
+    overflow: hidden;
+  }
+  .nile-shimmer {
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(180deg,
+      rgba(255,190,80,0.1) 0, rgba(255,190,80,0.1) 2px,
+      transparent 2px, transparent 9px
+    );
+  }
+  /* Sailboat */
+  .sailboat { position: absolute; }
+  .hull { width:56px; height:15px; background:#5a3518; border-radius:0 0 9px 9px; }
+  .mast { position:absolute; bottom:13px; left:26px; width:2px; height:68px; background:#3d2510; }
+  .sail {
+    position:absolute; bottom:15px; left:28px;
+    width:0; height:0;
+    border-left:40px solid rgba(255,252,240,0.92);
+    border-top:58px solid transparent;
+    filter:drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
+  }
+
+  /* Dental clinic right */
+  .bg-clinic {
+    position: absolute;
+    right: 0; top: 420px;
+    width: 580px; height: 440px;
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.7) 55%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+  }
+  .clinic-room {
+    position: absolute; inset: 0;
+    background: linear-gradient(150deg, #ecf5fa 0%, #daedf5 30%, #cce4f0 65%, #c0daea 100%);
+  }
+  .clinic-window {
+    position: absolute;
+    top: 20px; right: 50px;
+    width: 170px; height: 200px;
+    background: linear-gradient(155deg, #e0f4ff 0%, #b5e3f8 50%, #88ccec 100%);
+    border: 5px solid rgba(255,255,255,0.85);
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(160,215,235,0.55), inset 0 0 25px rgba(255,255,255,0.35);
+  }
+  .clinic-window::before {
+    content:''; position:absolute; top:50%; left:0; right:0;
+    height:4px; background:rgba(255,255,255,0.75);
+  }
+  .clinic-window::after {
+    content:''; position:absolute; top:0; bottom:0; left:50%;
+    width:4px; background:rgba(255,255,255,0.75);
+  }
+  /* Dental chair */
+  .chair-wrap { position:absolute; bottom:55px; right:70px; width:210px; height:280px; }
+  .ch-base { position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:65px; height:18px; background:#adb8be; border-radius:4px; }
+  .ch-pole { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); width:13px; height:85px; background:linear-gradient(90deg,#8ea4ae,#b0c4cc,#8ea4ae); border-radius:4px; }
+  .ch-seat { position:absolute; bottom:94px; left:50%; transform:translateX(-50%); width:135px; height:34px; background:linear-gradient(180deg,#1a7078,#0f5060); border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.22); }
+  .ch-back { position:absolute; bottom:122px; left:50%; transform:translateX(-50%) rotate(-6deg); width:122px; height:148px; background:linear-gradient(175deg,#1e7880,#125868); border-radius:10px 10px 4px 4px; box-shadow:4px 0 14px rgba(0,0,0,0.18); }
+  .ch-head { position:absolute; bottom:262px; left:50%; transform:translateX(-50%) rotate(-6deg); width:82px; height:38px; background:linear-gradient(175deg,#1e7880,#125868); border-radius:8px; }
+  .ch-arm  { position:absolute; bottom:118px; right:16px; width:20px; height:82px; background:linear-gradient(180deg,#1e7880,#0f5060); border-radius:4px; transform:rotate(-8deg); }
+  /* Overhead dental light */
+  .dlight { position:absolute; top:20px; right:190px; }
+  .dl-armv { width:6px; height:90px; background:linear-gradient(90deg,#8ea4ae,#b0c4cc,#8ea4ae); margin:0 auto; border-radius:3px; }
+  .dl-armh { width:75px; height:6px; background:#b0c4cc; border-radius:3px; margin:-3px 0 0 -38px; }
+  .dl-head { width:68px; height:34px; background:linear-gradient(180deg,#d0dce0,#aebec5); border-radius:50% 50% 12px 12px; margin:-1px 0 0 -34px; position:relative; box-shadow:0 4px 14px rgba(190,220,235,0.5); }
+  .dl-lens { position:absolute; bottom:4px; left:50%; transform:translateX(-50%); width:28px; height:15px; border-radius:50%; background:radial-gradient(circle,#fffde7 0%,#ffe082 50%,#ffc107 100%); box-shadow:0 0 18px rgba(255,210,80,0.65); }
+  /* X-ray monitor */
+  .xray { position:absolute; top:105px; right:285px; width:125px; }
+  .xray-screen { width:125px; height:95px; background:#081828; border:4px solid #455a64; border-radius:4px; overflow:hidden; box-shadow:0 0 18px rgba(80,160,210,0.28); position:relative; }
+  .xray-row { position:absolute; top:12px; left:8px; right:8px; height:65px; display:flex; align-items:flex-end; justify-content:center; gap:2px; }
+  .xtooth { background:rgba(195,215,240,0.82); border-radius:3px 3px 6px 6px; flex-shrink:0; }
+  .xray-gumline { position:absolute; bottom:0; left:0; right:0; height:13px; background:rgba(90,130,175,0.45); border-radius:0 0 2px 2px; }
+  .xray-stand { width:15px; height:13px; background:#455a64; margin:0 auto; border-radius:0 0 3px 3px; }
+  .xray-foot  { width:48px; height:5px; background:#455a64; margin:0 auto; border-radius:3px; }
+  /* Instrument tray */
+  .itray { position:absolute; bottom:140px; right:35px; width:82px; }
+  .it-tools { position:relative; height:44px; }
+  .it-tool { position:absolute; bottom:0; width:3px; background:linear-gradient(180deg,#9e9e9e,#757575); border-radius:2px; }
+  .it-surface { width:82px; height:10px; background:linear-gradient(180deg,#e2e2e2,#bcbcbc); border-radius:4px; }
+  .it-pole { width:6px; height:55px; background:linear-gradient(90deg,#8ea4ae,#b0c4cc); margin:0 auto; border-radius:3px; }
+  .it-base  { width:28px; height:6px; background:#8ea4ae; margin:0 auto; border-radius:3px; }
+
+  /* ── CENTER BLEND SEAM ───────────────────────────────────────────── */
+  .blend-seam {
+    position: absolute;
+    top: 420px; left: 340px;
+    width: 400px; height: 440px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(250,245,238,0.28) 30%,
+      rgba(250,245,238,0.28) 70%,
+      transparent 100%
+    );
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  /* ── PERSON PHOTO ───────────────────────────────────────────────── */
+  .person-wrap {
+    position: absolute;
+    bottom: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 510px;
+    z-index: 15;
+  }
+  .person-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50% 50% 0 0 / 30px 30px 0 0;
+    /* Feather edges so the light bg blends into the cream top and backgrounds below */
+    mask-image:
+      radial-gradient(ellipse 88% 95% at 50% 45%,
+        black 55%, transparent 100%);
+    -webkit-mask-image:
+      radial-gradient(ellipse 88% 95% at 50% 45%,
+        black 55%, transparent 100%);
+    filter: brightness(1.04) contrast(1.02);
+  }
+  /* Soft shadow under person */
+  .person-shadow {
+    position: absolute;
+    bottom: 188px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px; height: 50px;
+    background: radial-gradient(ellipse, rgba(0,0,0,0.16) 0%, transparent 70%);
+    z-index: 14;
+    filter: blur(10px);
+  }
+
+  /* ── BOTTOM TEAL WAVE ────────────────────────────────────────────── */
+  .bottom-wave {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 1080px; height: 230px;
+    z-index: 22;
+  }
+
+  /* ── LOGO ────────────────────────────────────────────────────────── */
+  .logo-block {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    z-index: 30;
+    white-space: nowrap;
+  }
+  .logo-img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+  }
+  .logo-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+  }
+  .logo-wordmark {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f3b3f;
+    letter-spacing: 0.5px;
+  }
+  .logo-arabic {
+    font-size: 15px;
+    color: #246f8f;
+    font-weight: 500;
+    direction: rtl;
+    margin-top: 1px;
+  }
+
+  /* ── HEADLINE ─────────────────────────────────────────────────────── */
+  .headline-block {
+    position: absolute;
+    top: 118px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 820px;
+    text-align: center;
+    z-index: 30;
+    line-height: 1;
+  }
+  .hl1 {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: #0d3438;
+    line-height: 1.18;
+  }
+  .hl2 {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    color: #0d3438;
+    line-height: 1.22;
+    margin-top: 2px;
+  }
+  .hl3 {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.08;
+    margin-top: 6px;
+  }
+  .hl-teal   { color: #0d3438; }
+  .hl-orange { color: #c8541a; font-style: italic; }
+
+  /* ── CTA BUTTON ───────────────────────────────────────────────────── */
+  .cta {
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    background: linear-gradient(135deg, #e8703a 0%, #c8541a 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 22px 58px;
+    border-radius: 60px;
+    white-space: nowrap;
+    letter-spacing: 0.1px;
+    box-shadow:
+      0 8px 28px rgba(200,84,26,0.42),
+      0 2px 8px rgba(0,0,0,0.18),
+      inset 0 1px 0 rgba(255,255,255,0.18);
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- EGYPT BACKGROUND (left, lower half only) -->
+  <div class="bg-egypt">
+    <div class="egypt-sky"></div>
+    <div class="egypt-sun"></div>
+    <div class="egypt-haze"></div>
+    <!-- Pyramids -->
+    <div class="pyramid-a"></div>
+    <div class="pyramid-b"></div>
+    <div class="pyramid-c"></div>
+    <!-- Palm tree left -->
+    <div class="palm" style="bottom:168px;left:22px;">
+      <div class="palm-trunk" style="height:95px;"></div>
+      <div style="position:relative;">
+        <div class="frond" style="width:42px;transform:rotate(-155deg);top:-5px;left:-1px;"></div>
+        <div class="frond" style="width:40px;transform:rotate(-115deg);top:-7px;left:-1px;"></div>
+        <div class="frond" style="width:40px;transform:rotate(-75deg);top:-7px;left:-1px;"></div>
+        <div class="frond" style="width:38px;transform:rotate(-35deg);top:-5px;left:-1px;background:linear-gradient(90deg,#185c1e,#2e8836);"></div>
+        <div class="frond" style="width:36px;transform:rotate(5deg);top:-3px;left:-1px;background:linear-gradient(90deg,#185c1e,#2e8836);"></div>
+      </div>
+    </div>
+    <!-- Palm tree right edge -->
+    <div class="palm" style="bottom:180px;left:395px;">
+      <div class="palm-trunk" style="height:72px;"></div>
+      <div style="position:relative;">
+        <div class="frond" style="width:32px;transform:rotate(-145deg);top:-4px;left:-1px;"></div>
+        <div class="frond" style="width:32px;transform:rotate(-95deg);top:-5px;left:-1px;"></div>
+        <div class="frond" style="width:30px;transform:rotate(-45deg);top:-5px;left:-1px;background:linear-gradient(90deg,#185c1e,#2e8836);"></div>
+        <div class="frond" style="width:28px;transform:rotate(5deg);top:-3px;left:-1px;background:linear-gradient(90deg,#185c1e,#2e8836);"></div>
+      </div>
+    </div>
+    <!-- Nile river -->
+    <div class="egypt-ground"></div>
+    <div class="nile">
+      <div class="nile-shimmer"></div>
+    </div>
+    <!-- Sailboat -->
+    <div class="sailboat" style="bottom:70px;left:110px;">
+      <div class="mast"></div>
+      <div class="sail"></div>
+      <div class="hull"></div>
+    </div>
+  </div>
+
+  <!-- DENTAL CLINIC BACKGROUND (right, lower half only) -->
+  <div class="bg-clinic">
+    <div class="clinic-room"></div>
+    <div class="clinic-window"></div>
+    <!-- Overhead light -->
+    <div class="dlight">
+      <div class="dl-armv"></div>
+      <div class="dl-armh"></div>
+      <div class="dl-head"><div class="dl-lens"></div></div>
+    </div>
+    <!-- X-ray monitor -->
+    <div class="xray">
+      <div class="xray-screen">
+        <div class="xray-row">
+          <div class="xtooth" style="width:7px;height:28px;"></div>
+          <div class="xtooth" style="width:8px;height:36px;"></div>
+          <div class="xtooth" style="width:10px;height:43px;"></div>
+          <div class="xtooth" style="width:11px;height:48px;"></div>
+          <div class="xtooth" style="width:11px;height:50px;"></div>
+          <div class="xtooth" style="width:10px;height:48px;"></div>
+          <div class="xtooth" style="width:8px;height:42px;"></div>
+          <div class="xtooth" style="width:7px;height:34px;"></div>
+          <div class="xtooth" style="width:6px;height:26px;"></div>
+        </div>
+        <div class="xray-gumline"></div>
+      </div>
+      <div class="xray-stand"></div>
+      <div class="xray-foot"></div>
+    </div>
+    <!-- Dental chair -->
+    <div class="chair-wrap">
+      <div class="ch-base"></div>
+      <div class="ch-pole"></div>
+      <div class="ch-seat"></div>
+      <div class="ch-back"></div>
+      <div class="ch-head"></div>
+      <div class="ch-arm"></div>
+    </div>
+    <!-- Instrument tray -->
+    <div class="itray">
+      <div class="it-tools">
+        <div class="it-tool" style="left:12px;height:38px;"></div>
+        <div class="it-tool" style="left:22px;height:28px;"></div>
+        <div class="it-tool" style="left:34px;height:34px;"></div>
+        <div class="it-tool" style="left:46px;height:26px;"></div>
+        <div class="it-tool" style="left:58px;height:30px;"></div>
+        <div class="it-tool" style="left:70px;height:36px;"></div>
+      </div>
+      <div class="it-surface"></div>
+      <div class="it-pole"></div>
+      <div class="it-base"></div>
+    </div>
+  </div>
+
+  <!-- CENTER BLEND -->
+  <div class="blend-seam"></div>
+
+  <!-- TOP WHITE GRADIENT OVERLAY -->
+  <div class="top-white"></div>
+
+  <!-- PERSON SHADOW -->
+  <div class="person-shadow"></div>
+
+  <!-- PERSON PHOTO -->
+  <div class="person-wrap">
+    <img src="../brief/images/patient-1-CqG3qKJ2.jpg" alt="Patient smiling after dental treatment">
+  </div>
+
+  <!-- BOTTOM TEAL WAVE (SVG) -->
+  <svg class="bottom-wave" viewBox="0 0 1080 230" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <!-- Orange accent stroke -->
+    <path d="M0,72 Q200,22 400,38 Q600,54 800,28 Q950,14 1080,22" fill="none" stroke="#c8541a" stroke-width="3.5" opacity="0.95"/>
+    <!-- Teal fill -->
+    <path d="M0,88 Q200,38 400,54 Q600,70 800,44 Q950,28 1080,38 L1080,230 L0,230 Z" fill="#0f3b3f"/>
+  </svg>
+
+  <!-- LOGO -->
+  <div class="logo-block">
+    <img class="logo-img" src="../brief/images/1764616198568-17.png" alt="Nuwara logo">
+    <div class="logo-text-col">
+      <span class="logo-wordmark">nuwara</span>
+      <span class="logo-arabic">نـوّارة</span>
+    </div>
+  </div>
+
+  <!-- HEADLINE -->
+  <div class="headline-block">
+    <span class="hl1">Combine a trip to Egypt</span>
+    <span class="hl2">with getting a</span>
+    <span class="hl3">
+      <span class="hl-teal">Brand-New </span><span class="hl-orange">Smile</span>
+    </span>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">See how much you could save</div>
+
+</div>
+</body>
+</html>

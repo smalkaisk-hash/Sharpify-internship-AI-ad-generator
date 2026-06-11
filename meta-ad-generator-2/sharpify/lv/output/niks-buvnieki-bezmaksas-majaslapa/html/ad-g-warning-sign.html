@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0a0a0a}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.78) saturate(0.85)}
+.tint{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,0.35) 0%,rgba(10,10,10,0.15) 50%,rgba(10,10,10,0.55) 100%)}
+
+/* Top strip — brand + doc ID */
+.top{position:absolute;top:34px;left:56px;right:56px;display:flex;align-items:center;justify-content:space-between;z-index:5}
+.doc-id{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:12px;color:rgba(255,255,255,0.72);letter-spacing:0.28em;text-transform:uppercase;background:rgba(10,10,10,0.55);padding:8px 12px;backdrop-filter:blur(10px);border-radius:3px}
+.doc-id b{color:#E8D500;font-weight:700}
+.brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;letter-spacing:0.01em;background:rgba(10,10,10,0.55);padding:8px 14px;backdrop-filter:blur(10px);border-radius:3px}
+.brand .dot{color:#E8D500}
+
+/* The warning sign — main element */
+.sign{position:absolute;top:130px;left:50%;transform:translateX(-50%) rotate(-1.6deg);width:820px;background:#E8D500;box-shadow:0 30px 80px rgba(0,0,0,0.75),0 0 0 8px #0a0a0a,0 0 0 16px #E8D500,0 0 0 24px #0a0a0a;z-index:4;padding:0}
+/* bolts at corners */
+.bolt{position:absolute;width:26px;height:26px;background:radial-gradient(circle at 35% 35%,#666 0%,#2a2a2a 60%,#0a0a0a 100%);border-radius:50%;box-shadow:inset 0 -3px 4px rgba(0,0,0,0.6),0 2px 4px rgba(0,0,0,0.4);z-index:5}
+.bolt.tl{top:14px;left:14px}
+.bolt.tr{top:14px;right:14px}
+.bolt.bl{bottom:14px;left:14px}
+.bolt.br{bottom:14px;right:14px}
+
+/* Diagonal stripe border */
+.stripes-top,.stripes-bot{height:32px;background:repeating-linear-gradient(-45deg,#0a0a0a 0,#0a0a0a 22px,#E8D500 22px,#E8D500 44px)}
+.sign-body{padding:36px 48px 30px 48px;text-align:center;position:relative}
+
+.warning-tag{display:inline-flex;align-items:center;gap:10px;background:#0a0a0a;color:#E8D500;padding:9px 18px;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.28em;text-transform:uppercase;margin-bottom:18px;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 50%,calc(100% - 8px) 100%,8px 100%,0 50%)}
+.warning-tag .tri{font-size:18px;line-height:1}
+
+.sign-h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:108px;color:#0a0a0a;line-height:0.9;letter-spacing:-0.01em;text-transform:uppercase}
+.sign-h1 .b{display:block}
+.sign-sub{font-family:'Oswald',sans-serif;font-weight:500;font-size:26px;color:#0a0a0a;margin-top:14px;letter-spacing:0.05em;text-transform:uppercase;line-height:1.2}
+
+.sign-divider{width:80px;height:4px;background:#0a0a0a;margin:22px auto 18px auto}
+
+.sign-qualifier{font-family:'Inter',sans-serif;font-weight:800;font-size:14px;color:#0a0a0a;letter-spacing:0.26em;text-transform:uppercase;line-height:1.4}
+.sign-qualifier b{display:block;font-family:'Oswald',sans-serif;font-size:34px;font-weight:700;letter-spacing:-0.005em;margin-top:4px;text-transform:none}
+
+/* Bottom plate — CTA */
+.plate{position:absolute;bottom:56px;left:50%;transform:translateX(-50%) rotate(-0.6deg);background:#0a0a0a;border:4px solid #E8D500;padding:20px 38px;display:flex;align-items:center;gap:26px;z-index:4;box-shadow:0 20px 50px rgba(0,0,0,0.7);border-radius:4px}
+.plate-txt{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.24em;text-transform:uppercase;line-height:1.2}
+.plate-txt b{display:block;color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;text-transform:none;letter-spacing:-0.005em;margin-top:3px}
+.plate-cta{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;color:#0a0a0a;background:#E8D500;padding:14px 22px;text-transform:uppercase;letter-spacing:0.08em;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="ad">
+<img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/lv/output/niks-buvnieki-bezmaksas-majaslapa/images/img-g-fence-worksite.png">
+<div class="tint"></div>
+
+<div class="top">
+<div class="doc-id">zīme <b>· bl-500k</b> · latvijas būvniecība</div>
+<div class="brand">Sharpify<span class="dot">.</span></div>
+</div>
+
+<div class="sign">
+<div class="bolt tl"></div>
+<div class="bolt tr"></div>
+<div class="bolt bl"></div>
+<div class="bolt br"></div>
+<div class="stripes-top"></div>
+<div class="sign-body">
+<div class="warning-tag"><span class="tri">⚠</span> Uzmanību</div>
+<div class="sign-h1"><span class="b">Bezmaksas</span><span class="b">mājaslapa</span></div>
+<div class="sign-sub">Latvijas būvniecības uzņēmumiem</div>
+<div class="sign-divider"></div>
+<div class="sign-qualifier">piemērotības kritērijs<b>500 000€+ gada apgrozījums</b></div>
+</div>
+<div class="stripes-bot"></div>
+</div>
+
+<div class="plate">
+<div class="plate-txt">Nākamais solis<b>Zoom zvans ar Niku</b></div>
+<div class="plate-cta">Piesakies →</div>
+</div>
+</div>
+</body>
+</html>

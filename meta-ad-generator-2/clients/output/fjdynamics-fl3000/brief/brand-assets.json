@@ -1,0 +1,316 @@
+{
+  "source_url": "https://landscaping.fjdynamics.com/product/fl3000-lidar-robotic-mower",
+  "scraped_at": "2026-04-16T10:22:02.333Z",
+  "source": "scraped",
+  "has_product_images": true,
+  "brand_voice": {
+    "tagline": "See Further, Mow Smarter.",
+    "product_pillars": [
+      "Quick Setup, Consistent Signal",
+      "Smart Mowing for Every Corner of Your Yard",
+      "Ready for Any Terrain",
+      "Work Less, Enjoy More"
+    ],
+    "positioning": "Premium LiDAR+vision robotic mower, wire-free and RTK-free, for homeowners up to 3,000 m². Positioned against Husqvarna (wire) and Mammotion Luba (RTK).",
+    "aesthetic": "Dark, dramatic, tech-forward. Product-as-hero on moody stages. Lime-green accent + red safety cue. Think Dyson meets Tesla, not Husqvarna yellow-orange.",
+    "_source": "Derived from hero-1 campaign visual (halftone FL3000 on black stage), hero-2 clean cutout, hero-4 suburban home context, and H2 headings"
+  },
+  "colors": {
+    "palette": [
+      {
+        "hex": "#2b2b2b",
+        "usage_count": 307,
+        "contexts": [
+          "text:body",
+          "text:div",
+          "text:header",
+          "text:nav",
+          "text:ul"
+        ]
+      },
+      {
+        "hex": "#212529",
+        "usage_count": 286,
+        "contexts": [
+          "text:section",
+          "text:div",
+          "text:h6",
+          "text:span",
+          "text:nav"
+        ]
+      },
+      {
+        "hex": "#1a1a1a",
+        "usage_count": 173,
+        "contexts": [
+          "bg:a",
+          "text:h4",
+          "text:div",
+          "text:a",
+          "text:img"
+        ]
+      },
+      {
+        "hex": "#2a2a2a",
+        "usage_count": 35,
+        "contexts": [
+          "text:div",
+          "text:video",
+          "text:img",
+          "text:span",
+          "text:p"
+        ]
+      },
+      {
+        "hex": "#6a6a6a",
+        "usage_count": 9,
+        "contexts": [
+          "text:h5",
+          "text:br",
+          "text:label",
+          "text:a"
+        ]
+      },
+      {
+        "hex": "#1db954",
+        "usage_count": 4,
+        "contexts": [
+          "bg:a",
+          "text:font"
+        ]
+      },
+      {
+        "hex": "#1a1d1b",
+        "usage_count": 4,
+        "contexts": [
+          "bg:section"
+        ]
+      },
+      {
+        "hex": "#007aff",
+        "usage_count": 4,
+        "contexts": [
+          "text:div"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#0A0A0A",
+      "secondary": "#1A1A1A",
+      "accent": "#C6FF3D",
+      "accent_alt": "#00C853",
+      "background": "#F5F5F3",
+      "text": "#0A0A0A",
+      "text_on_dark": "#FAFAF7",
+      "_note": "Scraped CSS gave only dark greys (nav chrome, no real brand identity). Real palette derived from hero imagery: dramatic near-black stage for the silver/white product. Added bright lime-green #C6FF3D as accent — pops against dark, suggests 'grass + tech', and differentiates from Husqvarna orange and Mammotion's muted tones. No purple-on-white slop, no timid even-spread palette."
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Figtree",
+        "usage_count": 757,
+        "weights": [
+          "400",
+          "700",
+          "300",
+          "600",
+          "500",
+          "800"
+        ],
+        "contexts": [
+          "div",
+          "a",
+          "span",
+          "h4",
+          "h5",
+          "h6",
+          "button",
+          "h1",
+          "h2",
+          "p",
+          "h3"
+        ]
+      },
+      {
+        "family": "FontAwesome",
+        "usage_count": 7,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "span"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Space Grotesk",
+      "body": "Figtree",
+      "_note": "Figtree is the real brand font (757 uses, site-wide). FontAwesome was just icons — ignored. Pairing brand Figtree (body) with Space Grotesk (display headlines) — both geometric sans, Space Grotesk has a subtle industrial edge that fits the robotic-mower category and gives headline typography more character than Figtree alone. Both on Google Fonts."
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.webp",
+        "originalUrl": "https://landscaping.fjdynamics.com/web/image/2952-9a15cf51/20250926-191949.webp",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.png",
+        "originalUrl": "https://landscaping.fjdynamics.com/theme_fjd/static/src/img/custom_snippets_v3/s_product_hot_spot_v3.png",
+        "width": 1290,
+        "height": 726
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.png",
+        "originalUrl": "https://landscaping.fjdynamics.com/fj_website/static/src/custom/img/footer_newsletter_bg.png",
+        "width": 1440,
+        "height": 544
+      },
+      {
+        "type": "hero",
+        "filename": "hero-4.jpeg",
+        "originalUrl": "https://1500006283.vod2.myqcloud.com/6c9ac49bvodcq1500006283/23beec585145403698412420405/1d7jgj.jpeg",
+        "width": 719,
+        "height": 588
+      },
+      {
+        "type": "hero",
+        "filename": "hero-5.png",
+        "originalUrl": "https://landscaping.fjdynamics.com/web/image/8258-3b59e608/image.png",
+        "width": 645,
+        "height": 645
+      }
+    ],
+    "logos": [
+      {
+        "type": "logo",
+        "filename": "logo-1.webp",
+        "originalUrl": "https://landscaping.fjdynamics.com/web/image/17637-7e94253a/%E5%BE%AE%E4%BF%AF12%20%281%29%20%281%29.webp",
+        "width": 100,
+        "height": 100
+      },
+      {
+        "type": "logo",
+        "filename": "logo-2.webp",
+        "originalUrl": "https://landscaping.fjdynamics.com/web/image/17639-a84701cb/FL3000_UI%E7%95%8C%E9%9D%A2%20-%20%E5%89%AF%E6%9C%AC%20%281%29%20%281%29.webp",
+        "width": 100,
+        "height": 100
+      },
+      {
+        "type": "logo",
+        "filename": "logo-3.webp",
+        "originalUrl": "https://landscaping.fjdynamics.com/web/image/6427-891f0c1a/FV2000.webp",
+        "width": 100,
+        "height": 100
+      }
+    ],
+    "products": [
+      {
+        "type": "product",
+        "filename": "product-1.png",
+        "originalUrl": "https://landscaping.fjdynamics.com/theme_fjd/static/src/img/custom_snippets_v3/s_product_hot_spot_v3.png",
+        "width": 1290,
+        "height": 726
+      },
+      {
+        "type": "product",
+        "filename": "product-2.png",
+        "originalUrl": "https://landscaping.fjdynamics.com/theme_fjd/static/src/img/custom_snippets_v3/s_product_hot_spot_v3.png",
+        "width": 1290,
+        "height": 726
+      }
+    ],
+    "all_found": 38
+  },
+  "product_category": {
+    "type": "tangible",
+    "confidence": "high",
+    "signals": [
+      "content: \"buy now\"",
+      "content: \"shipping\"",
+      "content: \"weight\"",
+      "content: \"dimensions\"",
+      "url: \"/product/\"",
+      "url: \"/products\"",
+      "content: \"subscribe\"",
+      "content: \"course\"",
+      "content: \"software\"",
+      "content: \"app\""
+    ],
+    "product_images": [
+      "images/product-1.png",
+      "images/product-2.png"
+    ]
+  },
+  "content": {
+    "page_title": "FJD FL3000 LiDAR-Guided Robotic Mower",
+    "meta_description": "The autonomous FJD FL3000 is a LiDAR mower offering smart path planning, multi-zone control, edge trimming, rain detection, anti-theft features, and up to 3,000 m² coverage.",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "FL3000 LiDAR Robotic Mower"
+      },
+      {
+        "tag": "H2",
+        "text": "See Further, Mow Smarter."
+      },
+      {
+        "tag": "H2",
+        "text": "Quick Setup,\n                                \n                                Consistent Signal"
+      },
+      {
+        "tag": "H2",
+        "text": "MowingArea3,000m²"
+      },
+      {
+        "tag": "H3",
+        "text": "Smart Mowing for Every Corner of Your Yard"
+      },
+      {
+        "tag": "H2",
+        "text": "Ready for Any Terrain"
+      },
+      {
+        "tag": "H2",
+        "text": "Work Less, Enjoy More"
+      },
+      {
+        "tag": "H2",
+        "text": "What in Box"
+      },
+      {
+        "tag": "H2",
+        "text": "SPECS"
+      },
+      {
+        "tag": "H3",
+        "text": "Mowing Capacity"
+      }
+    ],
+    "key_paragraphs": [
+      "No Wire, no RTK. Simply set up the charging station, instantly map your\n                                            lawn.",
+      "Just place it on the grass — it scans and maps your lawn all by itself.",
+      "Trees, walls, and tight corners? Not a problem!",
+      "Rocks, toys, or tree branches — the FL3000 detects obstacles before trouble strikes. With LiDAR and vision technology, it navigates safely, and its detection height can be easily adjusted for various scenarios on APP."
+    ],
+    "cta_buttons_found": [
+      "Skip to Content",
+      "Products\n                    Products",
+      "FJD PaintMaster ProMake Line Marking Easier.",
+      "FJD PaintMaster MiniBuilt Light, Marks Right.",
+      "Solutions\n                    Solutions",
+      "Golf Course Solution",
+      "Sports Field Solution",
+      "Commercial Cleaning Solution",
+      "Resource\n                    Resource",
+      "Blog"
+    ]
+  }
+}

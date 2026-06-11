@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0E1412}
+.grad{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(245,158,11,0.20) 0%,rgba(14,20,18,0) 55%),radial-gradient(circle at 20% 90%,rgba(56,120,80,0.12) 0%,rgba(14,20,18,0) 50%)}
+.noise{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.03) 1px,transparent 1px);background-size:3px 3px;opacity:0.5}
+
+.ring{position:absolute;top:76px;left:50%;transform:translateX(-50%);width:560px;height:560px;border-radius:50%;border:1px dashed rgba(245,158,11,0.28);z-index:2}
+.ring2{position:absolute;top:50px;left:50%;transform:translateX(-50%);width:612px;height:612px;border-radius:50%;border:1px solid rgba(245,158,11,0.12);z-index:2}
+.circle{position:absolute;top:90px;left:50%;transform:translateX(-50%);width:532px;height:532px;border-radius:50%;overflow:hidden;border:1px solid rgba(245,158,11,0.32);box-shadow:0 30px 80px rgba(0,0,0,0.6),inset 0 0 0 6px rgba(255,255,255,0.04);z-index:3}
+.circle img{width:100%;height:100%;object-fit:cover}
+.circle::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(14,20,18,0.55) 100%)}
+
+.ticks{position:absolute;top:40px;left:50%;transform:translateX(-50%);width:632px;height:632px;z-index:2;pointer-events:none}
+.tick{position:absolute;top:50%;left:50%;width:4px;height:12px;background:rgba(245,158,11,0.4);transform-origin:0 306px}
+
+.content{position:absolute;left:60px;right:60px;bottom:78px;text-align:center;z-index:4}
+h1{font-family:'Instrument Serif',serif;font-size:46px;line-height:1.12;color:#fff;letter-spacing:-0.02em;font-weight:400}
+h1 em{font-style:italic;color:#F59E0B}
+.sub{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;color:rgba(255,255,255,0.65);margin-top:18px;line-height:1.45;max-width:720px;margin-left:auto;margin-right:auto}
+.chips{display:flex;justify-content:center;gap:10px;margin-top:22px;flex-wrap:wrap}
+.chip{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.75);padding:8px 16px;border:1px solid rgba(255,255,255,0.15);border-radius:100px;letter-spacing:0.04em}
+.chip.on{background:rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.5);color:#F59E0B}
+.row{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:28px;flex-wrap:wrap}
+.cta{font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:800;color:#0a0a0a;background:#F59E0B;padding:32px 68px;border-radius:100px;display:inline-flex;align-items:center;gap:18px;box-shadow:0 12px 30px rgba(245,158,11,0.35)}
+.cta .arr{width:44px;height:44px;background:#0a0a0a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.cta .arr svg{display:block}
+</style>
+</head>
+<body>
+<div class="ad">
+<div class="grad"></div>
+<div class="noise"></div>
+<div class="ring2"></div>
+<div class="ring"></div>
+<div class="ticks">
+<div class="tick" style="transform:translate(-2px,-6px) rotate(0deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(15deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(30deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(45deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(60deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(75deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(90deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(105deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(120deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(135deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(150deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(165deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(180deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(195deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(210deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(225deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(240deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(255deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(270deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(285deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(300deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(315deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(330deg) translateY(-306px)"></div><div class="tick" style="transform:translate(-2px,-6px) rotate(345deg) translateY(-306px)"></div>
+</div>
+<div class="circle"><img src="file:///C:/Users/Ritvars%20Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/lv/output/niks-majokla-uzlabojumi-3/images/parketa.png"></div>
+<div class="content">
+<h1>Tu parūpējies, lai grīdas mirdz,<br><em>kamēr nākamā istaba</em> jau gaida rindā.</h1>
+<div class="sub">AI mārketings, automatizēti pieteikumi un CRM — viss, kas piesaista klientus Tavam biznesam.</div>
+<div class="chips">
+<span class="chip">Reklāmas</span>
+<span class="chip">AI pieteikumi</span>
+<span class="chip">CRM</span>
+<span class="chip on">🎁 Mājaslapa bonusā</span>
+</div>
+<div class="row">
+<div class="cta">Uzzināt vairāk <span class="arr"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

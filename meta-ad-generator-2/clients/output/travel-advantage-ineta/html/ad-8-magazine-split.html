@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 8 — Magazine split</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background: #0A3D2E;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 580px 500px;
+  }
+  .photo-side {
+    position: relative;
+    background: #0a0a0a;
+    overflow: hidden;
+  }
+  .photo-side .img {
+    position: absolute;
+    inset: 20px 0 20px 20px;
+    background-image: url('../brief/images/bg-venice.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .photo-side .img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 70%, rgba(10,61,46,0.35) 100%);
+  }
+  .photo-side .corner {
+    position: absolute;
+    top: 40px; left: 40px;
+    padding: 8px 14px;
+    background: rgba(10,61,46,0.85);
+    color: #D4A657;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 2;
+  }
+  .photo-side .city-plate {
+    position: absolute;
+    bottom: 40px; left: 40px;
+    padding: 10px 16px;
+    background: rgba(245,239,226,0.92);
+    color: #0A3D2E;
+    z-index: 2;
+  }
+  .photo-side .city-plate .lbl {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(10,61,46,0.55);
+    font-weight: 600;
+  }
+  .photo-side .city-plate .name {
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .content-side {
+    padding: 52px 48px;
+    display: flex;
+    flex-direction: column;
+    background:
+      radial-gradient(circle at 85% 8%, rgba(212,166,87,0.2) 0%, transparent 45%),
+      linear-gradient(165deg, #0A3D2E 0%, #072b20 100%);
+    position: relative;
+  }
+  .content-side::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(245,239,226,0.03) 1px, transparent 0);
+    background-size: 3px 3px;
+    pointer-events: none;
+  }
+  .content-side > * { position: relative; z-index: 2; }
+  .wordmark {
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    color: #F5EFE2;
+  }
+  .issue-tag {
+    margin-top: 6px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(212,166,87,0.85);
+    font-weight: 500;
+  }
+  .category-row {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #D4A657;
+  }
+  .category-row .rule { flex: 1; height: 1px; background: rgba(212,166,87,0.35); }
+
+  .headline {
+    margin-top: 20px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 68px;
+    line-height: 0.96;
+    color: #F5EFE2;
+    letter-spacing: -0.015em;
+  }
+  .headline em { font-style: italic; color: #D4A657; }
+
+  .quote {
+    margin-top: 20px;
+    padding-left: 16px;
+    border-left: 3px solid #D4A657;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.35;
+    color: rgba(245,239,226,0.82);
+  }
+  .price-block {
+    margin-top: 26px;
+    background: rgba(245,239,226,0.06);
+    border: 1px solid rgba(212,166,87,0.22);
+    border-radius: 14px;
+    padding: 20px 22px;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+  }
+  .price-row + .price-row { border-top: 1px dashed rgba(245,239,226,0.15); }
+  .price-row .l {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,239,226,0.6);
+    font-weight: 500;
+  }
+  .price-row .v {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+  }
+  .price-row.strike .v { color: #ff8a8a; text-decoration: line-through; text-decoration-thickness: 2px; }
+  .price-row.member .v { color: #F5EFE2; font-size: 36px; }
+  .price-row.save .v { color: #D4A657; }
+
+  .stats-row {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+  }
+  .chip {
+    background: rgba(212,166,87,0.14);
+    border: 1px solid rgba(212,166,87,0.3);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #D4A657;
+    font-weight: 600;
+  }
+
+  .footer {
+    margin-top: auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(212,166,87,0.2);
+  }
+  .footer .tag {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #F5EFE2;
+    line-height: 1.25;
+  }
+  .footer .tag small {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(212,166,87,0.7);
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="photo-side">
+      <div class="img"></div>
+      <div class="corner">№ 01 · 2026</div>
+      <div class="city-plate">
+        <div class="lbl">Italia · Veneto</div>
+        <div class="name">Venēzia</div>
+      </div>
+    </div>
+
+    <div class="content-side">
+      <div class="wordmark">Travel Advantage<sup style="font-size:13px;">™</sup></div>
+      <div class="issue-tag">Cenu atskaite · biedru piekļuve</div>
+
+      <div class="category-row"><span>Itālijas piemērs</span><span class="rule"></span></div>
+
+      <div class="headline">Booking rāda vienu.<br><em>Biedri redz citu.</em></div>
+
+      <div class="quote">Tās pašas naktis. Tā pati 4★ viesnīca. Tikai cits cenu līmenis.</div>
+
+      <div class="price-block">
+        <div class="price-row strike">
+          <div class="l">Booking.com</div>
+          <div class="v">€420</div>
+        </div>
+        <div class="price-row member">
+          <div class="l">Biedra cena</div>
+          <div class="v">€126</div>
+        </div>
+        <div class="price-row save">
+          <div class="l">Tava ekonomija</div>
+          <div class="v">−€294</div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="chip">−70%</div>
+        <div class="chip">3 naktis</div>
+        <div class="chip">+ credits</div>
+      </div>
+
+      <div class="footer">
+        <div class="tag">Piekļuve — ne akcija.<small>Kopš 2013 · MWR Life · Travel Advantage</small></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

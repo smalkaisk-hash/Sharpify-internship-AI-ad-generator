@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif;background:#FAF6F0}
+    .ad{width:1080px;height:1080px;padding:40px;position:relative}
+    .frame{width:100%;height:100%;display:flex;flex-direction:column;gap:14px}
+    .header{display:flex;flex-direction:column;align-items:center;text-align:center;flex-shrink:0}
+    .tag{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.32em;color:#8B7D3C;text-transform:uppercase}
+    .title{font-family:'Playfair Display',serif;font-size:46px;font-weight:400;color:#1A1A2E;line-height:1;margin-top:6px;letter-spacing:-0.01em}
+    .grid{flex:1 1 0;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}
+    .cell{position:relative;overflow:hidden;border:1.5px solid #8B7D3C;background:#FAF6F0}
+    .cell img{width:100%;height:100%;object-fit:cover;display:block}
+    .cell .scent-overlay{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:linear-gradient(180deg,transparent,rgba(26,26,46,0.75));color:#FAF6F0}
+    .scent-name{font-family:'Playfair Display',serif;font-size:30px;font-weight:500;line-height:1}
+    .scent-note{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.04em;margin-top:4px;opacity:0.92}
+    .footer{display:flex;justify-content:space-between;align-items:center;padding:0 4px;flex-shrink:0}
+    .price-block{display:flex;flex-direction:column;gap:2px}
+    .price-label{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.2em;color:#8B7D3C;text-transform:uppercase}
+    .price{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#1A1A2E;line-height:1}
+    .cta{padding:16px 30px;background:#1A1A2E;color:#F5E6D3;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="frame">
+      <div class="header">
+        <div class="tag">Vitamīnu dušas filtri</div>
+        <div class="title">4 aromāti · 4 rituāli</div>
+      </div>
+      <div class="grid">
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-grid-rose.png">
+          <div class="scent-overlay">
+            <div class="scent-name">Precious Rose</div>
+            <div class="scent-note">maigs rozes dārzs</div>
+          </div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-grid-lavender.png">
+          <div class="scent-overlay">
+            <div class="scent-name">Lavender Meadows</div>
+            <div class="scent-note">relaksējoša lavanda</div>
+          </div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-grid-mango.png">
+          <div class="scent-overlay">
+            <div class="scent-name">Mango Rain</div>
+            <div class="scent-note">enerģizējoši tropi</div>
+          </div>
+        </div>
+        <div class="cell">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-grid-amber.png">
+          <div class="scent-overlay">
+            <div class="scent-name">Amberwood</div>
+            <div class="scent-note">silta koka nots</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="price-block">
+          <div class="price-label">Viens filtrs — 2–3 mēneši</div>
+          <div class="price">no 34,99 €</div>
+        </div>
+        <div class="cta">Izvēlies savu</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

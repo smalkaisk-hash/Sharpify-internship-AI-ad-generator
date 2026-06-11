@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0d040d; }
+
+/* Gradient background */
+.bg {
+  position:absolute; inset:0;
+  background:linear-gradient(135deg, #120a0e 0%, #0d040d 50%, #080508 100%);
+}
+
+/* Decorative corner glow */
+.glow {
+  position:absolute;
+  border-radius:50%;
+  opacity:0.3;
+}
+.glow-1 {
+  top:-200px; right:-150px;
+  width:600px; height:600px;
+  background:radial-gradient(circle, rgba(196,149,108,0.35) 0%, transparent 70%);
+}
+.glow-2 {
+  bottom:-250px; left:-200px;
+  width:700px; height:700px;
+  background:radial-gradient(circle, rgba(212,169,122,0.25) 0%, transparent 70%);
+}
+
+/* Top bar with logo */
+.top {
+  position:absolute; top:48px; left:60px; right:60px;
+  display:flex; justify-content:space-between; align-items:center;
+  z-index:20;
+}
+.tag {
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:500;
+  color:rgba(196,149,108,0.70);
+  text-transform:uppercase; letter-spacing:0.25em;
+}
+.logo-img {
+  height:32px;
+  filter:invert(1) brightness(1.8);
+  opacity:0.85;
+}
+
+/* Stat card — center */
+.card {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  width:520px;
+  padding:48px;
+  border-radius:16px;
+  background:linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(196,149,108,0.08) 100%);
+  border:1px solid rgba(196,149,108,0.15);
+  text-align:center;
+  backdrop-filter:blur(20px);
+  z-index:10;
+}
+
+/* Primary stat */
+.stat {
+  font-family:'Cormorant Garamond', serif;
+  font-size:140px;
+  font-weight:300;
+  font-style:italic;
+  color:#d4a97a;
+  line-height:1.0;
+  margin-bottom:8px;
+  letter-spacing:-0.02em;
+}
+
+.stat-label {
+  font-family:'DM Sans', sans-serif;
+  font-size:18px;
+  font-weight:400;
+  color:rgba(246,237,231,0.78);
+  margin-bottom:32px;
+  letter-spacing:0.01em;
+}
+
+/* Subtext */
+.subtext {
+  font-family:'DM Sans', sans-serif;
+  font-size:14px;
+  font-weight:400;
+  color:rgba(196,149,108,0.72);
+  margin-bottom:28px;
+  padding:0 20px;
+  line-height:1.6;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+}
+
+/* Divider */
+.divider {
+  width:80px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.40), transparent);
+  margin:28px auto;
+}
+
+/* Trust signal */
+.trust {
+  font-family:'DM Sans', sans-serif;
+  font-size:16px;
+  font-weight:300;
+  color:rgba(246,237,231,0.65);
+  line-height:1.7;
+  margin-bottom:36px;
+}
+
+/* CTA button */
+.cta {
+  display:inline-block;
+  background:linear-gradient(135deg, #b07840 0%, #c4956c 55%, #d2a87a 100%);
+  color:#0d040d;
+  font-family:'DM Sans', sans-serif;
+  font-size:16px;
+  font-weight:600;
+  padding:20px 48px;
+  border-radius:8px;
+  text-decoration:none;
+  letter-spacing:0.04em;
+  box-shadow:0 8px 32px rgba(196,149,108,0.25);
+  transition:all 0.3s ease;
+}
+
+/* Decorative line at bottom */
+.line {
+  position:absolute; bottom:140px; left:60px; right:60px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.30), transparent);
+}
+
+/* CTA wrapper */
+.cta-wrap {
+  position:absolute;
+  bottom:80px; left:60px; right:60px;
+  text-align:center;
+  z-index:20;
+}
+.cta-text {
+  font-family:'DM Sans', sans-serif;
+  font-size:18px;
+  font-weight:600;
+  color:#d4a97a;
+  letter-spacing:0.05em;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- Background glows -->
+  <div class="bg"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- Top bar -->
+  <div class="top">
+    <div class="tag">Skaistumkopšana · Rīga</div>
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <!-- Main stat card -->
+  <div class="card">
+    <div class="stat">95%</div>
+    <div class="stat-label">vēlas atgriezties</div>
+
+    <div class="divider"></div>
+
+    <div class="trust">
+      2500+ apmierinātie klienti<br>
+      Rīgā × Bezmaksas stāvvieta
+    </div>
+
+    <div class="cta-text">Piesakies savam pirmajam apskatam →</div>
+  </div>
+
+  <!-- Decorative line -->
+  <div class="line"></div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <div class="cta">ATVĒRT VIZĪTI</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif;background:#F0EDE8}
+    .ad{width:1080px;height:1080px;padding:44px;display:flex;flex-direction:column}
+    .header{text-align:center;padding-bottom:20px}
+    .tag{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.3em;color:#9B6B3F;text-transform:uppercase}
+    .title{font-family:'Playfair Display',serif;font-size:68px;font-weight:400;color:#1A1A2E;line-height:1;margin-top:10px;letter-spacing:-0.01em}
+    .cards{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{position:relative;overflow:hidden;border:1.5px solid #9B6B3F;background:#000}
+    .card img{width:100%;height:100%;object-fit:cover;display:block}
+    .stamp{position:absolute;top:20px;left:20px;padding:10px 18px;font-family:'Inter',sans-serif;font-size:12px;font-weight:800;letter-spacing:0.32em;text-transform:uppercase}
+    .stamp-before{background:#8B3A2E;color:#F5E6D3}
+    .stamp-after{background:#2F5D4A;color:#F5E6D3}
+    .card-note{position:absolute;bottom:22px;left:22px;right:22px;color:#F5E6D3;font-family:'Playfair Display',serif;font-style:italic;font-size:22px;text-shadow:0 2px 10px rgba(0,0,0,0.6)}
+    /* Bottom CTA bar with product */
+    .bot{margin-top:22px;display:grid;grid-template-columns:160px 1fr auto;align-items:center;gap:24px;padding:20px 30px;background:#1A1A2E;color:#F5E6D3}
+    .bot-product{height:140px;display:flex;align-items:center;justify-content:center}
+    .bot-product img{height:140px;width:auto;filter:drop-shadow(0 6px 16px rgba(0,0,0,0.3))}
+    .bot-center{display:flex;flex-direction:column;gap:4px}
+    .bot-name{font-family:'Playfair Display',serif;font-size:32px;font-weight:500;line-height:1}
+    .bot-note{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:#C5B393;letter-spacing:0.04em}
+    .bot-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+    .price{font-family:'Playfair Display',serif;font-size:40px;font-weight:600;color:#F5E6D3;line-height:1}
+    .cta{padding:14px 26px;background:#D4A93A;color:#1A1A0A;font-family:'Inter',sans-serif;font-size:13px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="header">
+      <div class="tag">CLEAR+ Rūsas noņemšanas filtrs</div>
+      <div class="title">Rūsu — nost.</div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-clear-rusty.png">
+        <div class="stamp stamp-before">Agrāk</div>
+        <div class="card-note">rūsa, nogulsnes, dzeltens aplikums</div>
+      </div>
+      <div class="card">
+        <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-clear-fresh.png">
+        <div class="stamp stamp-after">Tagad</div>
+        <div class="card-note">tīrs ūdens, tīras flīzes</div>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="bot-product">
+        <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-clear-plus-closeup-1-cutout.png">
+      </div>
+      <div class="bot-center">
+        <div class="bot-name">CLEAR+</div>
+        <div class="bot-note">Uzskrūvē uz dušas galvas. Bez santehniķa.</div>
+      </div>
+      <div class="bot-right">
+        <div class="price">24,99 €</div>
+        <div class="cta">Novērs rūsu</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

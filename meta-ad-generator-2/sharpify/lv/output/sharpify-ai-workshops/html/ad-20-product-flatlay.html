@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  position: relative;
+  font-family: 'Inter', sans-serif; color: #fff;
+  background: #000;
+}
+
+.bg-image {
+  position: absolute; inset: 0;
+  background-image: url('../images/product-flatlay-gold.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Subtle darkening for text readability */
+.overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.1) 25%,
+      rgba(0,0,0,0) 50%,
+      rgba(0,0,0,0.15) 75%,
+      rgba(0,0,0,0.85) 100%);
+}
+
+.content {
+  position: relative; z-index: 2;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+  padding: 52px 52px 44px;
+}
+
+/* Top — tagline */
+.top {
+  text-align: center;
+}
+
+.top-label {
+  display: inline-block;
+  font-size: 22px;
+  color: #cbd5e1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 12px rgba(0,0,0,1);
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px; font-weight: 900;
+  line-height: 1.0;
+  color: #10b981;
+  text-shadow: 0 6px 32px rgba(0,0,0,1), 0 0 40px rgba(16,185,129,0.2);
+}
+
+.sub-line {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px; font-weight: 800;
+  color: #ffffff;
+  margin-top: 14px;
+  text-shadow: 0 4px 20px rgba(0,0,0,1);
+  letter-spacing: 0.5px;
+}
+
+/* Center — engraved text directly on the book cover */
+.center-label {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  /* Book cover area is roughly 280px wide on the original image */
+  width: 360px;
+}
+
+.engraved-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 1.5px;
+
+  /* Fully filled polished gold */
+  background: linear-gradient(180deg,
+    #b8860b 0%,
+    #daa520 15%,
+    #f0c840 30%,
+    #ffd94a 42%,
+    #fff0a0 50%,
+    #ffd94a 58%,
+    #f0c840 70%,
+    #daa520 85%,
+    #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Outer drop shadow only — no inside darkening */
+  filter:
+    drop-shadow(0 2px 3px rgba(0,0,0,0.7))
+    drop-shadow(0 0 8px rgba(0,0,0,0.4));
+
+  margin-bottom: 4px;
+}
+
+.engraved-divider {
+  width: 140px;
+  height: 2px;
+  margin: 16px auto;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(80,55,10,0.6) 20%,
+    rgba(220,175,55,0.9) 45%,
+    rgba(255,245,180,1) 50%,
+    rgba(220,175,55,0.9) 55%,
+    rgba(80,55,10,0.6) 80%,
+    transparent 100%);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.7),
+    0 -1px 0 rgba(255,220,120,0.12);
+}
+
+.engraved-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  /* Same polished gold as title */
+  background: linear-gradient(180deg,
+    #b8860b 0%,
+    #daa520 15%,
+    #f0c840 30%,
+    #ffd94a 42%,
+    #fff0a0 50%,
+    #ffd94a 58%,
+    #f0c840 70%,
+    #daa520 85%,
+    #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  filter:
+    drop-shadow(0 1px 2px rgba(0,0,0,0.7))
+    drop-shadow(0 0 6px rgba(0,0,0,0.3));
+}
+
+/* Bottom — CTA */
+.bottom {
+  text-align: center;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #10b981; color: #000;
+  padding: 26px 72px; border-radius: 50px;
+  font-weight: 800; font-size: 30px;
+  box-shadow: 0 12px 40px rgba(16,185,129,0.5),
+              0 0 60px rgba(16,185,129,0.3);
+  margin-bottom: 14px;
+}
+
+.bottom-sub {
+  font-size: 18px;
+  color: #cbd5e1;
+  text-shadow: 0 2px 12px rgba(0,0,0,1);
+  font-weight: 500;
+}
+.bottom-sub s { color: #ef4444; }
+.bottom-sub strong { color: #10b981; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <div class="top">
+      <div class="top-label">Bez abonementa. Pērc vienreiz, izmanto mūžīgi.</div>
+      <div class="headline">27 AI EKSPERTI</div>
+      <div class="sub-line">— TAGAD TAVĀ CLAUDE</div>
+    </div>
+
+
+    <div class="bottom">
+      <div class="cta-btn">Iegūt par €19 →</div>
+      <div class="bottom-sub"><s>€99</s> · <strong>Taupi 81%</strong> · Mūžīga piekļuve · 7 dienu garantija</div>
+    </div>
+  </div>
+</body>
+</html>

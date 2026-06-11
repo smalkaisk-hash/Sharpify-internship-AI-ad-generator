@@ -1,0 +1,215 @@
+{
+  "client_name": "FJDynamics — FL3000",
+  "client_slug": "fjdynamics-fl3000",
+  "language": "en",
+  "ad_type": "client-tangible",
+  "generated_at": "2026-04-16T10:30:00Z",
+  "audience_note": "DTC — homeowners, not B2B. Premium tech voice. Lead each ad with one sharp angle — don't stack every spec into every ad. Position against boundary-wire (Husqvarna) and RTK-based (Mammotion) mowers without naming them.",
+  "voice_samples": [
+    "See Further, Mow Smarter.",
+    "No Wire, no RTK. Simply set up the charging station, instantly map your lawn.",
+    "Just place it on the grass — it scans and maps your lawn all by itself.",
+    "Trees, walls, and tight corners? Not a problem!",
+    "Rocks, toys, or tree branches — the FL3000 detects obstacles before trouble strikes."
+  ],
+  "copy_sets": [
+    {
+      "id": "ad-1",
+      "framework": "Editorial",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "LiDAR-guided mowing. No wire. No RTK. Up to 3,000 m² on a single charge.",
+        "long": "See Further. Mow Smarter.\n\nThe FL3000 sees your lawn with 360° LiDAR and semantic vision — the same sensor stack we build into autonomous tractors.\n\nNo boundary wire to bury.\nNo RTK to drop signal under trees.\nNo weekend lost to installation.\n\nPlace it on the grass. It maps itself. It mows itself.\n\nUp to 3,000 m² · 180 min runtime · 33° max climb · IPX5.\n\nShop the FL3000."
+      },
+      "headline": "See Further. Mow Smarter.",
+      "description": "LiDAR Robotic Mower",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SHOP NOW",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "lifestyle",
+        "description": "Full-bleed hero-1 campaign shot (dark studio with halftone FL3000 treatment + product centered). Dark gradient bottom for text legibility.",
+        "source": "brief/images/hero-1.webp",
+        "ai_prompt": null
+      },
+      "template_fields": {}
+    },
+    {
+      "id": "ad-2",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "extra:product-hero/86-orbiting-benefit-callouts",
+      "primary_text": {
+        "short": "Every feature that costs extra on other mowers — built in.",
+        "long": "One mower. Every feature that used to cost extra.\n\nLiDAR navigation. Semantic vision. Smart edge trimming. Rain detection. Real-time GPS anti-theft. Electric deck auto-lifting. Fast blade swap.\n\nCompare it to anything with a boundary wire or an RTK mast. You won't go back.\n\nShop the FL3000 — LiDAR Robotic Mower."
+      },
+      "headline": "Every feature. One mower.",
+      "description": "FJD FL3000",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SEE SPECS",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Clean hero-2 product cutout (the white/silver mower on white bg, 3/4 angle) centered on a dark gradient. 6 floating labels orbit the product — each with a small icon + 1-2 word feature name. Lime-green connector lines run from label to product.",
+        "source": "brief/images/hero-2.png",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "callout_1": {"label": "360° LiDAR", "position": "top-left"},
+        "callout_2": {"label": "Semantic Vision", "position": "top-right"},
+        "callout_3": {"label": "Smart Edge Trim", "position": "mid-left"},
+        "callout_4": {"label": "Rain Sensor", "position": "mid-right"},
+        "callout_5": {"label": "GPS Anti-Theft", "position": "bottom-left"},
+        "callout_6": {"label": "Fast Blade Swap", "position": "bottom-right"}
+      }
+    },
+    {
+      "id": "ad-3",
+      "framework": "Comparison",
+      "layout_recommendation": "extra:comparison/07-us-vs-them",
+      "primary_text": {
+        "short": "A weekend of trenching wire. Or a 10-minute setup. Your call.",
+        "long": "A robot mower shouldn't come with a to-do list.\n\nMost do.\n\nBoundary wire buried around every flowerbed. RTK masts that drop signal under trees. Perimeter reinstalls every spring when the wire shorts.\n\nThe FL3000 skips all of it. LiDAR and vision map your yard in minutes — no wire, no RTK, no trenching.\n\nSee the difference — and then never mow again."
+      },
+      "headline": "The old way vs the FL3000.",
+      "description": "LiDAR Robotic Mower",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "SEE THE DIFFERENCE",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Two-column layout. Left column (muted): 'The old way' with crossed-out items. Right column (accent): 'FL3000' with lime-green checks. Product cutout small at top or footer.",
+        "source": "brief/images/hero-2.png",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "before_label": "The old way",
+        "after_label": "FL3000",
+        "before_items": [
+          "Bury boundary wire around every flowerbed",
+          "Lose a weekend to the install",
+          "Signal drops under trees or near walls",
+          "Trim edges by hand every week",
+          "Ugly wire crossing the lawn"
+        ],
+        "after_items": [
+          "10-minute setup, no wire",
+          "Place it on the grass and walk away",
+          "LiDAR works under trees, around walls",
+          "Smart edge trimming — LiDAR + vision",
+          "Nothing to bury, nothing to see"
+        ]
+      }
+    },
+    {
+      "id": "ad-4",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "extra:data-driven/13-stat-surround-product",
+      "primary_text": {
+        "short": "3,000 m² · 180 min · 33° slope · 10-min setup. Not the average robot mower.",
+        "long": "The FL3000 in four numbers.\n\n3,000 m² — the biggest lawn it'll handle.\n180 minutes — runtime on a single charge.\n33° — the steepest slope it'll climb.\n10 minutes — from box to first cut.\n\nBoundary wire? None.\nRTK? None.\nMowing? Done.\n\nShop the FL3000 — LiDAR Robotic Mower."
+      },
+      "headline": "The FL3000, in four numbers.",
+      "description": "LiDAR Robotic Mower",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SHOP NOW",
+      "hook_type": "statistic",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Product cutout (hero-2) dead center on a dark stage with subtle grid/gradient. Four big stat blocks in the corners — top-left 3,000 m², top-right 180 min, bottom-left 33°, bottom-right 10 min setup. Lime accent for stat numbers.",
+        "source": "brief/images/hero-2.png",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "stat_1": "3,000",
+        "stat_1_unit": "m²",
+        "stat_1_label": "Max mowing area",
+        "stat_2": "180",
+        "stat_2_unit": "min",
+        "stat_2_label": "Runtime per charge",
+        "stat_3": "33°",
+        "stat_3_unit": "",
+        "stat_3_label": "Max slope (65% grade)",
+        "stat_4": "10",
+        "stat_4_unit": "min",
+        "stat_4_label": "Setup, start to cut"
+      }
+    },
+    {
+      "id": "ad-5",
+      "framework": "Editorial",
+      "layout_recommendation": "bold-statement",
+      "primary_text": {
+        "short": "No wire. No RTK. No weekends. The FL3000 is here.",
+        "long": "No wire to bury.\nNo RTK to drop signal.\nNo weekend spent on install.\nNo edge trimming by hand.\nNo more Saturdays behind a mower.\n\nJust place it on the grass.\n\nThe FL3000 — LiDAR Robotic Mower by FJDynamics.\n\nShop now."
+      },
+      "headline": "No wire. No RTK. No weekends.",
+      "description": "FJD FL3000",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SHOP THE FL3000",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Bold typographic layout — near-black background, giant display typography 'No wire. No RTK. No weekends.' with 'No' lines striking through in muted grey and the last line 'No weekends.' in lime-green italic. Small product strip (hero-2 cutout) at bottom.",
+        "source": "brief/images/hero-2.png",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "footer_tagline": "FL3000 · LiDAR Robotic Mower · fjdynamics.com"
+      }
+    },
+    {
+      "id": "ad-6",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "extra:product-hero/82-dark-problem-solution-icons",
+      "primary_text": {
+        "short": "Wire mowers quit under trees. RTK mowers quit near walls. The FL3000 doesn't.",
+        "long": "Every robot mower has a blind spot.\n\nBoundary-wire mowers quit the second the wire breaks.\nRTK mowers quit the second signal drops.\nThe FL3000 doesn't quit.\n\nLiDAR reads the yard in 360°.\nSemantic vision spots rocks, toys, and tree branches before they become a problem.\nRain sensor brings it home on its own.\nReal-time GPS keeps an eye on it even when you don't.\n\nShop the FL3000."
+      },
+      "headline": "Built where other mowers quit.",
+      "description": "FJD FL3000",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SHOP NOW",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Near-black background. Top: problem headline. Below: 4 horizontal rows, each with an icon on the left (LiDAR, vision, rain, GPS) + title + one-line description. Small product silhouette bottom right.",
+        "source": "brief/images/hero-2.png",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "problem_headline": "Built where other mowers quit.",
+        "rows": [
+          {"icon": "lidar", "title": "360° LiDAR", "desc": "Reads every corner — no signal drops"},
+          {"icon": "vision", "title": "Semantic Vision", "desc": "Sees rocks, toys, branches before they strike"},
+          {"icon": "rain", "title": "Rain Sensor", "desc": "Drives itself home when the sky opens"},
+          {"icon": "gps", "title": "Real-time GPS", "desc": "Anti-theft built in"}
+        ]
+      }
+    },
+    {
+      "id": "ad-7",
+      "framework": "Editorial",
+      "layout_recommendation": "extra:lifestyle/26-stat-callout-lifestyle",
+      "primary_text": {
+        "short": "Every Saturday. Back. 10-minute setup. No wire. No RTK. Just the FL3000.",
+        "long": "Count the Saturdays you've spent behind a mower.\n\nNow count the ones you'd rather not.\n\nThe FL3000 takes them back — 10-minute setup, no wire, no RTK, no weekend install. LiDAR and vision do the mowing. You do whatever you want instead.\n\nUp to 3,000 m² handled. Edges trimmed clean. Rain handled. Anti-theft handled.\n\nShop the FL3000 — LiDAR Robotic Mower."
+      },
+      "headline": "Take your Saturdays back.",
+      "description": "FJD FL3000",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "SHOP NOW",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "lifestyle",
+        "description": "Aerial suburban home shot (hero-4) as full-bleed background. Soft dark vignette for legibility. Foreground: one giant lime-accent stat '0 wires.' with subline '0 weekends.' in white. Bottom row: small product cutout + CTA.",
+        "source": "brief/images/hero-4.jpeg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "big_stat_line_1": "0 wires.",
+        "big_stat_line_2": "0 weekends.",
+        "subline": "10-minute setup. 3,000 m² of lawn. LiDAR-guided. The FL3000."
+      }
+    }
+  ]
+}

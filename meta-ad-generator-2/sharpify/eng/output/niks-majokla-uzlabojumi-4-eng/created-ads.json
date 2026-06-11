@@ -1,0 +1,38 @@
+{
+  "account": "1184056475376090",
+  "adset_id": "120242987873060328",
+  "form_id": "1458253571971724",
+  "status": "ACTIVE",
+  "ads": [
+    {
+      "name": "Roofing - Ridge Magazine - Calendar full through fall",
+      "png": "roofing-1-ridge-magazine.png",
+      "creative_id": "2147518086049073",
+      "ad_id": "120243384022790328"
+    },
+    {
+      "name": "Roofing - Crew Polaroid - Leads while crew works",
+      "png": "roofing-2-crew-polaroid.png",
+      "creative_id": "4300807453510662",
+      "ad_id": "120243384024250328"
+    },
+    {
+      "name": "Solar - Aerial Magazine - Next client lined up",
+      "png": "solar-1-aerial-magazine.png",
+      "creative_id": "982235434482423",
+      "ad_id": "120243384026320328"
+    },
+    {
+      "name": "Solar - Macro Circle - Next install lined up",
+      "png": "solar-2-macro-circle.png",
+      "creative_id": "950683804340409",
+      "ad_id": "120243384027930328"
+    },
+    {
+      "name": "Solar - Jobsite Sticker - Next installs lined up",
+      "png": "solar-3-jobsite-sticker.png",
+      "creative_id": "804342572754806",
+      "ad_id": "120243384029610328"
+    }
+  ]
+}

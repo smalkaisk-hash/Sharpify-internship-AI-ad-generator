@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --bg: #F4F1E8; --paper: #F9F6ED; --text-dark: #0D1411;
+      --fh: 'EB Garamond', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad {
+      position: relative; width: 1080px; height: 1080px;
+      background: var(--paper);
+      display: flex; flex-direction: column;
+      overflow: hidden; color: var(--text-dark);
+    }
+
+    /* Paper texture */
+    .ad::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(circle at 15% 85%, rgba(13,20,17,0.02) 0%, transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(76,175,80,0.03) 0%, transparent 40%);
+    }
+
+    /* Masthead */
+    .masthead {
+      padding: 40px 56px 20px;
+      border-bottom: 3px double var(--text-dark);
+      display: flex; justify-content: space-between; align-items: flex-end;
+      position: relative;
+      z-index: 2;
+    }
+    .masthead-title {
+      font-family: var(--fh); font-size: 48px; font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-dark);
+    }
+    .masthead-meta {
+      font-family: var(--fb); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(13,20,17,0.6);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .masthead-meta .accent { color: var(--accent); }
+
+    /* Section label */
+    .section-label {
+      padding: 16px 56px 0;
+      font-family: var(--fb); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--accent);
+      z-index: 2; position: relative;
+    }
+
+    /* Article headline */
+    .article-head {
+      padding: 12px 56px 24px;
+      z-index: 2; position: relative;
+    }
+    .article-kicker {
+      font-family: var(--fh); font-size: 22px; font-weight: 400;
+      font-style: italic;
+      color: rgba(13,20,17,0.65);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: var(--fh); font-size: 92px; font-weight: 500;
+      line-height: 0.95; letter-spacing: -0.025em;
+      color: var(--text-dark); margin: 0;
+    }
+    h1 .accent { color: var(--accent); font-style: italic; }
+
+    /* Body in two columns */
+    .body-wrap {
+      flex: 1;
+      padding: 6px 56px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      z-index: 2; position: relative;
+    }
+
+    .col-left { position: relative; }
+    .drop-cap {
+      float: left;
+      font-family: var(--fh); font-size: 88px; font-weight: 600;
+      line-height: 0.85;
+      color: var(--accent);
+      padding: 4px 10px 0 0;
+    }
+    .col-left p {
+      font-family: var(--fh); font-size: 20px; font-weight: 400;
+      line-height: 1.48;
+      color: rgba(13,20,17,0.82);
+      margin: 0 0 14px;
+    }
+
+    .pull-quote {
+      font-family: var(--fh); font-size: 34px; font-weight: 500;
+      line-height: 1.15; letter-spacing: -0.012em;
+      font-style: italic;
+      color: var(--primary);
+      padding: 20px 0;
+      border-top: 1px solid rgba(13,20,17,0.25);
+      border-bottom: 1px solid rgba(13,20,17,0.25);
+      margin: 18px 0;
+      position: relative;
+    }
+    .pull-quote::before { content: "\201C"; color: var(--accent); font-size: 70px; line-height: 0; vertical-align: -18px; margin-right: 4px; }
+    .pull-quote::after { content: "\201D"; color: var(--accent); font-size: 70px; line-height: 0; vertical-align: -38px; margin-left: 2px; }
+
+    .facts-list {
+      list-style: none;
+      padding: 0; margin: 12px 0 0;
+      font-family: var(--fh); font-size: 20px; font-weight: 400;
+      color: rgba(13,20,17,0.82);
+      line-height: 1.5;
+    }
+    .facts-list li {
+      padding-left: 26px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .facts-list li::before {
+      content: "§"; position: absolute; left: 0; top: 2px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 22px 56px 36px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 3px double var(--text-dark);
+      z-index: 2; position: relative;
+    }
+    .footer-note { font-family: var(--fb); font-size: 12px; color: rgba(13,20,17,0.55); letter-spacing: 0.22em; text-transform: uppercase; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 70px; min-width: 260px; padding: 0 38px;
+      background: var(--primary); color: var(--bg);
+      font-family: var(--fb); font-weight: 700; font-size: 16px;
+      letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="masthead">
+      <div class="masthead-title">Greenwaste.Tech — Lapa Nr. 01</div>
+      <div class="masthead-meta">2026 · Izdevums <span class="accent">01</span><br>Bioloģiskā kanalizācija</div>
+    </div>
+
+    <div class="section-label">Latvijas inovācija</div>
+
+    <div class="article-head">
+      <div class="article-kicker">Pirmā un vienīgā šāda veida Latvijā —</div>
+      <h1>Divfāžu biofiltrācija,<br>kas beidz <span class="accent">asenizatora laikmetu.</span></h1>
+    </div>
+
+    <div class="body-wrap">
+      <div class="col-left">
+        <p><span class="drop-cap">B</span>ioloģiskā kanalizācija pārveido notekūdeni par tīru ūdeni un dabisku mēslojumu — bez ķīmijas, bez smakas, bez mēneša rēķiniem. Trīs soļi, viena sistēma, vienreizēja investīcija.</p>
+        <p>Nav jāsūknē aka. Nav jāpērk baktērijas. Nav jāmaksā par apkopi. Tas ir pašregulējošs bioloģiskais cikls — tāds pats, kāds darbojas dabā, tikai zem tavas zemes.</p>
+
+        <ul class="facts-list">
+          <li>EN12566-3 + CE sertifikāts</li>
+          <li>5 gadu garantija iekārtai un montāžai</li>
+          <li>Uzstādīšanu veic tikai sertificēti speciālisti</li>
+        </ul>
+      </div>
+
+      <div class="col-right">
+        <div class="pull-quote">Tā ir vienreizēja investīcija ilgtermiņā tavam īpašumam.</div>
+        <p style="font-family: var(--fh); font-size: 20px; line-height: 1.48; color: rgba(13,20,17,0.82); margin: 0 0 12px;">Vidējais māju īpašnieks ietaupa €350–900 gadā — un sistēma atpelnās 3–6 gados. Pēc tam — 0€ mēneša izmaksas uz mūžu.</p>
+        <p style="font-family: var(--fh); font-size: 20px; line-height: 1.48; color: rgba(13,20,17,0.82); margin: 0;">Plus — tīrs ūdens dārza laistīšanai un bioloģiskās dūņas kā mēslojums. Abi bez maksas.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-note">greenwaste-tech.com · Latvija · 2026</div>
+      <div class="cta">Pieteikties</div>
+    </div>
+  </div>
+</body>
+</html>

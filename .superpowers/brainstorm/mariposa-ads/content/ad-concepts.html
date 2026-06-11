@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reklāmu koncepti — Mariposa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0a; color:#fff; font-family:'Inter', sans-serif; padding:40px 20px; }
+h1 { font-family:'Montserrat', sans-serif; font-size:28px; text-align:center; margin-bottom:8px; }
+.subtitle { text-align:center; color:#888; margin-bottom:48px; font-size:15px; }
+
+.concepts-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+  gap:32px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.concept-card {
+  background:#151515;
+  border-radius:16px;
+  overflow:hidden;
+  border:2px solid #222;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  position:relative;
+}
+.concept-card:hover { border-color:#C56B62; transform:translateY(-4px); box-shadow:0 12px 40px rgba(197,107,98,0.18); }
+.concept-card.selected { border-color:#C56B62; box-shadow:0 0 0 3px rgba(197,107,98,0.28); }
+
+.concept-label {
+  position:absolute; top:12px; left:12px;
+  background:#C56B62; color:#fff; font-weight:700;
+  padding:4px 12px; border-radius:6px; font-size:13px;
+  z-index:20;
+}
+
+/* ========== MOCK SHARED ========== */
+.ad-mock { width:100%; aspect-ratio:1/1; position:relative; overflow:hidden; }
+
+/* ========== AD MOCK 1: EDITORIAL SPLIT ========== */
+.ad-mock-1 {
+  display:flex;
+}
+.mock1-left {
+  width:47%; height:100%;
+  flex-shrink:0;
+  display:flex; flex-direction:column;
+  position:relative;
+}
+.mock1-header {
+  height:10.5%;
+  background:linear-gradient(135deg, #1a0c1e 0%, #2c1430 55%, #1e0a1c 100%);
+  display:flex; align-items:center;
+  padding:0 8%;
+  flex-shrink:0;
+}
+.mock1-logo {
+  font-family:'Cormorant Garamond', serif;
+  font-size:13px; font-weight:300; font-style:italic;
+  color:#f0dad5; letter-spacing:0.12em; opacity:0.84;
+}
+.mock1-body {
+  flex:1;
+  background:linear-gradient(162deg, #fdf5f1 0%, #f4e4de 50%, #eedbd4 100%);
+  padding:6% 8% 12%;
+  display:flex; flex-direction:column;
+}
+.mock1-hook {
+  font-family:'Cormorant Garamond', serif;
+  font-size:9px; font-weight:300; font-style:italic;
+  color:rgba(197,107,98,0.82); margin-bottom:5px;
+}
+.mock1-headline {
+  font-family:'Cormorant Garamond', serif;
+  font-size:22px; line-height:0.90;
+  font-weight:300; font-style:italic;
+  color:#1e0c1a; letter-spacing:-0.02em;
+  margin-bottom:8px;
+}
+.mock1-headline em { font-weight:600; color:#C56B62; }
+.mock1-divider {
+  height:1px; width:80%;
+  background:linear-gradient(90deg, rgba(197,107,98,0.42) 0%, transparent 100%);
+  margin-bottom:8px;
+}
+.mock1-services { display:flex; flex-direction:column; gap:0; flex:1; }
+.mock1-service {
+  font-family:'DM Sans', sans-serif;
+  font-size:8px; font-weight:500;
+  color:#1e0c1a; text-transform:uppercase; letter-spacing:0.06em;
+  padding:5px 0;
+  border-bottom:1px solid rgba(197,107,98,0.14);
+}
+.mock1-cta {
+  background:#424658; color:#F0DAD5;
+  font-family:'DM Sans', sans-serif;
+  font-size:7px; font-weight:600;
+  padding:8px 6px; border-radius:5px;
+  text-align:center; letter-spacing:0.05em;
+  margin-top:auto;
+}
+.mock1-seam {
+  position:absolute; top:10.5%; right:0; bottom:7%; width:1px;
+  background:linear-gradient(180deg,
+    transparent 0%, rgba(197,107,98,0.55) 30%,
+    rgba(197,107,98,0.55) 70%, transparent 100%);
+}
+.mock1-right {
+  flex:1; position:relative; overflow:hidden;
+}
+.mock1-photo {
+  width:100%; height:100%;
+  background:linear-gradient(145deg, #c8997a 0%, #b07058 35%, #8a4a3a 65%, #5a2a2a 100%);
+  position:relative;
+}
+.mock1-photo::after {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(90deg,
+    #eedbd4 0%, rgba(238,219,212,0.72) 5%,
+    rgba(238,219,212,0.32) 16%, transparent 45%);
+}
+/* Subtle face silhouette */
+.mock1-face {
+  position:absolute; top:8%; left:50%; transform:translateX(-40%);
+  width:72%; height:84%;
+  background:radial-gradient(ellipse 60% 80% at 48% 32%,
+    rgba(222,180,155,0.90) 0%,
+    rgba(200,155,120,0.80) 30%,
+    rgba(170,120,90,0.60) 60%,
+    transparent 90%);
+  border-radius:50% 50% 40% 40% / 60% 60% 40% 40%;
+}
+
+/* ========== AD MOCK 2: DARK FULL-BLEED ========== */
+.ad-mock-2 {
+  background:linear-gradient(160deg, #3a2830 0%, #2a1e28 30%, #1a1020 60%, #0e0810 100%);
+}
+/* Photo simulation */
+.mock2-photo {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 65% 75% at 62% 28%,
+    rgba(200,155,125,0.55) 0%,
+    rgba(170,120,90,0.30) 35%,
+    rgba(130,80,60,0.12) 60%,
+    transparent 82%);
+}
+.mock2-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,
+    rgba(14,8,16,0.30) 0%,
+    rgba(14,8,16,0.42) 35%,
+    rgba(14,8,16,0.70) 62%,
+    rgba(14,8,16,0.90) 82%,
+    rgba(14,8,16,0.96) 100%);
+}
+.mock2-overlay-sides {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg,
+    rgba(14,8,16,0.68) 0%, rgba(14,8,16,0.18) 22%,
+    transparent 44%, transparent 62%,
+    rgba(14,8,16,0.28) 84%, rgba(14,8,16,0.56) 100%);
+}
+.mock2-top {
+  position:absolute; top:5%; left:6%; right:6%;
+  display:flex; justify-content:space-between; align-items:center;
+  z-index:10;
+}
+.mock2-brand {
+  font-family:'DM Sans', sans-serif;
+  font-size:8px; font-weight:400;
+  color:rgba(240,218,213,0.50);
+  text-transform:uppercase; letter-spacing:0.28em;
+}
+.mock2-logo-txt {
+  font-family:'Cormorant Garamond', serif;
+  font-size:11px; font-weight:300; font-style:italic;
+  color:rgba(240,218,213,0.64); letter-spacing:0.10em;
+}
+.mock2-stat {
+  position:absolute; top:14%; left:6%; z-index:10;
+}
+.mock2-stat-main {
+  font-family:'Cormorant Garamond', serif;
+  font-size:38px; line-height:0.88;
+  font-weight:300; font-style:italic;
+  color:#DEA785; letter-spacing:-0.025em;
+}
+.mock2-stat-sub {
+  font-family:'Cormorant Garamond', serif;
+  font-size:19px; line-height:1.0;
+  font-weight:300; font-style:italic;
+  color:rgba(240,218,213,0.70); letter-spacing:-0.01em;
+  margin-top:3px;
+}
+.mock2-divider {
+  position:absolute; left:6%; right:6%; height:1px;
+  background:linear-gradient(90deg, rgba(197,107,98,0.52) 0%, rgba(197,107,98,0.14) 55%, transparent 100%);
+  z-index:10;
+  top:38%;
+}
+.mock2-content {
+  position:absolute; bottom:22%; left:6%; right:6%; z-index:10;
+}
+.mock2-headline {
+  font-family:'DM Sans', sans-serif;
+  font-size:8px; font-weight:500;
+  color:#F0DAD5; text-transform:uppercase; letter-spacing:0.10em;
+  margin-bottom:6px;
+}
+.mock2-body {
+  font-family:'DM Sans', sans-serif;
+  font-size:7px; font-weight:300; line-height:1.75;
+  color:rgba(240,218,213,0.58);
+}
+.mock2-chips {
+  position:absolute; bottom:17.5%; left:6%; z-index:10;
+  display:flex; gap:5px;
+}
+.mock2-chip {
+  font-family:'DM Sans', sans-serif;
+  font-size:6px; font-weight:500;
+  color:rgba(222,167,133,0.80);
+  text-transform:uppercase; letter-spacing:0.16em;
+  padding:4px 10px; border-radius:20px;
+  border:1px solid rgba(222,167,133,0.22);
+  background:rgba(222,167,133,0.06);
+  white-space:nowrap;
+}
+.mock2-cta-wrap {
+  position:absolute; bottom:14%; left:6%; right:6%; z-index:10;
+}
+.mock2-cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #b06040 0%, #c56b62 50%, #d9a69f 100%);
+  color:#faf0ec;
+  font-family:'DM Sans', sans-serif;
+  font-size:8px; font-weight:600;
+  padding:9px; border-radius:5px;
+  text-align:center; letter-spacing:0.05em;
+}
+
+/* ========== AD MOCK 3: PHOTO LEFT + OFFER RIGHT ========== */
+.ad-mock-3 {
+  display:flex;
+}
+.mock3-left {
+  width:44%; height:100%;
+  flex-shrink:0;
+  position:relative; overflow:hidden;
+}
+.mock3-photo {
+  width:100%; height:100%;
+  background:linear-gradient(145deg,
+    #c09070 0%, #a07050 25%,
+    #6a3828 50%, #3a1818 75%, #1e0c0c 100%);
+}
+/* Hair silhouette top */
+.mock3-photo::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:55%;
+  background:radial-gradient(ellipse 80% 70% at 45% 20%,
+    rgba(190,140,100,0.70) 0%,
+    rgba(160,110,70,0.50) 35%,
+    rgba(110,65,35,0.25) 65%,
+    transparent 88%);
+  border-radius:60% 40% 30% 30%;
+}
+.mock3-fade-right {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg,
+    transparent 45%, rgba(28,30,48,0.40) 68%,
+    rgba(28,30,48,0.80) 85%, #1c1e30 100%);
+}
+.mock3-right {
+  flex:1;
+  background:#1c1e30;
+  display:flex; flex-direction:column;
+  padding:6% 7% 0 6%;
+  position:relative;
+}
+.mock3-right::before {
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 90% 55% at 60% 28%, rgba(108,115,156,0.10) 0%, transparent 58%);
+}
+.mock3-logo-txt {
+  font-family:'Cormorant Garamond', serif;
+  font-size:11px; font-weight:300; font-style:italic;
+  color:rgba(240,218,213,0.62); letter-spacing:0.10em;
+  margin-bottom:2px;
+  position:relative; z-index:2;
+}
+.mock3-brand {
+  font-family:'DM Sans', sans-serif;
+  font-size:7px; font-weight:400;
+  color:rgba(240,218,213,0.38);
+  text-transform:uppercase; letter-spacing:0.28em;
+  margin-bottom:8%;
+  position:relative; z-index:2;
+}
+.mock3-offer-row {
+  display:flex; align-items:flex-end; gap:6px;
+  margin-bottom:3px;
+  position:relative; z-index:2;
+}
+.mock3-amount {
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px; line-height:0.84;
+  font-weight:300; font-style:italic;
+  color:#DEA785; letter-spacing:-0.03em;
+}
+.mock3-offer-stacked {
+  display:flex; flex-direction:column; gap:1px;
+  padding-bottom:6px;
+}
+.mock3-offer-label {
+  font-family:'DM Sans', sans-serif;
+  font-size:6px; font-weight:500;
+  color:rgba(240,218,213,0.40);
+  text-transform:uppercase; letter-spacing:0.22em;
+}
+.mock3-offer-free {
+  font-family:'DM Sans', sans-serif;
+  font-size:9px; font-weight:600;
+  color:#F0DAD5;
+  text-transform:uppercase; letter-spacing:0.12em;
+}
+.mock3-divider {
+  width:100%; height:1px;
+  background:linear-gradient(90deg, rgba(197,107,98,0.42) 0%, rgba(197,107,98,0.10) 70%, transparent 100%);
+  margin-bottom:7%;
+  position:relative; z-index:2;
+}
+.mock3-headline {
+  font-family:'DM Sans', sans-serif;
+  font-size:7.5px; font-weight:500;
+  color:#F0DAD5; text-transform:uppercase; letter-spacing:0.09em;
+  margin-bottom:6px;
+  position:relative; z-index:2;
+}
+.mock3-body {
+  font-family:'DM Sans', sans-serif;
+  font-size:6.5px; font-weight:300; line-height:1.78;
+  color:rgba(240,218,213,0.55);
+  position:relative; z-index:2;
+}
+.mock3-chips {
+  display:flex; flex-direction:column; gap:4px;
+  margin-top:auto; padding-bottom:10px;
+  position:relative; z-index:2;
+}
+.mock3-chip {
+  font-family:'DM Sans', sans-serif;
+  font-size:6px; font-weight:500;
+  color:rgba(222,167,133,0.76);
+  text-transform:uppercase; letter-spacing:0.16em;
+  padding:4px 8px; border-radius:4px;
+  border:1px solid rgba(222,167,133,0.18);
+  background:rgba(222,167,133,0.05);
+  display:inline-block; align-self:flex-start;
+}
+.mock3-cta-wrap {
+  padding:0 0 14% 0;
+  position:relative; z-index:2;
+}
+.mock3-cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #b06040 0%, #c56b62 50%, #d9a69f 100%);
+  color:#faf0ec;
+  font-family:'DM Sans', sans-serif;
+  font-size:7px; font-weight:600;
+  padding:9px 6px; border-radius:5px;
+  text-align:center; letter-spacing:0.05em;
+}
+
+/* ========== Card info ========== */
+.concept-info { padding:20px; }
+.concept-info h3 { font-family:'Montserrat', sans-serif; font-size:18px; margin-bottom:8px; }
+.concept-info p { color:#999; font-size:13px; line-height:1.5; }
+.concept-info .tags { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.concept-info .tag {
+  background:#1e1e1e; color:#C56B62; padding:4px 10px;
+  border-radius:6px; font-size:11px; font-weight:600;
+}
+
+.select-hint { text-align:center; margin-top:40px; color:#555; font-size:13px; }
+</style>
+</head>
+<body>
+
+<h1>Reklāmu koncepti — Mariposa</h1>
+<p class="subtitle">Noklikšķini uz konceptiem, kas patīk. Var izvēlēties vairākus.</p>
+
+<div class="concepts-grid">
+
+  <!-- CONCEPT A: Editorial Split -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">A</span>
+    <div class="ad-mock ad-mock-1">
+      <div class="mock1-left">
+        <div class="mock1-header">
+          <span class="mock1-logo">mariposa</span>
+        </div>
+        <div class="mock1-body">
+          <div class="mock1-hook">Āda, kuru esi gaidījusi.</div>
+          <div class="mock1-headline">
+            Pigmentācija<br>
+            pazūd pēc<br>
+            <em>3 procedūrām.</em>
+          </div>
+          <div class="mock1-divider"></div>
+          <div class="mock1-services">
+            <div class="mock1-service">IPL</div>
+            <div class="mock1-service">RF Mikro Adatas</div>
+            <div class="mock1-service">Lāzerepilācija</div>
+          </div>
+          <div class="mock1-cta">Piesakies bezmaksas konsultācijai</div>
+        </div>
+        <div class="mock1-seam"></div>
+      </div>
+      <div class="mock1-right">
+        <div class="mock1-photo">
+          <div class="mock1-face"></div>
+        </div>
+      </div>
+    </div>
+    <div class="concept-info">
+      <h3>Editoriāls sadalījums</h3>
+      <p>Kreisajā pusē — saturs, labajā — portrets. Klasisks žurnāla izkārtojums, kas piešķir premium izskatu. Pakalpojumu saraksts ar ikonām un silts krēmrozā tonis.</p>
+      <div class="tags">
+        <span class="tag">Editorial</span>
+        <span class="tag">Split layout</span>
+        <span class="tag">Services list</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT B: Dark Full-Bleed -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">B</span>
+    <div class="ad-mock ad-mock-2">
+      <div class="mock2-photo"></div>
+      <div class="mock2-overlay"></div>
+      <div class="mock2-overlay-sides"></div>
+
+      <div class="mock2-top">
+        <span class="mock2-brand">Mariposa · Rīga</span>
+        <span class="mock2-logo-txt">mariposa</span>
+      </div>
+
+      <div class="mock2-stat">
+        <div class="mock2-stat-main">95% atgriežas.</div>
+        <div class="mock2-stat-sub">Viens iemesls.</div>
+      </div>
+
+      <div class="mock2-divider"></div>
+
+      <div class="mock2-content">
+        <div class="mock2-headline">IPL, RF, lāzers vienā protokolā</div>
+        <div class="mock2-body">
+          Tava āda mainās pēc 2 sesijām. To ir pieredzējuši<br>
+          2500 klienti Mariposa. 95% atgriežas.
+        </div>
+      </div>
+
+      <div class="mock2-chips">
+        <div class="mock2-chip">95% atgriežas</div>
+        <div class="mock2-chip">2500+ klienti</div>
+        <div class="mock2-chip">no 2. sesijas</div>
+      </div>
+
+      <div class="mock2-cta-wrap">
+        <div class="mock2-cta">Piesakies bezmaksas konsultācijai</div>
+      </div>
+    </div>
+    <div class="concept-info">
+      <h3>Tumšs — pilns kadrs</h3>
+      <p>Pilna foto ar tumšu pārklājumu. "95% atgriežas." kā liels displays stats. Dramatisks un uzticams. Terrakota CTA pogas gradients.</p>
+      <div class="tags">
+        <span class="tag">Full-bleed</span>
+        <span class="tag">Social proof</span>
+        <span class="tag">Dark mood</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT C: Photo Left + Offer Panel -->
+  <div class="concept-card" onclick="this.classList.toggle('selected')">
+    <span class="concept-label">C</span>
+    <div class="ad-mock ad-mock-3">
+      <div class="mock3-left">
+        <div class="mock3-photo"></div>
+        <div class="mock3-fade-right"></div>
+      </div>
+      <div class="mock3-right">
+        <div class="mock3-logo-txt">mariposa</div>
+        <div class="mock3-brand">Skaistumkopšana · Rīga</div>
+
+        <div class="mock3-offer-row">
+          <div class="mock3-amount">40€</div>
+          <div class="mock3-offer-stacked">
+            <span class="mock3-offer-label">konsultācija</span>
+            <span class="mock3-offer-free">Tev bez maksas</span>
+          </div>
+        </div>
+
+        <div class="mock3-divider"></div>
+
+        <div class="mock3-headline">2500 klientu. 95% atgriežas atkal.</div>
+        <div class="mock3-body">
+          Pirmā konsultācija ir bezmaksas, 40€ vērtībā.<br>
+          Tikai Mariposa apvieno IPL, RF un lāzeru<br>
+          vienā platformā. Piesakies šodien.
+        </div>
+
+        <div class="mock3-chips">
+          <div class="mock3-chip">Optimas platforma</div>
+          <div class="mock3-chip">IPL · RF · Lāzers</div>
+          <div class="mock3-chip">Rīgā</div>
+        </div>
+
+        <div class="mock3-cta-wrap">
+          <div class="mock3-cta">Piesakies bezmaksas konsultācijai</div>
+        </div>
+      </div>
+    </div>
+    <div class="concept-info">
+      <h3>Foto + piedāvājuma panelis</h3>
+      <p>Foto kreisajā, tumši jūras zilā panelis labajā ar "40€ Tev bez maksas" kā galveno enkuru. Skaidrs vērtības piedāvājums un uzticamības signāli.</p>
+      <div class="tags">
+        <span class="tag">Offer panel</span>
+        <span class="tag">Free consult</span>
+        <span class="tag">Value anchor</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="select-hint">Noklikšķini uz konceptiem, kas patīk — var izvēlēties vairākus. Atbildi terminālā.</p>
+
+</body>
+</html>

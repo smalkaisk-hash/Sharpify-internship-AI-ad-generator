@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#100610; }
+
+/* Full-bleed woman hero image */
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 8%;
+  filter:saturate(1.04) contrast(1.02) brightness(1.02);
+}
+
+/* Top vignette for logo */
+.vig-top {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(10,4,10,0.55) 0%,
+    rgba(10,4,10,0.12) 14%,
+    transparent 30%
+  );
+}
+
+/* Bottom gradient — text area */
+.vig-bottom {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent           28%,
+    rgba(10,4,10,0.25)   40%,
+    rgba(10,4,10,0.65)   52%,
+    rgba(10,4,10,0.90)   62%,
+    rgba(10,4,10,0.97)   72%,
+    rgba(10,4,10,1.00)   82%
+  );
+}
+
+/* Edge depth */
+.vig-edges {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 92% 92% at 50% 50%,
+    transparent 46%,
+    rgba(10,4,10,0.16) 72%,
+    rgba(10,4,10,0.40) 100%
+  );
+}
+
+/* Top bar */
+.top {
+  position:absolute; top:52px; left:60px; right:60px;
+  display:flex; justify-content:flex-end; align-items:center;
+  z-index:20;
+}
+.logo-img {
+  height:96px;
+  display:block;
+}
+
+/* Content block */
+.content {
+  position:absolute;
+  bottom:210px; left:60px; right:60px;
+  z-index:20;
+  text-align:center;
+}
+
+/* Hook question */
+.hook {
+  font-family:'Cormorant Garamond', serif;
+  font-size:68px; line-height:0.90;
+  font-weight:300; font-style:italic;
+  color:#f8f0ea;
+  letter-spacing:-0.02em;
+  margin-bottom:20px;
+  text-shadow:0 3px 36px rgba(10,4,10,0.50);
+}
+
+/* Problem/context */
+.problem {
+  font-family:'DM Sans', sans-serif;
+  font-size:16px; font-weight:300;
+  color:rgba(246,237,231,0.76);
+  line-height:1.7;
+  margin-bottom:28px;
+  letter-spacing:0.01em;
+}
+
+/* Service chips */
+.chips {
+  display:flex; justify-content:center; gap:12px;
+  align-items:center;
+  margin-bottom:32px;
+  flex-wrap:wrap;
+}
+.chip {
+  font-family:'DM Sans', sans-serif;
+  font-size:13px; font-weight:500;
+  color:rgba(196,149,108,0.92);
+  text-transform:uppercase; letter-spacing:0.15em;
+  white-space:nowrap;
+  padding:10px 20px;
+  border-radius:30px;
+  border:1px solid rgba(196,149,108,0.30);
+  background:rgba(196,149,108,0.08);
+}
+
+/* CTA */
+.cta-wrap {
+  position:absolute; bottom:90px; left:60px; right:60px;
+  z-index:20;
+}
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #a86e38 0%, #c4956c 52%, #d4a97c 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:20px; font-weight:600;
+  padding:26px; border-radius:10px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 56px rgba(196,149,108,0.22);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <img class="bg" src="../images/woman-smooth.jpg" alt="">
+
+  <div class="vig-top"></div>
+  <div class="vig-bottom"></div>
+  <div class="vig-edges"></div>
+
+  <!-- Top bar -->
+  <div class="top">
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="hook">Vai Tava āda ir gatava vasarai?</div>
+
+    <div class="problem">
+      Lielākā kļūda — krēmiem, nevis pareizām metodēm.
+    </div>
+
+    <div class="chips">
+      <div class="chip">IPL</div>
+      <div class="chip">RF mikro adatas</div>
+      <div class="chip">Lāzerepilācija</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <div class="cta">Piesakies bezmaksas konsultācijai →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

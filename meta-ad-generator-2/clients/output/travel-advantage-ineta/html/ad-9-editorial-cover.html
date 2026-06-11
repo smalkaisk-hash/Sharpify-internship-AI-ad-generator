@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 9 — Editorial cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=Abril+Fatface&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background:
+      radial-gradient(ellipse at 92% 5%, rgba(212,166,87,0.18) 0%, transparent 40%),
+      linear-gradient(170deg, #F5EFE2 0%, #EEE3CA 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 54px 56px 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Masthead */
+  .masthead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #0A3D2E;
+    z-index: 2; position: relative;
+  }
+  .masthead .brand {
+    font-family: 'Instrument Serif', serif;
+    font-size: 44px;
+    line-height: 1;
+    color: #0A3D2E;
+    letter-spacing: -0.01em;
+  }
+  .masthead .brand em { font-style: italic; color: #D4A657; }
+  .masthead .meta {
+    text-align: right;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(10,61,46,0.6);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .masthead .meta strong { color: #0A3D2E; font-weight: 600; }
+
+  /* Photo in gold frame */
+  .photo-frame {
+    margin-top: 22px;
+    position: relative;
+    padding: 12px;
+    background: #F5EFE2;
+    border: 1px solid rgba(10,61,46,0.15);
+    z-index: 2;
+  }
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 1px solid rgba(212,166,87,0.5);
+    pointer-events: none;
+  }
+  .photo-frame .img {
+    width: 100%;
+    height: 380px;
+    background-image: url('../brief/images/bg-dubai.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .photo-frame .caption-bar {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+  }
+  .photo-frame .caption-bar .cap {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(10,61,46,0.6);
+    font-weight: 500;
+  }
+  .photo-frame .caption-bar .cap strong { color: #0A3D2E; font-weight: 700; }
+  .photo-frame .caption-bar .price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .photo-frame .caption-bar .price .old { color: #D64545; text-decoration: line-through; font-weight: 600; font-size: 16px; }
+  .photo-frame .caption-bar .price .new { color: #0A3D2E; font-weight: 700; font-size: 22px; }
+  .photo-frame .medallion {
+    position: absolute;
+    top: 28px; right: 28px;
+    width: 92px; height: 92px;
+    border: 2px solid #D4A657;
+    background: rgba(10,61,46,0.85);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #D4A657;
+    transform: rotate(-8deg);
+  }
+  .photo-frame .medallion .lbl {
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .photo-frame .medallion .big {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #F5EFE2;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .photo-frame .medallion .bot {
+    font-size: 8px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    margin-top: 3px;
+    color: #D4A657;
+    font-weight: 600;
+  }
+
+  /* Editorial block */
+  .editorial {
+    margin-top: 22px;
+    z-index: 2; position: relative;
+  }
+  .section-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #D4A657;
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid #D4A657;
+  }
+  .editorial h1 {
+    margin-top: 10px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 78px;
+    line-height: 0.96;
+    color: #0A3D2E;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+  .body-row {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 26px;
+    align-items: start;
+  }
+  .body-row .para {
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgba(10,61,46,0.8);
+  }
+  .body-row .para strong { color: #0A3D2E; font-weight: 600; }
+  .body-row .pullquote {
+    padding: 14px 16px;
+    background: #0A3D2E;
+    color: #F5EFE2;
+    border-left: 4px solid #D4A657;
+  }
+  .body-row .pullquote .q {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #F5EFE2;
+  }
+  .body-row .pullquote .q em {
+    font-style: normal;
+    color: #D4A657;
+  }
+  .body-row .pullquote .src {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(212,166,87,0.75);
+    font-weight: 600;
+  }
+
+  .colophon {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid rgba(10,61,46,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(10,61,46,0.6);
+    z-index: 2; position: relative;
+  }
+  .colophon strong { color: #0A3D2E; font-weight: 700; }
+  .colophon .cta-pill {
+    background: #0A3D2E;
+    color: #F5EFE2;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+  }
+  .colophon .cta-pill span { color: #D4A657; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="masthead">
+      <div class="brand">The <em>Advantage</em> Journal</div>
+      <div class="meta">
+        <div>№ 01 · 2026</div>
+        <div><strong>Cenu atskaite</strong></div>
+      </div>
+    </div>
+
+    <div class="photo-frame">
+      <div class="img"></div>
+      <div class="medallion">
+        <div class="lbl">Member</div>
+        <div class="big">−70%</div>
+        <div class="bot">rate</div>
+      </div>
+      <div class="caption-bar">
+        <div class="cap"><strong>DUBAI ·</strong> 4★ · 4 naktis · biedra piemērs</div>
+        <div class="price">
+          <span class="old">€780</span>
+          <span class="new">€234</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="editorial">
+      <div class="section-tag">Iekšējās cenas · 2026</div>
+      <h1>Ko redz iekšienes publika.</h1>
+      <div class="body-row">
+        <div class="para">
+          Platforma, ko 13 gadus lieto tūrisma industrijas profesionāļi, beidzot ir atvērta arī parastajiem ceļotājiem. <strong>Tās pašas viesnīcas Booking karta — tikai par biedra cenu.</strong> Neatkarīgi no sezonas. Plus Travel Credits nākamajai reizei un 4 viesi bez papildu maksas.
+        </div>
+        <div class="pullquote">
+          <div class="q">"Atšķirība nav veiksme. <em>Tā ir piekļuve.</em>"</div>
+          <div class="src">Travel Advantage · biedra manifest</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="colophon">
+      <div>Travel Advantage<sup>™</sup> · <strong>MWR Life</strong> · kopš 2013</div>
+      <div class="cta-pill">Guest Pass → <span>bez maksas</span></div>
+    </div>
+  </div>
+</body>
+</html>

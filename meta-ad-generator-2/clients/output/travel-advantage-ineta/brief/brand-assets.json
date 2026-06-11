@@ -1,0 +1,46 @@
+{
+  "source_url": "https://free.traveladvantage.com/inetaK",
+  "scraped_at": "2026-04-23",
+  "source": "manual-derived",
+  "has_product_images": false,
+  "brand_voice": {
+    "tagline": "Ceļo vairāk. Maksā mazāk.",
+    "positioning": "Iekšēja pieeja ceļošanas industrijas vairumtirdzniecibas cenām — Travel Advantage Guest Pass",
+    "aesthetic": "Travel-luxe editorial: deep emerald + champagne gold + cream, not SaaS dark-tech, not generic Instagram beach — curated + confident"
+  },
+  "colors": {
+    "palette": [
+      { "hex": "#0A3D2E", "role": "primary-emerald-deep", "usage": "Large panels, editorial bg, dark cards" },
+      { "hex": "#0F5A44", "role": "primary-emerald-mid", "usage": "Gradients, secondary surfaces" },
+      { "hex": "#D4A657", "role": "accent-champagne-gold", "usage": "Accent rules, savings chips, highlights" },
+      { "hex": "#F5EFE2", "role": "cream", "usage": "Light bg, text on dark emerald" },
+      { "hex": "#E8D9C0", "role": "warm-sand", "usage": "Secondary cream surfaces" },
+      { "hex": "#D64545", "role": "price-slash-red", "usage": "Strike-through price only" },
+      { "hex": "#2F8F65", "role": "success-green", "usage": "Savings amounts, green pills" },
+      { "hex": "#1A1A1A", "role": "near-black", "usage": "Body text on cream" }
+    ]
+  },
+  "fonts": {
+    "display": "Instrument Serif",
+    "display_fallback": "serif",
+    "body": "Space Grotesk",
+    "body_fallback": "sans-serif",
+    "numeric": "Space Grotesk",
+    "note": "Pair picked for travel-editorial vibe, NOT Inter/Roboto"
+  },
+  "content_refs": {
+    "real_landing_stats": "$2,482,891 saved by members in 2025",
+    "years_active": "Kopš 2013 (13+ gadi)",
+    "real_testimonials_on_page": [
+      "David Moretti — Saved 65€ Puglia",
+      "Giovanna Jo — Saved $45 Florence",
+      "Giuseppe Iachella — Saved 90€ Amsterdam"
+    ],
+    "note_on_testimonials": "Real names/amounts from landing page. NOT using directly in creatives to avoid Latvian audience authenticity mismatch — will use generic 'destination + savings chip' instead."
+  },
+  "visual_inspiration_from_landing": [
+    "iMac mockup of booking platform UI",
+    "Green/white branding, hotel partner logos (Wyndham, Marriott, Hilton, Hyatt, Four Seasons)",
+    "Lifestyle traveler photos — soft, aspirational"
+  ]
+}

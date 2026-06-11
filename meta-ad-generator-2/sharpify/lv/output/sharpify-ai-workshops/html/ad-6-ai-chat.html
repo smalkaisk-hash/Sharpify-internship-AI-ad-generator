@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: linear-gradient(165deg, #0a0612 0%, #0c0816 50%, #050810 100%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 48px 56px 44px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(139,92,246,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(16,185,129,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.headline span { color: #10b981; }
+
+/* Claude chat window */
+.chat {
+  flex: 1;
+  background: #141118;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex; flex-direction: column;
+  position: relative; z-index: 1;
+}
+
+.chat-header {
+  padding: 18px 24px;
+  display: flex; align-items: center; gap: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.02);
+}
+.claude-avatar {
+  width: 42px; height: 42px; border-radius: 10px;
+  background: linear-gradient(135deg, #d97757, #c2410c);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 22px; color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.chat-title { font-size: 20px; font-weight: 700; }
+.chat-sub { font-size: 14px; color: #10b981; }
+
+.chat-body {
+  flex: 1; padding: 28px 32px;
+  display: flex; flex-direction: column; gap: 22px;
+  overflow: hidden;
+}
+
+.msg-user {
+  align-self: flex-end;
+  max-width: 80%;
+  background: rgba(139,92,246,0.12);
+  border: 1px solid rgba(139,92,246,0.2);
+  border-radius: 16px 16px 4px 16px;
+  padding: 16px 22px;
+  font-size: 22px; color: #e2e8f0;
+}
+
+.msg-ai {
+  align-self: flex-start;
+  max-width: 88%;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.msg-ai-icon {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: linear-gradient(135deg, #d97757, #c2410c);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 18px; color: #fff;
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.msg-ai-body {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px 16px 16px 4px;
+  padding: 18px 22px;
+  font-size: 22px; color: #e2e8f0;
+  line-height: 1.5;
+}
+.msg-ai-body strong { color: #fff; font-weight: 700; }
+.msg-ai-body .green { color: #10b981; font-weight: 700; }
+
+/* Skill badges */
+.skill-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.pill {
+  background: rgba(16,185,129,0.15);
+  border: 1px solid rgba(16,185,129,0.3);
+  color: #10b981;
+  padding: 5px 14px; border-radius: 20px;
+  font-size: 15px; font-weight: 700;
+}
+
+/* Input bar */
+.chat-input {
+  padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex; align-items: center; gap: 12px;
+}
+.input-box {
+  flex: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px; padding: 14px 20px;
+  font-size: 18px; color: #64748b;
+}
+.send-btn {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: #10b981; color: #000;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+
+/* Bottom CTA card */
+.bottom-card {
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 16px;
+  padding: 22px 28px;
+  margin-top: 18px;
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative; z-index: 1;
+}
+.bottom-info {}
+.bottom-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900;
+}
+.bottom-sub { font-size: 18px; color: #94a3b8; margin-top: 3px; }
+.bottom-sub s { color: #ef4444; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 20px 44px; border-radius: 14px;
+  font-weight: 800; font-size: 26px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Tava AI <span>kļūst gudrāka</span></div>
+
+  <div class="chat">
+    <div class="chat-header">
+      <div class="claude-avatar">C</div>
+      <div>
+        <div class="chat-title">Claude + Sharpify Skills</div>
+        <div class="chat-sub">● 27 skills aktīvas</div>
+      </div>
+    </div>
+
+    <div class="chat-body">
+      <div class="msg-user">
+        Uzraksti Meta reklāmu tekstu mūsu jaunajam produktam
+      </div>
+
+      <div class="msg-ai">
+        <div class="msg-ai-icon">C</div>
+        <div class="msg-ai-body">
+          Izmantoju <span class="green">marketing-skill</span> — jau zinu Tavu zīmolu no CLAUDE.md.<br><br>
+          Šeit ir <strong>3 variācijas</strong> ar hook + body + CTA. Gatavs copy-paste uz Meta Ads&nbsp;Manager.
+          <div class="skill-pills">
+            <div class="pill">✓ marketing-skill</div>
+            <div class="pill">✓ copywriting-skill</div>
+            <div class="pill">✓ brand-voice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <div class="input-box">Raksti Claude...</div>
+      <div class="send-btn">↑</div>
+    </div>
+  </div>
+
+  <div class="bottom-card">
+    <div class="bottom-info">
+      <div class="bottom-title">27 AI skills gatavas</div>
+      <div class="bottom-sub"><s>€99</s> · tikai €19 · mūžīga piekļuve</div>
+    </div>
+    <div class="cta-btn">Iegūt →</div>
+  </div>
+</body>
+</html>

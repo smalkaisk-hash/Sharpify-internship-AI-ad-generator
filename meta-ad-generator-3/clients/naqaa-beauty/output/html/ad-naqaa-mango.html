@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; }
+
+/*
+  Palette: Gentle Dunes (palettes-neutral.md) — ⚠ decorative only
+    Base atmosphere: #FEE1BB (warm peach) → rgba(243,192,159,0.12)
+    Teal atmosphere: #69AAAF                → rgba(105,170,175,0.10)
+  Low-contrast fallback (Beauty Light §17):
+    Headline:  #2E1A08  (warm near-black, 14.1:1 on base ✓)
+    Body text: #6B4520  (warm mid-dark,    7.0:1 on base ✓)
+  Image-extracted accent (mango amber):
+    Eyebrow:   #7A3E08  (dark amber,       7.1:1 on base ✓)
+    CTA bg:    #D47420  (vivid mango)
+    CTA text:  #2E1A08  (4.7:1 on CTA ✓)
+*/
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  background: #FFF8F0;
+  overflow: hidden;
+}
+
+/* Atmosphere — Gentle Dunes teal + peach, decorative only */
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 8% 18%, rgba(105,170,175,0.13) 0%, transparent 42%),
+    radial-gradient(ellipse at 18% 88%, rgba(243,192,159,0.14) 0%, transparent 38%);
+  pointer-events: none;
+}
+
+/* Vertical separator */
+.separator {
+  position: absolute;
+  left: 540px;
+  top: 72px;
+  bottom: 72px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(212,116,32,0.30) 20%,
+    rgba(212,116,32,0.30) 80%,
+    transparent 100%
+  );
+}
+
+/* Image panel — right */
+.image-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 540px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(1.06) brightness(1.02);
+}
+
+/* Content — left panel */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 1080px;
+  padding: 64px 58px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top: logo + eyebrow */
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  align-self: flex-start;
+  opacity: 0.78;
+}
+
+
+/* Middle: headline */
+.headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 82px;
+  line-height: 0.97;
+  color: #2E1A08;
+  letter-spacing: -0.5px;
+}
+
+.headline .i2 { padding-left: 32px; display: block; }
+
+/* Bottom: rule + body + CTA */
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rule uses Gentle Dunes teal — bridges image aqua and panel warmth */
+.rule {
+  width: 310px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(105,170,175,0.60), transparent);
+  margin-bottom: 26px;
+}
+
+/* Body text — solid hex, Beauty Light fallback. 7.0:1 on #FFF8F0 ✓ */
+.body-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.78;
+  color: #6B4520;
+  max-width: 400px;
+  margin-bottom: 36px;
+}
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* CTA button: mango amber bg, warm near-black text — 4.7:1 ✓ */
+.cta-btn {
+  display: inline-block;
+  background: #D47420;
+  color: #2E1A08;
+  padding: 20px 44px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow:
+    0 6px 28px rgba(212,116,32,0.34),
+    0 2px 8px rgba(0,0,0,0.10);
+}
+
+/* Secondary CTA — solid body-text color, 7.0:1 ✓ */
+.cta-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6B4520;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(212,116,32,0.45);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="atmosphere"></div>
+  <div class="separator"></div>
+
+  <div class="image-panel">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-62-ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg"
+         alt="Naqaa Beauty mango filtrs">
+  </div>
+
+  <div class="content">
+
+    <div class="top">
+      <img class="logo"
+           src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/logo-1-naqaa_beauty_horizontal.png"
+           alt="Naqaa Beauty">
+    </div>
+
+    <p class="headline">
+      Mangos svaigums<br>
+      <span class="i2">katrā dušā.</span>
+    </p>
+
+    <div class="bottom">
+      <div class="rule"></div>
+      <p class="body-text">
+        Naqaa mango filtrs noņem hloru un piepilda<br>
+        katru dušu ar dabīgu aromterapiju.<br>
+        Dermataloģiski testēts. Maigs jutīgai ādai.
+      </p>
+      <div class="cta-row">
+        <a class="cta-btn">Iegādāties tagad</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

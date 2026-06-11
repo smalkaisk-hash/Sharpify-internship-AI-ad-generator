@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: radial-gradient(ellipse at 50% 40%, #0f1b2d 0%, #050810 70%);
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 56px;
+  position: relative;
+}
+body::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(16,185,129,0.08) 0%, transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(59,130,246,0.06) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.content { position: relative; z-index: 1; width: 100%; max-width: 840px; }
+
+.top-label {
+  text-align: center; margin-bottom: 48px;
+}
+.top-label .badge {
+  display: inline-block;
+  background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3);
+  color: #10b981; padding: 10px 24px; border-radius: 50px;
+  font-size: 20px; font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 16px;
+}
+.top-label h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; line-height: 1.15;
+}
+.top-label h1 span { color: #10b981; }
+
+/* Install progress card */
+.install-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(16,185,129,0.2);
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-bottom: 32px;
+  box-shadow: 0 16px 60px rgba(0,0,0,0.4);
+}
+
+.install-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  color: #10b981;
+  margin-bottom: 6px;
+}
+.install-desc {
+  font-size: 18px; color: #94a3b8;
+  margin-bottom: 22px;
+}
+
+.progress-bar {
+  width: 100%; height: 14px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.progress-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #059669);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(16,185,129,0.4);
+  position: relative;
+}
+
+.progress-status {
+  display: flex; justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px; color: #64748b;
+  margin-bottom: 24px;
+}
+.progress-status .done { color: #10b981; font-weight: 700; }
+
+/* Install log */
+.install-log {
+  background: #050810;
+  border-radius: 10px;
+  padding: 18px 22px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.log-line { display: flex; align-items: center; gap: 10px; }
+.log-check { color: #10b981; font-weight: 900; font-size: 16px; }
+.log-text { color: #cbd5e1; }
+.log-text .count {
+  color: #10b981; font-weight: 700;
+  background: rgba(16,185,129,0.1);
+  padding: 1px 8px; border-radius: 4px;
+}
+
+/* Summary row */
+.summary {
+  display: flex; justify-content: center; gap: 48px;
+  margin-bottom: 28px;
+}
+.sum-stat { text-align: center; }
+.sum-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px; font-weight: 900; color: #10b981;
+  line-height: 1;
+}
+.sum-label {
+  font-size: 15px; color: #64748b; margin-top: 6px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+
+.cta-row { display: flex; justify-content: center; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 28px 72px; border-radius: 16px;
+  font-weight: 800; font-size: 34px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+
+.footer-note {
+  text-align: center; margin-top: 16px;
+  font-size: 18px; color: #475569;
+}
+.footer-note s { color: #ef4444; }
+.footer-note strong { color: #10b981; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="top-label">
+    <div class="badge">// sharpify-ai-kit@1.0.0</div>
+    <h1>Instalē AI <span>ekspertu komandu</span><br>30 sekundēs</h1>
+  </div>
+
+  <div class="install-card">
+    <div class="install-title">$ install sharpify-ai-kit</div>
+    <div class="install-desc">Installing AI skills and workflows...</div>
+
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <div class="progress-status">
+      <span>Install progress</span>
+      <span class="done">100% · Complete</span>
+    </div>
+
+    <div class="install-log">
+      <div class="log-line"><span class="log-check">✓</span><span class="log-text">Loaded <span class="count">27 AI skills</span> · marketing, sales, content, automation</span></div>
+      <div class="log-line"><span class="log-check">✓</span><span class="log-text">Loaded <span class="count">10 workflows</span> · end-to-end pipelines</span></div>
+      <div class="log-line"><span class="log-check">✓</span><span class="log-text">Configured CLAUDE.md template · ready to personalize</span></div>
+      <div class="log-line"><span class="log-check">✓</span><span class="log-text">Ready in <span class="count">28.4s</span></span></div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <div class="sum-stat">
+      <div class="sum-num">27</div>
+      <div class="sum-label">AI Skills</div>
+    </div>
+    <div class="sum-stat">
+      <div class="sum-num">10</div>
+      <div class="sum-label">Workflows</div>
+    </div>
+    <div class="sum-stat">
+      <div class="sum-num">2-5h</div>
+      <div class="sum-label">Taupi nedēļā</div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <div class="cta-btn">Iegūt par €19 →</div>
+  </div>
+  <div class="footer-note">Bija <s>€99</s> · <strong>Taupi 81%</strong> · Mūžīga piekļuve</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* === Extra template: testimonial/client-journey — Mariposa ===
+   Inline-generated HTML per skill-4 "Generating HTML from Extra Templates" process.
+   Inspired by Pull-Quote-Review (template 11) adapted for intangible beauty service.
+   Source: Agnese K. from existing client copy doc (real client, not fabricated).
+   Full-bleed woman-bg.jpg with heavy dark vignette. Large pull-quote as hero.
+   Star rating, attribution, service callout, CTA at bottom ≥150px.
+*/
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#120410; }
+
+/* Hero background photo */
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 10%;
+  filter:saturate(1.06) contrast(1.02) brightness(1.01);
+}
+
+/* Top dark vignette — logo readability */
+.vig-top {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(14,2,12,0.68) 0%,
+    rgba(14,2,12,0.16) 14%,
+    transparent 28%
+  );
+}
+
+/* Bottom heavy vignette — text area */
+.vig-bottom {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent           22%,
+    rgba(12,2,10,0.20)   34%,
+    rgba(12,2,10,0.62)   48%,
+    rgba(12,2,10,0.88)   60%,
+    rgba(12,2,10,0.97)   72%,
+    rgba(12,2,10,1.00)   82%
+  );
+}
+
+/* Edge depth vignette */
+.vig-edges {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 90% 90% at 50% 50%,
+    transparent 44%,
+    rgba(12,2,10,0.14) 70%,
+    rgba(12,2,10,0.38) 100%
+  );
+}
+
+/* Warm rose ambient glow — subtle femininity */
+.vig-glow {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 60% 50% at 52% 30%,
+    rgba(196,100,140,0.08) 0%,
+    transparent 65%
+  );
+}
+
+/* Top bar */
+.top {
+  position:absolute; top:52px; left:60px; right:60px;
+  display:flex; justify-content:space-between; align-items:center;
+  z-index:20;
+}
+.location-tag {
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:500;
+  color:rgba(196,149,108,0.65);
+  text-transform:uppercase; letter-spacing:0.22em;
+}
+.logo-img {
+  height:30px; display:block; opacity:0.72;
+}
+
+/* Main text content — sits above CTA */
+.content {
+  position:absolute;
+  bottom:250px; left:60px; right:60px;
+  z-index:20;
+  text-align:center;
+}
+
+/* Opening quote mark */
+.quote-mark {
+  font-family:'Cormorant Garamond', serif;
+  font-size:96px; line-height:0.6;
+  font-weight:300; font-style:italic;
+  color:rgba(196,149,108,0.45);
+  display:block;
+  margin-bottom:4px;
+}
+
+/* Hero pull-quote */
+.pull-quote {
+  font-family:'Cormorant Garamond', serif;
+  font-size:72px; line-height:0.90;
+  font-weight:300; font-style:italic;
+  color:#f6ede7;
+  letter-spacing:-0.02em;
+  margin-bottom:24px;
+  text-shadow:0 4px 40px rgba(12,2,10,0.55);
+}
+.pull-quote em {
+  font-style:italic; font-weight:700;
+  color:#d4a97a;
+}
+
+/* Story label */
+.story-label {
+  display:inline-block;
+  font-family:'DM Sans', sans-serif;
+  font-size:10px; font-weight:600;
+  color:rgba(196,149,108,0.65);
+  text-transform:uppercase; letter-spacing:0.24em;
+  margin-bottom:20px;
+}
+
+/* Attribution line */
+.attribution {
+  font-family:'DM Sans', sans-serif;
+  font-size:15px; font-weight:400;
+  color:rgba(246,237,231,0.62);
+  letter-spacing:0.06em;
+  margin-bottom:20px;
+}
+.attribution strong {
+  color:rgba(246,237,231,0.85);
+  font-weight:500;
+}
+
+/* Horizontal rule */
+.attr-rule {
+  width:120px; height:1px; margin:0 auto 20px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.34), transparent);
+}
+
+/* Service callout pill */
+.service-pill {
+  display:inline-block;
+  font-family:'DM Sans', sans-serif;
+  font-size:12px; font-weight:500;
+  color:rgba(196,149,108,0.78);
+  text-transform:uppercase; letter-spacing:0.16em;
+  padding:10px 22px;
+  border:1px solid rgba(196,149,108,0.20);
+  border-radius:40px;
+  background:rgba(196,149,108,0.06);
+}
+
+/* CTA */
+.cta-wrap {
+  position:absolute; bottom:150px; left:60px; right:60px;
+  z-index:20;
+}
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #a86e38 0%, #c4956c 52%, #d4a97c 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:20px; font-weight:600;
+  padding:26px; border-radius:10px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 56px rgba(196,149,108,0.22);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <img class="bg" src="../images/woman-bg.jpg" alt="">
+  <div class="vig-top"></div>
+  <div class="vig-bottom"></div>
+  <div class="vig-edges"></div>
+  <div class="vig-glow"></div>
+
+  <!-- Top bar -->
+  <div class="top">
+    <div class="location-tag">Skaistumkopšana · Rīga</div>
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <!-- Pull-quote content -->
+  <div class="content">
+    <span class="quote-mark">&ldquo;</span>
+
+    <div class="pull-quote">
+      Es neatpazīstu<br>savu <em>seju</em>
+    </div>
+
+    <div class="story-label">Klienta stāsts · 6 nedēļas</div>
+
+    <div class="attribution">
+      <strong>Agnese K.</strong>, 34 &nbsp;·&nbsp; Rīga &nbsp;·&nbsp; 6 nedēļas
+    </div>
+
+    <div class="attr-rule"></div>
+
+    <div class="service-pill">Optimas — IPL · RF · Lāzerepilācija</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <div class="cta">Sāc savu transformāciju →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

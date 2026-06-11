@@ -1,0 +1,34 @@
+{
+  "business_name": "Mariposa",
+  "product": "Premium beauty clinic in Riga offering Optimas technology — IPL, RF micronadulas, and laser epilation combined in one platform for skin renewal, pigmentation correction, and long-term epilation results.",
+  "product_type": "intangible",
+  "target_audience": "Women in Riga aged 25–50 who want effective, technology-driven skin treatment. Tired of creams and home remedies that don't deliver visible results. Looking for professional, pain-free procedures with fast recovery.",
+  "pain_points": [
+    "Pigmentation spots and redness that won't go away with creams",
+    "Unwanted hair requiring constant shaving or waxing",
+    "Loss of skin elasticity and firmness",
+    "Sensitivity — afraid of painful or harsh procedures",
+    "Distrust of clinics that overpromise and underdeliver"
+  ],
+  "key_benefits": [
+    "Three technologies in one: IPL, RF micronadulas, laser epilation",
+    "95% of clients want to return — visible results after 2–3 sessions",
+    "Pain-free with minimal recovery time",
+    "Every procedure calibrated to individual skin type",
+    "Located in Riga with free parking, flexible scheduling",
+    "Free consultation included (40€ value)"
+  ],
+  "unique_value_proposition": "The only clinic in Riga combining IPL, RF and laser in one Optimas platform — three procedures, one solution, visible results from session two.",
+  "proof_points": [
+    "95% client return rate",
+    "2500+ satisfied clients",
+    "Agnese K., 34: 'After 6 weeks I didn't recognise my own face.' — pigmentation + redness resolved",
+    "Free consultation worth 40€ for new clients"
+  ],
+  "cta_primary": "Piesakies bezmaksas konsultācijai",
+  "cta_secondary": "Piesakies vizītei",
+  "website": "https://www.mariposa.lv/",
+  "language": "lv",
+  "tone": "Warm, confident, results-forward. Speaks to real women with real skin concerns — not clinical or cold. Validation before solution. Latvian-native phrasing only.",
+  "extra_context": "Beauty/aesthetics clinic. Ads run in Latvian. Intangible product — no product photos, use gradient backgrounds with brand colors. Highlight Optimas technology as the key differentiator. Free consultation offer is a strong lead magnet — always mention it."
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sharpify-video-ads",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "build:solar": "remotion render src/index.ts SolarAd out/saules-paneli.mp4",
+    "build:tiler": "remotion render src/index.ts TilerAd out/flizetaji.mp4"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.340",
+    "@remotion/cli": "4.0.340",
+    "@remotion/google-fonts": "4.0.340",
+    "@remotion/renderer": "4.0.340",
+    "@remotion/shapes": "4.0.340",
+    "@remotion/transitions": "4.0.340",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.59.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.340"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.6.2"
+  }
+}

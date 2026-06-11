@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif}
+    .ad{width:1080px;height:1080px;position:relative;background:
+      radial-gradient(ellipse at 30% 20%,#E8D5E8 0%,transparent 55%),
+      radial-gradient(ellipse at 80% 80%,#F5E6D3 0%,transparent 55%),
+      #FAF6F0;
+      padding:56px;
+      overflow:hidden;
+    }
+    /* Headline zone top */
+    .header{text-align:center;margin-bottom:14px}
+    .tag{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.3em;color:#6B5B8E;text-transform:uppercase}
+    .title{font-family:'Playfair Display',serif;font-style:italic;font-size:54px;font-weight:400;color:#1A1A2E;line-height:1.05;margin-top:8px}
+    /* Polaroid stack */
+    .stack{position:relative;width:100%;height:640px;margin-top:8px}
+    .polaroid{position:absolute;background:#FAF6F0;padding:18px 18px 64px 18px;box-shadow:0 18px 40px rgba(107,91,142,0.25),0 6px 14px rgba(0,0,0,0.12);width:340px;height:420px;display:flex;flex-direction:column}
+    .polaroid .pic{flex:1;overflow:hidden;background:#ddd}
+    .polaroid .pic img{width:100%;height:100%;object-fit:cover;display:block}
+    .polaroid .cap{font-family:'Caveat',cursive;font-size:26px;color:#4A3E6B;text-align:center;margin-top:14px;font-weight:500}
+    .p1{left:40px;top:40px;transform:rotate(-5deg)}
+    .p2{left:50%;top:16px;transform:translateX(-50%) rotate(2deg);z-index:2}
+    .p3{right:40px;top:50px;transform:rotate(5deg)}
+    /* Bottom bar */
+    .bot{position:absolute;left:56px;right:56px;bottom:56px;display:flex;justify-content:space-between;align-items:center;padding:24px 32px;background:#1A1A2E;color:#F5E6D3}
+    .bot-left{display:flex;flex-direction:column;gap:4px}
+    .bot-scent{font-family:'Playfair Display',serif;font-size:26px;font-weight:500}
+    .bot-price{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:#B8A6D1;letter-spacing:0.1em}
+    .cta{padding:14px 28px;background:#F5E6D3;color:#1A1A2E;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="header">
+      <div class="tag">Lavender Meadows</div>
+      <div class="title">Mans lavandas rituāls</div>
+    </div>
+    <div class="stack">
+      <div class="polaroid p1">
+        <div class="pic"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-polaroid-bathroom.png"></div>
+        <div class="cap">manas klusās minūtes</div>
+      </div>
+      <div class="polaroid p2">
+        <div class="pic" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#E8D5E8,#FAF6F0)">
+          <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-with-box-cutout.png" style="object-fit:contain;padding:18px">
+        </div>
+        <div class="cap">vitamīnu filtrs</div>
+      </div>
+      <div class="polaroid p3">
+        <div class="pic"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-polaroid-lavender-macro.png"></div>
+        <div class="cap">īsta lavanda dušā</div>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="bot-left">
+        <div class="bot-scent">Lavender Meadows</div>
+        <div class="bot-price">34,99 € · 2–3 mēneši</div>
+      </div>
+      <div class="cta">Iepirkties</div>
+    </div>
+  </div>
+</body>
+</html>

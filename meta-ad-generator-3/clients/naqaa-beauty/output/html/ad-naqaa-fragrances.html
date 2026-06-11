@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; }
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  background: #F3EEE7;
+  overflow: hidden;
+}
+
+/* Atmosphere — warm radial depth */
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 18% 12%, rgba(156,143,132,0.16) 0%, transparent 50%),
+    radial-gradient(ellipse at 72% 88%, rgba(156,143,132,0.09) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+/* Vertical separator */
+.separator {
+  position: absolute;
+  left: 650px;
+  top: 72px;
+  bottom: 72px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(156,143,132,0.38) 18%,
+    rgba(156,143,132,0.38) 82%,
+    transparent 100%
+  );
+}
+
+/* Product column — right */
+.product-col {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 430px;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 390px;
+  height: auto;
+  filter: sepia(0.12) saturate(0.88) brightness(1.02);
+}
+
+/* 4 scents label — below product */
+.scents-note {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 430px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9C8F84;
+}
+
+/* Content — left column */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 1080px;
+  padding: 64px 72px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top: logo + eyebrow */
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.logo {
+  height: 21px;
+  width: auto;
+  align-self: flex-start;
+  opacity: 0.78;
+}
+
+
+/* Middle: fragrance names — editorial display */
+.headline-list {
+  list-style: none;
+  flex: 0 0 auto;
+}
+
+.headline-list li {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 0.98;
+  color: #473C35;
+  letter-spacing: -0.5px;
+}
+
+/* Alternating indent — visual rhythm, prevents static columns */
+.headline-list li:nth-child(2) { padding-left: 40px; }
+.headline-list li:nth-child(4) { padding-left: 20px; }
+
+/* Bottom: rule + body + CTA */
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.rule {
+  width: 320px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(156,143,132,0.55), transparent);
+  margin-bottom: 26px;
+}
+
+.body-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.72;
+  color: #473C35;
+  max-width: 420px;
+  margin-bottom: 36px;
+}
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #473C35;
+  color: #F3EEE7;
+  padding: 20px 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow:
+    0 6px 28px rgba(71,60,53,0.20),
+    0 2px 8px rgba(0,0,0,0.10);
+}
+
+.cta-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(71,60,53,0.62);
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(156,143,132,0.55);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="atmosphere"></div>
+  <div class="separator"></div>
+
+  <div class="product-col">
+    <img class="product-img"
+         src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-22-All_Products_1080x1350.jpg"
+         alt="Naqaa Beauty produkti">
+  </div>
+
+  <span class="scents-note">4 smaržas</span>
+
+  <div class="content">
+
+    <div class="top">
+      <img class="logo"
+           src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/logo-1-naqaa_beauty_horizontal.png"
+           alt="Naqaa Beauty">
+    </div>
+
+    <ul class="headline-list">
+      <li>Lavanda.</li>
+      <li>Mango.</li>
+      <li>Roze.</li>
+      <li>Amberkoks.</li>
+    </ul>
+
+    <div class="bottom">
+      <div class="rule"></div>
+      <p class="body-text">
+        Noņem hloru un piepilda katru dušu ar dabiskām smaržām.<br>
+        Dermataloģiski testēts, piemērots jutīgai ādai.
+      </p>
+      <div class="cta-row">
+        <a class="cta-btn">Iegādāties tagad</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

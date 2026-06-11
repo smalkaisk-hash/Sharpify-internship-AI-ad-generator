@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.15) 40%,rgba(0,0,0,0.6) 70%,rgba(0,0,0,0.85) 100%)}
+    /* Stars + review quote — top */
+    .top{position:absolute;top:36px;left:36px;z-index:4}
+    .stars{display:flex;gap:6px;margin-bottom:12px}
+    .star{width:40px;height:40px;color:#FFD700}
+    .quote{font-family:'Montserrat',sans-serif;font-size:40px;font-weight:800;color:#FFF;line-height:1.15;max-width:620px;text-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .quote em{font-style:normal;background:rgba(233,30,99,0.3);padding:0 8px;border-radius:4px}
+    /* Product — bottom left, big */
+    .product{position:absolute;bottom:20px;left:20px;z-index:3}
+    .product img{height:480px;width:auto;filter:drop-shadow(10px -5px 30px rgba(0,0,0,0.4))}
+    /* Info — bottom right */
+    .info{position:absolute;bottom:44px;right:44px;z-index:4;text-align:right;max-width:480px}
+    .reviewer{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.5);margin-bottom:8px}
+    .tag{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:800;color:#E91E63;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
+    .desc{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:500;color:rgba(255,255,255,0.6);margin-bottom:16px;line-height:1.35}
+    .price{font-family:'Montserrat',sans-serif;font-size:48px;font-weight:900;color:#FFF}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/backgrounds/bg-ugc-selfie.png" alt="">
+    <div class="overlay"></div>
+    <div class="top">
+      <div class="stars">
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="quote">"Āda ir <em>pavisam citāda</em> kopš lietoju šo filtru"</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-lavender-meadows-with-box-cutout.png" alt="">
+    </div>
+    <div class="info">
+      <div class="reviewer">— Naqaa Beauty kliente</div>
+      <div class="tag">Dušas vitamīnu filtrs</div>
+      <div class="desc">Attīra hloru, pievieno vitamīnus, lavandas aromāts</div>
+      <div class="price">34,99€</div>
+    </div>
+  </div>
+</body>
+</html>

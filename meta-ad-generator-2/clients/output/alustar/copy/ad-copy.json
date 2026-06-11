@@ -1,0 +1,21 @@
+{
+  "client_slug": "alustar",
+  "language": "lv",
+  "brand_voice": "Inženieriska, pašpārliecināta, bez liekas pārspīlēšanas. Skaitļi runā paši par sevi.",
+  "palette": {
+    "ink": "#0F1114",
+    "charcoal": "#1A1D22",
+    "steel": "#2A2E35",
+    "blue": "#0066FF",
+    "off_white": "#F5F5F7",
+    "mid": "#8B9199"
+  },
+  "ads": [
+    {"id":1,"template":"architectural-hero","hook":"Mēs to projektējām. Izgatavojām. Uzstādījām.","sub":"Stikla konstrukcijas + būvniecība vienā līgumā.","chip":"ALUSTAR · EST. 2007","cta":"Pieteikt bezmaksas tāmi","image":"hero-2.webp"},
+    {"id":2,"template":"stats-proof","hook":"Cipari, kas neslēpjas aiz mārketinga.","stats":[["19","gadi zem viena reģ. nr."],["200+","realizēti projekti"],["150 000","m² būvētu objektu"]],"cta":"Skatīt projektus"},
+    {"id":3,"template":"service-grid","hook":"Viss alumīnijā un stiklā.","sub":"No skices līdz objekta nodošanai.","services":["Fasādes","Logi & durvis","Ugunsdrošās durvis","Stiklotas margas","Ziemas dārzi","Virsgaismas"],"cta":"Apskatīt pakalpojumus"},
+    {"id":4,"template":"full-cycle","hook":"Viens līgums.<br>Viens atbildīgais.","sub":"Pilns cikls vienā uzņēmumā — bez apakšuzņēmēju ķēdes.","steps":[["01","Projektēšana"],["02","Izgatavošana"],["03","Piegāde"],["04","Uzstādīšana"]],"cta":"Pieteikt tāmi"},
+    {"id":5,"template":"lead-offer","hook":"Bezmaksas tāme.<br>Bez saistībām.","sub":"Inženieriska ekspertīze + juridiska atbildība par pieņemtajiem risinājumiem.","chip":"PIETEIKT TĀMI","cta":"Sākt ar tāmi","image":"hero-1.webp"},
+    {"id":6,"template":"anti-subcontractor","hook":"Apakšuzņēmēji pazūd.<br>Līgumi paliek.","sub":"19 gadus — viens nosaukums, viens reģistrācijas numurs, viena atbildība.","chip":"KOPŠ 2007","cta":"Pieteikt konsultāciju","image":"hero-1.webp"}
+  ]
+}

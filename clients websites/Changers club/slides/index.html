@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Changer Club — Dynasty deck</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: #000; }
+  deck-stage { background: #000; }
+  section {
+    width: 1920px; height: 1080px;
+    background: #000; color: #F4EFE6;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .pad { padding: 120px; width: 100%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; }
+  .eyebrow { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 18px; letter-spacing: 0.28em; text-transform: uppercase; color: #C9A24A; }
+  .display { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; line-height: 0.98; letter-spacing: -0.015em; color: #F4EFE6; }
+  .display-caps { font-family: 'Anton', sans-serif; letter-spacing: 0.04em; line-height: 1; text-transform: uppercase; }
+  .gold { color: #C9A24A; }
+  .lead { font-family: 'Cormorant Garamond', serif; font-size: 32px; line-height: 1.5; color: rgba(244,239,230,0.78); max-width: 1100px; }
+  .body { font-family: 'Inter', sans-serif; font-size: 22px; line-height: 1.55; color: rgba(244,239,230,0.7); }
+  .rule { height: 1px; background: #C9A24A; opacity: 0.85; }
+  .lockup { display: flex; flex-direction: column; gap: 4px; line-height: 1; }
+  .lockup .wm { font-family: 'Anton', sans-serif; font-size: 36px; letter-spacing: 0.04em; color: #F4EFE6; }
+  .lockup .tg { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.22em; color: #F4EFE6; text-transform: uppercase; }
+  .footer-row { display: flex; justify-content: space-between; align-items: end; margin-top: auto; }
+  .chapters { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 26px; color: rgba(244,239,230,0.55); letter-spacing: 0.04em; }
+  .pill { display: inline-flex; align-items: center; gap: 16px; background: #C9A24A; color: #1A1208; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: 0.02em; padding: 24px 44px; border-radius: 999px; box-shadow: inset 0 -2px 0 #8E6F2C; }
+
+  /* ---------- Slide-specific ---------- */
+  /* 01 Title */
+  .s-title { background: #000; }
+  .s-title .pad { justify-content: space-between; }
+
+  /* 02 Cover photo */
+  .s-cover { position: relative; }
+  .s-cover .photo { position: absolute; inset: 0; background: url('../assets/social-legacy.png') center/cover; }
+  .s-cover .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.95) 100%); }
+  .s-cover .pad { position: relative; justify-content: flex-end; padding: 100px 120px; }
+
+  /* 03 Big quote */
+  .s-quote .display { font-size: 96px; }
+
+  /* 04 Stats */
+  .s-stats .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; margin: auto 0; }
+  .s-stats .n { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; font-size: 220px; line-height: 1; color: #C9A24A; letter-spacing: -0.02em; }
+  .s-stats .l { margin-top: 24px; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,239,230,0.65); }
+
+  /* 05 Three steps */
+  .s-steps .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 64px; margin-top: 80px; }
+  .s-steps .col { padding-top: 32px; border-top: 1px solid rgba(201,162,74,0.55); }
+  .s-steps .num { font-family: 'Playfair Display', serif; font-style: italic; font-size: 30px; color: #C9A24A; margin-bottom: 24px; }
+  .s-steps h3 { font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.18; color: #F4EFE6; margin: 0 0 24px; }
+  .s-steps p { font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.55; color: rgba(244,239,230,0.7); margin: 0; }
+
+  /* 06 Member quote */
+  .s-member .quote-block { max-width: 1500px; margin: auto 0; }
+  .s-member .quote { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 64px; line-height: 1.22; color: #F4EFE6; margin: 40px 0; text-wrap: balance; }
+  .s-member .who { display: flex; justify-content: space-between; align-items: baseline; padding-top: 28px; border-top: 1px solid rgba(244,239,230,0.18); }
+  .s-member .name { font-family: 'Playfair Display', serif; font-style: italic; font-size: 36px; color: #F4EFE6; }
+  .s-member .role { font-family: 'Inter', sans-serif; font-size: 18px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(244,239,230,0.55); }
+
+  /* 07 Mechanism */
+  .s-mechanism .photo { position: absolute; inset: 0; background: url('../assets/social-power-families.png') center/cover; }
+  .s-mechanism .scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.55) 100%); }
+  .s-mechanism .pad { position: relative; }
+
+  /* 08 CTA / final card */
+  .s-final { background: #000; }
+  .s-final .pad { align-items: center; justify-content: center; text-align: center; gap: 56px; }
+  .s-final .lockup { align-items: center; }
+  .s-final .lockup .wm { font-size: 64px; }
+  .s-final .lockup .tg { font-size: 16px; }
+</style>
+</head>
+<body>
+<deck-stage>
+  <!-- 01 — Title -->
+  <section data-screen-label="01 Title" class="s-title">
+    <div class="pad">
+      <img src="../assets/logo-changer-white.webp" alt="Changer — Be wealthy, not just rich" style="width: 460px; height: auto; display: block;" />
+      <div style="margin: auto 0;">
+        <div class="eyebrow" style="margin-bottom: 48px;">Project Dynasty · 2026</div>
+        <div class="display" style="font-size: 200px;">
+          We don't do networking,<br/>we do <span class="gold">Legacy</span>.
+        </div>
+        <div class="lead" style="margin-top: 64px;">A private membership for fifty families a year, in Monaco and Dubai.</div>
+      </div>
+      <div class="footer-row">
+        <span class="chapters">Monaco · Dubai</span>
+        <span class="chapters">01</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 — Cover photo -->
+  <section data-screen-label="02 The room" class="s-cover">
+    <div class="photo"></div>
+    <div class="scrim"></div>
+    <div class="pad">
+      <div class="eyebrow" style="margin-bottom: 28px;">The room</div>
+      <div class="display" style="font-size: 144px; max-width: 1500px;">
+        Where strong fathers meet other strong fathers.
+      </div>
+      <div class="lead" style="margin-top: 32px; max-width: 980px;">
+        And the mothers, who carry most of what actually moves through a family, sit at the same table where dynasties are being built.
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — The hook quote -->
+  <section data-screen-label="03 70 percent" class="s-quote">
+    <div class="pad">
+      <div class="eyebrow">The number we exist to change</div>
+      <div style="margin: auto 0;">
+        <div class="display" style="font-size: 320px; color: #C9A24A;">70%</div>
+        <div class="display" style="font-size: 64px; max-width: 1500px; margin-top: 24px;">
+          of wealthy families lose money by the second generation.<br/>
+          <span style="color: rgba(244,239,230,0.55);">90% by the third.</span>
+        </div>
+      </div>
+      <div class="footer-row">
+        <span class="chapters">Source: spoken in the film, never printed beside the talent</span>
+        <span class="chapters">03</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — Stats -->
+  <section data-screen-label="04 Stats" class="s-stats">
+    <div class="pad">
+      <div class="eyebrow">The club, in numbers</div>
+      <div class="grid">
+        <div><div class="n">270</div><div class="l">Power families</div></div>
+        <div><div class="n">€25b</div><div class="l">In joint capital</div></div>
+        <div><div class="n">50</div><div class="l">Admitted yearly</div></div>
+      </div>
+      <div class="footer-row">
+        <span class="chapters">Monaco · Dubai</span>
+        <span class="chapters">04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 — Three steps -->
+  <section data-screen-label="05 Three steps" class="s-steps">
+    <div class="pad">
+      <div class="eyebrow">The programme</div>
+      <h2 class="display" style="font-size: 96px; margin: 24px 0 0;">An intellectually challenging environment.</h2>
+      <div class="grid">
+        <div class="col">
+          <div class="num">01 · First</div>
+          <h3>You sit with the people who built what you are building.</h3>
+          <p>Marc Randolph, co-founder of Netflix. Nobel laureates. First-generation billionaires. People who will re-wire your mindset.</p>
+        </div>
+        <div class="col">
+          <div class="num">02 · Second</div>
+          <h3>Your children enter the same room.</h3>
+          <p>Not a junior programme. The same room. They learn valuations. They learn to hold their own conversations with billionaires.</p>
+        </div>
+        <div class="col">
+          <div class="num">03 · Third</div>
+          <h3>We invest together.</h3>
+          <p>The club selects and evaluates technology companies as a group. You and your heir make the decisions jointly, in real transactions.</p>
+        </div>
+      </div>
+      <div class="footer-row" style="margin-top: 64px;">
+        <span class="chapters">Monaco · Dubai</span>
+        <span class="chapters">05</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 — Member quote -->
+  <section data-screen-label="06 Brooks Newmark" class="s-member">
+    <div class="pad">
+      <div class="eyebrow">Member · joined at 64</div>
+      <div class="quote-block">
+        <div class="rule"></div>
+        <p class="quote">"Four years later, I had built an AI company called Rezolve and taken it public at a two-billion-dollar valuation. My son is now joining the ride. <span class="gold">That is not the exception in this club. That is the pattern.</span>"</p>
+        <div class="who">
+          <span class="name">Brooks Newmark</span>
+          <span class="role">Rezolve · NASDAQ · $2B</span>
+        </div>
+      </div>
+      <div class="footer-row">
+        <span class="chapters">Monaco · Dubai</span>
+        <span class="chapters">06</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 — Mechanism -->
+  <section data-screen-label="07 Mechanism" class="s-mechanism">
+    <div class="photo"></div>
+    <div class="scrim"></div>
+    <div class="pad">
+      <div class="eyebrow">Why other clubs fail</div>
+      <div style="margin: auto 0; max-width: 1400px;">
+        <div class="display" style="font-size: 88px; line-height: 1.05;">
+          Other clubs offer networking and nice champagne to the parents.<br/>
+          <em class="gold">The children are not addressed.</em>
+        </div>
+        <div class="lead" style="margin-top: 48px; max-width: 1100px;">
+          Children do not take intellectual instruction from their own parents. They never have. Changer is the only place where the full family is taught in the same room, by the same legends.
+        </div>
+      </div>
+      <div class="footer-row">
+        <span class="chapters">Monaco · Dubai</span>
+        <span class="chapters">07</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 — Final card -->
+  <section data-screen-label="08 Apply" class="s-final">
+    <div class="pad">
+      <img src="../assets/logo-changer-white.webp" alt="Changer — Be wealthy, not just rich" style="width: 540px; height: auto; display: block;" />
+      <div class="display" style="font-size: 96px; max-width: 1500px;">
+        For the parents who refuse to let<br/>the seventy-percent number<br/>be their family's <span class="gold">legacy</span>.
+      </div>
+      <div class="pill">Apply for a qualification call  →</div>
+      <div class="chapters">Monaco · Dubai · By introduction only</div>
+    </div>
+  </section>
+</deck-stage>
+
+<script type="application/json" id="speaker-notes">
+[
+  "Open in silence. The wordmark, the tagline, the proposition. No music swell. Hold this slide for two beats before speaking.",
+  "We do not show drone shots of Monaco. The room is interior, candid, warm. The image is the room itself, not the city.",
+  "The seventy-percent figure is the entire reason this club exists. State it once, slowly. Let the silence after carry it.",
+  "Three numbers. Two hundred and seventy families. Twenty-five billion in joint capital. Fifty admitted a year. Read them like a fact, not a brag.",
+  "The three steps are the structure of the year. First, the room. Second, the children in the same room. Third, the joint investment. Each step earns the next.",
+  "Brooks Newmark joined at sixty-four. Four years later he took Rezolve public at two billion. His son is now in the room. That is the proof.",
+  "We are not a network. We are the place where the family — heir, parent, spouse — is taught together. That is what alters the seventy-percent number.",
+  "The film ends in silence. So does the deck. One sentence: apply for a qualification call."
+]
+</script>
+
+<script src="deck-stage.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Radii & borders</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>html,body{margin:0;}body{background:#000;color:#F4EFE6;padding:18px;font-family:var(--cc-font-sans);display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+.cell{display:flex;flex-direction:column;align-items:center;gap:8px;}
+.bx{width:90px;height:60px;background:#1E1E1E;border:1px solid rgba(244,239,230,.12);}
+.gold{border:1px solid #C9A24A;}
+.pill{width:140px;height:44px;background:#C9A24A;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#1A1208;font-weight:600;font-size:13px;letter-spacing:.02em;}
+.l{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(244,239,230,.5);}
+.t{font-family:var(--cc-font-mono);font-size:10px;color:rgba(244,239,230,.55);}
+</style></head><body>
+  <div class="cell"><div class="bx" style="border-radius:0;"></div><div class="l">Sharp</div><div class="t">0px</div></div>
+  <div class="cell"><div class="bx" style="border-radius:2px;"></div><div class="l">Hairline</div><div class="t">2px</div></div>
+  <div class="cell"><div class="bx gold" style="border-radius:0;"></div><div class="l">Gold frame</div><div class="t">1px #C9A24A</div></div>
+  <div class="cell"><div class="pill">CTA</div><div class="l">Pill — CTA only</div><div class="t">999px</div></div>
+</body></html>

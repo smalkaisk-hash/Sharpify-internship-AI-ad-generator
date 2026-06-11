@@ -1,0 +1,216 @@
+{
+  "client_name": "TeMix",
+  "client_slug": "temix",
+  "language": "lv",
+  "ad_type": "client-tangible",
+  "generated_at": "2026-04-16T10:15:00Z",
+  "audience_note": "B2B wholesale — target is shop owners / retail buyers, NOT end consumers. Copy speaks peer-to-peer (tu/tev) about partnership benefits while visuals showcase product 'wow' factor their customers will love.",
+  "voice_samples": [
+    "TeMix ir uzņēmums, kas sevī ietver mazumtirdzniecību un vairumtirdzniecību, kas piedāvā dizaina dekorācijas mājai, komfortu un eletronikas preces. TeMix ir Jūsu uzticamais partneris.",
+    "ELEGANTS DIZAINS TAVAI MĀJAI UN DZĪVESSTILAM",
+    "IEDVESMA IKDIENAI",
+    "Dizaina aksesuāri · Mājai un interjeram · Pārdomātas dāvanas · Kvalitāte, kam var uzticēties"
+  ],
+  "copy_sets": [
+    {
+      "id": "ad-1",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "extra:product-hero/85-2x2-color-panel-grid",
+      "primary_text": {
+        "short": "4 iemesli, kāpēc veikali izvēlas TeMix vairumtirdzniecību.",
+        "long": "Vairumtirdzniecība, kas strādā tavā labā.\n\nKatram TeMix partnerim saņem visu paketi — ne tikai preci:\n\n✅ Rūpīgi atlasīts sortiments ar 'wow' efektu\n✅ Bezmaksas piegāde virs 300€\n✅ Atliktais maksājums 7–14 dienas\n✅ Gatavi mārketinga materiāli — bildes un apraksti\n\nRīgā. Reāls veikals. Reāli cilvēki.\n\nSazinies — apskatīsim, kā TeMix iederas tavā plauktā."
+      },
+      "headline": "Sadarbība, kas atmaksājas",
+      "description": "TeMix vairumtirdzniecība",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "SAZINĀTIES",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "2x2 panel grid. Each panel shows ONE partner pillar — top-left uses product-1/hero as a small inset image with icon + label. Prefer one strong product/lifestyle photo (hero-1 copper tableware) as hero panel background, other 3 panels are solid color blocks with icon + benefit label.",
+        "source": "brief/images/hero-1.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "panel_1": {"label": "DIZAINA SORTIMENTS", "icon": "sparkle", "color": "forest-green", "note": "Uses hero-1 copper tableware as background"},
+        "panel_2": {"label": "BEZMAKSAS PIEGĀDE", "icon": "truck", "color": "cream", "subline": "virs 300€"},
+        "panel_3": {"label": "ATLIKTAIS MAKSĀJUMS", "icon": "calendar", "color": "charcoal", "subline": "7–14 dienas"},
+        "panel_4": {"label": "MĀRKETINGA MATERIĀLI", "icon": "image-frame", "color": "gold", "subline": "bildes un apraksti"}
+      }
+    },
+    {
+      "id": "ad-2",
+      "framework": "Editorial",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Kad preces izskatās šādi, cilvēki nopērk. TeMix vairumtirdzniecība.",
+        "long": "Pārdot smukas lietas ir vieglāk.\n\nKatra prece TeMix sortimentā ir atlasīta ar vienu domu — lai klienta skatiens apstātos uz plaukta, un rokas tiktu pie maka.\n\nDizains. Funkcija. Emocija.\n\nTrīs vārdi, pēc kuriem atlasām katru produktu, pirms tas nonāk pie tevis.\n\nKļūsti par TeMix vairumtirdzniecības partneri. Eiropas piegādātāji. Kvalitāte pārbaudīta pirms piedāvājuma. Fizisks veikals Rīgā.\n\nSazinies — sūtīsim katalogu."
+      },
+      "headline": "Sortiments, kas pārdodas pats",
+      "description": "Vairumtirdzniecība · Rīga",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "KATALOGU ŠEIT",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "lifestyle",
+        "description": "Full-bleed hero-1 copper tableware lifestyle shot as background. Dark gradient overlay on bottom-left 40% for text legibility. Serif headline on overlay, small TeMix logo top-left, CTA button bottom.",
+        "source": "brief/images/hero-1.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {}
+    },
+    {
+      "id": "ad-3",
+      "framework": "AIDA",
+      "layout_recommendation": "extra:promotional/45-product-grid-offer",
+      "primary_text": {
+        "short": "Interjera akcenti. Dāvanu idejas. Praktiskās preces. Vienā partnerī.",
+        "long": "Trīs kategorijas. Viens uzticams partneris.\n\nTeMix apvieno interjera dekorus, dāvanu idejas un ikdienas praktiskās preces — visu, ko klienti meklē veikalā un reti atrod vienuviet.\n\n✅ Eiropas piegādātāji\n✅ Kvalitātes pārbaude pirms piedāvājuma\n✅ Bezmaksas piegāde virs 300€\n✅ Atliktais maksājums līdz 14 dienām\n\nPiesakies sadarbībai — saņem katalogu un cenrādi šodien."
+      },
+      "headline": "Kļūsti par TeMix partneri",
+      "description": "Vairumtirdzniecība · LV",
+      "cta_button": "Contact Us",
+      "cta_text_on_image": "UZZINĀT VAIRĀK",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "3x3 mosaic grid of TeMix products (use hero-1, hero-2, hero-3, hero-4, product-2, product-4, product-5 — avoid kid-umbrella product-1 and selfie-phone-bead product-3 since target is B2B buyer). Center cell is replaced with a dark/forest-green panel containing 'KĻŪSTI PAR PARTNERI' headline + gold CTA.",
+        "source": "brief/images/ (multiple — use heroes primarily)",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "center_panel_headline": "KĻŪSTI PAR TEMIX PARTNERI",
+        "center_panel_subline": "Vairumtirdzniecība ar raksturu",
+        "center_cta": "Uzzināt vairāk"
+      }
+    },
+    {
+      "id": "ad-4",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "Sortiments, piegāde, maksājumu termiņi, mārketings — viss vienā partnerī.",
+        "long": "Vairumtirdzniecība parasti ir pilna ar maziem, nepatīkamiem pārsteigumiem.\n\nTeMix ir veidota citādi.\n\n🔹 Sortiments ar raksturu — rūpīgi atlasīts, ne pēc cenas\n🔹 Bezmaksas piegāde virs 300€\n🔹 Atliktais maksājums 7–14 dienas nākamajiem pasūtījumiem\n🔹 Gatavi mārketinga materiāli — bildes un apraksti ātrai ieviešanai\n\nUn, ja kaut kas sabojājas? Apmaiņa vai kredītrēķins 7–14 dienu laikā.\n\nSazinies — apskatīsim, kā sākt."
+      },
+      "headline": "Vairumtirdzniecība bez raizēm",
+      "description": "TeMix B2B partneriem",
+      "cta_button": "Contact Us",
+      "cta_text_on_image": "SAZINĀTIES",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Numbered benefit list on cream/forest background with small product inset (hero-1 or hero-2) as top anchor image. Benefits as 4 stacked rows with gold numerals.",
+        "source": "brief/images/hero-2.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "badge_text": "TEMIX B2B",
+        "subheadline": "4 lietas, ko saņem katrs TeMix partneris",
+        "benefit_1_title": "SORTIMENTS",
+        "benefit_1_desc": "Rūpīgi atlasīts, ne pēc cenas",
+        "benefit_2_title": "PIEGĀDE",
+        "benefit_2_desc": "Bezmaksas virs 300€",
+        "benefit_3_title": "MAKSĀJUMI",
+        "benefit_3_desc": "Atliktais 7–14 dienas",
+        "benefit_4_title": "MĀRKETINGS",
+        "benefit_4_desc": "Bildes un apraksti gatavi"
+      }
+    },
+    {
+      "id": "ad-5",
+      "framework": "Editorial",
+      "layout_recommendation": "extra:lifestyle/21-bold-statement",
+      "primary_text": {
+        "short": "Tava plaukta kvalitāte ir tava reputācija. Mēs to zinām.",
+        "long": "Cilvēki nepērk to, kas ir pirmais pie kases.\n\nViņi pērk to, kas apstājas uz plaukta.\n\nTāpēc nepārdodam tev visu. Pārdodam to, kas pārdodas.\n\nTeMix — vairumtirdzniecība cilvēkiem ar gaumi.\n\nRīgā. Eiropā. Pie tevis.\n\nUzraksti — apskatīsim katalogu kopā."
+      },
+      "headline": "Plaukts tavam veikalam",
+      "description": "TeMix vairumtirdzniecība",
+      "cta_button": "Contact Us",
+      "cta_text_on_image": "SAZINĀTIES",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "lifestyle",
+        "description": "Bold statement layout — oversized serif manifesto headline on forest-green/cream gradient background, with a small product detail shot (hero-5 cropped or a single product cutout) as accent. Typography is the hero. Avoid busy imagery.",
+        "source": "brief/images/hero-5.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "manifesto_headline": "Mēs neesam veikals.\nMēs esam plaukts\ntavam veikalam.",
+        "footer_tagline": "TeMix vairumtirdzniecība · Rīga"
+      }
+    },
+    {
+      "id": "ad-6",
+      "framework": "Direct-Offer",
+      "layout_recommendation": "extra:product-hero/87-multi-sku-lineup",
+      "primary_text": {
+        "short": "Interjers, dāvanas, ikdiena. TeMix vairumtirdzniecībā sakrīt viss.",
+        "long": "Lielākajā daļā sortimentu pietrūkst tieši tā, kas pārdodas labāk.\n\nTeMix to novērš.\n\nInterjera akcenti plaukta centram.\nDāvanu idejas svētku sezonai.\nPraktiskās preces ikdienas pircējam.\n\nViss vienā katalogā, viens partneris, viena piegāde.\n\nPiesakies — redzēsim, kas strādās tavā veikalā."
+      },
+      "headline": "Trīs kategorijas. Viens partneris.",
+      "description": "TeMix vairumtirdzniecība",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "KATALOGU ŠEIT",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Three stacked rows on cream background. Each row: product image (left) + category label + one-line description. Row 1 = Interjers (hero-1 copper tableware), Row 2 = Dāvanas (product-4 or hero-4), Row 3 = Ikdiena (hero-2 or product-5). Gold serif row dividers.",
+        "source": "brief/images/hero-1.jpg, brief/images/hero-4.jpg, brief/images/hero-2.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "row_1_label": "INTERJERS",
+        "row_1_desc": "Akcenti, kas maina telpu",
+        "row_2_label": "DĀVANAS",
+        "row_2_desc": "Ar 'wow' efektu iekšā",
+        "row_3_label": "IKDIENA",
+        "row_3_desc": "Praktiskas preces, kas izskatās labi"
+      }
+    },
+    {
+      "id": "ad-7",
+      "framework": "Comparison",
+      "layout_recommendation": "comparison",
+      "primary_text": {
+        "short": "5 iemesli, kāpēc veikali pāriet uz TeMix vairumtirdzniecību.",
+        "long": "Ir piegādātāji, kas vienkārši iedod preci.\n\nUn ir partneri, kas palīdz tev pārdot.\n\nAtšķirība ir visur — no sortimenta līdz maksājumu termiņiem.\n\nSkaties paši. Tad sazinies — parunāsim, kā izskatās TeMix darbā."
+      },
+      "headline": "Tipiska vairumtirdzniecība vs TeMix",
+      "description": "Salīdzini pats",
+      "cta_button": "Contact Us",
+      "cta_text_on_image": "SAZINĀTIES",
+      "hook_type": "comparison",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Base comparison template — left column red (pain), right column green (benefits). Small product/lifestyle inset at top (hero-1) as visual anchor. Do NOT use fake testimonials.",
+        "source": "brief/images/hero-1.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "before_label": "Tipiska vairumtirdzniecība",
+        "after_label": "TeMix sadarbība",
+        "before_icon_1": "❌",
+        "before_text_1": "Nejaušs sortiments, 'grāvēji' pēc cenas",
+        "before_icon_2": "❌",
+        "before_text_2": "Piegāde pret papildu samaksu",
+        "before_icon_3": "❌",
+        "before_text_3": "Pilna apmaksa uzreiz",
+        "before_icon_4": "❌",
+        "before_text_4": "Preču bildes? Tavas problēmas",
+        "before_icon_5": "❌",
+        "before_text_5": "Bojātās preces — bez apmaiņas",
+        "after_icon_1": "✅",
+        "after_text_1": "Rūpīgi atlasīts sortiments ar 'wow' efektu",
+        "after_icon_2": "✅",
+        "after_text_2": "Bezmaksas piegāde virs 300€",
+        "after_icon_3": "✅",
+        "after_text_3": "Atliktais maksājums 7–14 dienas",
+        "after_icon_4": "✅",
+        "after_text_4": "Gatavi mārketinga materiāli ietilpst",
+        "after_icon_5": "✅",
+        "after_text_5": "Apmaiņa vai kredītrēķins 7–14 dienās"
+      }
+    }
+  ]
+}

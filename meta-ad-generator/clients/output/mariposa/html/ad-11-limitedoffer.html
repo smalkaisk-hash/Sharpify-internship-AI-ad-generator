@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* === Extra template: promotional/limited-time-offer — Mariposa ===
+   Inline-generated HTML per skill-4 "Generating HTML from Extra Templates" process.
+   Intangible product: no generic stock photos. Woman image used as heavily
+   darkened background texture only (opacity 0.16).
+   Template concept: large discount hero "-20%" centered as scroll-stopper,
+   scarcity validity line, bonus callout, gold CTA.
+*/
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0a020a; }
+
+/* Woman image — very dark texture, not hero */
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 18%;
+  opacity:0.16;
+  filter:saturate(0.25) contrast(1.05);
+}
+
+/* Full dark overlay */
+.overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    160deg,
+    rgba(10,2,10,0.70) 0%,
+    rgba(8,2,8,0.55) 40%,
+    rgba(10,2,10,0.72) 100%
+  );
+}
+
+/* Gold ambient glow — center */
+.glow-center {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-55%);
+  width:680px; height:540px; border-radius:50%;
+  background:radial-gradient(ellipse, rgba(196,149,108,0.12) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Top bar */
+.top {
+  position:absolute; top:52px; left:60px; right:60px;
+  display:flex; justify-content:space-between; align-items:center;
+  z-index:20;
+}
+.promo-tag {
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:600;
+  color:rgba(196,149,108,0.72);
+  text-transform:uppercase; letter-spacing:0.22em;
+}
+.logo-img {
+  height:28px;
+  display:block;
+  opacity:0.70;
+}
+
+/* Main offer content — center of canvas, above CTA */
+.content {
+  position:absolute;
+  bottom:270px; left:60px; right:60px;
+  z-index:20;
+  text-align:center;
+}
+
+/* Thin top decorative rule above content */
+.content-rule {
+  width:200px; height:1px; margin:0 auto 30px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.42), transparent);
+}
+
+/* Offer badge pill */
+.offer-pill {
+  display:inline-block;
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:600;
+  color:rgba(196,149,108,0.80);
+  text-transform:uppercase; letter-spacing:0.20em;
+  padding:10px 24px;
+  border:1px solid rgba(196,149,108,0.24);
+  border-radius:40px;
+  background:rgba(196,149,108,0.06);
+  margin-bottom:18px;
+}
+
+/* Hero discount number */
+.discount {
+  font-family:'Cormorant Garamond', serif;
+  font-size:196px; line-height:0.88;
+  font-weight:700; font-style:italic;
+  color:#d4a97a;
+  letter-spacing:-0.04em;
+  margin-bottom:0;
+  display:block;
+  text-shadow:0 4px 60px rgba(196,149,108,0.22);
+}
+
+/* Offer label under the number */
+.offer-label {
+  font-family:'DM Sans', sans-serif;
+  font-size:22px; font-weight:300;
+  color:#f6ede7;
+  letter-spacing:0.03em;
+  margin-top:4px;
+  margin-bottom:28px;
+}
+.offer-label strong {
+  font-weight:600;
+  color:#d4a97a;
+}
+
+/* Thin rule below label */
+.mid-rule {
+  width:160px; height:1px; margin:0 auto 22px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.36), transparent);
+}
+
+/* Validity line */
+.validity {
+  font-family:'DM Sans', sans-serif;
+  font-size:13px; font-weight:400;
+  color:rgba(246,237,231,0.52);
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+/* Bonus badge */
+.bonus {
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:'DM Sans', sans-serif;
+  font-size:14px; font-weight:400;
+  color:rgba(246,237,231,0.72);
+  padding:14px 28px;
+  border-radius:8px;
+  background:rgba(196,149,108,0.08);
+  border:1px solid rgba(196,149,108,0.15);
+}
+.bonus-icon {
+  font-size:16px;
+}
+
+/* CTA button */
+.cta-wrap {
+  position:absolute; bottom:150px; left:60px; right:60px;
+  z-index:20;
+}
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #a86e38 0%, #c4956c 52%, #d4a97c 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:20px; font-weight:600;
+  padding:26px; border-radius:10px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 56px rgba(196,149,108,0.22);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <img class="bg" src="../images/woman-smooth-2.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="glow-center"></div>
+
+  <!-- Top bar -->
+  <div class="top">
+    <div class="promo-tag">Jaunajiem klientiem</div>
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <!-- Offer content -->
+  <div class="content">
+    <div class="content-rule"></div>
+
+    <div class="offer-pill">Īpašs piedāvājums</div>
+
+    <span class="discount">-20%</span>
+
+    <div class="offer-label">
+      Pirmajā <strong>Optimas</strong> procedūrā
+    </div>
+
+    <div class="mid-rule"></div>
+
+    <div class="validity">Piedāvājums spēkā līdz 31. maijam</div>
+
+    <div class="bonus">
+      <span class="bonus-icon">🎁</span>
+      Iekļauts: bezmaksas konsultācija (40€ vērtībā)
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <div class="cta">Piesakies ar -20% →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

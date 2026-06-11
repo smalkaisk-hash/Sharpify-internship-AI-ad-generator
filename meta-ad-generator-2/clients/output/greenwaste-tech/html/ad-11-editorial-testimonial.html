@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --text: #F4F1E8;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad {
+      position: relative; width: 1080px; height: 1080px; overflow: hidden;
+      background: var(--secondary);
+      color: var(--text);
+    }
+
+    /* Full-bleed backdrop photo with heavy dark treatment */
+    .bg {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center center;
+      filter: brightness(0.38) saturate(0.7) contrast(1.05);
+    }
+    .vignette {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 50% 50%, rgba(13,20,17,0.15) 0%, rgba(13,20,17,0.8) 90%),
+        linear-gradient(180deg, rgba(13,20,17,0.35) 0%, rgba(13,20,17,0) 30%, rgba(13,20,17,0) 70%, rgba(13,20,17,0.75) 100%);
+    }
+
+    /* Top */
+    .top { position: absolute; top: 44px; left: 56px; right: 56px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+    .wm { font-family: var(--fh); font-size: 28px; font-weight: 500; letter-spacing: -0.01em; text-shadow: 0 2px 12px rgba(0,0,0,0.8); }
+    .wm .dot { color: var(--accent-bright); }
+    .tag {
+      font-family: var(--fb); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.36em; text-transform: uppercase;
+      color: rgba(244,241,232,0.85);
+      padding: 6px 14px;
+      border: 1px solid rgba(180,224,97,0.4);
+      border-radius: 30px;
+      backdrop-filter: blur(6px);
+      background: rgba(13,20,17,0.4);
+    }
+
+    /* Center quote card — large, editorial */
+    .center {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 820px;
+      z-index: 15;
+      text-align: center;
+    }
+    .quote-mark {
+      font-family: var(--fh);
+      font-size: 160px;
+      color: var(--accent-bright);
+      line-height: 0.6;
+      margin-bottom: 20px;
+      letter-spacing: -0.05em;
+    }
+
+    .quote {
+      font-family: var(--fh);
+      font-size: 62px; font-weight: 500;
+      line-height: 1.12; letter-spacing: -0.02em;
+      color: var(--text);
+      font-style: italic;
+      margin: 0 0 36px 0;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+    }
+
+    .attribution {
+      display: flex; justify-content: center; align-items: center; gap: 16px;
+    }
+    .attr-line { width: 40px; height: 1px; background: var(--accent-bright); }
+    .attr-name {
+      font-family: var(--fh); font-size: 24px; font-weight: 500;
+      letter-spacing: 0.02em; color: var(--accent-bright);
+    }
+    .attr-role {
+      font-family: var(--fb); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(244,241,232,0.6);
+    }
+
+    /* Verified badge bottom left */
+    .verified-badge {
+      position: absolute;
+      bottom: 120px;
+      left: 56px;
+      z-index: 10;
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 18px;
+      background: rgba(180,224,97,0.12);
+      border: 1px solid rgba(180,224,97,0.4);
+      border-radius: 30px;
+      backdrop-filter: blur(6px);
+    }
+    .verified-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-bright); }
+    .verified-text { font-family: var(--fb); font-size: 11px; font-weight: 600; color: var(--accent-bright); letter-spacing: 0.26em; text-transform: uppercase; }
+
+    /* Footer */
+    .footer {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 22px 56px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(244,241,232,0.15);
+      z-index: 10;
+    }
+    .footer-sub { font-family: var(--fb); font-size: 13px; color: rgba(244,241,232,0.62); letter-spacing: 0.1em; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 72px; min-width: 260px; padding: 0 40px;
+      background: var(--accent-bright); color: var(--secondary);
+      font-family: var(--fb); font-weight: 700; font-size: 17px;
+      letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="../brief/images/hero-2.jpg">
+    <div class="vignette"></div>
+
+    <div class="top">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="tag">Klienta balss · Latvija</div>
+    </div>
+
+    <div class="center">
+      <div class="quote-mark">"</div>
+      <p class="quote">Pasūtījums tika izpildīts laikā, precīzi, bez papildus izdevumiem, viss darbojās ok.</p>
+      <div class="attribution">
+        <div class="attr-line"></div>
+        <div class="attr-name">Aleksandrs</div>
+        <div class="attr-role">· Klients · LV</div>
+      </div>
+    </div>
+
+    <div class="verified-badge">
+      <div class="verified-dot"></div>
+      <div class="verified-text">Verificēta · greenwaste-tech.com</div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-sub">5 gadu garantija · CE + EN12566-3 · Sertificēta uzstādīšana</div>
+      <div class="cta">Uzzināt vairāk</div>
+    </div>
+  </div>
+</body>
+</html>

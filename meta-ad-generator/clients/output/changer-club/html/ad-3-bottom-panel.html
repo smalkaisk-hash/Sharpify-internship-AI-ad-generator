@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond%3Aital%2Cwght%400%2C300%3B0%2C600%3B0%2C700%3B1%2C400%7CMontserrat%3Awght%40400%3B500%3B600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;font-family:'Montserrat',sans-serif}
+
+/* Layer 1 — mesh background */
+.base{position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 1000px 600px at 50% 0%, #c8a86a20 0%, transparent 55%),
+    radial-gradient(ellipse 600px 400px at 0% 60%, #c8a86a0f 0%, transparent 50%),
+    linear-gradient(180deg, #1a1612 0%, #0d0b09 60%)}
+
+/* Layer 2 — noise */
+.noise{position:absolute;inset:0;height:680px;opacity:0.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:300px 300px}
+
+/* Layer 3 — rotated accent rectangle behind quote */
+.accent-rect{
+  position:absolute;top:280px;left:-60px;
+  width:700px;height:90px;
+  background:#c8a86a;
+  transform:rotate(-1.5deg);
+  opacity:0.12}
+
+/* Layer 4 — diagonal accent lines top-right */
+.line1,.line2,.line3{
+  position:absolute;right:0;
+  width:200px;height:2px;
+  background:linear-gradient(to left, transparent, #c8a86a55)}
+.line1{top:180px;transform:rotate(-8deg);transform-origin:right}
+.line2{top:200px;transform:rotate(-8deg);transform-origin:right;opacity:0.5;width:130px}
+.line3{top:220px;transform:rotate(-8deg);transform-origin:right;opacity:0.25;width:80px}
+
+/* Layer 5 — top text content */
+.top{
+  position:absolute;top:0;left:0;right:0;height:680px;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:0 80px}
+
+.eyebrow{
+  font-size:20px;font-weight:600;color:#c8a86a;
+  letter-spacing:6px;text-transform:uppercase;margin-bottom:40px}
+
+.quote-mark{
+  font-family:'Cormorant Garamond',serif;font-size:140px;font-weight:700;
+  color:#c8a86a33;line-height:0.6;margin-bottom:-20px;display:block}
+
+.headline{
+  font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:600;
+  line-height:1.05;color:#f5f0e8;margin-bottom:32px;max-width:860px;
+  position:relative;z-index:1}
+.headline em{font-style:italic;color:#c8a86a}
+
+.attribution{
+  font-size:22px;color:#b8a88a;font-style:italic;letter-spacing:1px}
+
+/* Layer 6 — separator with ornament */
+.sep{
+  position:absolute;top:680px;left:0;right:0;height:1px;
+  background:linear-gradient(to right, transparent, #c8a86a66 30%, #c8a86a88 50%, #c8a86a66 70%, transparent)}
+.sep-dot{
+  position:absolute;top:676px;left:50%;transform:translateX(-50%);
+  width:9px;height:9px;background:#c8a86a;border-radius:50%;
+  box-shadow:0 0 12px #c8a86a88}
+
+/* Layer 7 — bottom dark panel */
+.panel{
+  position:absolute;bottom:0;left:0;right:0;height:420px;
+  background:#0a0806;
+  box-shadow:inset 0 1px 0 #c8a86a22}
+
+/* Layer 7b — panel inner gradient */
+.panel-glow{
+  position:absolute;bottom:0;left:0;right:0;height:420px;
+  background:radial-gradient(ellipse 800px 300px at 50% 100%, #c8a86a10 0%, transparent 70%)}
+
+/* Layer 8 — proof items row */
+.proof-row{
+  position:absolute;bottom:244px;left:80px;right:80px;
+  display:flex;gap:0}
+
+.proof-item{
+  flex:1;padding:0 32px;
+  border-right:1px solid #c8a86a22}
+.proof-item:first-child{padding-left:0}
+.proof-item:last-child{border-right:none}
+
+.proof-name{
+  font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;
+  color:#f5f0e8;margin-bottom:6px}
+.proof-role{font-size:22px;color:#b8a88a;margin-bottom:12px;line-height:1.4}
+.proof-quote{font-size:22px;color:#f5f0e877;line-height:1.5;font-style:italic}
+
+/* Layer 9 — CTA bar */
+.cta-bar{
+  position:absolute;bottom:0;left:0;right:0;height:236px;
+  background:#c8a86a18;
+  border-top:1px solid #c8a86a33;
+  display:flex;align-items:flex-start;justify-content:space-between;
+  padding:24px 80px 0}
+
+.cta-text{
+  font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
+  color:#f5f0e8;font-style:italic}
+.cta{
+  background:#c8a86a;color:#0d0b09;
+  padding:18px 44px;border-radius:4px;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  box-shadow:0 0 40px #c8a86a44}
+</style>
+</head>
+<body>
+<div class="base"></div>
+<div class="noise"></div>
+<div class="accent-rect"></div>
+<div class="line1"></div><div class="line2"></div><div class="line3"></div>
+
+<div class="top">
+  <div class="eyebrow">Changer Club</div>
+  <span class="quote-mark">"</span>
+  <h1 class="headline">There is nothing<br>like this. It's not<br>a club. It's a<br><em>new category.</em></h1>
+  <div class="attribution">— Serge El Dfouni, Sunset Hospitality Group ($500M)</div>
+</div>
+
+<div class="sep"></div>
+<div class="sep-dot"></div>
+
+<div class="panel"></div>
+<div class="panel-glow"></div>
+
+<div class="proof-row">
+  <div class="proof-item">
+    <div class="proof-name">Brooks Newmark</div>
+    <div class="proof-role">Apollo Management partner<br>Former UK Minister</div>
+    <div class="proof-quote">Listed $2B AI firm on Nasdaq, built Ukraine's leading charity.</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-name">Elliot Limb</div>
+    <div class="proof-role">UK/UAE Fintech Investor</div>
+    <div class="proof-quote">"I came for the investments.<br>I stayed because my family changed."</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-name">Founded 2019</div>
+    <div class="proof-role">Monaco · Dubai · Lausanne</div>
+    <div class="proof-quote">Featured in Fortune,<br>Business Insider</div>
+  </div>
+</div>
+
+<div class="cta-bar">
+  <div class="cta-text">10 families accepted per region per month.</div>
+  <div class="cta">See If You Qualify</div>
+</div>
+</body></html>

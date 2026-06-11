@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 4 — Category postcards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background: #F5EFE2;
+    position: relative;
+    overflow: hidden;
+    padding: 64px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(10,61,46,0.06) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+  }
+  .wordmark {
+    font-family: 'Instrument Serif', serif;
+    font-size: 26px;
+    color: #0A3D2E;
+  }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(10,61,46,0.08);
+    color: #0A3D2E;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .kicker .dot { width: 6px; height: 6px; background: #D4A657; border-radius: 50%; }
+  .headline {
+    margin-top: 24px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 96px;
+    line-height: 0.96;
+    color: #0A3D2E;
+    letter-spacing: -0.015em;
+    z-index: 2;
+    position: relative;
+  }
+  .headline em { font-style: italic; color: #D4A657; }
+  .sub {
+    margin-top: 16px;
+    font-size: 21px;
+    color: rgba(26,26,26,0.68);
+    max-width: 640px;
+    z-index: 2;
+    position: relative;
+  }
+  .sub strong { color: #0A3D2E; font-weight: 600; }
+  .cards {
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    z-index: 2;
+    position: relative;
+  }
+  .card {
+    aspect-ratio: 1 / 1.25;
+    border-radius: 22px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 36px rgba(10,61,46,0.15);
+  }
+  .card:nth-child(1) { transform: rotate(-3deg); }
+  .card:nth-child(2) { transform: rotate(1deg); margin-top: -14px; }
+  .card:nth-child(3) { transform: rotate(-2deg); margin-top: 6px; }
+
+  .card.emerald { background: linear-gradient(160deg, #0A3D2E 0%, #0f5a44 100%); color: #F5EFE2; }
+  .card.sand { background: linear-gradient(160deg, #E8D9C0 0%, #f5e9d1 100%); color: #0A3D2E; }
+  .card.gold { background: linear-gradient(160deg, #D4A657 0%, #c69344 100%); color: #0A3D2E; }
+
+  .card .icon {
+    width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 14px;
+  }
+  .card.emerald .icon { background: rgba(245,239,226,0.12); }
+  .card.sand .icon { background: rgba(10,61,46,0.08); }
+  .card.gold .icon { background: rgba(10,61,46,0.12); }
+
+  .card .category {
+    margin-top: 14px;
+    font-size: 12px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.75;
+  }
+  .card .title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 44px;
+    line-height: 0.98;
+    margin-top: 4px;
+    letter-spacing: -0.01em;
+  }
+  .card .savings {
+    align-self: flex-start;
+    background: rgba(255,255,255,0.12);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .card.sand .savings { background: rgba(10,61,46,0.12); }
+  .card.gold .savings { background: rgba(10,61,46,0.18); color: #F5EFE2; }
+  .card.gold .savings small { color: #F5EFE2; }
+  .card .savings strong {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+  }
+  .footer {
+    margin-top: auto;
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+  .footer .note {
+    font-size: 14px;
+    color: rgba(26,26,26,0.55);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .footer .pill {
+    background: #0A3D2E;
+    color: #F5EFE2;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .footer .pill span { color: #D4A657; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="top">
+      <div class="wordmark">Travel Advantage<sup style="font-size:13px;">™</sup></div>
+      <div class="kicker"><span class="dot"></span>Biedru cenas · visās kategorijās</div>
+    </div>
+
+    <div class="headline">Viesnīcas.<br><em>Kruīzi. Auto noma.</em></div>
+    <div class="sub">Viens biedra statuss. <strong>Līdz 70% zemākas</strong> cenas visā ceļošanas pakā — neatkarīgi no sezonas.</div>
+
+    <div class="cards">
+      <div class="card emerald">
+        <div>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4A657" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14"/><path d="M3 21h18"/><path d="M7 10h2M7 14h2M7 18h2M15 10h2M15 14h2M15 18h2"/></svg>
+          </div>
+          <div class="category">Viesnīcas</div>
+          <div class="title">4★ Roma<br>3 naktis</div>
+        </div>
+        <div class="savings">ietaupīts · <strong>€315</strong></div>
+      </div>
+
+      <div class="card sand">
+        <div>
+          <div class="icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0A3D2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1s2-.5 2.5-1 1.2-1 2.5-1 2 .5 2.5 1 1.2 1 2.5 1 2-.5 2.5-1 1.2-1 2.5-1 2 .5 2.5 1"/><path d="M4 18l-2-4 10-4 10 4-2 4"/><path d="M12 10V4"/><path d="M8 4h8"/></svg>
+          </div>
+          <div class="category">Kruīzi</div>
+          <div class="title">Vidusjūra<br>7 dienas</div>
+        </div>
+        <div class="savings">ietaupīts · <strong>€890</strong></div>
+      </div>
+
+      <div class="card gold">
+        <div>
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0A3D2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l1.5-5a2 2 0 0 1 1.9-1.4h11.2A2 2 0 0 1 19.5 6L21 11"/><path d="M3 11h18v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/><circle cx="7" cy="14" r="1"/><circle cx="17" cy="14" r="1"/></svg>
+          </div>
+          <div class="category">Auto noma</div>
+          <div class="title">Spānija<br>10 dienas</div>
+        </div>
+        <div class="savings">ietaupīts · <strong>€180</strong></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="note">Orientējoši cenu piemēri</div>
+      <div class="pill">Kopš <span>2013</span> · MWR Life</div>
+    </div>
+  </div>
+</body>
+</html>

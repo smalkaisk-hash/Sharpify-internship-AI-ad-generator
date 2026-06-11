@@ -1,0 +1,82 @@
+{
+  "client_name": "TeMix",
+  "client_slug": "temix",
+  "contact_person": "Terēze",
+  "email": "info@temix.lv",
+  "phone": "+37126051385",
+  "website": "https://www.temix.lv",
+  "figma_file_url": null,
+  "language": "lv",
+  "target_audience": {
+    "raw": "Vairumtirdzniecības sadarbības partneri; Mazumtirdzniecība",
+    "demographics": "Latvijas mazumtirdzniecības veikalu īpašnieki un iepircēji, interjera un dāvanu veikali, dizaina boutique veikali",
+    "psychographics": "Veikala īpašnieki, kas meklē jaunus produktus ar 'wow' efektu, kas pārdodas; grib uzticamu piegādātāju ar stabilām kvalitātes garantijām; vēlas atšķirties no masu sortimenta veikaliem",
+    "pain_points": [
+      "Grūti atrast piegādātāju ar estētiski pievilcīgu un unikālu sortimentu",
+      "Nepieciešamas ātras piegādes un elastīgi maksājumu nosacījumi",
+      "Jāpārdod produkti, kas 'pārdodas paši' — ar vizuālu pievilcību un dāvanu potenciālu",
+      "Rūpes par kvalitātes kontroli un bojātu preču apmaiņas procesu",
+      "Trūkst gatavu mārketinga materiālu (bildes, apraksti), lai ātri ieviestu preces savā veikalā"
+    ],
+    "desires": [
+      "Unikāls, rūpīgi atlasīts sortiments, kas izceļas plauktā",
+      "Uzticams Eiropas piegādātājs ar stabilu kvalitāti",
+      "Elastīgi maksājumu nosacījumi (atliktais maksājums)",
+      "Gatavi mārketinga materiāli ātrākai pārdošanai",
+      "Sadarbība ar partneri, kam ir fiziska klātbūtne Latvijā"
+    ]
+  },
+  "offer": {
+    "main_offer": "Vairumtirdzniecības sadarbība — TeMix interjera akcenti un ikdienas praktiskās preces komfortam un skaistumam",
+    "secondary_offer": "Mazumtirdzniecības sadarbība",
+    "result_promise": "Izceļošs sortiments veikala plauktā ar rūpīgi atlasītām precēm, kas apvieno dizainu, funkcionalitāti un emocijas",
+    "duration": "Ilgtermiņa sadarbība",
+    "price_mentioned": false
+  },
+  "differentiator": {
+    "raw": "TeMix unikālais spēks ir rūpīgi atlasīts sortiments, kas apvieno dizainu, funkcionalitāti un emocijas vienuviet. Mēs nepārdodam vienkārši preces mājai – mēs veidojam sajūtu. Katrs produkts ir izvēlēts ar domu, lai tas būtu: vizuāli estētisks, praktiski pielietojams, piemērots dāvināšanai, un ar 'wow' efektu ikdienā.",
+    "key_points": [
+      "Rūpīgi atlasīts sortiments — nav nejaušs",
+      "Katrs produkts ir vizuāli estētisks",
+      "Praktiski pielietojams ikdienā",
+      "Piemērots dāvināšanai",
+      "'Wow' efekts ikdienā",
+      "Veido sajūtu, ne tikai pārdod preces"
+    ]
+  },
+  "trust_signals": {
+    "raw": "Rūpīgi atlasām katru produktu. Sadarbojamies ar Eiropas piegādātājiem. Pārbaudām kvalitāti pirms piedāvājam klientiem. Nodrošinām drošu apmaksu un ātru piegādi. Esam reāls veikals ar fizisku klātbūtni Rīgā.",
+    "credentials": [
+      "Eiropas piegādātāji",
+      "Kvalitātes pārbaude pirms piedāvāšanas",
+      "Fizisks veikals Rīgā",
+      "Drošas apmaksas un ātras piegādes sistēma"
+    ],
+    "social_proof": [],
+    "personal_story": null
+  },
+  "client_acquisition": {
+    "method": "Online veikals (temix.lv) un reklamēšanās sociālajos tīklos",
+    "funnel": "Reklāma → mājaslapas apmeklējums → sadarbības pieprasījums / iepazīšanās ar sortimentu → B2B sadarbības uzsākšana"
+  },
+  "bonuses": [
+    "Bezmaksas piegāde pasūtījumiem virs 300€",
+    "Gatavi mārketinga materiāli (produktu bildes un apraksti)",
+    "Atliktais maksājums 7–14 dienas nākamajiem pasūtījumiem"
+  ],
+  "guarantees": [
+    "Garantija pret ražošanas defektiem",
+    "Bojātu preču apmaiņa vai kredītrēķins",
+    "Defektu pieteikšana 7–14 dienu laikā pēc saņemšanas"
+  ],
+  "capacity": "10–20 jauni sadarbības partneri 90 dienās",
+  "product_type": "tangible",
+  "ad_type": "client-tangible",
+  "ad_count": 7,
+  "ad_strategy": {
+    "recommended_objective": "Lead Generation — B2B sadarbības pieprasījumi no veikaliem",
+    "recommended_cta": "Sazināties / Uzzināt vairāk",
+    "funnel_stage_focus": "Top-of-funnel awareness + lead gen vairumtirdzniecības partneriem",
+    "audience_notes": "Reklāmu mērķis ir veikalu īpašnieki/iepircēji, NE gala klienti. Komunikācijā akcentēt B2B sadarbības ieguvumus (sortiments, termiņi, maksājumu nosacījumi, mārketinga materiāli), bet vizuāli rādīt produktus, lai parādītu 'wow' potenciālu, ko viņu klienti saņems."
+  }
+}

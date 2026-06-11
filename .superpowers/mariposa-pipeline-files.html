@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariposa — Pipeline Files</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0a; color:#fff; font-family:'Inter', sans-serif; padding:48px 24px; }
+h1 { font-family:'Montserrat', sans-serif; font-size:26px; margin-bottom:6px; }
+.subtitle { color:#666; font-size:14px; margin-bottom:48px; }
+.subtitle span { color:#aaa; }
+
+.section { margin-bottom:36px; }
+.section-title {
+  font-size:11px; font-weight:600; letter-spacing:0.20em;
+  text-transform:uppercase; color:#555;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  border-bottom:1px solid #1e1e1e;
+}
+
+.file-list { display:flex; flex-direction:column; gap:6px; }
+.file-item {
+  display:flex; align-items:center; gap:12px;
+  background:#111; border-radius:8px;
+  padding:10px 14px;
+  border:1px solid #1c1c1c;
+  transition:border-color 0.2s;
+}
+.file-item:hover { border-color:#333; }
+.file-badge {
+  font-size:10px; font-weight:600; letter-spacing:0.10em;
+  text-transform:uppercase; padding:3px 8px; border-radius:4px;
+  flex-shrink:0;
+  font-family:'Inter', sans-serif;
+}
+.badge-json  { background:rgba(234,179,8,0.12);  color:#ca9e0a; }
+.badge-html  { background:rgba(59,130,246,0.12);  color:#5a9ef8; }
+.badge-png   { background:rgba(34,197,94,0.12);   color:#3db865; }
+.badge-txt   { background:rgba(148,163,184,0.10); color:#7a8899; }
+.badge-js    { background:rgba(250,204,21,0.10);  color:#c9a200; }
+.badge-webp  { background:rgba(168,85,247,0.12);  color:#b06ef5; }
+.badge-img   { background:rgba(249,115,22,0.12);  color:#e07030; }
+.badge-md    { background:rgba(148,163,184,0.10); color:#7a8899; }
+
+.file-path { font-size:13px; color:#ccc; line-height:1.4; }
+.file-desc { font-size:12px; color:#555; margin-left:auto; white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<h1>Mariposa · Pipeline Files</h1>
+<p class="subtitle">All files used to produce ad-1-editorial, ad-2-dark, ad-3-offer &nbsp;·&nbsp; <span>meta-ad-generator-v2</span></p>
+
+<div class="section">
+  <div class="section-title">Pipeline Outputs — Stages 1–3 (v3)</div>
+  <div class="file-list">
+    <div class="file-item">
+      <span class="file-badge badge-txt">TXT</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/brief.txt</span>
+      <span class="file-desc">Client brief</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-txt">TXT</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/scrape/info.txt</span>
+      <span class="file-desc">Brand summary</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-json">JSON</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/scrape/manifest.json</span>
+      <span class="file-desc">Structured scrape data</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-txt">TXT</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/scrape/accent_colors.txt</span>
+      <span class="file-desc">Extracted brand colors</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-txt">TXT</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/scrape/client_memory.txt</span>
+      <span class="file-desc">Client memory notes</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-json">JSON</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/copy/components.json</span>
+      <span class="file-desc">Raw copy generation</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-json">JSON</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/copy/final.json</span>
+      <span class="file-desc">Validated copy (stage 2 output)</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-json">JSON</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/palette/shortlist.json</span>
+      <span class="file-desc">5 palette candidates</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-json">JSON</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/palette/chosen.json</span>
+      <span class="file-desc">Selected palette — Lavender Sapphire Mist</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Ad Creatives</div>
+  <div class="file-list">
+    <div class="file-item">
+      <span class="file-badge badge-html">HTML</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/html/ad-1-editorial.html</span>
+      <span class="file-desc">Split layout — left panel + right photo</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-html">HTML</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/html/ad-2-dark.html</span>
+      <span class="file-desc">Full-bleed photo + dark overlay</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-html">HTML</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/html/ad-3-offer.html</span>
+      <span class="file-desc">Photo left + dark navy offer panel</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-png">PNG</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/png/ad-1-editorial.png</span>
+      <span class="file-desc">1080×1080 export</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-png">PNG</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/png/ad-2-dark.png</span>
+      <span class="file-desc">1080×1080 export</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-png">PNG</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/png/ad-3-offer.png</span>
+      <span class="file-desc">1080×1080 export</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Source Assets</div>
+  <div class="file-list">
+    <div class="file-item">
+      <span class="file-badge badge-img">PNG</span>
+      <span class="file-path">meta-ad-generator-3/clients/mariposa/assets/logo-1-Logo_balts-3-scaled.png</span>
+      <span class="file-desc">Brand logo (white, used in all 3 ads)</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-webp">WEBP</span>
+      <span class="file-path">meta-ad-generator-v3/clients/mariposa.lv/Beautiful-Woman-11-scaled.webp</span>
+      <span class="file-desc">Model photo (used in all 3 ads)</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Export Tool</div>
+  <div class="file-list">
+    <div class="file-item">
+      <span class="file-badge badge-js">JS</span>
+      <span class="file-path">meta-ad-generator/scripts/export-png.js</span>
+      <span class="file-desc">Puppeteer — HTML → PNG renderer</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Rules &amp; Instructions</div>
+  <div class="file-list">
+    <div class="file-item">
+      <span class="file-badge badge-md">MD</span>
+      <span class="file-path">meta-ad-generator-v3/CLAUDE.md</span>
+      <span class="file-desc">Pipeline stage instructions</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-md">MD</span>
+      <span class="file-path">meta-ad-generator/CLAUDE.md</span>
+      <span class="file-desc">Global design rules, anti-slop heuristics, Meta API</span>
+    </div>
+    <div class="file-item">
+      <span class="file-badge badge-md">MD</span>
+      <span class="file-path">meta-ad-generator/clients/CLAUDE.md</span>
+      <span class="file-desc">Client-specific rules — layout, voice, tangible vs intangible</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

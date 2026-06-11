@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0b141a;
+  font-family: 'Inter', sans-serif; color: #e9edef;
+  display: flex; flex-direction: column;
+}
+
+.wa-header {
+  background: #1f2c34; padding: 20px 28px;
+  display: flex; align-items: center; gap: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.wa-back { color: #00a884; font-size: 28px; font-weight: 700; margin-right: 4px; }
+.wa-avatar {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 22px; color: #000;
+}
+.wa-name-block {}
+.wa-name { font-weight: 700; font-size: 20px; }
+.wa-status { font-size: 14px; color: #00a884; margin-top: 1px; }
+
+.wa-chat {
+  flex: 1; padding: 24px 28px;
+  display: flex; flex-direction: column; gap: 10px;
+  background: #0b141a;
+  position: relative;
+}
+/* WhatsApp wallpaper pattern */
+.wa-chat::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5L35 15L45 10L40 20L50 25L40 30L45 40L35 35L30 45L25 35L15 40L20 30L10 25L20 20L15 10L25 15Z' fill='%23ffffff' fill-opacity='0.012'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.wa-msg {
+  max-width: 76%; padding: 14px 18px; border-radius: 12px;
+  font-size: 22px; line-height: 1.5; position: relative; z-index: 1;
+}
+.wa-msg.them {
+  background: #1f2c34; align-self: flex-start;
+  border-top-left-radius: 3px;
+}
+.wa-msg.me {
+  background: #005c4b; align-self: flex-end;
+  border-top-right-radius: 3px;
+}
+.wa-time {
+  font-size: 13px; color: rgba(255,255,255,0.45);
+  float: right; margin-left: 12px; margin-top: 6px;
+}
+.wa-check { color: #53bdeb; font-size: 14px; }
+.wa-highlight {
+  background: #10b981; color: #000; font-weight: 800;
+  padding: 2px 8px; border-radius: 6px; font-size: 24px;
+}
+.emoji { font-size: 24px; }
+
+.wa-link-preview {
+  background: #1a2730; border-radius: 10px; margin-top: 10px;
+  overflow: hidden; border-left: 4px solid #10b981;
+}
+.wa-lp-bar {
+  background: rgba(16,185,129,0.15); padding: 12px 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.wa-lp-icon { font-size: 18px; }
+.wa-lp-url { font-size: 14px; color: #00a884; font-weight: 500; }
+.wa-lp-body { padding: 12px 14px; }
+.wa-lp-title { font-size: 17px; font-weight: 700; color: #e9edef; }
+.wa-lp-desc { font-size: 14px; color: #8696a0; margin-top: 3px; }
+
+.wa-date {
+  align-self: center; background: #1f2c34;
+  padding: 6px 16px; border-radius: 8px;
+  font-size: 13px; color: #8696a0; margin-bottom: 6px; z-index: 1;
+}
+</style>
+</head>
+<body>
+  <div class="wa-header">
+    <div class="wa-back">‹</div>
+    <div class="wa-avatar">S</div>
+    <div class="wa-name-block">
+      <div class="wa-name">Sharpify komanda</div>
+      <div class="wa-status">tiešsaistē</div>
+    </div>
+  </div>
+
+  <div class="wa-chat">
+    <div class="wa-date">Šodien</div>
+
+    <div class="wa-msg them">
+      Čau! Man vajag mājaslapu savam biznesam, bet aģentūras prasa €2000+ <span class="emoji">😅</span>
+      <span class="wa-time">14:22</span>
+    </div>
+
+    <div class="wa-msg me">
+      Mēs uzbūvēsim par <span class="wa-highlight">€59</span> <span class="emoji">🔥</span><br>Profesionālu, modernu, gatavu 1-3&nbsp;dienās
+      <span class="wa-time">14:23 <span class="wa-check">✓✓</span></span>
+    </div>
+
+    <div class="wa-msg them">
+      Wait, nopietni? Kas tajā iekļauts?
+      <span class="wa-time">14:23</span>
+    </div>
+
+    <div class="wa-msg me">
+      Individuāls dizains, mobilā versija, kontaktu forma, SEO pamati. Nav šabloni — visu pielāgojam Tavam&nbsp;biznesam <span class="emoji">💪</span>
+      <span class="wa-time">14:24 <span class="wa-check">✓✓</span></span>
+    </div>
+
+    <div class="wa-msg them">
+      Ok bet kā es zinu ka būs labi?
+      <span class="wa-time">14:25</span>
+    </div>
+
+    <div class="wa-msg me">
+      2 300+ uzņēmumi jau uzticas mums. Plus 100% apmierinātības garantija — labojam, līdz esi&nbsp;apmierināts <span class="emoji">✅</span>
+      <span class="wa-time">14:25 <span class="wa-check">✓✓</span></span>
+      <div class="wa-link-preview">
+        <div class="wa-lp-bar">
+          <span class="wa-lp-icon">🔗</span>
+          <span class="wa-lp-url">reg.sharpify.lv</span>
+        </div>
+        <div class="wa-lp-body">
+          <div class="wa-lp-title">Profesionāla mājaslapa no €59</div>
+          <div class="wa-lp-desc">Individuāla mājaslapa pakalpojumu sniedzējiem. Gatava 1-3 dienās.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wa-msg them">
+      Ok, es gribu! Nākamais solis? <span class="emoji">👀</span>
+      <span class="wa-time">14:26</span>
+    </div>
+  </div>
+</body>
+</html>

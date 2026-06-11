@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --matte: #F4F1E8; --text: #F4F1E8;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif; --fhand: 'Caveat', cursive;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+
+    .ad {
+      position: relative; width: 1080px; height: 1080px; overflow: hidden;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(180,224,97,0.06) 0%, rgba(180,224,97,0) 50%),
+        linear-gradient(160deg, #1D3A2C 0%, #0E1F17 100%);
+      color: var(--text);
+      display: flex; flex-direction: column;
+    }
+
+    /* Subtle paper-texture noise */
+    .ad::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(circle at 30% 70%, rgba(244,241,232,0.015) 0%, transparent 40%);
+    }
+
+    /* Top bar */
+    .top { padding: 40px 56px 0; display: flex; justify-content: space-between; align-items: center; z-index: 5; }
+    .wm { font-family: var(--fh); font-size: 28px; font-weight: 500; letter-spacing: -0.01em; }
+    .wm .dot { color: var(--accent-bright); }
+    .tag { font-family: var(--fb); font-size: 12px; font-weight: 500; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(244,241,232,0.6); }
+
+    /* Polaroid scene area */
+    .polaroid-stage {
+      flex: 1;
+      position: relative;
+      padding: 40px 60px 0;
+      z-index: 5;
+    }
+
+    /* Main polaroid */
+    .polaroid {
+      position: relative;
+      width: 560px;
+      background: var(--matte);
+      padding: 22px 22px 72px 22px;
+      box-shadow:
+        0 30px 60px rgba(0,0,0,0.55),
+        0 10px 20px rgba(0,0,0,0.3),
+        inset 0 0 0 1px rgba(13,20,17,0.08);
+      transform: rotate(-3.2deg);
+      margin: 56px auto 0;
+    }
+    .polaroid img {
+      display: block; width: 100%; height: 340px;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .polaroid-caption {
+      position: absolute;
+      bottom: 18px; left: 0; right: 0;
+      text-align: center;
+      font-family: var(--fhand);
+      font-size: 28px;
+      font-weight: 500;
+      color: #2a2a2a;
+      letter-spacing: 0.01em;
+    }
+    .polaroid-caption .mark { color: var(--primary); margin: 0 8px; }
+
+    /* Small second polaroid peeking */
+    .polaroid-small {
+      position: absolute;
+      top: 60px;
+      right: 72px;
+      width: 190px;
+      background: var(--matte);
+      padding: 14px 14px 50px 14px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.45);
+      transform: rotate(7deg);
+      z-index: 2;
+    }
+    .polaroid-small img { width: 100%; height: 130px; object-fit: cover; }
+    .polaroid-small-caption {
+      position: absolute;
+      bottom: 12px; left: 0; right: 0;
+      text-align: center;
+      font-family: var(--fhand);
+      font-size: 20px;
+      color: #2a2a2a;
+    }
+
+    /* Tape strips (decorative) */
+    .tape {
+      position: absolute;
+      width: 110px; height: 30px;
+      background: rgba(180,224,97,0.45);
+      border: 1px solid rgba(180,224,97,0.3);
+      top: 44px; left: 240px;
+      transform: rotate(-6deg);
+      z-index: 4;
+    }
+    .tape.right {
+      left: auto; right: 200px; top: 40px;
+      transform: rotate(10deg);
+      background: rgba(244,241,232,0.3);
+    }
+
+    /* Text block below stage */
+    .text-block {
+      padding: 24px 60px 0;
+      z-index: 5;
+    }
+    .eye {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-family: var(--fb); font-size: 13px; font-weight: 500;
+      color: var(--accent-bright); letter-spacing: 0.32em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .eye::before { content: ""; width: 36px; height: 2px; background: var(--accent-bright); }
+    h1 {
+      font-family: var(--fh); font-size: 80px; font-weight: 500;
+      line-height: 0.95; letter-spacing: -0.03em;
+      color: var(--text); margin: 0;
+    }
+    h1 .l { color: var(--accent-bright); font-style: italic; }
+
+    /* Footer */
+    .footer {
+      padding: 22px 60px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: auto;
+      border-top: 1px solid rgba(244,241,232,0.1);
+      padding-top: 22px;
+    }
+    .footer-sub { font-family: var(--fb); font-size: 13px; color: rgba(244,241,232,0.62); letter-spacing: 0.1em; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 72px; min-width: 260px; padding: 0 40px;
+      background: var(--accent-bright); color: var(--secondary);
+      font-family: var(--fb); font-weight: 700; font-size: 17px;
+      letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="top">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="tag">Bioloģiskā kanalizācija</div>
+    </div>
+
+    <div class="polaroid-stage">
+      <div class="polaroid">
+        <img src="../brief/images/scene-peaceful-lawn.png">
+        <div class="polaroid-caption">Mājas dārzs, <span class="mark">·</span> vasara '26</div>
+      </div>
+
+      <div class="polaroid-small">
+        <img src="../brief/images/hero-2.jpg">
+        <div class="polaroid-small-caption">montāžas diena</div>
+      </div>
+
+      <div class="tape"></div>
+      <div class="tape right"></div>
+    </div>
+
+    <div class="text-block">
+      <div class="eye">Kanalizācija, kas neprasa neko</div>
+      <h1>Asenizators <span class="l">vairs nezvanīs.</span></h1>
+    </div>
+
+    <div class="footer">
+      <div class="footer-sub">€350–900 ietaupījumi gadā · 5 gadu garantija · CE + EN12566-3</div>
+      <div class="cta">Uzzināt vairāk</div>
+    </div>
+  </div>
+</body>
+</html>

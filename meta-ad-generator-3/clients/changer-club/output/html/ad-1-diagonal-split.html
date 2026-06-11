@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Montserrat:wght@400;500;600&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;position:relative}
+
+
+.noise{position:absolute;inset:0;opacity:0.04;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:300px 300px;pointer-events:none;z-index:1}
+
+/* Right block — warm dark tone, clearly different from cool-dark left */
+.right-block{
+  position:absolute;top:0;right:0;width:520px;height:1080px;z-index:2;
+  background:linear-gradient(170deg,#221e14 0%,#16130b 100%);
+  clip-path:polygon(10% 0%,100% 0%,100% 100%,0% 100%)}
+
+/* Accent glow inside right block */
+.right-glow{
+  position:absolute;top:0;right:0;width:520px;height:1080px;z-index:3;
+  background:radial-gradient(ellipse 400px 550px at 60% 30%,#c8a86a38 0%,transparent 60%);
+  clip-path:polygon(10% 0%,100% 0%,100% 100%,0% 100%)}
+
+/* Fine grid on right block */
+.right-grid{
+  position:absolute;top:0;right:0;width:520px;height:1080px;z-index:3;
+  clip-path:polygon(10% 0%,100% 0%,100% 100%,0% 100%);
+  background-image:linear-gradient(#c8a86a1e 1px,transparent 1px),linear-gradient(90deg,#c8a86a1e 1px,transparent 1px);
+  background-size:72px 72px}
+
+/* Gold accent line tracing the diagonal edge */
+.cut-line{
+  position:absolute;top:0;z-index:5;width:4px;height:1120px;
+  background:linear-gradient(to bottom,transparent 5%,#c8a86abb 30%,#c8a86a 50%,#c8a86abb 70%,transparent 95%);
+  left:563px;transform:rotate(0.7deg);transform-origin:top center}
+
+/* Left content */
+.left{
+  position:absolute;top:0;left:0;width:600px;height:1080px;z-index:6;
+  display:flex;flex-direction:column;justify-content:center;padding:0 80px}
+
+.eyebrow{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;
+  color:#c8a86a;letter-spacing:7px;text-transform:uppercase;margin-bottom:36px}
+
+.rule{width:52px;height:2px;background:#c8a86a;margin-bottom:40px}
+
+.headline{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:700;
+  line-height:1.0;color:#f5f0e8;margin-bottom:20px;max-width:460px}
+.headline em{color:#c8a86a;font-style:normal;display:block}
+
+.subhead{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;
+  font-style:italic;color:#b8a88a;margin-bottom:48px;max-width:420px;line-height:1.5}
+
+.cta{display:inline-block;background:#c8a86a;color:#0d0b09;
+  padding:22px 52px;border-radius:4px;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;
+  letter-spacing:2.5px;text-transform:uppercase;
+  box-shadow:0 8px 48px #c8a86a55,0 2px 12px rgba(0,0,0,0.6);
+  width:fit-content}
+
+/* Right stats — large and legible */
+.stats{
+  position:absolute;top:0;right:0;width:470px;height:1080px;z-index:7;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:0 64px 0 80px;gap:56px}
+
+.stat{display:flex;flex-direction:column;gap:10px}
+
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:700;
+  color:#c8a86a;line-height:1;letter-spacing:-2px}
+
+.stat-label{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;
+  color:#f5f0e899;letter-spacing:4px;text-transform:uppercase}
+
+.stat-desc{font-size:16px;color:#f5f0e855;line-height:1.5}
+
+.stat-divider{width:40px;height:1px;background:#c8a86a44}
+
+</style></head><body>
+<div class="noise"></div>
+<div class="right-block"></div>
+<div class="right-glow"></div>
+<div class="right-grid"></div>
+<div class="cut-line"></div>
+
+<div class="left">
+  <div class="eyebrow">Changer Club</div>
+  <div class="rule"></div>
+  <h1 class="headline">After the exit —<br><em>what's next?</em></h1>
+  <p class="subhead">Most founders reach the summit and find it quieter than expected.</p>
+  <div class="cta">See If You Qualify</div>
+</div>
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">270+</div>
+    <div class="stat-label">Member Families</div>
+    <div class="stat-desc">$25B+ in aggregate capital across Monaco and Dubai</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat">
+    <div class="stat-num">+7</div>
+    <div class="stat-label">Years Added</div>
+    <div class="stat-desc">Harvard research on purpose and fulfilled longevity</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat">
+    <div class="stat-num">110%</div>
+    <div class="stat-label">ROI Last Year</div>
+    <div class="stat-desc">Top 5 Angel Syndicate in Europe. Zero losses in 3 years.</div>
+  </div>
+</div>
+</body></html>

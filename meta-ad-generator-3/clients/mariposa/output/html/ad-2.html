@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; background: #13080d; }
+.ad { width: 1080px; height: 1080px; position: relative; }
+.base {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 500px 800px at 18% 50%, rgba(201,146,122,0.07) 0%, transparent 55%),
+    #13080d;
+}
+.noise {
+  position: absolute; inset: 0; opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.photo-wrap { position: absolute; top: 0; right: 0; width: 620px; height: 1080px; clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%); overflow: hidden; }
+.photo { width: 620px; height: 1080px; object-fit: cover; object-position: 38% top; }
+.photo-fade { position: absolute; inset: 0; background: linear-gradient(to right, rgba(19,8,13,0.96) 0%, rgba(19,8,13,0.28) 36%, transparent 65%); }
+.panel {
+  position: absolute; left: 0; top: 0; width: 520px; height: 1080px;
+  display: flex; flex-direction: column; padding: 64px 64px 160px 72px;
+}
+.logo { height: 24px; width: auto; opacity: 0.88; filter: brightness(1.05); margin-bottom: auto; }
+.accent-strip {
+  position: absolute; top: 0; left: 460px; width: 6px; height: 1080px;
+  background: linear-gradient(to bottom, transparent, rgba(201,146,122,0.18) 30%, rgba(201,146,122,0.28) 50%, rgba(201,146,122,0.18) 70%, transparent);
+}
+.body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 16px; max-height: 820px; }
+.accent-bar { width: 44px; height: 2px; background: #c9927a; margin-bottom: 28px; }
+.on-image {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 68px; font-weight: 700; line-height: 1.05; color: #f5ede8;
+  margin-bottom: 20px; letter-spacing: -0.3px;
+}
+.on-image em { color: #c9927a; font-style: italic; font-weight: 300; }
+.base-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.5px; font-weight: 300; line-height: 1.75;
+  color: rgba(245,237,232,0.65); margin-bottom: 28px; max-width: 360px;
+}
+.bullets { list-style: none; margin-bottom: 40px; }
+.bullets li {
+  font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400;
+  color: rgba(245,237,232,0.78); padding: 10px 0 10px 22px; position: relative;
+  border-bottom: 1px solid rgba(201,146,122,0.16);
+}
+.bullets li:first-child { border-top: 1px solid rgba(201,146,122,0.16); }
+.bullets li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 5px; height: 5px; border-radius: 50%; background: #c9927a; }
+.bottom-bar { display: flex; flex-direction: column; gap: 0; }
+.cta-btn {
+  display: inline-block; background: #c9927a; color: #13080d;
+  padding: 19px 40px; font-family: 'Montserrat', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  border-radius: 2px; box-shadow: 0 8px 32px rgba(201,146,122,0.40), 0 2px 8px rgba(0,0,0,0.50); width: fit-content;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="base"></div>
+  <div class="noise"></div>
+  <div class="photo-wrap">
+    <img class="photo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/mariposa/assets/Beautiful-Woman-11-scaled.webp" alt="">
+    <div class="photo-fade"></div>
+  </div>
+  <div class="accent-strip"></div>
+  <div class="panel">
+    <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/mariposa/assets/logo-1-Logo_balts-3-scaled.png" alt="Mariposa">
+    <div class="body">
+      <div class="accent-bar"></div>
+      <h1 class="on-image">Optimas ādas<br><em>tehnoloģija</em></h1>
+      <p class="base-text">Krēmi pigmentāciju nenovērš. Optimas strādā pie avota: IPL, RF un lāzers vienā protokolā. Rezultāti redzami jau pēc 2 sesijām.</p>
+      <ul class="bullets">
+        <li>Redzami rezultāti jau pēc 2 procedūrām</li>
+        <li>Bezmaksas konsultācija, vērtība 40€</li>
+        <li>Bez sāpēm, minimāla atveseļošanās</li>
+      </ul>
+      <div class="bottom-bar">
+        <a class="cta-btn">Piesakies bezmaksas konsultācijai</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

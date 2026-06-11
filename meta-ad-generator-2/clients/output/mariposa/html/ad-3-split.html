@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad {
+  width:1080px; height:1080px;
+  position:relative; overflow:hidden;
+  background:#0d040d;
+  display:flex;
+}
+
+/* ── Left content panel ── */
+.left {
+  width:530px;
+  height:1080px;
+  flex-shrink:0;
+  position:relative;
+  z-index:10;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding:56px 56px 100px 64px;
+  background:linear-gradient(160deg, #120512 0%, #0d030d 60%, #0a030a 100%);
+}
+
+/* Subtle grain texture overlay */
+.left::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  opacity:0.4;
+  pointer-events:none;
+}
+
+/* Gold seam on right edge of left panel */
+.left::after {
+  content:'';
+  position:absolute; top:80px; right:0; bottom:80px;
+  width:1px;
+  background:linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(196,149,108,0.35) 20%,
+    rgba(196,149,108,0.55) 50%,
+    rgba(196,149,108,0.35) 80%,
+    transparent 100%
+  );
+}
+
+/* ── Right photo panel ── */
+.right {
+  flex:1;
+  position:relative;
+  overflow:hidden;
+}
+.right-img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:38% 8%;
+  filter:saturate(1.05) contrast(1.02) brightness(1.01);
+}
+/* Blend left edge of photo into left panel */
+.right-vignette-l {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(10,3,10,1.00) 0%,
+    rgba(10,3,10,0.88) 6%,
+    rgba(10,3,10,0.65) 14%,
+    rgba(10,3,10,0.40) 26%,
+    rgba(10,3,10,0.18) 40%,
+    rgba(10,3,10,0.06) 54%,
+    transparent 70%
+  );
+}
+/* Subtle bottom fade */
+.right-vignette-b {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent 55%,
+    rgba(13,4,13,0.20) 75%,
+    rgba(13,4,13,0.45) 100%
+  );
+}
+
+/* ── Logo ── */
+.logo {
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  object-position:left;
+}
+
+/* ── Middle content block ── */
+.content {
+  display:flex;
+  flex-direction:column;
+  margin-top:60px;
+}
+
+.hook {
+  font-family:'DM Sans', sans-serif;
+  font-size:16px; font-weight:400; font-style:italic;
+  color:rgba(196,149,108,0.78);
+  letter-spacing:0.025em;
+  margin-bottom:18px;
+}
+
+.headline {
+  font-family:'Cormorant Garamond', serif;
+  font-size:70px; line-height:0.88;
+  font-weight:300; font-style:italic;
+  color:#f8f0ea;
+  letter-spacing:-0.022em;
+  text-shadow:0 2px 28px rgba(10,4,10,0.55);
+  margin-bottom:16px;
+}
+.headline em {
+  font-style:italic; font-weight:700;
+  color:#c4956c;
+}
+
+/* Ornamental divider */
+.divider {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:20px;
+}
+.divider-line {
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg, rgba(196,149,108,0.45) 0%, transparent 100%);
+}
+.divider-gem {
+  width:5px; height:5px;
+  background:rgba(196,149,108,0.70);
+  transform:rotate(45deg);
+  flex-shrink:0;
+}
+
+/* ── Service list ── */
+.services {
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  margin-top:10px;
+}
+.service-item {
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:30px 0;
+  border-bottom:1px solid rgba(196,149,108,0.12);
+}
+.service-item:first-child {
+  border-top:1px solid rgba(196,149,108,0.12);
+}
+.service-icon {
+  width:42px; height:42px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(196,149,108,0.07);
+  border-radius:50%;
+  border:1px solid rgba(196,149,108,0.14);
+}
+.service-meta {
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.service-name {
+  font-family:'DM Sans', sans-serif;
+  font-size:20px; font-weight:500;
+  color:rgba(248,240,234,0.92);
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+}
+.service-desc {
+  font-family:'DM Sans', sans-serif;
+  font-size:17px; font-weight:300; font-style:italic;
+  color:rgba(196,149,108,0.75);
+  letter-spacing:0.01em;
+}
+
+/* ── CTA ── */
+.cta {
+  margin-top:auto;
+  display:block;
+  background:linear-gradient(135deg, #b07840 0%, #c4956c 52%, #cc9e72 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:19px; font-weight:600;
+  padding:26px 32px;
+  border-radius:10px;
+  text-align:center;
+  letter-spacing:0.05em;
+  box-shadow:0 8px 56px rgba(196,149,108,0.20), 0 2px 12px rgba(0,0,0,0.40);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- Left panel -->
+  <div class="left">
+
+    <img class="logo" src="../Logo_balts-3-scaled.png" alt="mariposa">
+
+    <div class="content">
+      <div class="hook">Dari visu, lai izskatītos ideāli vasarai?</div>
+
+      <div class="headline">
+        Atjauno savu<br>ādu pirms<br><em>vasaras</em>
+      </div>
+
+      <div class="services">
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 2L12.4 9.6L20 11L12.4 12.4L11 20L9.6 12.4L2 11L9.6 9.6Z" stroke="rgba(196,149,108,0.92)" stroke-width="1.2" stroke-linejoin="round" fill="rgba(196,149,108,0.12)"/>
+              <circle cx="11" cy="11" r="2" fill="rgba(196,149,108,0.60)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">IPL</span>
+            <span class="service-desc">Ādas tonim, pigmentācijai un apsārtumam</span>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="5" cy="5" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="11" cy="5" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="17" cy="5" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="5" cy="11" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="11" cy="11" r="2.2" fill="rgba(196,149,108,0.50)" stroke="rgba(196,149,108,0.92)" stroke-width="1"/>
+              <circle cx="17" cy="11" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="5" cy="17" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="11" cy="17" r="1.6" fill="rgba(196,149,108,0.85)"/>
+              <circle cx="17" cy="17" r="1.6" fill="rgba(196,149,108,0.85)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">RF mikro adatas</span>
+            <span class="service-desc">Ādas atjaunošanai</span>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon">
+            <svg width="16" height="20" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5 1L2 13H8.5L7 21L16 9H9.5L10.5 1Z" stroke="rgba(196,149,108,0.92)" stroke-width="1.2" stroke-linejoin="round" fill="rgba(196,149,108,0.12)"/>
+            </svg>
+          </div>
+          <div class="service-meta">
+            <span class="service-name">Lāzerepilācija</span>
+            <span class="service-desc">Ilgstošam rezultātam</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="cta">Rezervē savu vizīti →</div>
+
+  </div>
+
+  <!-- Right photo panel -->
+  <div class="right">
+    <img class="right-img" src="../images/woman-smooth.jpg" alt="">
+    <div class="right-vignette-l"></div>
+    <div class="right-vignette-b"></div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

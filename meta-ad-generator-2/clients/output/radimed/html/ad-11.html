@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#020c18;}
+
+.ad{
+  width:1080px;height:1080px;
+  position:relative;overflow:hidden;
+  font-family:'DM Sans',sans-serif;
+  background:#020c18;
+}
+
+/* TOP PHOTO SECTION */
+.photo-wrap{
+  position:absolute;top:0;left:0;right:0;
+  height:450px;overflow:hidden;
+}
+.photo{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 25%;
+}
+.photo-fade{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(2,12,24,0.38) 0%,
+      rgba(2,12,24,0.00) 32%,
+      rgba(2,12,24,0.00) 55%,
+      rgba(2,12,24,0.82) 80%,
+      rgba(2,12,24,1.00) 100%
+    );
+}
+
+/* LOGO + BADGE — over photo */
+.topbar{
+  position:absolute;top:52px;left:64px;right:64px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:5;
+}
+.logo{height:78px;width:auto;filter:brightness(0) invert(1);}
+.badge{
+  font-size:13px;font-weight:500;
+  color:rgba(255,255,255,0.82);
+  border:1px solid rgba(0,180,216,0.4);
+  padding:9px 20px;border-radius:100px;
+  background:rgba(0,180,216,0.07);
+  letter-spacing:0.06em;
+}
+
+/* CYAN ACCENT LINE across the split */
+.split-line{
+  position:absolute;top:380px;left:0;right:0;
+  height:2px;
+  background:linear-gradient(90deg,
+    rgba(0,180,216,0) 0%,
+    rgba(0,180,216,0.55) 20%,
+    rgba(0,180,216,0.55) 80%,
+    rgba(0,180,216,0) 100%
+  );
+  z-index:6;
+}
+
+/* DARK PANEL CONTENT */
+.content{
+  position:absolute;
+  bottom:162px;left:64px;right:64px;
+  z-index:5;
+}
+
+.eyebrow{
+  font-size:17px;font-weight:600;
+  letter-spacing:0.24em;text-transform:uppercase;
+  color:#00B4D8;margin-bottom:16px;
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:88px;line-height:0.93;
+  color:#fff;font-weight:700;
+  letter-spacing:-0.025em;
+  margin-bottom:24px;
+}
+h1 em{font-style:italic;font-weight:400;color:#00B4D8;}
+
+.sub{
+  font-size:21px;font-weight:400;
+  color:rgba(255,255,255,0.62);
+  line-height:1.5;
+  margin-bottom:28px;
+  max-width:800px;
+}
+
+/* 3-column benefit chips */
+.benefits{
+  display:flex;gap:12px;
+  margin-bottom:34px;
+}
+.benefit{
+  display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,0.05);
+  padding:12px 20px;
+  border-radius:10px;
+  flex:1;
+}
+.b-icon{
+  width:28px;height:28px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.b-text{
+  font-size:15px;font-weight:600;
+  color:rgba(255,255,255,0.82);
+  line-height:1.2;
+}
+
+/* CTA row */
+.cta-row{display:flex;align-items:center;gap:32px;}
+.cta{
+  font-size:21px;font-weight:700;
+  color:#020c18;background:#00B4D8;
+  padding:21px 52px;
+  border-radius:12px;
+  letter-spacing:0.01em;
+  box-shadow:0 4px 28px rgba(0,180,216,0.35);
+}
+.phone{
+  font-size:18px;font-weight:500;
+  color:rgba(255,255,255,0.5);
+}
+.phone strong{color:#fff;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="photo-wrap">
+    <img class="photo" src="../images/mri-patient.png">
+    <div class="photo-fade"></div>
+  </div>
+
+  <div class="topbar">
+    <img class="logo" src="../6135c3339b379db98bc847bdbec13eb5.png">
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">Modernā MRI diagnostika</div>
+    <h1>45 minūtes.<br><em>pilna atbilde</em><br>par veselību.</h1>
+    <div class="sub">Mūsdienīgs MRI izmeklējums nav sarežģīts. Bez sāpēm, bez radiācijas, bez gaidīšanas rindas.</div>
+
+    <div class="benefits">
+      <div class="benefit">
+        <div class="b-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        </div>
+        <div class="b-text">Nav radiācijas</div>
+      </div>
+      <div class="benefit">
+        <div class="b-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="b-text">Rezultāts 24h</div>
+      </div>
+      <div class="benefit">
+        <div class="b-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00B4D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <polyline points="9 16 11 18 15 14"/>
+          </svg>
+        </div>
+        <div class="b-text">Pieraksts šodien</div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta">Pierakstīties →</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

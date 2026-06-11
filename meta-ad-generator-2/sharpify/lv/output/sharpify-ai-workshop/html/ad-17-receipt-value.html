@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(170deg, #0a0a0a 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+  }
+
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 60%);
+    filter: blur(50px);
+  }
+
+  .receipt {
+    width: 720px;
+    background: #fefce8;
+    padding: 50px 50px 40px 50px;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Zig-zag torn edge top */
+  .receipt::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: linear-gradient(135deg, #fefce8 33%, transparent 33%) 0 0,
+                linear-gradient(225deg, #fefce8 33%, transparent 33%) 0 0;
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+  }
+
+  .receipt::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: linear-gradient(45deg, #fefce8 33%, transparent 33%) 0 0,
+                linear-gradient(315deg, #fefce8 33%, transparent 33%) 0 0;
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+  }
+
+  .receipt-header {
+    text-align: center;
+    border-bottom: 2px dashed #1a1a1a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .receipt-brand {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 6px;
+    margin-bottom: 4px;
+  }
+
+  .receipt-sub {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 2px;
+  }
+
+  .order-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 22px;
+  }
+
+  .line-items {
+    margin-bottom: 16px;
+  }
+
+  .line-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .item-name {
+    font-size: 18px;
+    color: #1a1a1a;
+    line-height: 1.35;
+    max-width: 500px;
+    font-weight: 500;
+  }
+
+  .item-sub {
+    font-size: 13px;
+    color: #888;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  .item-price {
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .subtotal-section {
+    border-top: 3px double #1a1a1a;
+    padding-top: 14px;
+    margin-top: 6px;
+  }
+
+  .subtotal-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+
+  .discount-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #16a34a;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .you-pay-box {
+    background: #1a1a1a;
+    color: #F59E0B;
+    padding: 18px 24px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .you-pay-label {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .you-pay-amount {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .receipt-footer {
+    text-align: center;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed #1a1a1a;
+  }
+
+  .barcode {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    font-size: 44px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    font-weight: 900;
+  }
+
+  .footer-text {
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 1px;
+  }
+
+  .footer-text .bold { color: #1a1a1a; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="receipt">
+      <div class="receipt-header">
+        <div class="receipt-brand">SHARPIFY</div>
+        <div class="receipt-sub">AI RĪKU KOMPLEKTS — PASŪTĪJUMS</div>
+      </div>
+
+      <div class="order-meta">
+        <div>Nr. #2025-AI-027</div>
+        <div>Niks Jansons</div>
+      </div>
+
+      <div class="line-items">
+        <div class="line-item">
+          <div>
+            <div class="item-name">74 min video apmācība</div>
+            <div class="item-sub">Soli pa solim, no A līdz Z</div>
+          </div>
+          <div class="item-price">€79.00</div>
+        </div>
+        <div class="line-item">
+          <div>
+            <div class="item-name">128 slaidu prezentācija</div>
+            <div class="item-sub">Kopējams, pielāgojams, tavs</div>
+          </div>
+          <div class="item-price">€49.00</div>
+        </div>
+        <div class="line-item">
+          <div>
+            <div class="item-name">27 AI skills</div>
+            <div class="item-sub">Gatavi prompti Claude Code</div>
+          </div>
+          <div class="item-price">€135.00</div>
+        </div>
+        <div class="line-item">
+          <div>
+            <div class="item-name">14 reāla biznesa demo</div>
+            <div class="item-sub">Skaties un kopē</div>
+          </div>
+          <div class="item-price">€42.00</div>
+        </div>
+        <div class="line-item">
+          <div>
+            <div class="item-name">Ātrais iestatīšanas ceļvedis</div>
+            <div class="item-sub">Palaid AI 10 minūtēs</div>
+          </div>
+          <div class="item-price">€25.00</div>
+        </div>
+        <div class="line-item">
+          <div>
+            <div class="item-name">14 dienu bezmaksas CRM</div>
+            <div class="item-sub">Sharpify App™</div>
+          </div>
+          <div class="item-price">€20.00</div>
+        </div>
+      </div>
+
+      <div class="subtotal-section">
+        <div class="subtotal-row">
+          <div>Kopējā vērtība</div>
+          <div>€350.00</div>
+        </div>
+        <div class="discount-row">
+          <div>Atlaide šonedēļ</div>
+          <div>-€331.00</div>
+        </div>
+
+        <div class="you-pay-box">
+          <div class="you-pay-label">TU MAKSĀ</div>
+          <div class="you-pay-amount">€19</div>
+        </div>
+      </div>
+
+      <div class="receipt-footer">
+        <div class="barcode">||||| |||| ||| ||||| |||</div>
+        <div class="footer-text">Mūžīga piekļuve · <span class="bold">7 dienu garantija</span> · Vienreizējs maksājums</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

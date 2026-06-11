@@ -1,0 +1,1673 @@
+{
+  "source": "https://www.figma.com/color-palettes/pastel/",
+  "scraped_at": "2026-05-08T12:06:06.472Z",
+  "total_palettes": 144,
+  "total_hex_codes": 523,
+  "palettes": [
+    {
+      "name": "Lavender Sapphire Mist",
+      "hexes": [
+        "#D9A69F",
+        "#6C739C",
+        "#F0DAD5",
+        "#BABBB1",
+        "#C56B62",
+        "#424658",
+        "#DEA785"
+      ]
+    },
+    {
+      "name": "Opal Seashell Cascade",
+      "hexes": [
+        "#C592A8",
+        "#F4CC9C",
+        "#3EBCB3",
+        "#DBDBDB"
+      ]
+    },
+    {
+      "name": "Amethyst Wisteria Twilight",
+      "hexes": [
+        "#744B93",
+        "#C889B5",
+        "#F0F0F0",
+        "#FCE5CC",
+        "#D0ADC4",
+        "#736EAE"
+      ]
+    },
+    {
+      "name": "Lilac Sapphire Serenity",
+      "hexes": [
+        "#C04CC5",
+        "#F8B1EA",
+        "#527AA6",
+        "#48415F",
+        "#B1D2EC",
+        "#702C74"
+      ]
+    },
+    {
+      "name": "Gentle Dunes",
+      "hexes": [
+        "#F3C09F",
+        "#FEE1BB",
+        "#E083AC",
+        "#69AAAF",
+        "#9DC9C3",
+        "#52DCCE"
+      ]
+    },
+    {
+      "name": "Pastel Blush",
+      "hexes": [
+        "#E4A489",
+        "#BC6C54",
+        "#3E4C54",
+        "#A6844E",
+        "#9B9F91",
+        "#E9D9C8"
+      ]
+    },
+    {
+      "name": "Meadows",
+      "hexes": [
+        "#ECCCBC",
+        "#846CAC",
+        "#D48A93",
+        "#E6F0F1",
+        "#B6A8D0"
+      ]
+    },
+    {
+      "name": "Blushwave",
+      "hexes": [
+        "#F09FC2",
+        "#F71941",
+        "#71C7FE",
+        "#675F61",
+        "#D86897",
+        "#FECB00"
+      ]
+    },
+    {
+      "name": "Rosewater",
+      "hexes": [
+        "#F6A0AC",
+        "#A1C3E7",
+        "#908DCE",
+        "#E47C9C",
+        "#EEF1F8",
+        "#D99BD8"
+      ]
+    },
+    {
+      "name": "Petals",
+      "hexes": [
+        "#F5B3F1",
+        "#E286D3",
+        "#FF9A59",
+        "#FCCB96",
+        "#F77E48",
+        "#D34D85"
+      ]
+    },
+    {
+      "name": "Sorbet Sky",
+      "hexes": [
+        "#E88914",
+        "#DD72A9",
+        "#106EE2",
+        "#DA5C21",
+        "#CCB9AC",
+        "#D4266D"
+      ]
+    },
+    {
+      "name": "Zephyr",
+      "hexes": [
+        "#F5F1FA",
+        "#FBB7B7",
+        "#A698C2",
+        "#A0A095",
+        "#DE7A38"
+      ]
+    },
+    {
+      "name": "Soft Tears",
+      "hexes": [
+        "#ECE9E6",
+        "#C1CBCA",
+        "#39445B",
+        "#9F97B8",
+        "#3030CF"
+      ]
+    },
+    {
+      "name": "Sorbet",
+      "hexes": [
+        "#CCCCCC",
+        "#FEFEFE",
+        "#EDECEC",
+        "#E0E7D7",
+        "#B7C396",
+        "#BA9A91"
+      ]
+    },
+    {
+      "name": "Opaline",
+      "hexes": [
+        "#F4F4F6",
+        "#E7E7E7",
+        "#D2D2D4",
+        "#FF634A"
+      ]
+    },
+    {
+      "name": "Calm blue",
+      "hexes": [
+        "#90D5FF",
+        "#57B9FF",
+        "#77B1D4",
+        "#517891"
+      ]
+    },
+    {
+      "name": "Rose Petals",
+      "hexes": [
+        "#FF8DA1",
+        "#DBB2B9",
+        "#8A4C57",
+        "#61212D"
+      ]
+    },
+    {
+      "name": "Watermelon Candy",
+      "hexes": [
+        "#FF8DA1",
+        "#FFC7D1",
+        "#66FFED",
+        "#95E082"
+      ]
+    },
+    {
+      "name": "Hydrangea",
+      "hexes": [
+        "#FF8DA1",
+        "#FFC2BA",
+        "#FF9CE9",
+        "#AD56C4"
+      ]
+    },
+    {
+      "name": "Cherry Blossom",
+      "hexes": [
+        "#FFB5C0",
+        "#804B53",
+        "#C2FFB5",
+        "#4B8067"
+      ]
+    },
+    {
+      "name": "Rococo Romance",
+      "hexes": [
+        "#FFB5C0",
+        "#F5C8B5",
+        "#FFA294",
+        "#F1B5FF"
+      ]
+    },
+    {
+      "name": "Promenade",
+      "hexes": [
+        "#FFFFC5",
+        "#CEC4FF",
+        "#F4C4FF",
+        "#754480"
+      ]
+    },
+    {
+      "name": "Lavender Lilt",
+      "hexes": [
+        "#D3D3FF",
+        "#9D9DCC",
+        "#575799",
+        "#090933"
+      ]
+    },
+    {
+      "name": "Ethereal Dawn",
+      "hexes": [
+        "#D3D3FF",
+        "#FFF9A3",
+        "#FFD87D",
+        "#807B3C"
+      ]
+    },
+    {
+      "name": "Charming Seaside",
+      "hexes": [
+        "#B3EBF2",
+        "#85D1DB",
+        "#B6F2D1",
+        "#C9FDF2"
+      ]
+    },
+    {
+      "name": "Peach Skyline",
+      "hexes": [
+        "#FFDBBB",
+        "#BADDFF",
+        "#BAFFF5",
+        "#496580"
+      ]
+    },
+    {
+      "name": "Subtle Blush",
+      "hexes": [
+        "#FFDBBB",
+        "#FFB0A6",
+        "#E0B672",
+        "#CC8A6E"
+      ]
+    },
+    {
+      "name": "Lavender Fields",
+      "hexes": [
+        "#FDFBD4",
+        "#BDB96A",
+        "#C1BFFF",
+        "#CF6DFC"
+      ]
+    },
+    {
+      "name": "Lilac Dreams",
+      "hexes": [
+        "#DAB1DA",
+        "#FFADFF",
+        "#733B73",
+        "#5E095E"
+      ]
+    },
+    {
+      "name": "Enigma",
+      "hexes": [
+        "#DAB1DA",
+        "#BED966",
+        "#8DD691",
+        "#2C592E"
+      ]
+    },
+    {
+      "name": "Flirty",
+      "hexes": [
+        "#DAB1DA",
+        "#D991AE",
+        "#D97068",
+        "#B09AD9"
+      ]
+    },
+    {
+      "name": "Sunny Lilac",
+      "hexes": [
+        "#CCCCFF",
+        "#8F8FBF",
+        "#FFF88F",
+        "#F7D78D"
+      ]
+    },
+    {
+      "name": "Cotton Candy",
+      "hexes": [
+        "#A47DAB",
+        "#E3A1CD",
+        "#8776CC",
+        "#8A65AD"
+      ]
+    },
+    {
+      "name": "Tea Party",
+      "hexes": [
+        "#FFC5D3",
+        "#ADFFF5",
+        "#D2FFC4",
+        "#448061"
+      ]
+    },
+    {
+      "name": "Pink Lemonade",
+      "hexes": [
+        "#FFC5D3",
+        "#FFA3DD",
+        "#FF8375",
+        "#ED6F3E"
+      ]
+    },
+    {
+      "name": "Pressed Flowers",
+      "hexes": [
+        "#DCA1A1",
+        "#FFD6D6",
+        "#825656",
+        "#3D1D1D"
+      ]
+    },
+    {
+      "name": "Peonies",
+      "hexes": [
+        "#DCA1A1",
+        "#FFD9D9",
+        "#9AE3C7",
+        "#84C77F"
+      ]
+    },
+    {
+      "name": "Grape Milkshake",
+      "hexes": [
+        "#E0AFFF",
+        "#C197DB",
+        "#795F8A",
+        "#4B2861"
+      ]
+    },
+    {
+      "name": "Wisteria Lane",
+      "hexes": [
+        "#E0AFFF",
+        "#F0D9FF",
+        "#E2DD9C",
+        "#A1C588"
+      ]
+    },
+    {
+      "name": "Jelly Shoes",
+      "hexes": [
+        "#E0AFFF",
+        "#C4D6FF",
+        "#DD68E3",
+        "#8866DE"
+      ]
+    },
+    {
+      "name": "Watercolor Wisp",
+      "hexes": [
+        "#DEA193",
+        "#FFD3C9",
+        "#92DEDC",
+        "#8FFFB0"
+      ]
+    },
+    {
+      "name": "Ballet Slippers",
+      "hexes": [
+        "#DEA193",
+        "#FFD2B8",
+        "#E0BA8D",
+        "#DE7E7C"
+      ]
+    },
+    {
+      "name": "Spring Flowers",
+      "hexes": [
+        "#88E788",
+        "#88B7E7",
+        "#E788E7",
+        "#E7B788"
+      ]
+    },
+    {
+      "name": "Fresh Start",
+      "hexes": [
+        "#88E788",
+        "#D2E861",
+        "#A1FFC0",
+        "#51E8B8"
+      ]
+    },
+    {
+      "name": "Country Garden",
+      "hexes": [
+        "#FFFFE3",
+        "#DBD4FF",
+        "#808034",
+        "#723480"
+      ]
+    },
+    {
+      "name": "Purple Rain",
+      "hexes": [
+        "#BBB791",
+        "#E4F0C0",
+        "#DFCBEB",
+        "#7A4179"
+      ]
+    },
+    {
+      "name": "Chalkboard",
+      "hexes": [
+        "#D3D3D3",
+        "#FFD5CC",
+        "#ADCCA3",
+        "#C7A3CC"
+      ]
+    },
+    {
+      "name": "Morning Pasture",
+      "hexes": [
+        "#FFB27F",
+        "#807066",
+        "#80D0FF",
+        "#80FFDB"
+      ]
+    },
+    {
+      "name": "Ballerina",
+      "hexes": [
+        "#E89EB8",
+        "#C4869C",
+        "#734E5B",
+        "#4A323B"
+      ]
+    },
+    {
+      "name": "Garden Gala",
+      "hexes": [
+        "#E89EB8",
+        "#FFDBE8",
+        "#9FF5C3",
+        "#92D175"
+      ]
+    },
+    {
+      "name": "Spring Fling",
+      "hexes": [
+        "#E89EB8",
+        "#FFCBBA",
+        "#FFADFB",
+        "#C779E8"
+      ]
+    },
+    {
+      "name": "Soft Spring",
+      "hexes": [
+        "#6395EE",
+        "#90B8D6",
+        "#88CFA8",
+        "#85DECB"
+      ]
+    },
+    {
+      "name": "Florist",
+      "hexes": [
+        "#FF7782",
+        "#FFBDC2",
+        "#B2FFA6",
+        "#4DD69D"
+      ]
+    },
+    {
+      "name": "Minty Fresh",
+      "hexes": [
+        "#98FBCB",
+        "#BFFFED",
+        "#7FCFA8",
+        "#558B71"
+      ]
+    },
+    {
+      "name": "Garden Fresco",
+      "hexes": [
+        "#98FBCB",
+        "#FAB598",
+        "#FA98AB",
+        "#547A68"
+      ]
+    },
+    {
+      "name": "Whimsy And Wonder",
+      "hexes": [
+        "#98FBCB",
+        "#48E0CA",
+        "#6EC1D4",
+        "#89E099"
+      ]
+    },
+    {
+      "name": "Victorian Rose",
+      "hexes": [
+        "#E491A6",
+        "#BF7A8C",
+        "#96384F",
+        "#450C1B"
+      ]
+    },
+    {
+      "name": "Aphrodite",
+      "hexes": [
+        "#E491A6",
+        "#FF7E70",
+        "#DB6EFF",
+        "#1FBF1D"
+      ]
+    },
+    {
+      "name": "Salt Lake",
+      "hexes": [
+        "#8DDCDC",
+        "#C4EDED",
+        "#FFCAAB",
+        "#E3905F"
+      ]
+    },
+    {
+      "name": "Zephyr",
+      "hexes": [
+        "#B8E3E9",
+        "#74B6E8",
+        "#97FCE7",
+        "#7DE8AD"
+      ]
+    },
+    {
+      "name": "Mint Julep",
+      "hexes": [
+        "#A8DCAB",
+        "#F1FFBF",
+        "#91BEA2",
+        "#88A27B"
+      ]
+    },
+    {
+      "name": "Soft Whisper",
+      "hexes": [
+        "#B5C7EB",
+        "#94AEE3",
+        "#94A3C0",
+        "#60697C"
+      ]
+    },
+    {
+      "name": "Lavender Lullaby",
+      "hexes": [
+        "#B5C7EB",
+        "#9EF0FF",
+        "#A4A5F5",
+        "#8E70CF"
+      ]
+    },
+    {
+      "name": "Saltwater Pearl",
+      "hexes": [
+        "#FFF1E7",
+        "#F0DFB9",
+        "#FFCA8A",
+        "#FFB69E"
+      ]
+    },
+    {
+      "name": "Precious Orchid",
+      "hexes": [
+        "#ED80E9",
+        "#C96DC6",
+        "#784176",
+        "#4F2B4E"
+      ]
+    },
+    {
+      "name": "Cupcake Frosting",
+      "hexes": [
+        "#ED80E9",
+        "#FFD9FE",
+        "#C9ED5C",
+        "#80ED88"
+      ]
+    },
+    {
+      "name": "Peony Passion",
+      "hexes": [
+        "#ED80E9",
+        "#E3827B",
+        "#A479ED",
+        "#A746D4"
+      ]
+    },
+    {
+      "name": "Belle Rose",
+      "hexes": [
+        "#FFD6D1",
+        "#E0A59D",
+        "#94716C",
+        "#57221B"
+      ]
+    },
+    {
+      "name": "Macaron",
+      "hexes": [
+        "#FFD6D1",
+        "#BA8E88",
+        "#A8FFB7",
+        "#6DD1C2"
+      ]
+    },
+    {
+      "name": "Turkish Delight",
+      "hexes": [
+        "#FFD6D1",
+        "#FFBDA1",
+        "#EDA4DE",
+        "#E67088"
+      ]
+    },
+    {
+      "name": "Lavender Clay",
+      "hexes": [
+        "#DAB1DA",
+        "#DAC5B1",
+        "#B1DAB1",
+        "#B1C5DA"
+      ]
+    },
+    {
+      "name": "Lilac Sunbeam",
+      "hexes": [
+        "#CCCCFF",
+        "#FFFFCC"
+      ]
+    },
+    {
+      "name": "Glimmer Stones",
+      "hexes": [
+        "#CCCCFF",
+        "#FFE6CC",
+        "#E6FFCC"
+      ]
+    },
+    {
+      "name": "Lavender Ice",
+      "hexes": [
+        "#CCCCFF",
+        "#7070FF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "name": "Celestial Lilac",
+      "hexes": [
+        "#CCCCFF",
+        "#E5CCFF",
+        "#CCE5FF"
+      ]
+    },
+    {
+      "name": "Petal Glow",
+      "hexes": [
+        "#CCCCFF",
+        "#FFCCCC",
+        "#CCFFCC"
+      ]
+    },
+    {
+      "name": "Lavender Breeze",
+      "hexes": [
+        "#CCCCFF",
+        "#FFCCE6",
+        "#FFFFCC",
+        "#CCFFE6"
+      ]
+    },
+    {
+      "name": "Harmony Gems",
+      "hexes": [
+        "#F7E6CA",
+        "#CAF7E6",
+        "#E6CAF7"
+      ]
+    },
+    {
+      "name": "Serene Pastels",
+      "hexes": [
+        "#F7E6CA",
+        "#CAF7D0",
+        "#CADBF7",
+        "#F7CAF1"
+      ]
+    },
+    {
+      "name": "Lavender Grove",
+      "hexes": [
+        "#A47DAB",
+        "#84AB7D"
+      ]
+    },
+    {
+      "name": "Lilac Sagebrush",
+      "hexes": [
+        "#A47DAB",
+        "#9BAB7D",
+        "#7DAB8D"
+      ]
+    },
+    {
+      "name": "Lavender Opal",
+      "hexes": [
+        "#A47DAB",
+        "#885D90",
+        "#BDA1C2"
+      ]
+    },
+    {
+      "name": "Lilac Quartz",
+      "hexes": [
+        "#A47DAB",
+        "#AB7D9B",
+        "#8D7DAB"
+      ]
+    },
+    {
+      "name": "Lavender Drift",
+      "hexes": [
+        "#A47DAB",
+        "#AB8D7D",
+        "#84AB7D",
+        "#7D9BAB"
+      ]
+    },
+    {
+      "name": "Blush Tide",
+      "hexes": [
+        "#FFC5D3",
+        "#C5FFF1"
+      ]
+    },
+    {
+      "name": "Rosy Mist",
+      "hexes": [
+        "#FFC5D3",
+        "#C5FFD4",
+        "#C5F0FF"
+      ]
+    },
+    {
+      "name": "Rose Foam",
+      "hexes": [
+        "#FFC5D3",
+        "#FF6B8E",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "name": "Petal Quartz",
+      "hexes": [
+        "#FFC5D3",
+        "#FFD4C5",
+        "#FFC5F0"
+      ]
+    },
+    {
+      "name": "Petal Haven",
+      "hexes": [
+        "#FFC5D3",
+        "#D3FFC5",
+        "#C5D3FF"
+      ]
+    },
+    {
+      "name": "Pebble Blush",
+      "hexes": [
+        "#FFC5D3",
+        "#F0FFC5",
+        "#C5FFF1",
+        "#D4C5FF"
+      ]
+    },
+    {
+      "name": "Blush Aqua",
+      "hexes": [
+        "#DCA1A1",
+        "#A1DCDC"
+      ]
+    },
+    {
+      "name": "Blush Fern",
+      "hexes": [
+        "#DCA1A1",
+        "#A1DCBF",
+        "#A1BEDC"
+      ]
+    },
+    {
+      "name": "Blush Garnet",
+      "hexes": [
+        "#DCA1A1",
+        "#C76969",
+        "#F1D9D9"
+      ]
+    },
+    {
+      "name": "Blush Granite",
+      "hexes": [
+        "#DCA1A1",
+        "#DCBFA1",
+        "#DCA1BE"
+      ]
+    },
+    {
+      "name": "Pastel Treasures",
+      "hexes": [
+        "#DCA1A1",
+        "#A1DCA1",
+        "#A1A1DC"
+      ]
+    },
+    {
+      "name": "Blush Harmony",
+      "hexes": [
+        "#DCA1A1",
+        "#BFDCA1",
+        "#A1DCDC",
+        "#BEA1DC"
+      ]
+    },
+    {
+      "name": "Beach Pearl",
+      "hexes": [
+        "#FFD3AC",
+        "#ACD8FF"
+      ]
+    },
+    {
+      "name": "Peach Blossom",
+      "hexes": [
+        "#FFD3AC",
+        "#FFFCAC",
+        "#FFACAE"
+      ]
+    },
+    {
+      "name": "Lilac Meadow",
+      "hexes": [
+        "#E0AFFF",
+        "#CEFFAF"
+      ]
+    },
+    {
+      "name": "Lavender Citrus",
+      "hexes": [
+        "#E0AFFF",
+        "#F6FFAF",
+        "#AFFFB8"
+      ]
+    },
+    {
+      "name": "Amethyst Frost",
+      "hexes": [
+        "#E0AFFF",
+        "#BF59FF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "name": "Lilac Dream",
+      "hexes": [
+        "#E0AFFF",
+        "#FFAFF6",
+        "#B8AFFF"
+      ]
+    },
+    {
+      "name": "Lilac Blossom",
+      "hexes": [
+        "#E0AFFF",
+        "#FFE0AF",
+        "#AFFFE0"
+      ]
+    },
+    {
+      "name": "Gem Haze",
+      "hexes": [
+        "#E0AFFF",
+        "#FFB8AF",
+        "#CEFFAF",
+        "#AFF6FF"
+      ]
+    },
+    {
+      "name": "Blush Surf",
+      "hexes": [
+        "#DEA193",
+        "#93D0DE"
+      ]
+    },
+    {
+      "name": "Lemon Frost",
+      "hexes": [
+        "#FFFFE3",
+        "#E3F1FF",
+        "#F1E3FF"
+      ]
+    },
+    {
+      "name": "Dawn Citrine",
+      "hexes": [
+        "#FFFFE3",
+        "#F1FFE3",
+        "#FFF1E3"
+      ]
+    },
+    {
+      "name": "Gem Tranquil",
+      "hexes": [
+        "#FFFFE3",
+        "#E3FFFF",
+        "#FFE3FF"
+      ]
+    },
+    {
+      "name": "Soft Spring",
+      "hexes": [
+        "#FFFFE3",
+        "#E3FFF1",
+        "#E3E3FF",
+        "#FFE3F1"
+      ]
+    },
+    {
+      "name": "Peach Breeze",
+      "hexes": [
+        "#FFB27F",
+        "#7FFFF2",
+        "#7F8CFF"
+      ]
+    },
+    {
+      "name": "Blush Mint",
+      "hexes": [
+        "#E89EB8",
+        "#9EE8CE"
+      ]
+    },
+    {
+      "name": "Blush Emerald",
+      "hexes": [
+        "#E89EB8",
+        "#9EE8A9",
+        "#9EDDE8"
+      ]
+    },
+    {
+      "name": "Blush Opal",
+      "hexes": [
+        "#E89EB8",
+        "#D95F8A",
+        "#F7DDE6"
+      ]
+    },
+    {
+      "name": "Rose Garnet",
+      "hexes": [
+        "#E89EB8",
+        "#E8A99E",
+        "#E89EDD"
+      ]
+    },
+    {
+      "name": "Meadow Quartz",
+      "hexes": [
+        "#E89EB8",
+        "#B8E89E",
+        "#9EB8E8"
+      ]
+    },
+    {
+      "name": "Blush Essence",
+      "hexes": [
+        "#E89EB8",
+        "#DDE89E",
+        "#9EE8CE",
+        "#A99EE8"
+      ]
+    },
+    {
+      "name": "Teal Rosewood",
+      "hexes": [
+        "#81D8D0",
+        "#D88189"
+      ]
+    },
+    {
+      "name": "Oasis Trio",
+      "hexes": [
+        "#81D8D0",
+        "#D881B4",
+        "#D8A581"
+      ]
+    },
+    {
+      "name": "Aquamarine Blossom",
+      "hexes": [
+        "#81D8D0",
+        "#A581D8",
+        "#D88189",
+        "#B4D881"
+      ]
+    },
+    {
+      "name": "Aqua Rose",
+      "hexes": [
+        "#66F1C2",
+        "#F16695"
+      ]
+    },
+    {
+      "name": "Mint Lagoon",
+      "hexes": [
+        "#66F1C2",
+        "#66DBF1",
+        "#66F17D"
+      ]
+    },
+    {
+      "name": "Blush Jades",
+      "hexes": [
+        "#FF7782",
+        "#77FFB0",
+        "#77C6FF"
+      ]
+    },
+    {
+      "name": "Serene Blossom",
+      "hexes": [
+        "#FF7782",
+        "#82FF77",
+        "#7782FF"
+      ]
+    },
+    {
+      "name": "Mint Blush",
+      "hexes": [
+        "#98FBCB",
+        "#FB98C8"
+      ]
+    },
+    {
+      "name": "Mint Quartz",
+      "hexes": [
+        "#98FBCB",
+        "#FB98FA",
+        "#FB9998"
+      ]
+    },
+    {
+      "name": "Seaspray Essence",
+      "hexes": [
+        "#98FBCB",
+        "#98F9FB",
+        "#98FB9A"
+      ]
+    },
+    {
+      "name": "Pistachio Harmony",
+      "hexes": [
+        "#98FBCB",
+        "#9A98FB",
+        "#FB98C8",
+        "#FAFB98"
+      ]
+    },
+    {
+      "name": "Rose Turquoise",
+      "hexes": [
+        "#E491A6",
+        "#91E4CF"
+      ]
+    },
+    {
+      "name": "Blossom Jade",
+      "hexes": [
+        "#E491A6",
+        "#91E4A6",
+        "#91D0E4"
+      ]
+    },
+    {
+      "name": "Rose Sunrise",
+      "hexes": [
+        "#E491A6",
+        "#E4A591",
+        "#E491D0"
+      ]
+    },
+    {
+      "name": "Aquatic Rose",
+      "hexes": [
+        "#8DDCDC",
+        "#DC8D8D"
+      ]
+    },
+    {
+      "name": "Aquamarine Blush",
+      "hexes": [
+        "#8DDCDC",
+        "#DC8DB5",
+        "#DCB58D"
+      ]
+    },
+    {
+      "name": "Spa Serenity",
+      "hexes": [
+        "#8DDCDC",
+        "#56CBCB",
+        "#C4EDED"
+      ]
+    },
+    {
+      "name": "Tranquil Gems",
+      "hexes": [
+        "#8DDCDC",
+        "#DC8DDC",
+        "#DCDC8D"
+      ]
+    },
+    {
+      "name": "Golden Pasture",
+      "hexes": [
+        "#E0CD95",
+        "#CFB25B",
+        "#F1E8CF"
+      ]
+    },
+    {
+      "name": "Serene Coral",
+      "hexes": [
+        "#B8E3E9",
+        "#E9BEB8"
+      ]
+    },
+    {
+      "name": "Crystal Seas",
+      "hexes": [
+        "#B8E3E9",
+        "#E9B8CA",
+        "#E9D7B8"
+      ]
+    },
+    {
+      "name": "Aquatic Dream",
+      "hexes": [
+        "#B8E3E9",
+        "#B8CAE9",
+        "#B8E9D7"
+      ]
+    },
+    {
+      "name": "Tranquil Treasure",
+      "hexes": [
+        "#B8E3E9",
+        "#E9B8E3",
+        "#E3E9B8"
+      ]
+    },
+    {
+      "name": "Aquatic Pasture",
+      "hexes": [
+        "#B8E3E9",
+        "#D7B8E9",
+        "#E9BEB8",
+        "#CAE9B8"
+      ]
+    },
+    {
+      "name": "Floral Whimsy",
+      "hexes": [
+        "#FF46A2",
+        "#46FF46",
+        "#46FFFF"
+      ]
+    },
+    {
+      "name": "Garden Opal",
+      "hexes": [
+        "#A8DCAB",
+        "#DCA8D9"
+      ]
+    },
+    {
+      "name": "Peridot Lilac",
+      "hexes": [
+        "#A8DCAB",
+        "#C5A8DC",
+        "#DCA8BF"
+      ]
+    },
+    {
+      "name": "Mint Jasper",
+      "hexes": [
+        "#A8DCAB",
+        "#71C676",
+        "#DFF2E0"
+      ]
+    }
+  ],
+  "flat": [
+    "#D9A69F",
+    "#6C739C",
+    "#F0DAD5",
+    "#BABBB1",
+    "#C56B62",
+    "#424658",
+    "#DEA785",
+    "#C592A8",
+    "#F4CC9C",
+    "#3EBCB3",
+    "#DBDBDB",
+    "#744B93",
+    "#C889B5",
+    "#F0F0F0",
+    "#FCE5CC",
+    "#D0ADC4",
+    "#736EAE",
+    "#C04CC5",
+    "#F8B1EA",
+    "#527AA6",
+    "#48415F",
+    "#B1D2EC",
+    "#702C74",
+    "#F3C09F",
+    "#FEE1BB",
+    "#E083AC",
+    "#69AAAF",
+    "#9DC9C3",
+    "#52DCCE",
+    "#E4A489",
+    "#BC6C54",
+    "#3E4C54",
+    "#A6844E",
+    "#9B9F91",
+    "#E9D9C8",
+    "#ECCCBC",
+    "#846CAC",
+    "#D48A93",
+    "#E6F0F1",
+    "#B6A8D0",
+    "#F09FC2",
+    "#F71941",
+    "#71C7FE",
+    "#675F61",
+    "#D86897",
+    "#FECB00",
+    "#F6A0AC",
+    "#A1C3E7",
+    "#908DCE",
+    "#E47C9C",
+    "#EEF1F8",
+    "#D99BD8",
+    "#F5B3F1",
+    "#E286D3",
+    "#FF9A59",
+    "#FCCB96",
+    "#F77E48",
+    "#D34D85",
+    "#E88914",
+    "#DD72A9",
+    "#106EE2",
+    "#DA5C21",
+    "#CCB9AC",
+    "#D4266D",
+    "#F5F1FA",
+    "#FBB7B7",
+    "#A698C2",
+    "#A0A095",
+    "#DE7A38",
+    "#ECE9E6",
+    "#C1CBCA",
+    "#39445B",
+    "#9F97B8",
+    "#3030CF",
+    "#CCCCCC",
+    "#FEFEFE",
+    "#EDECEC",
+    "#E0E7D7",
+    "#B7C396",
+    "#BA9A91",
+    "#F4F4F6",
+    "#E7E7E7",
+    "#D2D2D4",
+    "#FF634A",
+    "#90D5FF",
+    "#57B9FF",
+    "#77B1D4",
+    "#517891",
+    "#FF8DA1",
+    "#DBB2B9",
+    "#8A4C57",
+    "#61212D",
+    "#FFC7D1",
+    "#66FFED",
+    "#95E082",
+    "#FFC2BA",
+    "#FF9CE9",
+    "#AD56C4",
+    "#FFB5C0",
+    "#804B53",
+    "#C2FFB5",
+    "#4B8067",
+    "#F5C8B5",
+    "#FFA294",
+    "#F1B5FF",
+    "#FFFFC5",
+    "#CEC4FF",
+    "#F4C4FF",
+    "#754480",
+    "#D3D3FF",
+    "#9D9DCC",
+    "#575799",
+    "#090933",
+    "#FFF9A3",
+    "#FFD87D",
+    "#807B3C",
+    "#B3EBF2",
+    "#85D1DB",
+    "#B6F2D1",
+    "#C9FDF2",
+    "#FFDBBB",
+    "#BADDFF",
+    "#BAFFF5",
+    "#496580",
+    "#FFB0A6",
+    "#E0B672",
+    "#CC8A6E",
+    "#FDFBD4",
+    "#BDB96A",
+    "#C1BFFF",
+    "#CF6DFC",
+    "#DAB1DA",
+    "#FFADFF",
+    "#733B73",
+    "#5E095E",
+    "#BED966",
+    "#8DD691",
+    "#2C592E",
+    "#D991AE",
+    "#D97068",
+    "#B09AD9",
+    "#CCCCFF",
+    "#8F8FBF",
+    "#FFF88F",
+    "#F7D78D",
+    "#A47DAB",
+    "#E3A1CD",
+    "#8776CC",
+    "#8A65AD",
+    "#FFC5D3",
+    "#ADFFF5",
+    "#D2FFC4",
+    "#448061",
+    "#FFA3DD",
+    "#FF8375",
+    "#ED6F3E",
+    "#DCA1A1",
+    "#FFD6D6",
+    "#825656",
+    "#3D1D1D",
+    "#FFD9D9",
+    "#9AE3C7",
+    "#84C77F",
+    "#E0AFFF",
+    "#C197DB",
+    "#795F8A",
+    "#4B2861",
+    "#F0D9FF",
+    "#E2DD9C",
+    "#A1C588",
+    "#C4D6FF",
+    "#DD68E3",
+    "#8866DE",
+    "#DEA193",
+    "#FFD3C9",
+    "#92DEDC",
+    "#8FFFB0",
+    "#FFD2B8",
+    "#E0BA8D",
+    "#DE7E7C",
+    "#88E788",
+    "#88B7E7",
+    "#E788E7",
+    "#E7B788",
+    "#D2E861",
+    "#A1FFC0",
+    "#51E8B8",
+    "#FFFFE3",
+    "#DBD4FF",
+    "#808034",
+    "#723480",
+    "#BBB791",
+    "#E4F0C0",
+    "#DFCBEB",
+    "#7A4179",
+    "#D3D3D3",
+    "#FFD5CC",
+    "#ADCCA3",
+    "#C7A3CC",
+    "#FFB27F",
+    "#807066",
+    "#80D0FF",
+    "#80FFDB",
+    "#E89EB8",
+    "#C4869C",
+    "#734E5B",
+    "#4A323B",
+    "#FFDBE8",
+    "#9FF5C3",
+    "#92D175",
+    "#FFCBBA",
+    "#FFADFB",
+    "#C779E8",
+    "#6395EE",
+    "#90B8D6",
+    "#88CFA8",
+    "#85DECB",
+    "#FF7782",
+    "#FFBDC2",
+    "#B2FFA6",
+    "#4DD69D",
+    "#98FBCB",
+    "#BFFFED",
+    "#7FCFA8",
+    "#558B71",
+    "#FAB598",
+    "#FA98AB",
+    "#547A68",
+    "#48E0CA",
+    "#6EC1D4",
+    "#89E099",
+    "#E491A6",
+    "#BF7A8C",
+    "#96384F",
+    "#450C1B",
+    "#FF7E70",
+    "#DB6EFF",
+    "#1FBF1D",
+    "#8DDCDC",
+    "#C4EDED",
+    "#FFCAAB",
+    "#E3905F",
+    "#B8E3E9",
+    "#74B6E8",
+    "#97FCE7",
+    "#7DE8AD",
+    "#A8DCAB",
+    "#F1FFBF",
+    "#91BEA2",
+    "#88A27B",
+    "#B5C7EB",
+    "#94AEE3",
+    "#94A3C0",
+    "#60697C",
+    "#9EF0FF",
+    "#A4A5F5",
+    "#8E70CF",
+    "#FFF1E7",
+    "#F0DFB9",
+    "#FFCA8A",
+    "#FFB69E",
+    "#ED80E9",
+    "#C96DC6",
+    "#784176",
+    "#4F2B4E",
+    "#FFD9FE",
+    "#C9ED5C",
+    "#80ED88",
+    "#E3827B",
+    "#A479ED",
+    "#A746D4",
+    "#FFD6D1",
+    "#E0A59D",
+    "#94716C",
+    "#57221B",
+    "#BA8E88",
+    "#A8FFB7",
+    "#6DD1C2",
+    "#FFBDA1",
+    "#EDA4DE",
+    "#E67088",
+    "#DAC5B1",
+    "#B1DAB1",
+    "#B1C5DA",
+    "#FFFFCC",
+    "#FFE6CC",
+    "#E6FFCC",
+    "#7070FF",
+    "#FFFFFF",
+    "#E5CCFF",
+    "#CCE5FF",
+    "#FFCCCC",
+    "#CCFFCC",
+    "#FFCCE6",
+    "#CCFFE6",
+    "#F7E6CA",
+    "#CAF7E6",
+    "#E6CAF7",
+    "#CAF7D0",
+    "#CADBF7",
+    "#F7CAF1",
+    "#84AB7D",
+    "#9BAB7D",
+    "#7DAB8D",
+    "#885D90",
+    "#BDA1C2",
+    "#AB7D9B",
+    "#8D7DAB",
+    "#AB8D7D",
+    "#7D9BAB",
+    "#C5FFF1",
+    "#C5FFD4",
+    "#C5F0FF",
+    "#FF6B8E",
+    "#FFD4C5",
+    "#FFC5F0",
+    "#D3FFC5",
+    "#C5D3FF",
+    "#F0FFC5",
+    "#D4C5FF",
+    "#A1DCDC",
+    "#A1DCBF",
+    "#A1BEDC",
+    "#C76969",
+    "#F1D9D9",
+    "#DCBFA1",
+    "#DCA1BE",
+    "#A1DCA1",
+    "#A1A1DC",
+    "#BFDCA1",
+    "#BEA1DC",
+    "#FFD3AC",
+    "#ACD8FF",
+    "#FFFCAC",
+    "#FFACAE",
+    "#CEFFAF",
+    "#F6FFAF",
+    "#AFFFB8",
+    "#BF59FF",
+    "#FFAFF6",
+    "#B8AFFF",
+    "#FFE0AF",
+    "#AFFFE0",
+    "#FFB8AF",
+    "#AFF6FF",
+    "#93D0DE",
+    "#E3F1FF",
+    "#F1E3FF",
+    "#F1FFE3",
+    "#FFF1E3",
+    "#E3FFFF",
+    "#FFE3FF",
+    "#E3FFF1",
+    "#E3E3FF",
+    "#FFE3F1",
+    "#7FFFF2",
+    "#7F8CFF",
+    "#9EE8CE",
+    "#9EE8A9",
+    "#9EDDE8",
+    "#D95F8A",
+    "#F7DDE6",
+    "#E8A99E",
+    "#E89EDD",
+    "#B8E89E",
+    "#9EB8E8",
+    "#DDE89E",
+    "#A99EE8",
+    "#81D8D0",
+    "#D88189",
+    "#D881B4",
+    "#D8A581",
+    "#A581D8",
+    "#B4D881",
+    "#66F1C2",
+    "#F16695",
+    "#66DBF1",
+    "#66F17D",
+    "#77FFB0",
+    "#77C6FF",
+    "#82FF77",
+    "#7782FF",
+    "#FB98C8",
+    "#FB98FA",
+    "#FB9998",
+    "#98F9FB",
+    "#98FB9A",
+    "#9A98FB",
+    "#FAFB98",
+    "#91E4CF",
+    "#91E4A6",
+    "#91D0E4",
+    "#E4A591",
+    "#E491D0",
+    "#DC8D8D",
+    "#DC8DB5",
+    "#DCB58D",
+    "#56CBCB",
+    "#DC8DDC",
+    "#DCDC8D",
+    "#E0CD95",
+    "#CFB25B",
+    "#F1E8CF",
+    "#E9BEB8",
+    "#E9B8CA",
+    "#E9D7B8",
+    "#B8CAE9",
+    "#B8E9D7",
+    "#E9B8E3",
+    "#E3E9B8",
+    "#D7B8E9",
+    "#CAE9B8",
+    "#FF46A2",
+    "#46FF46",
+    "#46FFFF",
+    "#DCA8D9",
+    "#C5A8DC",
+    "#DCA8BF",
+    "#71C676",
+    "#DFF2E0"
+  ]
+}

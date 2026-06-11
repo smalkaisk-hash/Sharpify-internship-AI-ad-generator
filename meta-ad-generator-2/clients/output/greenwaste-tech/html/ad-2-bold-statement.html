@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1D3A2C; --secondary: #0D1411; --accent: #4CAF50; --accent-bright: #B4E061;
+      --bg: #F4F1E8; --text: #F4F1E8;
+      --fh: 'Fraunces', 'Georgia', serif; --fb: 'Ubuntu', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; margin: 0; }
+    .ad {
+      position: relative; width: 1080px; height: 1080px; overflow: hidden;
+      background:
+        radial-gradient(ellipse at 80% 120%, rgba(180,224,97,0.15) 0%, rgba(180,224,97,0) 55%),
+        linear-gradient(155deg, #1D3A2C 0%, #0E1F17 55%, #0a1510 100%);
+      color: var(--text);
+      display: flex; flex-direction: column;
+    }
+    .top { padding: 44px 56px 0; display: flex; justify-content: space-between; align-items: center; z-index: 5; }
+    .wm { font-family: var(--fh); font-size: 30px; font-weight: 500; letter-spacing: -0.01em; color: var(--text); }
+    .wm .dot { color: var(--accent-bright); }
+    .tag { font-family: var(--fb); font-size: 12px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(244,241,232,0.62); }
+
+    .manifesto { flex: 1; padding: 80px 64px 20px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 5; }
+    .promo-chip { display: inline-flex; align-items: center; gap: 14px; font-family: var(--fb); font-size: 13px; font-weight: 700; color: var(--secondary); letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 42px; padding: 12px 24px; background: var(--accent-bright); border-radius: 40px; width: fit-content; }
+    .promo-chip .pill { background: var(--secondary); color: var(--accent-bright); padding: 4px 10px; border-radius: 20px; letter-spacing: 0.05em; }
+
+    .statement { font-family: var(--fh); font-size: 260px; font-weight: 500; line-height: 0.88; letter-spacing: -0.055em; }
+    .line-1 { color: var(--text); display: block; }
+    .line-1 .zero { color: var(--accent-bright); font-style: italic; }
+    .line-2 { font-family: var(--fh); font-size: 96px; font-weight: 500; line-height: 1; letter-spacing: -0.035em; color: rgba(244,241,232,0.62); font-style: italic; margin-top: 16px; display: block; }
+
+    .manifesto-sub { font-family: var(--fb); font-size: 22px; font-weight: 400; line-height: 1.5; color: rgba(244,241,232,0.72); margin-top: 44px; max-width: 700px; }
+
+    .footer-row { padding: 24px 56px 44px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(244,241,232,0.1); z-index: 5; }
+    .footer-sig { font-family: var(--fb); font-size: 14px; color: rgba(244,241,232,0.58); letter-spacing: 0.12em; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; height: 78px; min-width: 260px; padding: 0 42px; background: var(--accent-bright); color: var(--secondary); font-family: var(--fb); font-weight: 700; font-size: 18px; letter-spacing: 0.22em; text-transform: uppercase; border-radius: 48px; }
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="top">
+      <div class="wm">Greenwaste<span class="dot">.</span>Tech</div>
+      <div class="tag">Vienīgais šāda veida LV</div>
+    </div>
+
+    <div class="manifesto">
+      <div class="promo-chip"><span class="pill">-10%</span> Līdz 1. februārim</div>
+      <div class="statement">
+        <span class="line-1"><span class="zero">0€</span>.</span>
+        <span class="line-2">Uz mūžu.</span>
+      </div>
+      <p class="manifesto-sub">Nulles ekspluatācija. Piecu gadu garantija. Sertificēts EN12566-3 + CE. Nav jāsūknē aka, nav papildus baktēriju, nav mēneša rēķinu.</p>
+    </div>
+
+    <div class="footer-row">
+      <div class="footer-sig">greenwaste-tech.com · Bioloģiskā kanalizācija</div>
+      <div class="cta">Pieteikties</div>
+    </div>
+  </div>
+</body>
+</html>

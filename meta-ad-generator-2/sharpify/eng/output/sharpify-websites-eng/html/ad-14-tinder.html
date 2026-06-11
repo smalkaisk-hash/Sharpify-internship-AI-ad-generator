@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(170deg, #111111 0%, #0a0a0a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+  }
+
+  .swipe-label-top {
+    font-size: 20px;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .cards-stack {
+    position: relative;
+    width: 680px;
+    height: 700px;
+  }
+
+  /* Background rejected cards */
+  .card-bg {
+    position: absolute;
+    width: 620px;
+    border-radius: 24px;
+    padding: 36px;
+    background: #1c1c1e;
+    border: 2px solid #333;
+    transform-origin: bottom center;
+  }
+
+  .card-bg.c1 {
+    top: 30px;
+    left: 80px;
+    transform: rotate(-12deg);
+    opacity: 0.35;
+    z-index: 1;
+  }
+
+  .card-bg.c2 {
+    top: 15px;
+    left: 50px;
+    transform: rotate(-6deg);
+    opacity: 0.5;
+    z-index: 2;
+  }
+
+  .card-bg .nope {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 42px;
+    font-weight: 900;
+    color: #ef4444;
+    border: 4px solid #ef4444;
+    padding: 6px 20px;
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    letter-spacing: 3px;
+  }
+
+  .card-bg .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d1d5db;
+    margin-top: 80px;
+  }
+
+  .card-bg .card-detail {
+    font-size: 20px;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+
+  /* Main Sharpify card */
+  .card-main {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 620px;
+    border-radius: 24px;
+    background: linear-gradient(160deg, #1a1508 0%, #1a1a1a 40%, #0f1a0f 100%);
+    border: 3px solid #F59E0B;
+    padding: 40px;
+    z-index: 10;
+    box-shadow: 0 20px 60px rgba(245, 158, 11, 0.15);
+  }
+
+  .card-main .match {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 42px;
+    font-weight: 900;
+    color: #22c55e;
+    border: 4px solid #22c55e;
+    padding: 6px 20px;
+    border-radius: 10px;
+    transform: rotate(12deg);
+    letter-spacing: 3px;
+  }
+
+  .card-main .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .card-main .logo-icon {
+    width: 56px;
+    height: 56px;
+    background: #F59E0B;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #0a0a0a;
+  }
+
+  .card-main .logo-name {
+    font-size: 36px;
+    font-weight: 800;
+    color: #F59E0B;
+  }
+
+  .card-main .tagline {
+    font-size: 26px;
+    color: #d1d5db;
+    margin-bottom: 28px;
+    line-height: 1.4;
+  }
+
+  .card-main .features {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+
+  .card-main .features li {
+    font-size: 24px;
+    color: #e5e7eb;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card-main .features li .icon {
+    color: #22c55e;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .card-main .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card-main .old-price {
+    font-size: 28px;
+    color: #6b7280;
+    text-decoration: line-through;
+  }
+
+  .card-main .new-price {
+    font-size: 56px;
+    font-weight: 900;
+    color: #22c55e;
+  }
+
+  .card-main .reviews {
+    font-size: 20px;
+    color: #9ca3af;
+  }
+
+  .card-main .reviews .stars {
+    color: #F59E0B;
+    letter-spacing: 2px;
+  }
+
+  /* Swipe buttons */
+  .swipe-buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 24px;
+    z-index: 20;
+  }
+
+  .swipe-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+  }
+
+  .swipe-btn.no {
+    border: 3px solid #ef4444;
+    color: #ef4444;
+    background: transparent;
+  }
+
+  .swipe-btn.yes {
+    border: 3px solid #22c55e;
+    color: #22c55e;
+    background: transparent;
+  }
+
+  .swipe-btn.super {
+    border: 3px solid #3B82F6;
+    color: #3B82F6;
+    background: transparent;
+    font-size: 28px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="swipe-label-top">Finding the right website builder</div>
+
+    <div class="cards-stack">
+      <div class="card-bg c1">
+        <div class="nope">NOPE</div>
+        <div class="card-title">Web Design Agency</div>
+        <div class="card-detail">€2,500+ &middot; 6-8 weeks &middot; Endless meetings</div>
+      </div>
+
+      <div class="card-bg c2">
+        <div class="nope">NOPE</div>
+        <div class="card-title">DIY Website Builder</div>
+        <div class="card-detail">€16/mo &middot; You do all the work &middot; Looks generic</div>
+      </div>
+
+      <div class="card-main">
+        <div class="match">MATCH</div>
+
+        <div class="logo-row">
+          <div class="logo-icon">S</div>
+          <div class="logo-name">Sharpify</div>
+        </div>
+
+        <div class="tagline">Professional website for your business.<br>Built by a real team. Ready in 48 hours.</div>
+
+        <ul class="features">
+          <li><span class="icon">&#10003;</span> Custom design, not a template</li>
+          <li><span class="icon">&#10003;</span> Mobile-ready + SEO optimized</li>
+          <li><span class="icon">&#10003;</span> Contact forms + WhatsApp</li>
+          <li><span class="icon">&#10003;</span> 2,300+ businesses in 26 countries</li>
+        </ul>
+
+        <div class="price-row">
+          <div class="old-price">€299</div>
+          <div class="new-price">€59</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="swipe-buttons">
+      <div class="swipe-btn no">&#10007;</div>
+      <div class="swipe-btn super">&#9733;</div>
+      <div class="swipe-btn yes">&#9829;</div>
+    </div>
+
+  </div>
+</body>
+</html>

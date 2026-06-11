@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; }
+.ad { width: 1080px; height: 1080px; position: relative; }
+.base {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 700px 600px at 80% 28%, rgba(201,146,122,0.13) 0%, transparent 56%),
+    radial-gradient(ellipse 400px 350px at 8% 88%, rgba(201,146,122,0.06) 0%, transparent 52%),
+    #13080d;
+}
+.noise {
+  position: absolute; inset: 0; opacity: 0.038;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.photo { position: absolute; inset: 0; width: 1080px; height: 1080px; object-fit: cover; object-position: 58% top; }
+.overlay-l {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(19,8,13,0.97) 0%, rgba(19,8,13,0.90) 26%, rgba(19,8,13,0.62) 50%, rgba(19,8,13,0.28) 70%, rgba(19,8,13,0.20) 100%);
+}
+.overlay-b { position: absolute; inset: 0; background: linear-gradient(to top, rgba(19,8,13,0.80) 0%, transparent 30%); }
+.content { position: absolute; inset: 0; padding: 62px 70px 160px; display: flex; flex-direction: column; justify-content: space-between; }
+.top-bar { display: flex; align-items: flex-start; justify-content: space-between; }
+.logo { height: 25px; width: auto; opacity: 0.88; filter: brightness(1.05); }
+.corner-mark { width: 24px; height: 24px; border-top: 2px solid rgba(201,146,122,0.40); border-right: 2px solid rgba(201,146,122,0.40); flex-shrink: 0; }
+.text-zone { max-width: 500px; }
+.eyebrow-rule { width: 40px; height: 1.5px; background: #c9927a; margin-bottom: 18px; }
+.on-image {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 82px; font-weight: 600; line-height: 1.0; color: #f5ede8;
+  margin-bottom: 24px; letter-spacing: -0.5px;
+}
+.on-image em { color: #c9927a; font-style: italic; font-weight: 300; }
+.base-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px; font-weight: 300; line-height: 1.72;
+  color: rgba(245,237,232,0.64); margin-bottom: 26px; max-width: 420px;
+}
+.bullets { list-style: none; margin-bottom: 34px; }
+.bullets li {
+  font-family: 'Montserrat', sans-serif; font-size: 13.5px; font-weight: 400;
+  color: rgba(245,237,232,0.76); padding: 9px 0 9px 20px; position: relative;
+  border-bottom: 1px solid rgba(201,146,122,0.14);
+}
+.bullets li:first-child { border-top: 1px solid rgba(201,146,122,0.14); }
+.bullets li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 5px; height: 5px; border-radius: 50%; background: #c9927a; }
+.rule-line { width: 380px; height: 1px; background: linear-gradient(to right, rgba(201,146,122,0.28), transparent); margin-bottom: 24px; }
+.cta-btn {
+  display: inline-block; background: #c9927a; color: #13080d;
+  padding: 20px 44px; font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  border-radius: 2px; box-shadow: 0 8px 36px rgba(201,146,122,0.42), 0 2px 10px rgba(0,0,0,0.55);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="base"></div>
+  <div class="noise"></div>
+  <img class="photo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/mariposa/assets/Beautiful-Woman-11-scaled.webp" alt="">
+  <div class="overlay-l"></div>
+  <div class="overlay-b"></div>
+  <div class="content">
+    <div class="top-bar">
+      <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/mariposa/assets/logo-1-Logo_balts-3-scaled.png" alt="Mariposa">
+      <div class="corner-mark"></div>
+    </div>
+    <div class="text-zone">
+      <div class="eyebrow-rule"></div>
+      <h1 class="on-image">Bezmaksas konsultācija<br><em>tagad</em></h1>
+      <p class="base-text">Pirmā vizīte ir bez maksas, 40€ vērtībā. Tikai Mariposa Rīgā apvieno IPL, RF un lāzeru vienā protokolā. Piesakies un redzi atšķirību.</p>
+      <ul class="bullets">
+        <li>IPL, RF mikroadatas un lāzers vienā</li>
+        <li>Bezmaksas konsultācija, vērtība 40€</li>
+        <li>Bez sāpēm, minimāla atveseļošanās</li>
+      </ul>
+      <div class="rule-line"></div>
+      <a class="cta-btn">Piesakies bezmaksas konsultācijai</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

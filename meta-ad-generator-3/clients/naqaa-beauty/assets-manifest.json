@@ -1,0 +1,790 @@
+{
+  "website": "https://www.naqaa-beauty.com/",
+  "scraped_at": "2026-05-08T10:20:29.958Z",
+  "assets": [
+    {
+      "category": "logo",
+      "filename": "logo-1-naqaa_beauty_horizontal.png",
+      "alt": "naqaa_beauty_horizontal.png",
+      "width": 343,
+      "height": 82,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_d46825045d2244a381e9e29a7ab6618a~mv2.png/v1/fill/w_343,h_82,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/naqaa_beauty_horizontal.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-1-ziemassvetku_baneris.jpg",
+      "alt": "ziemassvetku_baneris.jpg",
+      "width": 1440,
+      "height": 278,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_1f55be5585f24cca8ee4232d8f7f9a58~mv2.jpg/v1/fill/w_1440,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ziemassvetku_baneris.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-2-IMG_9692_edited_edited.jpg",
+      "alt": "IMG_9692_edited_edited.jpg",
+      "width": 147,
+      "height": 79,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_089740c5017143f78cfdc89bb0da5a70~mv2.jpg/v1/fill/w_147,h_79,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/IMG_9692_edited_edited.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-3-Naqaa_Beauty_Water_Filters.jpg",
+      "alt": "Naqaa_Beauty_Water_Splash",
+      "width": 1382,
+      "height": 607,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_2d7a31fd75ed43369ee1c0900d01c860~mv2.jpg/v1/fill/w_1382,h_607,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Naqaa_Beauty_Water_Filters.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-4-6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-5-6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-6-6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png/v1/fill/w_227,h_303,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-7-6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png/v1/fill/w_227,h_303,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-8-ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-9-ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-10-ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-11-ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-12-ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-13-ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-14-ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-15-ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-16-ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-17-ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-18-ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg",
+      "alt": "",
+      "width": 227,
+      "height": 303,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-19-ae0cc2_aa4f2698727c4ae59961cf70a95706c3~mv2.jpg",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_aa4f2698727c4ae59961cf70a95706c3~mv2.jpg/v1/fit/w_960,h_1278,q_90,enc_avif,quality_auto/ae0cc2_aa4f2698727c4ae59961cf70a95706c3~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-20-ae0cc2_0b2db7a092fb4269916335b336953c69~mv2.jpg",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_0b2db7a092fb4269916335b336953c69~mv2.jpg/v1/fill/w_960,h_1278,fp_0.52_0.41,q_90,enc_avif,quality_auto/ae0cc2_0b2db7a092fb4269916335b336953c69~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-21-ae0cc2_dc9493586f044233b4216c33e16bd4e9~mv2.jpg",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_dc9493586f044233b4216c33e16bd4e9~mv2.jpg/v1/fill/w_480,h_640,fp_0.44_0.47,q_90,enc_avif,quality_auto/ae0cc2_dc9493586f044233b4216c33e16bd4e9~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-22-All_Products_1080x1350.jpg",
+      "alt": "Naqaa_Beauty_Filters",
+      "width": 676,
+      "height": 602,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_392ab7ae3ca04d399586cd0bb65332d6~mv2.jpg/v1/fill/w_676,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/All_Products_1080x1350.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-23-670817326_2033253400898905_619431215132948140_n.jpg",
+      "alt": "Aprīļa īpašie komplekti sadarbībā ar Vitaker.\nKvalitāte, kas rūpējas par tavu skaistumu! \nĪpaša cena tikai šomēnes! 🛁🫧✨\n\n#tīrsūdens #adaskopsana #matukopsana #skaistumarituals #latvijassievietes",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/670817326_2033253400898905_619431215132948140_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=x5cBVJ84me8Q7kNvwG0AcSK&_nc_oc=Adpc88TfnQ_FlGWZfsD6Vr3RIbVf2JfGWKXco1m-U90X6K0cASPizwvrMcRAbOENdQI&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHwGC0HsUZkoqrEoG1bTwn1sJ4jAUeghmu46zf1FkYd3mk-crsrTtHIIEJVVoOYUxL3gF-duG4b&oh=00_Af6vCNBwCwfQGe_RbXVPd8AbLbz_qpbi-rIBDRAEDK0gsw&oe=6A037F54"
+    },
+    {
+      "category": "image",
+      "filename": "image-24-671587960_1696115005140196_3897501840608986431_n.jpg",
+      "alt": "Aprīļa īpašie komplekti sadarbībā ar Vitaker.\nKvalitāte, kas rūpējas par tavu skaistumu! \nĪpaša cena tikai šomēnes! 🛁🫧✨\n\n#tīrsūdens #adaskopsana #matukopsana #skaistumarituals #latvijassievietes",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/671587960_1696115005140196_3897501840608986431_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ES9YFeNL35cQ7kNvwF30mPO&_nc_oc=AdqiqcmWZgGM2o3PJXNCznhQtxjgmDlfrkbaBGLu3KdSsU5-vGhhOdbdOpTq-cPFIwU&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHu7Sn05FciAPcNyTYZPqzLNJW1QEZt1iikMdxBiUWc07iqCBOdccPf_FcYUG48G-jweSyxtWI8&oh=00_Af5vX8P-K-1olv7c8Fz7xTs6ew_qmnKcypnYwL0jmQ2rjw&oe=6A037397"
+    },
+    {
+      "category": "image",
+      "filename": "image-25-662144602_18187794037371980_4675656556094741251_n.jpg",
+      "alt": "Tava āda jūt ūdeni 💦\n\nVai Tu zini, ko patiesībā satur Tavs ūdens?\nTas, ar ko Tu mazgā ādu katru dienu, var to gan kopt, gan sausināt. \n\nCiets ūdens un piemaisījumi bieži izraisa:\n•sausumu\n•jutīgumu\n•diskomfortu\n\nTāpēc arvien vairāk cilvēku izvēlas filtrētu ūdeni 💧\njo atšķirību var just jau pēc pirmajām reizēm.🛁\n\n#latvianbrand\n#latvijassievietes\n#rigabeauty\n#latvijasskaistums\n#dailyselfcare",
+      "width": 1024,
+      "height": 1024,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/662144602_18187794037371980_4675656556094741251_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yH1_FL1l-AsQ7kNvwFUeThT&_nc_oc=Ado8SAGaRo4FyDbQmGozfrNKznrsfkfvKc2JVu-jwWHZgKzYbgRCtmc7IDk5b2hDc3w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQG-jiY4u4NmOuDj4ME8SvURcD-v_nh-p2qtHaVhuAxznDRSyDVseKENVYop8yZ0kUAn1vHCL_PL&oh=00_Af6bTarPLFMVTwAWdrLAd_4slpiB3Vab0l2QfXGRW4R_yA&oe=6A0399CD"
+    },
+    {
+      "category": "image",
+      "filename": "image-26-661803804_18187601431371980_7399890687828714145_n.jpg",
+      "alt": "Pavasaris ir klāt 🌿🥚\n\nUn šogad ligzdā, ne tikai olas…\nbet arī Tava jaunā dušas sajūta 💧\n\n✔️ Tīrāks ūdens\n✔️ Maigāka āda\n✔️ Ikdienas komforts, ko Tu sajutīsi\n\nŠie nav tikai filtri, \ntā ir sajūta, pie kuras pierod ✨\n\n#pavasaris #lieldienas #springvibes #springglow #freshstart",
+      "width": 1440,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/661803804_18187601431371980_7399890687828714145_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=OiaH5X9q_RwQ7kNvwHzzxBg&_nc_oc=AdoTQLps4j7iTLcSj-CbhqMGnTh1XZs9aOFXOrGgbWkjQKm_jPTT0hHw0b83rJobvrA&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQEKLmAjVwMAWuJ-J9EUKQJ1Fdwop1OKl1PYrVVcw33hs8wFonRYFkSiHyK9ZiHbBEYqs3g_kB82&oh=00_Af6z5uQNNNL42mWGC_RCsVnyZntVx1EdP9AoPO7viEWaXQ&oe=6A0372CC"
+    },
+    {
+      "category": "image",
+      "filename": "image-27-657652270_18187510213371980_2765086922180180520_n.jpg",
+      "alt": "Pavasaris sākas ar sajūtu 🌸\n\nMaigs aromāts,\ntīrāks ūdens,\nun āda, kas jūtas… vienkārši labāk 💧\n\nPrecious Rose filtrs - Tavai ikdienas labsajūtai 🌹\n\n  #skaistums #softwater #selfcare #pavasaris #glowingskin",
+      "width": 1440,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/657652270_18187510213371980_2765086922180180520_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=F145L2ndmhYQ7kNvwEfAFSn&_nc_oc=Ado5OLCcsBa15TekXhdft5FxXVa3HCZEV53IMJIX8-oDvhjZ5aed-8IqgWOjoG11MTQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQGq7eCLIE6UAicg_Y1c9m5BLiE1FSiWDW0MV6r4rpcnjnutl0hdBRk2CxUA_RLvT_eFOTWXPZhh&oh=00_Af7WA6fVARIbTBQJjJ98Qzt-S9HenQPdW_UYbyzvmfrY8A&oe=6A038E2D"
+    },
+    {
+      "category": "image",
+      "filename": "image-28-659018165_4529405987337470_3004174380387962825_n.jpg",
+      "alt": "Tīrs ūdens.\nMaiga āda.\nIkdienas komforts 💧\n\nNaqaa Beauty dušas filtri rūpes, kas sākas dušā 🐣\n\n👉 Atrodi savu filtru\n👉 Sajūti atšķirību jau pirmajā reizē\n\n#naqabeauty #udensfiltrs #skincarelifestyle #glowingskin #latvijassievietes",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/659018165_4529405987337470_3004174380387962825_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=IBaTkFeYzeAQ7kNvwHrg6Nx&_nc_oc=AdqUJxXfe1YkDhr3J8H1hcqw-p2r34SjcOqEjSCVw4ocO1iq9Xs50-W_3IQUEtvzCL8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQE4lbLCby36CrLV5d--_KepMXXxjJ6Jl2NNeazvAWZQdTMWxLfevwSZNC5vUL3ivaOwRMguvl5w&oh=00_Af5khoydqN7QkxrJ4Rss_3ZZ3pRcyoMIIwY7qW68M62PhQ&oe=6A037506"
+    },
+    {
+      "category": "image",
+      "filename": "image-29-658379673_18187257076371980_1362030512041061998_n.jpg",
+      "alt": "Jauns sākums… pat ūdenim 🐣\n\nPavasaris ir par svaigumu, tīrību un rūpēm par sevi.\n\n💧 Naqaa Beauty filtri — mazs solis, liela atšķirība.\n\nNaqaa Beauty filtri palīdz:\n✔️ mīkstināt ūdeni\n✔️ uzlabot ādas sajūtu\n✔️ saglabāt matu dabisko spīdumu\n\n#naqaaBeauty #udensfiltrs #skincarelifestyle #haircaretips #latvianbrand tirsudens beautyroutine wellnesslatvia selfcareritual glowfromwithin",
+      "width": 1440,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/658379673_18187257076371980_1362030512041061998_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p_mvyQ4cID4Q7kNvwHml3S8&_nc_oc=Adr0opJL850MzWltMSsMGh6JMvrXM3R_aisKVh7UuG8ryrpeldgzU0nuA3GFuf-_QCg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFuSrN8V4wXjLiRwjJsx-ZanoSkgGVKon0xxmQZsv5YBaGy74Itt3MlslqouJ9suD2VblYfoerb&oh=00_Af4OJb_jAmVsaQRHEEL5CbQENYGtToBoZ88QvOqSdL_50A&oe=6A0383A5"
+    },
+    {
+      "category": "image",
+      "filename": "image-30-658401068_2759675337743531_5353080292277581468_n.jpg",
+      "alt": "Vienmēr ir īstais laiks parūpēties par savu ūdeni\n\n 🌹Roze → vakara relaks\n\t🥭Mango → enerģija no rīta\n\t💜Lavanda → miers\n\t🌳Amberwood → spa vibe\n#naqaabeauty #spa  #selfcare  #waterfilter #showerfilter",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/658401068_2759675337743531_5353080292277581468_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=CjBGZUKQR_0Q7kNvwGRKOsf&_nc_oc=AdomBfRF3IqK-l7i1qKF7TFhEDca2ZbA2uyvhahZ5bJzaCuvZ8xWvCVia1P4uRp9WtU&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQEbbKn3CDWoGw1ANO0a3R49poyapaTAuXeShp6ZVLBsmZCxwPiELOxGItgDva0wOhH7L4i1Ev43&oh=00_Af6dRYvDcK145kul-M19vyojY1rPRQaJgH4AxHdlQCfKSw&oe=6A03A0DB"
+    },
+    {
+      "category": "image",
+      "filename": "image-31-652724352_4385190385056304_5749739665761052434_n.jpg",
+      "alt": "3 lietas, kas pārvērš dušu par spa 🛁🧖‍♀️\n\n1. labs ūdens\n2. aromāts\n3. klusums, 10 minūtes sev\n\nNaqaa Beauty filtri dara pirmās divas lietas un liek radīt laiku Sev ❤️🌹🛁\n\n#naqaabeauty #selfcare #ritual #woman #healtyskincare",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/652724352_4385190385056304_5749739665761052434_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=w3PUfiwJePYQ7kNvwH4IZrG&_nc_oc=AdqG3-c9qqp59GXi1qJ0-EcARJQXlQXyFck8KfMH00ipLvGmdk2hq6xR6IESM5Q7o-k&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFxVuAFpGUf7GBwobIatVYe_CPB5GBoWkjeYQ8KWqr00KSMdfDE31K8to5btKfqX1ldKFN4jmqX&oh=00_Af7Hr1yZTFuTqbSJWmyo4mJUeNBMQjydBhmkgXBRCFm7Yw&oe=6A03A3A9"
+    },
+    {
+      "category": "image",
+      "filename": "image-32-649236486_18184305583371980_5671380593234990163_n.jpg",
+      "alt": "Ūdens ir skaistumkopšanas produkts, ko Tu lieto katru dienu 💦🫧🛁\n\nJa ūdens ir kaļķains vai satur rūsu un citus piemaisījumus, tas var ietekmēt ādu vairāk nekā šķiet:\n💦 sausāka\n💦 ātrāk taukaini vai blāvi mati\n\nTas nenozīmē, ka problēma vienmēr ir kosmētikā.\n\nDažreiz tas ir vienkārši ūdens.\n\nDušas filtrs palīdz samazināt piemaisījumus un padara ūdeni maigāku ādai un matiem.\n\nRezultāts – patīkamāka sajūta pēc dušas, mitrināta āda un mati. \n\nJo skaista āda sākas ne tikai ar krēmiem, bet arī ar ūdeni.\n\nNaqaa Beauty filtri 🛁",
+      "width": 640,
+      "height": 853,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/649236486_18184305583371980_5671380593234990163_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=MOGTZqb4mY4Q7kNvwGRwOXe&_nc_oc=AdphMYUp9S0pZd7Xn-A4VbguU2ldsBJWZvEOGHAd6nk2FxFktisfO9H5_4gAgEKGFfI&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQE4jw4pMsY2iQcunwHnMMrqQkyuWcil8At8fw9AIq7XxXLSDXVL8NsYk_OleaOKRn3Qr-zmYSh3&oh=00_Af6F63mlMzwyHQoh-jDIOcckvYskoutuJxmkTFfKR56-TA&oe=6A0381B5"
+    },
+    {
+      "category": "image",
+      "filename": "image-33-642503805_1426588925833028_7596059380516688070_n.jpg",
+      "alt": "",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/642503805_1426588925833028_7596059380516688070_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4KvaD-eamKQQ7kNvwHj5Wwu&_nc_oc=AdoR3v2TQtw-XjQFreRQo1XpwzQBtoOCht-z6caHhLUaJt8oCzePIfGrbNHhbgu88wM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQE8wyPQfKIS5iomI9uJy9gaZuxfIgXk5BRDIKbZhb7Lxo6mvss6JrdTTTZHYOjJg1OZXMSbz9W2&oh=00_Af66CSPJhrs7Dl3rQND6WKCdES5TOSSiG_8wFgPJyNMgRQ&oe=6A0393F2"
+    },
+    {
+      "category": "image",
+      "filename": "image-34-643041262_18183093382371980_2318727192867067002_n.jpg",
+      "alt": "Pilns ūdens balanss mājās 💦\n \nIzvēlies jebkurus 2 vitaminizētos filtrus un dāvanā saņem Clear+ filtru! 💝\n\nSieviešu dienas komplekts ierobežotā daudzumā! \n\nZiedi @florexziedubaze 🌷\n\n#water #shower #happywomensday❤️ #estonia #lithuania",
+      "width": 1440,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/643041262_18183093382371980_2318727192867067002_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=v2XtGGhzeWcQ7kNvwFaxsw6&_nc_oc=Adr3eMHsb0hqWjonlKvDbjcLSs9ouBubQaj_bqy3s5dYfwwpQRWp1UsLYFkrrM3pJXk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQGHYNcllYDMT1XCVnxit76EHgrRw_PNUvXEolyFNTw9wa873sDTLdENRhY7RIvsCgrODQLyy99C&oh=00_Af7H4eAt3IM6JguECS2sCgsXySIBj4eWKRlLOMxqYLBgww&oe=6A039C24"
+    },
+    {
+      "category": "image",
+      "filename": "image-35-642027868_18182976892371980_4284410398913072059_n.jpg",
+      "alt": "Sieviete rūpējas par visiem.\nŠoreiz parūpēsimies par viņu! 👑🌷\n\nFiltri, kas mīkstina ūdeni.\nAromāti, kas rada SPA sajūtu mājās.\n\n\t8.marta īpašais komplekts jau pieejams pavisam drīz! Seko līdzi! 🌷🛁\n\n#8marts #sieviete #ūdensfiltri #spa #duša\n\nZiedi @florexziedubaze 🌷❤️",
+      "width": 1440,
+      "height": 1080,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/642027868_18182976892371980_4284410398913072059_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RhUZjqDwFzsQ7kNvwGBthK_&_nc_oc=AdpieXTQJmx23HHjcF_o-zDk6PP0ZhXyAjWUsLHeD7La0NQVIFpSYER56ImwAZh9jLw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQEmtSUoeRrCE3pzKCBmBi0Qjv_ZVJeFlfm-Jhv0KurPdgdR-9Jl9_jmAmO867TK8v1b4-r3kgcb&oh=00_Af7-S9O0GWBK1uwVvQbN1kUidO2vtY6UMxi2lzm_Pw6BpQ&oe=6A03A3A0"
+    },
+    {
+      "category": "image",
+      "filename": "image-36-631493112_18181439545371980_6445123573058067432_n.jpg",
+      "alt": "💗 Valentīndienas dāvana, kas paliek arī pēc 14. februāra.\n\nNe tikai skaista.\nBet arī praktiska.\nUn patiesi sajūtama katru dienu. 🚿✨\n\n🌹 Rožu dušas filtrs + dušas klausule\n– tīrāks ūdens\n– maigāka āda\n– patīkamāka dušas sajūta\n\n🎁 Valentīndienas komplekts\n💌 ar kodu LOVE20\n–20% atlaide tikai rožu komplektam\n\n✨ komplektā:\n• rožu aromāta ziepes\n• skaists, gatavs iepakojums dāvanai\n\nRozes, kas nenovīst. Sajūtas, kas saglabājas vēl ilgi.\n\n👉 Pieejams ierobežotā daudzumā",
+      "width": 1024,
+      "height": 1365,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/631493112_18181439545371980_6445123573058067432_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=11ZsS-MTRA0Q7kNvwHCvjYn&_nc_oc=Ado0QM_64oNFxPJfSeNhMI_Xe4DLjLsU8p2NS38OX5FqqqRLW4oqL_54TIwJa17gntI&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFlM_mlt9jGqXc9CkN8tTT1kRYlzMqGEI5leouMfo-xKeYgTG6Wi0hp9lxR_G4p3KLRWcxmh0zK&oh=00_Af6EvxTdgFj-f-01jPGPqDoOGby9xVa2DOY018KMr18dRA&oe=6A03923B"
+    },
+    {
+      "category": "image",
+      "filename": "image-37-603917909_18176218258371980_3541188458902944912_n.jpg",
+      "alt": "Tīrs ūdens nav greznība! \nTas ir pamats skaistai ādai un veseliem matiem.\n4 filtri. \nReāls rezultāts jau no pirmajām lietošanas reizēm! \n\n#naqqabeauty #water #showerfilter #beautifulskin  #healthyhair",
+      "width": 1365,
+      "height": 1820,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/603917909_18176218258371980_3541188458902944912_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8rEK8KMIXi4Q7kNvwG6Y1f7&_nc_oc=AdrcSqKJ7h7aT9q6JsobuYIb9MVksx-M9W5-lMrBZObxt34qnjQWEcShYxio_V40Q2c&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFe1J0BtaejGIF84-krV7URYL5kIhT1z1IGd5JB7uYqfXSSZG0OCE6eqI3BS7uZmFM4JOQhty6g&oh=00_Af6i757L0tNotTmb0ZVbFBH4UMkb9lkIe6WwCCe1cmKI7Q&oe=6A0392A9"
+    },
+    {
+      "category": "image",
+      "filename": "image-38-583506823_18173078881371980_7692634904136615498_n.jpg",
+      "alt": "Jaunais NAQAA Beauty dušas filtru dizains ir klāt — tīras līnijas, luksusa sajūta un aromāti, kas padara ikdienas dušu par rituālu.🛁🫧\n\nFiltrs attīra ūdeni, mīkstina to un piepilda ar vitamīniem, lai āda un mati pēc dušas būtu gludi, mitrināti un aizsargāti.\n\nIzvēlies savu aromātu un pacel dušas pieredzi citā līmenī.🛁🥭🌹💜🤎\n\n#NAKVABeauty #ShowerFilter #VitaminFilter #LuxuryBath #HomeSpa #SkincareRoutine #HairCareRoutine #WellnessDaily #Aromatherapy #SelfCareTime #BeautyEssentials #cleanbeauty #tallin #kepinskihotel",
+      "width": 1440,
+      "height": 1440,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/583506823_18173078881371980_7692634904136615498_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=KpP-BwKnOU4Q7kNvwEMyyuE&_nc_oc=Adp5xpJ8avT7PCKMlvHRgbQxSinx6iO3QNZcNtLZhrgFicbdnBi3rh1q4XlwFo3WBS0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQF33NRqmd2vZJPNllNdQhRUP3Ll9e3jF8FDWJcHdNIZdJbkvqR8n0k74Hv5SGP0q978e-4Jw2GE&oh=00_Af7cSLSf5pyQEPjNqfx5tXgoRaFyaytofI41HkkpBCCsvw&oe=6A0382A4"
+    },
+    {
+      "category": "image",
+      "filename": "image-39-561663948_18168544534371980_3388594613220849749_n.jpg",
+      "alt": "Naqaa Beauty CLEAR+ dušas Ūdens filtrs.\nAttīri dušas ūdeni no kaitīgiem piemaisījumiem\nun bagãtini to ar dabīgām sastāvsaļām, kas veicina ādas un matu veselību. \n\nKapēc izvēlēties CLEAR+?\nEfektīvi samazina nogulsnes\nUzlabo matu veselību un spīdumu\nPasargā ādu no karinājuma un sausuma\nSaglabā dušu un vannas istabas virsmas tīrākas\nNodrošina filtrētu ūdeni katrā mazgāšanās reizē\n\nKo Tu iegūsi? \nMikstāka un maigãka āda\nIkdienas luksusa sajūta\nFiltrēts tīrs ūdens tavā dušā\n\nĪpaši piemērots bērniem 👶\nun jutigai ādai\n\n#NaqaaBeauty #MID2025 #ClearPlus #vitaminshowerfilter #cleanbeauty",
+      "width": 1440,
+      "height": 1440,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/561663948_18168544534371980_3388594613220849749_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3Mqc82fNY7gQ7kNvwHMLGZB&_nc_oc=Adp44KSWa1tE7RpIzFYJprTiCly73e-FoiHJFUSKuWmomegrBVjdBVlJptFZwVCInQ4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHrxLz469j7286Uxab9ld2wwdb8K8qHwZxsk1eGMxgaKTD1HBn665d-ROujwPkhPHFJeAU89eUU&oh=00_Af78-ruUI6GYAjjTYjjQgxLeiRVAyz3L0fX8gUeZTqfNjw&oe=6A038CE4"
+    },
+    {
+      "category": "image",
+      "filename": "image-40-535191068_18162527272371980_954681867226180637_n.jpg",
+      "alt": "Tavs ķermenis ir templis. \nVai ūdens, kas to skar, to sargā? \nKatru dienu mūsu āda uzņem to, ko neredzam –\nhloru, smagos metālus, cietus sāļus.\nUn mūsu maigā āda vienkārši klusē…\n\n🛁 Naqaa Beauty filtrs padara dušu par rituālu, nevis apdraudējumu.\n🌿 Ar vitamīniem bagātināts ūdens maigākai, veselīgākai ādai.\n🌍 Piegāde visā pasaulē.\n🎁 Ar kodu FIRST10 – -10% pirmajam pasūtījumam.",
+      "width": 979,
+      "height": 1302,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/535191068_18162527272371980_954681867226180637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oC4Q9bT6MtMQ7kNvwG4Zk68&_nc_oc=AdpvpOZ1MIhJJGuMPtUVDRDDOyUpCBRH24xEoSTq8Inf6XnsQxa1cJs4t8AJAfNvWYw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFcyxP7uzsED8Q27OFv2_58lF2i-7VXa9EJXfsV3-fEvxFC9cr55iwnMzvM8n23F6NsMXYhVCsV&oh=00_Af7vjV0erZP8xca8Uy-JRk7_a7sEspus1x7RCaGDAHOx-w&oe=6A03830A"
+    },
+    {
+      "category": "image",
+      "filename": "image-41-527578558_690837010626257_1123641890585051601_n.jpg",
+      "alt": "#naqaabeauty #vilnius #selfcare #waterfilter #aromatherapy #vitaminfilter #selflove❤️",
+      "width": 640,
+      "height": 1136,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.71878-15/527578558_690837010626257_1123641890585051601_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TAlvDNX_IBoQ7kNvwE-xcbd&_nc_oc=AdqnYJCMuaH4aHRAa38KPop6VBEpLu0ehXyJ1TowrNmOW7dAuZRVVaLX7KvO-zVDJlc&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHO4hwLiiLPGbFOianbUUJrjrDoRA-kc3t08F-VePz90oj9gjZtVNP-BMoC7oGaedQm-YD3ksAh&oh=00_Af5_gjzEDeGcdIMT8zU729q2YubiRRTuLTco6PDnkIz5Tw&oe=6A0383AA"
+    },
+    {
+      "category": "image",
+      "filename": "image-42-522158891_18160542019371980_1679317098434326241_n.jpg",
+      "alt": "Naqaa Beauty filtri nav tikai vēl viens skaistumkopšanas \nprodukts. \nNaqaa Beauty filtri  ir parlieciba.\nMēs ticam, ka rūpes sākas no ūdens, ko tu lieto katru dienu. Āda nav jāglābj - tai\nvienkārši  jādod tīrs pamats.\nKādreiz ari zobu diegs šķita lieks. Tagad tas ir standarts. Tieši  tapat ir ar Naqaa Beauty filtriem- mēs negaidām, kad pasaule būs gatava. Mēs radām  jaunu standartu.\n💦Tīrs ūdens = Tīra sajūta 💙\nMazāk kairinājuma, vairāk dabas.🌱\nNav kompromisu - tikai kvalitāte.\n\nNaqaa beauty filtri nav visiem - filtri ir tiem, kas jūt  atšķirību jau no pirmās dušas! \n\nNAQAA BEAUTY ❤️\n\n#VitaminShowerFilter\n#HealthySkinEveryDay\n#FromFirstShower\n#NoMoreDrySkin\n#SkinFirst\n#ShowerWithPurpose\n#MinimalIrritationMaxGlow",
+      "width": 1024,
+      "height": 1024,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/522158891_18160542019371980_1679317098434326241_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ajUAeIO-a1AQ7kNvwGlW0_U&_nc_oc=Adoqn5JIZ3CTXnGQoJwk4gd_2-PM_nemCMvYLOVqfaSK44r8Wm12p83ZtlE1ksAjlP4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQEJEMq6hwLhINeI5fm6WZmV_y8-mwQzO6WUbcznKfCteSzQd3JyAbfsLrFz79DajA4kK9j8WTqV&oh=00_Af4ED8nVsekrA-iwtl8CKnO0ztpayU1NC_Dri75E__7nLw&oe=6A0382B8"
+    },
+    {
+      "category": "image",
+      "filename": "image-43-525457339_18160380667371980_3000509917681461850_n.jpg",
+      "alt": "✨ Pēc 7 dienām sajūti atšķirību ✨\nNe tikai vanna izskatās kā no sapņa – arī Tava āda un mati to sajutīs.\nNaqaa Beauty dušas filtri– dabiskas rūpes ar redzamu rezultātu ✨\n\n#NaqaaBeauty  #DabisksMirdzums #ĀdasLabsajūtai #DušasRituāls #lavanda #mango #roses #amberwood #spa",
+      "width": 1280,
+      "height": 1600,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/525457339_18160380667371980_3000509917681461850_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=P7Lv7hu0fAUQ7kNvwHaJldn&_nc_oc=AdowvyA_C7Sd9L8aN4eoW4gxt2x-mlwGWH5H86VZERb4PUEjnG3V6ryFYPtvfD3Q3y4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQGqKmvBG6AiOGdbB7lhp2ayHf4uXu_Amw-q9diP05KXvAnWZa55KeHvrIegVJ50BEQxdENEoqaF&oh=00_Af5KUTM4lAywJrIrISmnDSu-q3AIXyqpflhB0cv77zdttA&oe=6A03A266"
+    },
+    {
+      "category": "image",
+      "filename": "image-44-514194169_122122735970851465_180375997946392144_n.jpg",
+      "alt": "🚿 Hlors – kāpēc Tava āda un mati cieš?\n\n- ⁠Sausina ādu un galvas ādu\n- ⁠Vājina Tavas ādas aizsargbarjeru\n- ⁠⁠Veicina niezi, kairinājumu un blaugznas\n- ⁠⁠Mati kļūst trausli, izbalējuši un grūti kopjami\n- ⁠⁠Sāasina jutīgas ādas un galvas ādas problēmas\n\n💧Naqaa Beauty dušas filtrs efektīvi samazina hlora daudzumu ūdenī, rūpējoties par Tavas ādas, matu un labsajūtas veselību.\n\n👉 Iepazīsties ar Jūlijas lielisko piedāvājumu: www.naqaa-beauty.com\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater #haircare #shower #selflove  #summertime #summervibes #nature",
+      "width": 1080,
+      "height": 1350,
+      "source_url": "https://scontent.cdninstagram.com/v/t39.30808-6/514194169_122122735970851465_180375997946392144_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PEVrIrDi3WMQ7kNvwGYnf5X&_nc_oc=Adpi4JpsDrwojDGRFLjaJoOqj870w0wchmOX5PRhc4ljpSJCmJV93YWdQ3VdWIwADXk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFeF57PvzDuNG9u4rvDXnBmPVly053NIaLtdDci4knDY2TW1RpYIALzvv5eou6PTRHWk61pQ1LG&oh=00_Af6BwF90O5VYZJc7aCTXFrD9giPLl0UP-RC7UnsEfr2cLg&oe=6A03A082"
+    },
+    {
+      "category": "image",
+      "filename": "image-45-513938500_18157446442371980_4303388231124409812_n.jpg",
+      "alt": "🌿 Mango aromāts – tropisks baudījums katrā dušas reizē!\n\nMango smarža ne tikai uzlabo garastāvokli, bet arī piešķir vannasistabai svaigu, vasarīgu noskaņu, neizmantojot nekādas ķīmiskas smaržvielas gaisā.\n\n👉🏻 Iegādājies jau šodien www.naqaa-beauty.com\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater #haircare #shower #selflove #mango #summertime #summervibes #nature",
+      "width": 1440,
+      "height": 1800,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.82787-15/513938500_18157446442371980_4303388231124409812_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=68YU_FJmveUQ7kNvwEdnzWk&_nc_oc=AdrFhWjAOkEl4dZT9CA6QX_yz2XjqvNkga-DI48LYZAS-mixeZpdnoU4xEKH9EO61wQ&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHAlqaUX6sS8RufgXkapr5Wxz2vRaLtqK1be-ASUl5Wmj4tsDUZRtIiT28VBW2PCPQyFzjIhxEv&oh=00_Af7IMJ4FkyALzY02DxI2ugFE_aSEQehjyi252hdBT_rugw&oe=6A0383AE"
+    },
+    {
+      "category": "image",
+      "filename": "image-46-509623622_18156879469371980_3580941471457286935_n.jpg",
+      "alt": "👀 Lai arī neredzamas ar neapbruņotu aci, rūsas daļiņas ūdenī var būtiski ietekmēt Tavu ādas veselību un izskatu, jo tās:\n\n- Nokļūst dziļi porās un piesārņo Tavu ādu\n- ⁠Bojā ādas tekstūru un vienmērību\n- ⁠Veicina sausumu, kairinājumu un ādas apsārtumu\n- ⁠Pasliktina jutīgas ādas stāvokli\n\n💧Naqaa Beauty ūdens filtrs aiztur rūsas daļiņas un citus piesārņotājus, palīdzot saglabāt Tavas ādas veselību un mirdzumu. \n\n👉🏻 Iegādājies jau šodien www.naqaa-beauty.com\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater #haircare #shower #selflove",
+      "width": 1350,
+      "height": 1687,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/509623622_18156879469371980_3580941471457286935_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1Fhsi-ZYEXAQ7kNvwEXeau0&_nc_oc=AdqIeAN3_tCVUx5TU37UysEKfFVsvyQVxVC0bJWMCINEoRFmwpcoFhu6diaVRtsZVtE&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQHXlkOB9-YHUcKzXVSVwlyJwe6LgCzChEX1QS0Rwp6GjVrwlH2QjQ0yE-bdK3gUZfO8-QUUC6Ab&oh=00_Af5a249wcXTYIDMTMeC6zGw9si0cEl1fYkMellAlK1uYhQ&oe=6A038230"
+    },
+    {
+      "category": "image",
+      "filename": "image-47-509626428_18156637933371980_7980003675780576069_n.jpg",
+      "alt": "Līgo svētku komplekt!i🌿 \n👉🏻 Vairāk www.naqaa-beauty.com\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater #haircare #vitaminfilter #spaday",
+      "width": 1080,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/509626428_18156637933371980_7980003675780576069_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=wlrtPG6QbQYQ7kNvwE9q2CG&_nc_oc=Adoz3nkvJE91q-SMxxZgQawTYQYL-DKJsu3z5oW25gI88qdig3LU375r5CrNp6KJsuo&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQG4T_cttkVl6yW0SkQp0EXiz3_RIU9hKuxoh3fEIwjZJ68OgsnDOwAmAOKQCABCaMiVZqzmQ_j3&oh=00_Af6oCR7JWu8Gou7Mm8I4j96Eggf6mAT09m0WDt886A9F2Q&oe=6A038C9B"
+    },
+    {
+      "category": "image",
+      "filename": "image-48-508683546_18156502522371980_2152942975390656314_n.jpg",
+      "alt": "Līgo kopā ar Naqaa Beauty! 🌿\nMūsu īpašais Līgo komplekts – dušas filtrs (aromāts pēc Jūsu izvēles) + dušas uzgalis = tikai par 49.99 €!\n\n✅ Dušas filtrs attīra ūdeni no hlora un to mīkstina, uzlabo Tavu ādas un matu stāvokli\n✅ Dušas uzgalis sader ar 90% dušas šļūteņu\n✅ Bezmaksas piegāde līdz Jāņu rītam!\n\n🎁 Ideāla dāvana sev vai kādai Līgai vai Jānim! \n👉 Pieejams tikai līdz 24. jūnijam vai kamēr prece krājumā!\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater #haircare #vitaminfilter #spaday",
+      "width": 1440,
+      "height": 1800,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/508683546_18156502522371980_2152942975390656314_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nA6PG3l07d4Q7kNvwE15pwD&_nc_oc=AdrrI7vE1ioUPfOYj24SWit2exwBDXSaSdRs5RmiffhUGfbvBDfZYiQB384pPLeTWEE&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQGBWxCkYg39bMG9ZKcpbyhnih2DZYgspTvlDG4VxrYjtAL2WD888ZtEBuVSkvZZAhjuvonOjV_Q&oh=00_Af5OpY8aw-sP7qmml_Y7xf7lK1rSud8HKvb8T_olGidw2w&oe=6A038FAC"
+    },
+    {
+      "category": "image",
+      "filename": "image-49-506081411_18156164713371980_5070932958833961110_n.jpg",
+      "alt": "🫧 SPA pieredze 15 sekundēs\n\n👉🏻 www.naqaa-beauty.com\n\n#naqaabeauty #spa #waterfilter #skincare #naturalbeauty #selfcare #aromatherapy",
+      "width": 1080,
+      "height": 1920,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/506081411_18156164713371980_5070932958833961110_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=RwWyiq4XuF4Q7kNvwGBCBAf&_nc_oc=AdoKP2xj2U7NVNmVkYGNO3wy2FLV1NBuQbcn-wK6b9yFdx97j03I448UOnpCdR7dIw4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQF-U691k5AKwFRkssmbvh-Ihj4tOSHvWYJs7ZngvvOTJMOf8Uk6OS1KngdHsOfDFbTB7P6U2uuL&oh=00_Af6rFuoTG8z1Ol07lbuN1waV0FBPH--sPC8BEXtPuG1u6Q&oe=6A038A4E"
+    },
+    {
+      "category": "image",
+      "filename": "image-50-505262446_122118473240851465_390574343387682898_n.jpg",
+      "alt": "🧪 Kaļķis un cietais ūdens – neredzamais ienaidnieks Tavai ādai un matiem!\n\n- Nosēžas uz matiem un Tavā ādā\n- Aizsprosto poras un veicina ādas problēmas\n- Izjauc ādas dabisko pH līdzsvaru\n- Veicina blaugznu un galvas ādas kairinājuma veidošanos\n- Aizsprosto dušas galviņas un krānus\n\n💧Naqaa Beauty ūdens filtrs aiztur kaļķi un mīkstina ūdeni, pasargājot Tavu ādu, matus un veselību. Iegādājies Naqaa Beauty ūdens filtru jau šodien!\n\n#naqaabeauty #selfcare #skincare #natural #aromtherapy #waterfilter #spa #showerfilter #hardwater",
+      "width": 1080,
+      "height": 1350,
+      "source_url": "https://scontent.cdninstagram.com/v/t39.30808-6/505262446_122118473240851465_390574343387682898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=UMQB9KhETYkQ7kNvwFv6aW_&_nc_oc=AdrgQPJriXECR3ps2PNgp8wSwFjVE7f1whUrEEUPa-w-0rPYvd1pJLRHmxuM9m5c9IA&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQEAuE4wVQqHm1ZDOd-NzkrDVPNJyVtWLj1hw7_HRMyOfyyX8G1f9SKPi-SCNUiBCkSdMRdkNVFW&oh=00_Af6iSvYENDXl95-1opK4OvOKZyUqjbMMeNwU3mdsGITxAQ&oe=6A0374AB"
+    },
+    {
+      "category": "image",
+      "filename": "image-51-503735115_18155179897371980_8247396228294858052_n.jpg",
+      "alt": "🎉 KONKURSS 🎉\nKopā ar @myhair.lv dāvinām īpašu self-care balvu komplektu divām! Laiks palutināt sevi un draudzeni! 💆‍♀️💧\n⸻\n🛍️ Balvā:\n✨ Profesionāla matu procedūra 90€ vērtībā no @myhair.lv\n✨ @naqaa_beauty 3-zonu dušas uzgalis, dušas filtrs pēc izvēles un matu dvielis - turbāns, Tavam skaistumam un labsajūtai katru dienu!\n⸻\nLai piedalītos:\n✅ Seko @naqaa_beauty un @myhair.lv \n✅ Ietago komentārā sevi un draudzeni, ar kuru dalīsies balvā\n✅ Dalies ar šo ierakstu savā storijā ❤️\n⸻\n📅 Uzvarētāju izlozēsim 10. jūnijā\nLai veicas! 🍀\n\n#konkurss #naqaabeauty #myhairlv  #dāvana #skaistumakonkurss #selfcare #haircare #waterfilter #aromtherapy",
+      "width": 1350,
+      "height": 1687,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/503735115_18155179897371980_8247396228294858052_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p5MAvS4EvJMQ7kNvwF_JF42&_nc_oc=Adr9Hf8mnMeF331l0HPs2kUZdhtKF59ATWeA9JswdHMzJL0DBmOPiaQkRLqjkA4BnUg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQFcpHCvsRt6N4aI0mxqaIXMCVu5mEwwyRnbfo3L2KPwmnQiwWQEFYRpEo-zhCbyWS_HqGYmzePY&oh=00_Af4gQs41KP2Ry0mQzowFQ-j2_Iro6fzcInA9JNxxt00sjA&oe=6A039FB5"
+    },
+    {
+      "category": "image",
+      "filename": "image-52-499704165_18153789046371980_1670960675435057489_n.jpg",
+      "alt": "😌Vai zināji, ka aromterapija var palīdzēt samazināt stresu un uzlabot miega kvalitāti? \nMūsu dušas filtri ar ēteriskajām eļļām pārvērš parastu dušu par spa pieredzi, kur katrs elpas vilciens atslābina prātu un nomierina nervu sistēmu. 🌹\n\n👉🏻 Uzzini vairāk www.naqaa-beauty.com\n\n#naqaabeauty #selfcare #skincare \n#natural #aromtherapy #waterfilter\n#spa #showerfilter #amberwood",
+      "width": 1350,
+      "height": 1687,
+      "source_url": "https://scontent.cdninstagram.com/v/t51.75761-15/499704165_18153789046371980_1670960675435057489_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=r6cC4vg7n8AQ7kNvwF8cxiO&_nc_oc=AdqVXfH3GaI7wIKRSLe-WOhqXUzTp7i2htzVBQoHJCq7E2kEgfI4R9rmZlst37Mxbno&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=z0gUS4hUHMtIJRqJdDvU1A&_nc_tpa=Q5bMBQGZFqNBVJ9ObpOpOB71IirwaHBMGmlap_W2kmiLzwwZ4kyPpFEY9i7VQsNW6ObWzaj2eX3ytVgn&oh=00_Af4YGxLYw2zNZJUVXkpOkMTASAzGw36Oo3yPSK-Rd6xF4Q&oe=6A039401"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-1-ae0cc2_1bf092cd249c4dafbdad87875995561a%7Emv2.png",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_1bf092cd249c4dafbdad87875995561a%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae0cc2_1bf092cd249c4dafbdad87875995561a%7Emv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-56-ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-57-ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_681af7aa497a490aa20849ddb8661187~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-58-ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-59-ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_b6112fc911a246da919eb0649973665d~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-60-ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-61-ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_0d05ff59e8754c38b0b399f8b92fe2b8~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-62-ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-63-ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_aa14c06a11cd457cb5cfb667c3003eb4~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-64-ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-65-ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-66-ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_6342ec478e414b849fcdbee275ae9e12~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-67-ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-68-ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-69-ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-70-ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 279,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg/v1/fill/w_223,h_279,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-2-file.jpg",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_830ab4a27f37472fabec09b27474c438~mv2.jpg/v1/fit/w_5806,h_3960,q_90/file.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-71-6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 209,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg/v1/fill/w_223,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-72-6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png",
+      "alt": "",
+      "width": 223,
+      "height": 223,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png/v1/fill/w_223,h_223,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-73-6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png",
+      "alt": "",
+      "width": 223,
+      "height": 223,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png/v1/fill/w_223,h_223,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-74-6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg",
+      "alt": "",
+      "width": 223,
+      "height": 245,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg/v1/fill/w_223,h_245,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg"
+    },
+    {
+      "category": "logo",
+      "filename": "logo-2-naqaa_beauty_horizontal.png",
+      "alt": "naqaa_beauty_horizontal.png",
+      "width": 343,
+      "height": 82,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_d46825045d2244a381e9e29a7ab6618a~mv2.png/v1/fill/w_343,h_82,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/naqaa_beauty_horizontal.png"
+    },
+    {
+      "category": "video",
+      "filename": "video-1-file.mp4",
+      "alt": "",
+      "width": 1080,
+      "height": 1920,
+      "source_url": "https://video.wixstatic.com/video/ae0cc2_170f7e5732c941c3b348e089686dbc61/1080p/mp4/file.mp4"
+    },
+    {
+      "category": "image",
+      "filename": "image-79-ae0cc2_6168587bbb3e4f8996cae1418b73d57c~mv2.jpg",
+      "alt": "",
+      "width": 484,
+      "height": 322,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_6168587bbb3e4f8996cae1418b73d57c~mv2.jpg/v1/fill/w_484,h_322,al_c,lg_1,q_80,enc_auto/ae0cc2_6168587bbb3e4f8996cae1418b73d57c~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-80-Water_Flowers.jpg",
+      "alt": "Water_Flowers.jpg",
+      "width": 720,
+      "height": 854,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_f6a8ebf0f3144779a1da1f19a0c7d749~mv2.jpg/v1/fill/w_720,h_854,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Water_Flowers.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-81-6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg",
+      "alt": "",
+      "width": 444,
+      "height": 487,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg/v1/fit/w_444,h_592,q_90,enc_avif,quality_auto/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-82-ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg",
+      "alt": "",
+      "width": 412,
+      "height": 549,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg/v1/fill/w_412,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_eeab18a5ba3d4026982f492e43e0a0f8~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-83-ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg",
+      "alt": "",
+      "width": 412,
+      "height": 549,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg/v1/fill/w_412,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_28b01e47854341a5b838fc4459337704~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-84-ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg",
+      "alt": "",
+      "width": 412,
+      "height": 549,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg/v1/fill/w_412,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae0cc2_8c71602bc76d4b07afec236005486f31~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-85-ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_bc6c8d9038fb41a99a8263c2724331c9~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-86-ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_4741e7008a2c488694d654eb05d05147~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-87-ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_df720cf5cd2443768be5dc4ac7df2c11~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-88-ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_118a763499984c22bd4d3856d626a857~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-89-ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_9c3827a4621c40f2ac04aadedaf6f08c~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-90-ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_b8bd4def1b1d4c179483dbf5b95ce8b7~mv2.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-91-ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg",
+      "alt": "",
+      "width": 147,
+      "height": 184,
+      "source_url": "https://static.wixstatic.com/media/ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ae0cc2_762b088ea51f4f038fa38a5f337d0486~mv2.jpg"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-3-file.jpg",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_a496203a24b7435cad65d38fe582accc~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-94-6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg",
+      "alt": "",
+      "width": 444,
+      "height": 415,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg/v1/fit/w_444,h_592,q_90,enc_avif,quality_auto/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-4-file.jpg",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_4b789c0902604e92b1fc11f1dfcc13ce~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+    },
+    {
+      "category": "image",
+      "filename": "image-96-6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png",
+      "alt": "",
+      "width": 444,
+      "height": 444,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png/v1/fit/w_444,h_592,q_90,enc_avif,quality_auto/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-5-file.png",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png/v1/fit/w_500,h_500,q_90/file.png"
+    },
+    {
+      "category": "background",
+      "filename": "background-3-6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png",
+      "alt": "",
+      "width": 100,
+      "height": 100,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png/v1/fill/w_100,h_100,q_70/6ecd26_f98d5e1287af4a588dab382a6d75b255~mv2.png"
+    },
+    {
+      "category": "image",
+      "filename": "image-98-6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png",
+      "alt": "",
+      "width": 444,
+      "height": 444,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png/v1/fit/w_444,h_592,q_90,enc_avif,quality_auto/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png"
+    },
+    {
+      "category": "og-image",
+      "filename": "og-image-6-file.png",
+      "alt": "og:image",
+      "width": 1200,
+      "height": 630,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png/v1/fit/w_500,h_500,q_90/file.png"
+    },
+    {
+      "category": "background",
+      "filename": "background-4-6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png",
+      "alt": "",
+      "width": 100,
+      "height": 100,
+      "source_url": "https://static.wixstatic.com/media/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png/v1/fill/w_100,h_100,q_70/6ecd26_8cd2dd718fdb455eadca7ebcc9a28740~mv2.png"
+    }
+  ]
+}

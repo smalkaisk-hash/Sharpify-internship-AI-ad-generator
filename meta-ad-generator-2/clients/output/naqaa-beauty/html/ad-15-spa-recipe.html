@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    body{font-family:'Inter',sans-serif}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;inset:0}
+    .bg img{width:100%;height:100%;object-fit:cover}
+    .bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(250,246,240,0.2),rgba(250,246,240,0.5))}
+    /* Centered recipe card */
+    .card{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:720px;background:#FAF6F0;padding:56px 60px 48px;border:1.5px solid #8B7D3C;box-shadow:0 30px 80px rgba(0,0,0,0.18)}
+    .card-tag{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.36em;color:#8B7D3C;text-transform:uppercase;text-align:center}
+    .card-rule{width:48px;height:1px;background:#8B7D3C;margin:20px auto 18px;opacity:0.6}
+    .card-title{font-family:'Playfair Display',serif;font-size:58px;font-weight:400;color:#1A1A2E;text-align:center;line-height:1;letter-spacing:-0.01em}
+    .card-subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#6B5B3E;text-align:center;margin-top:12px}
+    .steps{margin-top:36px;display:flex;flex-direction:column;gap:18px}
+    .step{display:flex;align-items:baseline;gap:18px;padding:14px 4px;border-bottom:1px dotted rgba(139,125,60,0.35)}
+    .step-num{font-family:'Playfair Display',serif;font-size:26px;font-style:italic;color:#8B7D3C;min-width:32px;font-weight:500}
+    .step-text{font-family:'Inter',sans-serif;font-size:20px;color:#1A1A2E;line-height:1.3;font-weight:500}
+    .step-text em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:#6B5B3E}
+    /* Bottom of card */
+    .card-foot{margin-top:30px;display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid #8B7D3C}
+    .card-price-label{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.24em;color:#8B7D3C;text-transform:uppercase}
+    .card-price{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#1A1A2E;line-height:1}
+    .card-cta{padding:14px 26px;background:#1A1A2E;color:#F5E6D3;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="bg"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/clients/output/naqaa-beauty/brief/images/backgrounds/bg-spa-flatlay.png"></div>
+    <div class="bg-overlay"></div>
+    <div class="card">
+      <div class="card-tag">Spa mājās — recepte</div>
+      <div class="card-rule"></div>
+      <div class="card-title">Mans spa rituāls</div>
+      <div class="card-subtitle">3 soļi · 10 minūtes · bez rezervācijas</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-text">Uzskrūvē <em>vitamīnu dušas filtru</em> uz savas dušas galvas.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-text">Izvēlies aromātu — <em>lavanda, roze, mango vai dzintarkoks.</em></div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-text">Elpo lēni. 10 siltas minūtes. Āda un mati pateiksies.</div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div>
+          <div class="card-price-label">Viens filtrs — 2–3 mēneši</div>
+          <div class="card-price">no 34,99 €</div>
+        </div>
+        <div class="card-cta">Sāc rituālu</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

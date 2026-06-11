@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.hdr-row {
+  text-align: center; margin-bottom: 22px;
+  position: relative; z-index: 1;
+}
+.hdr-row .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.1;
+}
+
+.content-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  position: relative; z-index: 1;
+}
+
+.content-card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 20px 22px;
+  display: flex; flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.content-card.gold {
+  background: rgba(218,165,32,0.05);
+  border-color: rgba(218,165,32,0.25);
+}
+.content-card.green {
+  background: rgba(16,185,129,0.05);
+  border-color: rgba(16,185,129,0.3);
+}
+
+.card-top {
+  display: flex; align-items: center; gap: 12px;
+}
+.card-ic {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.content-card.gold .card-ic {
+  background: rgba(218,165,32,0.08);
+  border-color: rgba(218,165,32,0.25);
+}
+.content-card.green .card-ic {
+  background: rgba(16,185,129,0.08);
+  border-color: rgba(16,185,129,0.3);
+}
+
+.card-meta {
+  flex: 1;
+  font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 700;
+  color: #94a3b8;
+  line-height: 1.3;
+}
+.content-card.gold .card-meta { color: #daa520; }
+.content-card.green .card-meta { color: #10b981; }
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900;
+  color: #fff; line-height: 1.15;
+}
+
+.card-desc {
+  font-size: 13px; color: #94a3b8;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-footer {
+  font-size: 12px; font-weight: 700;
+  color: #64748b;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.content-card.gold .card-footer { color: #daa520; }
+.content-card.green .card-footer { color: #10b981; }
+
+/* Bottom */
+.btm-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.btm-row .price-info {
+  display: flex; align-items: baseline; gap: 8px;
+  color: #94a3b8;
+}
+.btm-row .price-old { text-decoration: line-through; color: #64748b; }
+.btm-row .price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900; color: #10b981;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="hdr-row">
+    <div class="eyebrow">AI RĪKU KOMPLEKTS</div>
+    <div class="title">Kas ir <span class="gold-italic">iekšā</span> par €19</div>
+  </div>
+
+  <div class="content-grid">
+    <div class="content-card gold">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic gold" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h6"/></svg>
+        </div>
+        <div class="card-meta">Prezentācija</div>
+      </div>
+      <div class="card-title">128 slaidi</div>
+      <div class="card-desc">No AI pamatiem līdz ekspertu līmenim. 20 praktiskas idejas un 14 demonstrācijas.</div>
+      <div class="card-footer">PILNA SISTĒMA</div>
+    </div>
+
+    <div class="content-card gold">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic gold" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <div class="card-meta">Video apmācība</div>
+      </div>
+      <div class="card-title">74 minūtes</div>
+      <div class="card-desc">Soli pa solim — instalācija, personalizācija, darba sākšana. No nulles līdz sistēmai.</div>
+      <div class="card-footer">CEĻVEDIS</div>
+    </div>
+
+    <div class="content-card green">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </div>
+        <div class="card-meta">27 AI skills</div>
+      </div>
+      <div class="card-title">Gatavi .md faili</div>
+      <div class="card-desc">5 kategorijas: mārketings, pārdošana, saturs, zināšanas, workflow. Instalē .claude/skills/ mapē.</div>
+      <div class="card-footer">INSTALĒT UN AIZMIRST</div>
+    </div>
+
+    <div class="content-card green">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="card-meta">10 Workflows</div>
+      </div>
+      <div class="card-title">Automatizēti pipelines</div>
+      <div class="card-desc">End-to-end procesi: no lead līdz deal, no idejas līdz publicētam saturam, weekly reviews.</div>
+      <div class="card-footer">END-TO-END</div>
+    </div>
+
+    <div class="content-card">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+        </div>
+        <div class="card-meta">CLAUDE.md šablons</div>
+      </div>
+      <div class="card-title">Biznesa konteksts</div>
+      <div class="card-desc">Personalizē 10 min — AI zina Tavu brand voice, ofertu, mērķauditoriju.</div>
+      <div class="card-footer">PERSONALIZĒJAMS</div>
+    </div>
+
+    <div class="content-card">
+      <div class="card-top">
+        <div class="card-ic">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M20 7L9 18l-5-5"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <div class="card-meta">Bonusi</div>
+      </div>
+      <div class="card-title">Mūžīga piekļuve</div>
+      <div class="card-desc">Bez abonementa, visi atjauninājumi iekļauti. 7 dienu naudas atgriešanas garantija.</div>
+      <div class="card-footer">VIENREIZĒJS MAKSĀJUMS</div>
+    </div>
+  </div>
+
+  <div class="btm-row">
+    <div class="price-info">
+      AI Rīku Komplekts ·
+      <span class="price-old">€99</span>
+      <span class="price-new">€19</span>
+      · mūžīga piekļuve
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

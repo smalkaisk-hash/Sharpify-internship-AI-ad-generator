@@ -1,0 +1,108 @@
+{
+  "batch": "v2-framed-bordered",
+  "date": "2026-04-20",
+  "language": "lv",
+  "ad_count": 8,
+  "aesthetic": "Luxury editorial beauty — champagne, blush rose, lavender, amber, cream. Playfair Display + Inter. Framed photo cards, thick padded borders, no full-bleed edge-to-edge.",
+  "ads": [
+    {
+      "id": 9,
+      "name": "editorial-rose-cover",
+      "hero_product": "Precious Rose",
+      "template": "editorial-magazine-cover",
+      "framework": "Category + single image + benefit + price",
+      "primary_text": "Tu rūpējies par savu ādu ar kosmētiku.\n\nBet vai zināji — cietais Rīgas ūdens izskalo tieši to mitrumu, ko centies atjaunot?\n\n✅ Hlors un smagie metāli — filtrēti\n✅ Vitamīni E un C — dušā\n✅ Dabīgs rozes aromāts — 2-3 mēneši vienai filtrai\n\nPrecious Rose — pirmais solis uz mīkstāku ādu.",
+      "headline": "Precious Rose — 34,99€",
+      "cta": "Iepirkties",
+      "on_image_tag": "VITAMĪNU DUŠAS FILTRS",
+      "on_image_headline": "Precious Rose",
+      "on_image_subline": "Katra duša — rituāls."
+    },
+    {
+      "id": 10,
+      "name": "scent-grid-2x2",
+      "hero_product": "Full lineup",
+      "template": "grid-2x2-editorial",
+      "framework": "Visual variety + price anchor",
+      "primary_text": "4 aromāti. 4 rituāli. Viens un tas pats ūdens — pārveidots.\n\n🔹 Precious Rose — maiga un mierinoša\n🔹 Lavender Meadows — relaksējoša\n🔹 Mango Rain — enerģizējoša\n🔹 Amberwood — silta un koka\n\nKatra filtra kalpo 2-3 mēnešus. Dermatoloģiski pārbaudīts.",
+      "headline": "4 aromāti — viens filtrs 34,99€",
+      "cta": "Izvēlies savu",
+      "on_image_tag": "VITAMĪNU DUŠAS FILTRI",
+      "on_image_headline": "4 aromāti • 4 rituāli"
+    },
+    {
+      "id": 11,
+      "name": "polaroid-lavender",
+      "hero_product": "Lavender Meadows",
+      "template": "polaroid-photo-stack",
+      "framework": "Personal rituāls narrative",
+      "primary_text": "Mans vakara rituāls:\n\nAizveru durvis. Ieslēdzu dušu. Un elpoju.\n\nLavender Meadows filtra aromāts piepilda telpu kā īsts spa. Un ūdens — tas ir maigāks pret ādu nekā kāds krēms.\n\n2-3 mēneši no viena filtra. 34,99€.",
+      "headline": "Lavandas rituāls — mājās",
+      "cta": "Šodien izmēģini",
+      "on_image_tag": "LAVENDER MEADOWS",
+      "on_image_headline": "Mans lavandas rituāls"
+    },
+    {
+      "id": 12,
+      "name": "amberwood-luxe-frame",
+      "hero_product": "Amberwood",
+      "template": "ornate-oval-frame",
+      "framework": "Single hero — sensorial promise",
+      "primary_text": "Ja tev patīk koka, dzintara un siltu garšvielu notis — Amberwood ir tavs aromāts.\n\nVitaminizēts filtrs pārveido parasto dušu par luksus pieredzi. Hlors izzūd. Āda mirdz. Pats rituāls kļūst par mazu svētku brīdi.\n\nDermatoloģiski pārbaudīts. 34,99€.",
+      "headline": "Amberwood — silta koka nots",
+      "cta": "Iepirkties",
+      "on_image_tag": "AMBERWOOD ✦ VITAMĪNU DUŠAS FILTRS",
+      "on_image_subline": "Silta koka un dzintara nots"
+    },
+    {
+      "id": 13,
+      "name": "clear-before-after-carded",
+      "hero_product": "CLEAR+",
+      "template": "before-after-carded",
+      "framework": "Problem-solution visual",
+      "primary_text": "Cauruļu rūsa. Balti nogulsnes. Dzeltens aplikums uz flīzēm.\n\nTā nav tava vainas — tas ir ūdens.\n\nCLEAR+ rūsas noņemšanas filtrs aptur problēmu pie dušas galvas. Nav nepieciešami santehniki. Vienkārši uzskrūvē — un notīri.\n\n24,99€. Kalpos ~3 mēnešus.",
+      "headline": "CLEAR+ — 24,99€",
+      "cta": "Novērs rūsu",
+      "on_image_tag_before": "AGRĀK",
+      "on_image_tag_after": "TAGAD",
+      "on_image_headline": "Rūsu — nost."
+    },
+    {
+      "id": 14,
+      "name": "mango-hand-tropical",
+      "hero_product": "Mango Rain",
+      "template": "lifestyle-hand-hero",
+      "framework": "Aspirational lifestyle image",
+      "primary_text": "Dušas filtrs, kas smaržo pēc tropiem.\n\nMango Rain ar vitamīnu iepildījumu filtrē hloru, smagos metālus un citus kairinātājus — atstājot tikai maigu, aromātisku ūdeni.\n\nKatra duša jūtas kā īss atvaļinājums. 34,99€.",
+      "headline": "Mango Rain — tropu rituāls",
+      "cta": "Šodien izmēģini",
+      "on_image_tag": "MANGO RAIN",
+      "on_image_headline": "Tropu dušas rituāls"
+    },
+    {
+      "id": 15,
+      "name": "spa-flatlay-recipe",
+      "hero_product": "Lavender Meadows",
+      "template": "editorial-recipe-card",
+      "framework": "Ritual breakdown",
+      "primary_text": "Spa rituāls — bez spa rezervācijas:\n\n🔹 Vitamīnu dušas filtrs (Lavender)\n🔹 10 siltas minūtes\n🔹 Lēna elpošana\n\nTas ir viss. Filtrs pārveido ūdeni — ādai, matiem un prātam. 34,99€. 2-3 mēnešus no viena.",
+      "headline": "Mans spa rituāls — mājās",
+      "cta": "Sāc rituālu",
+      "on_image_tag": "SPA MĀJĀS",
+      "on_image_headline": "3 soļi. 10 minūtes."
+    },
+    {
+      "id": 16,
+      "name": "bundle-vanity-hero",
+      "hero_product": "Komplekts SmartCare",
+      "template": "bundle-luxe-hero",
+      "framework": "Value stack + free gift",
+      "primary_text": "Komplekts SmartCare — viss, ko tava āda un mati vēlas.\n\n🔹 Vitamīnu dušas filtrs (tavs aromāts)\n🔹 3-zonu dušas uzgalis\n🔹 Maināma filtra kasete\n\n🎁 Dāvanu kaste L BEZMAKSAS pirkumiem virs 100€.\n\n59,49€ — pilns komplekts.",
+      "headline": "SmartCare komplekts — 59,49€",
+      "cta": "Iepirkties",
+      "on_image_tag": "KOMPLEKTS SMARTCARE",
+      "on_image_headline": "Viss komplekts — 59,49€",
+      "on_image_gift": "🎁 Dāvanu kaste L bez maksas virs 100€"
+    }
+  ]
+}

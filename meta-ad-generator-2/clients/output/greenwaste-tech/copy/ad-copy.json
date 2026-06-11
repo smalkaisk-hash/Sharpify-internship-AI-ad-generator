@@ -1,0 +1,223 @@
+{
+  "client_name": "Greenwaste Tech",
+  "client_slug": "greenwaste-tech",
+  "language": "lv",
+  "ad_type": "client-tangible",
+  "generated_at": "2026-04-16T11:15:00Z",
+  "audience_note": "DTC — Latvijas privātmāju īpašnieki ar septiķi vai bez kanalizācijas. Informāla 'tu' forma. Produkts ir neredzams (zem zemes), tāpēc lielākā daļa ads rāda REZULTĀTU (sakopts dārzs, nav asenizatora, miers), nevis pašu iekārtu. 1-2 ads rāda reālu uzstādīšanas bildi (trust signal).",
+  "voice_samples": [
+    "DIVFĀŽU BIOFILTRĀCIJAS AUTOMĀTISKĀ KANALIZĀCIJA, KAS SAMAZINA RĒĶINUS UN PAAUGSTINA ĪPAŠUMA VĒRTĪBU",
+    "Sertificēts, pārbaudīts un garantēts risinājums, kas pārveido tavu kanalizāciju uz mūžu.",
+    "Tā ir vienreizēja investīcija ilgtermiņā tavam īpašumam",
+    "NAV JĀSŪKNĒ AKA · NAV PAPILDUS BAKTĒRIJU · NAV BEZJĒDZĪGU IZDEVUMU",
+    "Vienīgais šāda veida Risinājums Latvijā"
+  ],
+  "copy_sets": [
+    {
+      "id": "ad-1",
+      "framework": "Editorial",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Asenizators vairs nezvanīs. 0€ ekspluatācija, 5 gadu garantija.",
+        "long": "Asenizators vairs nezvanīs.\n\nDivfāžu biofiltrācijas kanalizācija pārveido tavas dūņas par dārza mēslojumu un tīru ūdeni laistīšanai.\n\nNav jāsūknē aka. Nav papildus baktēriju. Nav mēneša rēķinu.\n\n0€ ekspluatācija. 5 gadu garantija. CE + EN12566-3.\n\nVienīgais šāda veida risinājums Latvijā.\n\nPieteikies bezmaksas īpašuma novērtējumam."
+      },
+      "headline": "Asenizators vairs nezvanīs.",
+      "description": "Bioloģiskā kanalizācija · LV",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "UZZINĀT VAIRĀK",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "ai-generated",
+        "description": "Peaceful lush green manicured lawn at a modern Latvian private home, early summer, tank lids barely visible flush in the grass, no septic truck visible, blue sky, cinematic premium photography",
+        "source": "scene-peaceful-lawn.png (to generate)",
+        "ai_prompt": "Wide shot of a peaceful manicured green lawn at a modern Latvian private home, two small round dark-green tank lids barely visible flush in the grass on the side of the yard, early summer afternoon, no people, no septic truck, blue sky with soft clouds, Scandinavian countryside feel, cinematic premium photography"
+      },
+      "template_fields": {}
+    },
+    {
+      "id": "ad-2",
+      "framework": "Editorial",
+      "layout_recommendation": "bold-statement",
+      "primary_text": {
+        "short": "0€ ekspluatācija. Uz mūžu. -10% līdz 1. februārim.",
+        "long": "Kanalizācija, kas neprasa neko.\n\nNav jāsūknē aka.\nNav jāpērk baktērijas.\nNav mēneša rēķinu.\n\n0€ ekspluatācijas izmaksas. 5 gadu garantija. Sertificēts risinājums — vienīgais šāda veida Latvijā.\n\n-10% darījumam, kas noslēgts līdz 1. februārim.\n\nPieteikies — izrēķināsim, cik ietaupīsi savā īpašumā."
+      },
+      "headline": "0€. Uz mūžu.",
+      "description": "Bioloģiskā kanalizācija",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "PIETEIKTIES",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "none",
+        "description": "Typography-led bold statement on deep forest green gradient. Small brand mark top-left. -10% promo chip prominent. No product photo — the typography IS the ad.",
+        "source": null,
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "footer_tagline": "greenwaste-tech.com · Vienīgais šāda veida risinājums Latvijā",
+        "promo_badge": "-10% LĪDZ 1. FEBRUĀRIM"
+      }
+    },
+    {
+      "id": "ad-3",
+      "framework": "Comparison",
+      "layout_recommendation": "comparison",
+      "primary_text": {
+        "short": "Parasta kanalizācija vs bioloģiskā. 5 iemesli, kāpēc cilvēki maina.",
+        "long": "Parasta septiķu sistēma prasa tevi visu gadu. Biofiltrācijas kanalizācija neprasa neko.\n\nSkaties pats — tad pieteikies bezmaksas novērtējumam."
+      },
+      "headline": "Parasta kanalizācija vs bioloģiskā.",
+      "description": "Salīdzini pats",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "SAZINĀTIES",
+      "hook_type": "comparison",
+      "image_requirements": {
+        "type": "none",
+        "description": "Base comparison template, no hero image required. Deep forest green bg.",
+        "source": null,
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "before_label": "Parasta kanalizācija",
+        "after_label": "Greenwaste Tech",
+        "before_icon_1": "✕",
+        "before_text_1": "Asenizators 4-8 reizes gadā",
+        "before_icon_2": "✕",
+        "before_text_2": "Smaka dārzā vasarā",
+        "before_icon_3": "✕",
+        "before_text_3": "Pērc baktērijas katru mēnesi",
+        "before_icon_4": "✕",
+        "before_text_4": "Raizes par pārpildījumu atvaļinājumā",
+        "before_icon_5": "✕",
+        "before_text_5": "350–900€ gadā tikai apkopei",
+        "after_icon_1": "✓",
+        "after_text_1": "Nav jāsūknē aka nekad",
+        "after_icon_2": "✓",
+        "after_text_2": "Bez smakas — dabisks bioloģiskais cikls",
+        "after_icon_3": "✓",
+        "after_text_3": "Pašregulējošs — nav papildus baktēriju",
+        "after_icon_4": "✓",
+        "after_text_4": "Strādā autonomi, arī kamēr neesi mājās",
+        "after_icon_5": "✓",
+        "after_text_5": "0€ ekspluatācija + 5 gadu garantija"
+      }
+    },
+    {
+      "id": "ad-4",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "extra:data-driven/13-stat-surround-product",
+      "primary_text": {
+        "short": "€350–900 gadā. 3–6 gadu atmaksa. 0€ ekspluatācija. 5 gadu garantija.",
+        "long": "Bioloģiskā kanalizācija četros skaitļos.\n\n€350–900 — cik ietaupīsi gadā, kas agrāk gāja asenizatoram.\n3–6 gadi — cik ātri sistēma atpelnās.\n5 gadi — garantija iekārtai UN montāžai.\n0€ — tavas gada ekspluatācijas izmaksas.\n\nVienīgais šāda veida risinājums Latvijā. Sertificēts EN12566-3 + CE.\n\nPieteikies bezmaksas īpašuma novērtējumam."
+      },
+      "headline": "Četri skaitļi. Viena sistēma.",
+      "description": "Bioloģiskā kanalizācija",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "PIETEIKTIES",
+      "hook_type": "statistic",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Real install photo (hero-2 — 3 green tank lids in the ground, dirt around, lawn behind) as dark-vignetted hero at center. 4 stat blocks in corners.",
+        "source": "brief/images/hero-2.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "stat_1": "€350–900",
+        "stat_1_label": "Ietaupījumi gadā",
+        "stat_2": "3–6",
+        "stat_2_unit": "gadi",
+        "stat_2_label": "Atmaksas periods",
+        "stat_3": "5",
+        "stat_3_unit": "gadi",
+        "stat_3_label": "Garantija iekārtai + montāžai",
+        "stat_4": "0€",
+        "stat_4_label": "Ekspluatācijas izmaksas"
+      }
+    },
+    {
+      "id": "ad-5",
+      "framework": "Social-Proof",
+      "layout_recommendation": "extra:social-proof/17-verified-review-card",
+      "primary_text": {
+        "short": "\"Dienas laikā viss uzstādīts. Ļoti akurāti un labi paveikts darbs.\"",
+        "long": "\"Sadarbība bija laba, un dienas laikā viss tika uzstādīts. Ļoti akurāti un labi paveikts darbs.\"\n— Reāls klients\n\n\"Pasūtījums tika izpildīts laikā, precīzi, bez papildus izdevumiem, viss darbojās ok.\"\n— Aleksandrs\n\nSertificēti speciālisti. 5 gadu garantija. Vienīgais šāda veida risinājums Latvijā.\n\nPieteikies bezmaksas īpašuma novērtējumam."
+      },
+      "headline": "\"Dienas laikā viss uzstādīts.\"",
+      "description": "Reāla klienta atsauksme",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "UZZINĀT VAIRĀK",
+      "hook_type": "story",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Verified-review card layout — review text centered, small author name, 5 green stars. Small product inset (hero-2 crop) below or as card corner. Forest green bg.",
+        "source": "brief/images/hero-2.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "review_text": "Sadarbība bija laba, un dienas laikā viss tika uzstādīts. Ļoti akurāti un labi paveikts darbs.",
+        "reviewer_name": "Reāls klients",
+        "reviewer_location": "Latvija",
+        "secondary_quote": "Pasūtījums tika izpildīts laikā, precīzi, bez papildus izdevumiem.",
+        "secondary_author": "Aleksandrs",
+        "verified_badge": "Reāla atsauksme"
+      }
+    },
+    {
+      "id": "ad-6",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "3 lietas, ko tev nav jādara ar bioloģisko kanalizāciju.",
+        "long": "Iedomājies kanalizāciju, kurai nav jāpievērš uzmanība.\n\nNav jāsūknē aka.\nNav jāpērk baktērijas.\nNav jāatgriežas no atvaļinājuma.\n\nDivfāžu biofiltrācija strādā autonomi. Atdarina dabisku sistēmu. Nulles ekspluatācija. Piecu gadu garantija.\n\nVienīgais šāda veida risinājums Latvijā.\n\nPieteikies bezmaksas īpašuma novērtējumam."
+      },
+      "headline": "Trīs NAV.",
+      "description": "Bioloģiskā kanalizācija",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "PIETEIKTIES",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Benefit-stack layout with 4 rows on warm cream bg. Accent green. Small tank-interior photo (hero-1) as hero-strip at top OR as icon-strip, plus 3-4 benefit cards.",
+        "source": "brief/images/hero-1.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "badge_text": "GREENWASTE TECH",
+        "subheadline": "Trīs lietas, ko tev nav jādara",
+        "benefit_1_title": "NAV JĀSŪKNĒ AKA",
+        "benefit_1_desc": "Asenizatora zvani beidzas šodien",
+        "benefit_2_title": "NAV PAPILDUS BAKTĒRIJU",
+        "benefit_2_desc": "Pašregulējošs bioloģiskais cikls",
+        "benefit_3_title": "NAV MĒNEŠA RĒĶINU",
+        "benefit_3_desc": "0€ ekspluatācijas izmaksas",
+        "benefit_4_title": "+ 5 GADU GARANTIJA",
+        "benefit_4_desc": "Iekārtai un montāžai"
+      }
+    },
+    {
+      "id": "ad-7",
+      "framework": "Direct-Offer",
+      "layout_recommendation": "extra:promotional/37-hero-statement-promo",
+      "primary_text": {
+        "short": "-10% atlaide bioloģiskai kanalizācijai. Tikai līdz 1. februārim.",
+        "long": "-10% atlaide darījumam, kas noslēgts līdz 1. februārim.\n\nDivfāžu biofiltrācijas kanalizācija — vienīgais šāda veida risinājums Latvijā.\n\n0€ ekspluatācija. 5 gadu garantija. Sertificēts EN12566-3 + CE.\n\n€350–900 ietaupījumi gadā. Atmaksājas 3–6 gados.\n\nPieteikies — izrēķināsim atlaidi un pilno cenu tavam īpašumam."
+      },
+      "headline": "-10% līdz 1. februārim.",
+      "description": "Akcija · ierobežots laiks",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "PIETEIKTIES",
+      "hook_type": "statistic",
+      "image_requirements": {
+        "type": "ai-generated",
+        "description": "Wide shot of a peaceful modern Latvian rural private home with lush green manicured lawn, warm afternoon light. Dark gradient overlay for text legibility. No people, no septic truck — just the result.",
+        "source": "scene-peaceful-home.png (to generate)",
+        "ai_prompt": "Wide establishing shot of a peaceful modern Latvian countryside private home with lush green manicured lawn in early summer afternoon, soft warm sunlight, mature trees in background, empty driveway, no people, no vehicles, Scandinavian architecture, cinematic premium photography, peaceful atmosphere"
+      },
+      "template_fields": {
+        "promo_badge": "-10%",
+        "promo_subtitle": "Akcija līdz 1. februārim",
+        "footer_tagline": "greenwaste-tech.com"
+      }
+    }
+  ]
+}

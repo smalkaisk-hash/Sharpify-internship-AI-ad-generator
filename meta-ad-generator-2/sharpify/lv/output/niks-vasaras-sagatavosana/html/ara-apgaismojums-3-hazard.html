@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:linear-gradient(180deg,#7A1F08 0%,#C44513 35%,#E8761B 65%,#F4A836 100%)}
+.sun{position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:880px;height:880px;border-radius:50%;background:radial-gradient(circle,rgba(255,220,130,0.55) 0%,rgba(255,180,80,0.22) 45%,rgba(255,180,80,0) 70%);z-index:1}
+.rays{position:absolute;inset:0;background:conic-gradient(from 0deg at 50% 22%,transparent 0deg,rgba(255,255,255,0.05) 14deg,transparent 28deg,rgba(255,255,255,0.05) 42deg,transparent 56deg,rgba(255,255,255,0.05) 70deg,transparent 84deg);z-index:1;mask-image:radial-gradient(circle at 50% 22%,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%)}
+.header{position:absolute;top:36px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;z-index:5;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.22)}
+.org{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:800;color:#fff;letter-spacing:0.28em;text-transform:uppercase}
+.date{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);letter-spacing:0.12em;text-transform:uppercase}
+.body-w{position:absolute;inset:0;padding:110px 70px 70px;display:flex;flex-direction:column;align-items:center;text-align:center;z-index:5}
+.chip{display:inline-flex;align-items:center;gap:10px;background:#0a0a0a;color:#FFC300;padding:11px 22px;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:0.24em;margin-bottom:26px;box-shadow:0 8px 24px rgba(0,0,0,0.35)}
+.chip .pulse{width:10px;height:10px;background:#FFC300;border-radius:50%;box-shadow:0 0 0 0 rgba(255,195,0,0.5)}
+.big{font-family:'Space Grotesk',sans-serif;font-weight:900;font-size:104px;color:#fff;line-height:0.92;letter-spacing:-0.035em;text-transform:uppercase;margin-bottom:34px;text-shadow:0 6px 0 rgba(0,0,0,0.18)}
+.frame{position:relative;width:540px;height:340px;margin-bottom:28px;border-radius:14px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,0.45),inset 0 0 0 4px rgba(255,255,255,0.9),inset 0 0 0 10px rgba(0,0,0,0.35)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,0.35) 100%)}
+.frame-label{position:absolute;bottom:12px;left:14px;background:rgba(0,0,0,0.75);color:#FFC300;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:800;padding:6px 12px;letter-spacing:0.2em;text-transform:uppercase;border-radius:4px;z-index:3}
+.sub{font-family:'Inter',sans-serif;font-size:24px;font-weight:500;color:#fff;line-height:1.35;max-width:820px;margin-bottom:24px}
+.sub em{font-style:normal;color:#FFEB8A;font-weight:800;text-decoration:underline;text-decoration-color:rgba(255,235,138,0.5);text-underline-offset:4px}
+.cta{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:800;color:#0a0a0a;background:#FFC300;padding:24px 52px;border-radius:12px;display:inline-flex;align-items:center;gap:16px;text-transform:uppercase;letter-spacing:0.05em;box-shadow:0 10px 30px rgba(0,0,0,0.35)}
+.cta .arr{width:38px;height:38px;background:#0a0a0a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.proof{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,0.72);margin-top:14px;text-transform:uppercase;letter-spacing:0.22em}
+.proof b{color:#FFEB8A;font-weight:800}
+</style>
+</head>
+<body>
+<div class="ad">
+<div class="sun"></div>
+<div class="rays"></div>
+<div class="header">
+<div class="org">★ MP Risinājums™ · Vasaras sezonas atskaite</div>
+<div class="date">Aprīlis · 2026</div>
+</div>
+<div class="body-w">
+<div class="chip"><span class="pulse"></span>Karstuma viļņa brīdinājums</div>
+<div class="big">Vakari paliek<br>gari un silti.</div>
+<div class="frame"><img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/lv/output/niks-vasaras-sagatavosana/images/ara-apgaismojums.png"><div class="frame-label">Āra apgaismojuma meistariem</div></div>
+<div class="sub">Privātmāju īpašnieki grib baudīt pagalmu vēlāk — <em>āra apgaismojuma meistariem</em> sezona tikko sākas.</div>
+<div class="cta">Aizpildīt kalendāru <span class="arr"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFC300" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+<div class="proof"><b>2'300+ uzņēmēju</b> · AI mārketinga sistēma</div>
+</div>
+</div>
+</body>
+</html>

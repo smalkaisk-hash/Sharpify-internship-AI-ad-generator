@@ -1,0 +1,37 @@
+{
+  "account": "549172712351324",
+  "adset_id": "120247542181110460",
+  "form_id": "1310571280985338",
+  "ads": [
+    {
+      "name": "Jumiki - Ridge Magazine - Kalendars",
+      "png": "jumiki-1-ridge-magazine.png",
+      "creative_id": "1512372670325947",
+      "ad_id": "120248881531110460"
+    },
+    {
+      "name": "Jumiki - Crew Polaroid - Pieteikumi paši",
+      "png": "jumiki-2-crew-polaroid.png",
+      "creative_id": "982621454199860",
+      "ad_id": "120248881532910460"
+    },
+    {
+      "name": "Saulespaneli - Aerial Magazine - Nakamais klients",
+      "png": "saulespaneli-1-aerial-magazine.png",
+      "creative_id": "1013700631216867",
+      "ad_id": "120248881534890460"
+    },
+    {
+      "name": "Saulespaneli - Macro Circle - Nakamais objekts",
+      "png": "saulespaneli-2-macro-circle.png",
+      "creative_id": "3134714210049940",
+      "ad_id": "120248881536740460"
+    },
+    {
+      "name": "Saulespaneli - Jobsite Sticker - Objekti cela",
+      "png": "saulespaneli-3-jobsite-sticker.png",
+      "creative_id": "941645678660734",
+      "ad_id": "120248881537780460"
+    }
+  ]
+}

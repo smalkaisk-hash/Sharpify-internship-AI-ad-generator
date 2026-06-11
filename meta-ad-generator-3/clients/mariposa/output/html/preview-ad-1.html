@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    overflow: hidden;
+    background: #111;
+  }
+
+  .canvas {
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+  }
+
+  /* ── Photo ─────────────────────────────────────────── */
+  .photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 640px;
+    height: 1080px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* Gradient blending photo into panel */
+  .photo-fade {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 640px;
+    height: 1080px;
+    background: linear-gradient(to right, #13100f 0%, transparent 38%);
+  }
+
+  /* ── Left panel ─────────────────────────────────────── */
+  .panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 540px;
+    height: 1080px;
+    background: #13100f;
+    display: flex;
+    flex-direction: column;
+    padding: 72px 68px 72px 80px;
+  }
+
+  /* ── Logo ───────────────────────────────────────────── */
+  .logo {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    object-position: left center;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+  }
+
+  /* ── Body ───────────────────────────────────────────── */
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+
+  .accent-bar {
+    width: 48px;
+    height: 2px;
+    background: #C9956C;
+    margin-bottom: 28px;
+  }
+
+  .eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    color: #C9956C;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.12;
+    color: #f5f0eb;
+    margin-bottom: 32px;
+  }
+
+  .base-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: rgba(245, 240, 235, 0.62);
+    margin-bottom: 36px;
+    max-width: 360px;
+  }
+
+  /* ── Bullets ────────────────────────────────────────── */
+  .bullets {
+    list-style: none;
+    margin-bottom: 52px;
+  }
+
+  .bullets li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: rgba(245, 240, 235, 0.78);
+    padding: 10px 0 10px 22px;
+    position: relative;
+    border-bottom: 1px solid rgba(201, 149, 108, 0.18);
+    letter-spacing: 0.01em;
+  }
+
+  .bullets li:first-child {
+    border-top: 1px solid rgba(201, 149, 108, 0.18);
+  }
+
+  .bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #C9956C;
+  }
+
+  /* ── CTA ────────────────────────────────────────────── */
+  .cta {
+    display: inline-block;
+    background: #C9956C;
+    color: #13100f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    width: fit-content;
+  }
+
+  /* ── Bottom strip ───────────────────────────────────── */
+  .bottom-strip {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(201, 149, 108, 0.35);
+  }
+
+  .tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: rgba(245, 240, 235, 0.35);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Photo -->
+  <img class="photo" src="../../assets/Beautiful-Woman-11-scaled.webp" alt="">
+  <div class="photo-fade"></div>
+
+  <!-- Left panel -->
+  <div class="panel">
+
+    <!-- Logo -->
+    <img class="logo" src="../../assets/logo-1-Logo_balts-3-scaled.png" alt="Mariposa">
+
+    <!-- Main content -->
+    <div class="body">
+      <div class="accent-bar"></div>
+      <div class="eyebrow">Ārstē avotu, ne simptomu</div>
+
+      <h1 class="headline">
+        Redzams rezultāts<br>pēc 2 sesijām
+      </h1>
+
+      <p class="base-text">
+        Krēmi pigmentāciju neizārstē. Optimas strādā pie avota — IPL, RF un lāzers vienā protokolā.
+      </p>
+
+      <ul class="bullets">
+        <li>Trīs tehnoloģijas vienā Optimas platformā</li>
+        <li>95% klientu atgriežas pēc pirmās sesijas</li>
+        <li>Bezmaksas konsultācija — vērtība 40€</li>
+      </ul>
+
+      <div class="bottom-strip">
+        <div class="cta">Piesakies</div>
+        <div class="divider"></div>
+        <span class="tagline">mariposa.lv</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

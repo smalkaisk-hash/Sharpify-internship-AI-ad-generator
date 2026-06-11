@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #0a0a0a;
+    overflow: hidden;
+  }
+
+  .page {
+    width: 1080px;
+    height: 1080px;
+    background: linear-gradient(160deg, #111 0%, #0a0a0a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .phone {
+    width: 680px;
+    background: #1c1c1e;
+    border-radius: 44px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 3px #333;
+  }
+
+  .phone-header {
+    background: #1c1c1e;
+    padding: 24px 32px 18px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #2c2c2e;
+  }
+
+  .avatar {
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(135deg, #5856d6, #af52de);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .contact-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .contact-status {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8e8e93;
+  }
+
+  .chat {
+    padding: 26px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bubble {
+    max-width: 480px;
+    padding: 18px 24px;
+    border-radius: 22px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .bubble.them {
+    background: #2c2c2e;
+    color: #ffffff;
+    align-self: flex-start;
+    border-bottom-left-radius: 6px;
+  }
+
+  .bubble.me {
+    background: #0a84ff;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 6px;
+  }
+
+  .time-stamp {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #636366;
+    text-align: center;
+    margin: 6px 0;
+  }
+
+  .link-preview {
+    background: #2c2c2e;
+    border-radius: 18px;
+    overflow: hidden;
+    align-self: flex-end;
+    max-width: 480px;
+    margin-top: -4px;
+  }
+
+  .link-preview-header {
+    background: #F59E0B;
+    padding: 16px 22px;
+  }
+
+  .link-preview-logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #0a0a0a;
+  }
+
+  .link-preview-body {
+    padding: 16px 22px;
+  }
+
+  .link-preview-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .link-preview-url {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #8e8e93;
+  }
+
+  .typing {
+    align-self: flex-start;
+    display: flex;
+    gap: 7px;
+    padding: 20px 24px;
+    background: #2c2c2e;
+    border-radius: 22px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .typing-dot {
+    width: 12px;
+    height: 12px;
+    background: #8e8e93;
+    border-radius: 50%;
+  }
+
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="phone">
+      <div class="phone-header">
+        <div class="avatar">M</div>
+        <div>
+          <div class="contact-name">Mark</div>
+          <div class="contact-status">iMessage</div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="time-stamp">Today 2:14 PM</div>
+        <div class="bubble them">Bro your new website looks insane. Who made it?</div>
+        <div class="bubble me">Thanks man! Sharpify built it. Took 2 days.</div>
+        <div class="bubble them">How much was it? My cousin's agency quoted me 3 grand 💀</div>
+        <div class="bubble me">€59.</div>
+        <div class="bubble them">Excuse me WHAT</div>
+        <div class="bubble me">Custom design, mobile-ready, SEO, contact forms, everything. 1,000+ five star reviews.</div>
+        <div class="bubble me">Here 👇</div>
+        <div class="link-preview">
+          <div class="link-preview-header">
+            <div class="link-preview-logo">Sharpify</div>
+          </div>
+          <div class="link-preview-body">
+            <div class="link-preview-title">Professional Website &mdash; Starting at €59</div>
+            <div class="link-preview-url">web.sharpify.lv</div>
+          </div>
+        </div>
+        <div class="typing">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

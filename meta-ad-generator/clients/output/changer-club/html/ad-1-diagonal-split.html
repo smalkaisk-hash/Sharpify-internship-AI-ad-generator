@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond%3Aital%2Cwght%400%2C300%3B0%2C600%3B0%2C700%3B1%2C400%7CMontserrat%3Awght%40400%3B500%3B600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;font-family:'Montserrat',sans-serif}
+
+/* Layer 1 — base gradient mesh */
+.base{position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 900px 700px at 80% 40%, #c8a86a22 0%, transparent 60%),
+    radial-gradient(ellipse 600px 500px at 10% 90%, #c8a86a11 0%, transparent 55%),
+    #0d0b09}
+
+/* Layer 2 — noise texture */
+.noise{position:absolute;inset:0;opacity:0.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size:300px 300px}
+
+/* Layer 3 — diagonal right block */
+.diagonal-block{
+  position:absolute;top:0;right:0;width:620px;height:1080px;
+  background:linear-gradient(135deg, #1a1612 0%, #0a0806 100%);
+  clip-path:polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)}
+
+/* Layer 3b — diagonal accent gradient over block */
+.diagonal-glow{
+  position:absolute;top:0;right:0;width:620px;height:1080px;
+  background:radial-gradient(ellipse 500px 600px at 70% 30%, #c8a86a30 0%, transparent 65%);
+  clip-path:polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)}
+
+/* Layer 3c — geometric grid lines on right block */
+.grid-lines{
+  position:absolute;top:0;right:0;width:620px;height:1080px;
+  clip-path:polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-image:
+    linear-gradient(#c8a86a18 1px, transparent 1px),
+    linear-gradient(90deg, #c8a86a18 1px, transparent 1px);
+  background-size:80px 80px}
+
+/* Layer 4 — left content fade (prevents hard edge) */
+.fade-overlay{
+  position:absolute;top:0;left:420px;width:300px;height:1080px;
+  background:linear-gradient(to right, #0d0b09 0%, transparent 100%)}
+
+/* Layer 5 — accent vertical line */
+.accent-line-v{
+  position:absolute;top:80px;left:72px;width:3px;height:60px;
+  background:linear-gradient(to bottom, #c8a86a, transparent)}
+
+/* Layer 6 — corner mark */
+.corner{
+  position:absolute;bottom:200px;right:60px;
+  width:40px;height:40px;
+  border-bottom:2px solid #c8a86a88;
+  border-right:2px solid #c8a86a88}
+
+/* Layer 7 — text content */
+.content{
+  position:absolute;top:0;left:0;width:560px;height:1080px;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:0 72px}
+
+.eyebrow{
+  font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;
+  color:#c8a86a;letter-spacing:6px;text-transform:uppercase;
+  margin-bottom:32px}
+
+.rule{width:48px;height:2px;background:#c8a86a;margin-bottom:36px}
+
+.headline{
+  font-family:'Cormorant Garamond',serif;font-size:76px;font-weight:700;
+  line-height:1.0;color:#f5f0e8;margin-bottom:16px;max-width:440px}
+
+.headline em{color:#c8a86a;font-style:normal}
+
+.subhead{
+  font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;
+  font-style:italic;color:#b8a88a;margin-bottom:40px;max-width:420px}
+
+.body-text{
+  font-size:19px;line-height:1.6;color:#f5f0e8aa;
+  max-width:400px;margin-bottom:52px}
+
+/* Layer 8 — CTA */
+.cta{
+  display:inline-block;
+  background:#c8a86a;color:#0d0b09;
+  padding:20px 44px;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  border-radius:4px;
+  box-shadow:0 8px 40px #c8a86a55, 0 2px 10px rgba(0,0,0,0.5);
+  width:fit-content}
+
+/* Right panel stats */
+.stats{
+  position:absolute;top:50%;right:0;width:560px;
+  transform:translateY(-50%);
+  clip-path:polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding:60px 80px 60px 140px;
+  display:flex;flex-direction:column;gap:40px}
+
+.stat-item{display:flex;flex-direction:column;gap:8px}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:700;
+  color:#c8a86a;line-height:1}
+.stat-label{
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;
+  color:#f5f0e888;letter-spacing:1px;text-transform:uppercase}
+.stat-desc{
+  font-size:15px;color:#f5f0e855;line-height:1.4}
+
+/* Diagonal accent lines */
+.accent-diag{
+  position:absolute;top:0;left:380px;width:4px;height:1080px;
+  background:linear-gradient(to bottom, transparent 0%, #c8a86a44 30%, #c8a86a66 50%, #c8a86a44 70%, transparent 100%);
+  transform:rotate(8deg);transform-origin:top center}
+</style>
+</head>
+<body>
+<div class="base"></div>
+<div class="noise"></div>
+<div class="diagonal-block"></div>
+<div class="diagonal-glow"></div>
+<div class="grid-lines"></div>
+<div class="fade-overlay"></div>
+<div class="accent-line-v"></div>
+<div class="accent-diag"></div>
+<div class="corner"></div>
+
+<div class="content">
+  <div class="eyebrow">Changer Club</div>
+  <div class="rule"></div>
+  <h1 class="headline">Built and exited — but<br><em>have no compelling …</em></h1>
+  <p class="subhead">Not another business club. The operating system for the nex…</p>
+  <p class="body-text">Up to +7 years of fulfilled, emotionally alive life (backed by Harvard research)</p>
+  <div class="cta">See If You Qualify</div>
+</div>
+
+<div class="stats">
+  <div class="stat-item">
+    <div class="stat-num">270+</div>
+    <div class="stat-label">Member Families</div>
+    <div class="stat-desc">$25B+ in aggregate capital</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">+7</div>
+    <div class="stat-label">Years of Fulfilled Life</div>
+    <div class="stat-desc">Harvard longitudinal research</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">110%</div>
+    <div class="stat-label">ROI Last Year</div>
+    <div class="stat-desc">Top 5 Angel Syndicate, Europe</div>
+  </div>
+</div>
+</body></html>

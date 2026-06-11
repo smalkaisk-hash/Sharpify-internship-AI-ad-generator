@@ -1,0 +1,149 @@
+{
+  "client_name": "Mariposa",
+  "client_slug": "mariposa",
+  "language": "lv",
+  "ad_type": "client-intangible",
+  "generated_at": "2026-05-05T00:00:00Z",
+  "campaign": "New angles from existing patterns",
+  "copy_sets": [
+    {
+      "id": "ad-7",
+      "name": "Social Proof — Results Showcase",
+      "framework": "Social-Proof",
+      "layout_recommendation": "extra:social-proof/verified-results-card",
+      "hook_type": "statistic",
+      "primary_text": {
+        "short": "95% klientu vēlas nākt atpakaļ. Kāds ir jūsu padoms?",
+        "long": "95% no mūsu klientiem vēlas atgriezties. Ne tāpēc, ka tas ir vienkārši. Bet tāpēc, ka tas darbojas.\n\nOptimas tehnoloģija — trīs metodes vienā platformā:\n✅ IPL ādas tonim un pigmentācijai\n✅ RF mikroadatas ādas spēcei\n✅ Lāzerepilācija ilgterm rezultātam\n\nRezultāti, kurus redzi jau pēc 2-3 procedūrām.\n\n→ Piesakies savam pirmajam apskatam"
+      },
+      "headline": "Pāri 2500 apmierinātiem klientiem",
+      "description": "Ādas, kas atjaunojas",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies bezmaksas konsultācijai →",
+      "image_requirements": null,
+      "template_fields": {
+        "stat_primary": "95%",
+        "stat_label": "vēlas atgriezties",
+        "substat": "2500+ apmierinātie klienti",
+        "trust_element": "Riga | Bezmaksas stāvvieta"
+      }
+    },
+    {
+      "id": "ad-8",
+      "name": "Curiosity Gap — Summer Ready",
+      "framework": "Curiosity-Gap",
+      "layout_recommendation": "bold-statement",
+      "hook_type": "question",
+      "primary_text": {
+        "short": "Vai Tava āda ir gatava vasarai?",
+        "long": "Lielākā kļūda, ko veic sievietes vasaras sagatavošanā — viņas čakā krēmiem, bet neizmanto pareizās metodes.\n\nOptimas tehnoloģija dara to, ko crèmes nespēj:\n\n✅ IPL atbrīvo ādu no pigmentācijas\n✅ RF procedūras cieš ādu no iekšienes\n✅ Lāzerepilācija — atbrīvošanās uz visos vasaras mēnešiem\n\nNe procesi. Ne solījumi. Rezultāti, ko var REDZ.\n\nPiesakies šonedēļ un saņem BEZMAKSAS konsultāciju vērtībā 40€."
+      },
+      "headline": "Vasara sākas ar izvēli",
+      "description": "Optimas rezultāti",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini vairāk →",
+      "image_requirements": null,
+      "template_fields": {
+        "accent_color": "#d4a97a",
+        "secondary_text": "Trīs procedūras. Viena risinājums. Jūtas.",
+        "bonus_highlight": "BEZMAKSAS konsultācija 40€ vērtībā"
+      }
+    },
+    {
+      "id": "ad-9",
+      "name": "Before-After Transformation",
+      "framework": "Before-After",
+      "layout_recommendation": "comparison",
+      "hook_type": "pain-point",
+      "primary_text": {
+        "short": "No aizvainojuma uz pārliecībai",
+        "long": "BEZ → AR\n\n❌ Pigmentācijas plankumi\n❌ Apsārtums un iekaisums\n❌ Nevēlams apmatojums\n❌ Zaudēta ādas elastība\n\n✅ Vienmērīga, gludāka āda\n✅ Mirdzošs, vesels sejas tonis\n✅ Ilgstošā epilācija\n✅ Ādas elastības atjaunošana\n\nOptimas tehnoloģija apvieno IPL, RF un lāzeri — viss, kas Tev nepieciešams, viena platformā.\n\nSāc savu transformāciju šodien."
+      },
+      "headline": "Jūtas savu ādā apsardzēta",
+      "description": "Lielā atšķirība 6 nedēļas",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Piesakies vizītei →",
+      "image_requirements": null,
+      "template_fields": {
+        "before_items": ["Pigmentācijas plankumi", "Apsārtums", "Nevēlams apmatojums", "Zaudēta elastība", "Nedrošība"],
+        "after_items": ["Vienmērīga āda", "Mirgojošs tonis", "Ilgstošā epilācija", "Ādas spēks", "Pārliecība"]
+      }
+    },
+    {
+      "id": "ad-10",
+      "name": "Benefit Stack — Why Optimas",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "benefit-stack",
+      "hook_type": "bold-claim",
+      "primary_text": {
+        "short": "Trīs procedūras, viena iekārta, bezgalīgi labāki rezultāti",
+        "long": "Kāpēc Optimas ir valstī labākā izvēle skaistumkopšanai:\n\n🔹 EFEKTIVITĀTE\nIPL, RF un lāzers — visos mūsu klientiem nepieciešams.\n\n🔹 REZULTĀTI\n95% redzami uzlabojumi pēc 2-3 procedūrām.\n\n🔹 DRAUDZĪGUMS\nBez sāpēm. Minimāla atsargjošana. Tūlīt kopumā.\n\n🔹 PIELĀGOJUMS\nKatra procedūra tiek regulēta Tavai ādas tipam.\n\n🔹 PIEEJAMĪBA\nRīgā, ar bezmaksas autostāvvietu, elastīgs grafiks.\n\nTas nav tikai procedūra. Tas ir investīcija Tevī.\n\n→ Piesakies bezmaksas konsultācijai"
+      },
+      "headline": "Labākā ādas atjaunošana Rīgā",
+      "description": "Optimas vēl nav pamēģināta",
+      "cta_button": "Book Now",
+      "cta_text_on_image": "Rezervē savu vizīti →",
+      "image_requirements": null,
+      "template_fields": {
+        "benefit_1_icon": "🔹",
+        "benefit_1_title": "EFEKTIVITĀTE",
+        "benefit_1_desc": "Trīs procedūras vienā iekārtā",
+        "benefit_2_icon": "🔹",
+        "benefit_2_title": "REZULTĀTI",
+        "benefit_2_desc": "95% kliento redzēs izmaiņas",
+        "benefit_3_icon": "🔹",
+        "benefit_3_title": "DRAUDZĪGUMS",
+        "benefit_3_desc": "Bez sāpēm, ātri atjaunojas",
+        "benefit_4_icon": "🔹",
+        "benefit_4_title": "PIELĀGOJUMS",
+        "benefit_4_desc": "Regulēts Tavai ādai"
+      }
+    },
+    {
+      "id": "ad-11",
+      "name": "Direct Offer — Limited Time",
+      "framework": "Direct-Offer",
+      "layout_recommendation": "extra:promotional/limited-time-offer",
+      "hook_type": "statistic",
+      "primary_text": {
+        "short": "Jauniem klientiem: -20% pirmajai procedūrai",
+        "long": "ŠOBRĪD PIEEJAMS JAUNIEM KLIENTIEM\n\n-20% pirmajā Optimas procedūrā\n(IPL, RF vai lāzerepilācija — izvēlies Tu)\n\nJo mēs zinām: tas, kas sākas lieliski, turpinās lieliski.\n\nOpt optimas tehnoloģija, pilnīga bezmaksas konsultācija un personīgs ādas plāns — viss iekļauts.\n\nBet šī akcija beigsies 31.maijā.\n\nVocal saņemts: jauniem klientiem + 40€ konsultācija par bezmaksas."
+      },
+      "headline": "Nāc, pamēģini, iemīlies",
+      "description": "-20% pirmajā vizītē",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Aizstāvēt -20% →",
+      "image_requirements": null,
+      "template_fields": {
+        "offer_primary": "-20%",
+        "offer_label": "Pirmajā procedūrā",
+        "validity": "līdz 31. maijam",
+        "bonus": "Bezmaksas konsultācija + ādas analīze"
+      }
+    },
+    {
+      "id": "ad-12",
+      "name": "Story — Client Transformation",
+      "framework": "Story",
+      "layout_recommendation": "extra:testimonial/client-journey",
+      "hook_type": "story",
+      "primary_text": {
+        "short": "Agnese nenoslēpoja: 'Es jutos nedrošīga savā ādā'",
+        "long": "Agnese, 34:\n\n\"Gadu ilgi pūlējos — krēmi, aizsargi, viss tas. Bet pigmentācijas plankumi un apsārtums nemaz neatpūtās. Es vienkārši pieņēmu, ka tā ir mana āda.\n\nTad draudzene ieteica Mariposa.\n\nOpt optimas procedūras bija pilnīgi atšķirīgas. Pēc otrās procedūras jau redzēju rezultātus. Pēc sešām nedēļām — es neatpazīstu savu seju.\n\nŠodien es jūtos draudzīga savā ādā. Un tas nav par procedūrām. Tas ir par sevi.\"\n\n— Agnese K., Rīga\n\nTava stāsts var sākties šodien. \n\n→ Piesakies konsultācijai"
+      },
+      "headline": "No nedrošības uz pārliecību",
+      "description": "Agneses 6 nedēļu transformācija",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini Agneses stāstu →",
+      "image_requirements": null,
+      "template_fields": {
+        "client_name": "Agnese K.",
+        "client_age": "34",
+        "client_location": "Rīga",
+        "transformation_weeks": "6",
+        "key_quote": "Es jūtos draudzīga savā ādā",
+        "service_used": "Optimas — IPL + RF + lāzerepilācija"
+      }
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Changer Club — Be wealthy, not just rich</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html, body { margin: 0; background: #000; color: #F4EFE6; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  body { overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  ::selection { background: #C9A24A; color: #1A1208; }
+
+  /* --- Scroll reveal --- */
+  .cc-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1100ms cubic-bezier(.22,.61,.36,1), transform 1100ms cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
+  }
+  .cc-reveal.is-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* --- Static fade-in (hero supporting text) --- */
+  .cc-fade-in { opacity: 0; transform: translateY(10px); animation: ccFadeIn 1200ms cubic-bezier(.22,.61,.36,1) 600ms forwards; }
+  .cc-fade-delay-2 { animation-delay: 1100ms; }
+  .cc-fade-delay-3 { animation-delay: 1450ms; }
+  @keyframes ccFadeIn { to { opacity: 1; transform: translateY(0); } }
+
+  /* --- Slow Ken Burns on hero photo --- */
+  .cc-kenburns {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .cc-kenburns::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.06);
+    animation: ccKenBurns 22s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+  .cc-kenburns::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+  }
+  @keyframes ccKenBurns {
+    0%   { transform: scale(1.06) translate(0, 0); }
+    100% { transform: scale(1.16) translate(2%, 2%); }
+  }
+
+  /* --- Photo card hover lift --- */
+  .cc-photo {
+    position: relative;
+    overflow: hidden;
+    transition: transform 700ms cubic-bezier(.22,.61,.36,1);
+  }
+  .cc-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1400ms cubic-bezier(.22,.61,.36,1), filter 800ms ease;
+    filter: saturate(0.92) contrast(1.02);
+  }
+  .cc-photo:hover img { transform: scale(1.06); filter: saturate(1.05) contrast(1.04); }
+
+  /* --- Marquee --- */
+  @keyframes ccMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .cc-marquee-track { display: flex; gap: 96px; animation: ccMarquee 44s linear infinite; width: max-content; }
+
+  /* --- Gold underline draw on link hover --- */
+  .cc-underline { position: relative; }
+  .cc-underline::after {
+    content: ''; position: absolute; left: 0; bottom: -4px; height: 1px; width: 100%;
+    background: #C9A24A; transform: scaleX(0); transform-origin: left;
+    transition: transform 600ms cubic-bezier(.22,.61,.36,1);
+  }
+  .cc-underline:hover::after { transform: scaleX(1); }
+
+  /* Club Schedule rows */
+  .cc-schedule-row {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(244,239,230,0.08);
+    transition: background 240ms ease, padding-left 320ms ease;
+  }
+  .cc-schedule-row:hover { background: rgba(201,162,74,0.04); padding-left: 8px; }
+  .cc-schedule-row:hover .cc-arrow { transform: translateX(4px); }
+
+  /* Press clippings (homepage + press page) */
+  .cc-clipping {
+    position: relative;
+    transition: transform 800ms cubic-bezier(.22,.61,.36,1);
+    transform: rotate(var(--tilt, 0deg));
+  }
+  .cc-clipping:hover { transform: rotate(0deg) translateY(-8px); }
+
+  .cc-play-btn:hover { transform: scale(1.06); background: rgba(201,162,74,0.14) !important; }
+  .cc-video-frame:hover .cc-play-btn { transform: scale(1.06); background: rgba(201,162,74,0.14) !important; }
+  @keyframes cc-rec-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+  @media (max-width: 880px) {
+    .cc-programme-intro { grid-template-columns: 1fr !important; gap: 40px !important; }
+  }
+
+  /* ============================================================ */
+  /* CINEMATIC SECTION TRANSITIONS                                  */
+  /* ============================================================ */
+
+  /* Big-scale entry — sections "punch in" from far away.
+     Drives via --p (0..1) set by scroll handler. */
+  .cc-scene {
+    --p: 0;
+    will-change: transform, opacity, filter;
+  }
+  .cc-scene-zoom-in   { transform: scale(calc(0.78 + 0.22 * var(--p))); opacity: var(--p); filter: blur(calc((1 - var(--p)) * 18px)); }
+  .cc-scene-zoom-out  { transform: scale(calc(1.22 - 0.22 * var(--p))); opacity: var(--p); filter: blur(calc((1 - var(--p)) * 12px)); }
+  .cc-scene-rise      { transform: translateY(calc((1 - var(--p)) * 80px)) scale(calc(0.96 + 0.04 * var(--p))); opacity: var(--p); }
+  .cc-scene-tilt      { transform: perspective(1400px) rotateX(calc((1 - var(--p)) * 22deg)) translateY(calc((1 - var(--p)) * 80px)); opacity: var(--p); transform-origin: 50% 100%; filter: blur(calc((1 - var(--p)) * 6px)); }
+
+  /* Photo tumble — three different entry angles */
+  .cc-tumble {
+    --p: 0;
+    will-change: transform, opacity, filter, clip-path;
+    opacity: var(--p);
+  }
+  .cc-tumble-1 {
+    transform: translateX(calc((1 - var(--p)) * -120px)) rotate(calc((1 - var(--p)) * -8deg)) scale(calc(0.85 + 0.15 * var(--p)));
+    clip-path: inset(calc((1 - var(--p)) * 40%) 0 0 0);
+  }
+  .cc-tumble-2 {
+    transform: translateY(calc((1 - var(--p)) * -100px)) rotate(calc((1 - var(--p)) * 6deg));
+    clip-path: inset(0 calc((1 - var(--p)) * 100%) 0 0);
+  }
+  .cc-tumble-3 {
+    transform: translateX(calc((1 - var(--p)) * 120px)) rotate(calc((1 - var(--p)) * 8deg));
+    clip-path: inset(0 0 0 calc((1 - var(--p)) * 100%));
+  }
+
+  /* Iris reveal — circular mask opens as section enters */
+  .cc-iris {
+    --p: 0;
+    clip-path: circle(calc(8% + 92% * var(--p)) at 50% 50%);
+    transform: scale(calc(0.85 + 0.15 * var(--p)));
+    will-change: clip-path, transform;
+  }
+
+  /* Letterbox cinematic bars that retract on scroll */
+  .cc-letterbox {
+    position: relative;
+    isolation: isolate;
+  }
+  .cc-letterbox::before,
+  .cc-letterbox::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    height: calc((1 - var(--p, 0)) * 14%);
+    background: #000;
+    z-index: 3;
+    pointer-events: none;
+  }
+  .cc-letterbox::before { top: 0; }
+  .cc-letterbox::after  { bottom: 0; }
+
+  /* SHUTTER WIPE — full-bleed gold/black diagonal stripes that sweep across between sections.
+     Used as a section divider; ::before sweeps from left, ::after from right. */
+  .cc-shutter {
+    --p: 0;
+    position: relative;
+    height: 0;
+    overflow: visible;
+    z-index: 6;
+    pointer-events: none;
+  }
+  .cc-shutter-stripe {
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    width: 100vw;
+    margin-left: -50vw;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #C9A24A 18%, #F4EFE6 50%, #C9A24A 82%, transparent 100%);
+    transform: scaleX(var(--p));
+    transform-origin: 50% 50%;
+    box-shadow: 0 0 24px rgba(201,162,74,0.55), 0 0 60px rgba(201,162,74,0.3);
+  }
+  /* Optional gold serif word that flashes in mid-wipe */
+  .cc-shutter-word {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform: translate(-50%, -50%) scale(calc(0.8 + 0.4 * var(--p)));
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(14px, 1.6vw, 20px);
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #C9A24A;
+    opacity: calc(var(--p) * (1 - var(--p)) * 4);
+    white-space: nowrap;
+    text-shadow: 0 0 28px rgba(201,162,74,0.55);
+  }
+
+  /* Clip-path morph for video frame */
+  .cc-clip-morph {
+    --p: 0;
+    clip-path: inset(calc((1 - var(--p)) * 50%) calc((1 - var(--p)) * 12%) calc((1 - var(--p)) * 50%) calc((1 - var(--p)) * 12%));
+    transform: scale(calc(0.92 + 0.08 * var(--p)));
+    will-change: clip-path, transform;
+  }
+
+  /* Glitch flash overlay used at boundary moments */
+  .cc-glitch {
+    --p: 0;
+    position: relative;
+  }
+  .cc-glitch::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      repeating-linear-gradient(0deg, rgba(201,162,74,0.06) 0px, rgba(201,162,74,0.06) 1px, transparent 1px, transparent 4px),
+      linear-gradient(180deg, rgba(244,239,230,0.04), rgba(244,239,230,0.04));
+    mix-blend-mode: screen;
+    opacity: calc(var(--p) * (1 - var(--p)) * 4);
+    transform: translateX(calc(var(--p) * 6px - 3px));
+    z-index: 5;
+  }
+
+  /* Pinned horizontal-scroll wrapper for programme.
+     Outer = tall track (3x viewport height); inner = sticky viewport that translates horizontally. */
+  .cc-pin-track {
+    position: relative;
+    height: 420vh; /* drives the scroll length */
+  }
+  .cc-pin-stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+  }
+  .cc-pin-rail {
+    --p: 0;
+    display: flex;
+    height: 100%;
+    width: 400vw;
+    transform: translateX(calc(var(--p) * -300vw));
+    will-change: transform;
+  }
+  .cc-pin-panel {
+    flex: 0 0 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 max(40px, 5vw);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cc-reveal, .cc-fade-in, .cc-kenburns, .cc-marquee-track, .cc-clipping { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+    .cc-scene, .cc-scene-zoom-in, .cc-scene-zoom-out, .cc-scene-rise, .cc-scene-tilt, .cc-iris, .cc-letterbox, .cc-tumble, .cc-clip-morph, .cc-glitch, .cc-pin-rail {
+      transform: none !important; opacity: 1 !important; filter: none !important; clip-path: none !important;
+    }
+    .cc-letterbox::before, .cc-letterbox::after, .cc-shutter, .cc-glitch::before { display: none !important; }
+    .cc-pin-track { height: auto !important; }
+    .cc-pin-stage { position: static !important; height: auto !important; overflow: visible !important; }
+    .cc-pin-rail { width: auto !important; flex-direction: column !important; }
+    .cc-pin-panel { flex: 0 0 auto !important; height: auto !important; padding: 64px max(24px, 4vw) !important; }
+  }
+</style>
+</head>
+<body>
+<div data-screen-label="Changer Club marketing site" id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="Button.jsx"></script>
+<script type="text/babel" src="Nav.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="PressWall.jsx"></script>
+<script type="text/babel" src="VideoPlaceholder.jsx"></script>
+<script type="text/babel" src="ProgrammeSteps.jsx"></script>
+<script type="text/babel" src="ProgrammePinned.jsx"></script>
+<script type="text/babel" src="StatRow.jsx"></script>
+<script type="text/babel" src="MemberQuote.jsx"></script>
+<script type="text/babel" src="MechanismBlock.jsx"></script>
+<script type="text/babel" src="PhotoGallery.jsx"></script>
+<script type="text/babel" src="ClubSchedule.jsx"></script>
+<script type="text/babel" src="PressFeature.jsx"></script>
+<script type="text/babel" src="ApplicationForm.jsx"></script>
+<script type="text/babel" src="Footer.jsx"></script>
+
+<script type="text/babel">
+  const { useEffect, useState: useState_App } = React;
+  function App() {
+    const [modalOpen, setModalOpen] = useState_App(false);
+    const apply = () => setModalOpen(true);
+
+    useEffect(() => {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+      document.querySelectorAll('.cc-reveal').forEach(el => io.observe(el));
+
+      // Scroll-driven cinematic transitions
+      const scrollEls = Array.from(document.querySelectorAll('.cc-scroll, .cc-pin-track'));
+      const tumbleGrids = Array.from(document.querySelectorAll('.cc-tumble-grid'));
+      const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+      const ease = (t) => t < 0.5 ? 2*t*t : 1 - Math.pow(-2*t+2, 2)/2;
+      const setVar = (el, p) => el.style.setProperty('--p', p.toFixed(3));
+
+      let raf = 0;
+      const tick = () => {
+        const vh = window.innerHeight;
+
+        // Generic scenes / wipes / letterbox / shutter / clip-morph / iris / glitch
+        for (const el of scrollEls) {
+          const r = el.getBoundingClientRect();
+          const fx = el.dataset.fx;
+          let p;
+          if (fx === 'shutter') {
+            const center = r.top + r.height / 2;
+            const dist = Math.abs(center - vh / 2);
+            p = clamp(1 - dist / (vh * 0.55), 0, 1);
+            p = ease(p);
+          } else if (fx === 'letterbox') {
+            p = clamp(-r.top / (vh * 0.7), 0, 1);
+            p = ease(p);
+          } else if (fx === 'pin' || el.classList.contains('cc-pin-track')) {
+            // 0 → 1 across the entire track (excluding the last viewport, which is the exit)
+            const trackHeight = r.height - vh;
+            p = clamp(-r.top / trackHeight, 0, 1);
+            const rail = el.querySelector('.cc-pin-rail');
+            if (rail) setVar(rail, p);
+            const prog = el.querySelector('.cc-pin-progress');
+            if (prog) prog.style.transform = `scaleX(${p.toFixed(3)})`;
+            continue; // pin tracks don't get --p on the outer
+          } else {
+            const enter = vh * 1.0;
+            const settle = vh * 0.35;
+            p = clamp((enter - r.top) / (enter - settle), 0, 1);
+            p = ease(p);
+          }
+          setVar(el, p);
+        }
+
+        // Per-photo tumble inside a grid: drive each child's --p separately, slightly staggered
+        for (const grid of tumbleGrids) {
+          const r = grid.getBoundingClientRect();
+          const enter = vh * 1.05;
+          const settle = vh * 0.3;
+          const base = clamp((enter - r.top) / (enter - settle), 0, 1);
+          const tiles = grid.querySelectorAll('.cc-tumble');
+          tiles.forEach((t, i) => {
+            const stagger = i * 0.18;
+            const pp = clamp((base - stagger) / (1 - stagger), 0, 1);
+            setVar(t, ease(pp));
+          });
+        }
+        raf = 0;
+      };
+      const onScroll = () => { if (!raf) raf = requestAnimationFrame(tick); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      tick();
+
+      return () => { io.disconnect(); window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); };
+    }, []);
+
+    return (
+      <React.Fragment>
+        <Nav onApply={apply} />
+        <main>
+          <Hero onApply={apply} />
+
+          <PressWall />
+
+          <div className="cc-shutter cc-scroll" data-fx="shutter" style={{ marginTop: '120px' }}>
+            <div className="cc-shutter-stripe" />
+            <div className="cc-shutter-word">The programme</div>
+          </div>
+
+          <ProgrammePinned />
+
+          <PhotoGallery />
+
+          <div className="cc-glitch cc-scene cc-scene-zoom-out cc-scroll" data-fx="scene">
+            <StatRow />
+          </div>
+
+          <div className="cc-iris cc-scroll" data-fx="scene">
+            <MemberQuote />
+          </div>
+
+          <div className="cc-scene cc-scene-rise cc-scroll" data-fx="scene">
+            <MechanismBlock />
+          </div>
+
+          <div className="cc-shutter cc-scroll" data-fx="shutter">
+            <div className="cc-shutter-stripe" />
+            <div className="cc-shutter-word">Calendar 2026</div>
+          </div>
+
+          <div className="cc-scene cc-scene-zoom-in cc-scroll" data-fx="scene">
+            <ClubSchedule />
+          </div>
+
+          <PressFeature />
+
+          <div className="cc-scene cc-scene-rise cc-scroll" data-fx="scene">
+            <ApplicationForm onApply={apply} />
+          </div>
+        </main>
+        <Footer />
+        <ApplicationForm isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      </React.Fragment>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

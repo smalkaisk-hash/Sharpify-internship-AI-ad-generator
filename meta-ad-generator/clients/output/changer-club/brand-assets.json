@@ -1,0 +1,18 @@
+{
+  "colors": {
+    "primary": "#0d0b09",
+    "secondary": "#f5f0e8",
+    "accent": "#c8a86a",
+    "accent_warm": "#d48020",
+    "accent_dark": "#c06818",
+    "text_primary": "#f5f0e8",
+    "text_muted": "#b8a88a"
+  },
+  "fonts": {
+    "heading": "Cormorant Garamond",
+    "primary": "Montserrat"
+  },
+  "logo": null,
+  "images": [],
+  "brand_palette_notes": "Ultra-luxury near-black background with warm gold accents. Cormorant Garamond for editorial serif headlines, Montserrat for clean body. Palette extracted from existing dynasty ad creative."
+}

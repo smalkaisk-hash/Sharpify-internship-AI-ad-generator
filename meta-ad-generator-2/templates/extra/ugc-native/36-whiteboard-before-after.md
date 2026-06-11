@@ -1,0 +1,20 @@
+---
+name: "Whiteboard Before / After + Product Hold"
+number: 36
+category: ugc-native
+tag: "Real person's photo with whiteboard drawings. Casual and educational."
+best_for: "Health, weight loss, body transformation products. Casual educational content that doesn't feel like an ad."
+required_fields:
+  - setting
+  - surface
+  - before_label
+  - before_state
+  - after_label
+  - after_state
+  - handwritten_cta
+  - product_description
+---
+
+# Template 36: Whiteboard Before / After + Product Hold
+
+Use the attached images as brand reference for product packaging ONLY. Do NOT use ad layouts or polish. This should look like a real person's photo. Create: a lifestyle photo set in [SETTING like a bright modern kitchen]. In the background: a small tabletop dry-erase whiteboard or flip-chart propped up on [SURFACE like a marble countertop]. On the whiteboard: two simple hand-drawn black marker line illustrations side by side — left drawing labeled "[BEFORE LABEL like De esto...]" showing [BEFORE STATE like a bloated midsection outline with dots/texture], an arrow pointing right to a second drawing labeled "[AFTER LABEL like A esto!]" showing [AFTER STATE like a flatter, smoother midsection outline]. Below the drawings on the whiteboard: handwritten text in black marker "[HANDWRITTEN CTA like If you want progress during [PROBLEM], you need this!]". In the foreground: [PERSON'S HAND] holding [YOUR PRODUCT] up next to the whiteboard, positioned in the lower-right of the frame. Product label clearly visible. Shot on iPhone, natural kitchen lighting, casual and educational. 1:1 aspect ratio.

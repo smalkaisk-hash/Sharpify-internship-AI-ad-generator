@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.header {
+  text-align: center; margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.title-row {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px; font-weight: 900;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  position: relative; z-index: 1;
+}
+
+.card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.card.featured {
+  background: rgba(16,185,129,0.06);
+  border: 1px solid rgba(16,185,129,0.35);
+  box-shadow: 0 0 24px rgba(16,185,129,0.1);
+}
+
+.card-label {
+  font-size: 11px; color: #94a3b8;
+  letter-spacing: 2px;
+  text-transform: uppercase; font-weight: 700;
+  margin-bottom: 10px;
+}
+.card.featured .card-label { color: #10b981; }
+
+.card-icon-wrap {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+.card.featured .card-icon-wrap {
+  background: rgba(16,185,129,0.1);
+  border-color: rgba(16,185,129,0.3);
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+.card-sub {
+  font-size: 12px; color: #94a3b8;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.card-items {
+  display: flex; flex-direction: column; gap: 6px;
+  font-size: 13px; line-height: 1.4;
+}
+.card-item {
+  color: #cbd5e1;
+  display: flex; align-items: center; gap: 8px;
+}
+.card-item.x { color: #64748b; }
+.card-item.check { color: #cbd5e1; }
+.card-item .mark {
+  width: 14px; height: 14px;
+  flex-shrink: 0;
+  stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round;
+  fill: none;
+}
+.card-item.x .mark { stroke: #64748b; }
+.card-item.check .mark { stroke: #10b981; }
+
+.bottom-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.scale {
+  display: flex; align-items: center; gap: 10px;
+  color: #64748b;
+}
+.scale-label {
+  letter-spacing: 1px; text-transform: uppercase; font-weight: 700;
+}
+.scale-bar {
+  width: 160px; height: 3px;
+  background: linear-gradient(90deg, #64748b 0%, #daa520 50%, #10b981 100%);
+  border-radius: 2px;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="header">
+    <div class="eyebrow">AI EKOSISTĒMA</div>
+    <div class="title-row"><span class="gold-italic">4 līmeņi</span> — kur Tu esi?</div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">1. LĪMENIS</div>
+      <div class="card-icon-wrap">
+        <svg class="ic mute" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <div class="card-title">ChatGPT<br>Parasts čats</div>
+      <div class="card-sub">Jautājumu-atbilžu saruna</div>
+      <div class="card-items">
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav biznesa datu</div>
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav atmiņas</div>
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav automatizāciju</div>
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav integrāciju</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">2. LĪMENIS</div>
+      <div class="card-icon-wrap">
+        <svg class="ic mute" viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v.5a3.5 3.5 0 00-3 3.47A3.5 3.5 0 003.5 14.5a3.5 3.5 0 004 3.45A3.5 3.5 0 0012 22a3.5 3.5 0 004.5-4.05 3.5 3.5 0 004-3.45 3.5 3.5 0 00-.5-3.53A3.5 3.5 0 0017 7.5V7a5 5 0 00-5-5z"/><path d="M12 2v20"/></svg>
+      </div>
+      <div class="card-title">Claude<br>Chat</div>
+      <div class="card-sub">Gudrāks čats ar atmiņu</div>
+      <div class="card-items">
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Atmiņa starp sarunām</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Projektu konteksts</div>
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav darba pilnīga</div>
+        <div class="card-item x"><svg class="mark" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Nav automatizāciju</div>
+      </div>
+    </div>
+
+    <div class="card featured">
+      <div class="card-label">3. LĪMENIS · ŠEIT TU ESI</div>
+      <div class="card-icon-wrap">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </div>
+      <div class="card-title">Claude<br>+ 27 Skills</div>
+      <div class="card-sub">AI darbojas ar failiem un rīkiem</div>
+      <div class="card-items">
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>27 gatavas AI skills</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Uzdevumu vadība</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>10 workflows iekļauti</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>CLAUDE.md konteksts</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">4. LĪMENIS</div>
+      <div class="card-icon-wrap">
+        <svg class="ic mute" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg>
+      </div>
+      <div class="card-title">Claude Code<br>+ Aģenti</div>
+      <div class="card-sub">AI operētājsistēma</div>
+      <div class="card-items">
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Pilns biznesa konteksts</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Autonomi aģenti</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Pielāgoti plugins</div>
+        <div class="card-item check"><svg class="mark" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>24/7 automatizācija</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="scale">
+      <span class="scale-label">Pamata čats</span>
+      <div class="scale-bar"></div>
+      <span class="scale-label" style="color:#10b981">AI RĪKU KOMPLEKTS · €19</span>
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

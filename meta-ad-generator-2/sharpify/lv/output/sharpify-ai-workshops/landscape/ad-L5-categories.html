@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.hdr-row {
+  text-align: center; margin-bottom: 22px;
+  position: relative; z-index: 1;
+}
+.hdr-row .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.1;
+}
+
+.cats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  position: relative; z-index: 1;
+}
+
+.cat {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 22px 18px 20px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.cat .icon-wrap {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+}
+
+.cat.c1 .icon-wrap { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); }
+.cat.c1 .ic { stroke: #ef4444; }
+.cat.c1 .count { color: #ef4444; }
+
+.cat.c2 .icon-wrap { background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); }
+.cat.c2 .ic { stroke: #f59e0b; }
+.cat.c2 .count { color: #f59e0b; }
+
+.cat.c3 .icon-wrap { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); }
+.cat.c3 .ic { stroke: #3b82f6; }
+.cat.c3 .count { color: #3b82f6; }
+
+.cat.c4 .icon-wrap { background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.2); }
+.cat.c4 .ic { stroke: #8b5cf6; }
+.cat.c4 .count { color: #8b5cf6; }
+
+.cat.c5 .icon-wrap { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25); }
+.cat.c5 .ic { stroke: #10b981; }
+.cat.c5 .count { color: #10b981; }
+
+.cat .count {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.cat .name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; font-weight: 900;
+  color: #fff; margin-bottom: 8px;
+  line-height: 1.1;
+}
+.cat .list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 5px;
+  font-size: 12px; line-height: 1.4;
+  color: #94a3b8;
+  flex: 1;
+}
+.cat .list li { position: relative; padding-left: 12px; }
+.cat .list li::before {
+  content: '';
+  position: absolute; left: 0; top: 7px;
+  width: 4px; height: 4px;
+  background: #475569;
+  border-radius: 50%;
+}
+
+/* Bottom */
+.btm-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative; z-index: 1;
+  font-size: 13px;
+}
+.btm-row .price-info {
+  display: flex; align-items: baseline; gap: 8px;
+  color: #94a3b8;
+}
+.btm-row .price-old { text-decoration: line-through; color: #64748b; }
+.btm-row .price-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 900; color: #10b981;
+}
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  background: linear-gradient(180deg, #f5d76e 0%, #daa520 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+</style>
+</head>
+<body class="base">
+  <div class="hdr-row">
+    <div class="eyebrow">5 KATEGORIJAS · 27 SKILLS</div>
+    <div class="title"><span class="gold-italic">Pilna komanda</span> Tavā datorā</div>
+  </div>
+
+  <div class="cats">
+    <div class="cat c1">
+      <div class="icon-wrap">
+        <svg class="ic lg" viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+      </div>
+      <div class="count">5 SKILLS</div>
+      <div class="name">Mārketings</div>
+      <ul class="list">
+        <li>marketing-skill</li>
+        <li>brand-voice</li>
+        <li>email-sequences</li>
+        <li>ad-analysis</li>
+        <li>hook-writer</li>
+      </ul>
+    </div>
+
+    <div class="cat c2">
+      <div class="icon-wrap">
+        <svg class="ic lg" viewBox="0 0 24 24"><path d="M16 7V3a2 2 0 00-2-2H6a2 2 0 00-2 2v14a2 2 0 002 2h2"/><path d="M18 10l4 4-8 8H10v-4z"/></svg>
+      </div>
+      <div class="count">6 SKILLS</div>
+      <div class="name">Pārdošana</div>
+      <ul class="list">
+        <li>sales-call</li>
+        <li>objection-handler</li>
+        <li>proposal-writer</li>
+        <li>lead-research</li>
+        <li>call-prep</li>
+        <li>follow-up</li>
+      </ul>
+    </div>
+
+    <div class="cat c3">
+      <div class="icon-wrap">
+        <svg class="ic lg" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+      </div>
+      <div class="count">2 SKILLS</div>
+      <div class="name">Saturs</div>
+      <ul class="list">
+        <li>copywriting</li>
+        <li>video-scripts</li>
+        <li>social-posts</li>
+        <li>design-brief</li>
+      </ul>
+    </div>
+
+    <div class="cat c4">
+      <div class="icon-wrap">
+        <svg class="ic lg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0110 10c0 4-3 7-7 7H7a5 5 0 01-5-5c0-3 2-6 5-6h1"/><path d="M12 6v4"/><path d="M12 14h.01"/></svg>
+      </div>
+      <div class="count">4 SKILLS</div>
+      <div class="name">Zināšanas</div>
+      <ul class="list">
+        <li>brainstorming</li>
+        <li>idea-generator</li>
+        <li>meeting-notes</li>
+        <li>metrics-review</li>
+      </ul>
+    </div>
+
+    <div class="cat c5">
+      <div class="icon-wrap">
+        <svg class="ic lg" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div class="count">10 WORKFLOWS</div>
+      <div class="name">Workflows</div>
+      <ul class="list">
+        <li>content-pipeline</li>
+        <li>lead-to-close</li>
+        <li>weekly-review</li>
+        <li>campaign-launch</li>
+        <li>+ 6 vairāk</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="btm-row">
+    <div class="price-info">
+      AI Rīku Komplekts ·
+      <span class="price-old">€99</span>
+      <span class="price-new">€19</span>
+      · mūžīga piekļuve
+    </div>
+    <div class="brand">Sharpify</div>
+  </div>
+</body>
+</html>

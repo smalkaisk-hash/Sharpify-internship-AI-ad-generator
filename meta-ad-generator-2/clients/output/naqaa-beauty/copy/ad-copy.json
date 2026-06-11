@@ -1,0 +1,215 @@
+{
+  "client_name": "Naqaa Beauty",
+  "client_slug": "naqaa-beauty",
+  "language": "lv",
+  "ad_type": "client-tangible",
+  "generated_at": "2026-04-08T08:00:00.000Z",
+  "copy_sets": [
+    {
+      "id": "ad-1",
+      "framework": "PAS",
+      "layout_recommendation": "hero-overlay",
+      "primary_text": {
+        "short": "Ciets ūdens sausina ādu un matus. Katru dienu. Naqaa Beauty vitamīnu filtrs to maina jau pēc pirmās dušas.",
+        "long": "Vai zini, ka ciets ūdens ar hloru katru dienu sausina tavu ādu un matus?\n\nTu lieto dārgus krēmus un maskas — bet problēma sākas jau dušā.\n\nNaqaa Beauty vitamīnu dušas filtrs:\n✅ Samazina hloru un smagos metālus\n✅ Vitaminizē ūdeni ar dabīgiem aromātiem\n✅ Atšķirību jūti jau pēc pirmās reizes\n\nDermatoloģiski pārbaudīts. Piemērots jutīgai ādai."
+      },
+      "headline": "Tīrāks ūdens. Maigāka āda.",
+      "description": "No 34,99€ · Bezmaksas piegāde",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Iepirkties tagad",
+      "hook_type": "pain-point",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Product with packaging box on blue background — shows premium quality",
+        "source": "brief/images/product-precious-rose-with-box.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {}
+    },
+    {
+      "id": "ad-2",
+      "framework": "Benefit-Stack",
+      "layout_recommendation": "benefit-stack",
+      "primary_text": {
+        "short": "4 smaržas. 5 ieguvumi. Viens filtrs, kas maina tavu dušas pieredzi.",
+        "long": "Dušas filtrs, kas dara vairāk nekā attīra ūdeni.\n\n✅ Samazina hloru un smagos metālus\n✅ Vitamīni baro ādu un matus\n✅ Aromterapijas efekts katrā dušā\n✅ Dermatoloģiski pārbaudīts\n\n4 smaržas: Roze · Lavanda · Mango · Dzintarkoks\nNo 34,99€"
+      },
+      "headline": "Ko dod vitamīnu filtrs?",
+      "description": "4 aromāti · No 34,99€",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Apskatīt filtrus",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "All 4 filters lineup showing variety of scents",
+        "source": "brief/images/product-lineup-all-4.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "badge_text": "VITAMĪNU DUŠAS FILTRI",
+        "subheadline": "Dabīgs mirdzums katrā dušā",
+        "benefit_1_title": "Attīra ūdeni",
+        "benefit_1_desc": "Samazina hloru, smagos metālus un piemaisījumus",
+        "benefit_2_title": "Vitamīnu baro",
+        "benefit_2_desc": "Āda un mati saņem vitamīnus katrā dušā",
+        "benefit_3_title": "Aromterapija",
+        "benefit_3_desc": "4 dabīgas smaržas — roze, lavanda, mango, dzintarkoks",
+        "benefit_4_title": "Jutīgai ādai",
+        "benefit_4_desc": "Dermatoloģiski pārbaudīts, bez kaitīgām ķīmikālijām"
+      }
+    },
+    {
+      "id": "ad-3",
+      "framework": "Before-After",
+      "layout_recommendation": "comparison",
+      "primary_text": {
+        "short": "Parasta duša pret dušu ar Naqaa filtru. Atšķirību jūti, atšķirību redzi.",
+        "long": "Tava ikdienas duša vs. duša ar vitamīnu filtru 👇\n\nBez filtra:\n❌ Ciets ūdens ar hloru\n❌ Sausa, niežoša āda\n❌ Blāvi, trausli mati\n\nAr Naqaa Beauty filtru:\n✅ Tīrs, mīksts ūdens\n✅ Mirdzošā, mitrināta āda\n✅ Spīdīgi, veselīgi mati\n\nViena vienkārša maiņa. Rezultāts — jau pēc pirmās dušas.\n34,99€ · naqaa-beauty.com"
+      },
+      "headline": "Bez filtra vs. ar filtru",
+      "description": "Atšķirību jūti uzreiz",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Izmēģini pati",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Product photo used as reference — comparison layout is text-based",
+        "source": "brief/images/product-mango-rain-labeled.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "before_label": "BEZ FILTRA",
+        "after_label": "AR NAQAA FILTRU",
+        "before_items": ["Hlors un smagie metāli ūdenī", "Sausa, niežoša āda pēc dušas", "Blāvi, trausli mati", "Garlaicīga ikdienas rutīna", "Ķīmikālijas kairina jutīgu ādu"],
+        "after_items": ["Tīrs, attīrīts ūdens katrā dušā", "Mīksta, mirdzošā āda", "Spīdīgi, veselīgi mati", "Aromterapijas spa sajūta mājās", "Dermatoloģiski drošs jutīgai ādai"]
+      }
+    },
+    {
+      "id": "ad-4",
+      "framework": "Direct-Offer",
+      "layout_recommendation": "extra:product-hero/01-headline",
+      "primary_text": {
+        "short": "Vitamīnu dušas filtrs ar rožu aromātu. Tava āda sajutīs atšķirību jau pirmajā reizē. 34,99€.",
+        "long": "Precious Rose — vitamīnu dušas filtrs ar izsmalcinātu rožu aromātu.\n\n✅ Samazina hloru un smagos metālus\n✅ Aromterapijas efekts katrā dušā\n✅ Dermatoloģiski pārbaudīts\n✅ 100% pārstrādājams iepakojums\n\n34,99€ · Bezmaksas dāvanu kaste pirkumiem virs 100€\nnaqaa-beauty.com"
+      },
+      "headline": "Precious Rose",
+      "description": "Vitamīnu dušas filtrs · 34,99€",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Pasūtīt — 34,99€",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Precious Rose filter with label on blue background — clean hero shot",
+        "source": "brief/images/product-precious-rose-labeled.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "product_name": "Precious Rose",
+        "product_subtitle": "Vitamīnu dušas filtrs",
+        "price": "34,99€"
+      }
+    },
+    {
+      "id": "ad-5",
+      "framework": "AIDA",
+      "layout_recommendation": "split-horizontal",
+      "primary_text": {
+        "short": "Vai tava āda jūt dušas ūdeni? Ciets ūdens ar hloru sausina ādu katru dienu. Ir risinājums.",
+        "long": "Vai tava āda jūt dušas ūdeni? 💧\n\nCiets ūdens ar hloru un piemaisījumiem katru dienu sausina ādu un matus.\n\nNaqaa Beauty vitamīnu filtrs:\n✅ Attīra ūdeni no kaitīgām vielām\n✅ Baro ādu un matus ar vitamīniem\n✅ 4 aromāti — izvēlies savu\n\nDermatoloģiski pārbaudīts. Latvijas zīmols.\nNo 34,99€"
+      },
+      "headline": "Tava āda jūt ūdeni.",
+      "description": "Vitamīnu filtri · No 34,99€",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Uzzināt vairāk",
+      "hook_type": "question",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Mango Rain filter with box — shows product and packaging together",
+        "source": "brief/images/product-mango-rain-with-box.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {}
+    },
+    {
+      "id": "ad-6",
+      "framework": "Social-Proof",
+      "layout_recommendation": "extra:social-proof/17-verified-review-card",
+      "primary_text": {
+        "short": "\"Āda ir pavisam citāda kopš lietoju Naqaa filtru. Nebiju gaidījusi tādu efektu no dušas filtra.\"",
+        "long": "\"Āda ir pavisam citāda kopš lietoju Naqaa filtru. Nebiju gaidījusi tādu efektu no dušas filtra.\"\n\nArvien vairāk sieviešu Latvijā izvēlas filtrētu ūdeni dušā.\n\n✅ Mazāk sausuma un niežēšanas\n✅ Maigāki, spīdīgāki mati\n✅ Aromterapija katrā dušā\n\nDermatoloģiski pārbaudīts.\n34,99€ · naqaa-beauty.com"
+      },
+      "headline": "Āda jūt atšķirību.",
+      "description": "Pārbaudīts Latvijā",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Iepirkties",
+      "hook_type": "story",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "Close-up of Precious Rose filter — personal, intimate feel",
+        "source": "brief/images/product-closeup-precious-rose.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "reviewer_name": "Naqaa Beauty kliente",
+        "review_text": "Āda ir pavisam citāda kopš lietoju Naqaa filtru. Nebiju gaidījusi tādu efektu no dušas filtra. Mati ir maigāki, āda vairs nav sausa. Un tā smarža... katru rītu kā spa.",
+        "rating": 5,
+        "verified_badge": true,
+        "platform": "naqaa-beauty.com"
+      }
+    },
+    {
+      "id": "ad-7",
+      "framework": "Curiosity-Gap",
+      "layout_recommendation": "extra:lifestyle/39-curiosity-gap-scroll-stopper",
+      "primary_text": {
+        "short": "Viena lieta, ko 90% sieviešu nezina par savu dušas ūdeni. Un tā ietekmē ādu katru dienu.",
+        "long": "Viena lieta, ko 90% sieviešu nezina par savu dušas ūdeni.\n\nTavā ūdenī ir hlors, smagie metāli un rūsas daļiņas no caurulēm.\n\nTu mazgā ādu un matus ar to katru dienu. Un tad brīnies, kāpēc āda ir sausa un mati — blāvi.\n\nVienkāršs risinājums: vitamīnu dušas filtrs.\n\n✅ Attīra ūdeni\n✅ Vitamīni un aromāts\n✅ Rezultāts pēc pirmās dušas\n\n34,99€ · naqaa-beauty.com"
+      },
+      "headline": "Ko satur tavs\ndušas ūdens?",
+      "description": "Atbilde tevi pārsteigs",
+      "cta_button": "Learn More",
+      "cta_text_on_image": "Uzzini tagad",
+      "hook_type": "question",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "All 4 filters in artistic pile — intriguing, eye-catching",
+        "source": "brief/images/product-all-4-pile.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "hook_headline": "Ko satur tavs dušas ūdens?",
+        "subtext": "Atbilde var mainīt tavu ikdienu."
+      }
+    },
+    {
+      "id": "ad-8",
+      "framework": "Direct-Offer",
+      "layout_recommendation": "extra:product-hero/04-features-benefits",
+      "primary_text": {
+        "short": "4 smaržas. Viens mērķis — tīrāks ūdens un skaistāka āda. Izvēlies savu Naqaa Beauty filtru.",
+        "long": "4 vitamīnu dušas filtri. Katra smarža — unikāla pieredze.\n\n🌹 Precious Rose — elegants rožu aromāts\n💜 Lavender Meadows — nomierinošs lavandas aromāts\n🥭 Mango Rain — svaigs, tropu sajūta\n🌲 Amberwood — silts, koksnes aromāts\n\nKatrs filtrs:\n✅ Attīra ūdeni no hlora un smagajiem metāliem\n✅ Baro ādu un matus ar vitamīniem\n✅ Dermatoloģiski pārbaudīts\n\n34,99€ katrs · Komplekti no 42,49€\nnaqaa-beauty.com"
+      },
+      "headline": "4 smaržas.\nTava izvēle.",
+      "description": "No 34,99€ · 4 aromāti",
+      "cta_button": "Shop Now",
+      "cta_text_on_image": "Izvēlies savu",
+      "hook_type": "bold-claim",
+      "image_requirements": {
+        "type": "product-photo",
+        "description": "All 4 filters in a line — showing the full scent collection",
+        "source": "brief/images/product-lineup-all-4.jpg",
+        "ai_prompt": null
+      },
+      "template_fields": {
+        "feature_1": "Attīra hloru",
+        "feature_1_desc": "Samazina hloru un smagos metālus",
+        "feature_2": "Vitamīni",
+        "feature_2_desc": "Baro ādu un matus katrā dušā",
+        "feature_3": "4 aromāti",
+        "feature_3_desc": "Roze, lavanda, mango, dzintarkoks",
+        "feature_4": "Dermatoloģiski drošs",
+        "feature_4_desc": "Piemērots jutīgai ādai"
+      }
+    }
+  ]
+}

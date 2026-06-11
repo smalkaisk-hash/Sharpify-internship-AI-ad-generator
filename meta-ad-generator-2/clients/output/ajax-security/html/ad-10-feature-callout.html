@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;background:#F5F5F0;position:relative;overflow:hidden}
+    /* Product — fills the center, big */
+    .product{position:absolute;top:50%;left:50%;transform:translate(-50%,-48%);z-index:2}
+    .product img{height:600px;width:auto;filter:drop-shadow(0 20px 50px rgba(0,0,0,0.12))}
+    /* Top headline */
+    .top{position:absolute;top:44px;left:0;right:0;text-align:center;z-index:3}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px}
+    .h1{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#1A1A2E;line-height:1.05}
+    .h1 .red{color:#EF4444}
+    /* 4 callout labels with lines pointing to product */
+    .callout{position:absolute;z-index:3;display:flex;align-items:center;gap:8px}
+    .callout-dot{width:12px;height:12px;border-radius:50%;background:#EF4444;flex-shrink:0}
+    .callout-line{height:2px;background:#EF4444;opacity:0.4}
+    .callout-text{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:700;color:#1A1A2E;white-space:nowrap}
+    /* Left callouts — text then line then dot */
+    .c1{top:300px;left:36px}
+    .c1 .callout-line{width:60px}
+    .c2{bottom:320px;left:36px}
+    .c2 .callout-line{width:80px}
+    /* Right callouts — dot then line then text */
+    .c3{top:300px;right:36px;flex-direction:row-reverse}
+    .c3 .callout-line{width:60px}
+    .c4{bottom:320px;right:36px;flex-direction:row-reverse}
+    .c4 .callout-line{width:40px}
+    /* Bottom */
+    .bot{position:absolute;bottom:40px;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:center;gap:32px}
+    .price{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#1A1A2E}
+    .cta{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;color:#FFF;background:#EF4444;padding:18px 44px;border-radius:14px;border:none}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="top">
+      <div class="tag">Ajax drošības sistēma</div>
+      <div class="h1">Ko ietver <span class="red">mini komplekts?</span></div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/ajax-closeup-white.png" alt="">
+    </div>
+    <div class="callout c1">
+      <span class="callout-text">Ajax centrāle</span>
+      <div class="callout-line"></div>
+      <div class="callout-dot"></div>
+    </div>
+    <div class="callout c2">
+      <span class="callout-text">Vadi no telefona</span>
+      <div class="callout-line"></div>
+      <div class="callout-dot"></div>
+    </div>
+    <div class="callout c3">
+      <span class="callout-text">Kustību detektors</span>
+      <div class="callout-line"></div>
+      <div class="callout-dot"></div>
+    </div>
+    <div class="callout c4">
+      <span class="callout-text">Tūlītēji paziņojumi</span>
+      <div class="callout-line"></div>
+      <div class="callout-dot"></div>
+    </div>
+    <div class="bot">
+      <span class="price">130€</span>
+      <button class="cta">Pieteikties →</button>
+    </div>
+  </div>
+</body>
+</html>

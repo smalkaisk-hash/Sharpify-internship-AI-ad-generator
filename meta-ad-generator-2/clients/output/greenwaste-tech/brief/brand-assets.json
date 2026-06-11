@@ -1,0 +1,226 @@
+{
+  "source_url": "https://www.greenwaste-tech.com/",
+  "scraped_at": "2026-04-16T11:07:23.973Z",
+  "source": "scraped",
+  "has_product_images": true,
+  "ad_type_override": "client-tangible",
+  "brand_voice": {
+    "hero_tagline": "Divfāžu biofiltrācijas automātiskā kanalizācija, kas samazina rēķinus un paaugstina īpašuma vērtību",
+    "sub_tagline": "Sertificēts, pārbaudīts un garantēts risinājums, kas pārveido tavu kanalizāciju uz mūžu.",
+    "three_nos": [
+      "NAV JĀSŪKNĒ AKA",
+      "NAV PAPILDUS BAKTĒRIJU",
+      "NAV BEZJĒDZĪGU IZDEVUMU"
+    ],
+    "positioning": "Sertificēts bioloģiskais risinājums privātmāju īpašniekiem — vienīgais šāda veida Latvijā. Finansiāli un ekoloģiski atmaksājas.",
+    "form": "tu (informāla)",
+    "aesthetic": "Skandināvu cleantech + daba. Mierīgs luksuss, nevis korporatīva tehnika. Mežonīgi zaļi + zemes toņi.",
+    "_source": "Derived from homepage H1, H3, key paragraphs, and the three 'NAV' differentiators"
+  },
+  "colors": {
+    "palette": [
+      {
+        "hex": "#222222",
+        "usage_count": 1284,
+        "contexts": [
+          "text:div",
+          "text:ul",
+          "text:li",
+          "text:img",
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#808080",
+        "usage_count": 434,
+        "contexts": [
+          "text:li",
+          "text:img",
+          "text:span"
+        ]
+      },
+      {
+        "hex": "#4caf50",
+        "usage_count": 29,
+        "contexts": [
+          "bg:section",
+          "bg:button",
+          "text:i",
+          "bg:a"
+        ]
+      },
+      {
+        "hex": "#a0a0a0",
+        "usage_count": 8,
+        "contexts": [
+          "text:label",
+          "text:div",
+          "text:p"
+        ]
+      },
+      {
+        "hex": "#1c1c1c",
+        "usage_count": 8,
+        "contexts": [
+          "text:span",
+          "text:strong",
+          "bg:section"
+        ]
+      },
+      {
+        "hex": "#1d1c1d",
+        "usage_count": 6,
+        "contexts": [
+          "text:span",
+          "text:em"
+        ]
+      },
+      {
+        "hex": "#f8f8f8",
+        "usage_count": 5,
+        "contexts": [
+          "text:span",
+          "text:strong",
+          "bg:div"
+        ]
+      },
+      {
+        "hex": "#333333",
+        "usage_count": 3,
+        "contexts": [
+          "bg:section",
+          "text:span",
+          "text:strong"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#1D3A2C",
+      "secondary": "#0D1411",
+      "accent": "#4CAF50",
+      "accent_bright": "#B4E061",
+      "background": "#F4F1E8",
+      "text": "#0D1411",
+      "text_on_dark": "#F4F1E8",
+      "_note": "Scraped gave #4CAF50 green (confirmed brand from tank product color) + grey/charcoal nav chrome. Refined palette: deep forest green primary (luxe cleantech, not tech-SaaS green), kept #4CAF50 as accent (actual brand product color — the tanks and air pump are this green), added bright organic highlight, replaced default white with warm bone/sand for Nordic-cleantech feel. NOT corporate blue, NOT medical white, NOT dated Latvian home-improvement brown."
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "Ubuntu",
+        "usage_count": 1395,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "div",
+          "p",
+          "span",
+          "h5",
+          "button",
+          "h3",
+          "h1",
+          "a",
+          "h2"
+        ]
+      },
+      {
+        "family": "Times New Roman",
+        "usage_count": 3,
+        "weights": [
+          "400"
+        ],
+        "contexts": [
+          "div",
+          "a"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Ubuntu",
+      "body": "Ubuntu",
+      "display": "Fraunces",
+      "_note": "Ubuntu is the actual brand font (1395 uses, site-wide) — keeping it. Ubuntu has character (distinctive curved G, rounded geometric feel), not AI-slop-tier like Inter/Arial. For editorial display headlines added Fraunces pairing (warm serif with biological/organic curves — matches the 'bio' product story). Times New Roman was a footer/legal stub, ignored."
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.jpg",
+        "originalUrl": "https://d1yei2z3i6k35z.cloudfront.net/11095468/69401c7e41ff0_2.jpg",
+        "width": 540,
+        "height": 540
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.jpg",
+        "originalUrl": "https://d1yei2z3i6k35z.cloudfront.net/11095468/693c2bf10dd39_4.jpg",
+        "width": 540,
+        "height": 540
+      }
+    ],
+    "logos": [],
+    "products": [],
+    "all_found": 2
+  },
+  "product_category": {
+    "type": "intangible",
+    "confidence": "low",
+    "signals": [
+      "content: \"sku\"",
+      "content: \"piesakies\""
+    ],
+    "product_images": []
+  },
+  "content": {
+    "page_title": "Bioloģiskā kanalizācija",
+    "meta_description": "",
+    "headings": [
+      {
+        "tag": "H3",
+        "text": "Kam šāds risinājums ir piemērotākais?"
+      },
+      {
+        "tag": "H1",
+        "text": "Tā ir vienreizēja investīcija ilgtermiņā tavam īpašumam"
+      },
+      {
+        "tag": "H1",
+        "text": "Kā tas atšķiras no visa pārējā tirgū"
+      },
+      {
+        "tag": "H1",
+        "text": "Tā ir vienreizēja investīcija ilgtermiņā tavam īpašumam"
+      },
+      {
+        "tag": "H3",
+        "text": "Ekonomiska domāšana, kas atmaksājas"
+      },
+      {
+        "tag": "H1",
+        "text": "Īpašuma vērtība aug"
+      },
+      {
+        "tag": "H1",
+        "text": "Kā tas darbojas?"
+      },
+      {
+        "tag": "H2",
+        "text": "Drošība & kvalitāte bez kompromisiem"
+      }
+    ],
+    "key_paragraphs": [
+      "AKCIJA: -10 % DARĪJUMAM NOSLĒDZOT LĪGUMU LĪDZ 1.FEBRUĀRIM",
+      "Vienīgais šāda veida Risinājums Latvijā",
+      "DIVFĀŽU BIOFILTRĀCIJAS AUTOMĀTISKĀ KANALIZĀCIJA, KAS SAMAZINA RĒĶINUS UN PAAUGSTINA ĪPAŠUMA VĒRTĪBU",
+      "Sertificēts, pārbaudīts un garantēts risinājums, kas pārveido tavu kanalizāciju uz mūžu. 5 gadu garantija. 0€ ekspluatācijas izmaksas. Bezmaksas ūdens (attīrītais) + mēslojums (bioloģiskās dūņas)"
+    ],
+    "cta_buttons_found": [
+      "Pieteikt iekārtu",
+      "APPLY FOR PARTNERSHIP"
+    ]
+  }
+}

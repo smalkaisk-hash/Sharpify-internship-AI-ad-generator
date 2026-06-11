@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#F1E9D8;color:#1a1a1a}
+.grain{position:absolute;inset:0;background-image:radial-gradient(rgba(26,26,26,0.05) 1px,transparent 1px),radial-gradient(rgba(26,26,26,0.04) 1px,transparent 1px);background-size:3px 3px,7px 7px;background-position:0 0,1px 1px;opacity:0.7;pointer-events:none;mix-blend-mode:multiply}
+.edge{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(26,26,26,0.06) 100%);pointer-events:none}
+
+/* Masthead */
+.masthead{position:absolute;top:48px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#1a1a1a;z-index:2}
+.masthead .rule{flex:1;height:1px;background:#1a1a1a;margin:0 22px;opacity:0.4}
+
+/* Headline */
+.head{position:absolute;top:110px;left:60px;right:60px;z-index:3}
+.issue{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#1a1a1a;opacity:0.55;margin-bottom:14px}
+h1{font-family:'Fraunces',serif;font-weight:400;font-size:146px;line-height:0.92;letter-spacing:-0.035em;color:#1a1a1a}
+h1 .booked{position:relative;font-style:italic;display:inline-block;isolation:isolate}
+h1 .booked::before{content:"";position:absolute;left:-14px;right:-18px;top:18%;bottom:6%;background:#E8D500;z-index:-1;transform:rotate(-1.6deg) skewX(-5deg);border-radius:6px;box-shadow:0 8px 0 -2px rgba(200,180,0,0.55),0 -4px 0 -2px rgba(255,240,120,0.6)}
+h1 .booked::after{content:".";font-style:normal;position:relative;z-index:0}
+.dek{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:26px;line-height:1.35;color:#1a1a1a;opacity:0.72;margin-top:20px;max-width:720px;letter-spacing:-0.005em}
+
+/* Polaroid photo insert — tilted, taped */
+.polaroid{position:absolute;top:88px;right:52px;width:180px;background:#fff;padding:10px 10px 32px;transform:rotate(4.5deg);box-shadow:0 18px 40px rgba(26,26,26,0.22),0 4px 10px rgba(26,26,26,0.14);z-index:4}
+.polaroid img{width:100%;height:180px;object-fit:cover;display:block}
+.polaroid .cap{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#1a1a1a;margin-top:8px;text-align:center}
+.tape{position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-3deg);width:70px;height:22px;background:rgba(232,213,0,0.65);box-shadow:0 2px 4px rgba(26,26,26,0.15)}
+
+/* Rule separator */
+.sep{position:absolute;top:512px;left:60px;right:60px;height:1px;background:#1a1a1a;opacity:0.25;z-index:2}
+.sep::before{content:"";position:absolute;top:-3px;left:0;width:7px;height:7px;background:#1a1a1a;border-radius:50%}
+.sep::after{content:"";position:absolute;top:-3px;right:0;width:7px;height:7px;background:#1a1a1a;border-radius:50%}
+
+/* Two-column body */
+.body{position:absolute;top:540px;left:60px;right:60px;bottom:170px;display:grid;grid-template-columns:1.1fr 1fr;gap:50px;z-index:2}
+
+.col-hd{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#1a1a1a;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(26,26,26,0.3)}
+.col-hd .num{float:right;font-weight:500;opacity:0.55}
+
+/* Left — ledger */
+.ledger{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.4;color:#1a1a1a}
+.ledger .row{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px dotted rgba(26,26,26,0.18)}
+.ledger .row:last-child{border-bottom:none}
+.ledger .job{flex:1}
+.ledger .job .day{font-weight:600;color:#1a1a1a;margin-right:10px}
+.ledger .job .loc{display:block;font-size:11px;opacity:0.55;margin-top:2px;font-weight:400}
+.ledger .amt{font-weight:600;color:#1a1a1a;white-space:nowrap;padding-left:12px;font-variant-numeric:tabular-nums}
+.ledger .total{margin-top:14px;padding-top:14px;border-top:2px solid #1a1a1a;display:flex;justify-content:space-between;align-items:baseline;font-family:'Fraunces',serif;font-style:italic;font-size:22px;font-weight:500}
+.ledger .total .amt{font-family:'JetBrains Mono',monospace;font-weight:600;font-style:normal;font-size:24px;position:relative}
+.ledger .total .amt::before{content:"";position:absolute;left:-4px;right:-4px;top:48%;bottom:5%;background:#E8D500;z-index:-1;border-radius:2px}
+
+/* Right — story */
+.story{font-family:'Fraunces',serif;font-size:20px;line-height:1.45;color:#1a1a1a;letter-spacing:-0.003em}
+.story p{margin-bottom:12px}
+.story p.lead::first-letter{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:52px;float:left;line-height:0.9;margin-right:9px;margin-top:6px;color:#1a1a1a}
+.story .stat{font-family:'JetBrains Mono',monospace;font-weight:600;font-style:normal;background:rgba(26,26,26,0.08);padding:1px 6px;border-radius:3px;font-size:19px}
+.story p.sign{margin-top:20px;font-style:italic;font-size:18px;opacity:0.75}
+
+/* Bottom bar */
+.bottom{position:absolute;bottom:80px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.chip{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1a1a1a;background:#E8D500;padding:12px 20px;transform:rotate(-1.8deg);box-shadow:0 6px 0 -2px rgba(26,26,26,0.15),0 10px 22px rgba(26,26,26,0.14)}
+.cta{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:#F1E9D8;background:#1a1a1a;padding:20px 38px;border-radius:100px;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:14px;box-shadow:0 12px 28px rgba(26,26,26,0.25)}
+.cta .arr{width:30px;height:30px;background:#E8D500;color:#1a1a1a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:16px;font-weight:900}
+
+/* Footer */
+.foot{position:absolute;bottom:32px;left:60px;right:60px;display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#1a1a1a;opacity:0.45;z-index:2}
+
+/* Decorative margin mark */
+.mark{position:absolute;top:280px;left:48px;font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:#1a1a1a;opacity:0.55;transform:rotate(-90deg);transform-origin:left top;letter-spacing:0.1em}
+</style>
+</head>
+<body>
+<div class="ad">
+<div class="grain"></div>
+<div class="edge"></div>
+
+<div class="masthead">
+<span>The Pipeline &mdash; A Sharpify Field Report</span>
+<span class="rule"></span>
+<span>N&deg; 047 / 04&middot;2026</span>
+</div>
+
+<div class="head">
+<div class="issue">Chapter one &middot; The week that booked itself</div>
+<h1>One&nbsp;week.<br><span class="booked">Booked</span></h1>
+<div class="dek">A field report from the phones of plumbers who stopped waiting for the next call to come in.</div>
+</div>
+
+<div class="polaroid">
+<div class="tape"></div>
+<img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/sharpify/eng/output/plumbers-eng/images/plumber-closeup.png">
+<div class="cap">Fig. 1 &middot; Field</div>
+</div>
+
+<div class="sep"></div>
+
+<div class="body">
+<div class="col left">
+<div class="col-hd">This week's bookings <span class="num">/ 08</span></div>
+<div class="ledger">
+<div class="row"><div class="job"><span class="day">Mon 09:15</span>Water heater install<span class="loc">Katy, TX</span></div><div class="amt">$1,240</div></div>
+<div class="row"><div class="job"><span class="day">Mon 14:30</span>Emergency leak repair<span class="loc">Austin, TX</span></div><div class="amt">$680</div></div>
+<div class="row"><div class="job"><span class="day">Tue 08:00</span>Full bathroom re-pipe<span class="loc">Cedar Park, TX</span></div><div class="amt">$4,800</div></div>
+<div class="row"><div class="job"><span class="day">Tue 15:20</span>Gas line repair<span class="loc">Round Rock, TX</span></div><div class="amt">$890</div></div>
+<div class="row"><div class="job"><span class="day">Wed 10:00</span>Tankless retrofit<span class="loc">Austin, TX</span></div><div class="amt">$5,200</div></div>
+<div class="row"><div class="job"><span class="day">Thu 09:30</span>Slab leak repair<span class="loc">Lakeway, TX</span></div><div class="amt">$3,400</div></div>
+<div class="row"><div class="job"><span class="day">Thu 16:15</span>Sump pump replace<span class="loc">Pflugerville, TX</span></div><div class="amt">$890</div></div>
+<div class="row"><div class="job"><span class="day">Fri 08:00</span>Full re-pipe<span class="loc">Bee Cave, TX</span></div><div class="amt">$7,600</div></div>
+<div class="total"><span>Total booked</span><span class="amt">$24,700</span></div>
+</div>
+</div>
+
+<div class="col right">
+<div class="col-hd">The system <span class="num">/ 047</span></div>
+<div class="story">
+<p class="lead">Every booking on the left started as an inbound message. An ad seen. A form filled. A lead the CRM remembered while the truck was out on a job.</p>
+<p>Paid ads on autopilot. AI follow-up that closes quotes at 2&nbsp;a.m. A calendar that keeps filling itself.</p>
+<p class="sign">&mdash; Niks Jansons, CEO @ Sharpify. <span class="stat">2,300+ businesses</span> running this.</p>
+</div>
+</div>
+</div>
+
+<div class="bottom">
+<div class="chip">🎁 Free website included</div>
+<div class="cta">Learn More <span class="arr">&rarr;</span></div>
+</div>
+
+<div class="foot">
+<span>Sharpify &middot; eu.sharpify.lv/ms</span>
+<span>Filed from the trade &middot; 2026</span>
+</div>
+</div>
+</body>
+</html>

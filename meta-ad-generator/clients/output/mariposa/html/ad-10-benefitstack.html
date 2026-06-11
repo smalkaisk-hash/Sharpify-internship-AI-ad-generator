@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* === Benefit-Stack template — Mariposa brand vars applied ===
+   color_primary:   #d4a97a  (gold)
+   color_secondary: #c4956c  (copper)
+   color_accent:    #b07840  (dark gold)
+   color_bg:        #0d040d  (near-black)
+   color_text:      #f6ede7  (off-white)
+   color_cta_bg:    gradient #a86e38 → #c4956c → #d4a97c
+   color_cta_text:  #100610
+   font_heading:    Cormorant Garamond
+   font_body:       DM Sans
+   No logo — V5 benefit-stack rule
+*/
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+
+.benefit-container {
+  width:1080px; height:1080px;
+  background:#0d040d;
+  display:flex; flex-direction:column;
+  padding:52px 60px;
+  position:relative; overflow:hidden;
+}
+
+/* Atmospheric corner glows — replaces generic blob */
+.bg-accent {
+  position:absolute; top:-160px; right:-120px;
+  width:440px; height:440px; border-radius:50%;
+  background:radial-gradient(circle, rgba(196,149,108,0.17) 0%, transparent 70%);
+  pointer-events:none;
+}
+.bg-accent-2 {
+  position:absolute; bottom:-130px; left:-100px;
+  width:360px; height:360px; border-radius:50%;
+  background:radial-gradient(circle, rgba(212,169,122,0.11) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Hairline top separator */
+.top-rule {
+  width:100%; height:1px;
+  background:linear-gradient(90deg, transparent, rgba(196,149,108,0.38), transparent);
+  margin-bottom:28px;
+  position:relative; z-index:2;
+  flex-shrink:0;
+}
+
+/* Header block */
+.benefit-header {
+  position:relative; z-index:2;
+  text-align:center;
+  margin-bottom:28px;
+  flex-shrink:0;
+}
+.benefit-badge {
+  display:block;
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:600;
+  color:rgba(196,149,108,0.75);
+  text-transform:uppercase; letter-spacing:0.22em;
+  margin-bottom:14px;
+}
+.benefit-header .headline {
+  font-family:'Cormorant Garamond', serif;
+  font-size:62px; line-height:0.91;
+  font-weight:300; font-style:italic;
+  color:#f6ede7;
+  letter-spacing:-0.02em;
+}
+.benefit-header .headline em {
+  font-style:italic; font-weight:700;
+  color:#d4a97a;
+}
+
+/* Benefits list */
+.benefits-list {
+  flex:1;
+  display:flex; flex-direction:column;
+  justify-content:center;
+  gap:14px;
+  position:relative; z-index:2;
+}
+.benefit-item {
+  display:flex; align-items:center; gap:20px;
+  padding:20px 24px;
+  background:rgba(196,149,108,0.04);
+  border:1px solid rgba(196,149,108,0.09);
+  border-left:3px solid rgba(196,149,108,0.46);
+  border-radius:8px;
+}
+.benefit-icon {
+  width:44px; height:44px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg, rgba(176,120,64,0.24), rgba(196,149,108,0.12));
+  border:1px solid rgba(196,149,108,0.22);
+  border-radius:50%;
+  font-family:'Cormorant Garamond', serif;
+  font-size:20px; font-weight:700; font-style:italic;
+  color:#d4a97a;
+}
+.benefit-text {
+  display:flex; flex-direction:column; gap:5px;
+}
+.benefit-title {
+  font-family:'DM Sans', sans-serif;
+  font-size:11px; font-weight:600;
+  color:rgba(196,149,108,0.85);
+  text-transform:uppercase; letter-spacing:0.16em;
+}
+.benefit-desc {
+  font-family:'DM Sans', sans-serif;
+  font-size:16px; font-weight:300;
+  color:rgba(246,237,231,0.70);
+  line-height:1.45;
+}
+
+/* CTA footer */
+.benefit-footer {
+  position:relative; z-index:2;
+  padding-top:24px;
+  flex-shrink:0;
+}
+.benefit-footer .cta-button {
+  display:block; width:100%; border:none; cursor:default;
+  background:linear-gradient(135deg, #a86e38 0%, #c4956c 52%, #d4a97c 100%);
+  color:#100610;
+  font-family:'DM Sans', sans-serif;
+  font-size:19px; font-weight:600;
+  padding:24px; border-radius:8px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 48px rgba(196,149,108,0.22);
+}
+</style>
+</head>
+<body>
+<div class="benefit-container">
+
+  <div class="bg-accent"></div>
+  <div class="bg-accent-2"></div>
+  <div class="top-rule"></div>
+
+  <div class="benefit-header">
+    <span class="benefit-badge">Optimas — IPL · RF · Lāzerepilācija</span>
+    <h1 class="headline">Labākā ādas<br>atjaunošana <em>Rīgā</em></h1>
+  </div>
+
+  <div class="benefits-list">
+
+    <div class="benefit-item">
+      <div class="benefit-icon">1</div>
+      <div class="benefit-text">
+        <span class="benefit-title">Efektivitāte</span>
+        <span class="benefit-desc">IPL, RF un lāzers vienā platformā — viss, kas Tavai ādai nepieciešams</span>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">2</div>
+      <div class="benefit-text">
+        <span class="benefit-title">Rezultāti</span>
+        <span class="benefit-desc">95% klientu redz izmaiņas jau pēc 2–3 procedūrām</span>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">3</div>
+      <div class="benefit-text">
+        <span class="benefit-title">Komforts</span>
+        <span class="benefit-desc">Bez sāpēm, minimāla atjaunošanās — normāla dienas kārtība uzreiz pēc</span>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">4</div>
+      <div class="benefit-text">
+        <span class="benefit-title">Pielāgojums</span>
+        <span class="benefit-desc">Katra procedūra kalibrēta Tavam ādas tipam un mērķim</span>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">5</div>
+      <div class="benefit-text">
+        <span class="benefit-title">Atrašanās vieta</span>
+        <span class="benefit-desc">Rīgā, bezmaksas autostāvvieta, elastīgs vizīšu grafiks</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="benefit-footer">
+    <div class="cta-button">Rezervē savu vizīti →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

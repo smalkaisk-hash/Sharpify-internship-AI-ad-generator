@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; }
+
+/*
+  Palette: Ballerina (palettes-neutral.md) — ✓ WCAG AA 5.66:1
+  Lightest → Base:       #E89EB8  soft dusty rose    L≈0.465
+  Second tone (decor):   #C4869C  mauve              L≈0.330
+  Dark mid (decor):      #734E5B  dark rose          L≈0.109
+  Text + CTA button:     #4A323B  dark mauve         L≈0.041
+
+  Body text #4A323B on #E89EB8 = 5.66:1 ✓
+  CTA text  #E89EB8 on #4A323B = 5.66:1 ✓
+  Eyebrow   #4A323B on #E89EB8 = 5.66:1 ✓
+  Accent glow: rgba(196,134,156,0.26) — from #C4869C
+  Atmosphere:  rgba(196,134,156,0.12) — from #C4869C
+*/
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  background: #E89EB8;
+  overflow: hidden;
+}
+
+/* Atmosphere — Ballerina mauve, decorative radials */
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 12%, rgba(196,134,156,0.24) 0%, transparent 44%),
+    radial-gradient(ellipse at 20% 92%, rgba(115,78,91,0.14) 0%, transparent 38%);
+  pointer-events: none;
+}
+
+/* Vertical separator */
+.separator {
+  position: absolute;
+  left: 560px;
+  top: 68px;
+  bottom: 68px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(115,78,91,0.30) 20%,
+    rgba(115,78,91,0.30) 80%,
+    transparent 100%
+  );
+}
+
+/* Photo panel — right half */
+.photo-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 520px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.photo-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 38% center;
+}
+
+/* Content — left panel */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 1080px;
+  padding: 64px 58px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top: logo + eyebrow */
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  align-self: flex-start;
+  opacity: 0.80;
+}
+
+
+/* Headline — three short declarative statements */
+.headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 0.97;
+  color: #4A323B;
+  letter-spacing: -0.5px;
+}
+
+.headline .l2 { padding-left: 30px; display: block; }
+
+/* Bottom: rule + body + CTA */
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rule — Ballerina mauve to transparent, decorative */
+.rule {
+  width: 320px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(196,134,156,0.72), transparent);
+  margin-bottom: 26px;
+}
+
+/* Body text — #4A323B solid, 5.66:1 on base ✓ */
+.body-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.78;
+  color: #4A323B;
+  max-width: 406px;
+  margin-bottom: 38px;
+}
+
+/* CTA — #4A323B bg, #E89EB8 text, 5.66:1 ✓ */
+.cta-btn {
+  display: inline-block;
+  align-self: flex-start;
+  background: #4A323B;
+  color: #E89EB8;
+  padding: 20px 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow:
+    0 6px 28px rgba(74,50,59,0.30),
+    0 2px 8px rgba(0,0,0,0.12);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="atmosphere"></div>
+  <div class="separator"></div>
+
+  <div class="photo-panel">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-20-ae0cc2_0b2db7a092fb4269916335b336953c69~mv2.jpg"
+         alt="Naqaa Beauty spa rituāls">
+  </div>
+
+  <div class="content">
+
+    <div class="top">
+      <img class="logo"
+           src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/logo-1-naqaa_beauty_horizontal.png"
+           alt="Naqaa Beauty">
+    </div>
+
+    <p class="headline">
+      Āda maigāka.<br>
+      <span class="l2">Mati spīdīgāki.</span>
+    </p>
+
+    <div class="bottom">
+      <div class="rule"></div>
+      <p class="body-text">
+        Hlorēts ūdens bojā ādu un matus katru dienu.<br>
+        Naqaa noņem hloru un piepilda katru dušu<br>
+        ar dabīgu aromterapiju. Jau no pirmās reizes.
+      </p>
+      <a class="cta-btn">Iegādāties tagad</a>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

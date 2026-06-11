@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; background: #0d0b09; }
+</style>
+</head>
+<body>
+<div style="width:1080px;height:1080px;position:relative;background:#0d0b09;overflow:hidden;">
+
+  <!-- SCENE SVG: upper 58% -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="625" viewBox="0 0 1080 625" style="position:absolute;top:0;left:0;display:block;">
+    <defs>
+      <!-- Candle atmospheric glow -->
+      <radialGradient id="cGlow" cx="540" cy="400" r="520" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stop-color="#d48020" stop-opacity="0.52"/>
+        <stop offset="20%"  stop-color="#a05010" stop-opacity="0.26"/>
+        <stop offset="48%"  stop-color="#703008" stop-opacity="0.10"/>
+        <stop offset="80%"  stop-color="#401808" stop-opacity="0.03"/>
+        <stop offset="100%" stop-color="#200c04" stop-opacity="0"/>
+      </radialGradient>
+      <!-- Table surface warm -->
+      <radialGradient id="tGlow" cx="540" cy="490" r="280" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stop-color="#c06818" stop-opacity="0.50"/>
+        <stop offset="50%"  stop-color="#903808" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#602808" stop-opacity="0"/>
+      </radialGradient>
+      <!-- Window sky Monaco dusk -->
+      <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#080f1e"/>
+        <stop offset="55%"  stop-color="#0e1b32"/>
+        <stop offset="88%"  stop-color="#1c2a42"/>
+        <stop offset="100%" stop-color="#281408"/>
+      </linearGradient>
+      <!-- Sea water -->
+      <linearGradient id="seaL" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#06101c"/>
+        <stop offset="100%" stop-color="#030810"/>
+      </linearGradient>
+      <!-- Table dark wood -->
+      <linearGradient id="tableS" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#1c1508"/>
+        <stop offset="100%" stop-color="#110e06"/>
+      </linearGradient>
+      <!-- Rim light father (facing candles on right) -->
+      <linearGradient id="rimR" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#d48020" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#d48020" stop-opacity="0.13"/>
+      </linearGradient>
+      <!-- Rim light teen boy (facing candles on left) -->
+      <linearGradient id="rimL" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#d48020" stop-opacity="0.13"/>
+        <stop offset="100%" stop-color="#d48020" stop-opacity="0"/>
+      </linearGradient>
+      <!-- Top vignette -->
+      <linearGradient id="topV" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#060504" stop-opacity="1"/>
+        <stop offset="28%"  stop-color="#060504" stop-opacity="0"/>
+      </linearGradient>
+      <!-- Left vignette -->
+      <linearGradient id="leftV" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#060504" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#060504" stop-opacity="0"/>
+      </linearGradient>
+      <!-- Right vignette -->
+      <linearGradient id="rightV" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#060504" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#060504" stop-opacity="0.85"/>
+      </linearGradient>
+      <!-- Left window arch clip -->
+      <clipPath id="lwC">
+        <path d="M154 430 L154 88 Q154 24 192 24 Q230 24 230 88 L230 430 Z"/>
+      </clipPath>
+      <!-- Right window arch clip -->
+      <clipPath id="rwC">
+        <path d="M850 430 L850 88 Q850 24 888 24 Q926 24 926 88 L926 430 Z"/>
+      </clipPath>
+    </defs>
+
+    <!-- BACKGROUND WALL -->
+    <rect width="1080" height="625" fill="#0d0b09"/>
+    <!-- Subtle wall paneling (architectural detail) -->
+    <rect x="270" y="28" width="540" height="400" fill="none" stroke="#161210" stroke-width="1.5" rx="2" opacity="0.45"/>
+    <rect x="288" y="44" width="504" height="366" fill="none" stroke="#131008" stroke-width="0.8" rx="1" opacity="0.28"/>
+
+    <!-- Atmospheric candle glow (behind everything) -->
+    <ellipse cx="540" cy="380" rx="560" ry="420" fill="url(#cGlow)"/>
+
+    <!-- ===== LEFT WINDOW ===== -->
+    <!-- Deep embrasure / reveal -->
+    <path d="M140 438 L140 88 Q140 14 192 14 Q244 14 244 88 L244 438 L228 438 L228 88 Q228 26 192 26 Q156 26 156 88 L156 438 Z" fill="#0a0806"/>
+    <!-- Sky fill -->
+    <g clip-path="url(#lwC)">
+      <rect x="154" y="24" width="76" height="406" fill="url(#skyL)"/>
+      <!-- Sea / harbor water -->
+      <rect x="154" y="342" width="76" height="88" fill="url(#seaL)"/>
+      <line x1="154" y1="343" x2="230" y2="343" stroke="#16243a" stroke-width="0.8"/>
+      <!-- Monaco hill / building silhouette -->
+      <path d="M154 343 L158 325 L162 333 L165 316 L169 308 L172 319 L175 305 L178 312 L182 299 L185 306 L189 295 L193 287 L196 293 L200 282 L203 288 L207 276 L211 283 L215 271 L219 278 L223 267 L227 274 L230 266 L230 343 Z" fill="#060c18"/>
+      <!-- City lights (tiny rects) -->
+      <rect x="167" y="310" width="2" height="2" fill="#f0d060" opacity="0.9"/>
+      <rect x="176" y="305" width="1.5" height="1.5" fill="#f0d060" opacity="0.8"/>
+      <rect x="183" y="297" width="1.5" height="1.5" fill="#f0d060" opacity="0.85"/>
+      <rect x="193" y="288" width="1.5" height="1.5" fill="#e8c840" opacity="0.7"/>
+      <rect x="204" y="279" width="1.5" height="1.5" fill="#e8c840" opacity="0.8"/>
+      <rect x="215" y="272" width="1.5" height="1.5" fill="#e8c840" opacity="0.75"/>
+      <rect x="223" y="268" width="1.5" height="1.5" fill="#e8c840" opacity="0.6"/>
+      <!-- Water reflection shimmers -->
+      <path d="M168 356 Q180 353 192 357 Q204 353 216 356" stroke="#c89030" stroke-width="0.8" fill="none" opacity="0.35"/>
+      <path d="M161 370 Q175 366 192 371 Q209 366 223 370" stroke="#c89030" stroke-width="0.6" fill="none" opacity="0.2"/>
+    </g>
+    <!-- Window frame outer -->
+    <path d="M140 438 L140 88 Q140 14 192 14 Q244 14 244 88 L244 438" fill="none" stroke="#1c1710" stroke-width="12"/>
+    <!-- Window frame inner bead -->
+    <path d="M154 438 L154 88 Q154 26 192 26 Q230 26 230 88 L230 438" fill="none" stroke="#28200e" stroke-width="5"/>
+    <!-- Sill -->
+    <path d="M132 434 L252 434 L246 444 L138 444 Z" fill="#1a1410" rx="1"/>
+    <!-- Curtain drape left -->
+    <path d="M140 14 Q132 90 135 220 Q133 330 137 438 L154 438 Q151 330 153 220 Q151 90 156 14 Z" fill="#120e0a" opacity="0.88"/>
+    <!-- Curtain drape right -->
+    <path d="M244 14 Q252 90 249 220 Q251 330 247 438 L230 438 Q233 330 231 220 Q233 90 228 14 Z" fill="#120e0a" opacity="0.75"/>
+
+    <!-- ===== RIGHT WINDOW (mirrored) ===== -->
+    <path d="M940 438 L940 88 Q940 14 888 14 Q836 14 836 88 L836 438 L852 438 L852 88 Q852 26 888 26 Q924 26 924 88 L924 438 Z" fill="#0a0806"/>
+    <g clip-path="url(#rwC)">
+      <rect x="850" y="24" width="76" height="406" fill="url(#skyL)"/>
+      <rect x="850" y="342" width="76" height="88" fill="url(#seaL)"/>
+      <line x1="850" y1="343" x2="926" y2="343" stroke="#16243a" stroke-width="0.8"/>
+      <path d="M850 343 L853 327 L856 335 L860 318 L863 310 L867 321 L870 306 L873 314 L877 300 L880 295 L884 303 L888 288 L892 294 L896 283 L899 290 L903 277 L907 284 L911 272 L915 280 L919 268 L922 275 L926 267 L926 343 Z" fill="#060c18"/>
+      <rect x="862" y="311" width="2" height="2" fill="#f0d060" opacity="0.9"/>
+      <rect x="871" y="307" width="1.5" height="1.5" fill="#f0d060" opacity="0.8"/>
+      <rect x="879" y="297" width="1.5" height="1.5" fill="#f0d060" opacity="0.85"/>
+      <rect x="889" y="289" width="1.5" height="1.5" fill="#e8c840" opacity="0.7"/>
+      <rect x="900" y="280" width="1.5" height="1.5" fill="#e8c840" opacity="0.8"/>
+      <rect x="910" y="273" width="1.5" height="1.5" fill="#e8c840" opacity="0.75"/>
+      <rect x="918" y="268" width="1.5" height="1.5" fill="#e8c840" opacity="0.6"/>
+      <path d="M858 356 Q870 353 884 357 Q898 353 910 356" stroke="#c89030" stroke-width="0.8" fill="none" opacity="0.35"/>
+      <path d="M851 370 Q866 366 884 371 Q902 366 919 370" stroke="#c89030" stroke-width="0.6" fill="none" opacity="0.2"/>
+    </g>
+    <path d="M940 438 L940 88 Q940 14 888 14 Q836 14 836 88 L836 438" fill="none" stroke="#1c1710" stroke-width="12"/>
+    <path d="M926 438 L926 88 Q926 26 888 26 Q850 26 850 88 L850 438" fill="none" stroke="#28200e" stroke-width="5"/>
+    <path d="M948 434 L828 434 L834 444 L942 444 Z" fill="#1a1410"/>
+    <path d="M940 14 Q948 90 945 220 Q947 330 943 438 L926 438 Q929 330 927 220 Q929 90 924 14 Z" fill="#120e0a" opacity="0.88"/>
+    <path d="M836 14 Q828 90 831 220 Q829 330 833 438 L850 438 Q847 330 849 220 Q847 90 852 14 Z" fill="#120e0a" opacity="0.75"/>
+
+    <!-- ===== DINING TABLE ===== -->
+    <!-- Front panel (3D thickness near edge) -->
+    <path d="M78 598 L1002 598 L1002 562 L78 562 Z" fill="#0b0804"/>
+    <!-- Table top surface (trapezoid perspective) -->
+    <path d="M78 562 L1002 562 L868 422 L212 422 Z" fill="url(#tableS)"/>
+    <!-- Table glow from candles -->
+    <ellipse cx="540" cy="492" rx="310" ry="105" fill="url(#tGlow)"/>
+    <!-- Table edge lines -->
+    <line x1="78"  y1="562" x2="1002" y2="562" stroke="#281e0c" stroke-width="2.5"/>
+    <line x1="212" y1="422" x2="868"  y2="422" stroke="#1c1408" stroke-width="1.2"/>
+    <!-- Linen cloth hint (slight lighter center strip) -->
+    <path d="M320 422 L760 422 L810 562 L270 562 Z" fill="#151008" opacity="0.5"/>
+    <!-- Linen edge detail -->
+    <line x1="320" y1="422" x2="270" y2="562" stroke="#1c1610" stroke-width="0.8" opacity="0.6"/>
+    <line x1="760" y1="422" x2="810" y2="562" stroke="#1c1610" stroke-width="0.8" opacity="0.6"/>
+
+    <!-- TABLE SETTING -->
+    <!-- Plates -->
+    <ellipse cx="295" cy="476" rx="44" ry="14" fill="#171208" stroke="#22180a" stroke-width="1.2"/>
+    <ellipse cx="295" cy="476" rx="36" ry="11" fill="#120e07"/>
+    <ellipse cx="438" cy="461" rx="40" ry="13" fill="#171208" stroke="#22180a" stroke-width="1.2"/>
+    <ellipse cx="438" cy="461" rx="33" ry="10" fill="#120e07"/>
+    <ellipse cx="642" cy="461" rx="40" ry="13" fill="#171208" stroke="#22180a" stroke-width="1.2"/>
+    <ellipse cx="642" cy="461" rx="33" ry="10" fill="#120e07"/>
+    <ellipse cx="785" cy="476" rx="44" ry="14" fill="#171208" stroke="#22180a" stroke-width="1.2"/>
+    <ellipse cx="785" cy="476" rx="36" ry="11" fill="#120e07"/>
+
+    <!-- Wine glasses -->
+    <path d="M328 422 Q335 438 334 452 L322 452 Q321 438 328 422" fill="#c0d0e0" opacity="0.13"/>
+    <ellipse cx="328" cy="453" rx="9" ry="3" fill="#c0d0e0" opacity="0.10"/>
+    <line x1="328" y1="456" x2="328" y2="468" stroke="#c0d0e0" stroke-width="1.2" opacity="0.10"/>
+    <ellipse cx="328" cy="469" rx="5" ry="1.8" fill="#c0d0e0" opacity="0.08"/>
+
+    <path d="M471 422 Q477 437 476 450 L465 450 Q464 437 471 422" fill="#c0d0e0" opacity="0.12"/>
+    <ellipse cx="471" cy="451" rx="8" ry="2.5" fill="#c0d0e0" opacity="0.09"/>
+    <line x1="471" y1="454" x2="471" y2="464" stroke="#c0d0e0" stroke-width="1" opacity="0.09"/>
+
+    <!-- Red wine glass at center (catches candle glow) -->
+    <path d="M527 422 Q534 437 533 451 L521 451 Q520 437 527 422" fill="#801828" opacity="0.45"/>
+    <ellipse cx="527" cy="452" rx="9" ry="3" fill="#a82030" opacity="0.50"/>
+    <line x1="527" y1="455" x2="527" y2="466" stroke="#c0d0e0" stroke-width="1" opacity="0.12"/>
+
+    <path d="M611 422 Q617 437 616 450 L605 450 Q604 437 611 422" fill="#c0d0e0" opacity="0.12"/>
+    <ellipse cx="611" cy="451" rx="8" ry="2.5" fill="#c0d0e0" opacity="0.09"/>
+    <line x1="611" y1="454" x2="611" y2="464" stroke="#c0d0e0" stroke-width="1" opacity="0.09"/>
+
+    <path d="M752 422 Q759 438 758 452 L746 452 Q745 438 752 422" fill="#c0d0e0" opacity="0.13"/>
+    <ellipse cx="752" cy="453" rx="9" ry="3" fill="#c0d0e0" opacity="0.10"/>
+    <line x1="752" y1="456" x2="752" y2="468" stroke="#c0d0e0" stroke-width="1.2" opacity="0.10"/>
+
+    <!-- Silverware (fine lines) -->
+    <line x1="256" y1="430" x2="256" y2="516" stroke="#1c1810" stroke-width="1.5"/>
+    <line x1="246" y1="430" x2="246" y2="516" stroke="#1c1810" stroke-width="1"/>
+    <line x1="344" y1="430" x2="344" y2="516" stroke="#1c1810" stroke-width="1.5"/>
+
+    <!-- ===== CANDELABRA (x=540) ===== -->
+    <!-- Base -->
+    <ellipse cx="540" cy="556" rx="28" ry="8" fill="#181408"/>
+    <path d="M520 556 Q522 546 526 542 L554 542 Q558 546 560 556 Z" fill="#1c1810"/>
+    <ellipse cx="540" cy="542" rx="16" ry="5" fill="#181408"/>
+    <!-- Main stem -->
+    <line x1="540" y1="422" x2="540" y2="536" stroke="#1c1810" stroke-width="5"/>
+    <ellipse cx="540" cy="478" rx="8" ry="5" fill="#1c1810"/>
+    <!-- Horizontal arms -->
+    <path d="M496 453 Q518 445 540 448 Q562 445 584 453" fill="none" stroke="#1c1810" stroke-width="4" stroke-linecap="round"/>
+    <path d="M514 447 Q527 440 540 443 Q553 440 566 447" fill="none" stroke="#1c1810" stroke-width="3" stroke-linecap="round"/>
+    <!-- Candle cups -->
+    <ellipse cx="496" cy="454" rx="7" ry="3" fill="#1c1810"/>
+    <ellipse cx="517" cy="447" rx="6" ry="2.5" fill="#1c1810"/>
+    <ellipse cx="540" cy="422" rx="5" ry="2" fill="#1c1810"/>
+    <ellipse cx="563" cy="447" rx="6" ry="2.5" fill="#1c1810"/>
+    <ellipse cx="584" cy="454" rx="7" ry="3" fill="#1c1810"/>
+    <!-- Candles (cream wax) -->
+    <rect x="493" y="430" width="6" height="25" fill="#e8e0c8" rx="1"/>
+    <rect x="514" y="422" width="6" height="26" fill="#e8e0c8" rx="1"/>
+    <rect x="537" y="398" width="6" height="26" fill="#e8e0c8" rx="1"/>
+    <rect x="560" y="422" width="6" height="26" fill="#e8e0c8" rx="1"/>
+    <rect x="581" y="430" width="6" height="25" fill="#e8e0c8" rx="1"/>
+    <!-- Flame outer halos -->
+    <ellipse cx="496" cy="427" rx="14" ry="17" fill="#d48020" opacity="0.22"/>
+    <ellipse cx="517" cy="419" rx="13" ry="16" fill="#d48020" opacity="0.24"/>
+    <ellipse cx="540" cy="395" rx="16" ry="20" fill="#d48020" opacity="0.30"/>
+    <ellipse cx="563" cy="419" rx="13" ry="16" fill="#d48020" opacity="0.24"/>
+    <ellipse cx="584" cy="427" rx="14" ry="17" fill="#d48020" opacity="0.22"/>
+    <!-- Flame shapes (amber) -->
+    <path d="M494 430 Q496 420 498 430 Q497 435 496 436 Q495 435 494 430" fill="#f0a830"/>
+    <path d="M515 422 Q517 412 519 422 Q518 427 517 428 Q516 427 515 422" fill="#f0a830"/>
+    <path d="M538 398 Q540 387 542 398 Q541 404 540 405 Q539 404 538 398" fill="#f0a830"/>
+    <path d="M561 422 Q563 412 565 422 Q564 427 563 428 Q562 427 561 422" fill="#f0a830"/>
+    <path d="M582 430 Q584 420 586 430 Q585 435 584 436 Q583 435 582 430" fill="#f0a830"/>
+    <!-- Flame core (bright) -->
+    <path d="M495 430 Q496 422 497 430 Q496.5 434 496 434 Q495.5 434 495 430" fill="#fff8e0"/>
+    <path d="M516 422 Q517 414 518 422 Q517.5 426 517 426 Q516.5 426 516 422" fill="#fff8e0"/>
+    <path d="M539 398 Q540 389 541 398 Q540.5 403 540 403 Q539.5 403 539 398" fill="#fff8e0"/>
+    <path d="M562 422 Q563 414 564 422 Q563.5 426 563 426 Q562.5 426 562 422" fill="#fff8e0"/>
+    <path d="M583 430 Q584 422 585 430 Q584.5 434 584 434 Q583.5 434 583 430" fill="#fff8e0"/>
+
+    <!-- ===== FAMILY SILHOUETTES ===== -->
+    <!-- All seated behind/at table far edge (y=422). Visible from mid-torso up. -->
+    <!-- Figure color: very dark warm brown, slightly differentiated from pure bg -->
+
+    <!-- FATHER (x≈285, tallest, slight lean right toward family) -->
+    <rect x="252" y="265" width="82" height="170" fill="url(#rimR)" opacity="0.7"/>
+    <!-- Jacket body -->
+    <path d="M234 422 Q237 378 256 355 L267 345 L303 345 Q320 355 336 378 Q342 406 342 422 Z" fill="#0b0906"/>
+    <!-- Lapels -->
+    <path d="M267 345 L260 385 L285 373 L285 345 Z" fill="#0e0c0a"/>
+    <path d="M303 345 L310 385 L285 373 L285 345 Z" fill="#0c0a08"/>
+    <!-- Tie -->
+    <path d="M282 373 L288 373 L291 418 L285 422 L279 418 Z" fill="#110909"/>
+    <!-- Neck -->
+    <rect x="278" y="329" width="16" height="17" fill="#0b0906"/>
+    <!-- Shirt collar (hint of white) -->
+    <path d="M270 345 L278 356 L285 350 L292 356 L300 345 L292 350 L285 344 L278 350 Z" fill="#1c1a16" stroke="#2e2a1e" stroke-width="0.5"/>
+    <!-- Head (distinguished, large) -->
+    <ellipse cx="285" cy="305" rx="28" ry="30" fill="#0b0906"/>
+    <!-- Silver hair (slightly different tone on top) -->
+    <path d="M257 302 Q259 272 285 265 Q311 272 313 302" fill="#0e0c09"/>
+    <!-- Arm on table (reaching toward center) -->
+    <path d="M318 420 Q380 416 440 420" fill="none" stroke="#0b0906" stroke-width="20" stroke-linecap="round"/>
+
+    <!-- MOTHER (x≈428, elegant, upright) -->
+    <!-- Body (elegant dress) -->
+    <path d="M386 422 Q388 384 402 362 L412 352 L444 352 Q456 362 468 384 Q474 408 472 422 Z" fill="#0b0906"/>
+    <!-- Dress neckline (V shape) -->
+    <path d="M412 352 L405 375 Q428 382 428 352 Z" fill="#0e0c0a"/>
+    <path d="M444 352 L451 375 Q428 382 428 352 Z" fill="#0c0a08"/>
+    <!-- Neck -->
+    <rect x="420" y="337" width="16" height="16" fill="#0b0906"/>
+    <!-- Head -->
+    <ellipse cx="428" cy="315" rx="24" ry="26" fill="#0b0906"/>
+    <!-- Hair — elegant updo -->
+    <path d="M404 312 Q406 285 428 278 Q450 285 452 312" fill="#0e0c09"/>
+    <ellipse cx="428" cy="280" rx="10" ry="7" fill="#0e0c09"/>
+    <!-- Necklace hint -->
+    <path d="M413 358 Q428 368 443 358" fill="none" stroke="#2e2818" stroke-width="2"/>
+    <ellipse cx="428" cy="362" rx="2.5" ry="2.5" fill="#30281a"/>
+
+    <!-- TEEN GIRL (x≈632, 17, leaning slightly forward — engaged in conversation) -->
+    <rect x="600" y="272" width="68" height="158" fill="url(#rimL)" opacity="0.5"/>
+    <!-- Body (slightly leaning forward = torso positioned a touch lower) -->
+    <path d="M594 422 Q596 386 610 365 L620 354 L644 354 Q656 365 670 386 Q676 408 674 422 Z" fill="#0b0906"/>
+    <!-- Top neckline -->
+    <path d="M620 354 L614 375 Q632 383 632 354 Z" fill="#0e0c0a"/>
+    <path d="M644 354 L650 375 Q632 383 632 354 Z" fill="#0c0a08"/>
+    <!-- Neck -->
+    <rect x="625" y="340" width="14" height="15" fill="#0b0906"/>
+    <!-- Head -->
+    <ellipse cx="632" cy="319" rx="23" ry="24" fill="#0b0906"/>
+    <!-- Hair — flowing sides -->
+    <path d="M609 318 Q607 350 610 382 L616 382 Q613 350 616 318" fill="#0e0c09"/>
+    <path d="M655 318 Q657 350 654 382 L648 382 Q651 350 648 318" fill="#0e0c09"/>
+    <path d="M609 315 Q611 292 632 285 Q653 292 655 315" fill="#0e0c09"/>
+    <!-- Arm gesture (explaining / animated) -->
+    <path d="M648 400 Q670 390 685 385" fill="none" stroke="#0b0906" stroke-width="16" stroke-linecap="round"/>
+    <!-- Hand shape -->
+    <ellipse cx="688" cy="384" rx="10" ry="7" fill="#0b0906" transform="rotate(-15 688 384)"/>
+
+    <!-- TEEN BOY (x≈758, 15, relaxed, listening) -->
+    <rect x="714" y="270" width="68" height="162" fill="url(#rimL)" opacity="0.42"/>
+    <!-- Body (jacket) -->
+    <path d="M712 422 Q714 383 730 362 L741 351 L775 351 Q789 362 802 383 Q808 406 806 422 Z" fill="#0b0906"/>
+    <!-- Jacket lapels -->
+    <path d="M741 351 L734 390 L758 377 L758 351 Z" fill="#0e0c0a"/>
+    <path d="M775 351 L782 390 L758 377 L758 351 Z" fill="#0c0a08"/>
+    <!-- Neck -->
+    <rect x="750" y="336" width="16" height="16" fill="#0b0906"/>
+    <!-- Shirt collar -->
+    <path d="M742 351 L750 362 L758 356 L766 362 L774 351 L766 356 L758 350 L750 356 Z" fill="#1c1a16" stroke="#2e2a1e" stroke-width="0.5"/>
+    <!-- Head -->
+    <ellipse cx="758" cy="315" rx="24" ry="25" fill="#0b0906"/>
+    <!-- Hair -->
+    <path d="M734 312 Q736 287 758 280 Q780 287 782 312" fill="#0e0c09"/>
+
+    <!-- Candle glow touching faces (barely perceptible warm rim) -->
+    <path d="M313 297 Q318 307 313 317 Q308 307 313 297" fill="#d48020" opacity="0.07"/>
+    <path d="M609 312 Q604 322 609 332 Q614 322 609 312" fill="#d48020" opacity="0.06"/>
+
+    <!-- ===== VIGNETTES ===== -->
+    <rect width="1080" height="82" fill="url(#topV)"/>
+    <rect width="110" height="625" fill="url(#leftV)"/>
+    <rect x="970" width="110" height="625" fill="url(#rightV)"/>
+
+  </svg>
+
+  <!-- HORIZONTAL RULE divider -->
+  <div style="position:absolute;top:626px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,#241c0e 18%,#302612 50%,#241c0e 82%,transparent 100%);"></div>
+
+  <!-- TYPOGRAPHY SECTION -->
+  <div style="position:absolute;top:642px;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 96px;text-align:center;">
+
+    <!-- Wordmark -->
+    <div style="font-family:'Montserrat',sans-serif;font-weight:200;font-size:10px;letter-spacing:8px;color:#665644;text-transform:uppercase;margin-bottom:26px;">
+      Changer Club
+    </div>
+
+    <!-- Main headline -->
+    <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:52px;line-height:1.18;color:#f0e8d4;letter-spacing:-0.3px;margin-bottom:24px;">
+      You want your children<br>to inherit more than capital.
+    </div>
+
+    <!-- Burgundy rule -->
+    <div style="width:40px;height:1px;background:#6b1d2a;margin:0 auto 20px;"></div>
+
+    <!-- Secondary line -->
+    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:21px;color:#ae9e84;line-height:1.45;margin-bottom:28px;">
+      Some legacies begin at the dinner table.
+    </div>
+
+    <!-- CTA -->
+    <div style="display:inline-block;background:#6b1d2a;color:#f0e8d4;font-family:'Montserrat',sans-serif;font-weight:300;font-size:10px;letter-spacing:4.5px;text-transform:uppercase;padding:13px 40px;margin-bottom:16px;">
+      See If You Qualify
+    </div>
+
+    <!-- Fine print -->
+    <div style="font-family:'Montserrat',sans-serif;font-weight:200;font-size:8.5px;letter-spacing:2.5px;color:#44382a;text-transform:uppercase;">
+      270 families &nbsp;·&nbsp; $5M+ liquid assets &nbsp;·&nbsp; Monaco · Dubai
+    </div>
+
+  </div>
+
+  <!-- Corner stamps -->
+  <div style="position:absolute;top:40px;right:50px;font-family:'Montserrat',sans-serif;font-weight:200;font-size:9px;letter-spacing:3px;color:#382e22;text-transform:uppercase;z-index:20;">Monaco · Dubai</div>
+  <div style="position:absolute;bottom:36px;left:50px;font-family:'Montserrat',sans-serif;font-weight:200;font-size:8px;letter-spacing:2px;color:#2c2418;">Est. 2019, Lausanne</div>
+
+</div>
+</body>
+</html>

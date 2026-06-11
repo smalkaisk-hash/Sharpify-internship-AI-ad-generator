@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond%3Aital%2Cwght%400%2C300%3B0%2C600%3B0%2C700%3B1%2C400%7CMontserrat%3Awght%40400%3B500%3B600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;font-family:'Montserrat',sans-serif}
+
+/* Layer 1 — dark gradient base */
+.base{position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 700px 500px at 90% 10%, #c8a86a15 0%, transparent 50%),
+    radial-gradient(ellipse 500px 500px at 5% 95%, #c8a86a0c 0%, transparent 45%),
+    #0d0b09}
+
+/* Layer 2 — noise */
+.noise{position:absolute;inset:0;opacity:0.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:300px 300px}
+
+/* Layer 3 — giant ghost stat */
+.ghost-stat{
+  position:absolute;top:-60px;right:-20px;
+  font-family:'Cormorant Garamond',serif;font-size:520px;font-weight:700;
+  line-height:1;color:transparent;
+  -webkit-text-stroke:1px #c8a86a15;
+  pointer-events:none;user-select:none}
+
+/* Layer 4 — rotated accent block */
+.accent-block{
+  position:absolute;top:310px;left:-80px;
+  width:900px;height:200px;
+  background:linear-gradient(90deg, #c8a86a 0%, #c8a86abb 100%);
+  transform:rotate(-1deg);
+  opacity:0.08}
+.accent-block-2{
+  position:absolute;top:318px;left:-80px;
+  width:600px;height:2px;
+  background:#c8a86a66;
+  transform:rotate(-1deg)}
+.accent-block-3{
+  position:absolute;top:510px;left:-80px;
+  width:750px;height:2px;
+  background:#c8a86a33;
+  transform:rotate(-1deg)}
+
+/* Layer 5 — left side vertical rule */
+.v-rule{
+  position:absolute;top:80px;left:68px;
+  width:2px;height:920px;
+  background:linear-gradient(to bottom, transparent, #c8a86a55 20%, #c8a86a77 50%, #c8a86a55 80%, transparent)}
+
+/* Layer 6 — text content */
+.content{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  padding:100px 100px 160px 100px;
+  display:flex;flex-direction:column;justify-content:space-between}
+
+.top-row{display:flex;justify-content:space-between;align-items:flex-start}
+.eyebrow{
+  font-size:20px;font-weight:600;color:#c8a86a;
+  letter-spacing:7px;text-transform:uppercase}
+.tag{
+  font-size:20px;color:#b8a88a;letter-spacing:2px;
+  border:1px solid #c8a86a33;padding:8px 18px;border-radius:2px}
+
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 0}
+
+.stat-line{
+  font-family:'Cormorant Garamond',serif;font-size:180px;font-weight:700;
+  color:#c8a86a;line-height:0.85;letter-spacing:-4px;
+  margin-bottom:8px}
+.stat-unit{
+  font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;
+  color:#f5f0e866;letter-spacing:2px;margin-bottom:48px;display:block}
+
+.headline{
+  font-family:'Cormorant Garamond',serif;font-size:68px;font-weight:600;
+  line-height:1.1;color:#f5f0e8;max-width:760px}
+.headline em{color:#c8a86a;font-style:italic}
+
+.bottom-row{
+  display:flex;align-items:flex-end;justify-content:space-between}
+
+.source{
+  font-size:22px;color:#b8a88a;font-style:italic;max-width:400px;line-height:1.5}
+
+/* Layer 7 — CTA */
+.cta{
+  background:transparent;color:#c8a86a;
+  border:1px solid #c8a86a;
+  padding:20px 48px;border-radius:4px;
+  font-family:'Montserrat',sans-serif;font-size:16px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  box-shadow:0 0 30px #c8a86a22;
+  flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="base"></div>
+<div class="noise"></div>
+<div class="ghost-stat">70</div>
+<div class="accent-block"></div>
+<div class="accent-block-2"></div>
+<div class="accent-block-3"></div>
+<div class="v-rule"></div>
+
+<div class="content">
+  <div class="top-row">
+    <div class="eyebrow">Changer Club</div>
+    <div class="tag">By application only</div>
+  </div>
+
+  <div class="mid">
+    <div class="stat-line">70<span style="font-size:80px">%</span></div>
+    <span class="stat-unit">of founders without new goals</span>
+    <h1 class="headline">experience chronic stress<br>after the exit.<br><em>The plateau is real.</em></h1>
+  </div>
+
+  <div class="bottom-row">
+    <div class="source">Wharton longitudinal study on entrepreneur purpose.<br>Up to +7 years of fulfilled, emotionally alive life (backed by Harvar…</div>
+    <div class="cta">See If You Qualify</div>
+  </div>
+</div>
+</body></html>

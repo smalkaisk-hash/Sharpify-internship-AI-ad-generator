@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "primary": "#1a1a18",
+    "secondary": "#f7f4ef",
+    "accent": "#8faf7e",
+    "accent_warm": "#c9a96e",
+    "accent_dark": "#6b8f5a",
+    "text_primary": "#1a1a18",
+    "text_muted": "#7a7a72"
+  },
+  "fonts": {
+    "heading": "Cormorant Garamond",
+    "primary": "Montserrat"
+  },
+  "logo": "C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/logo-1-naqaa_beauty_horizontal.png",
+  "images": [
+    "C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-22-All_Products_1080x1350.jpg",
+    "C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-3-Naqaa_Beauty_Water_Filters.jpg",
+    "C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-80-Water_Flowers.jpg"
+  ],
+  "brand_palette_notes": "Nature-inspired luxury spa aesthetic. Cream/off-white background with sage green accent (nature, purity, botanical) and warm gold for premium feel. Cormorant Garamond for editorial serif headlines, Montserrat for clean body. Palette evokes clean water, botanicals, and luxury self-care ritual."
+}

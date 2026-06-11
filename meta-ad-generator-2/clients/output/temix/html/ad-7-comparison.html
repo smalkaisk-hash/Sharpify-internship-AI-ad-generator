@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #1E2E24;
+      --color-secondary: #181616;
+      --color-accent: #DAB453;
+      --color-bg: #F5F1E8;
+      --color-text: #181616;
+      --color-red: #B33A3A;
+      --color-green: #4A7A56;
+      --font-heading: 'Playfair Display', 'Georgia', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      width: 1080px; height: 1080px;
+      background: var(--color-primary);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+      color: var(--color-bg);
+    }
+
+    /* Header */
+    .header {
+      padding: 36px 48px 22px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .brand-wordmark {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.01em;
+    }
+    .top-tag {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.58);
+    }
+    .headline-big {
+      font-family: var(--font-heading);
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+    }
+    .headline-big em {
+      font-style: italic;
+      color: var(--color-accent);
+      font-weight: 500;
+    }
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: rgba(245,241,232,0.55);
+      margin-top: 12px;
+    }
+
+    /* Body */
+    .body-row {
+      flex: 1;
+      display: flex;
+      gap: 16px;
+      padding: 16px 44px 0;
+    }
+
+    .col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 28px;
+      border-radius: 20px;
+      gap: 16px;
+    }
+
+    .col-before {
+      background: rgba(179,58,58,0.10);
+      border: 1px solid rgba(179,58,58,0.35);
+    }
+    .col-after {
+      background: rgba(218,180,83,0.10);
+      border: 1px solid rgba(218,180,83,0.45);
+    }
+
+    .col-label {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      padding-bottom: 12px;
+      margin-bottom: 6px;
+      border-bottom: 2px solid currentColor;
+    }
+    .col-before .col-label { color: #E07474; }
+    .col-after .col-label { color: var(--color-accent); }
+
+    .col-title {
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-top: -4px;
+      margin-bottom: 6px;
+    }
+    .col-before .col-title { color: rgba(245,241,232,0.75); }
+    .col-after .col-title { color: var(--color-bg); }
+
+    .compare-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding-left: 2px;
+    }
+
+    .compare-icon {
+      width: 28px;
+      flex-shrink: 0;
+      font-size: 18px;
+      line-height: 1.3;
+      padding-top: 2px;
+    }
+    .col-before .compare-icon { color: #E07474; }
+    .col-after .compare-icon { color: var(--color-accent); }
+
+    .compare-text {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+    .col-before .compare-text { color: rgba(245,241,232,0.55); }
+    .col-after .compare-text { color: rgba(245,241,232,0.92); font-weight: 500; }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .footer-note {
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: rgba(245,241,232,0.58);
+      letter-spacing: 0.12em;
+    }
+    .cta-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 76px;
+      min-width: 320px;
+      padding: 0 44px;
+      background: var(--color-accent);
+      color: var(--color-secondary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 44px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="header">
+      <div class="top-row">
+        <div class="brand-wordmark">TeMix</div>
+        <div class="top-tag">B2B · Vairumtirdzniecība</div>
+      </div>
+      <h1 class="headline-big">Tipiska vairumtirdzniecība<br><em>vs TeMix.</em></h1>
+      <div class="eyebrow">5 iemesli, kāpēc veikali pāriet</div>
+    </div>
+
+    <div class="body-row">
+      <div class="col col-before">
+        <div class="col-label">Tipiski</div>
+        <div class="col-title">Vairumtirdzniecība,<br>pie kuras pierod.</div>
+        <div class="compare-item"><span class="compare-icon">✕</span><span class="compare-text">Nejaušs sortiments, "grāvēji" pēc cenas</span></div>
+        <div class="compare-item"><span class="compare-icon">✕</span><span class="compare-text">Piegāde pret papildu samaksu</span></div>
+        <div class="compare-item"><span class="compare-icon">✕</span><span class="compare-text">Pilna apmaksa jāveic uzreiz</span></div>
+        <div class="compare-item"><span class="compare-icon">✕</span><span class="compare-text">Preču bildes? Tavas problēmas</span></div>
+        <div class="compare-item"><span class="compare-icon">✕</span><span class="compare-text">Bojātās preces — bez apmaiņas</span></div>
+      </div>
+
+      <div class="col col-after">
+        <div class="col-label">TeMix</div>
+        <div class="col-title">Partneris, kas<br>palīdz tev pārdot.</div>
+        <div class="compare-item"><span class="compare-icon">✓</span><span class="compare-text">Rūpīgi atlasīts sortiments ar "wow" efektu</span></div>
+        <div class="compare-item"><span class="compare-icon">✓</span><span class="compare-text">Bezmaksas piegāde virs 300€</span></div>
+        <div class="compare-item"><span class="compare-icon">✓</span><span class="compare-text">Atliktais maksājums 7–14 dienas</span></div>
+        <div class="compare-item"><span class="compare-icon">✓</span><span class="compare-text">Gatavi mārketinga materiāli ietilpst</span></div>
+        <div class="compare-item"><span class="compare-icon">✓</span><span class="compare-text">Apmaiņa vai kredītrēķins 7–14 dienās</span></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-note">Rīgā · Eiropas piegādātāji · B2B partneriem</div>
+      <div class="cta-gold">Sazināties</div>
+    </div>
+  </div>
+</body>
+</html>

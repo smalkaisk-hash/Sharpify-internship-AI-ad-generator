@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Ad 6 — Benefit stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .canvas {
+    width: 1080px; height: 1080px;
+    background:
+      radial-gradient(ellipse at 85% 15%, rgba(212,166,87,0.32) 0%, transparent 45%),
+      radial-gradient(ellipse at 12% 88%, rgba(212,166,87,0.18) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 50%, rgba(15,90,68,0.4) 0%, transparent 60%),
+      linear-gradient(165deg, #072b20 0%, #0A3D2E 50%, #062318 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 68px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvas::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(245,239,226,0.03) 1px, transparent 0);
+    background-size: 3px 3px;
+    pointer-events: none;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; position: relative;
+  }
+  .wordmark {
+    font-family: 'Instrument Serif', serif;
+    font-size: 26px;
+    color: #F5EFE2;
+  }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(212,166,87,0.4);
+    color: #D4A657;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .kicker .dot { width: 6px; height: 6px; background: #D4A657; border-radius: 50%; }
+  .headline {
+    margin-top: 28px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 82px;
+    line-height: 0.98;
+    color: #F5EFE2;
+    letter-spacing: -0.015em;
+    z-index: 2; position: relative;
+    max-width: 900px;
+  }
+  .headline em { font-style: italic; color: #D4A657; }
+  .divider {
+    margin-top: 32px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(212,166,87,0.5), transparent);
+    z-index: 2; position: relative;
+  }
+  .benefits {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 2; position: relative;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 82px 1fr auto;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 24px;
+    background: rgba(245,239,226,0.04);
+    border-radius: 16px;
+    border: 1px solid rgba(212,166,87,0.14);
+  }
+  .row .ico {
+    width: 70px; height: 70px;
+    border-radius: 16px;
+    background: rgba(212,166,87,0.12);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .row .txt .label {
+    font-size: 13px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(212,166,87,0.85);
+    font-weight: 500;
+  }
+  .row .txt .main {
+    margin-top: 4px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 34px;
+    color: #F5EFE2;
+    line-height: 1.12;
+    letter-spacing: -0.005em;
+  }
+  .row .stat {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #D4A657;
+    letter-spacing: -0.02em;
+    text-align: right;
+    line-height: 1;
+  }
+  .row .stat small {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: rgba(245,239,226,0.55);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .footer {
+    margin-top: auto;
+    padding-top: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 2; position: relative;
+    border-top: 1px solid rgba(212,166,87,0.25);
+  }
+  .footer .stamp {
+    padding-top: 18px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px;
+    color: #F5EFE2;
+    font-style: italic;
+    line-height: 1.2;
+  }
+  .footer .stamp small {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: rgba(245,239,226,0.55);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .footer .cta {
+    padding-top: 18px;
+    text-align: right;
+  }
+  .footer .cta .main {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 32px;
+    color: #D4A657;
+    line-height: 1.1;
+  }
+  .footer .cta .sub {
+    margin-top: 6px;
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,239,226,0.65);
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="top">
+      <div class="wordmark">Travel Advantage<sup style="font-size:13px;">™</sup></div>
+      <div class="kicker"><span class="dot"></span>4 iemesli mainīt, kur Tu rezervē</div>
+    </div>
+
+    <div class="headline">Kāpēc Tu joprojām<br>maksā <em>vairāk nekā vajag?</em></div>
+
+    <div class="divider"></div>
+
+    <div class="benefits">
+      <div class="row">
+        <div class="ico">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A657" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </div>
+        <div class="txt">
+          <div class="label">Vairumtirdzniecības cenas</div>
+          <div class="main">Tās pašas viesnīcas. Cits cenu līmenis.</div>
+        </div>
+        <div class="stat">−70%<small>zemāk par Booking</small></div>
+      </div>
+
+      <div class="row">
+        <div class="ico">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A657" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+        </div>
+        <div class="txt">
+          <div class="label">Travel Credits</div>
+          <div class="main">Katra rezervācija atgriež daļu — nākamajam ceļojumam.</div>
+        </div>
+        <div class="stat">€€€<small>atpakaļ katru reizi</small></div>
+      </div>
+
+      <div class="row">
+        <div class="ico">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A657" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="txt">
+          <div class="label">Guest Passes</div>
+          <div class="main">Līdz 4 draugi vai ģimene — bez papildu maksas.</div>
+        </div>
+        <div class="stat">+4<small>viesi iekļauti</small></div>
+      </div>
+
+      <div class="row">
+        <div class="ico">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A657" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="txt">
+          <div class="label">Neatkarīgi no sezonas</div>
+          <div class="main">Tās pašas cenas vasarā, ziemā, brīvdienās.</div>
+        </div>
+        <div class="stat">12/12<small>mēnešus gadā</small></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="stamp">Kopš 2013.<small>MWR Life · Travel Advantage</small></div>
+      <div class="cta">
+        <div class="main">Piesakies Guest Pass →</div>
+        <div class="sub">biedru cenas · 1 rezervācija atpelna</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

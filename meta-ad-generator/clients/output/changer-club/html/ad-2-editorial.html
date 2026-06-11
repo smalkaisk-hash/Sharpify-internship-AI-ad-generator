@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant%20Garamond%3Aital%2Cwght%400%2C300%3B0%2C600%3B0%2C700%3B1%2C400%7CMontserrat%3Awght%40400%3B500%3B600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+body{width:1080px;height:1080px;overflow:hidden;background:#0d0b09;font-family:'Montserrat',sans-serif}
+
+/* Layer 1 — conic gradient mesh */
+.base{position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 800px 600px at 20% 15%, #c8a86a1a 0%, transparent 50%),
+    radial-gradient(ellipse 700px 700px at 85% 80%, #c8a86a12 0%, transparent 55%),
+    conic-gradient(from 200deg at 60% 40%, #0a0806 0deg, #0d0b09 120deg, #1a1612 240deg, #0a0806 360deg)}
+
+/* Layer 2 — noise */
+.noise{position:absolute;inset:0;opacity:0.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:300px 300px;
+  mix-blend-mode:overlay}
+
+/* Layer 3 — giant ghost number (background typography) */
+.ghost{
+  position:absolute;top:-80px;right:-40px;
+  font-family:'Cormorant Garamond',serif;font-size:600px;font-weight:700;
+  color:transparent;
+  -webkit-text-stroke:1px #c8a86a18;
+  line-height:1;pointer-events:none;user-select:none}
+
+/* Layer 4 — horizontal accent bars */
+.bar-top{
+  position:absolute;top:120px;left:0;right:0;height:1px;
+  background:linear-gradient(to right, transparent 0%, #c8a86a44 30%, #c8a86a66 50%, #c8a86a44 70%, transparent 100%)}
+.bar-mid{
+  position:absolute;top:124px;left:200px;right:200px;height:1px;
+  background:linear-gradient(to right, transparent, #c8a86a33, transparent)}
+
+/* Layer 5 — eyebrow band */
+.eyebrow-band{
+  position:absolute;top:60px;left:72px;right:72px;
+  display:flex;justify-content:space-between;align-items:center}
+.eyebrow{
+  font-family:'Montserrat',sans-serif;font-size:20px;font-weight:600;
+  color:#c8a86a;letter-spacing:7px;text-transform:uppercase}
+.eyebrow-right{
+  font-size:20px;color:#b8a88a;letter-spacing:2px;font-style:italic}
+
+/* Layer 6 — main headline */
+.headline-wrap{
+  position:absolute;top:170px;left:72px;right:72px}
+.headline{
+  font-family:'Cormorant Garamond',serif;font-size:110px;font-weight:700;
+  line-height:0.95;color:#f5f0e8;
+  text-shadow:0 4px 60px rgba(0,0,0,0.8)}
+.headline em{
+  color:#c8a86a;font-style:normal;
+  display:block}
+
+/* Layer 7 — frosted glass info card */
+.card{
+  position:absolute;bottom:240px;left:72px;right:72px;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(20px) saturate(1.4);
+  border:1px solid #c8a86a22;
+  border-radius:12px;
+  padding:36px 44px;
+  display:flex;gap:0;
+  box-shadow:inset 0 1px 0 #c8a86a22, 0 20px 60px rgba(0,0,0,0.4)}
+
+.card-col{flex:1;padding:0 28px;border-right:1px solid #c8a86a22}
+.card-col:first-child{padding-left:0}
+.card-col:last-child{border-right:none}
+.card-label{
+  font-size:20px;font-weight:600;color:#b8a88a;
+  letter-spacing:4px;text-transform:uppercase;margin-bottom:10px}
+.card-value{
+  font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;
+  color:#f5f0e8;line-height:1.1}
+.card-sub{font-size:22px;color:#f5f0e866;margin-top:6px;line-height:1.4}
+
+/* Layer 8 — CTA */
+.cta-wrap{
+  position:absolute;bottom:160px;left:72px;right:72px;
+  display:flex;align-items:center;gap:32px}
+.cta{
+  display:inline-block;
+  background:#c8a86a;color:#0d0b09;
+  padding:22px 52px;border-radius:6px;
+  font-family:'Montserrat',sans-serif;font-size:17px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  box-shadow:0 0 60px #c8a86a44,0 4px 20px rgba(0,0,0,0.5);
+  flex-shrink:0}
+.cta-note{
+  font-size:22px;color:#f5f0e855;line-height:1.5;font-style:italic}
+</style>
+</head>
+<body>
+<div class="base"></div>
+<div class="noise"></div>
+<div class="ghost">7</div>
+<div class="bar-top"></div>
+<div class="bar-mid"></div>
+
+<div class="eyebrow-band">
+  <span class="eyebrow">Changer Club</span>
+  <span class="eyebrow-right">By application only</span>
+</div>
+
+<div class="headline-wrap">
+  <h1 class="headline">
+    What happens<br>
+    <em>after</em>
+    you win?
+  </h1>
+</div>
+
+<div class="card">
+  <div class="card-col">
+    <div class="card-label">Members</div>
+    <div class="card-value">270+</div>
+    <div class="card-sub">Families, $25B+ capital</div>
+  </div>
+  <div class="card-col">
+    <div class="card-label">Fulfilled Life</div>
+    <div class="card-value">+7 years</div>
+    <div class="card-sub">Harvard longitudinal data</div>
+  </div>
+  <div class="card-col">
+    <div class="card-label">Investment ROI</div>
+    <div class="card-value">110%</div>
+    <div class="card-sub">Zero losses in 3 years</div>
+  </div>
+</div>
+
+<div class="cta-wrap">
+  <div class="cta">See If You Qualify</div>
+  <div class="cta-note">Not another business club. The operating system for the next chapter of wealth …</div>
+</div>
+</body></html>

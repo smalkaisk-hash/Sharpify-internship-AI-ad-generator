@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Form input</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>html,body{margin:0;}body{background:#000;color:#F4EFE6;padding:24px;font-family:var(--cc-font-sans);display:flex;flex-direction:column;gap:18px;}
+.field{display:flex;flex-direction:column;gap:6px;max-width:340px;}
+label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,239,230,.55);}
+input,select{font-family:var(--cc-font-serif);font-size:18px;color:#F4EFE6;background:transparent;border:0;border-bottom:1px solid rgba(244,239,230,.25);padding:10px 0;outline:none;transition:border-color .32s;}
+input:focus,select:focus{border-bottom-color:#C9A24A;}
+.row{display:flex;gap:24px;flex-wrap:wrap;}
+</style></head><body>
+  <div class="row">
+    <div class="field"><label>Full name</label><input value="Jonas Rolo" /></div>
+    <div class="field"><label>Liquid assets</label><select><option>$5–10M</option><option>$10–20M</option><option>$20M+</option></select></div>
+  </div>
+</body></html>

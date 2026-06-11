@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; background:#000; }
+
+.canvas {
+  position:relative;
+  width:1080px; height:1080px;
+  overflow:hidden;
+}
+
+/* Background photo — operator+machine visible on right side */
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:65% center;
+  z-index:0;
+}
+
+/* Left-dominant dark overlay */
+.overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    to right,
+    rgba(2,6,2,0.97) 0%,
+    rgba(2,6,2,0.96) 34%,
+    rgba(2,6,2,0.72) 50%,
+    rgba(2,6,2,0.28) 66%,
+    rgba(2,6,2,0.08) 80%,
+    transparent 100%
+  );
+  z-index:1;
+}
+
+/* Logo */
+.logo {
+  position:absolute;
+  top:42px; left:42px;
+  z-index:10;
+}
+.logo img {
+  height:86px; width:auto;
+  display:block;
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.7)) drop-shadow(0 0 8px rgba(255,255,255,0.35));
+}
+
+/* Left text column */
+.main-content {
+  position:absolute;
+  top:146px; left:42px;
+  width:578px;
+  z-index:10;
+}
+
+/* Headline — 5 lines, very large */
+.headline {
+  font-family:'Montserrat', sans-serif;
+  line-height:0.91;
+  margin-bottom:20px;
+}
+.hl-w {
+  display:block;
+  font-size:102px;
+  font-weight:900;
+  color:#FFFFFF;
+  letter-spacing:-0.028em;
+}
+.hl-o {
+  display:block;
+  font-size:102px;
+  font-weight:900;
+  color:#F57C20;
+  letter-spacing:-0.028em;
+}
+
+/* Model name row */
+.model-row {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:18px;
+}
+.model-brand {
+  font-family:'Montserrat', sans-serif;
+  font-size:26px;
+  font-weight:700;
+  color:#FFFFFF;
+}
+.model-code {
+  font-family:'Montserrat', sans-serif;
+  font-size:26px;
+  font-weight:700;
+  color:#F57C20;
+}
+
+/* Bullets — compact to match reference */
+.bullets {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.bullet {
+  display:flex;
+  align-items:center;
+  gap:11px;
+}
+.b-dot {
+  width:27px; height:27px;
+  flex-shrink:0;
+  background:#F57C20;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+}
+.b-dot svg { width:13px; height:13px; }
+.b-txt {
+  font-family:'Inter', sans-serif;
+  font-size:20px;
+  font-weight:500;
+  color:rgba(255,255,255,0.90);
+  line-height:1.20;
+  max-width:510px;
+}
+
+/* Full-width diagonal product strip at bottom */
+.product-strip {
+  position:absolute;
+  bottom:0; left:0; right:0;
+  height:292px;
+  z-index:8;
+}
+
+/* Left product panel — diagonal right edge */
+.prod-left {
+  position:absolute;
+  top:0; left:0; bottom:0;
+  width:575px;
+  overflow:hidden;
+  clip-path:polygon(0 0, 100% 0, calc(100% - 42px) 100%, 0 100%);
+}
+
+/* Right product panel — diagonal left edge */
+.prod-right {
+  position:absolute;
+  top:0; right:0; bottom:0;
+  width:575px;
+  overflow:hidden;
+  clip-path:polygon(42px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.prod-left img,
+.prod-right img {
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Orange diagonal accent line between panels */
+.prod-divider {
+  position:absolute;
+  top:-14px;
+  left:533px;
+  width:4px;
+  height:330px;
+  background:linear-gradient(
+    180deg,
+    transparent 0%,
+    #F57C20 16%,
+    #F57C20 84%,
+    transparent 100%
+  );
+  transform:rotate(-4.2deg);
+  transform-origin:top center;
+  z-index:10;
+}
+
+/* CTA button — overlays left product panel */
+.cta {
+  position:absolute;
+  left:42px; bottom:162px;
+  background:#F57C20;
+  color:#FFFFFF;
+  font-family:'Montserrat', sans-serif;
+  font-size:27px;
+  font-weight:800;
+  padding:19px 36px;
+  border-radius:7px;
+  display:flex; align-items:center; gap:14px;
+  letter-spacing:0.01em;
+  z-index:12;
+}
+.cta-arrow {
+  width:36px; height:36px;
+  background:rgba(255,255,255,0.22);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:21px;
+  line-height:1;
+  padding-left:2px;
+}
+
+/* Eco note — right side, same height as CTA */
+.eco {
+  position:absolute;
+  right:42px; bottom:175px;
+  width:460px;
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  z-index:12;
+}
+.eco svg {
+  width:26px; height:26px;
+  fill:#F57C20;
+  flex-shrink:0;
+}
+.eco span {
+  font-family:'Inter', sans-serif;
+  font-size:18px;
+  color:rgba(255,255,255,0.68);
+  line-height:1.3;
+}
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <img class="bg" src="../86a2218bcaf3a97a45f63fb6120e2d80ebc581d6-1080x720.jpg" alt="">
+  <div class="overlay"></div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="../anna-assistance-logo_page-0001-removebg-preview-1-1.png" alt="Anna Assistance">
+  </div>
+
+  <!-- Headline + content -->
+  <div class="main-content">
+    <h1 class="headline">
+      <span class="hl-w">Precīza</span>
+      <span class="hl-w">pļaušana</span>
+      <span class="hl-o">bez</span>
+      <span class="hl-o">kaitējuma</span>
+      <span class="hl-o">dabai</span>
+    </h1>
+
+    <div class="model-row">
+      <span class="model-brand">Raymo</span>
+      <span class="model-code">S46FLORIS</span>
+    </div>
+
+    <div class="bullets">
+      <div class="bullet">
+        <div class="b-dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4,12 9,17 20,6"/>
+          </svg>
+        </div>
+        <span class="b-txt">Saudzīga pļaušana, kas aizsargā dzīvniekus un kukaiņus</span>
+      </div>
+      <div class="bullet">
+        <div class="b-dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4,12 9,17 20,6"/>
+          </svg>
+        </div>
+        <span class="b-txt">Klusa, pilnībā elektriska darbība</span>
+      </div>
+      <div class="bullet">
+        <div class="b-dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4,12 9,17 20,6"/>
+          </svg>
+        </div>
+        <span class="b-txt">Piemērota ekoloģiski jutīgām teritorijām</span>
+      </div>
+      <div class="bullet">
+        <div class="b-dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4,12 9,17 20,6"/>
+          </svg>
+        </div>
+        <span class="b-txt">Precīza un vienmērīga pļaušana</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product strip -->
+  <div class="product-strip">
+    <div class="prod-left">
+      <img src="../8166cc890e8686b9f4aa4f8e5fd39c4b11f6669c-1080x720.jpg" alt="">
+    </div>
+    <div class="prod-right">
+      <img src="../7f684338722f2aeb9779095f61c07e9fb6914d23-1080x720.jpg" alt="">
+    </div>
+    <div class="prod-divider"></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    Saņemiet piedāvājumu
+    <span class="cta-arrow">›</span>
+  </div>
+
+  <!-- Eco note -->
+  <div class="eco">
+    <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.5 20.5c.5.1 1 .1 1.5.1 6.5 0 11-3.9 11-10 0-1.77-.3-3.4-1-5H17zm-5-5c-2 2-3 5-3 8a9 9 0 009-9 13 13 0 00-6 1z"/></svg>
+    <span>Droša pļaušana dzīvniekiem un kukaiņiem.</span>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

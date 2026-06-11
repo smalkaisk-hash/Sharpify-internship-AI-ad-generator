@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0d1117;
+  font-family: -apple-system, 'Inter', sans-serif; color: #e6edf3;
+  display: flex; flex-direction: column;
+  padding: 36px 36px 32px;
+}
+
+/* Top navbar */
+.gh-nav {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.gh-logo {
+  width: 32px; height: 32px;
+  background: #fff; color: #000;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 900;
+}
+.gh-breadcrumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 18px;
+}
+.gh-breadcrumb .org { color: #4493f8; font-weight: 600; }
+.gh-breadcrumb .sep { color: #7d8590; }
+.gh-breadcrumb .repo { color: #4493f8; font-weight: 700; }
+
+/* Repo header */
+.repo-header {
+  padding: 24px 28px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.repo-title-row {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 14px;
+}
+.repo-icon { font-size: 24px; color: #7d8590; }
+.repo-name {
+  font-size: 28px; font-weight: 700; color: #4493f8;
+}
+.repo-visibility {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #7d8590;
+  padding: 3px 10px; border-radius: 20px;
+  font-size: 13px; font-weight: 600;
+}
+
+.repo-desc {
+  font-size: 18px; color: #c9d1d9;
+  line-height: 1.5; margin-bottom: 16px;
+}
+
+.repo-topics {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
+}
+.topic {
+  background: #1f6feb22;
+  color: #4493f8;
+  padding: 5px 14px; border-radius: 20px;
+  font-size: 14px; font-weight: 600;
+}
+
+.repo-stats {
+  display: flex; gap: 24px;
+  font-size: 16px; color: #c9d1d9;
+  padding-top: 14px;
+  border-top: 1px solid #21262d;
+}
+.stat-item { display: flex; align-items: center; gap: 6px; }
+.stat-item .num { font-weight: 700; color: #fff; }
+.stat-icon { color: #e3b341; }
+
+/* File list */
+.file-list {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  flex: 1; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+.file-list-header {
+  padding: 14px 22px;
+  display: flex; justify-content: space-between; align-items: center;
+  background: #1c2128;
+  border-bottom: 1px solid #30363d;
+  font-size: 15px;
+}
+.branch-btn {
+  background: #21262d; color: #e6edf3;
+  padding: 6px 14px; border-radius: 6px;
+  border: 1px solid #30363d;
+  display: flex; align-items: center; gap: 6px;
+  font-weight: 600;
+}
+.commits-info { color: #7d8590; font-size: 14px; }
+.commits-info strong { color: #e6edf3; }
+
+.file-row {
+  display: grid;
+  grid-template-columns: 32px 1fr 1fr 100px;
+  gap: 16px; align-items: center;
+  padding: 12px 22px;
+  border-bottom: 1px solid #21262d;
+  font-size: 15px;
+}
+.file-row:last-child { border-bottom: none; }
+.file-row:hover { background: #1c2128; }
+.f-icon { color: #7d8590; font-size: 16px; }
+.f-icon.folder { color: #e3b341; }
+.f-name { color: #c9d1d9; font-weight: 500; }
+.f-name.folder { color: #4493f8; font-weight: 600; }
+.f-commit { color: #7d8590; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-time { color: #7d8590; font-size: 13px; text-align: right; }
+
+/* Star button & bottom CTA */
+.bottom {
+  margin-top: 20px;
+  background: #161b22;
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  padding: 20px 28px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.bottom-info {
+  display: flex; align-items: center; gap: 14px;
+}
+.bottom-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; font-weight: 900; color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.bottom-text {}
+.bottom-title {
+  font-size: 22px; font-weight: 800; color: #e6edf3;
+}
+.bottom-sub { font-size: 15px; color: #7d8590; margin-top: 2px; }
+.bottom-sub s { color: #ef4444; }
+.bottom-sub strong { color: #10b981; }
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 18px 40px; border-radius: 10px;
+  font-weight: 800; font-size: 22px;
+  display: flex; align-items: center; gap: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="gh-nav">
+  <div class="gh-logo">⌬</div>
+  <div class="gh-breadcrumb">
+    <span class="org">sharpify</span>
+    <span class="sep">/</span>
+    <span class="repo">ai-kit</span>
+  </div>
+  <div style="margin-left: auto; display: flex; gap: 8px;">
+    <div class="repo-visibility">Public</div>
+    <div class="repo-visibility" style="background: #1f6feb22; color: #4493f8; border-color: #4493f866;">⭐ Star 2.3k</div>
+  </div>
+</div>
+
+<div class="repo-header">
+  <div class="repo-title-row">
+    <span class="repo-icon">📁</span>
+    <span class="repo-name">sharpify/ai-kit</span>
+    <span class="repo-visibility">Public</span>
+  </div>
+  <div class="repo-desc">
+    🧠 Production-ready AI skills for Claude Code. 27 skills + 10 workflows built by Niks Jansons. Used by 2,300+ entrepreneurs across 26 countries.
+  </div>
+  <div class="repo-topics">
+    <span class="topic">claude-code</span>
+    <span class="topic">ai-skills</span>
+    <span class="topic">marketing</span>
+    <span class="topic">sales</span>
+    <span class="topic">automation</span>
+    <span class="topic">productivity</span>
+  </div>
+  <div class="repo-stats">
+    <div class="stat-item">⭐ <span class="num">2,340</span> stars</div>
+    <div class="stat-item">🍴 <span class="num">487</span> forks</div>
+    <div class="stat-item">👁️ <span class="num">1.2k</span> watchers</div>
+    <div class="stat-item">🌍 <span class="num">26</span> countries</div>
+  </div>
+</div>
+
+<div class="file-list">
+  <div class="file-list-header">
+    <div class="branch-btn">🌿 main ▾</div>
+    <div class="commits-info">Last update: <strong>2 hours ago</strong> · <strong>127</strong> commits</div>
+  </div>
+  <div class="file-row">
+    <span class="f-icon folder">📁</span>
+    <span class="f-name folder">skills/</span>
+    <span class="f-commit">27 production-ready AI skills</span>
+    <span class="f-time">2h ago</span>
+  </div>
+  <div class="file-row">
+    <span class="f-icon folder">📁</span>
+    <span class="f-name folder">workflows/</span>
+    <span class="f-commit">10 end-to-end automation pipelines</span>
+    <span class="f-time">2h ago</span>
+  </div>
+  <div class="file-row">
+    <span class="f-icon">📄</span>
+    <span class="f-name">CLAUDE.md</span>
+    <span class="f-commit">Business template — personalize in 10 min</span>
+    <span class="f-time">3h ago</span>
+  </div>
+  <div class="file-row">
+    <span class="f-icon">📄</span>
+    <span class="f-name">SETUP.md</span>
+    <span class="f-commit">Quick setup guide (25-30 min)</span>
+    <span class="f-time">1d ago</span>
+  </div>
+  <div class="file-row">
+    <span class="f-icon">🎬</span>
+    <span class="f-name">video-tutorial.md</span>
+    <span class="f-commit">74 min step-by-step walkthrough</span>
+    <span class="f-time">1d ago</span>
+  </div>
+  <div class="file-row">
+    <span class="f-icon">📄</span>
+    <span class="f-name">README.md</span>
+    <span class="f-commit">Get started in 28 seconds</span>
+    <span class="f-time">2h ago</span>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="bottom-info">
+    <div class="bottom-icon">S</div>
+    <div class="bottom-text">
+      <div class="bottom-title">sharpify/ai-kit</div>
+      <div class="bottom-sub"><s>€99</s> · <strong>€19</strong> · mūžīga piekļuve · 7 dienu garantija</div>
+    </div>
+  </div>
+  <div class="cta-btn">⬇ Iegūt repo</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,725 @@
+CHANGER CLUB · DYNASTY VSL
+Post-Production Brief
+Audience: UHNW 50+ · Monaco, Switzerland, Italy, Dubai · $20M+ liquid
+Framework: 8-section direct-response VSL structure (Cole Gordon-style)
+· Talent: Jonas Rolo + Camelia Rolo · Runtime target: 4:00–4:30
+Note on provenance: Industry references (Errol Morris Interrotron, Marc
+Randolph, Wistia engagement data) are verified. Conversion numbers in
+§1 are starting hypotheses, not industry benchmarks — recalibrate to
+client funnel data within 14 days of launch.
+Materials
+Audio
+https://drive.google.com/drive/folders/1d6laH4COcdc9V_QhS-N0G-Byo
+R9wrbeW?usp=sharing
+Video
+https://drive.google.com/drive/folders/1M0s6sO18nrbpQqzGly5hHy6aPF
+LeiPqg
+0. Read this first
+This audience cannot be sold to. They have been sold to by every
+wealth-management firm, private bank, yacht broker, and luxury
+concierge service for thirty years. They are immune. The only register
+that converts is the register of an equal speaking quietly to another
+equal.
+Every editorial decision in this film answers one question: would a
+sixty-year-old with twenty million in liquid assets, sitting on his sofa in
+Monaco with his wife next to him, watch this without rolling his eyes?
+If you cannot answer yes for a specific cut, the cut is wrong. Fix it or
+remove it.
+
+-- 1 of 19 --
+
+1. Conversion targets
+This brief is operational, not artistic. Every editorial choice is judged
+against the numbers below but read this section carefully: the targets
+are starting hypotheses, not benchmarks. Set true targets against the
+client's prior funnel data within the first 14 days of paid traffic, then
+enforce them as kill criteria.
+UHNW cold traffic to a 4-minute-plus VSL behaves differently from
+typical direct-response audiences.
+2. Who you are editing for
+You are not editing for a generic luxury audience. You are editing for one
+specific human, sitting on a specific sofa, in a specific moment.
+He is sixty-two. He built or grew real businesses. He has homes in two of
+{Monaco, Geneva, Lugano, Milan, Como, Dubai}. His wife is on the sofa
+next to him when he opens this on his iPad. She decided to click play.
+Her opinion will determine whether they fill out the application and
+whether they ever talk about it again.
+He is sceptical. Three of his friends have been disappointed by Tiger 21
+or YPO chapters. He has a daughter who is eighteen and already
+strategic, and he is starting to feel quietly that he does not know how to
+talk to her about what he is going to leave behind.
+Edit for him. Edit for her sitting beside him. Every cut decision is made
+with both of them in the frame of your imagination.
+3. The reference
+One reference. Anchor here, ignore the rest.
+Errol Morris's Interrotron interview Errol Morris on Donald Rumsfeld:
+'One of the strangest interviews I've ever done' style the way subjects
+look directly into the lens and speak as if to one specific person, without
+performance, without rhetorical structure, with the camera as a witness
+rather than a stage.
+That is the §4b paired beat. That is the entire visual language of the film.
+The camera forgets it is a camera. The talent forgets they are on
+camera. The viewer feels they are being addressed by name.
+
+-- 2 of 19 --
+
+What we are not referencing: luxury commercial work, watch-ad
+cinematography, drone-heavy hospitality films, TED Talk visual grammar.
+If your instinct reaches for any of those references during the edit, the
+instinct is wrong. Cut it.
+4. The 8-second hook audit
+The first 8 seconds carry the largest single share of viewer-decision
+weight in any VSL Wistia engagement data places the typical decision
+window at 5–8 seconds. Before any other edit decision, the post lead
+must audit §1 against this test:
+• At second 8, does the viewer understand the stakes? (Family
+wealth disappearing across generations.)
+• At second 8, does the viewer trust the speaker? (Calm, low
+register, no sales tone.)
+• At second 8, is the viewer mildly uncomfortable? (Good. Comfort
+means we are not landing.)
+If any of the three answers is no, recut §1 before continuing with the rest
+of the film. Do not proceed to §2 edits until §1 passes audit.
+5. Three protected mechanics
+These are conversion mechanics dressed as direction notes. Cutting any
+of them costs applications. They are not stylistic preferences.
+5.1 The two-second pause before 'I will tell you the reason this is
+personal.'
+After Jonas says 'That is the pattern,' there must be two full seconds of
+silence on his face before the next line. If the recorded pause is shorter,
+extend it with room tone. If you find this pause uncomfortably long on
+your monitor, you have it the right length. This pause is what tells the
+viewer the next thing is true.
+5.2 No eye contact between Jonas and Camelia in §4b and §8.
+They are seated together but each looks at the lens, not at each other. If
+a take has them looking at each other, do not use it. If only that take
+exists for a line, cut to a single before the eye contact happens. Couples
+
+-- 3 of 19 --
+
+performing intimacy reads as theatre. Two people independently telling
+the truth to the lens reads as marriage. This rule is what makes §4 work.
+5.3 Camelia's line is the line.
+"I watched Jonas with her at the dinner table, and I saw something I had
+seen in my own father. A man with everything to pass on, but no
+language or way to transmit it effectively."
+If you have multiple takes, choose the one where she sounds like she is
+remembering, not delivering. A breath in the wrong place, a small
+hesitation before 'my own father' these are gold, not flaws. Do not clean
+them out. Imperfection is the proof of truth.
+6. Section-by-section cut rules
+§ 	TIME WHO 	CUT RULE 	MUSIC B-ROLL
+§1 	0:00–
+0:28
+Jonas
+alone
+One static take. Hold
+on his face. No
+B-roll. No movement.
+NONE 	NONE
+§2 	0:28–
+1:10
+Jonas
++
+B-roll
+Cut to B-roll on the
+words 'First,'
+'Second,' 'Third.' ≤3
+sec each. Return to
+Jonas immediately.
+Low
+strings
+3 cuts only
+§3 	1:10–
+1:25
+Jonas
+alone
+Static. No cutaways.
+This is a filter, not a
+sale.
+Low
+strings
+NONE
+§4a 1:25–
+1:50
+Jonas
+close-
+up
+Tighter framing than
+§1. Hold 2 full
+seconds after 'That is
+the pattern.'
+NONE 	NONE
+§4b 1:50–
+2:10
+Jonas
++
+No takes where they
+look at each other.
+NONE 	NONE
+
+-- 4 of 19 --
+
+Cameli
+a
+Cut between singles
+only when strictly
+necessary. Hold the
+two-shot.
+§5 	2:10–
+2:25
+Jonas
+alone
+Brief. Calm. One
+static take. No music
+swell into CTA.
+Low
+strings
+NONE
+§6 	2:25–
+2:55
+Jonas
+walkin
+g
+Single observational
+shot. No cutaways to
+architecture. He
+carries it.
+Low
+strings
+NONE
+§7 	2:55–
+3:25
+Jonas
+alone
+Tighter than §1.
+Calm authority. No
+urgency in the
+pacing.
+Low
+strings
+NONE
+§8 	3:25–
+end
+Jonas
++
+Cameli
+a
+Held two-shot. Slow
+fade to black after
+Camelia's line. Music
+fades with image, not
+before.
+Low
+strings
+NONE
+7. Kill list
+These editorial moves have killed VSLs in this register before. They are
+forbidden in this cut. If you are tempted by any of them during post, the
+answer is no.
+DO NOT 	WHY IT KILLS THE FILM
+Music swell under any emotional
+line
+Audience reads it as
+manipulation. Closes the tab.
+B-roll over Camelia's confession
+or Jonas's response in §4
+Replaces truth with decoration.
+Kills conversion.
+
+-- 5 of 19 --
+
+Cuts faster than 4 seconds during
+dialogue
+Social-media pacing. Wrong
+audience. Reads as anxious.
+Any take where Jonas and
+Camelia look at each other
+Reads as theatre. Breaks the
+marriage spell.
+Drone shots, aerials, establishing
+wide of Monaco/Dubai
+Reads as travel-board ad.
+Patronising to this viewer.
+Animated logo, lower-thirds with
+names mid-dialogue, statistics on
+screen during 70% line
+Distraction during the
+highest-conversion moments.
+Any transition other than straight
+cut + one final fade-to-black
+Visible technique = visible
+production = sales tone.
+Compressing the 2-second pause
+in §4 to 'tighten pacing'
+That pause is the conversion
+mechanic. Cutting it costs
+applications.
+Color grade visible to a non-editor
+viewer
+Visible look = production sheen =
+closes the trust gap.
+Reverb tail on the close, music
+sting on the CTA
+Reads as commercial. The film
+ends in silence on purpose.
+8. Visual grammar
+Color. Single muted palette throughout — cream, warm neutral, deep
+burgundy as accent only. The grade must be invisible to a non-editor. If
+the look is visible, the look is wrong. Match the Project Dynasty deck
+palette.
+Light. Single soft key, slightly above eye-line, falling off into shadow on
+the unlit side. Do not flatten with fill. Shadows are part of the register.
+Framing. Faces. Tight enough that the eyes read. Loose enough that
+body language reads in §4b. No Dutch tilts, no symmetry games, no
+visible composition tricks.
+Movement. Static throughout. Even §6 walking shot is observational, not
+kinetic. No push-ins on emotional beats.
+
+-- 6 of 19 --
+
+Cuts. Slow. The instinct from social-edit training will be cuts every 2–3
+seconds. Fight it. Four-second holds on faces are not dead time. They
+are the line landing.
+9. Sound
+Music. Silence under §1 and §4. Restrained ambient strings under §2,
+§3, §6, §7, §8 only — well beneath the dialogue floor. Reference: Max
+Richter's quieter work, Nils Frahm solo piano. Nothing with rhythm.
+Nothing with crescendo.
+Voice. Warm and forward. Light de-essing only. Trust the recorded
+intimacy. Audible breaths stay in.
+Room tone. Use generously. Two-second pauses with room tone read as
+truthful silence. The same pauses with digital silence read as edit error.
+The film ends in silence, not in music. Music fades with the image to
+black. No sting on the CTA card.
+10. On-screen text
+Two on-screen elements only. Anything beyond these is a kill-list
+violation.
+• Opening overlay at 0:25 — 'Jonas Rolo & Camelia Rolo ·
+Co-Founders, Changer Club.' Serif typeface (Canela or equivalent
+— match Project Dynasty deck). White on image, no box, no
+shadow. 3-second hold. Slow fade in and out.
+• Final card at end after fade — 'Changer Club · Monaco · Dubai'
+with application CTA below. Same typeface. Held still until the end
+of the file.
+No lower-thirds during dialogue. No statistics on screen during the 70%
+line. No animated logo. No pull-quotes. The viewer's attention belongs to
+the faces.
+11. §2 B-roll specification
+Three cuts only, between 2 and 3 seconds each, cutting on the words
+'First,' 'Second,' 'Third':
+
+-- 7 of 19 --
+
+• Marc Randolph on stage at the Changer reception (existing
+footage — confirm with Julia Stradina).
+• Heir in conversation at a reception, three-quarters view, never
+direct-to-camera.
+• Co-investment signing — hands, pen, document. Shallow depth of
+field. No faces.
+If any of the three is unavailable or weak, hold on Jonas instead. A weak
+B-roll cut damages credibility more than its absence. No B-roll anywhere
+else in the film.
+Video for the B-roll
+https://docs.google.com/document/d/1xbXZBoXJfskqbNru6hib197t
+OYqbM_gfEl3iHgmlY9U/edit?usp=sharing
+12. A/B test plan
+Two variants ship at launch. The losing variant is killed at day 14.
+12.1 Hook variants (first 15 seconds)
+• Variant A: opens on Jonas's hook line as written, plain interior, no
+setup.
+• Variant B: opens with the 70% statistic spoken first, then Jonas's
+name and the rest of the hook.
+Test: completion rate at the 30-second mark across both variants.
+Winner takes 100% of paid spend from day 15.
+12.2 Thumbnail variants (for paid distribution)
+• Variant A: Jonas alone, mid-confession, eye contact with lens.
+• Variant B: Jonas and Camelia paired shot from §4b.
+Test: click-through rate on identical headline copy. Decision criterion:
+which variant draws more women clicks (proxy for spouse-forward
+dynamic).
+13. Pre-launch validation protocol
+
+-- 8 of 19 --
+
+Before paid launch, test with three real prospects who fit the audience
+profile. Schedule 20-minute Zooms. Send each prospect the link 5
+minutes before the call. Watch their face on Zoom while they watch the
+film.
+Specifically observe:
+• Do they reach for their phone at any point? Note the timecode.
+That is a broken cut.
+• Where does their face change? That is where the film is landing.
+• After the film: do they ask a question, or do they pause? A pause
+is the strongest possible signal.
+If any of the three test viewers reaches for their phone within the first 30
+seconds, recut §1 before launch. No exceptions.
+14. Deliverables
+• Master VSL, 4:00–4:30, 4K UHD, 25fps, ProRes 422 HQ master +
+h.265 distribution
+• Two hook variants for A/B test (first 15 seconds, integrated into
+otherwise identical masters)
+• Two thumbnail variants for paid distribution
+• Three vertical cutdowns for paid social — 30, 45, 60 seconds,
+9:16
+• One horizontal 60-second teaser for LinkedIn and direct
+WhatsApp distribution
+• 8–12 production stills for application landing page and press
+• All §4b takes labeled by line in editor's bin, delivered as selects
+•
+15. Languages
+English audio only. This audience speaks English at native level
+regardless of nationality. Do not produce dubs. Subtitles are toggle,
+never burned in. The English script must not be paraphrased or
+simplified — plain language patronises this viewer.
+
+-- 9 of 19 --
+
+16. Editorial authority during post
+Pacing changes, B-roll choices, music level, the §4 pause length — all
+decisions go through the executive producer. Once Jonas and Camelia
+have signed off on the final cut, they are out of the loop. They should not
+be making granular pacing decisions. The film is theirs in voice but not in
+edit.
+If a section is not landing during post, stop and flag it before fixing it with
+B-roll or music. Most apparent edit problems are pacing problems that
+resolve with longer holds and more silence — not with more material.
+Adding material to fix a confession is the most common way these films
+die.
+End of brief. Open the footage.
+Changer New Position – Dynasty
+24-04-26
+27-04 UPDATED
+BETA 1.2
+Arkady
+Delivery note for the pair shot. They should not look at each other when they speak. They
+should look at the camera. Couples performing intimacy for an audience read as theatre.
+Two people independently telling the same truth to the viewer read as marriage.
+The Camelia beat in Section 4 is a confession, not a script.
+Her Section 4 line — 'I watched Jonas with him at the dinner table, and I saw something I
+had seen in my own father'
+
+-- 10 of 19 --
+
+Jonas The pause before 'I will tell you the reason
+this is personal.'
+CHANGER CLUB — VSL (INTEGRATED,
+BETA 2)
+Presenter: Jonas Rolo, Co-Founder Length: 4:00–4:30 at European register Structure:
+Cole Gordon’s 8-section Closers.io VSL framework, complete
+1. HOOK / CLAIM / GUARANTEE (0:00–0:28)
+[Jonas on camera. Plain background. No music.]
+“If you’ve built wealth… the real question is no longer return.
+It’s whether your family can sustain it without you.
+Because statistically they won’t
+The risk is huge - 70% of wealthy families will LOOSE money by the second generation. 90
+by the third.
+Changer Dynasty Club in Monaco and Dubai is organized around changing that number.”
+My name is Jonas Rolo, I am co-founder of Changer together with my beautiful wife Camelia
+and this concerns our family too.
+OVERLAY: Jonas Rolo — Co-Founder, Changer Club and Camelia Rolo
+2. ELABORATE IN THREE STEPS (0:28–1:10)
+[Slight cut-in.]
+
+-- 11 of 19 --
+
+Changer is not networking, not mingling as a typical social club.
+Think of it as an intellectually challenging environment where both —
+the wealth creator, your spouse and the children - all
+are exposed to the high-caliber level of thinking.
+First, you start sitting with the people who have built what you are building. Last year we
+hosted Marc Randolph, the co-founder of 400B$ Netflix.. Nobel laureates. First-generation
+billionaires. New York Times best-selling authors - people who will re-wire your mindset.
+Your children enter the same room. Not a junior programme. The same room. They learn
+valuations. They learn to hold their own conversations with billionaires. They begin to
+understand what turning ten million into a billion actually requires.
+Third, we invest together. The club selects and evaluates technology companies as a group.
+You and your heir make the decisions jointly. Your child learns investments by deploying
+capital, with you, in real transactions. That is what develops the intellectual equipment they
+will need when the business and money is theirs.”
+3. GUARANTEE — SCARCITY (1:10–1:25)
+“We admit just fifty families a year, across our two chapters in Monaco and Dubai. Five
+million liquid minimum and clear reputation. We have said no to applicants with considerably
+more, when the fit was wrong. We will tell you honestly on the call.”
+4. PROOF (1:25–2:10)
+[Close-up. Most intimate shot.]
+“How can I claim any of this?
+One of our members Brooks Newmark. Long stanging Private equity player. He joined the
+club at 64. Four years later, he has built an AI company called Rezolve and taken it public at
+a two billion dollar valuation. His son is now joining the ride. That is not the exception in this
+club. That is the pattern.
+I will also tell you the reason why is it personal.
+Camelia: Our eldest is eighteen and we want her to carry onward the family legacy. A year
+ago I watched Jonas with her at the dinner table, and I saw something I had seen in my own
+father. A man with everything to pass on, but no language or way to transmit it effectively.
+Jonas: My father never had such a conversation with me, and therefore I really struggled in
+explaining to her what is important and how to inspire her.
+
+-- 12 of 19 --
+
+Camelia: We did not build Changer Club because we had the answer. We built it because
+we did not. We needed a room where strong fathers can meet other strong fathers at the
+moments they don't know how to inspire their sons. We built Changer Club also for the
+mothers, who carry most of what actually moves through a family, to be seated together at
+the same table where family dynasties are being built.
+Jonas: After a year in Changer program, my daughter is the one leading us on how to
+structure our family wealth and build the strategy of where to deploy capital. We are starting
+to implement her proposals together.
+Camelia: That is why Changer exists. For the parents who refuse to let the seventy percent
+loss be their family's legacy number.
+6. MECHANISM (2:25–2:55)
+Every other club you have experienced offers networking and nice champagne to the
+parents. The children are not addressed.
+You might think - fine, I ll do this inside my own family. It wont unfortunately work. Our
+children do not take intellectual instruction from their own parents. They never have.
+Changer with it's 270 power families members and 25bEur in joint capital, is the only place
+where full family are taught in the same room, at the same time, by the same legends
+Thats exactly what alters the 70% capital loss, instead - dynasties that scale wealth are
+being build.
+If you are not building something that outlives you, is there is a real reason to be building at
+all? You already know whether you want to be in this room.
+Camelia
+Hope to see you, your wife and your children personally at reception in Monaco or Dubai
+All of you or neither ))))
+
+-- 13 of 19 --
+
+[Hold on his face. Slow fade.]
+FINAL OVERLAY: Changer Club · Monaco · Dubai
+CTA BUTTON: Apply for a qualification call →
+CHANGER CLUB
+VSL — Production Brief
+For studio crew · Doha, Qatar · 	Talent: Jonas Rolo + Camelia Rolo 	· 	Runtime:
+4:30
+KEVIN REFERENCE
+https://drive.google.com/file/d/1QO83AIflUDGwNIxWXtCjJIMw4yASB85X/view?usp=sharing
+1. The film, in one paragraph
+This is not a podcast and not a corporate piece. It is a four-and-a-half-minute filmed
+confession from two co-founders to ultra-high-net-worth families. The audience is wealthy,
+sceptical, and surrounded by people trying to sell them something. They have seen every
+glossy club video. The only register that works on them is restraint. Quiet camera, quiet light,
+
+-- 14 of 19 --
+
+two people who sound like they mean what they are saying. Anything that feels staged loses
+the room in the first ten seconds.
+2. Talent and energy
+Jonas carries seven of eight sections alone. He is the lead voice. European register, around
+130 words per minute, with real pauses. He should sound like he is at dinner with a peer, not
+presenting from a stage. Contractions are minimal. Vulnerability appears once — in §4 —
+and it must not be rushed.
+Camelia appears in §4b and §8. Her presence is structural, not decorative. She is the person
+who first noticed the gap Jonas talks about. She must sound like a co-diagnostician, not a
+supporting wife. Her Section 4 line — 'I watched Jonas with him at the dinner table, and I
+saw something I had seen in my own father' — is the most important line either of them
+speaks in the entire video. If a take of that line lands, every other take of it becomes
+secondary footage. Get it on take one or two while she is still finding the words.
+3. Two non-negotiable rules
+3.1 The pause before 'I will tell you the reason this is
+personal.'
+In §4, after Jonas delivers the Brooks Newmark story and says 'That is the pattern,' he
+pauses for two full seconds before the next line. Two seconds feels like an eternity on
+camera. Do not let him cut it short. If he rushes it, reset and do another take. This pause is
+what tells the viewer the next thing they hear is true.
+3.2 No eye contact in the paired shots (§4b and §8).
+Jonas and Camelia are seated together but they do not look at each other while they speak.
+Each of them looks at the lens. They do not nod while the other is speaking. They do not
+reach for each other. They do not smile reassuringly between lines.
+This rule will feel wrong to them. Couples performing intimacy for an audience always read
+as theatre. Two people independently telling the same truth to the camera read as marriage.
+Brief them on this before they sit down. Block it on rehearsal. If they slip, reset.
+4. Shot list
+Lens choices below are minimums — DP can adjust upward in tightness, never wider than
+what is specified. f-stop is a starting point; protect skin in the close-ups and don't go below
+f/1.8 on the 85mm or eyes will drift in and out of focus.
+
+-- 15 of 19 --
+
+SECTION TIME 	WHO 	LOOK 	CAMERA /
+LENS
+NOTES FOR DP
+§1 HOOK 0:00–0:3
+0
+Jonas and
+Camelia
+Plain interior. Cool,
+restrained.
+FX3 · 50mm ·
+f/2.0
+Static. Eye-line just left
+of lens. No music. No
+B-roll under this section.
+§2 STEPS 0:30–1:2
+0
+Jonas
+alone +
+B-roll
+Same setup as §1. FX3 · 50mm ·
+f/2.0 (A-cam) +
+B-roll cuts
+Three B-roll cuts, one
+per step. ≤3 sec each.
+Marc Randolph on stage
+/ heir at reception /
+co-investment signing.
+Cut on the word 'First',
+'Second', 'Third'.
+§3
+SCARCIT
+Y
+1:20–1:3
+5
+Jonas
+alone
+Same as §1. 	FX3 · 50mm ·
+f/2.0
+Static. No movement.
+This is a filter, not a
+sale.
+§4a
+PROOF
+1:35–2:0
+5
+Jonas
+alone —
+close-up
+Tightest framing in
+video.
+FX3 · 85mm ·
+f/1.8
+Closer than any other
+shot. Eyes carry it.
+Two-second hold after
+'That is the pattern.'
+§4b
+PERSONA
+L
+2:05–2:5
+0
+Jonas +
+Camelia
+Camera widens.
+Both seated. Same
+lighting.
+FX3 · 35mm ·
+f/2.5 (wide
+two-shot) +
+A7SIII 85mm
+singles
+READ THE RULES
+PAGE. No eye contact
+between them. No
+reaching. No nodding
+while the other speaks.
+Each looks at lens.
+§5
+MIDWAY
+CTA
+2:50–3:0
+0
+Jonas
+alone
+Return to §1 setup. FX3 · 50mm ·
+f/2.0
+Brief. Calm. Don't push
+energy.
+§6
+MECHANI
+SM
+3:00–3:4
+0
+Jonas
+alone
+WALKING 	FX3 · 35mm ·
+gimbal · f/2.8
+Soft focus background.
+Frame shoulder-up, lead
+room on the side he's
+walking toward.
+§7 CTA 	3:40–4:1
+0
+Jonas
+alone —
+tight
+Return to §1 setup,
+tighter framing.
+FX3 · 85mm ·
+f/1.8
+Slightly tighter than §1.
+Calm authority, not
+urgency.
+§8 CLOSE 4:10–4:3
+0
+Jonas +
+Camelia
+Same as §4b. 	FX3 · 35mm ·
+f/2.5
+Both in frame. Held.
+Quiet. Slow fade after
+Camelia's line.
+5. Lighting
+Single soft key from camera-left, ~45° off axis, slightly above eye-line. Soft fill at half key
+from camera-right (or a bounce). Gentle hair separation. Background should fall off into
+shadow we do not want a bright, evenly-lit interview look. Colour temperature 3200K
+throughout. No coloured practicals on screen. No visible lamps in frame.
+
+-- 16 of 19 --
+
+For §4b and §8 (paired shot), key remains from camera-left, but lift the fill on Camelia's side
+slightly so she is not under-exposed relative to Jonas. They should read as equals on the
+monitor.
+6. Audio
+• Two lavalier mics, one each, tucked.
+• Multitrack to separate channels. We need Jonas and Camelia on independent tracks
+for §4b they will be cut tightly together in post.
+• Podcast/audio-only version is a deliverable. Capture clean room and avoid HVAC,
+dimmer hum, and the building's lift.
+• Slate every take audibly. Jonas tends to start before the slate clears — hold him.
+7. Hands and stillness
+This piece lives or dies on restraint. The single fastest way to break the register is to let the
+talent gesture like they are presenting from a stage. Hands need their own direction,
+separate from the rest of the body.
+4.1 The default is stillness.
+In §1, §3, §4a, §4b, §5, §7 and §8, the default state for both pairs of hands is still. Resting on
+the lap or on the chair arms. Out of frame whenever the lens allows. The audience reads still
+hands as 'I mean what I am saying.' They read moving hands as 'I am performing.'
+4.2 Section 2 is the only exception.
+§2 has three numbered points first, second, third. Jonas can lift one hand for one beat per
+step, palm slightly turned toward camera, and let it return to rest. That is three small lifts
+across the section. No counting on fingers. Counting on fingers is a TED-talk move and
+reads as amateur. The hand suggests the enumeration; the words carry it.
+4.3 The §4b paired beat is where most crews fail.
+Sitting beside each other, talking about their family, Jonas and Camelia will instinctively
+reach for each other. A hand on the knee. A hand on the forearm. A small reassuring
+squeeze between lines. This destroys the section.
+The whole reason §4b works is that they are independently telling the truth, not performing
+tenderness for the camera. Touching breaks the spell. Brief them clearly before they sit
+down: hands stay on their own lap, no exceptions, and no comforting gestures between
+lines. If they slip, reset and roll again. They will not understand why this rule exists until they
+see the cut.
+
+-- 17 of 19 --
+
+4.5 The reset hand.
+Between takes, Jonas's natural tendency is to bring his hands to his face —adjusting his
+collar, pushing hair back, rubbing his jaw. This is fine off-camera, but it leaks into the start of
+the next take if he doesn't drop his hands fully before 'action.' The DP needs to call hand
+reset, not just talent reset, before each roll. A take that begins with a hand still drifting down
+from the face starts late and feels unstable.
+4.6 Things to actively avoid.
+• Steepled fingers. Reads as politician, not co-founder.
+• Open palms held forward for emphasis. Stage register, wrong audience.
+• Counting on fingers during §2.
+• Pointing at the camera. Ever.
+• Hand-on-heart gestures during §4. The vulnerability is in the words. Adding hands to it
+makes it theatre.
+• Camelia adjusting her hair, jewellery, or clothing during §4b. If anything is bothering
+her, sort it before the take.
+End of brief.
+
+-- 18 of 19 --
+
+
+
+-- 19 of 19 --
+

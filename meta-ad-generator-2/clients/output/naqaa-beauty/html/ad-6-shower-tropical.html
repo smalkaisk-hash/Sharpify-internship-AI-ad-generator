@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+    .bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.15) 30%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0.75) 100%)}
+    /* Big headline top */
+    .top{position:absolute;top:44px;left:0;right:0;text-align:center;z-index:4}
+    .tag{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#FFB74D;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;padding:12px 28px;background:rgba(0,0,0,0.4);backdrop-filter:blur(8px);border-radius:8px;display:inline-block}
+    .h1{font-family:'Montserrat',sans-serif;font-size:68px;font-weight:900;color:#FFF;line-height:1.0;text-shadow:0 4px 30px rgba(0,0,0,0.5)}
+    .sub{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;color:rgba(255,255,255,0.55);margin-top:10px;text-shadow:0 2px 10px rgba(0,0,0,0.4)}
+    /* Product — right side, big */
+    .product{position:absolute;bottom:80px;right:30px;z-index:3}
+    .product img{height:600px;width:auto;filter:drop-shadow(-15px 0 50px rgba(0,0,0,0.5))}
+    /* Bottom left — benefits */
+    .bot-left{position:absolute;bottom:44px;left:48px;z-index:4}
+    .bens{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+    .ben{padding:10px 22px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);border-radius:50px;font-family:'Montserrat',sans-serif;font-size:20px;font-weight:700;color:#FFF;width:fit-content}
+    .price{font-family:'Montserrat',sans-serif;font-size:48px;font-weight:900;color:#FFB74D;text-shadow:0 4px 20px rgba(0,0,0,0.4)}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <img class="bg" src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/backgrounds/bg-shower-silhouette.png" alt="">
+    <div class="overlay"></div>
+    <div class="top">
+      <div class="tag">Vitamīnu dušas filtrs</div>
+      <div class="h1">Aromterapija<br>katrā dušā.</div>
+      <div class="sub">Mango aromāts — enerģija un vitamīni</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/naqaa-beauty/brief/images/cutouts/product-mango-rain-with-box-cutout.png" alt="">
+    </div>
+    <div class="bot-left">
+      <div class="bens">
+        <span class="ben">Attīra hloru</span>
+        <span class="ben">Vitamīni ādai un matiem</span>
+        <span class="ben">Dermatoloģiski pārbaudīts</span>
+      </div>
+      <div class="price">34,99€</div>
+    </div>
+  </div>
+</body>
+</html>

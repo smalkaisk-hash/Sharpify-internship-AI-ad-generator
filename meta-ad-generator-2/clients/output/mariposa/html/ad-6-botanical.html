@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#3a0018; }
+
+.bg {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 10%;
+  filter:saturate(1.12) contrast(1.03) brightness(1.02);
+}
+
+/* Dark strip at top for logo readability */
+.vig-top {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,rgba(30,0,14,0.68) 0%,rgba(30,0,14,0.16) 14%,transparent 28%);
+}
+
+/* Warm pink side glow */
+.vig-pink {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 55% 45% at 20% 40%,rgba(200,60,110,0.12) 0%,transparent 65%);
+}
+
+/* Raspberry zone — vivid, saturated lower half */
+.vig-berry {
+  position:absolute; inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent           20%,
+    rgba(108,0,44,0.12)  32%,
+    rgba(118,0,48,0.56)  43%,
+    rgba(128,0,52,0.84)  52%,
+    rgba(136,0,55,0.96)  62%,
+    rgba(142,0,57,1.00)  72%
+  );
+}
+
+/* Edge depth */
+.vig-edges {
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 88% 88% at 50% 50%,transparent 44%,rgba(30,0,14,0.16) 70%,rgba(30,0,14,0.38) 100%);
+}
+
+/* Botanical SVG layer */
+.botanical {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  z-index:5; pointer-events:none;
+}
+
+/* Top bar */
+.top {
+  position:absolute; top:52px; left:60px; right:60px;
+  display:flex; justify-content:flex-end; align-items:center;
+  z-index:20;
+}
+.logo-img { height:88px; display:block; }
+
+/* Content block */
+.content {
+  position:absolute;
+  bottom:240px; left:60px; right:60px;
+  z-index:20;
+  text-align:center;
+}
+
+.hook {
+  font-family:'DM Sans',sans-serif;
+  font-size:18px; font-weight:400; font-style:italic;
+  color:rgba(255,185,210,0.88);
+  letter-spacing:0.03em;
+  margin-bottom:20px;
+}
+
+.headline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:82px; line-height:0.88;
+  font-weight:300; font-style:italic;
+  color:#fff5f8;
+  letter-spacing:-0.02em;
+  margin-bottom:14px;
+  text-shadow:0 3px 44px rgba(100,0,38,0.55);
+}
+.headline em {
+  font-style:italic; font-weight:700;
+  color:#ffa0c8;
+}
+
+.chips {
+  display:flex; justify-content:center; gap:16px; align-items:center;
+}
+.chip {
+  display:flex; align-items:center; gap:12px;
+  font-family:'DM Sans',sans-serif;
+  font-size:16px; font-weight:500;
+  color:rgba(255,190,215,0.90);
+  text-transform:uppercase; letter-spacing:0.15em;
+  white-space:nowrap;
+  padding:14px 26px; border-radius:40px;
+  border:1px solid rgba(255,160,200,0.32);
+  background:rgba(255,160,200,0.10);
+  backdrop-filter:blur(6px);
+}
+
+/* CTA — cream on raspberry for maximum contrast + vibrancy */
+.cta-wrap {
+  position:absolute; bottom:150px; left:60px; right:60px;
+  z-index:20;
+}
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg,#ff2a7a 0%,#ff5096 48%,#ff7ab2 100%);
+  color:#fff5f8;
+  font-family:'DM Sans',sans-serif;
+  font-size:20px; font-weight:600;
+  padding:26px; border-radius:10px;
+  text-align:center; letter-spacing:0.05em;
+  box-shadow:0 8px 60px rgba(255,50,120,0.38);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <img class="bg" src="../images/woman-smooth-2.jpg" alt="">
+  <div class="vig-top"></div>
+  <div class="vig-pink"></div>
+  <div class="vig-berry"></div>
+  <div class="vig-edges"></div>
+
+  <!-- Botanical decorative layer -->
+  <svg class="botanical" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+    <!-- Main branch: bottom-left up to top area -->
+    <path d="M -10 400 Q 50 300, 110 210 Q 170 120, 240 10"
+          stroke="rgba(220,90,140,0.28)" stroke-width="1.8" fill="none"/>
+    <path d="M -10 440 Q 45 350, 100 265 Q 155 180, 215 70"
+          stroke="rgba(220,90,140,0.14)" stroke-width="1" fill="none"/>
+
+    <!-- Left leaf 1 -->
+    <path d="M 55 310 Q -10 260, -20 200 Q 40 240, 55 310 Z"
+          fill="rgba(220,90,140,0.13)"/>
+    <!-- Left leaf 2 -->
+    <path d="M 100 240 Q 155 190, 162 148 Q 112 180, 100 240 Z"
+          fill="rgba(220,90,140,0.11)"/>
+    <!-- Left leaf 3 -->
+    <path d="M 155 170 Q 200 120, 200 82 Q 155 112, 155 170 Z"
+          fill="rgba(220,90,140,0.09)"/>
+
+    <!-- Top-left petal bloom -->
+    <path d="M 200 30 Q 140 -40, 90 -10 Q 130 50, 200 30 Z"
+          fill="rgba(220,90,140,0.10)"/>
+    <path d="M 220 12 Q 280 -55, 320 -18 Q 278 45, 220 12 Z"
+          fill="rgba(220,90,140,0.08)"/>
+    <path d="M 190 50 Q 160 110, 200 130 Q 230 80, 190 50 Z"
+          fill="rgba(220,90,140,0.07)"/>
+
+    <!-- Scattered petal dots top-left cluster -->
+    <circle cx="270" cy="68" r="3.2" fill="rgba(240,120,170,0.32)"/>
+    <circle cx="292" cy="50" r="2.2" fill="rgba(240,120,170,0.24)"/>
+    <circle cx="252" cy="48" r="1.8" fill="rgba(240,120,170,0.20)"/>
+    <circle cx="306" cy="80" r="1.4" fill="rgba(240,120,170,0.16)"/>
+    <circle cx="240" cy="92" r="1.2" fill="rgba(240,120,170,0.14)"/>
+
+    <!-- Small cross marks — editorial detail -->
+    <line x1="330" y1="42" x2="330" y2="52" stroke="rgba(240,120,170,0.28)" stroke-width="1"/>
+    <line x1="325" y1="47" x2="335" y2="47" stroke="rgba(240,120,170,0.28)" stroke-width="1"/>
+    <line x1="58" y1="130" x2="58" y2="140" stroke="rgba(240,120,170,0.22)" stroke-width="1"/>
+    <line x1="53" y1="135" x2="63" y2="135" stroke="rgba(240,120,170,0.22)" stroke-width="1"/>
+
+    <!-- Bottom-right mirror branch (subtle) -->
+    <path d="M 1090 680 Q 1020 760, 960 820 Q 900 880, 850 1090"
+          stroke="rgba(255,160,200,0.18)" stroke-width="1.4" fill="none"/>
+    <path d="M 1090 720 Q 1030 800, 975 855 Q 920 910, 876 1090"
+          stroke="rgba(255,160,200,0.09)" stroke-width="1" fill="none"/>
+
+    <!-- BR leaf 1 -->
+    <path d="M 1025 755 Q 1075 780, 1090 830 Q 1040 808, 1025 755 Z"
+          fill="rgba(255,160,200,0.10)"/>
+    <!-- BR leaf 2 -->
+    <path d="M 978 812 Q 934 842, 930 878 Q 976 852, 978 812 Z"
+          fill="rgba(255,160,200,0.08)"/>
+
+    <!-- BR dots -->
+    <circle cx="870" cy="1032" r="2.8" fill="rgba(255,160,200,0.24)"/>
+    <circle cx="858" cy="1050" r="1.8" fill="rgba(255,160,200,0.18)"/>
+    <circle cx="884" cy="1052" r="1.4" fill="rgba(255,160,200,0.14)"/>
+  </svg>
+
+  <div class="top">
+    <img class="logo-img" src="../Logo_balts-3-scaled.png" alt="mariposa">
+  </div>
+
+  <div class="content">
+    <div class="headline">
+      Samazini<br>pigmentāciju <em>ātri</em>
+    </div>
+
+    <div class="hook">Vasara nāk. Vai Tu būsi gatava?</div>
+
+    <div class="chips">
+      <div class="chip">
+        <svg width="16" height="16" viewBox="0 0 22 22" fill="none">
+          <path d="M11 2L12.4 9.6L20 11L12.4 12.4L11 20L9.6 12.4L2 11L9.6 9.6Z" stroke="rgba(255,160,200,0.92)" stroke-width="1.1" stroke-linejoin="round" fill="rgba(255,160,200,0.10)"/>
+          <circle cx="11" cy="11" r="2" fill="rgba(255,160,200,0.55)"/>
+        </svg>
+        IPL
+      </div>
+      <div class="chip">
+        <svg width="16" height="16" viewBox="0 0 22 22" fill="none">
+          <circle cx="5" cy="5" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="11" cy="5" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="17" cy="5" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="5" cy="11" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="11" cy="11" r="2.4" fill="rgba(255,160,200,0.50)" stroke="rgba(255,160,200,0.92)" stroke-width="1"/>
+          <circle cx="17" cy="11" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="5" cy="17" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="11" cy="17" r="1.8" fill="rgba(255,160,200,0.85)"/>
+          <circle cx="17" cy="17" r="1.8" fill="rgba(255,160,200,0.85)"/>
+        </svg>
+        RF mikro adatas
+      </div>
+      <div class="chip">
+        <svg width="14" height="16" viewBox="0 0 18 22" fill="none">
+          <path d="M10.5 1L2 13H8.5L7 21L16 9H9.5L10.5 1Z" stroke="rgba(255,160,200,0.92)" stroke-width="1.1" stroke-linejoin="round" fill="rgba(255,160,200,0.10)"/>
+        </svg>
+        Lāzerepilācija
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-wrap">
+    <div class="cta">Rezervē savu vizīti →</div>
+  </div>
+
+</div>
+<script>document.fonts.ready.then(()=>{ document.title='fonts-ready'; });</script>
+</body>
+</html>

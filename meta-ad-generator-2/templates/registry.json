@@ -1,0 +1,240 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Machine-readable index of all ad layout templates. Use this for programmatic template selection in skills 3 and 4.",
+    "total": 129,
+    "sources": {
+      "base": "templates/layouts/*.html — 6 pre-built HTML files",
+      "extended": "templates/extra/{category}/*.md — 56 detailed creative briefs with .md files",
+      "inline": "described here only — ad designer generates HTML from description"
+    },
+    "layout_recommendation_format": {
+      "base": "template-name (e.g. hero-overlay)",
+      "extended": "extra:{category}/{id}-{slug} (e.g. extra:social-proof/17-verified-review-card)"
+    }
+  },
+
+  "base": [
+    {
+      "id": "hero-overlay",
+      "name": "Hero Overlay",
+      "file": "templates/layouts/hero-overlay.html",
+      "best_for": ["emotional appeal", "strong visual hook", "lifestyle brands", "service intros"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Full-bleed image or gradient background with text overlay and CTA",
+      "required_fields": ["headline", "primary_text", "hero_image", "logo_url", "client_name", "cta_text"]
+    },
+    {
+      "id": "bold-statement",
+      "name": "Bold Statement",
+      "file": "templates/layouts/bold-statement.html",
+      "best_for": ["text-driven scroll-stopper", "provocative claims", "brand statements", "B2B"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Large centered headline on solid or gradient color background. No logo.",
+      "required_fields": ["headline", "primary_text", "cta_text", "footer_tagline"]
+    },
+    {
+      "id": "split-horizontal",
+      "name": "Split Horizontal",
+      "file": "templates/layouts/split-horizontal.html",
+      "best_for": ["product showcase", "before/after framing", "service + outcome"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Image top half, text and CTA bottom half",
+      "required_fields": ["headline", "primary_text", "hero_image", "logo_url", "client_name", "cta_text"]
+    },
+    {
+      "id": "comparison",
+      "name": "Comparison",
+      "file": "templates/layouts/comparison.html",
+      "best_for": ["competitive advantage", "before vs after", "problem/solution framing"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Two-column layout — red left (before/them) vs green right (after/us). 5 items per side.",
+      "required_fields": ["headline", "before_label", "after_label", "before_icon_1-5", "before_text_1-5", "after_icon_1-5", "after_text_1-5", "cta_text"]
+    },
+    {
+      "id": "benefit-stack",
+      "name": "Benefit Stack",
+      "file": "templates/layouts/benefit-stack.html",
+      "best_for": ["feature/benefit listings", "course/program breakdown", "service tiers"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Numbered benefit list with titles and descriptions, centered CTA. No logo.",
+      "required_fields": ["headline", "subheadline", "badge_text", "benefit_1-4_title", "benefit_1-4_desc", "cta_text"]
+    },
+    {
+      "id": "testimonial-card",
+      "name": "Testimonial Card",
+      "file": "templates/layouts/testimonial-card.html",
+      "best_for": ["social proof", "customer validation", "high-trust niches (health, B2B)"],
+      "ad_type": ["tangible", "intangible"],
+      "visual": "Large quote block with author name, title, stars, and logo",
+      "required_fields": ["testimonial_text", "author_name", "author_title", "author_photo", "logo_url", "client_name", "cta_text"]
+    }
+  ],
+
+  "extended": {
+    "comparison": [
+      { "id": "07", "slug": "us-vs-them", "name": "Us vs Them", "has_md": true, "best_for": ["brand vs competitor", "checklist advantage"], "ad_type": ["tangible", "intangible"] },
+      { "id": "25", "slug": "color-split-vs", "name": "Color-Split VS", "has_md": true, "best_for": ["vibrant vs muted", "comic-style", "bold visual contrast"], "ad_type": ["tangible", "intangible"] },
+      { "id": "31", "slug": "comparison-grid", "name": "Comparison Grid", "has_md": true, "best_for": ["meme-format table", "viral potential", "multiple features"], "ad_type": ["tangible", "intangible"] },
+      { "id": "41", "slug": "nutritional-stat-comparison", "name": "Nutritional Stat Comparison", "has_md": true, "best_for": ["stats side-by-side", "food/health", "ingredient comparison"], "ad_type": ["tangible"] },
+      { "id": "42", "slug": "two-option-comparison", "name": "Two-Option Comparison", "has_md": true, "best_for": ["same-brand variants", "SKU selection", "flavor/color options"], "ad_type": ["tangible"] },
+      { "id": "44", "slug": "lifestyle-photo-comparison", "name": "Lifestyle Photo Comparison", "has_md": true, "best_for": ["aspirational vs unflattering", "visual transformation"], "ad_type": ["tangible"] },
+      { "id": "46", "slug": "head-to-head-competitor", "name": "Head-to-Head Competitor", "has_md": true, "best_for": ["named competitor", "price + benefits table"], "ad_type": ["tangible", "intangible"] },
+      { "id": "53", "slug": "old-vs-upgrade", "name": "Old vs Upgrade", "has_md": true, "best_for": ["worn-out vs sleek", "upgrade message", "dark-to-light transition"], "ad_type": ["tangible"] },
+      { "id": "57", "slug": "toggle-on-off", "name": "Toggle On/Off", "has_md": false, "best_for": ["green/red toggles", "feature comparison", "simple yes/no grid"], "ad_type": ["tangible", "intangible"] },
+      { "id": "58", "slug": "but-better", "name": "But Better (Same Brand)", "has_md": false, "best_for": ["old vs new within brand", "product refresh", "upgrade announcement"], "ad_type": ["tangible"] },
+      { "id": "59", "slug": "more-than-equivalency", "name": "More-Than Equivalency", "has_md": false, "best_for": ["'more protein than 3 eggs' framing", "value comparison", "food/health"], "ad_type": ["tangible"] },
+      { "id": "60", "slug": "two-option-food-stats", "name": "Two-Option Food Stats", "has_md": false, "best_for": ["nutrition columns side-by-side", "supplement/food brands"], "ad_type": ["tangible"] },
+      { "id": "61", "slug": "captcha-select-all", "name": "CAPTCHA Select All", "has_md": false, "best_for": ["pattern interrupt", "grid mimicking CAPTCHA", "high curiosity gap"], "ad_type": ["intangible"] }
+    ],
+    "data-driven": [
+      { "id": "13", "slug": "stat-surround-product", "name": "Stat Surround Product", "has_md": true, "best_for": ["product center", "4 flanking stats", "tangible products with data"], "ad_type": ["tangible"] },
+      { "id": "18", "slug": "stat-surround-lifestyle", "name": "Stat Surround Lifestyle", "has_md": true, "best_for": ["lifestyle photo", "4 stat callouts", "social proof numbers"], "ad_type": ["tangible", "intangible"] },
+      { "id": "26", "slug": "stat-callout-lifestyle", "name": "Stat Callout Lifestyle", "has_md": true, "best_for": ["single bold stat as headline", "trust builder", "membership counts"], "ad_type": ["tangible", "intangible"] },
+      { "id": "27", "slug": "benefit-checklist", "name": "Benefit Checklist", "has_md": true, "best_for": ["split: product + star rating + checklist", "tangible product features"], "ad_type": ["tangible"] },
+      { "id": "49", "slug": "ingredients-breakdown", "name": "Ingredients Breakdown", "has_md": true, "best_for": ["ingredient list with arrows to product", "health/beauty", "supplement"], "ad_type": ["tangible"] },
+      { "id": "62", "slug": "quote-headline-stats", "name": "Quote Headline + Stats", "has_md": false, "best_for": ["punchy quote headline", "2 stat badges", "credibility-first"], "ad_type": ["tangible", "intangible"] },
+      { "id": "63", "slug": "faq-stat-answer", "name": "FAQ Stat Answer", "has_md": false, "best_for": ["FAQ question format", "reassuring stat", "objection handling"], "ad_type": ["intangible"] },
+      { "id": "64", "slug": "weight-loss-timeline", "name": "Weight Loss Timeline", "has_md": false, "best_for": ["day-by-day progress", "descending numbers", "transformation timeline"], "ad_type": ["tangible"] },
+      { "id": "65", "slug": "sales-velocity-stat", "name": "Sales Velocity Stat", "has_md": false, "best_for": ["'1 SOLD every 5 SECONDS' FOMO metric", "urgency", "popular product"], "ad_type": ["tangible"] },
+      { "id": "66", "slug": "review-count-stat-hero", "name": "Review Count Stat Hero", "has_md": false, "best_for": ["massive review count number", "social proof as hero element"], "ad_type": ["tangible", "intangible"] },
+      { "id": "67", "slug": "sales-milestone-badge", "name": "Sales Milestone Badge", "has_md": false, "best_for": ["circular milestone badge", "'2M CUPS SOLD'", "achievement marketing"], "ad_type": ["tangible"] }
+    ],
+    "editorial-authority": [
+      { "id": "10", "slug": "press-editorial", "name": "Press Editorial", "has_md": true, "best_for": ["'As Featured In'", "press logos", "pull-quote", "authority brands"], "ad_type": ["tangible", "intangible"] },
+      { "id": "20", "slug": "advertorial", "name": "Advertorial", "has_md": true, "best_for": ["looks like editorial content", "soft sell", "native ad format"], "ad_type": ["intangible"] },
+      { "id": "23", "slug": "manifesto", "name": "Manifesto", "has_md": true, "best_for": ["copy-dominant", "provocative argument", "brand philosophy"], "ad_type": ["intangible"] },
+      { "id": "33", "slug": "faux-press", "name": "Faux Press", "has_md": true, "best_for": ["fake news article screenshot", "native feel", "curiosity gap"], "ad_type": ["intangible"] },
+      { "id": "68", "slug": "award-badge-press-bar", "name": "Award Badge + Press Bar", "has_md": false, "best_for": ["multi-award badge", "press logo bar", "maximum authority"], "ad_type": ["tangible", "intangible"] },
+      { "id": "69", "slug": "enterprise-logo-wall", "name": "Enterprise Logo Wall", "has_md": false, "best_for": ["'As Seen On' corporate logos", "B2B trust", "enterprise credibility"], "ad_type": ["intangible"] },
+      { "id": "70", "slug": "doctor-recommended", "name": "Doctor Recommended", "has_md": false, "best_for": ["expert badge", "payment icons", "guarantee stamp", "health/wellness"], "ad_type": ["tangible"] },
+      { "id": "71", "slug": "press-quote-media-strip", "name": "Press Quote + Media Strip", "has_md": false, "best_for": ["large editorial quote", "media logos", "authority positioning"], "ad_type": ["intangible"] },
+      { "id": "72", "slug": "expert-credential-testimonial", "name": "Expert Credential Testimonial", "has_md": false, "best_for": ["named expert pull-quote with title", "B2B", "professional services"], "ad_type": ["intangible"] }
+    ],
+    "lifestyle": [
+      { "id": "12", "slug": "lifestyle-action-colorway", "name": "Lifestyle Action + Colorway", "has_md": true, "best_for": ["action shot", "product variants", "color/flavor options"], "ad_type": ["tangible"] },
+      { "id": "21", "slug": "bold-statement-lifestyle", "name": "Bold Statement (Lifestyle)", "has_md": true, "best_for": ["vibrant gradient", "playful headline", "consumer brands"], "ad_type": ["tangible", "intangible"] },
+      { "id": "22", "slug": "flavor-story", "name": "Flavor Story", "has_md": true, "best_for": ["food/flavor visualization", "sensory appeal", "food & beverage"], "ad_type": ["tangible"] },
+      { "id": "39", "slug": "curiosity-gap-scroll-stopper", "name": "Curiosity Gap Scroll-Stopper", "has_md": true, "best_for": ["no product", "pure hook headline", "curiosity-first funnel"], "ad_type": ["tangible", "intangible"] },
+      { "id": "55", "slug": "lifestyle-label-tags", "name": "Lifestyle Label Tags", "has_md": true, "best_for": ["two photos", "floating keyword tags", "feature annotation"], "ad_type": ["tangible"] },
+      { "id": "73", "slug": "humor-floating-callouts", "name": "Humor Floating Callouts", "has_md": false, "best_for": ["witty text annotations around product", "playful brand voice"], "ad_type": ["tangible"] },
+      { "id": "74", "slug": "girl-math-value-calc", "name": "Girl Math Value Calc", "has_md": false, "best_for": ["viral cost breakdown justifying price", "price objection handling"], "ad_type": ["tangible"] },
+      { "id": "75", "slug": "fourth-wall-humor", "name": "Fourth Wall Humor", "has_md": false, "best_for": ["self-aware ad breaking fourth wall", "Gen Z/millennial brands"], "ad_type": ["intangible"] },
+      { "id": "76", "slug": "brand-intro-empathetic", "name": "Brand Intro Empathetic", "has_md": false, "best_for": ["soft lifestyle", "empathetic headline", "brand story"], "ad_type": ["tangible", "intangible"] },
+      { "id": "77", "slug": "conversational-launch-teaser", "name": "Conversational Launch Teaser", "has_md": false, "best_for": ["minimalist", "playful conversational", "product launch"], "ad_type": ["tangible", "intangible"] },
+      { "id": "78", "slug": "soft-emotional-aspirational", "name": "Soft Emotional Aspirational", "has_md": false, "best_for": ["blurred photo", "empathetic copy", "health/beauty/wellness"], "ad_type": ["tangible", "intangible"] },
+      { "id": "79", "slug": "ambient-reminder-cta", "name": "Ambient Reminder CTA", "has_md": false, "best_for": ["desk photo", "'REMINDER' overlay", "retargeting audiences"], "ad_type": ["intangible"] },
+      { "id": "80", "slug": "billboard-mockup", "name": "Billboard Mockup", "has_md": false, "best_for": ["outdoor billboard showing product + quote", "prestige brands"], "ad_type": ["tangible"] },
+      { "id": "81", "slug": "lifestyle-hack-discount", "name": "Lifestyle Hack + Discount", "has_md": false, "best_for": ["'My morning hack'", "discount ticker", "influencer-adjacent feel"], "ad_type": ["tangible"] }
+    ],
+    "product-hero": [
+      { "id": "01", "slug": "headline", "name": "Headline", "has_md": true, "best_for": ["clean headline + product shot", "product launch", "simple visual impact"], "ad_type": ["tangible"] },
+      { "id": "04", "slug": "features-benefits", "name": "Features-Benefits", "has_md": true, "best_for": ["diagram with 4 callout boxes", "feature explanation", "tech products"], "ad_type": ["tangible"] },
+      { "id": "05", "slug": "bullet-points", "name": "Bullet Points", "has_md": true, "best_for": ["product left, 5 bullets right", "benefit listing", "feature-heavy products"], "ad_type": ["tangible"] },
+      { "id": "28", "slug": "feature-arrow-callout", "name": "Feature Arrow Callout", "has_md": true, "best_for": ["hand-drawn arrows to benefit labels", "organic/UGC feel with product data"], "ad_type": ["tangible"] },
+      { "id": "30", "slug": "hero-statement-icon-bar", "name": "Hero Statement + Icon Bar", "has_md": true, "best_for": ["bold statement", "3 icon benefits", "brand credibility"], "ad_type": ["tangible", "intangible"] },
+      { "id": "35", "slug": "hero-showcase-stat-bar", "name": "Hero Showcase + Stat Bar", "has_md": true, "best_for": ["product + ingredient elements + stat bar", "supplement/health"], "ad_type": ["tangible"] },
+      { "id": "43", "slug": "whats-included-kit", "name": "What's Included Kit", "has_md": true, "best_for": ["grid of 5 items with labels", "bundle/kit products", "course modules"], "ad_type": ["tangible", "intangible"] },
+      { "id": "48", "slug": "benefits-list-stack", "name": "Benefits List Stack", "has_md": true, "best_for": ["'X benefits of...' + stacked rows", "feature-rich services"], "ad_type": ["tangible", "intangible"] },
+      { "id": "56", "slug": "app-product-launch", "name": "App Product Launch", "has_md": true, "best_for": ["logo + product name + stat + icon", "SaaS/app launches"], "ad_type": ["intangible"] },
+      { "id": "82", "slug": "dark-problem-solution-icons", "name": "Dark Problem-Solution Icons", "has_md": false, "best_for": ["dark bg", "problem headline", "4 benefit rows with icons"], "ad_type": ["tangible", "intangible"] },
+      { "id": "83", "slug": "annotation-lines-rotated", "name": "Annotation Lines Rotated", "has_md": false, "best_for": ["hand-drawn annotation lines to features", "organic feel", "hero products"], "ad_type": ["tangible"] },
+      { "id": "84", "slug": "dark-benefit-list-price", "name": "Dark Benefit List + Price", "has_md": false, "best_for": ["dark bg", "checkmark benefits", "price badge", "direct offer"], "ad_type": ["tangible", "intangible"] },
+      { "id": "85", "slug": "2x2-color-panel-grid", "name": "2x2 Color Panel Grid", "has_md": false, "best_for": ["4 color-blocked panels with product + benefit", "vibrant brands"], "ad_type": ["tangible"] },
+      { "id": "86", "slug": "orbiting-benefit-callouts", "name": "Orbiting Benefit Callouts", "has_md": false, "best_for": ["dark bg", "floating labels around product", "premium product positioning"], "ad_type": ["tangible"] },
+      { "id": "87", "slug": "multi-sku-lineup", "name": "Multi-SKU Lineup", "has_md": false, "best_for": ["3 stacked rows: SKU image + headline", "multiple variants", "color range"], "ad_type": ["tangible"] },
+      { "id": "88", "slug": "radial-ingredient-icons", "name": "Radial Ingredient Icons", "has_md": false, "best_for": ["6 circular icons radiating from product", "supplement/food/beauty"], "ad_type": ["tangible"] },
+      { "id": "89", "slug": "dark-minimal-saas", "name": "Dark Minimal SaaS", "has_md": false, "best_for": ["SaaS/app energy", "dark bg", "clean CTA", "B2B software"], "ad_type": ["intangible"] },
+      { "id": "90", "slug": "audience-targeted-claim", "name": "Audience-Targeted Claim", "has_md": false, "best_for": ["app mockup", "audience-specific headline", "niche targeting"], "ad_type": ["intangible"] },
+      { "id": "91", "slug": "app-download-lifestyle", "name": "App Download Lifestyle", "has_md": false, "best_for": ["action photo + download badges", "mobile apps"], "ad_type": ["intangible"] },
+      { "id": "92", "slug": "product-grid-subscription", "name": "Product Grid Subscription", "has_md": false, "best_for": ["4-panel photos + subscribe overlay", "subscription products", "recurring offers"], "ad_type": ["tangible"] },
+      { "id": "93", "slug": "problem-solution-split-icons", "name": "Problem-Solution Split Icons", "has_md": false, "best_for": ["dark/light vertical split with icons", "service vs problem framing"], "ad_type": ["tangible", "intangible"] },
+      { "id": "94", "slug": "feature-checklist-panel", "name": "Feature Checklist Panel", "has_md": false, "best_for": ["bold name", "dark feature box", "4 checkmarks", "SaaS/service"], "ad_type": ["intangible"] }
+    ],
+    "promotional": [
+      { "id": "02", "slug": "offer-promotion", "name": "Offer Promotion", "has_md": true, "best_for": ["split bg", "product + offer + value adds", "bundle deals"], "ad_type": ["tangible"] },
+      { "id": "14", "slug": "bundle-showcase", "name": "Bundle Showcase", "has_md": true, "best_for": ["open box + benefit bar segments", "kit/bundle products"], "ad_type": ["tangible"] },
+      { "id": "37", "slug": "hero-statement-promo", "name": "Hero Statement Promo", "has_md": true, "best_for": ["dark bg + starburst discount + icons", "flash sales"], "ad_type": ["tangible"] },
+      { "id": "45", "slug": "product-grid-offer", "name": "Product Grid Offer", "has_md": true, "best_for": ["3x3 mosaic with centered offer overlay", "product catalogue sales"], "ad_type": ["tangible"] },
+      { "id": "50", "slug": "flash-sale", "name": "Flash Sale", "has_md": true, "best_for": ["lightning bolt + giant SALE + phone mockup", "urgency-driven offers"], "ad_type": ["tangible"] },
+      { "id": "54", "slug": "product-grid-discount", "name": "Product Grid Discount", "has_md": true, "best_for": ["2x2: 3 product photos + discount panel", "multi-SKU discounts"], "ad_type": ["tangible"] },
+      { "id": "95", "slug": "scarcity-urgency-models", "name": "Scarcity Urgency Models", "has_md": false, "best_for": ["models + discount + 'won't do this again'", "scarcity/FOMO"], "ad_type": ["tangible"] },
+      { "id": "96", "slug": "news-alert-urgency", "name": "News Alert Urgency", "has_md": false, "best_for": ["cash hero bg", "'LIMITED FUNDING' banner", "grants/programs"], "ad_type": ["intangible"] },
+      { "id": "97", "slug": "seasonal-resolution-hook", "name": "Seasonal Resolution Hook", "has_md": false, "best_for": ["year callout + solutions + benefit bullets", "seasonal campaigns"], "ad_type": ["tangible", "intangible"] },
+      { "id": "98", "slug": "bogo-urgency-grid", "name": "BOGO Urgency Grid", "has_md": false, "best_for": ["product grid + BOGO banner + stock badge", "buy-one-get-one offers"], "ad_type": ["tangible"] },
+      { "id": "99", "slug": "split-panel-sale", "name": "Split Panel Sale", "has_md": false, "best_for": ["lifestyle left, sale CTA right", "clean promotional split"], "ad_type": ["tangible"] }
+    ],
+    "social-proof": [
+      { "id": "03", "slug": "testimonials", "name": "Testimonials", "has_md": true, "best_for": ["product in real setting + quote + stars", "tactile social proof"], "ad_type": ["tangible"] },
+      { "id": "06", "slug": "social-proof", "name": "Social Proof", "has_md": true, "best_for": ["member count + review card + press logos", "maximum authority"], "ad_type": ["tangible", "intangible"] },
+      { "id": "09", "slug": "negative-marketing", "name": "Negative Marketing", "has_md": true, "best_for": ["fake 1-star that's actually a rave", "bold pattern interrupt"], "ad_type": ["tangible", "intangible"] },
+      { "id": "11", "slug": "pull-quote-review", "name": "Pull Quote Review", "has_md": true, "best_for": ["emotional quote + truncated 'Read more'", "high-emotional testimonials"], "ad_type": ["tangible", "intangible"] },
+      { "id": "15", "slug": "social-comment-screenshot", "name": "Social Comment Screenshot", "has_md": true, "best_for": ["screenshotted comment + product", "native social feel"], "ad_type": ["tangible"] },
+      { "id": "16", "slug": "curiosity-gap-hook", "name": "Curiosity Gap Hook", "has_md": true, "best_for": ["bait-and-switch testimonial headline", "curiosity-first with proof"], "ad_type": ["tangible", "intangible"] },
+      { "id": "17", "slug": "verified-review-card", "name": "Verified Review Card", "has_md": true, "best_for": ["review platform UI with verified badge", "Trustpilot/Google Reviews style"], "ad_type": ["tangible", "intangible"] },
+      { "id": "19", "slug": "highlighted-testimonial", "name": "Highlighted Testimonial", "has_md": true, "best_for": ["long-form review with highlighter effect", "highly specific testimonials"], "ad_type": ["tangible", "intangible"] },
+      { "id": "24", "slug": "product-comment-callout", "name": "Product Comment Callout", "has_md": true, "best_for": ["product + Facebook comment card", "organic social feel"], "ad_type": ["tangible"] },
+      { "id": "38", "slug": "ugc-lifestyle-review-split", "name": "UGC Lifestyle Review Split", "has_md": true, "best_for": ["UGC photo left, brand + review right", "authentic feel + credibility"], "ad_type": ["tangible"] },
+      { "id": "47", "slug": "bold-headline-review", "name": "Bold Headline Review", "has_md": true, "best_for": ["big claim headline + review + product", "lead with claim"], "ad_type": ["tangible", "intangible"] },
+      { "id": "51", "slug": "review-product-float", "name": "Review Product Float", "has_md": true, "best_for": ["stars + review + product on palm", "premium tangible proof"], "ad_type": ["tangible"] },
+      { "id": "52", "slug": "review-benefits-icons", "name": "Review Benefits Icons", "has_md": true, "best_for": ["review + icons + product collage", "feature + proof combo"], "ad_type": ["tangible"] },
+      { "id": "100", "slug": "multi-testimonial-grid", "name": "Multi-Testimonial Grid", "has_md": false, "best_for": ["2x2 review cards around product", "volume of proof"], "ad_type": ["tangible", "intangible"] },
+      { "id": "101", "slug": "quad-panel-hybrid", "name": "Quad Panel Hybrid", "has_md": false, "best_for": ["guarantee + lineup + UGC + quote", "maximum trust combination"], "ad_type": ["tangible"] },
+      { "id": "102", "slug": "speech-bubble-lifestyle", "name": "Speech Bubble Lifestyle", "has_md": false, "best_for": ["lifestyle photo + 2 speech bubbles", "casual conversation feel"], "ad_type": ["tangible", "intangible"] },
+      { "id": "103", "slug": "tweet-product-sale", "name": "Tweet + Product + Sale", "has_md": false, "best_for": ["tweet screenshot + product + discount", "organic + promotional hybrid"], "ad_type": ["tangible"] },
+      { "id": "104", "slug": "emotional-poem-overlay", "name": "Emotional Poem Overlay", "has_md": false, "best_for": ["product photo + handwritten poem", "luxury/emotional brands"], "ad_type": ["tangible"] },
+      { "id": "105", "slug": "yellow-textured-quote-card", "name": "Yellow Textured Quote Card", "has_md": false, "best_for": ["dark frame", "yellow paper", "serif quote", "premium testimonial"], "ad_type": ["tangible", "intangible"] },
+      { "id": "106", "slug": "dual-named-review-cards", "name": "Dual Named Review Cards", "has_md": false, "best_for": ["credibility header + 2 review cards", "named testimonials"], "ad_type": ["tangible", "intangible"] },
+      { "id": "107", "slug": "popup-card-testimonial", "name": "Popup Card Testimonial", "has_md": false, "best_for": ["app-like card UI with testimonial", "SaaS/app brands"], "ad_type": ["intangible"] },
+      { "id": "108", "slug": "bold-quote-product-row", "name": "Bold Quote + Product Row", "has_md": false, "best_for": ["large quote + product row below", "aspirational quote + product"], "ad_type": ["tangible"] },
+      { "id": "109", "slug": "multi-badge-trust-stack", "name": "Multi-Badge Trust Stack", "has_md": false, "best_for": ["lifestyle + stacked trust badges", "security/compliance brands"], "ad_type": ["tangible", "intangible"] },
+      { "id": "110", "slug": "dual-trustpilot-stack", "name": "Dual Trustpilot Stack", "has_md": false, "best_for": ["2 full Trustpilot review entries", "e-commerce with Trustpilot presence"], "ad_type": ["tangible"] },
+      { "id": "111", "slug": "dual-stacked-quotes", "name": "Dual Stacked Quotes", "has_md": false, "best_for": ["product + 2 quote snippets with stars", "simple dual proof"], "ad_type": ["tangible", "intangible"] },
+      { "id": "112", "slug": "lifestyle-press-benefit-bar", "name": "Lifestyle Press Benefit Bar", "has_md": false, "best_for": ["dark lifestyle + benefit badges + press logos", "premium brand authority"], "ad_type": ["tangible", "intangible"] }
+    ],
+    "ugc-native": [
+      { "id": "08", "slug": "before-after", "name": "Before & After", "has_md": true, "best_for": ["mirror selfie transformation split", "visible results", "health/beauty/fitness"], "ad_type": ["tangible"] },
+      { "id": "29", "slug": "ugc-viral-post", "name": "UGC Viral Post", "has_md": true, "best_for": ["selfie + Reddit/Twitter overlay", "high organic feel", "viral framing"], "ad_type": ["tangible", "intangible"] },
+      { "id": "32", "slug": "ugc-story-callout", "name": "UGC Story Callout", "has_md": true, "best_for": ["Instagram Story with 5 text bubbles", "native Story feel"], "ad_type": ["tangible", "intangible"] },
+      { "id": "34", "slug": "faux-iphone-notes", "name": "Faux iPhone Notes", "has_md": true, "best_for": ["disguised as Notes app screenshot", "list of benefits as 'personal notes'"], "ad_type": ["tangible", "intangible"] },
+      { "id": "36", "slug": "whiteboard-before-after", "name": "Whiteboard Before/After", "has_md": true, "best_for": ["photo with whiteboard drawings", "educational/coaching feel"], "ad_type": ["intangible"] },
+      { "id": "40", "slug": "post-it-note-product", "name": "Post-it Note Product", "has_md": true, "best_for": ["product photo + handwritten post-it", "warm/personal feel"], "ad_type": ["tangible"] },
+      { "id": "113", "slug": "iphone-notes-checklist", "name": "iPhone Notes Checklist", "has_md": false, "best_for": ["iOS Notes with circular checkboxes", "benefit checklist in native format"], "ad_type": ["tangible", "intangible"] },
+      { "id": "114", "slug": "chatgpt-conversation", "name": "ChatGPT Conversation", "has_md": false, "best_for": ["simulated ChatGPT UI response", "AI-adjacent brands", "tech-savvy audiences"], "ad_type": ["intangible"] },
+      { "id": "115", "slug": "imessage-recommendation", "name": "iMessage Recommendation", "has_md": false, "best_for": ["friend recommending via iMessage", "word-of-mouth simulation"], "ad_type": ["tangible", "intangible"] },
+      { "id": "116", "slug": "google-serp-mockup", "name": "Google SERP Mockup", "has_md": false, "best_for": ["product as top Google search result", "SEO-adjacent brands", "authority positioning"], "ad_type": ["intangible"] },
+      { "id": "117", "slug": "airdrop-notification", "name": "AirDrop Notification", "has_md": false, "best_for": ["iOS AirDrop overlay on lifestyle photo", "sharing/referral angle"], "ad_type": ["tangible", "intangible"] },
+      { "id": "118", "slug": "meme-format", "name": "Meme Format", "has_md": false, "best_for": ["classic 'Literally no one: / Me:' format", "Gen Z audience", "humor-first brands"], "ad_type": ["tangible", "intangible"] },
+      { "id": "119", "slug": "ugc-collage-bold-quote", "name": "UGC Collage + Bold Quote", "has_md": false, "best_for": ["3-panel UGC collage + customer quote", "community/volume of users"], "ad_type": ["tangible"] },
+      { "id": "120", "slug": "reddit-community-post", "name": "Reddit Community Post", "has_md": false, "best_for": ["Reddit post UI with upvotes + reply", "authentic discussion feel"], "ad_type": ["intangible"] },
+      { "id": "121", "slug": "twitter-conversation", "name": "Twitter Conversation", "has_md": false, "best_for": ["customer tweet + brand reply", "brand personality showcase"], "ad_type": ["tangible", "intangible"] },
+      { "id": "122", "slug": "phone-screen-story", "name": "Phone Screen Story", "has_md": false, "best_for": ["phone UI frame", "text-only personal story", "storytelling-first ads"], "ad_type": ["intangible"] },
+      { "id": "123", "slug": "facebook-post-screenshot", "name": "Facebook Post Screenshot", "has_md": false, "best_for": ["full Facebook post UI with testimonial", "native feed feel"], "ad_type": ["tangible", "intangible"] }
+    ]
+  },
+
+  "selection_guide": {
+    "by_framework": {
+      "PAS": ["hero-overlay", "bold-statement", "extra:lifestyle/39-curiosity-gap-scroll-stopper", "extra:ugc-native/34-faux-iphone-notes"],
+      "AIDA": ["extra:product-hero/01-headline", "extra:product-hero/30-hero-statement-icon-bar", "extra:lifestyle/21-bold-statement-lifestyle"],
+      "Before-After": ["comparison", "extra:ugc-native/08-before-after", "extra:comparison/53-old-vs-upgrade", "extra:ugc-native/36-whiteboard-before-after"],
+      "Comparison": ["extra:comparison/07-us-vs-them", "extra:comparison/46-head-to-head-competitor", "extra:comparison/25-color-split-vs"],
+      "Benefit-Stack": ["benefit-stack", "extra:product-hero/05-bullet-points", "extra:product-hero/48-benefits-list-stack", "extra:data-driven/27-benefit-checklist"],
+      "Editorial": ["extra:editorial-authority/10-press-editorial", "extra:editorial-authority/23-manifesto", "extra:editorial-authority/20-advertorial"],
+      "Social-Proof": ["testimonial-card", "extra:social-proof/17-verified-review-card", "extra:social-proof/06-social-proof", "extra:social-proof/11-pull-quote-review"],
+      "Curiosity-Gap": ["extra:social-proof/16-curiosity-gap-hook", "extra:ugc-native/29-ugc-viral-post", "extra:comparison/61-captcha-select-all"],
+      "Direct-Offer": ["extra:promotional/37-hero-statement-promo", "extra:promotional/50-flash-sale", "extra:product-hero/84-dark-benefit-list-price"],
+      "Story": ["extra:ugc-native/32-ugc-story-callout", "extra:ugc-native/122-phone-screen-story", "extra:lifestyle/76-brand-intro-empathetic"]
+    },
+    "by_product_niche": {
+      "beauty_wellness": ["extra:lifestyle/78-soft-emotional-aspirational", "extra:social-proof/51-review-product-float", "extra:ugc-native/08-before-after", "extra:product-hero/88-radial-ingredient-icons"],
+      "b2b_services": ["extra:editorial-authority/69-enterprise-logo-wall", "extra:product-hero/89-dark-minimal-saas", "extra:social-proof/72-expert-credential-testimonial", "extra:data-driven/62-quote-headline-stats"],
+      "b2b_staffing": ["extra:data-driven/26-stat-callout-lifestyle", "extra:social-proof/106-dual-named-review-cards", "extra:comparison/07-us-vs-them"],
+      "ecommerce_tangible": ["extra:product-hero/01-headline", "extra:promotional/02-offer-promotion", "extra:social-proof/15-social-comment-screenshot", "extra:product-hero/85-2x2-color-panel-grid"],
+      "coaching_courses": ["extra:product-hero/43-whats-included-kit", "extra:ugc-native/34-faux-iphone-notes", "extra:ugc-native/36-whiteboard-before-after", "extra:lifestyle/39-curiosity-gap-scroll-stopper"],
+      "security_alarms": ["extra:product-hero/82-dark-problem-solution-icons", "extra:comparison/07-us-vs-them", "extra:data-driven/13-stat-surround-product"],
+      "saas_software": ["extra:product-hero/89-dark-minimal-saas", "extra:product-hero/56-app-product-launch", "extra:product-hero/94-feature-checklist-panel", "extra:ugc-native/114-chatgpt-conversation"],
+      "food_beverage": ["extra:lifestyle/22-flavor-story", "extra:product-hero/35-hero-showcase-stat-bar", "extra:data-driven/41-nutritional-stat-comparison"]
+    }
+  }
+}

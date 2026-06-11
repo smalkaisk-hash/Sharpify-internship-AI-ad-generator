@@ -1,0 +1,15 @@
+{
+  "name": "meta-ad-generator-3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Meta ad generator — 5-step chained LLM pipeline with few-shot examples and prompt caching",
+  "scripts": {
+    "generate": "node src/pipeline.js",
+    "export": "node src/steps/5-export.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^23.0.0"
+  }
+}

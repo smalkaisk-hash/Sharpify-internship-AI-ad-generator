@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0a0a0f;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 44px 40px;
+}
+
+.header {
+  text-align: center; margin-bottom: 28px;
+}
+.badge-top {
+  display: inline-block;
+  background: #ef4444; color: #fff;
+  padding: 8px 22px; border-radius: 6px;
+  font-size: 18px; font-weight: 900;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  margin-bottom: 16px;
+  transform: rotate(-1deg);
+}
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px; font-weight: 900; line-height: 1.15;
+}
+.headline span { color: #10b981; }
+
+/* Job card */
+.job-card {
+  flex: 1;
+  background: #141420;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 32px 36px;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.job-card::before {
+  content: 'HIRING'; position: absolute;
+  top: 18px; right: 22px;
+  background: #10b981; color: #000;
+  padding: 5px 14px; border-radius: 6px;
+  font-size: 13px; font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.job-company {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 22px;
+}
+.company-logo {
+  width: 56px; height: 56px; border-radius: 12px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; font-size: 28px; color: #000;
+}
+.company-info {}
+.company-name { font-size: 18px; font-weight: 700; color: #e2e8f0; }
+.company-meta { font-size: 14px; color: #64748b; margin-top: 2px; }
+
+.job-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px; font-weight: 900;
+  line-height: 1.15; margin-bottom: 12px;
+}
+.job-title span { color: #10b981; }
+
+.job-tags {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px;
+}
+.job-tag {
+  background: rgba(16,185,129,0.1);
+  border: 1px solid rgba(16,185,129,0.2);
+  color: #10b981;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 14px; font-weight: 700;
+}
+
+/* Two column requirements/benefits */
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  flex: 1;
+}
+
+.job-col {}
+.col-title {
+  font-size: 16px; font-weight: 800; color: #94a3b8;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.req-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 18px; color: #cbd5e1;
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+.req-bullet { color: #10b981; font-weight: 900; flex-shrink: 0; }
+
+/* Salary card */
+.salary-card {
+  background: rgba(16,185,129,0.08);
+  border: 2px solid rgba(16,185,129,0.25);
+  border-radius: 14px;
+  padding: 22px 28px;
+  margin-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.salary-left {}
+.salary-label {
+  font-size: 15px; color: #10b981;
+  text-transform: uppercase; letter-spacing: 1px; font-weight: 800;
+  margin-bottom: 4px;
+}
+.salary-amount {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px; font-weight: 900; color: #fff;
+}
+.salary-amount .old {
+  font-size: 22px; color: #ef4444;
+  text-decoration: line-through;
+  margin-right: 10px; font-weight: 700;
+}
+.salary-note { font-size: 14px; color: #64748b; margin-top: 3px; }
+
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 22px 48px; border-radius: 14px;
+  font-weight: 800; font-size: 26px;
+  box-shadow: 0 6px 24px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="badge-top">⚡ Brīva vakance</div>
+  <div class="headline">Pieņemu darbā <span>27 AI ekspertus</span></div>
+</div>
+
+<div class="job-card">
+  <div class="job-company">
+    <div class="company-logo">S</div>
+    <div class="company-info">
+      <div class="company-name">Sharpify · Tavs bizness</div>
+      <div class="company-meta">🌍 Strādā no jebkuras vietas · ⏱️ Pieejami 24/7</div>
+    </div>
+  </div>
+
+  <div class="job-title">Full-stack AI Komanda <span>Tavā biznesā</span></div>
+
+  <div class="job-tags">
+    <span class="job-tag">Mārketings</span>
+    <span class="job-tag">Pārdošana</span>
+    <span class="job-tag">Saturs</span>
+    <span class="job-tag">Automatizācija</span>
+    <span class="job-tag">Workflow</span>
+  </div>
+
+  <div class="job-grid">
+    <div class="job-col">
+      <div class="col-title">Ko viņi dara</div>
+      <div class="req-item"><span class="req-bullet">▸</span> Raksta Meta reklāmas ar Tavu brand voice</div>
+      <div class="req-item"><span class="req-bullet">▸</span> Apstrādā objections pārdošanas sarunās</div>
+      <div class="req-item"><span class="req-bullet">▸</span> Ģenerē content pipeline katru dienu</div>
+      <div class="req-item"><span class="req-bullet">▸</span> Automatizē atkārtotus uzdevumus</div>
+      <div class="req-item"><span class="req-bullet">▸</span> Strādā nekļūdīgi, katru reizi</div>
+    </div>
+    <div class="job-col">
+      <div class="col-title">Ieguvumi</div>
+      <div class="req-item"><span class="req-bullet">✓</span> Bez brīvdienām, bez slimības lapām</div>
+      <div class="req-item"><span class="req-bullet">✓</span> Nav jāapmāca — gatavi darbam</div>
+      <div class="req-item"><span class="req-bullet">✓</span> Instalē vienreiz — strādā mūžīgi</div>
+      <div class="req-item"><span class="req-bullet">✓</span> Taupi 2-5 stundas nedēļā</div>
+      <div class="req-item"><span class="req-bullet">✓</span> 7 dienu naudas atgriešanas garantija</div>
+    </div>
+  </div>
+
+  <div class="salary-card">
+    <div class="salary-left">
+      <div class="salary-label">Kopējā alga · vienreizēji</div>
+      <div class="salary-amount"><span class="old">€99</span>€19</div>
+      <div class="salary-note">Mūžīga piekļuve · Bez abonementa</div>
+    </div>
+    <div class="cta-btn">Pieņemt →</div>
+  </div>
+</div>
+
+</body>
+</html>

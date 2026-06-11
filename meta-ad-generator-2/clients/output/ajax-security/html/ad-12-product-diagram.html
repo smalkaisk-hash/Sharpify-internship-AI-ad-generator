@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;background:#0C0C12;position:relative;overflow:hidden;display:flex;flex-direction:column}
+    /* Top — headline */
+    .top{padding:44px 48px 0;z-index:2}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+    .h1{font-family:'Montserrat',sans-serif;font-size:50px;font-weight:900;color:#FFF;line-height:1.05;margin-bottom:6px}
+    .h1 .red{color:#EF4444}
+    .sub{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:500;color:rgba(255,255,255,0.4)}
+    /* Middle — product + side stats layout like FJDynamics */
+    .middle{flex:1;display:flex;align-items:center;justify-content:center;gap:32px;padding:0 36px;z-index:2}
+    .side{display:flex;flex-direction:column;gap:16px;width:260px}
+    .card{display:flex;flex-direction:column;gap:6px;padding:24px 22px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px}
+    .card-val{font-family:'Montserrat',sans-serif;font-size:34px;font-weight:900;color:#EF4444;line-height:1}
+    .card-label{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:rgba(255,255,255,0.5);line-height:1.3}
+    .product-center{width:380px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .product-center img{width:100%;height:auto;filter:drop-shadow(0 16px 48px rgba(0,0,0,0.5))}
+    /* Bottom */
+    .bot{padding:0 48px 40px;display:flex;align-items:center;justify-content:space-between;z-index:2}
+    .brand{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#EF4444}
+    .price{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#FFF}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="top">
+      <div class="tag">Ajax drošības sistēma</div>
+      <div class="h1">Centrāle + detektors =<br><span class="red">pilna kontrole.</span></div>
+      <div class="sub">Mini komplekts tavai drošībai</div>
+    </div>
+    <div class="middle">
+      <div class="side">
+        <div class="card"><span class="card-val">Centrāle</span><span class="card-label">Savāc datus no visiem sensoriem un sūta uz telefonu</span></div>
+        <div class="card"><span class="card-val">Bez vadiem</span><span class="card-label">Bezvadu savienojums — uzstādīšana 15 minūtēs</span></div>
+      </div>
+      <div class="product-center">
+        <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/ajax-closeup-white.png" alt="">
+      </div>
+      <div class="side">
+        <div class="card"><span class="card-val">Detektors</span><span class="card-label">Fiksē kustību un durvju/logu atvēršanu</span></div>
+        <div class="card"><span class="card-val">Lietotne</span><span class="card-label">Ieslēdz, izslēdz, pārbaudi — viss telefonā</span></div>
+      </div>
+    </div>
+    <div class="bot">
+      <span class="brand">Ajax Systems</span>
+      <span class="price">130€</span>
+    </div>
+  </div>
+</body>
+</html>

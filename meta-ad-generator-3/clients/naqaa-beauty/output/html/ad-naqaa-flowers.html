@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1080px; overflow: hidden; background: #f8f5f0; }
+
+.ad {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Layer 1 — Warm linen base (matches product packaging white) */
+.base {
+  position: absolute;
+  inset: 0;
+  background: #f8f5f0;
+}
+
+/* Layer 4 — Full-bleed photo, centered on the flowers */
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 1080px;
+  height: 1080px;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+/* Layer 5a — Bottom panel: warm linen rises to meet the photo.
+   Cool aqua water sits above; warm cream below — deliberate temperature split. */
+.panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1080px;
+  height: 480px;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(248,245,240,0.70) 12%,
+    rgba(248,245,240,0.93) 22%,
+    #f8f5f0 34%
+  );
+}
+
+/* Layer 5b — Top vignette: logo legibility against aqua water */
+.fade-top {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(248,245,240,0.55) 0%,
+    transparent 14%
+  );
+}
+
+/* Layer 5c — Noise at low opacity for tactility in panel area */
+.noise {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1080px;
+  height: 480px;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Layer 6+ — All content */
+.content {
+  position: absolute;
+  inset: 0;
+  padding: 54px 72px 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Logo: small, top-left, over photo */
+.logo {
+  height: 27px;
+  width: auto;
+  align-self: flex-start;
+  opacity: 0.88;
+}
+
+/* Text block: lives entirely in the cream panel zone */
+.text-zone {
+  max-width: 560px;
+}
+
+
+/* Headline: large refined serif, warm near-black.
+   Neutral gold accent for the closing emotional phrase.
+   Simultaneous contrast: warm cream surroundings make gold read richer here. */
+.headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 1.03;
+  color: #2a2420;
+  margin-bottom: 22px;
+  letter-spacing: -0.3px;
+}
+
+.headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: #b8966e;
+}
+
+/* Body: warm mid-dark at full opacity — hierarchy via size/weight, not opacity.
+   #5c5248 on #f8f5f0 = 6.4:1 contrast, passes WCAG AA at any size. */
+.body-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #5c5248;
+  margin-bottom: 34px;
+  max-width: 440px;
+}
+
+/* Layer 7 — Accent rule: thin gold separator above CTA zone */
+.rule {
+  width: 420px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(184,150,110,0.35), transparent);
+  margin-bottom: 28px;
+}
+
+/* Layer 8 — CTA: accent at full opacity, linen text (inverted),
+   warm gold glow lifts it off the cream background */
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #b8966e;
+  color: #2a2420;  /* dark on gold: 5.5:1 contrast — was #f8f5f0 at 2.37:1 (failed WCAG AA) */
+  padding: 19px 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow:
+    0 6px 28px rgba(184,150,110,0.32),
+    0 2px 8px rgba(0,0,0,0.14);
+}
+
+.cta-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(42,36,32,0.68);  /* was 0.45 (~1.71:1); 0.68 gives ~3.0:1 */
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(184,150,110,0.50);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <div class="base"></div>
+
+  <img class="photo"
+       src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/image-80-Water_Flowers.jpg"
+       alt="">
+
+  <div class="panel"></div>
+  <div class="fade-top"></div>
+  <div class="noise"></div>
+
+  <div class="content">
+
+    <img class="logo"
+         src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-3/clients/naqaa-beauty/assets/logo-1-naqaa_beauty_horizontal.png"
+         alt="Naqaa Beauty">
+
+    <div class="text-zone">
+
+      <h1 class="headline">
+        Katra duša.<br>
+        <em>Spa rituāls.</em>
+      </h1>
+
+      <p class="body-text">
+        Hlorēts ūdens izžāvē ādu un bojā matus katru dienu.<br>
+        Naqaa filtrē ūdeni un piepilda dušu ar dabīgām smaržām.<br>
+        Dermataloģiski testēts, piemērots jutīgai ādai.
+      </p>
+
+      <div class="rule"></div>
+
+      <div class="cta-row">
+        <a class="cta-btn">Iegādāties tagad</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

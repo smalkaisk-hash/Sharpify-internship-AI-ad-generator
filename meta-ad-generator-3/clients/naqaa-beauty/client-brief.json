@@ -1,0 +1,35 @@
+{
+  "business_name": "Naqaa Beauty",
+  "product": "Aromātiskie dušas ūdens filtri — noņem hloru un kaitīgās vielas no dušas ūdens, vienlaikus piepildot to ar dabiskām smaržām (lavanda, mango, roze, amberkoks). Komplekti ietver filtru un dušas uzgali.",
+  "product_type": "tangible",
+  "target_audience": "Latvijas sievietes 25–45 gadu vecumā, kuras rūpējas par skaistumu un labsajūtu. Interesējas par dabīgu skaistumkopšanu, spa pieredzi mājās, un videi draudzīgiem produktiem. Jūtas neapmierinātas ar to, ko hlorēts ūdens dara viņu ādai un matiem.",
+  "pain_points": [
+    "Hlorēts dušas ūdens izžāvē ādu un bojā matus",
+    "Āda pēc dušas jūtas sausa, saspringta vai niez",
+    "Mati kļūst blāvi, trausli un zaudē spīdumu no tekoša ūdens",
+    "Vēlas spa pieredzi mājās, bet nevar to atļauties salonā",
+    "Parasti kosmētikas produkti nesasniedzamo rezultātu — jo ūdens paliek pats par sevi",
+    "Vēlas izmantot dabiskus, drošus produktus bez kaitīgām ķimikālijām"
+  ],
+  "key_benefits": [
+    "Noņem hloru un kaitīgās vielas no dušas ūdens",
+    "Dabiskas aromterapijas smaržas katrai dušai (lavanda, mango, roze, amberkoks)",
+    "Dermataloģiski testēts — piemērots jutīgai ādai",
+    "100% pārstrādājami materiāli, videi draudzīgi",
+    "Redzami uzlabojumi ādas un matu stāvoklī",
+    "Viegla uzstādīšana — pieslēdzas pie jebkura dušas caurules"
+  ],
+  "unique_value_proposition": "Aromātiskie ūdens filtri, kas pārvērš katru dušu par spa rituālu — tīrs ūdens + dabiskas smaržas, kuru nav citur.",
+  "proof_points": [
+    "Dermataloģiski testēts — piemērots jutīgai ādai",
+    "100% pārstrādājami materiāli",
+    "Dabiskas smaržas: lavanda, mango, roze, amberkoks",
+    "Naqaa (نقاء) — tīrības simbols arābu valodā"
+  ],
+  "cta_primary": "Iegādāties tagad",
+  "cta_secondary": "Uzzināt vairāk",
+  "website": "https://www.naqaa-beauty.com/",
+  "language": "lv",
+  "tone": "Silts, noslēpumains, luksusa. Runā kā intīms padoms no drauga — ne klīnisks, ne reklamējošs. Dabas iedvesmots, spa rituāla noskaņojums. Latviešu valoda — dabīga, ne tulkota.",
+  "extra_context": "Fizisks produkts — dušas filtrs ar aromterapiju. Galvenais diferenciators: nevis tikai filtrēšana, bet pilnvērtīga spa pieredze ar dabīgām smaržām mājās. Reklāmas darbojas Latvijā. Svarīgi uzsvērt gan ādas/matu ieguvumus (funkcionāls), gan spa rituāla sajūtu (emocionāls). Produkti ir komplekti un atsevišķi filtri dažādās smaržās."
+}

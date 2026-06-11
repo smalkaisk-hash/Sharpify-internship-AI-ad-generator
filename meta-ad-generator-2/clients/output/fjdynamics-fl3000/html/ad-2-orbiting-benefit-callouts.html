@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link rel="stylesheet" href="../../../../templates/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #0A0A0A;
+      --color-secondary: #1A1A1A;
+      --color-accent: #C6FF3D;
+      --color-text: #FAFAF7;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Figtree', sans-serif;
+    }
+    html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+    .ad-frame {
+      position: relative;
+      width: 1080px; height: 1080px;
+      background:
+        radial-gradient(circle at 50% 55%, rgba(198,255,61,0.08) 0%, rgba(198,255,61,0) 55%),
+        radial-gradient(circle at 50% 50%, #1E1E1E 0%, #050505 75%);
+      overflow: hidden;
+      color: var(--color-text);
+    }
+
+    /* Decorative halftone dot grid */
+    .dot-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(198,255,61,0.07) 1.5px, transparent 2px);
+      background-size: 22px 22px;
+      opacity: 0.45;
+    }
+
+    /* Top bar */
+    .top-bar {
+      position: absolute;
+      top: 48px; left: 56px; right: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 20;
+    }
+    .brand-wordmark {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .top-tag {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: rgba(250,250,247,0.58);
+    }
+
+    /* Headline (top) */
+    .header-block {
+      position: absolute;
+      top: 100px;
+      left: 56px;
+      right: 56px;
+      text-align: center;
+      z-index: 20;
+    }
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .headline {
+      font-family: var(--font-heading);
+      font-size: 58px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.025em;
+    }
+    .headline .lime { color: var(--color-accent); }
+
+    /* Product stage */
+    .product-stage {
+      position: absolute;
+      top: 240px;
+      left: 0; right: 0;
+      height: 640px;
+      z-index: 5;
+    }
+
+    .product {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 540px;
+      filter: drop-shadow(0 28px 60px rgba(198,255,61,0.08));
+    }
+    .product img {
+      width: 100%; height: auto;
+      display: block;
+    }
+
+    /* Callouts */
+    .callout {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 22px;
+      background: rgba(10,10,10,0.72);
+      border: 1px solid rgba(198,255,61,0.35);
+      border-radius: 60px;
+      backdrop-filter: blur(10px);
+      font-family: var(--font-body);
+    }
+    .callout-icon {
+      width: 32px; height: 32px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .callout-label {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    /* Position callouts around product */
+    .c1 { top: 60px; left: 60px; }
+    .c2 { top: 60px; right: 60px; }
+    .c3 { top: 280px; left: 28px; }
+    .c4 { top: 280px; right: 28px; }
+    .c5 { bottom: 70px; left: 60px; }
+    .c6 { bottom: 70px; right: 60px; }
+
+    /* Bottom bar */
+    .bottom-bar {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 30px 56px 44px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 20;
+      border-top: 1px solid rgba(250,250,247,0.1);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
+    }
+    .bottom-sub {
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: rgba(250,250,247,0.58);
+      letter-spacing: 0.08em;
+      max-width: 440px;
+    }
+    .cta-lime {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 76px;
+      min-width: 260px;
+      padding: 0 40px;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 19px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 48px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-frame">
+    <div class="dot-grid"></div>
+
+    <div class="top-bar">
+      <div class="brand-wordmark">FJDynamics</div>
+      <div class="top-tag">FL3000 · Robotic Mower</div>
+    </div>
+
+    <div class="header-block">
+      <div class="eyebrow">Every feature · One mower</div>
+      <h1 class="headline">Every feature built in —<br><span class="lime">nothing costs extra.</span></h1>
+    </div>
+
+    <div class="product-stage">
+      <div class="product"><img src="../brief/images/hero-2.png" alt=""></div>
+
+      <div class="callout c1"><div class="callout-icon">L</div><div class="callout-label">360° LiDAR</div></div>
+      <div class="callout c2"><div class="callout-icon">V</div><div class="callout-label">Semantic Vision</div></div>
+      <div class="callout c3"><div class="callout-icon">E</div><div class="callout-label">Smart Edge Trim</div></div>
+      <div class="callout c4"><div class="callout-icon">R</div><div class="callout-label">Rain Sensor</div></div>
+      <div class="callout c5"><div class="callout-icon">G</div><div class="callout-label">GPS Anti-Theft</div></div>
+      <div class="callout c6"><div class="callout-icon">B</div><div class="callout-label">Fast Blade Swap</div></div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-sub">Up to 3,000 m² · 180 min runtime · 33° max climb · IPX5</div>
+      <div class="cta-lime">See Specs</div>
+    </div>
+  </div>
+</body>
+</html>

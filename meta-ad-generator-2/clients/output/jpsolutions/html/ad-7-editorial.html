@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,400;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;}
+
+.bg{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 20%;
+  filter:saturate(0.65) contrast(1.08);
+}
+
+.overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.38) 38%,
+    rgba(0,0,0,0.60) 70%,
+    rgba(0,0,0,0.96) 100%
+  );
+}
+
+/* Orange left edge accent */
+.side{
+  position:absolute;left:0;top:12%;bottom:12%;width:5px;
+  background:linear-gradient(180deg,transparent 0%,#E8721A 20%,#E8721A 80%,transparent 100%);
+  z-index:5;
+}
+
+/* TOP */
+.top{
+  position:absolute;top:52px;left:52px;right:52px;
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:10;
+}
+.category{
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;
+  color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.22em;
+}
+.logo-pill{
+  background:#E8721A;padding:10px 20px;border-radius:6px;
+  font-family:'DM Sans',sans-serif;font-size:19px;font-weight:700;
+  color:#fff;letter-spacing:0.06em;
+}
+
+/* PULL QUOTE */
+.quote-wrap{
+  position:absolute;
+  top:50%;left:52px;right:52px;
+  transform:translateY(-56%);
+  z-index:10;
+}
+.q-mark{
+  font-family:'Fraunces',serif;
+  font-size:130px;font-style:italic;font-weight:700;
+  color:#E8721A;line-height:0.55;
+  margin-bottom:8px;
+  display:block;
+}
+.quote{
+  font-family:'Fraunces',serif;
+  font-size:80px;line-height:0.94;
+  font-weight:700;font-style:italic;
+  color:#fff;letter-spacing:-0.02em;
+}
+.quote em{font-style:normal;color:#E8721A;}
+
+.attribution{
+  margin-top:26px;
+  display:flex;align-items:center;gap:14px;
+  font-family:'DM Sans',sans-serif;font-size:16px;font-weight:500;
+  color:rgba(255,255,255,0.42);letter-spacing:0.10em;text-transform:uppercase;
+}
+.attr-line{width:36px;height:1.5px;background:rgba(255,255,255,0.22);flex-shrink:0;}
+
+/* BOTTOM */
+.bottom{
+  position:absolute;bottom:150px;left:52px;right:52px;
+  z-index:10;
+}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px;}
+.chip{
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;
+  color:rgba(255,255,255,0.58);text-transform:uppercase;letter-spacing:0.12em;
+  background:rgba(255,255,255,0.08);
+  padding:9px 18px;border-radius:30px;
+  border:1px solid rgba(255,255,255,0.12);
+}
+.cta{
+  display:block;width:100%;
+  background:#E8721A;color:#fff;
+  font-family:'DM Sans',sans-serif;font-size:22px;font-weight:700;
+  padding:26px;border-radius:12px;text-align:center;letter-spacing:0.02em;
+  box-shadow:0 6px 52px rgba(232,114,26,0.44);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="bg" src="../brief/images/roof-workers-bg.png" alt="">
+  <div class="overlay"></div>
+  <div class="side"></div>
+
+  <div class="top">
+    <div class="category">Augstuma darbu drošība</div>
+    <div class="logo-pill">JP Solutions</div>
+  </div>
+
+  <div class="quote-wrap">
+    <span class="q-mark">"</span>
+    <div class="quote">Augstumā nav<br>vietas <em>kompromisiem.</em></div>
+    <div class="attribution">
+      <div class="attr-line"></div>
+      <span>Drošības sistēmas, kas patiešām pasargā</span>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="chips">
+      <div class="chip">Horizontālās līnijas</div>
+      <div class="chip">Enkurpunkti</div>
+      <div class="chip">Jumtu ejas</div>
+      <div class="chip">Gada inspekcijas</div>
+    </div>
+    <div class="cta">Saņemt piedāvājumu → +371 264 47394</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{document.title='fonts-ready';});</script>
+</body>
+</html>

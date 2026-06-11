@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1080">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:1080px;height:1080px;overflow:hidden}
+    .ad{width:1080px;height:1080px;background:#0A0A0F;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,0.08) 0%,transparent 60%);filter:blur(40px)}
+    /* Product — massive center */
+    .product{position:relative;z-index:2}
+    .product img{height:500px;width:auto;filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5))}
+    /* Headline top */
+    .top{position:absolute;top:40px;left:0;right:0;text-align:center;z-index:3}
+    .tag{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#EF4444;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px}
+    .h1{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:900;color:#FFF;line-height:1.05}
+    /* 4 stat cards — positioned around the product */
+    .stat{position:absolute;z-index:3;display:flex;flex-direction:column;gap:4px;padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;max-width:240px}
+    .stat-val{font-family:'Montserrat',sans-serif;font-size:36px;font-weight:900;color:#EF4444;line-height:1}
+    .stat-label{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:rgba(255,255,255,0.5);line-height:1.3}
+    /* Arrow lines connecting stats to product */
+    .stat::after{content:'';position:absolute;width:40px;height:2px;background:rgba(239,68,68,0.3)}
+    .s1{top:220px;left:48px}
+    .s1::after{right:-40px;top:50%}
+    .s2{top:220px;right:48px}
+    .s2::after{left:-40px;top:50%}
+    .s3{bottom:180px;left:48px}
+    .s3::after{right:-40px;top:50%}
+    .s4{bottom:180px;right:48px}
+    .s4::after{left:-40px;top:50%}
+    /* Price bottom center */
+    .bot{position:absolute;bottom:40px;left:0;right:0;text-align:center;z-index:3}
+    .price{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:900;color:#FFF}
+  </style>
+</head>
+<body>
+  <div class="ad">
+    <div class="glow"></div>
+    <div class="top">
+      <div class="tag">Ajax mini komplekts</div>
+      <div class="h1">Viss, kas vajadzīgs<br>tavai drošībai.</div>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/Ritvars Volfs/meta-ad-generator-v2/meta-ad-generator/output/ajax-security/brief/images/cutouts/ajax-kit-white-bg-cutout.png" alt="">
+    </div>
+    <div class="stat s1">
+      <span class="stat-val">Uzreiz</span>
+      <span class="stat-label">Paziņojums telefonā par trauksmi</span>
+    </div>
+    <div class="stat s2">
+      <span class="stat-val">No telefona</span>
+      <span class="stat-label">Ieslēdz un izslēdz apsardzi</span>
+    </div>
+    <div class="stat s3">
+      <span class="stat-val">Bez vadiem</span>
+      <span class="stat-label">Vienkārša uzstādīšana 15 min</span>
+    </div>
+    <div class="stat s4">
+      <span class="stat-val">Visur</span>
+      <span class="stat-label">Mājai, birojam, noliktavai, garāžai</span>
+    </div>
+    <div class="bot">
+      <span class="price">130€</span>
+    </div>
+  </div>
+</body>
+</html>

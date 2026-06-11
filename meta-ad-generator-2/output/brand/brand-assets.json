@@ -1,0 +1,251 @@
+{
+  "source_url": "https://nuwara.me",
+  "scraped_at": "2026-05-06T12:10:49.062Z",
+  "colors": {
+    "palette": [
+      {
+        "hex": "#94979e",
+        "usage_count": 250,
+        "contexts": [
+          "text:span",
+          "text:p",
+          "text:button",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#17a1cf",
+        "usage_count": 229,
+        "contexts": [
+          "bg:button",
+          "text:h1",
+          "text:span",
+          "text:svg",
+          "text:path"
+        ]
+      },
+      {
+        "hex": "#e8584a",
+        "usage_count": 108,
+        "contexts": [
+          "bg:button",
+          "text:svg",
+          "text:circle",
+          "text:path",
+          "text:line"
+        ]
+      },
+      {
+        "hex": "#246f8f",
+        "usage_count": 93,
+        "contexts": [
+          "text:button",
+          "text:svg",
+          "text:path",
+          "bg:div",
+          "text:rect"
+        ]
+      },
+      {
+        "hex": "#ecaa04",
+        "usage_count": 86,
+        "contexts": [
+          "text:svg",
+          "text:path",
+          "text:p",
+          "text:div",
+          "text:rect"
+        ]
+      },
+      {
+        "hex": "#1a1d23",
+        "usage_count": 57,
+        "contexts": [
+          "bg:div"
+        ]
+      },
+      {
+        "hex": "#111317",
+        "usage_count": 28,
+        "contexts": [
+          "bg:body",
+          "bg:div",
+          "bg:button",
+          "bg:input",
+          "bg:textarea"
+        ]
+      },
+      {
+        "hex": "#17a1cf",
+        "usage_count": 20,
+        "contexts": [
+          "bg:div"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#94979e",
+      "secondary": "#17a1cf",
+      "accent": "#e8584a",
+      "background": "#FFFFFF",
+      "text": "#1A1A2E"
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "ui-sans-serif",
+        "usage_count": 720,
+        "weights": [
+          "400",
+          "500",
+          "700",
+          "600"
+        ],
+        "contexts": [
+          "div",
+          "button",
+          "a",
+          "span",
+          "p",
+          "h3"
+        ]
+      },
+      {
+        "family": "Urbanist",
+        "usage_count": 402,
+        "weights": [
+          "500",
+          "400",
+          "600",
+          "700"
+        ],
+        "contexts": [
+          "button",
+          "span",
+          "p",
+          "div",
+          "h3",
+          "h4",
+          "a"
+        ]
+      },
+      {
+        "family": "Croogla",
+        "usage_count": 32,
+        "weights": [
+          "700",
+          "600"
+        ],
+        "contexts": [
+          "h1",
+          "span",
+          "h2",
+          "h3"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "ui-sans-serif",
+      "body": "Urbanist"
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.jpg",
+        "originalUrl": "https://nuwara.me/assets/demo-after-BuedaVQx.jpg",
+        "width": 445,
+        "height": 594
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.jpg",
+        "originalUrl": "https://nuwara.me/assets/demo-before-CQIDRox-.jpg",
+        "width": 445,
+        "height": 594
+      }
+    ],
+    "logos": [],
+    "products": [],
+    "all_found": 2
+  },
+  "product_category": {
+    "type": "intangible",
+    "confidence": "medium",
+    "signals": [
+      "content: \"materials\"",
+      "content: \"book a call\"",
+      "content: \"consultation\"",
+      "content: \"app\""
+    ],
+    "product_images": []
+  },
+  "content": {
+    "page_title": "Nuwara | Dental toursim in Egypt. Save 75% on world class dental care. Safe travels and safer dental care.",
+    "meta_description": "Get the smile you deserve with Nuwara. World-class dental care in Egypt at 75% less cost. European safety standards, Egyptian hospitality.",
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "World-Class Dental Tourism in EgyptEuropean Safety Standards"
+      },
+      {
+        "tag": "H2",
+        "text": "Complete Dental Journey Packages"
+      },
+      {
+        "tag": "H3",
+        "text": "Veneers Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Smile Makeover Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Dental Crowns Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Implants Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Teeth Whitening Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Veneers Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Smile Makeover Package"
+      },
+      {
+        "tag": "H3",
+        "text": "Dental Crowns Package"
+      }
+    ],
+    "key_paragraphs": [
+      "Save more than 80% compared to home. Experience the Nuwara Smile with our top-rated specialists in Cairo.",
+      "Drag to compare • AI-generated transformation",
+      "Treatment + Tourism + Transport. All in one.",
+      "Swipe to explore packages →"
+    ],
+    "cta_buttons_found": [
+      "Solutions",
+      "How It Works",
+      "FAQ",
+      "Start Assessment",
+      "Take Assessment",
+      "Get Quote Now",
+      "4.9/5 from 30+ reviews",
+      "Try it now →",
+      "United Kingdom",
+      "View Full Itinerary"
+    ]
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "source_url": "https://www.temix.lv",
+  "scraped_at": "2026-04-16T09:58:38.760Z",
+  "source": "scraped",
+  "has_product_images": true,
+  "brand_voice": {
+    "tagline": "Elegants dizains tavai mājai un dzīvesstilam",
+    "section_pillars": [
+      "Dizaina aksesuāri",
+      "Mājai un interjeram",
+      "Pārdomātas dāvanas",
+      "Kvalitāte, kam var uzticēties"
+    ],
+    "positioning": "Luxe-lite home/lifestyle — editorial, intentional, 'wow' sortiments. NOT big-box discount, NOT handmade-artisan.",
+    "aesthetic": "Moody warm luxe (deep green + gold), cozy-premium ambient lighting, editorial magazine cadence",
+    "_source": "Derived from brand hero banner hero-5.jpg, meta description, and H2/H3 headings"
+  },
+  "colors": {
+    "palette": [
+      {
+        "hex": "#232323",
+        "usage_count": 1145,
+        "contexts": [
+          "text:body",
+          "text:section",
+          "text:div",
+          "text:nav",
+          "text:ul"
+        ]
+      },
+      {
+        "hex": "#dab453",
+        "usage_count": 363,
+        "contexts": [
+          "text:a",
+          "text:span",
+          "text:i",
+          "text:button",
+          "text:svg"
+        ]
+      },
+      {
+        "hex": "#181616",
+        "usage_count": 102,
+        "contexts": [
+          "text:legend",
+          "text:h2",
+          "text:span",
+          "text:h3",
+          "text:a"
+        ]
+      },
+      {
+        "hex": "#13c72e",
+        "usage_count": 60,
+        "contexts": [
+          "text:p",
+          "text:span",
+          "text:i"
+        ]
+      },
+      {
+        "hex": "#959090",
+        "usage_count": 30,
+        "contexts": [
+          "text:input"
+        ]
+      },
+      {
+        "hex": "#f9f9f9",
+        "usage_count": 28,
+        "contexts": [
+          "bg:div"
+        ]
+      },
+      {
+        "hex": "#7b7b7b",
+        "usage_count": 28,
+        "contexts": [
+          "text:a"
+        ]
+      },
+      {
+        "hex": "#0e0e0e",
+        "usage_count": 21,
+        "contexts": [
+          "text:p"
+        ]
+      }
+    ],
+    "suggested": {
+      "primary": "#1E2E24",
+      "secondary": "#181616",
+      "accent": "#DAB453",
+      "background": "#F5F1E8",
+      "text": "#181616",
+      "text_on_dark": "#F5F1E8",
+      "_note": "Brand palette derived from TeMix hero banner (deep forest green + gold + cream). Website navigation uses dark charcoal + gold, but the brand's campaign identity is clearly green+gold+cream luxe. Use forest green for moody hero backgrounds, cream for light variants, gold for accents and CTAs, charcoal for text."
+    },
+    "wix_variables": {}
+  },
+  "typography": {
+    "fonts_found": [
+      {
+        "family": "system_ui",
+        "usage_count": 1261,
+        "weights": [
+          "400",
+          "700",
+          "600",
+          "500"
+        ],
+        "contexts": [
+          "div",
+          "h2",
+          "p",
+          "a",
+          "button",
+          "span",
+          "h3",
+          "h4",
+          "h1",
+          "h5"
+        ]
+      },
+      {
+        "family": "JudgemeStar",
+        "usage_count": 145,
+        "weights": [
+          "700"
+        ],
+        "contexts": [
+          "span"
+        ]
+      },
+      {
+        "family": "New York",
+        "usage_count": 11,
+        "weights": [
+          "100",
+          "300",
+          "400"
+        ],
+        "contexts": [
+          "span"
+        ]
+      }
+    ],
+    "suggested": {
+      "heading": "Playfair Display",
+      "body": "Inter",
+      "_note": "Site uses system_ui (framework fallback) and JudgemeStar is just a review-widget icon font. TeMix brand wordmark is a classy serif (visible on hero banner). Pairing editorial serif (Playfair Display) + modern sans (Inter) matches the luxe home/lifestyle positioning. Never use system_ui/Inter alone for headings per global anti-AI-slop rules."
+    }
+  },
+  "images": {
+    "heroes": [
+      {
+        "type": "hero",
+        "filename": "hero-1.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/KA6326_SITU01.jpg?crop=center&height=530&v=1767638782&width=700",
+        "width": 1440,
+        "height": 619
+      },
+      {
+        "type": "hero",
+        "filename": "hero-2.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/KA0665_SITU01.jpg?crop=center&height=530&v=1767638781&width=700",
+        "width": 1440,
+        "height": 619
+      },
+      {
+        "type": "hero",
+        "filename": "hero-3.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/KA0707_SITU01.jpg?crop=center&height=530&v=1767638782&width=700",
+        "width": 1440,
+        "height": 619
+      },
+      {
+        "type": "hero",
+        "filename": "hero-4.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/KA04081_SITU03.jpg?crop=center&height=530&v=1767633610&width=700",
+        "width": 1440,
+        "height": 619
+      },
+      {
+        "type": "hero",
+        "filename": "hero-5.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/TeMix_ELEGANTS_DIZAINS_TAVAI_MAJAI_UN_DZIVESSSTILAM_5.jpg?crop=center&height=530&v=1775554607&width=700",
+        "width": 1440,
+        "height": 500
+      }
+    ],
+    "logos": [
+      {
+        "type": "logo",
+        "filename": "logo-1.png",
+        "originalUrl": "https://temix.lv/cdn/shop/files/TEMIX_-_Logo.png?v=1762019200&width=130",
+        "width": 130,
+        "height": 130
+      }
+    ],
+    "products": [
+      {
+        "type": "product",
+        "filename": "product-1.png",
+        "originalUrl": "https://temix.lv/cdn/shop/files/Ekranuznemums2026-04-14103747.png?height=549&v=1776152486",
+        "width": 238,
+        "height": 202
+      },
+      {
+        "type": "product",
+        "filename": "product-2.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/Noformejums_bez_nosaukuma_-_2026-04-13T191045.983.jpg?height=549&v=1776096869",
+        "width": 238,
+        "height": 202
+      },
+      {
+        "type": "product",
+        "filename": "product-3.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/HT0106_GLOBAL.jpg?height=549&v=1776096449",
+        "width": 238,
+        "height": 202
+      },
+      {
+        "type": "product",
+        "filename": "product-4.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/PU2168_GLOBAL.jpg?height=549&v=1776095841",
+        "width": 238,
+        "height": 202
+      },
+      {
+        "type": "product",
+        "filename": "product-5.jpg",
+        "originalUrl": "https://temix.lv/cdn/shop/files/HD0358_GLOBAL.jpg?height=549&v=1776095194",
+        "width": 238,
+        "height": 202
+      }
+    ],
+    "all_found": 89
+  },
+  "product_category": {
+    "type": "tangible",
+    "confidence": "high",
+    "signals": [
+      "content: \"sku\"",
+      "content: \"pirkt\"",
+      "content: \"piegāde\"",
+      "content: \"bezmaksas piegāde\"",
+      "content: \"krāsa\"",
+      "content: \"materiāls\"",
+      "url: \"/collections\"",
+      "url: \"/products\"",
+      "element: cart button",
+      "element: price display",
+      "content: \"piesakies\""
+    ],
+    "product_images": [
+      "images/product-1.png",
+      "images/product-2.jpg",
+      "images/product-3.jpg",
+      "images/product-4.jpg",
+      "images/product-5.jpg"
+    ]
+  },
+  "content": {
+    "page_title": "TeMix",
+    "meta_description": "TeMix ir uzņēmums, kas sevī ietver mazumtirdzniecību un vairumtirdzniecību, kas piedāvā dizaina dekorācijas mājai, komfortu un eletronikas preces. TeMix ir Jūsu uzticamais partneris.",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Sīkdatņu piekrišana"
+      },
+      {
+        "tag": "H2",
+        "text": "JAUNĀKĀS PRECES"
+      },
+      {
+        "tag": "H3",
+        "text": "Bērnu lietussargs ar krāsu maiņu “Mākonīši”"
+      },
+      {
+        "tag": "H3",
+        "text": "Interaktīva pildspalva “Boxing skeletgalva ” ar gaismu – smieklīga dāvana"
+      },
+      {
+        "tag": "H3",
+        "text": "Pērļu telefona siksniņa 130 cm"
+      },
+      {
+        "tag": "H3",
+        "text": "Bērnu komplekts zēnam – cepurīte un zeķītes (2 daļas, kokvilna) (0-6mēn)"
+      },
+      {
+        "tag": "H3",
+        "text": "Samta krēsls zeltaini dzeltens – dizaina ēdamistabas krēsls ar pītu atzveltni"
+      },
+      {
+        "tag": "H3",
+        "text": "Keramikas bļoda VLORA Ø11 cm – akmens masas (stoneware) dizaina trauks"
+      },
+      {
+        "tag": "H3",
+        "text": "Zelta sienas dekors no metāla"
+      },
+      {
+        "tag": "H3",
+        "text": "Griešanas dēlītis ar keramikas nazi (2in1) četras krāsas"
+      }
+    ],
+    "key_paragraphs": [
+      "Mēs un mūsu partneri, tostarp Shopify, izmantojam sīkfailus un citas tehnoloģijas, lai personalizētu jūsu pieredzi, rādītu jums reklāmas un veiktu analīzi, un mēs neizmantosim sīkfailus vai citas tehnoloģijas šiem mērķiem, ja vien jūs tos nepiekritīsiet. Uzziniet vairāk mūsu Privātā politika",
+      "Skatīt katalogu \n     Meklēt",
+      "#logo {\n          --logo_w: 130px;\n        }\n        @media only screen and (max-width: 47.5em) {\n          #logo {\n            --logo_w: 85px;\n          }\n        }",
+      "Meklēt\n        \n        Iesniegt meklēšanu"
+    ],
+    "cta_buttons_found": [
+      "Privātā politika",
+      "Pārvaldīt preferences",
+      "Piekrītu",
+      "Noraidu",
+      "Pārslēgt pieejamības režīmu (a)",
+      "Dodieties uz sākumlapu (h)",
+      "Dodieties uz navigāciju (n)",
+      "Dodieties uz meklēšanu (s)",
+      "Doties uz saturu (c)",
+      "Dodieties uz kājeni (f)"
+    ]
+  }
+}

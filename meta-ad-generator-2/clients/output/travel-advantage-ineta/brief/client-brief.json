@@ -1,0 +1,45 @@
+{
+  "client_name": "Travel Advantage (Ineta Krupenkina)",
+  "client_slug": "travel-advantage-ineta",
+  "contact_person": "Ineta Krupenkina",
+  "role": "Lifestyle Ambassador (affiliate partner)",
+  "parent_brand": "MWR Life / Travel Advantage™",
+  "website": "https://free.traveladvantage.com/inetaK",
+  "landing_language": "en",
+  "ad_language": "lv",
+  "ad_type": "client-intangible",
+  "product_type": "travel-discount-membership",
+  "target_audience": {
+    "raw": "Latvieši, kas ievēro ćelotiešu un darba apvienojumu, vēlas ietāpīt čeļoju ma izdevumus un izskatās blakus ienākumu iespējas.",
+    "demographics": "Latvieši 25-55, vidēji-augsti ienākumi, ceļo 2+ reizes gadā",
+    "psychographics": "Smart-consumers, cena-vērtības orietēti, ne tradicionālā luksusa-ejāji; atvērti digital side-hustle modeliem",
+    "pain_points": [
+      "Pārmaksā par vairākis.nosl. rezervēšanām Booking/Expedia",
+      "Čeļošana šļiet dargs hobijs, ne investīcija",
+      "Nav pieejas 'iekšējām' ceļošanas industrijas cenām"
+    ],
+    "desires": [
+      "Zēmākas cenas uz tām pasām viesnīcām",
+      "Cashback/kredīti nākamajam ceļojumam",
+      "Iespēja iekļaut ģimeni/draugus bez papildu maksas",
+      "Papildu ienākumu plusma bez tradicionālās pārdošanas"
+    ]
+  },
+  "offer": {
+    "main_offer": "Travel Advantage platformas Guest Pass — pieeja 'iekšējam' vairumtirdzniecibas cenām viesnīcām",
+    "secondary_offer": "Travel Credits/cashback uz nākamajiem ceļojumiem; 4 viesīm pārtāpas bez papildu maksas",
+    "result_promise": "Līdz 70% letaakas cenas nekā Booking tipa platformām (pierādāmi ar ekrānuzņēmumiem)",
+    "price_mentioned": false
+  },
+  "claims_verified": {
+    "13_years": "copyright ©2013–2026 on landing page",
+    "booking_comparison": "used in debrief copy — client team comfortable",
+    "cashback": "landing page says 'Travel Credits' — equivalent concept",
+    "4_guests": "landing page: Guest Passes to invite others",
+    "70_percent": "NOT shown on landing page — used only because debrief calls for it; visual should not fake a Booking screenshot",
+    "trustpilot": "NO widget on landing page — NOT used in any creative",
+    "thousands_of_clients_europe": "NOT sourced — replaced with '$2.4M+ saved by members in 2025' (landing page verified) where a stat is needed"
+  },
+  "ad_count": 6,
+  "creative_intent": "Designer-ready PNG ads. LV copy from debrief. Team handles Meta upload, landing URL, CTAs."
+}

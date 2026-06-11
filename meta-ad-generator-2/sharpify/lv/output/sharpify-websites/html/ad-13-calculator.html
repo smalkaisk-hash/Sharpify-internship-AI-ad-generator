@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; overflow: hidden; }
+body {
+  width: 1080px; height: 1080px;
+  background: #0a0a0f;
+  font-family: 'Inter', sans-serif; color: #fff;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 48px 56px 44px;
+  position: relative;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px; font-weight: 900; text-align: center;
+  line-height: 1.2; margin-bottom: 36px;
+}
+.headline span { color: #10b981; }
+
+/* Calculator body */
+.calc {
+  width: 680px;
+  background: #1a1a2e;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.06);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+}
+
+.calc-display {
+  background: #0f0f1e;
+  padding: 28px 36px;
+  text-align: right;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.calc-label {
+  font-size: 18px; color: #64748b; margin-bottom: 4px;
+  text-align: left; font-weight: 500;
+}
+.calc-expr {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px; color: #64748b; margin-bottom: 8px;
+}
+.calc-result {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px; font-weight: 900; color: #ef4444;
+  line-height: 1;
+}
+
+.calc-rows { padding: 20px 28px; }
+
+.calc-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-family: 'JetBrains Mono', monospace;
+}
+.calc-row:last-child { border-bottom: none; }
+.calc-row .item { font-size: 20px; color: #94a3b8; }
+.calc-row .price { font-size: 20px; color: #94a3b8; font-weight: 600; }
+
+.calc-divider {
+  height: 2px; background: rgba(16,185,129,0.2);
+  margin: 8px 12px;
+}
+
+.calc-total {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 12px 8px;
+}
+.calc-total .item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; font-weight: 900; color: #fff;
+}
+.calc-total .price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; font-weight: 900; color: #10b981;
+}
+
+/* Bottom section */
+.bottom {
+  width: 680px;
+  margin-top: 32px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.savings {
+  font-size: 28px; color: #94a3b8;
+}
+.savings strong {
+  color: #10b981; font-weight: 900; font-size: 34px;
+  font-family: 'Montserrat', sans-serif;
+}
+.cta-btn {
+  background: #10b981; color: #000;
+  padding: 26px 56px; border-radius: 16px;
+  font-weight: 800; font-size: 32px;
+  box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+}
+</style>
+</head>
+<body>
+  <div class="headline">Izrēķini <span>pats</span> 🧮</div>
+
+  <div class="calc">
+    <div class="calc-display">
+      <div class="calc-label">Aģentūras cena:</div>
+      <div class="calc-expr">500 + 300 + 200 + 150 + 100 + 500 =</div>
+      <div class="calc-result">€1 750</div>
+    </div>
+    <div class="calc-rows">
+      <div class="calc-row">
+        <span class="item">Mājaslapa</span>
+        <span class="price">€500+</span>
+      </div>
+      <div class="calc-row">
+        <span class="item">Mobilā versija</span>
+        <span class="price">€300</span>
+      </div>
+      <div class="calc-row">
+        <span class="item">SEO optimizācija</span>
+        <span class="price">€200</span>
+      </div>
+      <div class="calc-row">
+        <span class="item">Kontaktu forma</span>
+        <span class="price">€150</span>
+      </div>
+      <div class="calc-row">
+        <span class="item">WhatsApp poga</span>
+        <span class="price">€100</span>
+      </div>
+      <div class="calc-row">
+        <span class="item">Individuāls dizains</span>
+        <span class="price">€500</span>
+      </div>
+      <div class="calc-divider"></div>
+      <div class="calc-total">
+        <span class="item">Sharpify cenā:</span>
+        <span class="price">€59</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="savings">Ietaupi: <strong>€1 691</strong></div>
+    <div class="cta-btn">Sākt →</div>
+  </div>
+</body>
+</html>

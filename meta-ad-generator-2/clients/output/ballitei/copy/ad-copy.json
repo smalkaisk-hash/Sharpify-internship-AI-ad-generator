@@ -1,0 +1,97 @@
+{
+  "client_slug": "ballitei",
+  "language": "lv",
+  "brand_voice": "Pinterestīgs, silts, estētisks. Kā draudzene, kas iedod gatavu risinājumu skaistiem svētkiem.",
+  "palette": {
+    "blush": "#F5D5DC",
+    "rose": "#E8A0B4",
+    "lavender": "#D8C7E8",
+    "cream": "#FBF3EA",
+    "gold": "#C8A27B",
+    "ink": "#2A1F2E"
+  },
+  "ads": [
+    {
+      "id": 1,
+      "template": "editorial-hero",
+      "framework": "aspiration",
+      "headline": "Pinterestīgi svētki,<br>gatavi vienā kastē.",
+      "sub": "Tematiski ballīšu komplekti — atver un uzstādi.",
+      "chip": "GATAVIE KOMPLEKTI",
+      "cta": "Iepirkties",
+      "image": "hero-5.jpg",
+      "note": "Dogs/kids party full-bleed background, serif overlay"
+    },
+    {
+      "id": 2,
+      "template": "product-poster",
+      "framework": "product-showcase",
+      "headline": "Skaisti svētki<br>sākas ar detaļām.",
+      "sub": "Folijas baloni, torte toperi, galda piederumi — viss no vienas vietas.",
+      "chip": "BALLĪTEI.LV",
+      "cta": "Iepazīties ar klāstu",
+      "image": "product-5.jpg",
+      "note": "Martini cutout large, blush+gold editorial"
+    },
+    {
+      "id": 3,
+      "template": "before-vs-after",
+      "framework": "comparison",
+      "headline": "Lielveikala baloni vs.<br>Ballītei.lv komplekts",
+      "before": {
+        "label": "LIELVEIKALĀ",
+        "items": [
+          "Krāsas nesaskan",
+          "2 stundas ko salikt kopā",
+          "Izskatās lēti fotogrāfijās",
+          "Nav tematikas",
+          "Vilšanās svētku rītā"
+        ]
+      },
+      "after": {
+        "label": "BALLĪTEI.LV",
+        "items": [
+          "Saskaņoti toņi vienā stilā",
+          "10 minūtes līdz gatavs",
+          "Pinterest-cienīgs rezultāts",
+          "40+ tematikas vienā klikšķī",
+          "Fotogrāfijas, ko saglabāt"
+        ]
+      },
+      "cta": "Izvēlies savu komplektu"
+    },
+    {
+      "id": 4,
+      "template": "offer-chip",
+      "framework": "urgency-offer",
+      "headline": "Pasūti līdz 12:00 —<br>svētki rīt jau Tavās rokās.",
+      "sub": "Bezmaksas piegāde pasūtījumiem no 45€.",
+      "chip": "NĀKAMĀS DIENAS PIEGĀDE",
+      "cta": "Pasūtīt tagad",
+      "image": "hero-3.jpg",
+      "note": "Racing cars kids party bg with offer overlay"
+    },
+    {
+      "id": 5,
+      "template": "themed-grid",
+      "framework": "variety",
+      "headline": "Viena tēma.<br>Visi baloni saskaņoti.",
+      "sub": "Safari, dinozauri, pirāti, Baby Shower, Bride To Be — 40+ tematikas.",
+      "chip": "TEMATISKIE KOMPLEKTI",
+      "cta": "Redzēt visas tēmas",
+      "grid_images": ["hero-4.jpg", "hero-5.jpg", "hero-3.jpg", "product-3.jpg"],
+      "note": "4-up grid of themed parties"
+    },
+    {
+      "id": 6,
+      "template": "bold-statement",
+      "framework": "hook",
+      "headline": "Tev nav jābūt dekoratoram,<br>lai svētki izskatās skaisti.",
+      "sub": "Gatavs komplekts no 34€ — visas detaļas saskaņotas vietā.",
+      "chip": "NO 34€",
+      "cta": "Apskatīt komplektus",
+      "image": "product-2.jpg",
+      "note": "Bride-to-be foil letters large on cream+blush gradient"
+    }
+  ]
+}

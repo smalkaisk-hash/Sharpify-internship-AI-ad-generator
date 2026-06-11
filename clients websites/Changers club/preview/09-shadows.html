@@ -1,0 +1,16 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Shadow & elevation</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>html,body{margin:0;}body{background:#0A0A0A;color:#F4EFE6;padding:24px;font-family:var(--cc-font-sans);display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;}
+.cell{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.box{width:140px;height:80px;background:#141414;border:1px solid rgba(244,239,230,.08);}
+.soft{box-shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);}
+.card{box-shadow:0 2px 4px rgba(0,0,0,.5),0 24px 60px rgba(0,0,0,.55);}
+.pill{width:160px;height:48px;background:#C9A24A;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 0 #8E6F2C,0 8px 24px rgba(201,162,74,.18);}
+.l{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,230,.5);}
+.t{font-family:var(--cc-font-mono);font-size:10px;color:rgba(244,239,230,.4);max-width:160px;text-align:center;}
+</style></head><body>
+  <div class="cell"><div class="box soft"></div><div class="l">Soft</div><div class="t">card lift on dark</div></div>
+  <div class="cell"><div class="box card"></div><div class="l">Card</div><div class="t">photographic card</div></div>
+  <div class="cell"><div class="pill"></div><div class="l">CTA — struck</div><div class="t">inset gold-deep</div></div>
+</body></html>
