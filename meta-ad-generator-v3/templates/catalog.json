@@ -1,0 +1,295 @@
+{
+  "_note": "Visual wireframe references for Stage 4 HTML templates. Each PNG shows a layout blueprint. implemented=true means a tpl_<id>() function exists in adgen/render/templates.py.",
+  "templates": {
+    "r01": {
+      "name": "Product split — photo right",
+      "file": "r01-template.png",
+      "style": "clean-light",
+      "background": "white",
+      "photo_zones": ["right vertical"],
+      "elements": ["logo", "category-label", "headline", "body", "icon-features-3", "cta", "delivery-bar"],
+      "use_case": "E-commerce product with feature icons and delivery info. Light/neutral brands.",
+      "implemented": false
+    },
+    "r02": {
+      "name": "Problem-solution split — photo left, dark panel right",
+      "file": "r02-template.png",
+      "style": "clean-light-dark",
+      "background": "white + dark panel",
+      "photo_zones": ["left vertical"],
+      "elements": ["logo", "problem-headline", "headline", "icon-features-3", "cta", "bottom-tagline-bar"],
+      "use_case": "E-commerce or service: product photo left, copy+CTA on dark right panel. Problem/solution framing.",
+      "implemented": false
+    },
+    "r03": {
+      "name": "Transformation — before/after with centre product",
+      "file": "r03-template.png",
+      "style": "dark-transparent",
+      "background": "dark semi-transparent",
+      "photo_zones": ["centre vertical"],
+      "elements": ["logo", "category-label", "headline", "subheadline", "icon-features-3", "before-label", "after-label", "cta", "delivery-bar"],
+      "use_case": "Before/after transformation. Product shot flanked by BEFORE/AFTER labels. Feature list left.",
+      "implemented": false
+    },
+    "r04": {
+      "name": "Hexagon tech — diagonal split",
+      "file": "r04-template.png",
+      "style": "bold-dark",
+      "background": "black + orange accents",
+      "photo_zones": ["large hexagon bg", "small hexagon product 1", "small hexagon product 2"],
+      "elements": ["logo", "headline", "tagline", "subheadline", "product-badge", "icon-features-4", "cta", "brand-tagline"],
+      "use_case": "Tech / sports / automotive. Bold black+orange, diagonal divider, hexagonal photo frames.",
+      "implemented": false
+    },
+    "r05": {
+      "name": "Hexagon tech — compact variant",
+      "file": "r05-template.png",
+      "style": "bold-dark",
+      "background": "dark + orange accents",
+      "photo_zones": ["product photo right", "bg photo"],
+      "elements": ["logo", "headline", "tagline", "subheadline", "icon-features-4", "feature-chips", "cta"],
+      "use_case": "Compact version of r04. Same bold tech aesthetic but tighter layout.",
+      "implemented": false
+    },
+    "r06": {
+      "name": "Before/after — full-width hero photo",
+      "file": "r06-template.png",
+      "style": "clean-light",
+      "background": "white",
+      "photo_zones": ["full-width horizontal hero"],
+      "elements": ["brand-name", "headline", "subheadline", "before-label", "after-label", "icon-feature-pills-3", "wide-cta"],
+      "use_case": "Transformation product. Wide hero photo with BEFORE/AFTER labels; feature pills; full-width CTA.",
+      "implemented": false
+    },
+    "r07": {
+      "name": "Product features — dark compact",
+      "file": "r07-template.png",
+      "style": "bold-dark",
+      "background": "dark + amber accents",
+      "photo_zones": ["product photo right"],
+      "elements": ["logo", "headline", "tagline", "subheadline", "icon-features-4", "feature-chips", "cta"],
+      "use_case": "Compact dark ad: amber headline/tagline, feature list left, product photo right.",
+      "implemented": false
+    },
+    "r08": {
+      "name": "Multi-line headline — dark compact",
+      "file": "r08-template.png",
+      "style": "bold-dark",
+      "background": "dark + orange accents",
+      "photo_zones": ["product photo right", "hexagon photos"],
+      "elements": ["logo", "product-name", "headline-4lines", "icon-features-4", "feature-chips", "secondary-cta", "cta"],
+      "use_case": "Compact dark layout. 4-line alternating-colour headline (white/orange), features + hexagon product detail.",
+      "implemented": false
+    },
+    "r09": {
+      "name": "Hexagon eco — large scene + detail",
+      "file": "r09-template.png",
+      "style": "bold-dark",
+      "background": "black + orange accents",
+      "photo_zones": ["large hexagon scene", "small hexagon detail"],
+      "elements": ["logo", "headline-5lines", "product-name", "icon-features-4", "eco-tagline", "cta"],
+      "use_case": "Sustainability or outdoor brand. 5-line headline, two hexagonal photo zones, eco benefit line.",
+      "implemented": false
+    },
+    "t01": {
+      "name": "Price anchor — cream editorial",
+      "file": "t01-template.png",
+      "style": "editorial-light",
+      "background": "cream/beige",
+      "photo_zones": [],
+      "elements": ["brand-name", "achievements", "corner-brackets", "large-price", "currency", "headline", "tagline", "body", "product-service", "guarantee", "website-url"],
+      "use_case": "Premium B2B or high-ticket offer. Cream background, amber price as hero element, editorial corner brackets.",
+      "implemented": false
+    },
+    "t11": {
+      "name": "Construction tape — benefit checklist",
+      "file": "t11-template.png",
+      "style": "bold-industrial",
+      "background": "black + yellow/black tape border",
+      "photo_zones": ["quadrant bg right"],
+      "elements": ["tagline", "headline", "checkbox-benefits-5", "brand-name", "cta"],
+      "use_case": "B2B direct-response. Construction-tape border, dark quadrant photo zone, 5 bold checkbox benefits.",
+      "implemented": false
+    },
+    "t12": {
+      "name": "Construction tape — app/software offer",
+      "file": "t12-template.png",
+      "style": "bold-industrial",
+      "background": "black + yellow/black tape border",
+      "photo_zones": ["app UI mockup right"],
+      "elements": ["app-icon", "brand-name", "tagline", "headline", "yellow-offer-box", "checkbox-benefits-4", "cta"],
+      "use_case": "Software or app with industrial aesthetic. Yellow offer box, app UI mockup, construction-tape border.",
+      "implemented": false
+    },
+    "t13": {
+      "name": "Free product — qualifier shock",
+      "file": "t13-template.png",
+      "style": "bold-dark",
+      "background": "dark quadrant",
+      "photo_zones": [],
+      "elements": ["qualifier-badge", "you-qualify-check", "large-FREE", "product-name", "strikethrough-value", "brand-name", "social-proof", "cta"],
+      "use_case": "Lead magnet / free offer. Qualifier badge targets niche, 'FREE PRODUKTS.' dominates, strikethrough value.",
+      "implemented": false
+    },
+    "t15": {
+      "name": "Stats-forward B2B — italic headline",
+      "file": "t15-template.png",
+      "style": "dark-professional",
+      "background": "dark charcoal",
+      "photo_zones": [],
+      "elements": ["brand-name", "stats-bar-top", "niche-qualifier-badge", "italic-headline", "tagline", "body", "3-col-stats", "strikethrough-offer", "cta"],
+      "use_case": "B2B service with strong social proof. Stats bar (revenue/clients/countries), italic editorial headline, free bonus at bottom.",
+      "implemented": false
+    },
+    "t20": {
+      "name": "Bold split — orange + dark",
+      "file": "t20-template.png",
+      "style": "bold-vibrant",
+      "background": "orange + black curved split",
+      "photo_zones": ["left gray quadrant"],
+      "elements": ["niche-label", "headline", "tagline", "body", "3-stats", "black-cta-with-bonus"],
+      "use_case": "High-energy B2B. Curved diagonal split: grayscale photo left, orange panel right with stats and CTA.",
+      "implemented": false
+    },
+    "t21": {
+      "name": "Elegant B2B — cream with testimonial",
+      "file": "t21-template.png",
+      "style": "editorial-light",
+      "background": "cream/off-white",
+      "photo_zones": ["grid photo right"],
+      "elements": ["brand-name", "niche-label", "italic-headline", "tagline", "numbered-benefits-3", "testimonial-quote", "bonus-product", "learn-more-cta"],
+      "use_case": "Sophisticated B2B consulting or coaching. Cream tone, testimonial, numbered benefits, elegant serif type.",
+      "implemented": false
+    },
+    "t22": {
+      "name": "Red alert — selection urgency",
+      "file": "t22-template.png",
+      "style": "bold-urgent",
+      "background": "black + red/black tape border",
+      "photo_zones": ["dashed photo zone centre"],
+      "elements": ["selection-year-badge", "lightning-icons", "headline", "niche-highlight", "body", "social-proof", "cta"],
+      "use_case": "Urgent/exclusive offer targeting a niche. Red construction tape, selection badge, lightning bolts.",
+      "implemented": false
+    },
+    "t25": {
+      "name": "Wanted poster — free offer",
+      "file": "t25-template.png",
+      "style": "bold-gimmick",
+      "background": "yellow/black diagonal stripes",
+      "photo_zones": [],
+      "elements": ["wanted-label", "free-product-service", "qualifying-criteria", "revenue-qualifier", "cta-strip"],
+      "use_case": "Attention-grabbing 'WANTED' poster gimmick for free lead magnet. Qualification gatekeeping.",
+      "implemented": false
+    },
+    "t33": {
+      "name": "Diagonal stripe — photo top, copy bottom",
+      "file": "t33-template.png",
+      "style": "bold-dark",
+      "background": "black + orange diagonal stripe",
+      "photo_zones": ["top half full-bleed"],
+      "elements": ["client-count-badge", "headline", "tagline", "subheadline", "cta", "bonus-pill"],
+      "use_case": "B2B with lifestyle photo. Orange diagonal stripe cuts across, social proof badge overlaps stripe.",
+      "implemented": false
+    },
+    "t34": {
+      "name": "Event — dark minimal with testimonial",
+      "file": "t34-template.png",
+      "style": "dark-minimal",
+      "background": "dark charcoal",
+      "photo_zones": [],
+      "elements": ["brand-event-date", "italic-headline", "event-type-pills", "star-testimonial", "limited-spots-bar", "cta"],
+      "use_case": "Workshop or event. Serif italic headline, event type pills, testimonial, limited-spots urgency strip.",
+      "implemented": false
+    },
+    "t43": {
+      "name": "Free lead magnet — editorial dark",
+      "file": "t43-template.png",
+      "style": "editorial-dark",
+      "background": "black",
+      "photo_zones": ["two blurred photo zones bottom-right"],
+      "elements": ["brand-name", "niche", "offer-number", "italic-FREE", "product-service", "dash-benefits-2", "cta"],
+      "use_case": "Premium free offer. 'Nr.01 FREE PRODUCT/SERVICE' in gold/white, two moody photo zones.",
+      "implemented": false
+    },
+    "t47": {
+      "name": "Free product — qualifier shock v2",
+      "file": "t47-template.png",
+      "style": "bold-dark",
+      "background": "dark quadrant",
+      "photo_zones": [],
+      "elements": ["qualifier-badge", "you-qualify-check", "large-FREE", "product-name", "strikethrough-value", "brand-name", "social-proof", "cta"],
+      "use_case": "Variant of t13. Same qualifier+free-offer layout with orange/white colour scheme.",
+      "implemented": false
+    },
+    "t48": {
+      "name": "Free offer — dark compact",
+      "file": "t48-template.png",
+      "style": "dark-minimal",
+      "background": "dark",
+      "photo_zones": [],
+      "elements": ["brand-stats-bar", "niche-qualifier", "FREE-large", "product-service", "qualifying-businesses", "body", "cta"],
+      "use_case": "Compact free-offer card targeting qualifying businesses. Minimal layout, no photos.",
+      "implemented": false
+    },
+    "t50": {
+      "name": "Free offer — centred dark minimal",
+      "file": "t50-template.png",
+      "style": "dark-minimal",
+      "background": "dark charcoal",
+      "photo_zones": [],
+      "elements": ["brand-name", "stats-bar", "niche-qualifier", "italic-headline", "large-FREE-amber", "strikethrough-value", "terms", "cta"],
+      "use_case": "Centred typographic free-offer. Italic editorial headline above dominant FREE, amber accent.",
+      "implemented": false
+    },
+    "t51": {
+      "name": "Benefit checklist — dark with free offer footer",
+      "file": "t51-template.png",
+      "style": "dark-professional",
+      "background": "dark charcoal + orange corner accent",
+      "photo_zones": [],
+      "elements": ["brand-name", "stats-row", "niche-qualifier", "niche-label", "headline", "tagline", "checkbox-benefits-3", "FREE-footer", "cta", "terms"],
+      "use_case": "B2B benefits-first layout. Checkbox benefits dominate, free product in footer, orange corner accent.",
+      "implemented": false
+    },
+    "t53": {
+      "name": "Lead notification — card overlay",
+      "file": "t53-template.png",
+      "style": "bold-dark",
+      "background": "gray quadrant",
+      "photo_zones": ["full-bleed top quadrant"],
+      "elements": ["new-lead-notification-card", "niche-label", "headline", "tagline", "subheadline", "cta", "bonus"],
+      "use_case": "Lead-gen proof. 'New lead' notification card floating over photo, rounded pill card at bottom.",
+      "implemented": false
+    },
+    "t54": {
+      "name": "Arch photo — dark elegant",
+      "file": "t54-template.png",
+      "style": "editorial-dark",
+      "background": "black",
+      "photo_zones": ["arched semicircle top-centre"],
+      "elements": ["arched-photo", "mixed-font-headline", "service-tag-chips", "social-proof", "cta"],
+      "use_case": "Premium service or consulting. Arched photo frame, large serif+italic mixed headline, feature chips.",
+      "implemented": false
+    },
+    "t62": {
+      "name": "Workshop — time-savings dark compact",
+      "file": "t62-template.png",
+      "style": "dark-minimal",
+      "background": "dark + right photo gradient",
+      "photo_zones": ["right fade photo"],
+      "elements": ["brand-name", "topic-name", "old-method-strikethrough", "new-value-large", "subheadline", "event-details-pill", "cta"],
+      "use_case": "Workshop or course. 'OLD METHOD' strikethrough → new time/result value. Event details pill.",
+      "implemented": false
+    },
+    "t63": {
+      "name": "Workshop — event announcement dark compact",
+      "file": "t63-template.png",
+      "style": "dark-minimal",
+      "background": "dark + right photo gradient",
+      "photo_zones": ["right fade photo"],
+      "elements": ["brand-name", "event-name-date-city", "italic-headline", "tagline", "event-details-pill", "cta"],
+      "use_case": "Event / workshop announcement. Compact serif headline, event details pill (in-person/online/date/price).",
+      "implemented": false
+    }
+  }
+}

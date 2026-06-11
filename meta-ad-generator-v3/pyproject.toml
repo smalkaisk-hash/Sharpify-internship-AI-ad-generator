@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adgen"
+version = "0.1.0"
+description = "Automatic Meta ad generator"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "Pillow>=10",
+  "click>=8.1",
+  "pollinations>=4.5.1",
+  "packaging>=26.2",
+  "anthropic>=0.40",
+  "python-dotenv>=1.0",
+  "rembg[cpu]>=2.0.38",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["adgen*"]
+
+[tool.pytest.ini_options]
+markers = [
+  "slow: marks integration tests that hit the network",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
