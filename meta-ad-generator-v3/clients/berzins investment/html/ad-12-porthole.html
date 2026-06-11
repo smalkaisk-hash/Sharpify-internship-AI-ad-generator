@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#1C2128; }
+
+/* Circular porthole photo on right */
+.porthole {
+  position:absolute;
+  right:48px;
+  top:50%;
+  transform:translateY(-50%);
+  width:540px; height:540px;
+  border-radius:50%;
+  overflow:hidden;
+  border:2px solid rgba(200,169,110,0.42);
+  box-shadow: 0 0 60px rgba(0,0,0,0.60), 0 0 0 8px rgba(200,169,110,0.08);
+  z-index:3;
+}
+.porthole img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 50%;
+  filter:brightness(0.90) contrast(1.05);
+}
+
+/* Subtle amber glow behind porthole */
+.porthole-glow {
+  position:absolute;
+  right:28px; top:50%;
+  transform:translateY(-50%);
+  width:580px; height:580px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(200,169,110,0.10) 0%, transparent 70%);
+  z-index:2;
+}
+
+/* Left content column */
+.content {
+  position:absolute; top:0; left:0; width:530px; height:1080px;
+  z-index:10;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px 60px;
+}
+
+/* Thin amber vertical line as divider */
+.divider {
+  position:absolute; top:80px; bottom:80px; left:530px;
+  width:1px;
+  background:linear-gradient(180deg,
+    transparent 0%, rgba(200,169,110,0.38) 20%,
+    rgba(200,169,110,0.38) 80%, transparent 100%);
+  z-index:5;
+}
+
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.42); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+.spacer { flex:1; }
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.20em; text-transform:uppercase; margin-bottom:12px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:72px; font-weight:700;
+  line-height:0.88; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:12px;
+}
+.sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.58); line-height:1.35; margin-bottom:20px;
+}
+.rule {
+  height:1px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.50) 0%, transparent 80%);
+  margin-bottom:20px;
+}
+.bullets { display:flex; flex-wrap:wrap; margin-bottom:28px; }
+.bullet { width:100%; display:flex; align-items:flex-start; gap:10px; padding:6px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.btext {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.80); line-height:1.28;
+}
+
+.spacer2 { height:28px; flex-shrink:0; }
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 32px; text-align:center; letter-spacing:0.06em;
+}
+/* bullet-style-start */
+.benefit,.brow{border-left:5px solid #C8A96E;border-radius:0;padding:9px 16px;gap:12px;background:transparent;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#C8A96E;fill:#C8A96E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="porthole-glow"></div>
+  <div class="porthole">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/scrape/other_images/web_kapnu_telpa_2.jpg" alt="">
+  </div>
+  <div class="divider"></div>
+
+  <div class="content">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Ilgtspēja · A klase</div>
+    <div class="headline">BREEAM arhitektūra<br>no 16 €/m².</div>
+    <div class="sub">Zaļais birojs samazina izmaksas un atbilst ESG prasībām.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="btext">Berzins Investment: 32 gadi tirgū</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="btext">Miera iela 1: Rīgas pilsētas sirdī</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="btext">Priekšnoma pieejama pirms atklāšanas</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 00-1 1v5.5l3.5 2"/><path d="M5.5 17.5l3.5-6 3-3.5h4"/></svg></div>
+        <div class="btext">Velonovietne un duša komandai</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Rezervēt telpas</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

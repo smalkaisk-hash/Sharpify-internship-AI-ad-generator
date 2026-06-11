@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Template: t57 — tilted card photo stack, bold headline, vertically centered copy -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12;display:flex;flex-direction:column;align-items:center;padding:52px 72px}
+
+.card-wrap{position:relative;width:860px;height:400px;flex-shrink:0;margin-bottom:36px}
+.card-back{position:absolute;top:14px;left:50%;transform:translateX(-50%) rotate(-2.5deg);width:820px;height:390px;background:#1A1A2A;border:1px solid #333355;border-radius:20px}
+.card-mid{position:absolute;top:7px;left:50%;transform:translateX(-50%) rotate(-1deg);width:840px;height:392px;background:#151522;border:1px solid #2A2A3A;border-radius:20px}
+.card-front{position:absolute;top:0;left:50%;transform:translateX(-50%);width:860px;height:396px;border-radius:20px;overflow:hidden;border:1px solid #6C47FF44;box-shadow:0 0 60px #6C47FF1A,0 20px 60px #00000066}
+.card-img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.card-badge{position:absolute;bottom:18px;left:24px;background:#0D0D12CC;border:1px solid #6C47FF55;border-radius:50px;padding:9px 20px;font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600;color:#9B7AFF}
+
+.middle{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
+.hd{font-family:'Space Grotesk',sans-serif;font-size:76px;font-weight:800;color:#FFFFFF;line-height:0.92;letter-spacing:-0.03em;text-align:center;margin-bottom:20px}
+.hd em{color:#6C47FF;font-style:normal}
+.sub{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:#A8A8B8;text-align:center;max-width:720px;line-height:1.5}
+
+.cta-row{display:flex;align-items:center;gap:24px;flex-shrink:0}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em}
+.proof{font-family:'Inter',sans-serif;font-size:16px;color:#555566}
+.proof b{color:#A8A8B8;font-weight:500}
+.logo-img{height:70px;max-width:220px;object-fit:contain;opacity:0.90;flex-shrink:0;align-self:flex-start;margin-bottom:14px}
+</style></head>
+<body>
+<div class="ad">
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+  <div class="card-wrap">
+    <div class="card-back"></div>
+    <div class="card-mid"></div>
+    <div class="card-front">
+      <img class="card-img" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/083-og-image.png" alt="">
+    </div>
+    <div class="card-badge">🎁 Free trial — no credit card</div>
+  </div>
+
+  <div class="middle">
+    <div class="hd">AI builds on your<br><em>real codebase.</em></div>
+    <div class="sub">No throwaway prototypes. No ticket queue. Builder.io connects Figma, your components, and your tech stack into one seamless workflow.</div>
+  </div>
+
+  <div class="cta-row">
+    <div class="cta">Start for Free →</div>
+    <div class="proof"><b>React, Next.js</b> &amp; 50+ integrations</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

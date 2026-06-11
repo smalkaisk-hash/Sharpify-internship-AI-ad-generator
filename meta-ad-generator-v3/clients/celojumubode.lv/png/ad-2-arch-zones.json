@@ -1,0 +1,118 @@
+{
+  "file": "ad-2-arch.png",
+  "size": [
+    2160,
+    2160
+  ],
+  "grid": "4x3",
+  "zones": {
+    "r0c0": {
+      "row": 0,
+      "col": 0,
+      "brightness": 99.5,
+      "uniformity": 0.49,
+      "edge_density": 0.017,
+      "dominant_color": "#555857",
+      "label": "photo"
+    },
+    "r0c1": {
+      "row": 0,
+      "col": 1,
+      "brightness": 91.1,
+      "uniformity": 0.59,
+      "edge_density": 0.009,
+      "dominant_color": "#9fa29d",
+      "label": "photo"
+    },
+    "r0c2": {
+      "row": 0,
+      "col": 2,
+      "brightness": 81.6,
+      "uniformity": 0.64,
+      "edge_density": 0.01,
+      "dominant_color": "#454744",
+      "label": "mid-tone solid"
+    },
+    "r1c0": {
+      "row": 1,
+      "col": 0,
+      "brightness": 197.5,
+      "uniformity": 0.69,
+      "edge_density": 0.017,
+      "dominant_color": "#c4cdc8",
+      "label": "light background"
+    },
+    "r1c1": {
+      "row": 1,
+      "col": 1,
+      "brightness": 177.5,
+      "uniformity": 0.65,
+      "edge_density": 0.013,
+      "dominant_color": "#b0b7b4",
+      "label": "mid-tone solid"
+    },
+    "r1c2": {
+      "row": 1,
+      "col": 2,
+      "brightness": 112.7,
+      "uniformity": 0.73,
+      "edge_density": 0.014,
+      "dominant_color": "#989c91",
+      "label": "mid-tone solid"
+    },
+    "r2c0": {
+      "row": 2,
+      "col": 0,
+      "brightness": 107.8,
+      "uniformity": 0.51,
+      "edge_density": 0.022,
+      "dominant_color": "#ced5d2",
+      "label": "photo"
+    },
+    "r2c1": {
+      "row": 2,
+      "col": 1,
+      "brightness": 99.7,
+      "uniformity": 0.52,
+      "edge_density": 0.025,
+      "dominant_color": "#484135",
+      "label": "photo"
+    },
+    "r2c2": {
+      "row": 2,
+      "col": 2,
+      "brightness": 84.0,
+      "uniformity": 0.76,
+      "edge_density": 0.023,
+      "dominant_color": "#938264",
+      "label": "mid-tone solid"
+    },
+    "r3c0": {
+      "row": 3,
+      "col": 0,
+      "brightness": 64.4,
+      "uniformity": 0.65,
+      "edge_density": 0.029,
+      "dominant_color": "#e5007d",
+      "label": "dark panel + UI"
+    },
+    "r3c1": {
+      "row": 3,
+      "col": 1,
+      "brightness": 73.5,
+      "uniformity": 0.62,
+      "edge_density": 0.036,
+      "dominant_color": "#e5007d",
+      "label": "solid fill + UI"
+    },
+    "r3c2": {
+      "row": 3,
+      "col": 2,
+      "brightness": 62.4,
+      "uniformity": 0.66,
+      "edge_density": 0.026,
+      "dominant_color": "#e5007d",
+      "label": "dark panel + UI"
+    }
+  }
+}

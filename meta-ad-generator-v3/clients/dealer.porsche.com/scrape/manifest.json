@@ -1,0 +1,34 @@
+{
+  "source_url": "https://dealer.porsche.com/lv/riga/lv-LV",
+  "final_url": "https://dealer.porsche.com/lv/riga/lv-LV",
+  "title": "Porsche Latvija - Rīga",
+  "brand_name": "Porsche Latvija",
+  "language": "lv",
+  "location": "Porsche centrs Lidosta: Kārļa Ulmaņa gatve 96, Rīga | Porsche centrs Krasta: Krasta iela 54, Rīga",
+  "company_summary": "Porsche Latvija ir oficiālais sertificētais Porsche dīleris Rīgā ar diviem centriem. Piedāvā jaunas un sertificētas lietotas Porsche automašīnas, izmēģinājuma braucienus, individuālu konfigurāciju, finansēšanu un sertificētu servisu.",
+  "goal_summary": "Piesaistīt potenciālos Porsche pircējus Latvijā, veicināt izmēģinājuma braucienu pierakstus un palielināt auto pārdošanu.",
+  "primary_logo_path": "",
+  "text_sections": {
+    "What they do": [
+      "Oficiālais Porsche dīleris Latvijā ar diviem centriem Rīgā.",
+      "Jaunu Porsche automašīnu pārdošana: 718, 911, Taycan, Panamera, Macan, Cayenne.",
+      "Sertificētu lietotu Porsche tirdzniecība ar rūpnīcas garantiju.",
+      "Individuāla automašīnas konfigurācija.",
+      "Izmēģinājuma braucieni pēc pieprasījuma.",
+      "Sertificēts Porsche servisa centrs.",
+      "Finansēšanas un līzinga iespējas."
+    ]
+  },
+  "scraped_pages": [
+    "https://dealer.porsche.com/lv/riga/lv-LV"
+  ],
+  "accent_colors": [
+    "#D5001C",
+    "#1A1A1A",
+    "#8A8A8A"
+  ],
+  "logos": [],
+  "product_images": [],
+  "other_images": [],
+  "social_proof": []
+}

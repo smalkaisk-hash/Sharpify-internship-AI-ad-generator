@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Blushwave",
+    "theme": "Mid",
+    "use_for": "beauty, skincare, floral, feminine lifestyle",
+    "swatches": {
+      "base": "#FECB00",
+      "second_tone": "#71C7FE",
+      "accents": [
+        "#F09FC2",
+        "#D86897",
+        "#F71941"
+      ],
+      "text_cta_bg": "#675F61",
+      "body_text": "#675F61",
+      "cta_text": "#FECB00"
+    },
+    "contrast_rating": "",
+    "distance": 63.26,
+    "matched_against": [
+      "#D5001C",
+      "#1A1A1A",
+      "#8A8A8A"
+    ]
+  },
+  {
+    "name": "Steel Horizon",
+    "theme": "Light",
+    "use_for": "industrial safety, B2B, construction, heavy industry, professional services",
+    "swatches": {
+      "base": "#F0F2F5",
+      "second_tone": "#C8D4E0",
+      "accents": [
+        "#8A9AA8",
+        "#E8750A"
+      ],
+      "text_cta_bg": "#1A2535",
+      "body_text": "#1A2535",
+      "cta_text": "#F0F2F5"
+    },
+    "contrast_rating": "✓",
+    "distance": 63.98,
+    "matched_against": [
+      "#D5001C",
+      "#1A1A1A",
+      "#8A8A8A"
+    ]
+  },
+  {
+    "name": "Pastel Blush",
+    "theme": "Light",
+    "use_for": "beauty, skincare, floral, feminine lifestyle",
+    "swatches": {
+      "base": "#E9D9C8",
+      "second_tone": "#E4A489",
+      "accents": [
+        "#9B9F91",
+        "#A6844E",
+        "#BC6C54"
+      ],
+      "text_cta_bg": "#3E4C54",
+      "body_text": "#3E4C54",
+      "cta_text": "#E9D9C8"
+    },
+    "contrast_rating": "✓",
+    "distance": 81.18,
+    "matched_against": [
+      "#D5001C",
+      "#1A1A1A",
+      "#8A8A8A"
+    ]
+  },
+  {
+    "name": "Lavender Sapphire Mist",
+    "theme": "Light",
+    "use_for": "botanical beauty, floral branding, spa, wellness",
+    "swatches": {
+      "base": "#F0DAD5",
+      "second_tone": "#BABBB1",
+      "accents": [
+        "#DEA785",
+        "#D9A69F",
+        "#C56B62",
+        "#6C739C"
+      ],
+      "text_cta_bg": "#424658",
+      "body_text": "#424658",
+      "cta_text": "#F0DAD5"
+    },
+    "contrast_rating": "✓",
+    "distance": 88.76,
+    "matched_against": [
+      "#D5001C",
+      "#1A1A1A",
+      "#8A8A8A"
+    ]
+  },
+  {
+    "name": "Zephyr",
+    "theme": "Light",
+    "use_for": "lifestyle editorial, light-theme campaigns",
+    "swatches": {
+      "base": "#F5F1FA",
+      "second_tone": "#FBB7B7",
+      "accents": [
+        "#A0A095",
+        "#A698C2"
+      ],
+      "text_cta_bg": "#DE7A38",
+      "body_text": "",
+      "cta_text": ""
+    },
+    "contrast_rating": "⚠",
+    "distance": 106.92,
+    "matched_against": [
+      "#D5001C",
+      "#1A1A1A",
+      "#8A8A8A"
+    ]
+  }
+]

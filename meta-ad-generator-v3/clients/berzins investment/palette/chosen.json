@@ -1,0 +1,16 @@
+{
+  "name": "Miera Dark",
+  "theme": "Dark",
+  "use_for": "real-estate, luxury, b2b, premium office, architectural",
+  "swatches": {
+    "base": "#1C2128",
+    "second_tone": "#2A3140",
+    "accents": ["#C8A96E", "#E8E0D0"],
+    "text_cta_bg": "#1C2128",
+    "body_text": "#F2F0EC",
+    "cta_text": "#1C2128"
+  },
+  "contrast_rating": "✓",
+  "detected_category": "real-estate",
+  "source": "manual"
+}

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#E9D9C8; }
+
+.porthole {
+  position:absolute; right:-10px; top:50%; transform:translateY(-50%);
+  width:640px; height:640px; border-radius:50%; overflow:hidden;
+  border:2px solid rgba(166,132,78,0.40);
+  box-shadow:0 0 50px rgba(166,132,78,0.18), 0 0 0 12px rgba(166,132,78,0.06);
+  z-index:3;
+}
+.porthole img { width:100%; height:100%; object-fit:cover; object-position:50% 30%; filter:brightness(0.92); }
+
+.porthole-glow {
+  position:absolute; right:-40px; top:50%; transform:translateY(-50%);
+  width:700px; height:700px; border-radius:50%;
+  background:radial-gradient(circle, rgba(166,132,78,0.09) 0%, transparent 68%);
+  pointer-events:none; z-index:2;
+}
+.divider {
+  position:absolute; top:80px; bottom:80px; left:530px; width:1px;
+  background:linear-gradient(180deg, transparent, rgba(166,132,78,0.38) 20%, rgba(166,132,78,0.38) 80%, transparent);
+  z-index:5;
+}
+
+.content {
+  position:absolute; top:0; left:0; width:530px; height:1080px; z-index:10;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px 60px;
+}
+
+.logo-zone { align-self:flex-start; }
+.spacer { flex:1; }
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#BC6C54; letter-spacing:0.20em; text-transform:uppercase; margin-bottom:14px;
+}
+.headline {
+  font-family:'Playfair Display', serif; font-size:72px; font-weight:400; font-style:italic;
+  line-height:0.94; color:#3E4C54; margin-bottom:20px;
+}
+.sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:300;
+  color:rgba(62,76,84,0.58); line-height:1.40; margin-bottom:20px;
+}
+.rule {
+  height:1px; background:rgba(62,76,84,0.18); margin-bottom:20px;
+}
+.bullets { display:flex; flex-direction:column; margin-bottom:0; }
+.feat { display:flex; align-items:flex-start; gap:10px; padding:5px 0; }
+.ficon { width:24px; height:24px; flex-shrink:0; margin-top:3px; }
+.ftext { font-family:'Raleway', sans-serif; font-size:22px; font-weight:400; color:rgba(62,76,84,0.78); line-height:1.28; }
+.spacer2 { height:28px; flex-shrink:0; }
+.cta {
+  display:block; background:#3E4C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:24px 20px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{border-left:5px solid #9B9F91;border-radius:0;padding:9px 16px;gap:12px;background:transparent;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="porthole-glow"></div>
+  <div class="porthole">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/013-mango-arom-ts-tropisks-baud-jums-katr-du-as-reiz-mango-smar-a-ne-tikai-uzlabo-ga.png" alt="">
+  </div>
+  <div class="divider"></div>
+
+  <div class="content">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Tīrs ūdens. Maiga āda.</div>
+    <div class="headline">Filtrs attīra ūdeni un pievieno aromātu.</div>
+    <div class="sub">Maiga āda, lavandas vai mango aromāts katrā rītā.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="feat">
+        <div class="ficon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="ftext">Attīra ūdeni no kaitīgām daļiņām</div>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 015 5c0 3.5-5 11-5 11S7 10.5 7 7a5 5 0 015-5z"/><circle cx="12" cy="7" r="2"/></svg></div>
+        <div class="ftext">Aromāti: lavanda, mango, roze, CLEAR+</div>
+      </div>
+      <div class="feat">
+        <div class="ficon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l10-10M22 2S11 2 6 7c-1.96 1.96-3 5-3 7a9 9 0 009 9c2 0 5.04-1.04 7-3 5-5 5-16 5-16z"/></svg></div>
+        <div class="ftext">Videi draudzīgs un bez ķimikālijām</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

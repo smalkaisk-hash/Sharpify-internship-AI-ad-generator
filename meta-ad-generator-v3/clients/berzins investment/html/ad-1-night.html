@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0A0E14; }
+
+.photo { position:absolute; inset:0; }
+.photo img { width:100%; height:100%; object-fit:cover; object-position:50% 45%; }
+.overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,
+    rgba(10,14,20,0.12) 0%,
+    rgba(10,14,20,0.06) 22%,
+    rgba(10,14,20,0.45) 52%,
+    rgba(10,14,20,0.88) 72%,
+    rgba(10,14,20,0.98) 100%);
+}
+.overlay-l {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, rgba(10,14,20,0.52) 0%, transparent 40%);
+}
+
+.logo-zone { position:absolute; top:52px; left:60px; z-index:10; }
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:32px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:13px; font-weight:400;
+  color:rgba(242,240,236,0.48); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+.tag {
+  position:absolute; top:64px; right:60px; z-index:10;
+  font-family:'Raleway', sans-serif; font-size:13px; font-weight:400;
+  color:rgba(242,240,236,0.38); letter-spacing:0.22em; text-transform:uppercase;
+  display:flex; align-items:center; gap:8px;
+}
+.tag-dot { width:5px; height:5px; background:#C8A96E; border-radius:50%; }
+
+.bottom { position:absolute; bottom:52px; left:60px; right:60px; z-index:10; }
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:16px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:84px; font-weight:700;
+  line-height:0.90; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:26px;
+}
+.rule {
+  height:1px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.55) 0%, rgba(200,169,110,0.10) 60%, transparent 100%);
+  margin-bottom:22px;
+}
+.stats { display:flex; margin-bottom:30px; }
+.stat { padding:0 28px; border-right:1px solid rgba(200,169,110,0.20); }
+.stat:first-child { padding-left:0; }
+.stat:last-child { border-right:none; }
+.stat-num {
+  font-family:'Barlow Condensed', sans-serif; font-size:26px; font-weight:700;
+  color:#C8A96E; line-height:1; margin-bottom:4px;
+}
+.stat-lbl {
+  font-family:'Raleway', sans-serif; font-size:13px; font-weight:400;
+  color:rgba(242,240,236,0.44); letter-spacing:0.14em; text-transform:uppercase;
+}
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 40px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{background:linear-gradient(105deg,#C8A96E,#E8E0D0);border-radius:28px;padding:11px 20px;box-shadow:0 4px 18px rgba(200,169,110,0.55);gap:12px;}
+.btext{color:#fff;font-weight:600;}
+.bicon,.bicon svg{color:#fff;fill:#fff;}
+.bdot{background:rgba(255,255,255,0.65);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad"><!-- photo-dominant -->
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/assets/imgi_4_IMG_2222.jpg" alt="">
+  </div>
+  <div class="overlay"></div>
+  <div class="overlay-l"></div>
+
+  <div class="logo-zone">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+  </div>
+  <div class="tag"><div class="tag-dot"></div>Miera iela 1 · Rīgā</div>
+
+  <div class="bottom">
+    <div class="eyebrow">Premium biroji · Rīgas centrā</div>
+    <div class="headline">Vide uzņēmumiem,<br>kas izvēlas vairāk.</div>
+    <div class="rule"></div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">32 gadi</div>
+        <div class="stat-lbl">Pieredze</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8 stāvi</div>
+        <div class="stat-lbl">Augstums</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">140–1000 m²</div>
+        <div class="stat-lbl">Platības</div>
+      </div>
+    </div>
+    <div class="cta">Rezervēt tikšanos</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

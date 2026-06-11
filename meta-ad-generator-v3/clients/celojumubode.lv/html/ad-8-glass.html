@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#1A0A04}
+
+/* Full-bleed photo */
+.photo{position:absolute;inset:0;z-index:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:72% 35%}
+
+/* Dark left panel — S-curve right edge */
+.panel{position:absolute;left:0;top:0;bottom:0;width:640px;z-index:5;
+  background:rgba(16,6,2,0.93);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  clip-path:path('M 0,0 L 600,0 C 566,270 610,810 576,1080 L 0,1080 Z')}
+
+/* Content column inside panel */
+.content{position:absolute;left:0;top:0;bottom:0;width:590px;z-index:8;
+  display:flex;flex-direction:column;justify-content:space-between;padding:52px 56px 52px 52px}
+
+.logo img{height:116px;max-width:320px;width:auto;object-fit:contain}
+
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:700;
+  color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.16em;margin-bottom:14px}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:86px;font-weight:800;
+  hyphens:none;-webkit-hyphens:none;color:#FFFFFF;line-height:0.90;letter-spacing:-0.01em;
+  text-shadow:0 2px 20px rgba(0,0,0,0.70)}
+.hd em{color:#E5007E;font-style:normal}
+
+.bullets{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin-bottom:36px}
+.bullet{display:flex;align-items:center;gap:10px;
+  border-left:3px solid rgba(229,0,126,0.70);padding:4px 0 4px 14px}
+.bicon{width:24px;height:24px;flex-shrink:0}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:500;
+  color:rgba(255,255,255,0.88);line-height:1.28}
+.cta{display:block;background:#E5007E;color:#FFFFFF;font-family:'Raleway',sans-serif;
+  font-size:24px;font-weight:700;padding:24px 36px;border-radius:8px;
+  text-align:center;letter-spacing:0.03em}
+/* bullet-style-start */
+.benefit,.brow{background:linear-gradient(105deg,#E5007E,#2A2A2A);border-radius:28px;padding:11px 20px;box-shadow:0 4px 18px rgba(229,0,126,0.55);gap:12px;}
+.btext{color:#fff;font-weight:600;}
+.bicon,.bicon svg{color:#fff;fill:#fff;}
+.bdot{background:rgba(255,255,255,0.65);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-3.jpg" alt=""></div>
+  <div class="panel"></div>
+  <svg style="position:absolute;left:0;top:0;width:640px;height:1080px;z-index:7;pointer-events:none" viewBox="0 0 640 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M 600,0 C 566,270 610,810 576,1080" fill="none" stroke="rgba(229,0,126,0.45)" stroke-width="1.5"/>
+    <path d="M 616,0 C 582,270 626,810 592,1080" fill="none" stroke="rgba(229,0,126,0.15)" stroke-width="1"/>
+  </svg>
+  <div class="content">
+    <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div>
+      <div class="eyebrow">Vasaras ceļojumi 2026</div>
+      <div class="hd">Turcijā vasarā.<br><em>Bez</em> iekrājumiem.</div>
+    </div>
+    <div>
+      <div class="bullets">
+        <div class="bullet"><svg class="bicon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#E5007E" stroke-width="1.5"/><path d="M2 12h20M12 2c-3 4-3 14 0 20M12 2c3 4 3 14 0 20" stroke="#E5007E" stroke-width="1.4" stroke-linecap="round"/></svg><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+        <div class="bullet"><svg class="bicon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E5007E" stroke-width="1.5"/><path d="M12 7v2M12 15v2M9.5 9.5h4a1.5 1.5 0 010 3h-3a1.5 1.5 0 000 3h4" stroke="#E5007E" stroke-width="1.5" stroke-linecap="round"/></svg><span class="btext">Bezprocentu nomaksa.</span></div>
+        <div class="bullet"><svg class="bicon" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 6.5v5.5c0 4.75 3.4 9.2 8 10.5 4.6-1.3 8-5.75 8-10.5V6.5L12 3z" stroke="#E5007E" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E5007E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+        <div class="bullet"><svg class="bicon" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.09 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.12 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#E5007E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+      </div>
+      <div class="cta">Rezervēt ceļojumu</div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

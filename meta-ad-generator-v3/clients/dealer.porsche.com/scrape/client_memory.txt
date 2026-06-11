@@ -1,0 +1,14 @@
+Client: Porsche Latvija
+Website: https://dealer.porsche.com/lv/riga/lv-LV
+Source URL: https://dealer.porsche.com/lv/riga/lv-LV
+Language: lv
+Location: Divi centri Rīgā: Kārļa Ulmaņa gatve 96 (Lidosta) un Krasta iela 54
+Primary logo for palette: none (no logo downloaded — use CSS wordmark in HTML ads)
+
+Scraped assets:
+- Logos: 0 files (site blocked scraper with 403)
+- Product images: 0 files (site blocked scraper with 403)
+- Colors: accent_colors.txt (Porsche brand colors: red #D5001C, black #1A1A1A, silver #8A8A8A)
+
+Chat context:
+Official Porsche dealer in Riga, Latvia. Two showroom locations. Full model lineup. No scraped images available due to 403 — generate AI car photos for all ads. No logo file — use styled CSS text "PORSCHE" in HTML ads (Inter/Helvetica, all caps, tracked). Brand is tangible (luxury cars). Ads must be cinematic, bold, aspirational in Latvian.

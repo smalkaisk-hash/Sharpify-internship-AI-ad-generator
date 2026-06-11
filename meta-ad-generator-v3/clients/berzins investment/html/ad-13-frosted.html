@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#1C2128; }
+
+.photo { position:absolute; inset:0; }
+.photo img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 25%;
+  filter:brightness(0.88) contrast(1.04);
+}
+
+/* Frosted diagonal panel — left side, diagonal right edge */
+.panel {
+  position:absolute; inset:0; z-index:5;
+  background:rgba(13,19,32,0.82);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  clip-path:polygon(0 0, 62% 0, 46% 100%, 0 100%);
+}
+
+/* Amber diagonal accent stripe at right edge of panel */
+.panel-edge {
+  position:absolute; inset:0; z-index:6; pointer-events:none;
+  background:linear-gradient(
+    to bottom right,
+    transparent 0%, transparent 44%,
+    rgba(200,169,110,0.55) 44%, rgba(200,169,110,0.55) 44.5%,
+    transparent 44.5%
+  );
+  clip-path:polygon(0 0, 62% 0, 46% 100%, 0 100%);
+}
+
+/* Content column inside frosted panel */
+.content {
+  position:absolute; top:0; left:0; width:540px; height:1080px; z-index:10;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px 60px;
+}
+
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.42); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+.spacer { flex:1; }
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:12px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:72px; font-weight:700;
+  line-height:0.88; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:18px;
+}
+.rule {
+  height:1px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.50) 0%, transparent 80%);
+  margin-bottom:18px;
+}
+
+/* Numbered bullets with inline span */
+.bullets { display:flex; flex-direction:column; margin-bottom:28px; }
+.bullet { display:flex; align-items:flex-start; gap:14px; padding:7px 0; }
+.bnum {
+  min-width:34px; height:34px;
+  background:#C8A96E; border-radius:50%;
+  font-family:'Barlow Condensed', sans-serif; font-size:17px; font-weight:700;
+  color:#1C2128; text-align:center; line-height:34px;
+  flex-shrink:0; display:inline-flex; align-items:center; justify-content:center;
+}
+.bicon { display:none; }
+.btext {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.80); line-height:1.28; padding-top:5px;
+}
+
+.spacer2 { height:28px; flex-shrink:0; }
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 24px; text-align:center; letter-spacing:0.06em;
+  margin-bottom:160px;
+}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#C8A96E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/scrape/other_images/web_interior-04.jpg" alt="">
+  </div>
+  <div class="panel"></div>
+  <div class="panel-edge"></div>
+
+  <div class="content">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Uzticamība · Pieredze</div>
+    <div class="headline">32 gadi.<br>8 stāvi.<br>Rīgas centrs.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet">
+        <span class="bnum">1</span>
+        <div class="btext">Velonovietne un duša komandai</div>
+      </div>
+      <div class="bullet">
+        <span class="bnum">2</span>
+        <div class="btext">Priekšnoma pieejama pirms atklāšanas</div>
+      </div>
+      <div class="bullet">
+        <span class="bnum">3</span>
+        <div class="btext">BREEAM sertifikācija ēkas projektā</div>
+      </div>
+      <div class="bullet">
+        <span class="bnum">4</span>
+        <div class="btext">Nomas maksa no 16 €/m² mēnesī</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Rezervēt telpas</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Steel Horizon",
+  "theme": "Light",
+  "use_for": "industrial safety, B2B, construction, heavy industry, professional services",
+  "swatches": {
+    "base": "#F0F2F5",
+    "second_tone": "#C8D4E0",
+    "accents": [
+      "#8A9AA8",
+      "#E8750A"
+    ],
+    "text_cta_bg": "#1A2535",
+    "body_text": "#1A2535",
+    "cta_text": "#F0F2F5"
+  },
+  "contrast_rating": "✓",
+  "distance": -19.12,
+  "matched_against": [
+    "#d6d6d6",
+    "#869791",
+    "#666666"
+  ],
+  "detected_category": "industrial"
+}

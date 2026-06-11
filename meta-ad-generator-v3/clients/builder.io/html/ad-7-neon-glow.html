@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Template: t55 — circle photo, radial neon glow, vertically centered copy -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12;display:flex;flex-direction:column;align-items:center;padding:52px 72px}
+
+.glow{position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:760px;height:640px;background:radial-gradient(circle at 50% 42%, #6C47FF44 0%, #6C47FF11 40%, transparent 68%);pointer-events:none}
+
+.circle-wrap{width:380px;height:380px;border-radius:50%;overflow:hidden;flex-shrink:0;margin-bottom:36px;border:2px solid #6C47FF44;box-shadow:0 0 80px #6C47FF33}
+.cimg{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+
+.middle{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
+.eyebrow{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#6C47FF;letter-spacing:0.18em;text-transform:uppercase;text-align:center;margin-bottom:18px}
+.hd{font-family:'Space Grotesk',sans-serif;font-size:76px;font-weight:800;color:#FFFFFF;line-height:0.92;letter-spacing:-0.03em;text-align:center;margin-bottom:22px}
+.hd span{color:#9B7AFF}
+.sub{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:#A8A8B8;text-align:center;max-width:720px;line-height:1.5;margin-bottom:28px}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.chip{background:#1A1A2A;border:1px solid #333355;border-radius:50px;padding:10px 22px;font-family:'Inter',sans-serif;font-size:17px;font-weight:500;color:#A8A8B8}
+
+.cta-row{display:flex;align-items:center;gap:24px;flex-shrink:0}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em}
+.proof{font-family:'Inter',sans-serif;font-size:16px;color:#555566}
+.proof b{color:#A8A8B8;font-weight:500}
+.logo-img{height:70px;max-width:220px;object-fit:contain;opacity:0.90;flex-shrink:0;align-self:flex-start;margin-bottom:12px}
+</style></head>
+<body>
+<div class="ad">
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+  <div class="glow"></div>
+
+  <div class="circle-wrap">
+    <img class="cimg" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/082-og-image.png" alt="">
+  </div>
+
+  <div class="middle">
+    <div class="eyebrow">Visual Development Platform</div>
+    <div class="hd">Figma to production.<br><span>Half the time.</span></div>
+    <div class="sub">AI that converts your designs into real, production-ready code — using your existing repo, components, and tech stack.</div>
+    <div class="chips">
+      <div class="chip">Visual Copilot</div>
+      <div class="chip">AI Code Gen</div>
+      <div class="chip">No Handoffs</div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <div class="cta">Start for Free →</div>
+    <div class="proof"><b>Free trial.</b> No credit card.</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

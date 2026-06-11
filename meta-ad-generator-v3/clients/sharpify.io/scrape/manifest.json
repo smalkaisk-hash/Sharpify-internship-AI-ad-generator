@@ -1,0 +1,31 @@
+{
+  "source_url": "https://quote.sharpify.io/",
+  "final_url": "https://quote.sharpify.io/",
+  "title": "Sharpify — AI Quote Writer for Contractors",
+  "brand_name": "Sharpify",
+  "language": "en",
+  "location": "",
+  "company_summary": "Sharpify is an AI-powered quote writing SaaS tool built for B2B service tradespeople including roofers, plumbers, electricians, landscapers, and other skilled trades workers. Generate professional branded quotes in 60 seconds.",
+  "goal_summary": "Help tradespeople and B2B service workers win more jobs by sending fast, professional AI-generated quotes.",
+  "primary_logo_path": "",
+  "text_sections": {
+    "What they do": [
+      "AI Quote Writer — generate branded quotes in 60 seconds using AI.",
+      "Built for B2B service tradespeople: roofers, plumbers, electricians, landscapers, builders.",
+      "Type one line about the job, get a full branded quote with materials, labor hours, and payment terms.",
+      "Used by 2,300+ contractors across 26 countries. Over €50M in quotes generated.",
+      "Free tool. No payment required."
+    ]
+  },
+  "scraped_pages": [
+    "https://quote.sharpify.io/"
+  ],
+  "accent_colors": [
+    "#00665E",
+    "#CEDC00",
+    "#051C20"
+  ],
+  "logos": [],
+  "product_images": [],
+  "other_images": []
+}

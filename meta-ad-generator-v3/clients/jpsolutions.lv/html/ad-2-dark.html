@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="lv">
+    <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { width:1080px; height:1080px; overflow:hidden; }
+    .ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#39445B; }
+
+    .photo { position:absolute; inset:0; }
+    .photo img { width:100%; height:100%; object-fit:cover; object-position:55% 16%; filter:saturate(0.88) contrast(1.04) brightness(0.88); }
+    .photo-gradient {
+      position:absolute; inset:0;
+      background:linear-gradient(145deg, #C1CBCA 0%, #39445B 55%, #39445B 100%);
+    }
+    .overlay-dark {
+      position:absolute; inset:0;
+      background:linear-gradient(180deg,
+        rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.34) 32%,
+        rgba(0,0,0,0.60) 58%, rgba(0,0,0,0.82) 78%, rgba(0,0,0,0.92) 100%);
+    }
+    .overlay-sides {
+      position:absolute; inset:0;
+      background:linear-gradient(90deg,
+        rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.18) 18%,
+        transparent 40%, transparent 62%, rgba(0,0,0,0.28) 84%, rgba(0,0,0,0.52) 100%);
+    }
+
+    .top {
+      position:absolute; top:54px; left:60px; right:60px;
+      display:flex; justify-content:space-between; align-items:center; z-index:10;
+    }
+    .brand-tag {
+      font-family:'DM Sans', sans-serif; font-size:11px; font-weight:400;
+      color:rgba(255,255,255,0.46); text-transform:uppercase; letter-spacing:0.30em;
+    }
+    .logo-img { height:46px; max-width:200px; width:auto; object-fit:contain; filter:invert(1) brightness(1.6); opacity:0.70; }
+    .logo-txt {
+      font-family:'Cormorant Garamond', serif; font-size:32px; font-weight:300; font-style:italic;
+      color:rgba(255,255,255,0.88); letter-spacing:0.12em;
+    }
+
+    .stat-wrap { position:absolute; top:148px; left:60px; z-index:10; }
+    .stat {
+      font-family:'Cormorant Garamond', serif; font-size:104px; line-height:0.88;
+      font-weight:300; font-style:italic; color:#9F97B8; letter-spacing:-0.025em;
+    }
+    .stat em { font-weight:600; color:#3030CF; }
+    .stat-sub {
+      font-family:'Cormorant Garamond', serif; font-size:50px; line-height:1.0;
+      font-weight:300; font-style:italic; color:rgba(255,255,255,0.68);
+      letter-spacing:-0.01em; margin-top:8px;
+    }
+
+    .divider {
+      position:absolute; left:60px; right:60px; height:1px;
+      background:linear-gradient(90deg, #9F97B888 0%, #9F97B82a 55%, transparent 100%);
+      z-index:10; top:410px;
+    }
+
+    .content { position:absolute; bottom:274px; left:60px; right:60px; z-index:10; }
+    .headline {
+      font-family:'DM Sans', sans-serif; font-size:17px; font-weight:500;
+      color:rgba(255,255,255,0.92); text-transform:uppercase; letter-spacing:0.10em; margin-bottom:12px;
+    }
+    .body-text {
+      font-family:'DM Sans', sans-serif; font-size:15px; font-weight:300; line-height:1.75;
+      color:rgba(255,255,255,0.56);
+    }
+
+    .chips {
+      position:absolute; bottom:236px; left:60px; right:60px;
+      display:flex; gap:10px; z-index:10;
+    }
+    .chip {
+      font-family:'DM Sans', sans-serif; font-size:10px; font-weight:500;
+      color:#9F97B8cc; text-transform:uppercase; letter-spacing:0.18em;
+      padding:8px 18px; border-radius:20px;
+      border:1px solid #9F97B838; background:#9F97B80f; white-space:nowrap;
+    }
+
+    .cta-wrap { position:absolute; bottom:150px; left:60px; right:60px; z-index:10; }
+    .cta {
+      display:block; width:100%;
+      background:linear-gradient(135deg, #39445B 0%, #9F97B8 60%, #3030CF 100%);
+      color:#ECE9E6; font-family:'DM Sans', sans-serif;
+      font-size:19px; font-weight:600; padding:26px; border-radius:10px;
+      text-align:center; letter-spacing:0.05em;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="ad">
+      <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/jpsolutions.lv/scrape/product_images/027-1757074024-8785.png" alt=""></div>
+      <div class="overlay-dark"></div>
+      <div class="overlay-sides"></div>
+      <svg style="position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden"
+     width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="1060" cy="55"   r="400" stroke="#9F97B8"  stroke-width="1.2" fill="none" opacity="0.14"/>
+  <circle cx="1060" cy="55"   r="285" stroke="#9F97B8"  stroke-width="0.9" fill="none" opacity="0.09"/>
+  <circle cx="1060" cy="55"   r="170" stroke="#3030CF" stroke-width="0.7" fill="none" opacity="0.07"/>
+  <circle cx="35"   cy="1065" r="250" stroke="#9F97B8"  stroke-width="1.0" fill="none" opacity="0.11"/>
+  <circle cx="35"   cy="1065" r="145" stroke="#3030CF" stroke-width="0.7" fill="none" opacity="0.08"/>
+  <line x1="660" y1="1080" x2="1080" y2="660" stroke="#9F97B8"  stroke-width="0.8" opacity="0.13"/>
+  <line x1="715" y1="1080" x2="1080" y2="715" stroke="#9F97B8"  stroke-width="0.5" opacity="0.08"/>
+  <line x1="770" y1="1080" x2="1080" y2="770" stroke="#3030CF" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="862" cy="488" r="2.6" fill="#9F97B8"  opacity="0.32"/>
+  <circle cx="883" cy="462" r="1.9" fill="#9F97B8"  opacity="0.24"/>
+  <circle cx="843" cy="511" r="2.1" fill="#3030CF" opacity="0.22"/>
+  <circle cx="906" cy="475" r="1.6" fill="#9F97B8"  opacity="0.19"/>
+  <circle cx="874" cy="436" r="2.3" fill="#3030CF" opacity="0.19"/>
+  <circle cx="924" cy="493" r="1.5" fill="#9F97B8"  opacity="0.16"/>
+  <circle cx="915" cy="448" r="2.0" fill="#3030CF" opacity="0.15"/>
+  <circle cx="858" cy="533" r="1.5" fill="#9F97B8"  opacity="0.13"/>
+  <circle cx="945" cy="466" r="1.5" fill="#9F97B8"  opacity="0.13"/>
+  <circle cx="892" cy="519" r="1.8" fill="#3030CF" opacity="0.13"/>
+  <polygon points="542,40 547,35 552,40 547,45" fill="#9F97B8"  opacity="0.50"/>
+  <polygon points="562,40 565,37 568,40 565,43" fill="#3030CF" opacity="0.32"/>
+</svg>
+
+      <div class="top">
+        <span class="brand-tag">Industriālā alpīnisma pakalpojumi</span>
+        <span class="logo-txt">Industriālā alpīnisma pakalpojumi</span>
+      </div>
+
+      <div class="stat-wrap">
+        <div class="stat">20+ ēkas: lidosta, teātris, <em>noliktava.</em></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="content">
+        <div class="headline">Plānošana, uzstādīšana, pārbaudes.</div>
+        <div class="body-text">20+ realizēti objekti: slimnīcas, lidostas, Rimi noliktavas, teātri.<br>Petzl, Skylotec, Kong inventārs.<br>JP Solutions kļūst par jūsu drošības atbildīgo no pirmās dienas.</div>
+      </div>
+
+      <div class="chips">
+        <div class="chip">Inventārs no Petzl, Skylotec, Kong, Marlow.</div><div class="chip">Ikgadējās drošības pārbaudes saskaņā ar likumu.</div><div class="chip">20+ realizēti projekti dažādos objektos.</div>
+      </div>
+
+      <div class="cta-wrap"><div class="cta">Pieteikties konsultācijai</div></div>
+    </div>
+    <script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+    </body>
+    </html>

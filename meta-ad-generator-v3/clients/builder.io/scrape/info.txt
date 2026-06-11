@@ -1,0 +1,44 @@
+Source URL: https://builder.io
+Final URL: https://www.builder.io/
+Title: Builder.io: Collaborative Development Platform
+Brand name: Builder.io
+Language: en
+Location: unknown
+
+Company / basic information:
+Builder.io: Ship faster with less back-and-forth. Builder connects designers, PMs, and engineers to your real codebase and design system.
+
+Goal / purpose:
+Leverage roles to control permissions and access for everyone on the team
+
+Extended information from website pages:
+
+About / company:
+- Works with multiple teams across your company
+- Livestream: Stop Throwing Away Prototypes. Build With Your Real Components
+- Announcing Visual Copilot - Figma to production in half the time
+- Our mission is to visualize real software, so that anyone, from any team, with any skillset, can be part of the building process. We deliver this by pioneering a “plug and play” approach to visual development, empowering teams to collaborate and drive accelerated growth
+- Democratize software development, making it accessible to everyone, without compromise.
+- We are (mostly) headquartered in the San Francisco Bay Area, but have team members distributed across the world and are committed to operating digital-first. Join us.
+- At Builder.io, we have fun every day because we act on our values, believe in our mission, and feel supported as individuals. Our colleagues are a key reason we love our job. Join us!
+- We're actively hiring for specific roles, but we’d love to hear from any talented individuals who agree with our values and want to join us on our mission. Send us a note at jobs@builder.io ﻿
+
+What they do:
+- Two products to go from idea to production faster
+- Build apps and Uls from scratch, from Figma designs, or with any existing repo
+- Create, optimize, and publish on-brand content and experiences to any site or app.
+
+Mission / vision / goals:
+- Leverage roles to control permissions and access for everyone on the team
+- Control who can edit, review, and publish content with granular permission settings
+- Roles, permissions, and governance controls ensure the right people have the right access.
+
+Useful page text:
+- Livestream: Stop Throwing Away Prototypes. Build With Your Real Components
+- Announcing Visual Copilot - Figma to production in half the time
+- The collaborative workspace for code
+- Push your branch to Builder to offload design review, product refinement, and QA to the people who own it. One workspace, real code.
+- Every role on the product team builds and ships alongside AI agents. One workflow, zero handoffs.
+- AI that builds on your real codebase, design system, and tech stack. Production-ready from the start.
+- Engineers approve every change before it ships. Guardrails and structured review are built into the workflow.
+- Your whole team ships production-ready code

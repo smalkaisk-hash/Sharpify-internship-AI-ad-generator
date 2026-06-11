@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#111111}
+
+/* SVG knockout zone — top 520px */
+.ko-svg{position:absolute;top:0;left:0;z-index:1;
+  filter:drop-shadow(0 16px 56px rgba(0,0,0,0.40))}
+
+/* dark scrim at top so logo reads over the photo-through-B area */
+.ko-top-scrim{position:absolute;top:0;left:0;right:0;height:160px;z-index:2;
+  background:linear-gradient(180deg,rgba(17,17,17,0.88) 0%,rgba(17,17,17,0.40) 60%,transparent 100%)}
+
+/* thin pink line separating knockout from content */
+.ko-line{position:absolute;top:520px;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent 0%,#E5007E 20%,#E5007E 80%,transparent 100%);
+  z-index:3}
+
+/* logo — centered at top, on the same axis as B and content */
+.logo-zone{position:absolute;top:36px;left:0;right:0;display:flex;justify-content:center;z-index:20}
+.logo-zone img{height:116px;max-width:300px;width:auto;object-fit:contain;
+  filter:drop-shadow(0 1px 8px rgba(0,0,0,0.80))}
+
+/* content zone below the knockout */
+.content{position:absolute;top:540px;left:0;right:0;bottom:0;
+  display:flex;flex-direction:column;
+  padding:20px 80px 160px 80px;z-index:10}
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:rgba(229,0,126,0.72);margin-bottom:12px;flex-shrink:0;text-align:center}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:76px;font-weight:800;
+  color:#FFFFFF;line-height:0.90;text-transform:uppercase;letter-spacing:-0.01em;
+  margin-bottom:18px;flex-shrink:0;text-align:center}
+.hd em{color:#E5007E;font-style:normal}
+.rule{height:1px;width:200px;background:#E5007E55;margin:0 auto 18px;flex-shrink:0}
+.bullets-grid{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0;justify-content:center}
+.bullet{width:calc(50% - 5px);display:flex;align-items:flex-start;gap:9px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;
+  line-height:1.26;color:rgba(255,255,255,0.82)}
+.spacer{flex:1;min-height:0}
+.cta{display:block;align-self:center;flex-shrink:0;
+  background:#E5007E;color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;
+  padding:22px 56px;border-radius:8px;letter-spacing:0.03em;text-align:center}
+
+/* bullet-style-start */
+.benefit,.brow{border-left:5px solid #E5007E;border-radius:0;padding:9px 16px;gap:12px;background:transparent;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</head>
+<body>
+<div class="ad">
+  <!-- SVG knockout: photo visible only through the letter "B" -->
+  <svg class="ko-svg" width="1080" height="520" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="ko-clip">
+        <text x="540" y="488"
+              font-family="'Barlow Condensed', Impact, sans-serif"
+              font-size="580" font-weight="900"
+              text-anchor="middle">B</text>
+      </clipPath>
+    </defs>
+    <image clip-path="url(#ko-clip)"
+           href="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-4.jpg"
+           x="-80" y="0" width="1240" height="600"
+           preserveAspectRatio="xMidYMid slice"/>
+  </svg>
+  <div class="ko-top-scrim"></div>
+  <div class="ko-line"></div>
+  <div class="logo-zone">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode">
+  </div>
+  <div class="content">
+    <div class="eyebrow">Ceļojumu Bode</div>
+    <div class="hd">Turcijā vasarā.<br><em>Bez</em> iekrājumiem.</div>
+    <div class="rule"></div>
+    <div class="bullets-grid">
+      <div class="bullet"><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+      <div class="bullet"><span class="btext">Bezprocentu nomaksa.</span></div>
+      <div class="bullet"><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+      <div class="bullet"><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+    </div>
+    <div class="spacer"></div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+</div>
+</body>
+</html>

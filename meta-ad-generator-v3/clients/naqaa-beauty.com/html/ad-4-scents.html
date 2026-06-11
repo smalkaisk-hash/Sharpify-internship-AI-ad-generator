@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; display:flex; position:relative; overflow:hidden; }
+
+.left { flex:1; position:relative; overflow:hidden; }
+.left img { width:100%; height:100%; object-fit:cover; object-position:50% 20%; }
+.fade {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, transparent 42%, rgba(233,217,200,0.62) 68%, rgba(233,217,200,0.96) 85%, #E9D9C8 100%);
+}
+
+.right {
+  width:520px; flex-shrink:0;
+  background:#E9D9C8;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px;
+  position:relative; z-index:2;
+}
+
+.logo-zone { align-self:flex-start; }
+.spacer { flex:1; }
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#BC6C54; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:14px;
+}
+.headline {
+  font-family:'Playfair Display', serif; font-size:60px; font-weight:400; font-style:italic;
+  line-height:0.96; color:#3E4C54; margin-bottom:20px;
+}
+.rule { height:1px; background:rgba(62,76,84,0.18); margin-bottom:22px; }
+
+.scents {
+  display:grid; grid-template-columns:1fr 1fr; gap:10px;
+  margin-bottom:24px;
+}
+.scent {
+  background:#fff; border:1px solid rgba(166,132,78,0.35);
+  border-radius:8px; padding:14px 16px;
+  display:flex; flex-direction:column; gap:4px;
+}
+.scent-name {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#3E4C54; letter-spacing:0.04em;
+}
+.scent-mood {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:300;
+  color:rgba(62,76,84,0.55);
+}
+.body {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:300;
+  color:rgba(62,76,84,0.65); line-height:1.55; margin-bottom:24px;
+}
+.spacer2 { height:20px; flex-shrink:0; }
+.cta {
+  display:block; background:#3E4C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:24px 24px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{border-left:5px solid #9B9F91;border-radius:0;padding:9px 16px;gap:12px;background:transparent;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="left">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/006-3-lietas-kas-p-rv-r-du-u-par-spa-1.-labs-dens-2.-arom-ts-3.-klusums-10-min-tes-s.png" alt="">
+    <div class="fade"></div>
+  </div>
+  <div class="right">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">4 aromāti. 1 filtrs.</div>
+    <div class="headline">Izvēlies savu ikdienas ritmu.</div>
+    <div class="rule"></div>
+    <div class="scents">
+      <div class="scent"><span class="scent-name">Precious Rose</span><span class="scent-mood">vakara relakss</span></div>
+      <div class="scent"><span class="scent-name">Mango Rain</span><span class="scent-mood">enerģija no rīta</span></div>
+      <div class="scent"><span class="scent-name">Lavender Meadows</span><span class="scent-mood">miers</span></div>
+      <div class="scent"><span class="scent-name">Amberwood</span><span class="scent-mood">spa vibe</span></div>
+    </div>
+    <div class="body">Mitrināšana un relaksācija katrā dušā. Videi draudzīgs un bez ķimikālijām.</div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

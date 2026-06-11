@@ -1,0 +1,8 @@
+Builder.io is a visual development platform / headless CMS that lets developers and marketers build, optimize, and publish web experiences without bottlenecks.
+
+Target audience: Developers, product teams, and marketing teams at mid-size to enterprise companies who want to ship faster.
+Key products: Visual editor for React/Next.js/etc., AI-powered design-to-code, headless CMS, A/B testing, personalization.
+Tone: Modern, developer-friendly, confident, performance-focused.
+Language: English.
+Goal: Drive signups / demo requests via Meta (Facebook/Instagram) ads.
+Key benefits: Ship 10x faster, no-code page building for marketers, AI design-to-code, works with any tech stack, enterprise-grade.

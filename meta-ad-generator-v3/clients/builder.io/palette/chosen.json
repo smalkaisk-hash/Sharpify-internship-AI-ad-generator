@@ -1,0 +1,19 @@
+{
+  "name": "Builder Dark Tech",
+  "theme": "Dark",
+  "use_for": "developer platform, B2B SaaS, tech, AI tools",
+  "swatches": {
+    "base": "#0D0D12",
+    "second_tone": "#1A1A2A",
+    "accents": [
+      "#6C47FF",
+      "#9B7AFF",
+      "#FFFFFF"
+    ],
+    "text_cta_bg": "#6C47FF",
+    "body_text": "#A8A8B8",
+    "cta_text": "#FFFFFF"
+  },
+  "contrast_rating": "✓",
+  "note": "Custom palette — Builder.io brand colors (dark + purple accent)"
+}

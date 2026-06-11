@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Requirements as angled tape strips — each strip slightly rotated for visual tension -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0C1422}
+
+.photo{position:absolute;inset:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:48% 18%;filter:contrast(1.18) brightness(0.40) saturate(0.48)}
+.fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,20,34,0.08) 0%,rgba(12,20,34,0.50) 32%,rgba(12,20,34,0.88) 58%,rgba(12,20,34,0.98) 78%)}
+
+/* === UI === */
+.ui{position:absolute;inset:0;z-index:10;display:flex;flex-direction:column;padding:46px 0 0}
+
+.logo-row{padding:0 58px;flex-shrink:0}
+.logo{height:70px;max-width:178px;width:auto;display:block;object-fit:contain}
+
+.spacer{flex:1}
+
+/* Title block — padded */
+.title-zone{padding:0 58px 22px;flex-shrink:0}
+.eyebrow{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#F5C200;letter-spacing:0.24em;text-transform:uppercase;margin-bottom:12px}
+.job-hd{font-family:'Barlow Condensed',sans-serif;font-size:104px;font-weight:900;line-height:0.84;letter-spacing:0.01em;text-transform:uppercase;color:#FFFFFF}
+
+/* === ANGLED TAPE STRIPS === */
+/* Overflow hidden so rotated strips don't cause scrollbars */
+.tape-zone{width:100%;overflow:hidden;flex-shrink:0;display:flex;flex-direction:column;gap:7px}
+
+.tape{
+  /* Wider than canvas + offset so rotation keeps edges off-screen */
+  width:112%;
+  margin-left:-6%;
+  padding:17px 64px 17px 68px;
+  display:flex;align-items:center;gap:18px;
+  background:#1C2D4A;
+  transform-origin:left center;
+}
+.tape:nth-child(1){transform:rotate(-1.5deg)}
+.tape:nth-child(2){transform:rotate(0.9deg)}
+.tape:nth-child(3){transform:rotate(-1.2deg)}
+/* Last tape yellow — pops as CTA emphasis */
+.tape:nth-child(4){background:#F5C200;transform:rotate(0.7deg)}
+
+/* Checkmark box */
+.check{width:28px;height:28px;flex-shrink:0;background:rgba(53,88,170,0.75);border-radius:3px;display:flex;align-items:center;justify-content:center;color:#FFFFFF}
+.tape:nth-child(4) .check{background:rgba(28,45,74,0.22);color:#1C2D4A}
+
+.tape-text{
+  font-family:'Inter',sans-serif;font-size:22px;font-weight:800;
+  color:#FFFFFF;text-transform:uppercase;letter-spacing:0.03em;line-height:1.2;
+}
+.tape:nth-child(4) .tape-text{color:#1C2D4A}
+
+/* CTA */
+.cta-zone{padding:22px 58px 54px;flex-shrink:0}
+.cta{display:block;background:#3558AA;color:#FFFFFF;font-family:'Inter',sans-serif;font-size:22px;font-weight:800;padding:22px;border-radius:6px;text-align:center;letter-spacing:0.06em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated-social-proof-1.jpg" alt=""></div>
+  <div class="fade"></div>
+  <div class="ui">
+    <div class="logo-row">
+      <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+    </div>
+    <div class="spacer"></div>
+    <div class="title-zone">
+      <div class="eyebrow">Meklējam komandā</div>
+      <div class="job-hd">Apdares darbu<br>strādnieks</div>
+    </div>
+    <div class="tape-zone">
+      <div class="tape"><div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2v-4l3-6h12l3 6v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M2 9h20"/></svg></div><span class="tape-text">B kategorijas tiesības</span></div>
+      <div class="tape"><div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><span class="tape-text">Latviešu valoda</span></div>
+      <div class="tape"><div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><span class="tape-text">Fiziskā izturība</span></div>
+      <div class="tape"><div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><span class="tape-text">Atbildīga attieksme</span></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="cta-zone">
+      <div class="cta">Piesakies darbam →</div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

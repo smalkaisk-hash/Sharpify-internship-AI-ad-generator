@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0B0F17; }
+
+/* Photo — full brightness on right half, dark panel on left covers text area */
+.photo { position:absolute; inset:0; z-index:0; }
+.photo img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:62% 35%;
+  filter:brightness(0.90) saturate(0.92);
+}
+
+/* Dark gradient covers ONLY the left content zone; right side photo is fully visible */
+.overlay-l {
+  position:absolute; inset:0; z-index:2;
+  background:linear-gradient(90deg,
+    rgba(11,15,23,0.94) 0%, rgba(11,15,23,0.88) 30%,
+    rgba(11,15,23,0.52) 52%, rgba(11,15,23,0.10) 68%, transparent 82%);
+}
+/* Subtle bottom anchor */
+.overlay-b {
+  position:absolute; inset:0; z-index:2;
+  background:linear-gradient(180deg, transparent 60%, rgba(11,15,23,0.45) 100%);
+}
+
+/* Thin amber vertical line — acts as a visual divider at content right edge */
+.accent-line {
+  position:absolute; left:680px; top:80px; bottom:80px; width:1px; z-index:5;
+  background:linear-gradient(180deg,
+    transparent 0%, rgba(200,169,110,0.32) 18%,
+    rgba(200,169,110,0.32) 82%, transparent 100%);
+}
+
+/* Logo top-left */
+.logo-zone { position:absolute; top:52px; left:60px; z-index:10; }
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.45); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+/* Tag top-right */
+.tag {
+  position:absolute; top:64px; right:60px; z-index:10;
+  font-family:'Raleway', sans-serif; font-size:13px; font-weight:500;
+  color:rgba(242,240,236,0.80); letter-spacing:0.22em; text-transform:uppercase;
+  display:flex; align-items:center; gap:8px;
+  filter:drop-shadow(0 1px 6px rgba(0,0,0,0.80));
+}
+.tag-dot { width:5px; height:5px; background:#C8A96E; border-radius:50%; }
+
+/* Main content — bottom-left, stops before the accent line */
+.content {
+  position:absolute; bottom:52px; left:60px; right:400px; z-index:10;
+}
+
+/* Amber deco bar above eyebrow */
+.deco-bar {
+  width:52px; height:4px; background:#C8A96E; margin-bottom:28px;
+}
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.24em; text-transform:uppercase; margin-bottom:16px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:96px; font-weight:700;
+  line-height:0.88; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:26px;
+}
+.rule {
+  height:1px; width:220px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.55) 0%, transparent 100%);
+  margin-bottom:22px;
+}
+.sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.55); line-height:1.40; margin-bottom:36px;
+}
+.cta {
+  display:inline-block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 48px; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{border:2px solid #C8A96E;border-radius:28px;padding:10px 18px;gap:12px;box-shadow:0 0 18px rgba(200,169,110,0.55),inset 0 0 8px rgba(200,169,110,0.08);background:rgba(255,255,255,0.05);}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#C8A96E;fill:#C8A96E;}
+.bdot{background:#C8A96E;box-shadow:0 0 8px rgba(200,169,110,0.55);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/assets/imgi_10_photo-3.jpg" alt="">
+  </div>
+  <div class="overlay-l"></div>
+  <div class="overlay-b"></div>
+  <div class="accent-line"></div>
+
+  <div class="logo-zone">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+  </div>
+  <div class="content">
+    <div class="deco-bar"></div>
+    <div class="eyebrow">Priekšnoma atvērta</div>
+    <div class="headline">Rezervē vietu<br>pirms citiem<br>to izdara.</div>
+    <div class="rule"></div>
+    <div class="sub">Labākās telpas aiziet pirmās.<br>Atklāšana — 2027. gadā.</div>
+    <div class="cta">Rezervēt tikšanos</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

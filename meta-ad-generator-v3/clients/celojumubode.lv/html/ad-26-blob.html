@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none;}
+.ad{
+  width:1080px;height:1080px;
+  background:#1E0B16;
+  font-family:'Inter',sans-serif;
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+/* decorative echo ring — same shape as blob, offset behind */
+.ring{
+  position:absolute;
+  right:-88px;top:62px;
+  width:700px;height:900px;
+  border-radius:350px 440px 340px 420px / 380px 420px 360px 400px;
+  border:2px solid rgba(229,0,126,0.38);
+  pointer-events:none;
+}
+/* outer subtle glow ring */
+.ring2{
+  position:absolute;
+  right:-118px;top:40px;
+  width:740px;height:940px;
+  border-radius:370px 460px 360px 440px / 400px 440px 380px 420px;
+  border:1px solid rgba(229,0,126,0.15);
+  pointer-events:none;
+}
+.photo-blob{
+  position:absolute;
+  right:-70px;top:80px;
+  width:660px;height:860px;
+  overflow:hidden;
+  border-radius:330px 420px 320px 400px / 360px 400px 340px 380px;
+}
+.photo-blob img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:50% 12%;
+}
+/* left content panel */
+.content{
+  position:relative;z-index:2;
+  width:500px;height:100%;
+  display:flex;flex-direction:column;
+  padding:48px 24px 48px 48px;
+}
+.logo img{height:116px;max-width:360px;object-fit:contain;}
+.spacer{flex:1;}
+.hd-wrap{padding-bottom:28px;}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:86px;line-height:0.98;
+  color:#FFFFFF;text-transform:uppercase;
+  hyphens:none;-webkit-hyphens:none;
+}
+.hd em{color:#E5007E;font-style:normal;}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px;}
+/* frosted-card */
+.benefit,.brow{display:flex;align-items:center;background:rgba(255,255,255,0.13);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.22);border-radius:14px;padding:11px 14px;gap:10px;}
+.btext{color:#ffffff;font-size:22px;font-weight:600;line-height:1.2;}
+.bicon{width:28px;height:28px;flex-shrink:0;}
+.bicon svg{color:#E5007E;fill:#E5007E;width:28px;height:28px;}
+.spacer2{height:28px;}
+.cta{
+  display:inline-block;background:#E5007E;color:#fff;
+  font-size:24px;font-weight:700;padding:22px 40px;
+  border-radius:50px;text-align:center;width:fit-content;
+  letter-spacing:0.02em;
+}
+/* bullet-style-start */
+.benefit,.brow{background:rgba(255,255,255,0.13);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.22);border-radius:14px;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{background:rgba(255,255,255,0.6);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="ring2"></div>
+  <div class="ring"></div>
+  <div class="photo-blob">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-1.jpg" alt="">
+  </div>
+  <div class="content">
+    <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt=""></div>
+    <div class="spacer"></div>
+    <div class="hd-wrap">
+      <div class="hd">Turcijā<br>vasarā.<br><em>Bez iekrājumiem.</em></div>
+    </div>
+    <div class="benefits">
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#E5007E"/></svg>
+        <span class="btext">50+ valstis un galamērķi</span>
+      </div>
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="#E5007E"/></svg>
+        <span class="btext">Bezprocentu nomaksa</span>
+      </div>
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="#E5007E"/></svg>
+        <span class="btext">Naudas atmaksas garantija</span>
+      </div>
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M21 6.5l-4-4-8.5 8.5-2 4 4-2L21 6.5zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z" fill="#E5007E"/></svg>
+        <span class="btext">Lidojums + viesnīca + transfērs</span>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Rezervēt ceļojumu</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

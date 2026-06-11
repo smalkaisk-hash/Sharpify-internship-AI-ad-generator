@@ -1,0 +1,17 @@
+Client: Ceļojumu Bode
+Website: https://www.celojumubode.lv/lv/
+Source URL: https://www.celojumubode.lv/lv/
+Language: lv
+Location: unknown
+Primary logo for palette: C:\Users\User\Meta-ad-generator-v2\meta-ad-generator-v3\clients\celojumubode.lv\scrape\logo\001-ce-ojumu-bode.png
+
+Scraped assets:
+- Logos: 4 files in logo/
+- Product images: 0 files in product_images/
+- Other images: 87 files in other_images/
+- Colors: accent_colors.txt
+- Page and image URLs: scraped_urls.txt
+- Full structured data: manifest.json
+
+Chat context:
+This brand was scraped by the Meta Ad Generator pipeline. The scrape output sits under clients/<domain>/scrape/ and is consumed by the copy and palette stages. See info.txt for human-readable summary, manifest.json for structured data, accent_colors.txt for the extracted color palette.

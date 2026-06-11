@@ -1,0 +1,912 @@
+{
+  "source_url": "https://builder.io",
+  "final_url": "https://www.builder.io/",
+  "title": "Builder.io: Collaborative Development Platform",
+  "brand_name": "Builder.io",
+  "language": "en",
+  "location": "unknown",
+  "company_summary": "Builder.io: Ship faster with less back-and-forth. Builder connects designers, PMs, and engineers to your real codebase and design system.",
+  "goal_summary": "Leverage roles to control permissions and access for everyone on the team",
+  "primary_logo_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\001-builder.io.svg",
+  "text_sections": {
+    "About / company": [
+      "Works with multiple teams across your company",
+      "Livestream: Stop Throwing Away Prototypes. Build With Your Real Components",
+      "Announcing Visual Copilot - Figma to production in half the time",
+      "Our mission is to visualize real software, so that anyone, from any team, with any skillset, can be part of the building process. We deliver this by pioneering a “plug and play” approach to visual development, empowering teams to collaborate and drive accelerated growth",
+      "Democratize software development, making it accessible to everyone, without compromise.",
+      "We are (mostly) headquartered in the San Francisco Bay Area, but have team members distributed across the world and are committed to operating digital-first. Join us.",
+      "At Builder.io, we have fun every day because we act on our values, believe in our mission, and feel supported as individuals. Our colleagues are a key reason we love our job. Join us!",
+      "We're actively hiring for specific roles, but we’d love to hear from any talented individuals who agree with our values and want to join us on our mission. Send us a note at jobs@builder.io ﻿"
+    ],
+    "What they do": [
+      "Two products to go from idea to production faster",
+      "Build apps and Uls from scratch, from Figma designs, or with any existing repo",
+      "Create, optimize, and publish on-brand content and experiences to any site or app."
+    ],
+    "Mission / vision / goals": [
+      "Leverage roles to control permissions and access for everyone on the team",
+      "Control who can edit, review, and publish content with granular permission settings",
+      "Roles, permissions, and governance controls ensure the right people have the right access."
+    ],
+    "Useful page text": [
+      "Livestream: Stop Throwing Away Prototypes. Build With Your Real Components",
+      "Announcing Visual Copilot - Figma to production in half the time",
+      "The collaborative workspace for code",
+      "Push your branch to Builder to offload design review, product refinement, and QA to the people who own it. One workspace, real code.",
+      "Every role on the product team builds and ships alongside AI agents. One workflow, zero handoffs.",
+      "AI that builds on your real codebase, design system, and tech stack. Production-ready from the start.",
+      "Engineers approve every change before it ships. Guardrails and structured review are built into the workflow.",
+      "Your whole team ships production-ready code"
+    ]
+  },
+  "scraped_pages": [
+    "https://www.builder.io/",
+    "https://www.builder.io/m/about-us",
+    "https://www.builder.io/fusion",
+    "https://www.builder.io/publish",
+    "https://www.builder.io/engineering-teams",
+    "https://www.builder.io/design-teams",
+    "https://www.builder.io/product-teams",
+    "https://www.builder.io/content-teams",
+    "https://www.builder.io/web-apps",
+    "https://www.builder.io/prototypes",
+    "https://www.builder.io/m/design-to-code",
+    "https://www.builder.io/landing-pages"
+  ],
+  "accent_colors": [],
+  "logos": [
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F161de41f092049efbe21d4a438c23505?width=120",
+      "label": "Builder.io",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\001-builder.io.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6a94bfbccd24ec8b4db085cd475b7eb?width=150",
+      "label": "Builder.io logo",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\002-builder.io-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F161de41f092049efbe21d4a438c23505",
+      "label": "Builder.io",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 184,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\003-builder.io.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6a94bfbccd24ec8b4db085cd475b7eb",
+      "label": "Builder.io logo",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 184,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\004-builder.io-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/pixel?apiKey=YJIGb4i01jvw0SRdL5Bt",
+      "label": "pixel",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\005-pixel.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\006-assets-2fyjigb4i01jvw0srdl5bt-2ff5e3e75d42514b2b83294dca8f6221d3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\007-assets-2fyjigb4i01jvw0srdl5bt-2ff5e3e75d42514b2b83294dca8f6221d3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\008-assets-2fyjigb4i01jvw0srdl5bt-2fe6b30636e5784647a7f4c24c80ec31a5.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\009-assets-2fyjigb4i01jvw0srdl5bt-2f0a835884ae304f209fefac009be54b64.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\010-assets-2fyjigb4i01jvw0srdl5bt-2f0a835884ae304f209fefac009be54b64.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\011-assets-2fyjigb4i01jvw0srdl5bt-2f7a2bf8e06a424f2d9a86a6d5e19f1844.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\logo\\012-assets-2fyjigb4i01jvw0srdl5bt-2f7a2bf8e06a424f2d9a86a6d5e19f1844.svg"
+    }
+  ],
+  "product_images": [
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F297bdcf0f4134370906a4ffe7f8d2bd6",
+      "label": "GitHub",
+      "source": "img",
+      "kind": "product",
+      "score": 45,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\product_images\\001-github.png"
+    }
+  ],
+  "other_images": [
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F161de41f092049efbe21d4a438c23505?width=120",
+      "label": "Builder.io",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\001-builder.io.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6a94bfbccd24ec8b4db085cd475b7eb?width=150",
+      "label": "Builder.io logo",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\002-builder.io-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F161de41f092049efbe21d4a438c23505",
+      "label": "Builder.io",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 184,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\003-builder.io.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6a94bfbccd24ec8b4db085cd475b7eb",
+      "label": "Builder.io logo",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 184,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\004-builder.io-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/pixel?apiKey=YJIGb4i01jvw0SRdL5Bt",
+      "label": "pixel",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\005-pixel.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\006-assets-2fyjigb4i01jvw0srdl5bt-2ff5e3e75d42514b2b83294dca8f6221d3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\007-assets-2fyjigb4i01jvw0srdl5bt-2ff5e3e75d42514b2b83294dca8f6221d3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\008-assets-2fyjigb4i01jvw0srdl5bt-2fe6b30636e5784647a7f4c24c80ec31a5.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\009-assets-2fyjigb4i01jvw0srdl5bt-2f0a835884ae304f209fefac009be54b64.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0a835884ae304f209fefac009be54b64",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\010-assets-2fyjigb4i01jvw0srdl5bt-2f0a835884ae304f209fefac009be54b64.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\011-assets-2fyjigb4i01jvw0srdl5bt-2f7a2bf8e06a424f2d9a86a6d5e19f1844.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7a2bf8e06a424f2d9a86a6d5e19f1844",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\012-assets-2fyjigb4i01jvw0srdl5bt-2f7a2bf8e06a424f2d9a86a6d5e19f1844.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F9087ad2883ab401cb5a843b119bd6bc6",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F9087ad2883ab401cb5a843b119bd6bc6",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\013-assets-2fyjigb4i01jvw0srdl5bt-2f9087ad2883ab401cb5a843b119bd6bc6.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F9087ad2883ab401cb5a843b119bd6bc6?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F9087ad2883ab401cb5a843b119bd6bc6",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\014-assets-2fyjigb4i01jvw0srdl5bt-2f9087ad2883ab401cb5a843b119bd6bc6.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa1d8a923db5c4f99925ad1d58f29302a",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa1d8a923db5c4f99925ad1d58f29302a",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\015-assets-2fyjigb4i01jvw0srdl5bt-2fa1d8a923db5c4f99925ad1d58f29302a.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa1d8a923db5c4f99925ad1d58f29302a?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa1d8a923db5c4f99925ad1d58f29302a",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\016-assets-2fyjigb4i01jvw0srdl5bt-2fa1d8a923db5c4f99925ad1d58f29302a.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Faf4dc755927c4e20a2dd9266af71ed42",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Faf4dc755927c4e20a2dd9266af71ed42",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\017-assets-2fyjigb4i01jvw0srdl5bt-2faf4dc755927c4e20a2dd9266af71ed42.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Faf4dc755927c4e20a2dd9266af71ed42?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Faf4dc755927c4e20a2dd9266af71ed42",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\018-assets-2fyjigb4i01jvw0srdl5bt-2faf4dc755927c4e20a2dd9266af71ed42.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F37a6a8353dc64c45bfca586e452ebdba",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F37a6a8353dc64c45bfca586e452ebdba",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\019-assets-2fyjigb4i01jvw0srdl5bt-2f37a6a8353dc64c45bfca586e452ebdba.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F37a6a8353dc64c45bfca586e452ebdba?width=27",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F37a6a8353dc64c45bfca586e452ebdba",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\020-assets-2fyjigb4i01jvw0srdl5bt-2f37a6a8353dc64c45bfca586e452ebdba.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\021-assets-2fyjigb4i01jvw0srdl5bt-2fa465024323f34ea698c3959390c4feca.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\022-assets-2fyjigb4i01jvw0srdl5bt-2fa465024323f34ea698c3959390c4feca.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd9dbdb51f0e64ae4aba1696d7d2de922",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd9dbdb51f0e64ae4aba1696d7d2de922",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\023-assets-2fyjigb4i01jvw0srdl5bt-2fd9dbdb51f0e64ae4aba1696d7d2de922.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd9dbdb51f0e64ae4aba1696d7d2de922?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd9dbdb51f0e64ae4aba1696d7d2de922",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\024-assets-2fyjigb4i01jvw0srdl5bt-2fd9dbdb51f0e64ae4aba1696d7d2de922.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8bd7f0a776d24f1594f3b1ee895b6340",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8bd7f0a776d24f1594f3b1ee895b6340",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\025-assets-2fyjigb4i01jvw0srdl5bt-2f8bd7f0a776d24f1594f3b1ee895b6340.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8bd7f0a776d24f1594f3b1ee895b6340?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8bd7f0a776d24f1594f3b1ee895b6340",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\026-assets-2fyjigb4i01jvw0srdl5bt-2f8bd7f0a776d24f1594f3b1ee895b6340.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fdc6e3c21cd8340599163206d38b45169",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fdc6e3c21cd8340599163206d38b45169",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\027-assets-2fyjigb4i01jvw0srdl5bt-2fdc6e3c21cd8340599163206d38b45169.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd708cd82be89444998de6bd36d5f830b?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd708cd82be89444998de6bd36d5f830b",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\028-assets-2fyjigb4i01jvw0srdl5bt-2fd708cd82be89444998de6bd36d5f830b.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F3566df6cb6c644828cc01c2506aaa061",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F3566df6cb6c644828cc01c2506aaa061",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\029-assets-2fyjigb4i01jvw0srdl5bt-2f3566df6cb6c644828cc01c2506aaa061.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0d009d18666a4396bc3bc27d6b673481?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0d009d18666a4396bc3bc27d6b673481",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\030-assets-2fyjigb4i01jvw0srdl5bt-2f0d009d18666a4396bc3bc27d6b673481.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fde6eac9ccbff47c1962271aa375d64c3",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fde6eac9ccbff47c1962271aa375d64c3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\031-assets-2fyjigb4i01jvw0srdl5bt-2fde6eac9ccbff47c1962271aa375d64c3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4f38752f398e4eeab12bdc38b7fe052a?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F4f38752f398e4eeab12bdc38b7fe052a",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\032-assets-2fyjigb4i01jvw0srdl5bt-2f4f38752f398e4eeab12bdc38b7fe052a.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F95c3f999a2564758a0d476a785a1203c",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F95c3f999a2564758a0d476a785a1203c",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\033-assets-2fyjigb4i01jvw0srdl5bt-2f95c3f999a2564758a0d476a785a1203c.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F32a5ba08523c466e9f2e0fc7bdd1d6f3?width=25",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F32a5ba08523c466e9f2e0fc7bdd1d6f3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\034-assets-2fyjigb4i01jvw0srdl5bt-2f32a5ba08523c466e9f2e0fc7bdd1d6f3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fce338186c7ed402ca4a88fd89c76eb7f?width=13",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fce338186c7ed402ca4a88fd89c76eb7f",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\035-assets-2fyjigb4i01jvw0srdl5bt-2fce338186c7ed402ca4a88fd89c76eb7f.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F94b0367f83cc4dec9a394263d6c77ee2",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F94b0367f83cc4dec9a394263d6c77ee2",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\036-assets-2fyjigb4i01jvw0srdl5bt-2f94b0367f83cc4dec9a394263d6c77ee2.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F94b0367f83cc4dec9a394263d6c77ee2?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F94b0367f83cc4dec9a394263d6c77ee2",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\037-assets-2fyjigb4i01jvw0srdl5bt-2f94b0367f83cc4dec9a394263d6c77ee2.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa5b1dd890f9b4abb8b8c9e971283ee00",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa5b1dd890f9b4abb8b8c9e971283ee00",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\038-assets-2fyjigb4i01jvw0srdl5bt-2fa5b1dd890f9b4abb8b8c9e971283ee00.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa5b1dd890f9b4abb8b8c9e971283ee00?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa5b1dd890f9b4abb8b8c9e971283ee00",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\039-assets-2fyjigb4i01jvw0srdl5bt-2fa5b1dd890f9b4abb8b8c9e971283ee00.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0fdc5beeaf7e4d4faf2392cc659b3452",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0fdc5beeaf7e4d4faf2392cc659b3452",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\040-assets-2fyjigb4i01jvw0srdl5bt-2f0fdc5beeaf7e4d4faf2392cc659b3452.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0fdc5beeaf7e4d4faf2392cc659b3452?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0fdc5beeaf7e4d4faf2392cc659b3452",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\041-assets-2fyjigb4i01jvw0srdl5bt-2f0fdc5beeaf7e4d4faf2392cc659b3452.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F168f93ae6eac4271b9e64ca5143d4852",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F168f93ae6eac4271b9e64ca5143d4852",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\042-assets-2fyjigb4i01jvw0srdl5bt-2f168f93ae6eac4271b9e64ca5143d4852.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F168f93ae6eac4271b9e64ca5143d4852?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F168f93ae6eac4271b9e64ca5143d4852",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\043-assets-2fyjigb4i01jvw0srdl5bt-2f168f93ae6eac4271b9e64ca5143d4852.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F218b9df51b3f46e3a79bf5738f0b8e38",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F218b9df51b3f46e3a79bf5738f0b8e38",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\044-assets-2fyjigb4i01jvw0srdl5bt-2f218b9df51b3f46e3a79bf5738f0b8e38.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F218b9df51b3f46e3a79bf5738f0b8e38?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F218b9df51b3f46e3a79bf5738f0b8e38",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\045-assets-2fyjigb4i01jvw0srdl5bt-2f218b9df51b3f46e3a79bf5738f0b8e38.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fafa9c1ed95724ff58b935d7ae3579611",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fafa9c1ed95724ff58b935d7ae3579611",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\046-assets-2fyjigb4i01jvw0srdl5bt-2fafa9c1ed95724ff58b935d7ae3579611.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fafa9c1ed95724ff58b935d7ae3579611?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fafa9c1ed95724ff58b935d7ae3579611",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\047-assets-2fyjigb4i01jvw0srdl5bt-2fafa9c1ed95724ff58b935d7ae3579611.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F3d291dba521b451aa8a4f1f7a5c8d656",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F3d291dba521b451aa8a4f1f7a5c8d656",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\048-assets-2fyjigb4i01jvw0srdl5bt-2f3d291dba521b451aa8a4f1f7a5c8d656.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F3d291dba521b451aa8a4f1f7a5c8d656?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F3d291dba521b451aa8a4f1f7a5c8d656",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\049-assets-2fyjigb4i01jvw0srdl5bt-2f3d291dba521b451aa8a4f1f7a5c8d656.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8fcb6aec5b2646fdbf75c516df7b4d83",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8fcb6aec5b2646fdbf75c516df7b4d83",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\050-assets-2fyjigb4i01jvw0srdl5bt-2f8fcb6aec5b2646fdbf75c516df7b4d83.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8fcb6aec5b2646fdbf75c516df7b4d83?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8fcb6aec5b2646fdbf75c516df7b4d83",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\051-assets-2fyjigb4i01jvw0srdl5bt-2f8fcb6aec5b2646fdbf75c516df7b4d83.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Ff5e3e75d42514b2b83294dca8f6221d3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\052-assets-2fyjigb4i01jvw0srdl5bt-2ff5e3e75d42514b2b83294dca8f6221d3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe6b30636e5784647a7f4c24c80ec31a5",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\053-assets-2fyjigb4i01jvw0srdl5bt-2fe6b30636e5784647a7f4c24c80ec31a5.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca?width=26",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa465024323f34ea698c3959390c4feca",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\054-assets-2fyjigb4i01jvw0srdl5bt-2fa465024323f34ea698c3959390c4feca.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7c6116f5feb743ef8faf92fdc20ef0e3?width=20",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7c6116f5feb743ef8faf92fdc20ef0e3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 140,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\055-assets-2fyjigb4i01jvw0srdl5bt-2f7c6116f5feb743ef8faf92fdc20ef0e3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd708cd82be89444998de6bd36d5f830b",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd708cd82be89444998de6bd36d5f830b",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\056-assets-2fyjigb4i01jvw0srdl5bt-2fd708cd82be89444998de6bd36d5f830b.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0d009d18666a4396bc3bc27d6b673481",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0d009d18666a4396bc3bc27d6b673481",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\057-assets-2fyjigb4i01jvw0srdl5bt-2f0d009d18666a4396bc3bc27d6b673481.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4f38752f398e4eeab12bdc38b7fe052a",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F4f38752f398e4eeab12bdc38b7fe052a",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\058-assets-2fyjigb4i01jvw0srdl5bt-2f4f38752f398e4eeab12bdc38b7fe052a.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F32a5ba08523c466e9f2e0fc7bdd1d6f3",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F32a5ba08523c466e9f2e0fc7bdd1d6f3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\059-assets-2fyjigb4i01jvw0srdl5bt-2f32a5ba08523c466e9f2e0fc7bdd1d6f3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fce338186c7ed402ca4a88fd89c76eb7f",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2Fce338186c7ed402ca4a88fd89c76eb7f",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\060-assets-2fyjigb4i01jvw0srdl5bt-2fce338186c7ed402ca4a88fd89c76eb7f.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7c6116f5feb743ef8faf92fdc20ef0e3",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F7c6116f5feb743ef8faf92fdc20ef0e3",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 139,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\061-assets-2fyjigb4i01jvw0srdl5bt-2f7c6116f5feb743ef8faf92fdc20ef0e3.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa127e576cef64bb28c528d86d0ea5088?width=100",
+      "label": "MeUndies logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\062-meundies-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F87066b08160a41ad8d3fff696afa9f6e?width=121",
+      "label": "Zapier logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\063-zapier-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fbbb291c08fec49768ad80a535e2a4dff?width=134",
+      "label": "Storyblocks logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\064-storyblocks-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F36cfb396d2b0480eb505e9b64a94ea65?width=200",
+      "label": "Anheuser-Busch logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\065-anheuser-busch-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F38ed071cebed4d14aba6570e72aaadad?width=104",
+      "label": "Harry's logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\066-harry-s-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8dd6c49b597e4006ac9bfc90119f9768?width=109",
+      "label": "PetLabCo logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\067-petlabco-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F38ed071cebed4d14aba6570e72aaadad",
+      "label": "Harry's logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\068-harry-s-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F36cfb396d2b0480eb505e9b64a94ea65",
+      "label": "Anheuser-Busch logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\069-anheuser-busch-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa127e576cef64bb28c528d86d0ea5088",
+      "label": "MeUndies logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\070-meundies-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F87066b08160a41ad8d3fff696afa9f6e",
+      "label": "Zapier logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\071-zapier-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fbbb291c08fec49768ad80a535e2a4dff",
+      "label": "Storyblocks logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\072-storyblocks-logo.svg"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8dd6c49b597e4006ac9bfc90119f9768",
+      "label": "PetLabCo logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 89,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\073-petlabco-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F36cfb396d2b0480eb505e9b64a94ea65?width=2000",
+      "label": "Anheuser-Busch logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 88,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\074-anheuser-busch-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F87066b08160a41ad8d3fff696afa9f6e?width=2000",
+      "label": "Zapier logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 88,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\075-zapier-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8dd6c49b597e4006ac9bfc90119f9768?width=2000",
+      "label": "PetLabCo logo",
+      "source": "img",
+      "kind": "logo",
+      "score": 88,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\076-petlabco-logo.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F470aa2bd45fb4ff5b77c91a394a957e6?width=240",
+      "label": "site-icon",
+      "source": "link",
+      "kind": "logo",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\077-site-icon.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe9b5e1b5cc5b49f193e8d3468c98b895?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\078-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2Fc5b47d20f6a943e485717e5895739988%2F0f577ade847144f6882d681d6eb24840?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\079-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F5316e1dd74c9438c876adeba36bdd779?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\080-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F01af792e87d64d25b39c6e7dd8ae5679?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\081-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F9c5dfdaf1b6a44078802ccea156150c9?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\082-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fc7c2b8e4b4c44890808f3721fd8dac7d?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\083-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F745d8dad3fe2460e945b190d839284df?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\084-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F51c35ee01c474ee5860cdada4ef4a01d?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\085-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F447d1166d2eb43c5b2168c3975df5ffe?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\086-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fed41bf251b32467f8d569180bd325a33?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\087-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F4b50dc8397fe49a38a05da626b5abc02?width=1200",
+      "label": "og:image",
+      "source": "meta",
+      "kind": "other",
+      "score": 55,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\088-og-image.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F297bdcf0f4134370906a4ffe7f8d2bd6",
+      "label": "GitHub",
+      "source": "img",
+      "kind": "product",
+      "score": 45,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\089-github.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8d07f68864a74d14bc512252706c2296?format=webp&width=2000",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8d07f68864a74d14bc512252706c2296",
+      "source": "source-srcset",
+      "kind": "other",
+      "score": 35,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\090-assets-2fyjigb4i01jvw0srdl5bt-2f8d07f68864a74d14bc512252706c2296.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8d07f68864a74d14bc512252706c2296?format=webp",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F8d07f68864a74d14bc512252706c2296",
+      "source": "source-srcset",
+      "kind": "other",
+      "score": 35,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\091-assets-2fyjigb4i01jvw0srdl5bt-2f8d07f68864a74d14bc512252706c2296.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0694a50a91064e0988d114ba01e13780?format=webp&width=2000",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0694a50a91064e0988d114ba01e13780",
+      "source": "source-srcset",
+      "kind": "other",
+      "score": 35,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\092-assets-2fyjigb4i01jvw0srdl5bt-2f0694a50a91064e0988d114ba01e13780.png"
+    },
+    {
+      "url": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F0694a50a91064e0988d114ba01e13780?format=webp",
+      "label": "assets%2FYJIGb4i01jvw0SRdL5Bt%2F0694a50a91064e0988d114ba01e13780",
+      "source": "source-srcset",
+      "kind": "other",
+      "score": 35,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\builder.io\\scrape\\other_images\\093-assets-2fyjigb4i01jvw0srdl5bt-2f0694a50a91064e0988d114ba01e13780.png"
+    }
+  ]
+}

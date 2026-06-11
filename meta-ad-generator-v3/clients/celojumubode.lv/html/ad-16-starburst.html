@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#1E1E1E}
+
+.photo{position:absolute;inset:0;z-index:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:65% 50%}
+
+.scrim{position:absolute;top:0;left:0;width:340px;height:340px;z-index:1;
+  background:radial-gradient(ellipse at top left,rgba(0,0,0,0.55) 0%,transparent 70%)}
+.grad{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,#1E1E1E 0%,rgba(20,20,20,0.92) 38%,rgba(20,20,20,0.64) 58%,transparent 100%)}
+
+.col{position:absolute;left:0;top:0;bottom:0;width:590px;
+  display:flex;flex-direction:column;padding:56px 52px 160px 64px;z-index:10}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{height:116px;max-width:360px;width:auto;object-fit:contain;filter:none}
+.spacer{flex:1;min-height:0}
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;color:rgba(229,0,126,0.90);
+  margin-bottom:14px;flex-shrink:0}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:68px;font-weight:800;
+  color:#FFFFFF;line-height:0.90;text-transform:uppercase;letter-spacing:-0.01em;
+  margin-bottom:22px;flex-shrink:0}
+.hd em{color:#E5007E;font-style:normal}
+.rule{height:1px;background:linear-gradient(90deg,rgba(229,0,126,0.50),transparent);
+  margin-bottom:18px;flex-shrink:0}
+.bullets-grid{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0}
+.bullet{width:calc(50% - 5px);display:flex;align-items:flex-start;gap:10px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;
+  line-height:1.26;color:rgba(255,255,255,0.84)}
+.spacer2{height:28px;flex-shrink:0}
+.cta{align-self:flex-start;flex-shrink:0;display:block;
+  background:#E5007E;color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;
+  padding:22px 44px;border-radius:8px;letter-spacing:0.03em}
+
+/* starburst badge */
+.burst-wrap{position:absolute;right:68px;bottom:220px;width:248px;height:248px;z-index:20}
+.burst{width:100%;height:100%;
+  clip-path:polygon(50% 0%,60% 27%,85% 15%,73% 40%,100% 50%,73% 60%,85% 85%,60% 73%,50% 100%,40% 73%,15% 85%,27% 60%,0% 50%,27% 40%,15% 15%,40% 27%);
+  background:#E5007E;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2px}
+.burst-num{font-family:'Barlow Condensed',sans-serif;font-size:64px;font-weight:900;
+  color:#FFFFFF;line-height:1;letter-spacing:-0.02em}
+.burst-lbl{font-family:'Raleway',sans-serif;font-size:15px;font-weight:600;
+  color:#FFFFFF;text-align:center;max-width:120px;line-height:1.2;padding:0 6px}
+
+/* bullet-style-start */
+.benefit,.brow{background:linear-gradient(105deg,#E5007E,#2A2A2A);border-radius:28px;padding:11px 20px;box-shadow:0 4px 18px rgba(229,0,126,0.55);gap:12px;}
+.btext{color:#fff;font-weight:600;}
+.bicon,.bicon svg{color:#fff;fill:#fff;}
+.bdot{background:rgba(255,255,255,0.65);}
+/* bullet-style-end */
+</style>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-9.jpg" alt=""></div>
+  <div class="scrim"></div>
+  <div class="grad"></div>
+  <div class="col">
+    <div class="logo-zone"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Vasaras ceļojumi</div>
+    <div class="hd">Turcijā vasarā.<br><em>Bez</em> iekrājumiem.</div>
+    <div class="rule"></div>
+    <div class="bullets-grid">
+      <div class="bullet"><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+      <div class="bullet"><span class="btext">Bezprocentu nomaksa.</span></div>
+      <div class="bullet"><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+      <div class="bullet"><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+  <div class="burst-wrap">
+    <div class="burst">
+      <span class="burst-num">4.9/5</span>
+      <span class="burst-lbl">Ceļotāji iesaka</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

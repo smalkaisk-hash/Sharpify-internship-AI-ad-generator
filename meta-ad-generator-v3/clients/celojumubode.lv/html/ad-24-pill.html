@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#F6F6F6}
+
+/* subtle tint bands */
+.bg-tint{position:absolute;inset:0;z-index:0;
+  background:linear-gradient(135deg,#F6F6F6 0%,#EDEDED 50%,#F6F6F6 100%)}
+
+/* tall pill photo frame — right side */
+.pill-ring{position:absolute;right:50px;top:60px;
+  width:436px;height:940px;border-radius:218px;
+  border:2.5px solid rgba(229,0,126,0.30);z-index:1}
+.pill-frame{position:absolute;right:68px;top:78px;
+  width:400px;height:904px;border-radius:200px;
+  overflow:hidden;z-index:2;
+  filter:drop-shadow(0 24px 64px rgba(0,0,0,0.15))}
+.pill-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+
+/* pink accent dots flanking pill */
+.pill-dot-top{position:absolute;right:265px;top:52px;
+  width:16px;height:16px;border-radius:50%;background:#E5007E;z-index:4}
+.pill-dot-bot{position:absolute;right:265px;bottom:52px;
+  width:16px;height:16px;border-radius:50%;background:#2A2A2A;z-index:4}
+
+/* text column — left */
+/* pill left CSS edge at x=1080-68-400=612; clearance from col 500px = 112px ✓ */
+.col{position:absolute;left:0;top:0;bottom:0;width:500px;
+  display:flex;flex-direction:column;padding:56px 44px 168px 64px;z-index:10}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{height:116px;max-width:340px;width:auto;object-fit:contain}
+.spacer{flex:1;min-height:0}
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;color:rgba(229,0,126,0.70);
+  margin-bottom:14px;flex-shrink:0}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:78px;font-weight:800;
+  color:#2A2A2A;line-height:0.90;text-transform:uppercase;letter-spacing:-0.01em;
+  margin-bottom:22px;flex-shrink:0}
+.hd em{color:#E5007E;font-style:normal}
+.rule{height:2px;background:linear-gradient(90deg,#E5007E,rgba(229,0,126,0.10));
+  margin-bottom:18px;flex-shrink:0}
+.bullets{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+.bullet{display:flex;align-items:flex-start;gap:10px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;
+  line-height:1.28;color:#2A2A2A}
+.col .btext{color:#2A2A2A}
+.spacer2{height:28px;flex-shrink:0}
+.cta{align-self:flex-start;flex-shrink:0;display:block;
+  background:#E5007E;color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;
+  padding:22px 48px;border-radius:8px;letter-spacing:0.03em}
+
+/* bullet-style-start */
+.benefit,.brow{background:rgba(229,0,126,0.14);border-left:5px solid #E5007E;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</head>
+<body>
+<div class="ad">
+  <div class="bg-tint"></div>
+  <div class="pill-ring"></div>
+  <div class="pill-frame">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-9.jpg" alt="">
+  </div>
+  <div class="pill-dot-top"></div>
+  <div class="pill-dot-bot"></div>
+  <div class="col">
+    <div class="logo-zone"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Vairāk nekā 1000 ceļojumi</div>
+    <div class="hd">Turcija.<br>Ēģipte.<br><em>Grieķija.</em></div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet"><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+      <div class="bullet"><span class="btext">Bezprocentu nomaksa.</span></div>
+      <div class="bullet"><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+</div>
+</body>
+</html>

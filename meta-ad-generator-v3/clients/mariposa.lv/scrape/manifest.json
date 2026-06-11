@@ -1,0 +1,83 @@
+{
+  "source_url": "https://www.mariposa.lv/",
+  "final_url": "https://www.mariposa.lv/",
+  "title": "Mariposa – Skaistumkopšanas salons Āgenskalnā",
+  "brand_name": "Mariposa – Skaistumkopšanas salons Āgenskalnā",
+  "language": "lv",
+  "location": "unknown",
+  "company_summary": "frizētava skaistumkopšana mezoterapija sejas procedūras lāzerepilācija manikīrs pedikīrs vaksācija masāža",
+  "goal_summary": "unknown",
+  "primary_logo_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\mariposa.lv\\scrape\\logo\\001-mariposa-skaistumkop-anas-salons-genskaln.png",
+  "text_sections": {
+    "Useful page text": [
+      "frizētava skaistumkopšana mezoterapija sejas procedūras lāzerepilācija manikīrs pedikīrs vaksācija masāža",
+      "P. 10.00-19.00 O.,T.,C.,P. 8.00-20.00 S. 9.00-17.00 Sv. BRĪVDIENA",
+      "Skaistumkopšanas salons Mariposa Nometņu iela 38, Rīga",
+      "Cilvēku savstarpējai saskarsmei ir tik liela nozīme, koptas rokas un kājas vairo labsajūtu un pārliecību par sevi, labi raksturo cilvēku, viņa attieksmi pret sevi un savu ārieni.",
+      "Klasiskais manikīrs padara Jūsu rokas koptas un pievilcīgas. Veicot manikīru, tiek veikta nagu garuma un formas korekcija, par kuru vienojas, vadoties no klientu vēlmēm, un speciālista ieteikumiem. Tad tiek veikta kutikulas apstrāde. Beigās tiek uzklāta laka pēc izvēlētā toņa vai arī nagiem tiek uzklāts stiprinošs līdzeklis.",
+      "Mēs piedāvājam aparātpedikīru. Tas notiek bez ūdens klātbūtnes, tādēļ tas nodrošina rūpīgāku un saudzīgāku kāju ādas kopšanu un garantē pilnīgu drošību un higiēnu. Kāju vanniņas vietā tiek izmantoti krēmi un losjoni, kas nodrošina maigu bojāto ādas vietu apstrādi. Aparātpedikīrs būtiski atšķiras no klasiskā pedikīra.",
+      "Aprātpedikīru veic bez iepriekšējas ādas mērcēšanas.",
+      "Drošība, jo pēdu āda netiek nogriezta."
+    ]
+  },
+  "scraped_pages": [
+    "https://www.mariposa.lv/",
+    "https://www.mariposa.lv/kontakti",
+    "https://www.mariposa.lv/frizetava",
+    "https://www.mariposa.lv/manikirs",
+    "https://www.mariposa.lv/pedikirs",
+    "https://www.mariposa.lv/sejas-kopsana",
+    "https://www.mariposa.lv/biorevitalizacija",
+    "https://www.mariposa.lv/vaksacija",
+    "https://www.mariposa.lv/lazerepilacija",
+    "https://www.mariposa.lv/masazas",
+    "https://www.mariposa.lv/skaistumkopsana"
+  ],
+  "accent_colors": [
+    "#f5f5f5",
+    "#e5e5e5",
+    "#f89406",
+    "#222222",
+    "#fcf8e3",
+    "#f2dede",
+    "#dff0d8",
+    "#d9edf7"
+  ],
+  "logos": [
+    {
+      "url": "https://www.mariposa.lv/wp-content/uploads/2025/05/Logo_balts-3-scaled.png",
+      "label": "Mariposa – Skaistumkopšanas salons Āgenskalnā",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\mariposa.lv\\scrape\\logo\\001-mariposa-skaistumkop-anas-salons-genskaln.png"
+    },
+    {
+      "url": "https://www.mariposa.lv/wp-content/uploads/2022/06/favicon.png",
+      "label": "site-icon",
+      "source": "link",
+      "kind": "logo",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\mariposa.lv\\scrape\\logo\\002-site-icon.png"
+    }
+  ],
+  "product_images": [],
+  "other_images": [
+    {
+      "url": "https://www.mariposa.lv/wp-content/uploads/2025/05/Logo_balts-3-scaled.png",
+      "label": "Mariposa – Skaistumkopšanas salons Āgenskalnā",
+      "source": "header-img",
+      "kind": "logo",
+      "score": 185,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\mariposa.lv\\scrape\\other_images\\001-mariposa-skaistumkop-anas-salons-genskaln.png"
+    },
+    {
+      "url": "https://www.mariposa.lv/wp-content/uploads/2022/06/favicon.png",
+      "label": "site-icon",
+      "source": "link",
+      "kind": "logo",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\mariposa.lv\\scrape\\other_images\\002-site-icon.png"
+    }
+  ]
+}

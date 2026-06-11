@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Template: t20 — bold split, grayscale photo left, accent panel right -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;display:flex}
+
+/* Left photo quadrant — grayscale */
+.left{width:480px;flex-shrink:0;position:relative;overflow:hidden}
+.limg{width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:grayscale(1) brightness(0.6)}
+/* Curved right edge */
+.lcurve{position:absolute;top:0;right:-2px;width:80px;height:100%;background:linear-gradient(90deg,transparent,#6C47FF)}
+
+/* Vertical brand label rotated on left edge */
+.brand-vert{
+  position:absolute;left:0;top:0;bottom:0;width:36px;
+  display:flex;align-items:center;justify-content:center;
+  writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);
+  font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;
+  color:#6C47FF;letter-spacing:0.20em;text-transform:uppercase;
+}
+
+/* Right panel */
+.right{flex:1;background:#6C47FF;display:flex;flex-direction:column;padding:52px 52px 48px 44px;position:relative}
+
+/* Niche label */
+.niche{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#0D0D12;opacity:0.6;margin-bottom:28px;flex-shrink:0}
+
+/* Headline group */
+.hd1{font-family:'Space Grotesk',sans-serif;font-size:86px;font-weight:800;color:#000000;line-height:0.87;letter-spacing:-0.03em;flex-shrink:0}
+.hd2{font-family:'Space Grotesk',sans-serif;font-size:86px;font-weight:800;color:#000000;line-height:0.87;letter-spacing:-0.03em;text-decoration:underline;text-decoration-thickness:4px;margin-bottom:20px;flex-shrink:0}
+.sub{font-family:'Inter',sans-serif;font-size:16px;font-weight:400;color:#0D0D12;opacity:0.7;line-height:1.55;margin-bottom:28px;flex-shrink:0;max-width:460px}
+.rule{height:1px;background:#0000001A;margin-bottom:24px;flex-shrink:0}
+
+/* Stats row */
+.stats{display:flex;gap:0;flex-shrink:0;margin-bottom:auto}
+.sc{flex:1;text-align:left;padding-right:16px}
+.sc-num{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:800;color:#000000;letter-spacing:-0.03em;line-height:1}
+.sc-lbl{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:#0D0D12;opacity:0.55;letter-spacing:0.10em;text-transform:uppercase;margin-top:4px}
+
+/* Logo */
+.logo-img{height:80px;max-width:260px;object-fit:contain;opacity:0.90;flex-shrink:0;margin-bottom:20px}
+
+/* Footer CTA */
+.footer-cta{flex-shrink:0;background:#000000;border-radius:12px;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.bonus-wrap{display:flex;flex-direction:column;gap:2px}
+.bonus-icon{font-size:14px}
+.bonus-label{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#6C47FF;letter-spacing:0.02em}
+.cta-btn{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:700;padding:16px 36px;border-radius:50px;letter-spacing:0.03em;white-space:nowrap}
+</style></head>
+<body>
+<div class="ad">
+  <div class="left">
+    <img class="limg" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/079-og-image.png" alt="">
+    <div class="lcurve"></div>
+  </div>
+  <div class="right">
+    <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+    <div class="niche">// Dev &amp; Product Teams</div>
+    <div class="hd1">SHIP FASTER</div>
+    <div class="hd2">ZERO HANDOFFS.</div>
+    <div class="sub">One workspace, real code. Every role ships alongside AI agents with zero back-and-forth.</div>
+    <div class="rule"></div>
+    <div class="stats">
+      <div class="sc"><div class="sc-num">10K+</div><div class="sc-lbl">Teams</div></div>
+      <div class="sc"><div class="sc-num">50+</div><div class="sc-lbl">Integrations</div></div>
+      <div class="sc"><div class="sc-num">2×</div><div class="sc-lbl">Faster</div></div>
+    </div>
+    <div class="footer-cta">
+      <div class="bonus-wrap">
+        <span class="bonus-icon">🎁 Bonus</span>
+        <span class="bonus-label">FREE TRIAL. No credit card.</span>
+      </div>
+      <div class="cta-btn">Start for Free →</div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

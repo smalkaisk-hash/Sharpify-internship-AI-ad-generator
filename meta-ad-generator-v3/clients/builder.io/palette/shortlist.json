@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Pastel Blush",
+    "theme": "Light",
+    "use_for": "beauty, skincare, floral, feminine lifestyle",
+    "swatches": {
+      "base": "#E9D9C8",
+      "second_tone": "#E4A489",
+      "accents": [
+        "#9B9F91",
+        "#A6844E",
+        "#BC6C54"
+      ],
+      "text_cta_bg": "#3E4C54",
+      "body_text": "#3E4C54",
+      "cta_text": "#E9D9C8"
+    },
+    "contrast_rating": "✓",
+    "distance": 7.07,
+    "matched_against": [
+      "#2b2b2b",
+      "#cbcbcb",
+      "#bdbdbd",
+      "#3f3f3f",
+      "#535353",
+      "#454545"
+    ]
+  },
+  {
+    "name": "Lavender Sapphire Mist",
+    "theme": "Light",
+    "use_for": "botanical beauty, floral branding, spa, wellness",
+    "swatches": {
+      "base": "#F0DAD5",
+      "second_tone": "#BABBB1",
+      "accents": [
+        "#DEA785",
+        "#D9A69F",
+        "#C56B62",
+        "#6C739C"
+      ],
+      "text_cta_bg": "#424658",
+      "body_text": "#424658",
+      "cta_text": "#F0DAD5"
+    },
+    "contrast_rating": "✓",
+    "distance": 7.12,
+    "matched_against": [
+      "#2b2b2b",
+      "#cbcbcb",
+      "#bdbdbd",
+      "#3f3f3f",
+      "#535353",
+      "#454545"
+    ]
+  },
+  {
+    "name": "Slate Teal",
+    "theme": "Light",
+    "use_for": "clean beauty, product photography, water/purity brands, mixed warm/cool tones",
+    "swatches": {
+      "base": "#F8F7F4",
+      "second_tone": "#C8D8DC",
+      "accents": [
+        "#75B2C6",
+        "#C09F72"
+      ],
+      "text_cta_bg": "#1C2E35",
+      "body_text": "#1C2E35",
+      "cta_text": "#F8F7F4"
+    },
+    "contrast_rating": "✓",
+    "distance": 12.22,
+    "matched_against": [
+      "#2b2b2b",
+      "#cbcbcb",
+      "#bdbdbd",
+      "#3f3f3f",
+      "#535353",
+      "#454545"
+    ]
+  },
+  {
+    "name": "Soft Tears",
+    "theme": "Light",
+    "use_for": "light lifestyle editorial, wellness, home goods",
+    "swatches": {
+      "base": "#ECE9E6",
+      "second_tone": "#C1CBCA",
+      "accents": [
+        "#9F97B8",
+        "#3030CF"
+      ],
+      "text_cta_bg": "#39445B",
+      "body_text": "#39445B",
+      "cta_text": "#ECE9E6"
+    },
+    "contrast_rating": "✓",
+    "distance": 15.44,
+    "matched_against": [
+      "#2b2b2b",
+      "#cbcbcb",
+      "#bdbdbd",
+      "#3f3f3f",
+      "#535353",
+      "#454545"
+    ]
+  },
+  {
+    "name": "Botanical Water",
+    "theme": "Light",
+    "use_for": "natural skincare, botanical beauty, water purification, clean living, organic lifestyle",
+    "swatches": {
+      "base": "#EBF6F0",
+      "second_tone": "#C8E8F5",
+      "accents": [
+        "#4BADD6",
+        "#5A9E6B"
+      ],
+      "text_cta_bg": "#1A3D2E",
+      "body_text": "#1A3D2E",
+      "cta_text": "#EBF6F0"
+    },
+    "contrast_rating": "✓",
+    "distance": 51.1,
+    "matched_against": [
+      "#2b2b2b",
+      "#cbcbcb",
+      "#bdbdbd",
+      "#3f3f3f",
+      "#535353",
+      "#454545"
+    ]
+  }
+]

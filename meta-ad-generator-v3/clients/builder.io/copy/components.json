@@ -1,0 +1,26 @@
+{
+  "headlines": [
+    "Ship features in hours, not sprints",
+    "Figma to production code. Half the time.",
+    "Zero handoffs. One workflow."
+  ],
+  "bullets": [
+    "AI converts Figma designs to production code",
+    "Marketers edit pages without touching code",
+    "Works with React, Next.js, and any tech stack",
+    "Engineers review every change before it ships",
+    "Built-in A/B testing and personalization",
+    "Free to start. No credit card required."
+  ],
+  "base_texts": [
+    "Every new feature means a week of back-and-forth between design, product, and engineering. Builder connects every role to your real codebase. One workspace, zero handoffs.",
+    "Visual Copilot converts your Figma designs into production-ready code in half the time. Your design system, your components, your tech stack. Ship without compromise.",
+    "Start free. Connect Builder to your existing repo and let your whole team ship production-ready code, without waiting on engineering every time."
+  ],
+  "on_image_texts": [
+    "Zero handoffs. Ship faster.",
+    "Figma to code. Half the time.",
+    "Free to start. No credit card."
+  ],
+  "cta": "Start for Free"
+}

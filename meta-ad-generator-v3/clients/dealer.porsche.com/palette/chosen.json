@@ -1,0 +1,23 @@
+{
+  "name": "Carbon Race",
+  "theme": "Dark",
+  "use_for": "luxury automotive, motorsport, premium vehicles, performance brands",
+  "swatches": {
+    "base": "#0D0D0D",
+    "second_tone": "#1C1C1C",
+    "accents": [
+      "#D5001C",
+      "#8A8A8A"
+    ],
+    "text_cta_bg": "#D5001C",
+    "body_text": "#F0F0F0",
+    "cta_text": "#FFFFFF"
+  },
+  "contrast_rating": "✓",
+  "distance": 0,
+  "matched_against": [
+    "#D5001C",
+    "#1A1A1A",
+    "#8A8A8A"
+  ]
+}

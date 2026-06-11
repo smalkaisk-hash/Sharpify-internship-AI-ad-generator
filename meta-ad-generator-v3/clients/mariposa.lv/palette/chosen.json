@@ -1,0 +1,30 @@
+{
+  "name": "Pastel Blush",
+  "theme": "Light",
+  "use_for": "beauty, skincare, floral, feminine lifestyle",
+  "swatches": {
+    "base": "#E9D9C8",
+    "second_tone": "#E4A489",
+    "accents": [
+      "#9B9F91",
+      "#A6844E",
+      "#BC6C54"
+    ],
+    "text_cta_bg": "#3E4C54",
+    "body_text": "#3E4C54",
+    "cta_text": "#E9D9C8"
+  },
+  "contrast_rating": "✓",
+  "distance": 87.41,
+  "matched_against": [
+    "#f5f5f5",
+    "#e5e5e5",
+    "#f89406",
+    "#222222",
+    "#fcf8e3",
+    "#f2dede",
+    "#dff0d8",
+    "#d9edf7"
+  ],
+  "detected_category": "beauty"
+}

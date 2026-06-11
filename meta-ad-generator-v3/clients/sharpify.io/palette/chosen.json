@@ -1,0 +1,24 @@
+{
+  "name": "Contractor Teal",
+  "theme": "Dark",
+  "use_for": "B2B SaaS, contractor tools, tradesperson software, construction technology",
+  "swatches": {
+    "base": "#051C20",
+    "second_tone": "#00665E",
+    "accents": [
+      "#CEDC00",
+      "#FFFFFF"
+    ],
+    "text_cta_bg": "#CEDC00",
+    "body_text": "#FFFFFF",
+    "cta_text": "#00665E"
+  },
+  "contrast_rating": "✓",
+  "distance": 0,
+  "matched_against": [
+    "#00665E",
+    "#CEDC00",
+    "#051C20"
+  ],
+  "detected_category": "b2b saas"
+}

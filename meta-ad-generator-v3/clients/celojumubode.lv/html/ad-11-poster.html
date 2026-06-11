@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;background:#1E1E1E;display:flex;flex-direction:column;padding:48px 52px 44px;overflow:hidden;position:relative}
+/* Logo all white on pink */
+.logo img{height:72px;max-width:340px;width:auto;object-fit:contain;filter:drop-shadow(0 0 6px rgba(255,255,255,0.40))}
+/* Massive stacked type */
+.type-stack{flex:1;display:flex;flex-direction:column;justify-content:center;padding:12px 0}
+.line1{font-family:'Barlow Condensed',sans-serif;font-size:172px;font-weight:800;color:#FFFFFF;line-height:0.84;letter-spacing:-0.03em;text-transform:uppercase}
+.line2{font-family:'Barlow Condensed',sans-serif;font-size:172px;font-weight:800;color:rgba(255,255,255,0.75);line-height:0.84;letter-spacing:-0.03em;text-transform:uppercase}
+.line3{font-family:'Barlow Condensed',sans-serif;font-size:100px;font-weight:800;color:#FFFFFF;line-height:0.88;letter-spacing:-0.02em;text-transform:uppercase;opacity:0.55;margin-top:6px}
+/* Stat tiles — white on pink */
+.stats{display:flex;gap:10px;margin-bottom:16px}
+.stat-tile{flex:1;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.30);border-radius:10px;padding:14px 12px;text-align:center}
+.snum{display:block;font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:800;color:#FFFFFF;line-height:1}
+.slabel{display:block;font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.70);text-transform:uppercase;letter-spacing:0.10em;margin-top:2px}
+/* bullets on pink */
+$136px}
+.bullet{display:flex;align-items:center;gap:12px}
+.bnum{display:flex;align-items:center;justify-content:center;min-width:32px;width:32px;height:32px;
+  background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.45);color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:20px;font-weight:700;border-radius:50%;flex-shrink:0}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:600;color:rgba(255,255,255,0.90);line-height:1.28}
+.cta{display:block;background:#E5007E;color:#FFFFFF;font-family:'Raleway',sans-serif;font-size:24px;font-weight:700;padding:22px 36px;border-radius:8px;text-align:center;letter-spacing:0.03em}
+
+/* bullet-style-start */
+.benefit,.brow{background:rgba(229,0,126,0.14);border-left:5px solid #E5007E;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+  <div class="type-stack">
+    <div class="line1">Turcijā</div>
+    <div class="line2">vasarā.</div>
+    <div class="line3">Bez iekrājumiem.</div>
+  </div>
+  <div class="stats">
+    <div class="stat-tile"><span class="snum">4.9★</span><span class="slabel">vērtējums</span></div>
+    <div class="stat-tile"><span class="snum">351</span><span class="slabel">atsauksmes</span></div>
+    <div class="stat-tile"><span class="snum">1000+</span><span class="slabel">maršruti</span></div>
+    <div class="stat-tile"><span class="snum">0%</span><span class="slabel">procenti</span></div>
+  </div>
+  <div class="bullets">
+    <div class="bullet"><span class="bnum">1</span><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+    <div class="bullet"><span class="bnum">2</span><span class="btext">Bezprocentu nomaksa.</span></div>
+    <div class="bullet"><span class="bnum">3</span><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+    <div class="bullet"><span class="bnum">4</span><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+  </div>
+  <a class="cta">Rezervēt ceļojumu</a>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

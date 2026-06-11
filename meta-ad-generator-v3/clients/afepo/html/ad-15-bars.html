@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Full-bleed dark photo, large headline top, 4 stacked benefit bars with yellow left accent -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#060E1C}
+
+.photo{position:absolute;inset:0}
+.photo img{
+  width:100%;height:100%;object-fit:cover;object-position:50% 25%;
+  filter:contrast(1.22) brightness(0.36) saturate(0.42)
+}
+.fade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,14,28,0.05) 0%,rgba(6,14,28,0.55) 30%,rgba(6,14,28,0.96) 58%,rgba(6,14,28,1) 76%)
+}
+
+/* Yellow top accent */
+.top-bar{position:absolute;top:0;left:0;right:0;height:7px;background:#F5C200;z-index:20}
+
+/* Main UI */
+.ui{
+  position:absolute;inset:0;z-index:10;
+  display:flex;flex-direction:column;
+  padding:46px 0 54px
+}
+.logo-row{padding:0 58px;flex-shrink:0;margin-bottom:0}
+.logo-zone{background:#fff;padding:6px 12px;border-radius:5px;display:inline-block}
+.logo{height:64px;max-width:165px;width:auto;display:block;object-fit:contain}
+
+.middle{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 58px}
+.eyebrow{
+  font-family:'Inter',sans-serif;font-size:26px;font-weight:800;
+  color:#F5C200;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:14px
+}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;font-size:128px;font-weight:900;
+  line-height:0.83;letter-spacing:0.01em;text-transform:uppercase;
+  color:#FFFFFF;margin-bottom:36px
+}
+.hd em{color:#F5C200;font-style:normal}
+
+/* Benefit bars */
+.bars{display:flex;flex-direction:column;gap:10px;flex-shrink:0;padding:0 58px;margin-bottom:0}
+.bar-item{
+  display:flex;align-items:center;gap:0;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.10);
+  border-left:none;
+  border-radius:0 5px 5px 0;
+  overflow:hidden
+}
+.bar-accent{
+  width:5px;flex-shrink:0;align-self:stretch;
+  background:#F5C200
+}
+.bar-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:18px 22px
+}
+.bar-check{width:30px;height:30px;flex-shrink:0;background:#3558AA;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#FFFFFF}
+.bar-text{
+  font-family:'Inter',sans-serif;font-size:24px;font-weight:700;
+  color:rgba(210,225,245,0.92)
+}
+
+.cta-zone{padding:0 58px;flex-shrink:0;margin-top:20px}
+.cta{
+  display:block;background:#F5C200;color:#060E1C;
+  font-family:'Inter',sans-serif;font-size:22px;font-weight:800;
+  padding:22px;border-radius:6px;text-align:center;
+  letter-spacing:0.06em;text-transform:uppercase
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated-3.jpg" alt=""></div>
+  <div class="fade"></div>
+  <div class="top-bar"></div>
+  <div class="ui">
+    <div class="logo-row">
+      <div class="logo-zone"><img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo"></div>
+    </div>
+    <div class="middle">
+      <div class="eyebrow">Meklējam komandā</div>
+      <div class="hd">Stabils darbs.<br><em>Laba alga.</em></div>
+    </div>
+    <div class="bars">
+      <div class="bar-item"><div class="bar-accent"></div><div class="bar-inner"><div class="bar-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 12h20"/></svg></div><span class="bar-text">Pilnas slodzes darbs</span></div></div>
+      <div class="bar-item"><div class="bar-accent"></div><div class="bar-inner"><div class="bar-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v12H5z"/><rect x="9" y="11" width="4" height="4" rx=".5"/><path d="M13 3l3 4h5v7h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg></div><span class="bar-text">Transports uz objektiem</span></div></div>
+      <div class="bar-item"><div class="bar-accent"></div><div class="bar-inner"><div class="bar-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/><path d="M10 10V5a2 2 0 1 1 4 0v5"/><path d="M4 15v-3a8 8 0 0 1 16 0v3"/></svg></div><span class="bar-text">Darba apģērbs un aprīkojums</span></div></div>
+      <div class="bar-item"><div class="bar-accent"></div><div class="bar-inner"><div class="bar-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><span class="bar-text">Alga + bonusi par rezultātu</span></div></div>
+    </div>
+    <div class="cta-zone">
+      <div class="cta">Piesakies darbam →</div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

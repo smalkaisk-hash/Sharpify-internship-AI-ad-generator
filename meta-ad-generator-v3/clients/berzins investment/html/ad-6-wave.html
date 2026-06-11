@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0A0E14; }
+
+.photo { position:absolute; inset:0; z-index:0; }
+.photo img { width:100%; height:100%; object-fit:cover; object-position:50% 25%; }
+
+/* Scrim for logo readability over photo */
+.scrim-top {
+  position:absolute; top:0; left:0; right:0; height:200px; z-index:4;
+  background:linear-gradient(180deg, rgba(10,14,20,0.62) 0%, transparent 100%);
+}
+
+/* Logo top-left */
+.logo-zone { position:absolute; top:52px; left:60px; z-index:10; }
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.48); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+/* Wave dark panel — wave clip on top edge, content inside */
+.wave-panel {
+  position:absolute; inset:0; z-index:5;
+  background:#1C2128;
+  clip-path: path('M 0 490 C 200 400 450 560 720 478 C 900 428 1000 500 1080 458 L 1080 1080 L 0 1080 Z');
+}
+
+/* Subtle amber inner glow at top of wave panel */
+.wave-panel::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:80px;
+  background:linear-gradient(180deg, rgba(200,169,110,0.11) 0%, transparent 100%);
+  pointer-events:none;
+}
+
+/* Content bottom-anchored, inside the dark panel */
+.content {
+  position:absolute; bottom:52px; left:60px; right:60px; z-index:10;
+}
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:14px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:82px; font-weight:700;
+  line-height:0.90; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:20px;
+}
+.rule {
+  height:1px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.55) 0%, transparent 60%);
+  margin-bottom:20px;
+}
+.bullets { display:flex; flex-wrap:wrap; margin-bottom:28px; }
+.bullet { width:50%; display:flex; align-items:flex-start; gap:10px; padding:5px 8px 5px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.btext {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.82); line-height:1.28;
+}
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 40px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{gap:14px;padding:8px 0;border-bottom:1px solid rgba(200,169,110,0.2);}
+.benefit:last-child,.brow:last-child{border-bottom:none;}
+.benefit::before,.brow::before{content:'';width:10px;height:10px;border-radius:50%;background:#C8A96E;flex-shrink:0;margin-top:7px;box-shadow:0 0 8px rgba(200,169,110,0.55);}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/scrape/other_images/web_terase_2.png" alt="">
+  </div>
+  <div class="scrim-top"></div>
+  <div class="wave-panel"></div>
+
+  <div class="logo-zone">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">Rīgas centrs · Miera iela 1</div>
+    <div class="headline">Pilsēta —<br>tavs ofiss ārpus biroja.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7a3 3 0 006 0V2M6 9v13M21 2v20M17 2v7a3 3 0 006 0V2"/></svg></div>
+        <div class="btext">Restorāni un kafejnīcas</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+        <div class="btext">Tirgus un aptieka</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 11h20M8 6V3M16 6V3M8 20v1M16 20v1"/></svg></div>
+        <div class="btext">Sabiedriskais transports</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#C8A96E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a1 1 0 01-1-1v-4l2-5a2 2 0 012-2h12a2 2 0 012 2l2 5v4a1 1 0 01-1 1h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg></div>
+        <div class="btext">Privāta autostāvvieta</div>
+      </div>
+    </div>
+    <div class="cta">Rezervēt telpas</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

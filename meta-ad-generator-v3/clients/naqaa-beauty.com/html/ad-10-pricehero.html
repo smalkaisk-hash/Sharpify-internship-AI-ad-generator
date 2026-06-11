@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad {
+  width:1080px; height:1080px; position:relative; overflow:hidden;
+  background:linear-gradient(130deg, #EEE0D0 0%, #E9D9C8 55%, #EFE5DA 100%);
+  display:flex;
+}
+
+.left {
+  width:540px; flex-shrink:0; height:1080px;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px 60px;
+  position:relative; z-index:10;
+}
+.left::after {
+  content:''; position:absolute; right:0; top:80px; bottom:80px; width:1px;
+  background:linear-gradient(180deg, transparent, rgba(188,108,84,0.40) 25%, rgba(188,108,84,0.40) 75%, transparent);
+}
+
+.logo-zone { align-self:flex-start; }
+.spacer { flex:1; }
+
+.price-tag {
+  display:inline-flex; align-items:center;
+  background:rgba(188,108,84,0.12); border:1px solid rgba(188,108,84,0.32);
+  border-radius:24px; padding:7px 18px; margin-bottom:16px; align-self:flex-start;
+}
+.price-tag-text {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#BC6C54; letter-spacing:0.18em; text-transform:uppercase;
+}
+.price {
+  font-family:'Playfair Display', serif; font-size:118px; font-weight:400; font-style:italic;
+  color:#BC6C54; line-height:1; margin-bottom:6px; letter-spacing:-0.02em;
+}
+.price-sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:300;
+  color:rgba(62,76,84,0.55); margin-bottom:24px; letter-spacing:0.04em;
+}
+.headline {
+  font-family:'Playfair Display', serif; font-size:48px; font-weight:400; font-style:italic;
+  line-height:1.00; color:#3E4C54; margin-bottom:20px;
+}
+.rule { width:52px; height:2px; background:#A6844E; margin-bottom:20px; }
+.bullets { display:flex; flex-direction:column; margin-bottom:0; }
+.bullet { display:flex; align-items:flex-start; gap:10px; padding:5px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:3px; }
+.btext { font-family:'Raleway', sans-serif; font-size:22px; font-weight:400; color:rgba(62,76,84,0.78); line-height:1.28; }
+.spacer2 { height:28px; flex-shrink:0; }
+.cta {
+  display:block; background:#3E4C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:24px 20px; text-align:center; letter-spacing:0.08em;
+}
+
+.right {
+  flex:1; position:relative; display:flex; align-items:center; justify-content:center;
+}
+.deco-halo {
+  position:absolute; width:640px; height:640px; border-radius:50%;
+  background:radial-gradient(circle, rgba(188,108,84,0.16) 0%, rgba(228,164,137,0.06) 50%, transparent 70%);
+  border:1px solid rgba(188,108,84,0.18);
+}
+.deco-ring {
+  position:absolute; width:740px; height:740px; border-radius:50%;
+  border:1px solid rgba(166,132,78,0.10);
+}
+.circle {
+  width:480px; height:480px; border-radius:50%; overflow:hidden;
+  border:3px solid rgba(188,108,84,0.48);
+  box-shadow:0 0 80px rgba(188,108,84,0.22), 0 0 0 16px rgba(188,108,84,0.07);
+  position:relative; z-index:3;
+}
+.circle img { width:100%; height:100%; object-fit:cover; object-position:50% 50%; }
+
+/* bullet-style-start */
+.benefit,.brow{border:2px solid #9B9F91;border-radius:28px;padding:10px 18px;gap:12px;box-shadow:0 0 18px rgba(155,159,145,0.55),inset 0 0 8px rgba(155,159,145,0.08);background:rgba(255,255,255,0.05);}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{background:#9B9F91;box-shadow:0 0 8px rgba(155,159,145,0.55);}
+/* bullet-style-end */
+.bullet.benefit .btext, .bullet.brow .btext { color:rgba(62,76,84,0.80); }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="left">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+    <div class="spacer"></div>
+    <div class="price-tag"><span class="price-tag-text">Filtrs CLEAR+ no</span></div>
+    <div class="price">€24,99</div>
+    <div class="price-sub">Dušas filtrs ar aromātu</div>
+    <div class="headline">Sāc spa rituālu<br>par 24,99€.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="btext">Attīra ūdeni no kaitīgām daļiņām</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l10-10M22 2S11 2 6 7c-1.96 1.96-3 5-3 7a9 9 0 009 9c2 0 5.04-1.04 7-3 5-5 5-16 5-16z"/></svg></div>
+        <div class="btext">Videi draudzīgs un bez ķimikālijām</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="btext">Komplekti sākot no 42,49€</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+  <div class="right">
+    <div class="deco-halo"></div>
+    <div class="deco-ring"></div>
+    <div class="circle">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/008-naqaa-beauty-clear-du-as-dens-filtrs.-att-ri-du-as-deni-no-kait-giem-piemais-jum.png" alt="">
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none;}
+.ad{
+  width:1080px;height:1080px;
+  font-family:'Inter',sans-serif;
+  position:relative;overflow:hidden;
+}
+/* right side photo fills canvas behind left panel */
+.photo{position:absolute;inset:0;}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:65% 18%;}
+/* left dark panel with concave right edge (S-curve sweep) */
+.panel{
+  position:absolute;left:0;top:0;bottom:0;
+  width:580px;
+  background:#1E0B16;
+  clip-path:path('M 0,0 L 520,0 C 560,100 540,240 560,360 C 580,480 600,600 540,720 C 480,840 520,940 520,1080 L 0,1080 Z');
+}
+/* pink accent trace following the sweep curve */
+.curve-accent{
+  position:absolute;left:0;top:0;bottom:0;
+  width:580px;
+  clip-path:path('M 518,0 L 524,0 C 564,100 544,240 564,360 C 584,480 604,600 544,720 C 484,840 524,940 524,1080 L 518,1080 C 518,940 478,840 538,720 C 598,600 578,480 558,360 C 538,240 558,100 518,0 Z');
+  background:#E5007E;
+  opacity:0.9;
+}
+/* inner subtle glow on curve edge */
+.curve-glow{
+  position:absolute;left:0;top:0;bottom:0;
+  width:600px;
+  clip-path:path('M 524,0 L 538,0 C 580,100 560,240 580,360 C 600,480 620,600 560,720 C 500,840 538,940 538,1080 L 524,1080 C 524,940 484,840 544,720 C 604,600 584,480 564,360 C 544,240 564,100 524,0 Z');
+  background:rgba(229,0,126,0.22);
+  filter:blur(8px);
+}
+/* content in left panel */
+.content{
+  position:absolute;left:0;top:0;bottom:0;
+  width:520px;
+  display:flex;flex-direction:column;
+  padding:48px 36px 48px 48px;
+  z-index:5;
+}
+.logo img{height:116px;max-width:360px;object-fit:contain;}
+.spacer{flex:1;}
+.hd-wrap{padding-bottom:28px;}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:80px;line-height:1.0;
+  color:#FFFFFF;text-transform:uppercase;
+  hyphens:none;-webkit-hyphens:none;
+}
+.hd em{color:#E5007E;font-style:normal;}
+/* glow-border bullets */
+.benefits{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.benefit,.brow{border:2px solid #E5007E;border-radius:28px;padding:10px 18px;gap:12px;box-shadow:0 0 18px rgba(229,0,126,0.55),inset 0 0 8px rgba(229,0,126,0.08);background:rgba(255,255,255,0.05);display:flex;align-items:center;}
+.btext{color:#ffffff;font-size:22px;font-weight:600;line-height:1.2;}
+.bicon{width:28px;height:28px;flex-shrink:0;}
+.bicon svg{color:#E5007E;fill:#E5007E;width:28px;height:28px;}
+.bdot{background:#E5007E;box-shadow:0 0 8px rgba(229,0,126,0.55);}
+.spacer2{height:28px;}
+.cta{
+  display:inline-block;background:#E5007E;color:#fff;
+  font-size:24px;font-weight:700;padding:22px 40px;
+  border-radius:50px;text-align:center;width:fit-content;
+  box-shadow:0 0 28px rgba(229,0,126,0.55);
+}
+/* floating stat bottom-right over photo */
+.stat-badge{
+  position:absolute;bottom:60px;right:36px;z-index:5;
+  background:rgba(30,11,22,0.78);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(229,0,126,0.5);
+  border-radius:20px;
+  padding:20px 28px;text-align:center;
+}
+.stat-num{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:56px;line-height:1;
+  color:#E5007E;display:block;
+}
+.stat-lbl{font-size:20px;color:rgba(255,255,255,0.8);font-weight:600;}
+/* bullet-style-start */
+.benefit,.brow{background:rgba(229,0,126,0.14);border-left:5px solid #E5007E;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-5.jpg" alt=""></div>
+  <div class="panel"></div>
+  <div class="curve-glow"></div>
+  <div class="curve-accent"></div>
+  <div class="content">
+    <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt=""></div>
+    <div class="spacer"></div>
+    <div class="hd-wrap">
+      <div class="hd">1000+<br>maršruti,<br><em>viss iekļauts.</em></div>
+    </div>
+    <div class="benefits">
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z" fill="#E5007E"/></svg>
+        <span class="btext">Lidojums, viesnīca un transfērs</span>
+      </div>
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#E5007E"/></svg>
+        <span class="btext">Turcija, Ēģipte, Grieķija un 50+ valstis.</span>
+      </div>
+      <div class="benefit">
+        <svg class="bicon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7z" fill="#E5007E"/></svg>
+        <span class="btext">351 apmierināts klients. Vērtējums 4.9/5.</span>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Rezervēt ceļojumu</div>
+  </div>
+  <div class="stat-badge">
+    <span class="stat-num">Bez %</span>
+    <span class="stat-lbl">nomaksa</span>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

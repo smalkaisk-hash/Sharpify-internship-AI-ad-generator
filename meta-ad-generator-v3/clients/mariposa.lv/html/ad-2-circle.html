@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+*{hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#E9D9C8}
+
+/* text column — left side, in front */
+.text-col{
+  position:absolute;left:0;top:0;bottom:0;
+  width:520px;
+  display:flex;flex-direction:column;
+  padding:64px 44px 150px 68px;
+  z-index:2;
+}
+
+/* decorative peach ring — behind circle, slightly offset */
+.circle-ring{
+  position:absolute;
+  right:30px;top:50%;transform:translateY(-50%);
+  width:580px;height:580px;border-radius:50%;
+  border:2px solid rgba(228,164,137,0.55);
+  z-index:0;
+}
+/* circle photo frame */
+.circle-frame{
+  position:absolute;
+  right:50px;top:50%;transform:translateY(-50%);
+  width:540px;height:540px;border-radius:50%;
+  overflow:hidden;
+  box-shadow:0 24px 80px rgba(62,76,84,0.22);
+  z-index:1;
+}
+.circle-frame img{
+  width:100%;height:100%;object-fit:cover;object-position:50% 25%;
+}
+
+/* — text col interior — */
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{
+  height:116px;max-width:360px;width:auto;display:block;object-fit:contain;
+  filter:brightness(0);opacity:0.72;
+}
+.spacer{flex:1;min-height:0}
+
+.eyebrow{
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:#A6844E;margin-bottom:14px;flex-shrink:0;
+}
+.hd-wrap{flex-shrink:0;padding-bottom:28px}
+.hd{
+  font-family:'Cormorant Garamond',serif;
+  font-size:84px;line-height:0.92;font-weight:600;font-style:italic;
+  color:#3E4C54;hyphens:none;-webkit-hyphens:none;letter-spacing:-0.01em;
+}
+.rule{
+  height:1px;background:linear-gradient(90deg,rgba(166,132,78,0.45),transparent);
+  flex-shrink:0;margin-bottom:22px;
+}
+.benefits{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;
+  flex-shrink:0;margin-bottom:0;
+}
+.brow{display:flex;align-items:flex-start;gap:10px}
+.bdot{width:6px;height:6px;border-radius:50%;background:#BC6C54;flex-shrink:0;margin-top:9px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;line-height:1.35;color:rgba(62,76,84,0.78)}
+.spacer2{flex:1;min-height:0}
+.cta{
+  display:block;background:#BC6C54;color:#E9D9C8;
+  font-family:'Raleway',sans-serif;font-size:21px;font-weight:600;
+  padding:22px 28px;border-radius:4px;
+  text-align:center;letter-spacing:0.08em;text-transform:uppercase;
+  flex-shrink:0;
+}
+/* bullet-style-start */
+.benefit,.brow{background:rgba(255,255,255,0.13);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.22);border-radius:14px;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{background:rgba(255,255,255,0.6);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="circle-ring"></div>
+  <div class="circle-frame">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/image/generated-2.jpg" alt="">
+  </div>
+  <div class="text-col">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/scrape/logo/001-mariposa-skaistumkop-anas-salons-genskaln.png" alt="Mariposa">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Optimas · Rīga</div>
+    <div class="hd-wrap">
+      <div class="hd">2500+<br>klientu.<br>95% atgriežas.</div>
+    </div>
+    <div class="rule"></div>
+    <div class="benefits">
+      <div class="brow"><span class="bdot"></span><span class="btext">95% atgriežas pēc pirmās procedūras</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Bez sāpēm, atpakaļ tajā pašā dienā</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Redzami rezultāti pēc 2 sesijām</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Katrs protokols kalibrēts Tavam ādas tipam</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Piesakies bezmaksas konsultācijai</div>
+  </div>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  return Promise.all([
+    document.fonts.load('400 22px Raleway','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+    document.fonts.load('600 84px "Cormorant Garamond"','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+  ]);
+}).then(()=>{ document.title="fonts-ready"; });
+</script>
+</body>
+</html>

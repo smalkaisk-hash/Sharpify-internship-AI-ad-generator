@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Template: t58 — full-bleed photo background, dark gradient overlay, centered text bottom -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12}
+
+.bg{position:absolute;inset:0}
+.bg-img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg,#0D0D1266 0%,#0D0D12AA 35%,#0D0D12EE 60%,#0D0D12 80%)}
+
+.content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:52px 80px}
+.eyebrow{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#6C47FF;letter-spacing:0.18em;text-transform:uppercase;text-align:center;margin-bottom:20px}
+.hd{font-family:'Space Grotesk',sans-serif;font-size:92px;font-weight:800;color:#FFFFFF;line-height:0.9;letter-spacing:-0.03em;text-align:center;margin-bottom:20px}
+.hd span{color:#9B7AFF}
+.sub{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:#A8A8B8;text-align:center;max-width:760px;line-height:1.5;margin-bottom:32px}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.chip{background:#0D0D12BB;border:1px solid #6C47FF44;border-radius:50px;padding:10px 22px;font-family:'Inter',sans-serif;font-size:17px;font-weight:500;color:#A8A8B8}
+.cta-row{display:flex;align-items:center;gap:24px}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em}
+.proof{font-family:'Inter',sans-serif;font-size:16px;color:#666677}
+.proof b{color:#A8A8B8;font-weight:500}
+.logo-img{position:absolute;top:44px;left:52px;height:116px;max-width:360px;object-fit:contain;opacity:0.90;z-index:10}
+</style></head>
+<body>
+<div class="ad">
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+  <div class="bg">
+    <img class="bg-img" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/084-og-image.png" alt="">
+    <div class="overlay"></div>
+  </div>
+  <div class="content">
+    <div class="eyebrow">Builder.io — Visual Development</div>
+    <div class="hd">Ship features<br><span>in hours.</span></div>
+    <div class="sub">Every new feature means a week of back-and-forth. Builder connects every role to your real codebase — one workspace, zero handoffs.</div>
+    <div class="chips">
+      <div class="chip">AI Code Gen</div>
+      <div class="chip">Visual Editor</div>
+      <div class="chip">A/B Testing</div>
+    </div>
+    <div class="cta-row">
+      <div class="cta">Start for Free →</div>
+      <div class="proof"><b>No credit card</b> required</div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

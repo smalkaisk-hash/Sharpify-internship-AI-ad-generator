@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Bold diagonal yellow construction slash across photo, Q&A headline, requirement chips -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#060C18}
+
+.photo{position:absolute;inset:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:contrast(1.20) brightness(0.48) saturate(0.52)}
+.fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,24,0.05) 0%,rgba(6,12,24,0.40) 38%,rgba(6,12,24,0.88) 62%,rgba(6,12,24,0.98) 80%,rgba(6,12,24,1) 100%)}
+
+/* === DIAGONAL SLASH — construction hazard stripe === */
+/* Main slash — ~72px wide vertical, ~8° angle */
+.slash{
+  position:absolute;top:0;left:0;width:100%;height:1080px;
+  background:#F5C200;
+  clip-path:polygon(0 355px, 1080px 195px, 1080px 267px, 0 427px);
+  z-index:10;pointer-events:none;
+}
+/* Shadow edge behind slash for depth */
+.slash-shadow{
+  position:absolute;top:0;left:0;width:100%;height:1080px;
+  background:rgba(0,0,0,0.35);
+  clip-path:polygon(0 355px, 1080px 195px, 1080px 278px, 0 438px);
+  z-index:9;pointer-events:none;
+}
+/* Thin echo stripe — second hazard line */
+.slash2{
+  position:absolute;top:0;left:0;width:100%;height:1080px;
+  background:#F5C200;
+  clip-path:polygon(0 448px, 1080px 288px, 1080px 304px, 0 464px);
+  z-index:10;opacity:0.32;pointer-events:none;
+}
+
+/* === MAIN UI === */
+.ui{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:46px 58px 54px}
+
+.top-row{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.logo{height:96px;max-width:260px;width:auto;display:block;object-fit:contain}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,194,0,0.52);background:rgba(245,194,0,0.10);padding:9px 16px;border-radius:4px;flex-shrink:0}
+.badge-text{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#F5C200;letter-spacing:0.10em;text-transform:uppercase}
+
+.spacer{flex:1}
+
+/* Q&A headline — question faint, answer huge */
+.q{font-family:'Barlow Condensed',sans-serif;font-size:72px;font-weight:900;line-height:1;letter-spacing:0.01em;text-transform:uppercase;color:rgba(255,255,255,0.36);flex-shrink:0}
+.a{font-family:'Barlow Condensed',sans-serif;font-size:150px;font-weight:900;line-height:0.83;letter-spacing:0.01em;text-transform:uppercase;color:#FFFFFF;margin-top:6px;margin-bottom:18px;flex-shrink:0}
+.a em{color:#F5C200;font-style:normal}
+.sub{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:rgba(255,255,255,0.55);margin-bottom:24px;line-height:1.4;flex-shrink:0}
+
+/* Requirement chips */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;flex-shrink:0}
+.chip{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);padding:9px 14px;border-radius:4px}
+.chip-icon{color:#F5C200;flex-shrink:0;display:flex;align-items:center}
+.chip-text{font-family:'Inter',sans-serif;font-size:20px;font-weight:700;color:rgba(255,255,255,0.88)}
+
+.cta{display:block;background:#F5C200;color:#060C18;font-family:'Inter',sans-serif;font-size:22px;font-weight:800;padding:22px;border-radius:6px;text-align:center;letter-spacing:0.06em;text-transform:uppercase;flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated.jpg" alt=""></div>
+  <div class="fade"></div>
+  <div class="slash-shadow"></div>
+  <div class="slash"></div>
+  <div class="slash2"></div>
+  <div class="ui">
+    <div class="top-row">
+      <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+      <div class="badge"><span class="badge-text">Mēs pieņemam darbā</span></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="q">Bez pieredzes?</div>
+    <div class="a">Ne<em>traucē.</em></div>
+    <div class="sub">Mēs apmācīsim — tu nāc ar attieksmi.</div>
+    <div class="chips">
+      <div class="chip"><span class="chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2v-4l3-6h12l3 6v4a2 2 0 0 1-2 2h-1"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M2 9h20"/></svg></span><span class="chip-text">B kategorija</span></div>
+      <div class="chip"><span class="chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="chip-text">Latviešu valoda</span></div>
+      <div class="chip"><span class="chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><span class="chip-text">Fiziskā izturība</span></div>
+      <div class="chip"><span class="chip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></span><span class="chip-text">Vēlme strādāt</span></div>
+    </div>
+    <div class="cta">Piesakies darbam →</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

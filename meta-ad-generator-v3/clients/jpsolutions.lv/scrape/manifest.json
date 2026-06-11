@@ -1,0 +1,736 @@
+{
+  "source_url": "https://jpsolutions.lv/",
+  "final_url": "https://jpsolutions.lv/",
+  "title": "Industriālā alpīnisma pakalpojumi - JPSolutions",
+  "brand_name": "Industriālā alpīnisma pakalpojumi",
+  "language": "lv",
+  "location": "Juridiskā adrese: Rīga, Dagmāras iela 4 - 6, LV-1007; Rīga, Dagmāras iela 4 - 6, LV-1007; Rīga, Dagmāras iela 4",
+  "company_summary": "Industriālā alpīnisma pakalpojumi: Mūsu pamata nodarbošanās ir drošas vides radīšana darbam augstumā, kā individuālo aizsardzības līdzekļu tirdzniecība darbam augstumā un industriālajam alpīnismam, kā arī stacionāro drošības sistēmu, plānošana, projektēšana, tirdzniecība, uzstādīšana un apkalpošana.",
+  "goal_summary": "unknown",
+  "primary_logo_path": "",
+  "text_sections": {
+    "What they do": [
+      "Droši un uzticami drošības risinājumi darbam augstumā! Mūsu pamata nodarbošanās ir drošas vides radīšana darbam augstumā, kā individuālo aizsardzības līdzekļu tirdzniecība darbam augstumā un industriālajam alpīnismam, kā arī stacionāro drošības sistēmu, plānošana, projektēšana, tirdzniecība, uzstādīšana un apkalpošana. Veikals Pakalpojumi <",
+      "Mūsu pamata nodarbošanās ir drošas vides radīšana darbam augstumā, kā individuālo aizsardzības līdzekļu tirdzniecība darbam augstumā un industriālajam alpīnismam, kā arī stacionāro drošības sistēmu, plānošana, projektēšana, tirdzniecība, uzstādīšana un apkalpošana.",
+      "Tās ir Jāveic reizi gadā, tās drīkst veikt persona, kura ir saņēmusi attiecīgu prasmes apliecinošu dokumentu, kuru drīkst izsniegt inventāra darbam augstumā ražotāji Individuālo aizsardzības līdzekļu pārbaude ir jāveic reizi gadā. To drīkst veikt persona, kura saņēmusi prasmes apliecinošu dokumentu no attiecīgā inventāra ražotājiem.",
+      "Mūsu internetveikalā pieejams inventārs no tādiem zīmoliem kā Texora, Climbing Technology, Petzl, Kong, Singingrock, Edelride, Beal, Skylotec, Tendon, Avanti, Somain, Soll, Rud, Kratos, Mad Rock, Rothoblaas, Fall protec, Genesis un citi.",
+      "Kādus darbus visbiežāk veic industriālais jeb rūpnieciskais alpīnists? Industriālo alpīnistu pakalpojumus visbiežāk izmanto logu mazgāšanai augstumā, starppaneļu šuvju hermetizācijai, krāsošanai un jumtu remonta darbiem.",
+      "Industriālo alpīnistu pakalpojumus visbiežāk izmanto logu mazgāšanai augstumā, starppaneļu šuvju hermetizācijai, krāsošanai un jumtu remonta darbiem.",
+      "Katram inventāra veidam ir savs EN standarts, kam ir jāatbilst.Ja nepieciešama detalizētāka informācija, sazinies ar mums un vienosimies par konsultācijas laiku.",
+      "Kādiem drošības standartiem jāatbilst inventāram, kas tiks izmantots darbam augstumā? Principā, viss tas pats, kas vasarā, bet ir jāpievērš lielāka uzmanība alpīnisma inventāra žāvēšanai un tehniskajam stāvoklim."
+    ]
+  },
+  "scraped_pages": [
+    "https://jpsolutions.lv/",
+    "https://jpsolutions.lv/kontakti",
+    "https://jpsolutions.lv/kontakti/buj",
+    "https://jpsolutions.lv/pakalpojumi",
+    "https://jpsolutions.lv/pakalpojumi/ikgadejas-drosibas-parbaudes",
+    "https://jpsolutions.lv/pakalpojumi/noma",
+    "https://jpsolutions.lv/pakalpojumi/konsultacijas",
+    "https://jpsolutions.lv/pakalpojumi/tirdznieciba",
+    "https://jpsolutions.lv/pakalpojumi/projektesana",
+    "https://jpsolutions.lv/pakalpojumi/milan-2.0-serviss",
+    "https://jpsolutions.lv/en",
+    "https://jpsolutions.lv/musu-projekti"
+  ],
+  "accent_colors": [
+    "#d6d6d6",
+    "#869791",
+    "#666666"
+  ],
+  "logos": [
+    {
+      "url": "https://jpsolutions.lv/images/fav.png",
+      "label": "site-icon",
+      "source": "link",
+      "kind": "logo",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\002-site-icon.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/cousin.png",
+      "label": "cousin",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\004-cousin.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/ct.png",
+      "label": "ct",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\005-ct.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/digitx.jpg",
+      "label": "digitx",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\006-digitx.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/hsgm.png",
+      "label": "hsgm",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\007-hsgm.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/irudek.png",
+      "label": "irudek",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\008-irudek.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/kong.jpg",
+      "label": "kong",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\009-kong.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/kratos.jpg",
+      "label": "kratos",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\010-kratos.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/marlow.png",
+      "label": "marlow",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\011-marlow.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/mode china.jpg",
+      "label": "mode china",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\logo\\012-mode-china.png"
+    }
+  ],
+  "product_images": [
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_plavinu-hes/1773763405-7726.jpeg",
+      "label": "1773763405-7726",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\004-1773763405-7726.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valts-meza-dienasts/1774011822-0184.jpeg",
+      "label": "1774011822-0184",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\005-1774011822-0184.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valdemara-61/1756992030-2022.jpeg",
+      "label": "1756992030-2022",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\006-1756992030-2022.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_bulduru-tehnikums/1756992126-9996.jpeg",
+      "label": "1756992126-9996",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\007-1756992126-9996.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_zveijnieku-iela/1756753638-1952.jpeg",
+      "label": "1756753638-1952",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\008-1756753638-1952.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_aizkraukle/1756753680-7166.jpeg",
+      "label": "1756753680-7166",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\009-1756753680-7166.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_aizkraukle-2/1773763347-0016.jpeg",
+      "label": "1773763347-0016",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\010-1773763347-0016.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_naujiene/1756753702-2735.jpeg",
+      "label": "1756753702-2735",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\011-1756753702-2735.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_daudzivoklu-majas-jumts-2/1773763371-4629.jpeg",
+      "label": "1773763371-4629",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\012-1773763371-4629.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valmieras-teatris/1773761466-8148.jpeg",
+      "label": "1773761466-8148",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\013-1773761466-8148.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_eksporta-iela/1773761793-2852.jpeg",
+      "label": "1773761793-2852",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\014-1773761793-2852.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_smago-auto-remonta-centrs/1774021742-3173.png",
+      "label": "1774021742-3173",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\015-1774021742-3173.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_pulkveza-brieza-iela/1773762018-939.jpeg",
+      "label": "1773762018-939",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\016-1773762018-939.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_rimi-noliktavas/1773762277-0854.jpeg",
+      "label": "1773762277-0854",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\017-1773762277-0854.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_botc/1774009674-1211.png",
+      "label": "1774009674-1211",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\018-1774009674-1211.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_yit-1/1774009229-6934.png",
+      "label": "1774009229-6934",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\019-1774009229-6934.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_akrapole-riga/1773761420-948.jpeg",
+      "label": "1773761420-948",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\020-1773761420-948.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_biznesa-centrs-verde/1774010816-7347.png",
+      "label": "1774010816-7347",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\021-1774010816-7347.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_preses-nams/1774012973-0071.jpeg",
+      "label": "1774012973-0071",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\022-1774012973-0071.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_lidosta-riga/1774012998-6486.jpeg",
+      "label": "1774012998-6486",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\023-1774012998-6486.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_asns-ingredient-jelgava/1756753720-2014.jpeg",
+      "label": "1756753720-2014",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\024-1756753720-2014.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_smiltene-plavas-iela/1775138653-2369.jpeg",
+      "label": "1775138653-2369",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\025-1775138653-2369.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_yit-enzelinas-iela/1775746446-3027.png",
+      "label": "1775746446-3027",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\026-1775746446-3027.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/slides/1757074024-8785.jpeg",
+      "label": "1757074024-8785",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\product_images\\027-1757074024-8785.png"
+    }
+  ],
+  "other_images": [
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/cousin.png",
+      "label": "cousin",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\004-cousin.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/ct.png",
+      "label": "ct",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\005-ct.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/digitx.jpg",
+      "label": "digitx",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\006-digitx.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/hsgm.png",
+      "label": "hsgm",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\007-hsgm.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/irudek.png",
+      "label": "irudek",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\008-irudek.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/kong.jpg",
+      "label": "kong",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\009-kong.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/kratos.jpg",
+      "label": "kratos",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\010-kratos.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/marlow.png",
+      "label": "marlow",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\011-marlow.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/mode china.jpg",
+      "label": "mode china",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\012-mode-china.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/muka.png",
+      "label": "muka",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\013-muka.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/nlg 2.png",
+      "label": "nlg 2",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\014-nlg-2.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/portwest.png",
+      "label": "portwest",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\015-portwest.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/rock exotica.png",
+      "label": "rock exotica",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\016-rock-exotica.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/safetop.png",
+      "label": "safetop",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\017-safetop.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/sir.png",
+      "label": "sir",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\018-sir.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/skylotec.png",
+      "label": "skylotec",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\019-skylotec.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/files/logo/petzl.png",
+      "label": "petzl",
+      "source": "img",
+      "kind": "logo",
+      "score": 90,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\020-petzl.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/images/fav.png",
+      "label": "site-icon",
+      "source": "link",
+      "kind": "logo",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\022-site-icon.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_plavinu-hes/1773763405-7726.jpeg",
+      "label": "1773763405-7726",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\023-1773763405-7726.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valts-meza-dienasts/1774011822-0184.jpeg",
+      "label": "1774011822-0184",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\024-1774011822-0184.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valdemara-61/1756992030-2022.jpeg",
+      "label": "1756992030-2022",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\025-1756992030-2022.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_bulduru-tehnikums/1756992126-9996.jpeg",
+      "label": "1756992126-9996",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\026-1756992126-9996.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_zveijnieku-iela/1756753638-1952.jpeg",
+      "label": "1756753638-1952",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\027-1756753638-1952.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_aizkraukle/1756753680-7166.jpeg",
+      "label": "1756753680-7166",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\028-1756753680-7166.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_aizkraukle-2/1773763347-0016.jpeg",
+      "label": "1773763347-0016",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\029-1773763347-0016.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_naujiene/1756753702-2735.jpeg",
+      "label": "1756753702-2735",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\030-1756753702-2735.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_daudzivoklu-majas-jumts-2/1773763371-4629.jpeg",
+      "label": "1773763371-4629",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\031-1773763371-4629.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_valmieras-teatris/1773761466-8148.jpeg",
+      "label": "1773761466-8148",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\032-1773761466-8148.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_eksporta-iela/1773761793-2852.jpeg",
+      "label": "1773761793-2852",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\033-1773761793-2852.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_smago-auto-remonta-centrs/1774021742-3173.png",
+      "label": "1774021742-3173",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\034-1774021742-3173.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_pulkveza-brieza-iela/1773762018-939.jpeg",
+      "label": "1773762018-939",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\035-1773762018-939.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_rimi-noliktavas/1773762277-0854.jpeg",
+      "label": "1773762277-0854",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\036-1773762277-0854.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_botc/1774009674-1211.png",
+      "label": "1774009674-1211",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\037-1774009674-1211.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_yit-1/1774009229-6934.png",
+      "label": "1774009229-6934",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\038-1774009229-6934.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_akrapole-riga/1773761420-948.jpeg",
+      "label": "1773761420-948",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\039-1773761420-948.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_biznesa-centrs-verde/1774010816-7347.png",
+      "label": "1774010816-7347",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\040-1774010816-7347.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_preses-nams/1774012973-0071.jpeg",
+      "label": "1774012973-0071",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\041-1774012973-0071.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_lidosta-riga/1774012998-6486.jpeg",
+      "label": "1774012998-6486",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\042-1774012998-6486.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_asns-ingredient-jelgava/1756753720-2014.jpeg",
+      "label": "1756753720-2014",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\043-1756753720-2014.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_smiltene-plavas-iela/1775138653-2369.jpeg",
+      "label": "1775138653-2369",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\044-1775138653-2369.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/musu-projekti_yit-enzelinas-iela/1775746446-3027.png",
+      "label": "1775746446-3027",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\045-1775746446-3027.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/gallery/slides/1757074024-8785.jpeg",
+      "label": "1757074024-8785",
+      "source": "inline-style",
+      "kind": "product",
+      "score": 70,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\046-1757074024-8785.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69bab7d443f0e.png",
+      "label": "file69bab7d443f0e",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\064-file69bab7d443f0e.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69bab77bb27fc.png",
+      "label": "file69bab77bb27fc",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\065-file69bab77bb27fc.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69b9a416175db.png",
+      "label": "file69b9a416175db",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\066-file69b9a416175db.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/style/head_bg.png",
+      "label": "head_bg",
+      "source": "style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\068-head_bg.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69ae890f93a28.png",
+      "label": "file69ae890f93a28",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\070-file69ae890f93a28.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69ae89762646c.png",
+      "label": "file69ae89762646c",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\071-file69ae89762646c.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69babbcbed6d6.png",
+      "label": "file69babbcbed6d6",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\072-file69babbcbed6d6.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69babbb27eb00.png",
+      "label": "file69babbb27eb00",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\073-file69babbb27eb00.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69ae880f00522.png",
+      "label": "file69ae880f00522",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\074-file69ae880f00522.png"
+    },
+    {
+      "url": "https://jpsolutions.lv/content/data/fixed/file69b9a2a706b12.png",
+      "label": "file69b9a2a706b12",
+      "source": "inline-style",
+      "kind": "other",
+      "score": 25,
+      "downloaded_path": "C:\\Users\\User\\Meta-ad-generator-v2\\meta-ad-generator-v3\\clients\\jpsolutions.lv\\scrape\\other_images\\075-file69b9a2a706b12.png"
+    }
+  ]
+}

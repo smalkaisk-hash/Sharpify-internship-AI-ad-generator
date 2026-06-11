@@ -1,0 +1,6 @@
+Brand: Sharpify
+Product: AI Quote Writer — SaaS tool for B2B service contractors
+Category: b2b saas software platform
+Audience: carpenters, roofers, plumbers, electricians, landscapers, contractors
+Value prop: Generate branded quotes in 60 seconds using AI
+URL: quote.sharpify.io

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#0A0E14; }
+
+.photo { position:absolute; inset:0; }
+.photo img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 20%;
+  filter:brightness(0.82) contrast(1.06);
+}
+.overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,
+    rgba(10,14,20,0.05) 0%,
+    rgba(10,14,20,0.08) 28%,
+    rgba(10,14,20,0.62) 55%,
+    rgba(10,14,20,0.94) 74%,
+    rgba(10,14,20,1.00) 100%);
+}
+.overlay-l {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, rgba(10,14,20,0.48) 0%, transparent 38%);
+}
+
+/* Logo top-left with scrim */
+.scrim-top {
+  position:absolute; top:0; left:0; right:0; height:160px; z-index:4;
+  background:linear-gradient(180deg, rgba(10,14,20,0.48) 0%, transparent 100%);
+}
+.logo-zone { position:absolute; top:52px; left:60px; z-index:10; }
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.45); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+/* Bottom content zone */
+.bottom { position:absolute; bottom:52px; left:60px; right:60px; z-index:10; }
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:14px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:84px; font-weight:700;
+  line-height:0.88; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:10px;
+}
+.sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.58); line-height:1.35; margin-bottom:20px;
+}
+.rule {
+  height:1px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.50) 0%, transparent 65%);
+  margin-bottom:20px;
+}
+
+.bullets { display:flex; flex-wrap:wrap; margin-bottom:28px; }
+.bullet { width:50%; display:flex; align-items:flex-start; gap:10px; padding:6px 8px 6px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.btext {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.80); line-height:1.28;
+}
+
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 40px; text-align:center; letter-spacing:0.08em;
+}
+.bnum {
+  min-width:34px; height:34px;
+  background:#C8A96E; border-radius:50%;
+  font-family:'Barlow Condensed', sans-serif; font-size:17px; font-weight:700;
+  color:#1C2128; text-align:center; line-height:34px;
+  flex-shrink:0; display:inline-flex; align-items:center; justify-content:center;
+}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#C8A96E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad"><!-- photo-dominant -->
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/assets/imgi_11_photo-2.jpg" alt="">
+  </div>
+  <div class="overlay"></div>
+  <div class="overlay-l"></div>
+  <div class="scrim-top"></div>
+
+  <div class="logo-zone">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+  </div>
+
+  <div class="bottom">
+    <div class="eyebrow">Move-in ready · Bez remontiem</div>
+    <div class="headline">Ienākat.<br>Uzreiz strādājat.</div>
+    <div class="sub">Atklāšana 2027. gadā — rezervē vietu jau tagad.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <span class="bnum">1</span>
+        <div class="btext">Pilnībā iekārtots birojs</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">2</span>
+        <div class="btext">BREEAM sertifikāts</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">3</span>
+        <div class="btext">16–18 €/m² noma</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">4</span>
+        <div class="btext">Priekšnoma tagad</div>
+      </div>
+    </div>
+    <div class="cta">Rezervēt tikšanos</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

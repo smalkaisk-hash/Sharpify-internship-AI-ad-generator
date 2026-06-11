@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Template: t33 — diagonal stripe, photo top, copy bottom -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12}
+
+/* Photo zone — top half */
+.photo{position:absolute;top:0;left:0;right:0;height:520px;overflow:hidden}
+.pimg{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.phaze{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#0D0D1288 70%,#0D0D12 100%)}
+
+/* Diagonal stripe — purple stripe cutting from top-left to bottom-right of the seam */
+.stripe{
+  position:absolute;top:460px;left:0;right:0;height:60px;
+  background:#6C47FF;
+  clip-path:polygon(0 100%,100% 0%,100% 100%,0 100%);
+  z-index:2;
+}
+.stripe2{
+  position:absolute;top:460px;left:0;right:0;height:60px;
+  background:#4A30CC;
+  clip-path:polygon(0 100%,100% 0,100% 20%,0 90%);
+  z-index:3;
+}
+
+/* Client count badge — overlaps stripe top-right */
+.badge{
+  position:absolute;top:432px;right:56px;z-index:10;
+  background:#6C47FF;color:#FFFFFF;
+  padding:12px 20px;border-radius:8px;
+  font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;
+  text-align:center;line-height:1.2;
+}
+.badge-num{font-size:24px;font-weight:800;display:block;letter-spacing:-0.02em}
+.badge-lbl{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.85}
+
+/* Copy zone — bottom */
+.copy{position:absolute;bottom:0;left:0;right:0;height:540px;padding:80px 56px 52px;display:flex;flex-direction:column}
+.hd1{font-family:'Space Grotesk',sans-serif;font-size:80px;font-weight:800;color:#FFFFFF;line-height:0.88;letter-spacing:-0.03em}
+.hd2{font-family:'Space Grotesk',sans-serif;font-size:80px;font-weight:800;color:#6C47FF;line-height:0.88;letter-spacing:-0.03em;margin-bottom:18px}
+.sub{font-family:'Inter',sans-serif;font-size:17px;font-weight:300;color:#A8A8B8;line-height:1.55;flex:1}
+.bottom-row{display:flex;align-items:center;gap:16px;margin-top:auto;flex-shrink:0}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em;white-space:nowrap}
+.bonus{display:flex;align-items:center;gap:8px;background:#1A1A2A;border:1px dashed #333355;border-radius:50px;padding:14px 24px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:#A8A8B8}
+.bonus-icon{font-size:16px}
+.bonus-highlight{color:#6C47FF;font-weight:600}
+.logo-img{position:absolute;top:44px;left:52px;height:116px;max-width:360px;object-fit:contain;opacity:0.90;z-index:10}
+</style></head>
+<body>
+<div class="ad">
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+  <div class="photo">
+    <img class="pimg" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/087-og-image.png" alt="">
+    <div class="phaze"></div>
+  </div>
+  <div class="stripe"></div>
+  <div class="stripe2"></div>
+
+  <div class="badge">
+    <span class="badge-num">10K+</span>
+    <span class="badge-lbl">Active Teams</span>
+  </div>
+
+  <div class="copy">
+    <div class="hd1">SHIP FASTER —</div>
+    <div class="hd2">ZERO HANDOFFS.</div>
+    <div class="sub">AI-powered visual development. Works with your real codebase, design system, and tech stack.</div>
+    <div class="bottom-row">
+      <div class="cta">Start for Free →</div>
+      <div class="bonus"><span class="bonus-icon">🎁</span> Bonus — <span class="bonus-highlight">Free Trial. No credit card.</span></div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

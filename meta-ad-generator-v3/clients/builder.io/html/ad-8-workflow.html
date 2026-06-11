@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Template: t56 — 3-step workflow diagram, dark, no photo -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12;display:flex;flex-direction:column;padding:56px 64px 52px}
+
+.corner{position:absolute;top:0;right:0;width:220px;height:220px;background:#6C47FF;clip-path:polygon(100% 0,0 0,100% 100%);opacity:0.12;pointer-events:none}
+
+.logo-img{height:116px;max-width:360px;object-fit:contain;opacity:0.90;flex-shrink:0;margin-bottom:16px}
+.eyebrow{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#6C47FF;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:20px;flex-shrink:0}
+.hd{font-family:'Space Grotesk',sans-serif;font-size:84px;font-weight:800;color:#FFFFFF;line-height:0.91;letter-spacing:-0.03em;margin-bottom:14px;flex-shrink:0}
+.hd span{color:#6C47FF}
+.tagline{font-family:'Inter',sans-serif;font-size:20px;font-weight:300;color:#A8A8B8;margin-bottom:48px;flex-shrink:0;max-width:760px}
+
+.steps{display:flex;gap:0;flex:1;align-items:stretch;min-height:0}
+.step{flex:1;display:flex;flex-direction:column;padding:28px 32px 28px 0}
+.step:not(:first-child){padding-left:32px;padding-right:0}
+.step-num{font-family:'Space Grotesk',sans-serif;font-size:72px;font-weight:800;color:#6C47FF1A;line-height:1;letter-spacing:-0.04em;margin-bottom:16px;flex-shrink:0}
+.step-icon{width:48px;height:48px;background:#6C47FF1A;border:1.5px solid #6C47FF44;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;flex-shrink:0}
+.step-title{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700;color:#FFFFFF;margin-bottom:12px;line-height:1.1;flex-shrink:0}
+.step-desc{font-family:'Inter',sans-serif;font-size:17px;font-weight:400;color:#A8A8B8;line-height:1.55}
+.divider{width:1px;background:linear-gradient(180deg,transparent 5%,#333355 25%,#333355 75%,transparent 95%);flex-shrink:0;margin:28px 0}
+
+.cta-row{display:flex;align-items:center;gap:24px;flex-shrink:0;padding-top:36px;border-top:1px solid #1E1E2E}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em}
+.proof{font-family:'Inter',sans-serif;font-size:16px;color:#555566}
+.proof b{color:#A8A8B8;font-weight:500}
+</style></head>
+<body>
+<div class="ad">
+  <div class="corner"></div>
+
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+  <div class="eyebrow">How it works — 3 steps</div>
+  <div class="hd">Zero handoffs.<br><span>Ship faster.</span></div>
+  <div class="tagline">The workflow that connects design, product, and engineering — no back-and-forth required.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-icon">🎨</div>
+      <div class="step-title">Design in Figma</div>
+      <div class="step-desc">Your designers work in Figma exactly as they do today. No new tools, no new workflows.</div>
+    </div>
+    <div class="divider"></div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-icon">⚡</div>
+      <div class="step-title">AI Converts to Code</div>
+      <div class="step-desc">Visual Copilot turns designs into production-ready code using your real components and design system.</div>
+    </div>
+    <div class="divider"></div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-icon">🚀</div>
+      <div class="step-title">Engineers Approve &amp; Ship</div>
+      <div class="step-desc">Engineers review every change in their existing workflow before anything goes live.</div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <div class="cta">Start for Free →</div>
+    <div class="proof"><b>10,000+ teams</b> already ship this way</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

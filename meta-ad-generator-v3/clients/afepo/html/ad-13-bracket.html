@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Typographic light-bg ad: navy L-bracket corners, no photo, clean blueprint feel -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#F2F4F7}
+
+/* L-bracket corners */
+.br-tl{position:absolute;top:36px;left:36px;width:82px;height:82px;border-top:5px solid #1C2D4A;border-left:5px solid #1C2D4A}
+.br-tr{position:absolute;top:36px;right:36px;width:82px;height:82px;border-top:5px solid #1C2D4A;border-right:5px solid #1C2D4A}
+.br-bl{position:absolute;bottom:36px;left:36px;width:82px;height:82px;border-bottom:5px solid #1C2D4A;border-left:5px solid #1C2D4A}
+.br-br{position:absolute;bottom:36px;right:36px;width:82px;height:82px;border-bottom:5px solid #1C2D4A;border-right:5px solid #1C2D4A}
+
+/* Subtle diagonal construction line in background */
+.diag{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(135deg,transparent 48%,rgba(53,88,170,0.06) 48%,rgba(53,88,170,0.06) 52%,transparent 52%)
+}
+
+/* UI */
+.ui{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  padding:60px 80px 60px;
+  z-index:10
+}
+.logo{
+  height:90px;max-width:230px;width:auto;display:block;object-fit:contain;
+  flex-shrink:0
+}
+
+.middle{flex:1;display:flex;flex-direction:column;justify-content:center;width:100%}
+.eyebrow{
+  font-family:'Inter',sans-serif;font-size:20px;font-weight:800;
+  color:#3558AA;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:16px
+}
+.rule{width:72px;height:5px;background:#F5C200;border-radius:2px;margin-bottom:20px}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;font-size:148px;font-weight:900;
+  line-height:0.82;letter-spacing:0.01em;text-transform:uppercase;
+  color:#1C2D4A;margin-bottom:28px
+}
+.hd em{color:#3558AA;font-style:normal}
+
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:20px 44px;flex-shrink:0;margin-bottom:0}
+.benefit{display:flex;align-items:center;gap:13px}
+.dot{
+  flex-shrink:0;color:#3558AA
+}
+.btext{font-family:'Inter',sans-serif;font-size:24px;font-weight:700;color:#1A1A1A}
+
+.cta{
+  display:block;background:#1C2D4A;color:#FFFFFF;
+  font-family:'Inter',sans-serif;font-size:22px;font-weight:800;
+  padding:22px;border-radius:6px;text-align:center;
+  letter-spacing:0.06em;text-transform:uppercase;
+  flex-shrink:0;margin-top:28px
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="br-tl"></div><div class="br-tr"></div>
+  <div class="br-bl"></div><div class="br-br"></div>
+  <div class="diag"></div>
+  <div class="ui">
+    <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+    <div class="middle">
+      <div class="eyebrow">Darba piedāvājums</div>
+      <div class="rule"></div>
+      <div class="hd">Stabils<br>darbs<br><em>visā Latvijā.</em></div>
+    </div>
+    <div class="benefits">
+      <div class="benefit"><div class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 12h20"/></svg></div><span class="btext">Pilnas slodzes darbs</span></div>
+      <div class="benefit"><div class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v12H5z"/><rect x="9" y="11" width="4" height="4" rx=".5"/><path d="M13 3l3 4h5v7h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg></div><span class="btext">Transports nodrošināts</span></div>
+      <div class="benefit"><div class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/><path d="M10 10V5a2 2 0 1 1 4 0v5"/><path d="M4 15v-3a8 8 0 0 1 16 0v3"/></svg></div><span class="btext">Darba apģērbs</span></div>
+      <div class="benefit"><div class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><span class="btext">Alga + bonusi</span></div>
+    </div>
+    <div class="cta">Piesakies darbam →</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

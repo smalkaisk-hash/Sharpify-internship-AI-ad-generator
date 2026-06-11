@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Blueprint/industrial: dark navy bg, white nameplate for logo, photo in angular frame, construction-line geometry -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0F1B2E}
+
+/* Subtle blueprint dot-grid background */
+.grid{
+  position:absolute;inset:0;
+  background-image:radial-gradient(circle, rgba(53,88,170,0.22) 1px, transparent 1px);
+  background-size:40px 40px;
+  z-index:1;
+}
+
+/* Top yellow accent bar */
+.top-bar{position:absolute;top:0;left:0;right:0;height:6px;background:#F5C200;z-index:20}
+
+/* ===== PHOTO FRAME — angled rectangular clip ===== */
+/* Angular parallelogram: right side of canvas, top area */
+.photo-frame{
+  position:absolute;
+  top:52px;right:0;
+  width:560px;height:620px;
+  clip-path:polygon(60px 0, 100% 0, 100% 100%, 0 100%);
+  overflow:hidden;
+  z-index:8;
+}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:40% 20%;filter:contrast(1.1) brightness(0.72) saturate(0.75)}
+
+/* Heavy yellow frame lines on photo frame */
+.frame-top{
+  position:absolute;top:52px;right:0;
+  height:5px;width:560px;background:#F5C200;
+  z-index:9;
+}
+.frame-right{
+  position:absolute;top:52px;right:0;
+  width:5px;height:620px;background:#F5C200;
+  z-index:9;
+}
+.frame-bottom{
+  position:absolute;top:672px;right:0;
+  height:5px;width:560px;background:#F5C200;
+  z-index:9;
+}
+
+/* Angled left edge of frame — yellow diagonal line */
+.frame-left-line{
+  position:absolute;
+  top:52px;right:556px;
+  width:5px;height:623px;
+  background:#F5C200;
+  transform-origin:0% 0%;
+  transform:rotate(6.15deg);
+  z-index:9;
+}
+
+/* ===== WHITE NAMEPLATE — logo sits here, no bg issue ===== */
+.nameplate{
+  position:absolute;top:64px;left:52px;
+  width:340px;height:136px;
+  background:#FFFFFF;
+  clip-path:polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
+  display:flex;align-items:center;padding:10px 36px 10px 24px;
+  z-index:15;
+}
+.logo{height:116px;max-width:290px;width:auto;display:block;object-fit:contain}
+
+/* ===== LEFT CONTENT COLUMN ===== */
+.left{
+  position:absolute;top:220px;left:52px;right:570px;bottom:0;
+  display:flex;flex-direction:column;
+  z-index:12;
+  padding-bottom:52px;
+}
+
+/* Eyebrow / section label */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-bottom:22px;flex-shrink:0;
+}
+.eyebrow-line{width:28px;height:3px;background:#F5C200;border-radius:2px}
+.eyebrow-text{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#F5C200;letter-spacing:0.14em;text-transform:uppercase}
+
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:88px;font-weight:900;line-height:0.87;letter-spacing:0.01em;text-transform:uppercase;color:#FFFFFF;margin-bottom:24px;flex-shrink:0}
+.hd em{color:#F5C200;font-style:normal}
+
+.rule{width:52px;height:4px;background:#3558AA;border-radius:2px;margin-bottom:24px;flex-shrink:0}
+
+/* Benefits — vertical list on left column */
+.benefits{display:flex;flex-direction:column;gap:10px;flex-shrink:0;margin-top:auto}
+.benefit{display:flex;align-items:center;gap:12px;padding:10px 14px;border-left:3px solid #3558AA;background:rgba(53,88,170,0.10)}
+.bicon{flex-shrink:0;width:26px;height:26px;color:#F5C200}
+.btext{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:rgba(210,225,245,0.90);line-height:1.3}
+
+/* CTA */
+.cta{
+  display:block;flex-shrink:0;
+  background:#F5C200;color:#0F1B2E;
+  font-family:'Inter',sans-serif;font-size:22px;font-weight:800;
+  padding:20px;border-radius:6px;
+  text-align:center;letter-spacing:0.05em;text-transform:uppercase;
+  margin-top:24px;
+}
+
+/* ===== BOTTOM RIGHT — bold requirement call-out ===== */
+.callout{
+  position:absolute;
+  bottom:52px;right:52px;
+  width:480px;
+  background:#1C2D4A;
+  border:2px solid #3558AA;
+  border-radius:6px;
+  padding:20px 24px;
+  z-index:15;
+}
+.callout-title{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#F5C200;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:12px}
+.callout-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.ci{display:flex;align-items:flex-start;gap:8px}
+.ci-dot{width:6px;height:6px;background:#F5C200;border-radius:50%;flex-shrink:0;margin-top:6px}
+.ci-text{font-family:'Inter',sans-serif;font-size:20px;font-weight:700;color:rgba(210,225,245,0.88);line-height:1.3}
+
+/* Construction angle bracket decorations */
+.bracket-tl{
+  position:absolute;top:40px;left:420px;
+  width:28px;height:28px;
+  border-top:4px solid rgba(245,194,0,0.5);
+  border-left:4px solid rgba(245,194,0,0.5);
+  z-index:6;
+}
+.bracket-br{
+  position:absolute;bottom:40px;left:380px;
+  width:28px;height:28px;
+  border-bottom:4px solid rgba(245,194,0,0.35);
+  border-right:4px solid rgba(245,194,0,0.35);
+  z-index:6;
+}
+/* Horizontal rule dividing photo area from callout */
+.h-rule{
+  position:absolute;
+  top:688px;right:52px;width:500px;height:2px;
+  background:rgba(53,88,170,0.45);
+  z-index:10;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="grid"></div>
+  <div class="top-bar"></div>
+
+  <!-- Photo frame with angular clip -->
+  <div class="photo-frame">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated-social-proof-1.jpg" alt="">
+  </div>
+  <div class="frame-top"></div>
+  <div class="frame-right"></div>
+  <div class="frame-bottom"></div>
+  <div class="frame-left-line"></div>
+
+  <!-- White nameplate — logo sits on white, bg invisible -->
+  <div class="nameplate">
+    <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+  </div>
+
+  <!-- Decorative angle brackets -->
+  <div class="bracket-tl"></div>
+  <div class="bracket-br"></div>
+
+  <!-- Left content -->
+  <div class="left">
+    <div class="eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Mēs pieņemam darbā</span>
+    </div>
+    <div class="hd">Darbs<br>visā<br><em>Latvijā</em></div>
+    <div class="rule"></div>
+    <div class="benefits">
+      <div class="benefit">
+        <!-- briefcase: full-time work -->
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12"/><path d="M2 12h20"/></svg>
+        <span class="btext">Pilnas slodzes darbs</span>
+      </div>
+      <div class="benefit">
+        <!-- van: transport to sites -->
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v12H5z"/><rect x="9" y="11" width="4" height="4" rx=".5"/><path d="M13 3l3 4h5v7h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg>
+        <span class="btext">Transports uz objektiem</span>
+      </div>
+      <div class="benefit">
+        <!-- hard hat: work clothes & equipment -->
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/><path d="M10 10V5a2 2 0 1 1 4 0v5"/><path d="M4 15v-3a8 8 0 0 1 16 0v3"/></svg>
+        <span class="btext">Darba apģērbs un aprīkojums</span>
+      </div>
+      <div class="benefit">
+        <!-- trending up: salary + bonuses -->
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        <span class="btext">Alga + bonusi par rezultātu</span>
+      </div>
+    </div>
+    <div class="cta">Piesakies darbam →</div>
+  </div>
+
+  <!-- Bottom-right callout box -->
+  <div class="h-rule"></div>
+  <div class="callout">
+    <div class="callout-title">Ko sagaidām no Tevis</div>
+    <div class="callout-grid">
+      <div class="ci"><div class="ci-dot"></div><span class="ci-text">B kategorijas tiesības</span></div>
+      <div class="ci"><div class="ci-dot"></div><span class="ci-text">Latviešu valoda</span></div>
+      <div class="ci"><div class="ci-dot"></div><span class="ci-text">Atbildīga attieksme</span></div>
+      <div class="ci"><div class="ci-dot"></div><span class="ci-text">Pieredze — pluss</span></div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

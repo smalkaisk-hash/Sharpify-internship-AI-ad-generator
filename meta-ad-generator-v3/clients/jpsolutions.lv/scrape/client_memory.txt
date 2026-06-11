@@ -1,0 +1,17 @@
+Client: Industriālā alpīnisma pakalpojumi
+Website: https://jpsolutions.lv/
+Source URL: https://jpsolutions.lv/
+Language: lv
+Location: Juridiskā adrese: Rīga, Dagmāras iela 4 - 6, LV-1007; Rīga, Dagmāras iela 4 - 6, LV-1007; Rīga, Dagmāras iela 4
+Primary logo for palette: unknown
+
+Scraped assets:
+- Logos: 10 files in logo/
+- Product images: 24 files in product_images/
+- Other images: 52 files in other_images/
+- Colors: accent_colors.txt
+- Page and image URLs: scraped_urls.txt
+- Full structured data: manifest.json
+
+Chat context:
+This brand was scraped by the Meta Ad Generator pipeline. The scrape output sits under clients/<domain>/scrape/ and is consumed by the copy and palette stages. See info.txt for human-readable summary, manifest.json for structured data, accent_colors.txt for the extracted color palette.

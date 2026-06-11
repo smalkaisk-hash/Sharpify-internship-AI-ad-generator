@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Slate Teal",
+    "theme": "Light",
+    "use_for": "clean beauty, product photography, water/purity brands, mixed warm/cool tones",
+    "swatches": {
+      "base": "#F8F7F4",
+      "second_tone": "#C8D8DC",
+      "accents": [
+        "#75B2C6",
+        "#C09F72"
+      ],
+      "text_cta_bg": "#1C2E35",
+      "body_text": "#1C2E35",
+      "cta_text": "#F8F7F4"
+    },
+    "contrast_rating": "✓",
+    "distance": 51.05,
+    "matched_against": [
+      "#f5f5f5",
+      "#e5e5e5",
+      "#f89406",
+      "#222222",
+      "#fcf8e3",
+      "#f2dede",
+      "#dff0d8",
+      "#d9edf7"
+    ]
+  },
+  {
+    "name": "Steel Horizon",
+    "theme": "Light",
+    "use_for": "industrial safety, B2B, construction, heavy industry, professional services",
+    "swatches": {
+      "base": "#F0F2F5",
+      "second_tone": "#C8D4E0",
+      "accents": [
+        "#8A9AA8",
+        "#E8750A"
+      ],
+      "text_cta_bg": "#1A2535",
+      "body_text": "#1A2535",
+      "cta_text": "#F0F2F5"
+    },
+    "contrast_rating": "✓",
+    "distance": 78.63,
+    "matched_against": [
+      "#f5f5f5",
+      "#e5e5e5",
+      "#f89406",
+      "#222222",
+      "#fcf8e3",
+      "#f2dede",
+      "#dff0d8",
+      "#d9edf7"
+    ]
+  },
+  {
+    "name": "Warm Chocolate",
+    "theme": "Dark",
+    "use_for": "warm lifestyle photography, natural beauty, skincare, wellness, portrait-heavy brands",
+    "swatches": {
+      "base": "#F4E0CC",
+      "second_tone": "#E8C9A8",
+      "accents": [
+        "#DC9C5F",
+        "#A86840"
+      ],
+      "text_cta_bg": "#452016",
+      "body_text": "#452016",
+      "cta_text": "#F4E0CC"
+    },
+    "contrast_rating": "✓",
+    "distance": 80.49,
+    "matched_against": [
+      "#f5f5f5",
+      "#e5e5e5",
+      "#f89406",
+      "#222222",
+      "#fcf8e3",
+      "#f2dede",
+      "#dff0d8",
+      "#d9edf7"
+    ]
+  },
+  {
+    "name": "Lavender Sapphire Mist",
+    "theme": "Light",
+    "use_for": "botanical beauty, floral branding, spa, wellness",
+    "swatches": {
+      "base": "#F0DAD5",
+      "second_tone": "#BABBB1",
+      "accents": [
+        "#DEA785",
+        "#D9A69F",
+        "#C56B62",
+        "#6C739C"
+      ],
+      "text_cta_bg": "#424658",
+      "body_text": "#424658",
+      "cta_text": "#F0DAD5"
+    },
+    "contrast_rating": "✓",
+    "distance": 83.7,
+    "matched_against": [
+      "#f5f5f5",
+      "#e5e5e5",
+      "#f89406",
+      "#222222",
+      "#fcf8e3",
+      "#f2dede",
+      "#dff0d8",
+      "#d9edf7"
+    ]
+  },
+  {
+    "name": "Pastel Blush",
+    "theme": "Light",
+    "use_for": "beauty, skincare, floral, feminine lifestyle",
+    "swatches": {
+      "base": "#E9D9C8",
+      "second_tone": "#E4A489",
+      "accents": [
+        "#9B9F91",
+        "#A6844E",
+        "#BC6C54"
+      ],
+      "text_cta_bg": "#3E4C54",
+      "body_text": "#3E4C54",
+      "cta_text": "#E9D9C8"
+    },
+    "contrast_rating": "✓",
+    "distance": 87.41,
+    "matched_against": [
+      "#f5f5f5",
+      "#e5e5e5",
+      "#f89406",
+      "#222222",
+      "#fcf8e3",
+      "#f2dede",
+      "#dff0d8",
+      "#d9edf7"
+    ]
+  }
+]

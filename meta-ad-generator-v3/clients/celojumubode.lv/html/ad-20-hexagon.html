@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#1E1E1E}
+
+/* hex outline ring — tinted blue fill, slightly larger, z=0 */
+.hex-ring{position:absolute;right:46px;top:50%;transform:translateY(-50%);
+  width:558px;height:630px;
+  clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
+  background:rgba(229,0,126,0.20);z-index:0}
+
+/* hexagon photo frame, z=1 */
+.hex-frame{position:absolute;right:64px;top:50%;transform:translateY(-50%);
+  width:524px;height:596px;
+  clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
+  overflow:hidden;z-index:1;
+  filter:drop-shadow(0 24px 64px rgba(0,0,0,0.32))}
+.hex-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+
+/* decorative yellow dot top of hex */
+.hex-dot{position:absolute;right:322px;top:118px;
+  width:18px;height:18px;border-radius:50%;background:#E5007E;z-index:4}
+
+/* text column — width 420px; hex left edge at x=1080-64-524*0.25=1080-64-131=885...
+   Actually flat-top hex: left edge at right:64 + 524*0 = right:64+0=1016? No.
+   hex-frame right:64, width:524 → left CSS edge at x=1080-64-524=492
+   clip-path left point (25% of 524)= 131px from left edge → at x=492+131=623...
+   wait: polygon(25% 0% means x=25%*524=131 at y=0 top-left point.
+   leftmost point (0% 50%) = x=0 at y=50% = at x=492. Gap from col(420px)=492-420=72px ✓ */
+.col{position:absolute;left:0;top:0;bottom:0;width:420px;
+  display:flex;flex-direction:column;padding:56px 44px 160px 64px;z-index:10}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{height:88px;max-width:340px;width:auto;object-fit:contain;filter:none}
+.spacer{flex:1;min-height:0}
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;color:rgba(229,0,126,0.72);
+  margin-bottom:14px;flex-shrink:0}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:78px;font-weight:800;
+  color:#FFFFFF;line-height:0.90;text-transform:uppercase;letter-spacing:-0.01em;
+  margin-bottom:22px;flex-shrink:0}
+.hd em{color:#E5007E;font-style:normal}
+.rule{height:1px;background:linear-gradient(90deg,rgba(229,0,126,0.50),transparent);
+  margin-bottom:18px;flex-shrink:0}
+.bullets{display:flex;flex-direction:column;gap:11px;flex-shrink:0}
+.bullet{display:flex;align-items:flex-start;gap:10px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;
+  line-height:1.28;color:rgba(255,255,255,0.85)}
+.spacer2{height:28px;flex-shrink:0}
+.cta{align-self:flex-start;flex-shrink:0;display:block;
+  background:#E5007E;color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;
+  padding:22px 40px;border-radius:8px;letter-spacing:0.03em}
+
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#E5007E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</head>
+<body>
+<div class="ad">
+  <div class="hex-ring"></div>
+  <div class="hex-frame">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-5.jpg" alt="">
+  </div>
+  <div class="hex-dot"></div>
+  <div class="col">
+    <div class="logo-zone"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">50+ valstis</div>
+    <div class="hd">Turcija,<br>Ēģipte,<br><em>Grieķija.</em></div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet"><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+      <div class="bullet"><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+      <div class="bullet"><span class="btext">351 apmierināts klients. Vērtējums 4.9/5.</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+</div>
+</body>
+</html>

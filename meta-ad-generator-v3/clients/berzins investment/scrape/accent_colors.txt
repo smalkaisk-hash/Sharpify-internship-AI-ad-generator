@@ -1,0 +1,2 @@
+# Paste scraped accent hex colors here, one per line
+# e.g. #1A3B6E

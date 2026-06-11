@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Template: t62 — old method strikethrough, new value, dark + right photo fade -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12}
+
+/* Right photo fade zone */
+.photo{position:absolute;top:0;right:0;width:600px;height:1080px;overflow:hidden}
+.pimg{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.pfade{position:absolute;inset:0;background:linear-gradient(90deg,#0D0D12 0%,#0D0D12dd 20%,#0D0D1288 50%,transparent 100%)}
+
+/* Content column on left */
+.content{position:absolute;top:0;left:0;width:620px;height:1080px;display:flex;flex-direction:column;padding:52px 56px 52px}
+
+/* Logo */
+.logo-img{height:116px;max-width:360px;object-fit:contain;opacity:0.90;flex-shrink:0;margin-bottom:auto}
+
+/* Topic label */
+.topic{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.20em;text-transform:uppercase;color:#555566;margin-bottom:16px;flex-shrink:0}
+
+/* Old method strikethrough */
+.old-method{
+  font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;
+  color:#444455;letter-spacing:0.02em;text-transform:uppercase;
+  text-decoration:line-through;text-decoration-color:#BC3030;
+  margin-bottom:10px;flex-shrink:0;
+}
+
+/* Arrow */
+.arrow{font-size:28px;color:#6C47FF;margin-bottom:16px;flex-shrink:0}
+
+/* New value */
+.new-val{font-family:'Space Grotesk',sans-serif;font-size:148px;font-weight:800;color:#6C47FF;line-height:0.82;letter-spacing:-0.04em;flex-shrink:0;margin-bottom:10px}
+.new-sub{font-family:'Inter',sans-serif;font-size:18px;font-weight:400;color:#A8A8B8;line-height:1.5;margin-bottom:36px;flex-shrink:0;max-width:460px}
+
+/* Feature pill */
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#1A1A2A;border:1px solid #2A2A3E;border-radius:50px;
+  padding:14px 22px;margin-bottom:36px;flex-shrink:0;align-self:flex-start;
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:#A8A8B8;
+}
+.pill-dot{width:6px;height:6px;border-radius:50%;background:#6C47FF;flex-shrink:0}
+
+/* CTA */
+.cta{
+  display:inline-flex;align-items:center;gap:12px;
+  background:#6C47FF;color:#FFFFFF;
+  font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;
+  padding:18px 52px;border-radius:50px;
+  align-self:flex-start;flex-shrink:0;margin-bottom:12px;
+}
+.footer-note{font-family:'Inter',sans-serif;font-size:11px;color:#333344;letter-spacing:0.08em;flex-shrink:0}
+</style></head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img class="pimg" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/builder.io/scrape/other_images/081-og-image.png" alt="">
+    <div class="pfade"></div>
+  </div>
+
+  <div class="content">
+    <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+
+    <div class="topic">Development Workflow</div>
+    <div class="old-method">HANDOFFS</div>
+    <div class="arrow">↓</div>
+    <div class="new-val">0.</div>
+    <div class="new-sub">Every role on the product team builds and ships alongside AI agents. One workflow, zero back-and-forth.</div>
+
+    <div class="pill">
+      <span class="pill-dot"></span>
+      AI-powered &nbsp;·&nbsp; Any tech stack &nbsp;·&nbsp; Free to start
+    </div>
+
+    <div class="cta">Start for Free →</div>
+    <div class="footer-note">Builder.io · Visual Development Platform · React, Next.js &amp; more</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>

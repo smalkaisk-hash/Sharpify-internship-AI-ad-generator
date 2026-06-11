@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; display:flex; }
+
+/* ── Left content column ── */
+.left {
+  width:490px; height:1080px; flex-shrink:0;
+  background:#39445B;
+  display:flex; flex-direction:column;
+  padding:52px 52px 0 52px;
+  position:relative; z-index:10;
+}
+.left::after {
+  content:''; position:absolute; top:0; right:0; bottom:0; width:1px;
+  background:linear-gradient(180deg, transparent 0%, #9F97B866 20%, #9F97B8aa 50%, #9F97B866 80%, transparent 100%);
+}
+
+.brand-tag {
+  font-family:'DM Sans', sans-serif; font-size:10px; font-weight:400;
+  color:rgba(255,255,255,0.34); text-transform:uppercase; letter-spacing:0.30em;
+  margin-bottom:32px;
+}
+
+.hook {
+  font-family:'Cormorant Garamond', serif; font-size:26px; font-weight:300; font-style:italic;
+  color:#9F97B8; letter-spacing:0.01em; margin-bottom:20px;
+}
+
+.headline {
+  font-family:'Cormorant Garamond', serif; font-size:52px; line-height:0.90;
+  font-weight:300; font-style:italic; color:rgba(255,255,255,0.93);
+  letter-spacing:-0.018em; margin-bottom:24px;
+}
+.headline em { font-weight:600; color:#9F97B8; }
+
+.divider {
+  width:100%; height:1px; margin-bottom:24px;
+  background:linear-gradient(90deg, #9F97B866 0%, transparent 100%);
+}
+
+.bullets { display:flex; flex-direction:column; flex:1; }
+.bullet {
+  display:flex; align-items:flex-start; gap:14px;
+  padding:13px 0; border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.bullet:first-child { border-top:1px solid rgba(255,255,255,0.08); }
+.dot {
+  width:6px; height:6px; border-radius:50%; background:#9F97B8; opacity:0.70;
+  flex-shrink:0; margin-top:5px;
+}
+.bullet-text {
+  font-family:'DM Sans', sans-serif; font-size:13px; font-weight:400;
+  color:rgba(255,255,255,0.68); line-height:1.50; letter-spacing:0.01em;
+}
+
+.cta-wrap { padding-bottom:158px; padding-top:28px; }
+.cta {
+  display:block; width:100%;
+  background:linear-gradient(135deg, #2a3347 0%, #3030CF 100%);
+  color:#ECE9E6; font-family:'DM Sans', sans-serif;
+  font-size:15px; font-weight:600; padding:22px 16px; border-radius:8px;
+  text-align:center; letter-spacing:0.06em;
+}
+
+/* ── Right photo panel ── */
+.right { flex:1; position:relative; overflow:hidden; }
+.right img { width:100%; height:100%; object-fit:cover; object-position:60% 18%; filter:saturate(0.88) contrast(1.04); }
+.vignette-l {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, #39445B 0%, #39445Bcc 6%, #39445B88 14%, #39445B44 26%, #39445B1a 40%, transparent 60%);
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="left">
+    <div class="brand-tag">Industriālā alpīnisma pakalpojumi</div>
+    <div class="hook">Petzl, Skylotec. 20 projekti.</div>
+    <div class="headline">Plānošana, uzstādīšana, <em>pārbaudes.</em></div>
+    <div class="divider"></div>
+    <div class="bullets">
+      <div class="bullet"><div class="dot"></div><span class="bullet-text">Inventārs no Petzl, Skylotec, Kong, Marlow.</span></div>
+      <div class="bullet"><div class="dot"></div><span class="bullet-text">Ikgadējās drošības pārbaudes saskaņā ar likumu.</span></div>
+      <div class="bullet"><div class="dot"></div><span class="bullet-text">No projektēšanas līdz uzturēšanai vienā līgumā.</span></div>
+      <div class="bullet"><div class="dot"></div><span class="bullet-text">Aprīkojuma noma. Bez lieliem sākuma ieguldījumiem.</span></div>
+    </div>
+    <div class="cta-wrap"><div class="cta">Pieteikties konsultācijai</div></div>
+  </div>
+  <div class="right">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/jpsolutions.lv/scrape/product_images/027-1757074024-8785.png" alt="">
+    <div class="vignette-l"></div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

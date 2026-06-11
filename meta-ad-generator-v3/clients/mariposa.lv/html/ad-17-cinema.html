@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+*{hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#1C2428}
+
+/* full-bleed photo */
+.bg-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;z-index:0}
+
+/* strong cinematic vignette from all edges */
+.vignette{
+  position:absolute;inset:0;z-index:1;
+  background:
+    radial-gradient(ellipse 90% 80% at 50% 40%, transparent 30%, rgba(20,14,10,0.72) 75%, rgba(20,14,10,0.94) 100%),
+    linear-gradient(180deg, rgba(20,14,10,0.65) 0%, transparent 22%, transparent 55%, rgba(20,14,10,0.88) 80%, rgba(20,14,10,0.97) 100%);
+}
+
+/* logo top-left */
+.logo-zone{position:absolute;top:56px;left:72px;z-index:10}
+.logo-zone img{height:116px;max-width:360px;width:auto;display:block;object-fit:contain;opacity:0.88}
+
+/* eyebrow tag */
+.eyebrow{
+  position:absolute;top:56px;right:72px;z-index:10;
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:rgba(228,164,137,0.85);
+}
+
+/* statement — sits low in the dark vignette zone, left-aligned to clear the subject */
+.statement{
+  position:absolute;bottom:330px;left:72px;right:0;
+  text-align:left;z-index:10;
+}
+.statement-label{
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.35em;text-transform:uppercase;
+  color:rgba(228,164,137,0.92);margin-bottom:14px;
+}
+.statement-hd{
+  font-family:'Cormorant Garamond',serif;
+  font-size:92px;line-height:0.90;font-weight:600;font-style:italic;
+  color:#E9D9C8;
+  text-shadow:0 4px 40px rgba(0,0,0,0.70);
+}
+
+/* thin gold rule line — between statement and bottom zone */
+.center-rule{
+  position:absolute;bottom:316px;left:72px;right:200px;
+  height:1px;background:linear-gradient(90deg,rgba(166,132,78,0.55),transparent);
+  z-index:10;
+}
+
+/* bottom content zone */
+.bottom-zone{
+  position:absolute;bottom:0;left:0;right:0;height:320px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:0 72px 64px;z-index:10;
+  gap:16px;
+}
+.mini-stat{
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;
+  color:rgba(228,164,137,0.70);
+}
+.cta{
+  display:block;
+  background:#BC6C54;color:#E9D9C8;
+  font-family:'Raleway',sans-serif;font-size:21px;font-weight:600;
+  padding:22px 80px;border-radius:4px;
+  text-align:center;letter-spacing:0.08em;text-transform:uppercase;
+  width:100%;
+}
+/* bullet-style-start */
+.benefit,.brow{border:2px solid #9B9F91;border-radius:28px;padding:10px 18px;gap:12px;box-shadow:0 0 18px rgba(155,159,145,0.55),inset 0 0 8px rgba(155,159,145,0.08);background:rgba(255,255,255,0.05);}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{background:#9B9F91;box-shadow:0 0 8px rgba(155,159,145,0.55);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="bg-photo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/image/generated-2.jpg" alt="">
+  <div class="vignette"></div>
+  <div class="logo-zone">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/scrape/logo/001-mariposa-skaistumkop-anas-salons-genskaln.png" alt="Mariposa">
+  </div>
+  <div class="eyebrow">Optimas · Rīga</div>
+  <div class="statement">
+    <div class="statement-hd">Sāc redzēt<br>atšķirību.</div>
+  </div>
+  <div class="center-rule"></div>
+  <div class="bottom-zone">
+    <div class="mini-stat">IPL · RF · Lāzerepilācija · Bezmaksas konsultācija</div>
+    <div class="cta">Piesakies bezmaksas konsultācijai</div>
+  </div>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  return Promise.all([
+    document.fonts.load('400 22px Raleway','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+    document.fonts.load('600 92px "Cormorant Garamond"','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+  ]);
+}).then(()=>{ document.title="fonts-ready"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none;}
+.ad{
+  width:1080px;height:1080px;
+  background:#1E0B16;
+  font-family:'Inter',sans-serif;
+  position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+  align-items:center;
+}
+/* radial vignette background glow */
+.ad::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 55% at 50% 40%,rgba(229,0,126,0.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+/* outer decorative ring 3 */
+.ring3{
+  position:absolute;
+  top:72px;left:50%;transform:translateX(-50%);
+  width:700px;height:700px;border-radius:50%;
+  border:1px solid rgba(229,0,126,0.12);
+}
+/* outer decorative ring 2 */
+.ring2{
+  position:absolute;
+  top:94px;left:50%;transform:translateX(-50%);
+  width:656px;height:656px;border-radius:50%;
+  border:1px solid rgba(229,0,126,0.22);
+}
+/* main porthole ring */
+.ring1{
+  position:absolute;
+  top:116px;left:50%;transform:translateX(-50%);
+  width:612px;height:612px;border-radius:50%;
+  border:3px solid rgba(229,0,126,0.65);
+  box-shadow:0 0 40px rgba(229,0,126,0.25),inset 0 0 30px rgba(229,0,126,0.10);
+}
+.porthole{
+  position:absolute;
+  top:122px;left:50%;transform:translateX(-50%);
+  width:600px;height:600px;border-radius:50%;
+  overflow:hidden;
+}
+.porthole img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:50% 15%;
+}
+/* logo */
+.logo{position:absolute;top:40px;left:48px;z-index:5; height:76px; max-width:360px; object-fit:contain;}
+.logo img{height:116px;max-width:360px;object-fit:contain;}
+/* bottom content */
+.bottom{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:28px 80px 44px 80px;
+  background:linear-gradient(to top,#1E0B16 70%,transparent);
+  display:flex;flex-direction:column;
+  align-items:center;gap:0;
+}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:68px;line-height:1.0;
+  color:#FFFFFF;text-transform:uppercase;
+  hyphens:none;-webkit-hyphens:none;
+  text-align:center;margin-bottom:22px;
+}
+.hd em{color:#E5007E;font-style:normal;}
+.benefits{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:10px;width:100%;margin-bottom:28px;
+}
+/* accent-dot bullets */
+.benefit,.brow{gap:14px;padding:8px 0;border-bottom:1px solid rgba(229,0,126,0.2);display:flex;align-items:flex-start;}
+.benefit:last-child,.brow:last-child{border-bottom:none;}
+.benefit::before,.brow::before{content:'';width:10px;height:10px;border-radius:50%;background:#E5007E;flex-shrink:0;margin-top:7px;box-shadow:0 0 8px rgba(229,0,126,0.55);}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-size:22px;font-weight:500;line-height:1.3;}
+.cta{
+  display:inline-block;background:#E5007E;color:#fff;
+  font-size:24px;font-weight:700;padding:22px 48px;
+  border-radius:50px;text-align:center;
+}
+/* bullet-style-start */
+.benefit,.brow{gap:14px;padding:8px 0;border-bottom:1px solid rgba(229,0,126,0.2);}
+.benefit:last-child,.brow:last-child{border-bottom:none;}
+.benefit::before,.brow::before{content:'';width:10px;height:10px;border-radius:50%;background:#E5007E;flex-shrink:0;margin-top:7px;box-shadow:0 0 8px rgba(229,0,126,0.55);}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="ring3"></div>
+  <div class="ring2"></div>
+  <div class="ring1"></div>
+  <div class="porthole">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-3.jpg" alt="">
+  </div>
+  <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt=""></div>
+  <div class="bottom">
+    <div class="hd">Turcijā vasarā.<br><em>Bez iekrājumiem.</em></div>
+    <div class="benefits">
+      <div class="benefit"><span class="btext">Vairāk nekā 1000 ceļojumi no Rīgas.</span></div>
+      <div class="benefit"><span class="btext">Bezprocentu nomaksa. Sadaliet pa daļām.</span></div>
+      <div class="benefit"><span class="btext">Lidojums, viesnīca un transfērs vienā cenā.</span></div>
+      <div class="benefit"><span class="btext">Turcija, Ēģipte, Grieķija un 50+ valstis.</span></div>
+    </div>
+    <div class="cta">Rezervēt ceļojumu</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

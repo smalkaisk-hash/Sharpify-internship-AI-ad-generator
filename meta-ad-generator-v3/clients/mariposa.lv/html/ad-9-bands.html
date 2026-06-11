@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+*{hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+
+.bg-photo{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:50% 10%;z-index:0;
+}
+/* dual scrim — top-left for logo + bottom fade for lower content */
+.bg-grad{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(135deg, rgba(62,76,84,0.70) 0%, rgba(62,76,84,0.26) 16%, transparent 32%),
+    linear-gradient(180deg,
+      transparent 0%,
+      rgba(62,76,84,0.00) 55%,
+      rgba(62,76,84,0.52) 72%,
+      rgba(62,76,84,0.82) 88%,
+      rgba(62,76,84,0.96) 100%
+    );
+}
+
+.logo-zone{
+  position:absolute;top:52px;left:60px;z-index:10;
+}
+.logo-zone img{
+  height:116px;max-width:360px;width:auto;display:block;object-fit:contain;
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,0.60));
+}
+
+/* eyebrow above top band */
+.eyebrow-above{
+  position:absolute;top:272px;left:0;right:0;text-align:center;
+  z-index:10;
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:#E4A489;
+}
+
+/* diagonal bands — all share same angle */
+.band-top{
+  position:absolute;
+  left:-140px;right:-140px;
+  top:308px;height:62px;
+  background:rgba(228,164,137,0.65);
+  transform:rotate(-8deg);
+  transform-origin:center center;
+  z-index:4;
+}
+.band-main{
+  position:absolute;
+  left:-140px;right:-140px;
+  top:340px;height:222px;
+  background:rgba(188,108,84,0.93);
+  transform:rotate(-8deg);
+  transform-origin:center center;
+  z-index:5;
+  display:flex;align-items:center;justify-content:center;
+}
+.band-main-text{
+  transform:rotate(8deg);
+  font-family:'Cormorant Garamond',serif;
+  font-size:68px;font-weight:600;font-style:italic;
+  color:#E9D9C8;text-align:center;line-height:0.94;
+  letter-spacing:-0.01em;
+}
+.band-sub{
+  position:absolute;
+  left:-140px;right:-140px;
+  top:570px;height:62px;
+  background:rgba(228,164,137,0.55);
+  transform:rotate(-8deg);
+  transform-origin:center center;
+  z-index:4;
+  display:flex;align-items:center;justify-content:center;
+}
+.band-sub-text{
+  transform:rotate(8deg);
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:#E9D9C8cc;
+}
+
+/* benefit bullets below bands */
+.sub-benefits{
+  position:absolute;top:720px;left:60px;right:60px;
+  display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;
+  z-index:10;
+}
+.brow{display:flex;align-items:flex-start;gap:10px}
+.bdot{width:6px;height:6px;border-radius:50%;background:#E4A489;flex-shrink:0;margin-top:9px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;line-height:1.32;color:#E9D9C8bb}
+
+.cta{
+  position:absolute;bottom:150px;left:60px;right:60px;
+  display:block;background:#BC6C54;color:#E9D9C8;
+  font-family:'Raleway',sans-serif;font-size:21px;font-weight:600;
+  padding:22px 36px;border-radius:4px;
+  text-align:center;letter-spacing:0.08em;text-transform:uppercase;
+  z-index:10;
+}
+/* bullet-style-start */
+.benefit,.brow{border-left:5px solid #9B9F91;border-radius:0;padding:9px 16px;gap:12px;background:transparent;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="bg-photo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/image/generated-4.jpg" alt="">
+  <div class="bg-grad"></div>
+  <div class="logo-zone">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/scrape/logo/001-mariposa-skaistumkop-anas-salons-genskaln.png" alt="Mariposa">
+  </div>
+  <div class="eyebrow-above">Optimas · Rīga</div>
+  <div class="band-top"></div>
+  <div class="band-main">
+    <span class="band-main-text">Trīs tehnoloģijas.<br>Vienā platformā.</span>
+  </div>
+  <div class="band-sub">
+    <span class="band-sub-text">IPL · RF · Lāzerepilācija</span>
+  </div>
+  <div class="sub-benefits">
+    <div class="brow"><span class="bdot"></span><span class="btext">IPL, RF un lāzerepilācija vienā platformā</span></div>
+    <div class="brow"><span class="bdot"></span><span class="btext">95% klientu atgriežas pēc pirmās procedūras</span></div>
+    <div class="brow"><span class="bdot"></span><span class="btext">Redzami rezultāti jau pēc 2 sesijām</span></div>
+    <div class="brow"><span class="bdot"></span><span class="btext">Bezmaksas konsultācija, vērtība 40€</span></div>
+  </div>
+  <div class="cta">Piesakies bezmaksas konsultācijai</div>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  return Promise.all([
+    document.fonts.load('400 22px Raleway','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+    document.fonts.load('600 68px "Cormorant Garamond"','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+  ]);
+}).then(()=>{ document.title="fonts-ready"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Soft Tears",
+    "theme": "Light",
+    "use_for": "light lifestyle editorial, wellness, home goods",
+    "swatches": {
+      "base": "#ECE9E6",
+      "second_tone": "#C1CBCA",
+      "accents": [
+        "#9F97B8",
+        "#3030CF"
+      ],
+      "text_cta_bg": "#39445B",
+      "body_text": "#39445B",
+      "cta_text": "#ECE9E6"
+    },
+    "contrast_rating": "✓",
+    "distance": 78.42,
+    "matched_against": [
+      "#fffa90",
+      "#e9e9e9",
+      "#f6f6f6",
+      "#ededed",
+      "#007fff",
+      "#fddfdf",
+      "#aaaaaa",
+      "#404040"
+    ]
+  },
+  {
+    "name": "Lavender Sapphire Mist",
+    "theme": "Light",
+    "use_for": "botanical beauty, floral branding, spa, wellness",
+    "swatches": {
+      "base": "#F0DAD5",
+      "second_tone": "#BABBB1",
+      "accents": [
+        "#DEA785",
+        "#D9A69F",
+        "#C56B62",
+        "#6C739C"
+      ],
+      "text_cta_bg": "#424658",
+      "body_text": "#424658",
+      "cta_text": "#F0DAD5"
+    },
+    "contrast_rating": "✓",
+    "distance": 91.05,
+    "matched_against": [
+      "#fffa90",
+      "#e9e9e9",
+      "#f6f6f6",
+      "#ededed",
+      "#007fff",
+      "#fddfdf",
+      "#aaaaaa",
+      "#404040"
+    ]
+  },
+  {
+    "name": "Amethyst Wisteria Twilight",
+    "theme": "Light",
+    "use_for": "botanical beauty, floral branding, spa, wellness",
+    "swatches": {
+      "base": "#F0F0F0",
+      "second_tone": "#FCE5CC",
+      "accents": [
+        "#D0ADC4",
+        "#C889B5",
+        "#736EAE"
+      ],
+      "text_cta_bg": "#744B93",
+      "body_text": "#744B93",
+      "cta_text": "#F0F0F0"
+    },
+    "contrast_rating": "✓",
+    "distance": 97.81,
+    "matched_against": [
+      "#fffa90",
+      "#e9e9e9",
+      "#f6f6f6",
+      "#ededed",
+      "#007fff",
+      "#fddfdf",
+      "#aaaaaa",
+      "#404040"
+    ]
+  },
+  {
+    "name": "Slate Teal",
+    "theme": "Light",
+    "use_for": "clean beauty, product photography, water/purity brands, mixed warm/cool tones",
+    "swatches": {
+      "base": "#F8F7F4",
+      "second_tone": "#C8D8DC",
+      "accents": [
+        "#75B2C6",
+        "#C09F72"
+      ],
+      "text_cta_bg": "#1C2E35",
+      "body_text": "#1C2E35",
+      "cta_text": "#F8F7F4"
+    },
+    "contrast_rating": "✓",
+    "distance": 100.28,
+    "matched_against": [
+      "#fffa90",
+      "#e9e9e9",
+      "#f6f6f6",
+      "#ededed",
+      "#007fff",
+      "#fddfdf",
+      "#aaaaaa",
+      "#404040"
+    ]
+  },
+  {
+    "name": "Meadows",
+    "theme": "Light",
+    "use_for": "organic beauty, wellness, natural food, sustainability",
+    "swatches": {
+      "base": "#E6F0F1",
+      "second_tone": "#ECCCBC",
+      "accents": [
+        "#B6A8D0",
+        "#D48A93"
+      ],
+      "text_cta_bg": "#846CAC",
+      "body_text": "#846CAC",
+      "cta_text": "#E6F0F1"
+    },
+    "contrast_rating": "",
+    "distance": 115.98,
+    "matched_against": [
+      "#fffa90",
+      "#e9e9e9",
+      "#f6f6f6",
+      "#ededed",
+      "#007fff",
+      "#fddfdf",
+      "#aaaaaa",
+      "#404040"
+    ]
+  }
+]

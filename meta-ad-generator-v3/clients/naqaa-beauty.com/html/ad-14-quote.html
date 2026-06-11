@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; }
+
+.photo { position:absolute; inset:0; }
+.photo img { width:100%; height:100%; object-fit:cover; object-position:50% 18%; filter:brightness(0.75); }
+
+/* Cream gradient overlay from bottom */
+.overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,
+    rgba(233,217,200,0.50) 0%, rgba(233,217,200,0.40) 28%, rgba(233,217,200,0.74) 55%, rgba(233,217,200,0.96) 76%, #E9D9C8 100%);
+}
+
+/* Cream scrim top for logo */
+.scrim-top {
+  position:absolute; top:0; left:0; right:0; height:180px; z-index:4;
+  background:linear-gradient(180deg, rgba(233,217,200,0.85) 0%, transparent 100%);
+}
+.logo-zone { position:absolute; top:48px; left:60px; z-index:10; }
+
+.bottom { position:absolute; bottom:52px; left:60px; right:60px; z-index:10; }
+
+.quote-mark {
+  font-family:'Playfair Display', serif; font-size:160px; font-weight:400;
+  color:rgba(188,108,84,0.20); line-height:1; margin-bottom:-40px; margin-left:-8px;
+}
+.quote-text {
+  font-family:'Playfair Display', serif; font-size:52px; font-weight:400; font-style:italic;
+  color:#3E4C54; line-height:1.18; margin-bottom:20px;
+}
+.rule {
+  height:2px; width:56px;
+  background:#A6844E;
+  margin-bottom:20px;
+}
+.sub {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(62,76,84,0.60); margin-bottom:28px;
+  letter-spacing:0.06em;
+}
+.stars {
+  display:flex; gap:6px; margin-bottom:32px;
+}
+.star { color:#A6844E; font-size:28px; line-height:1; }
+.cta {
+  display:block; background:#3E4C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:24px 40px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#9B9F91;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad"><!-- photo-dominant -->
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/016-spa-pieredze-15-sekund-s-www.naqaa-beauty.com-naqaabeauty-spa-waterfilter-skinca.png" alt="">
+  </div>
+  <div class="overlay"></div>
+  <div class="scrim-top"></div>
+
+  <div class="logo-zone">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+  </div>
+
+  <div class="bottom">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">Āda mīkstāka jau pēc<br>pirmās dušas.</div>
+    <div class="rule"></div>
+    <div class="sub">Naqaa Beauty · Dušas filtrs ar aromātu</div>
+    <div class="stars">
+      <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+    </div>
+    <div class="cta">Iegādāties — no €24,99</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

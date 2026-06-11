@@ -1,0 +1,24 @@
+Scraped pages:
+https://www.mariposa.lv/
+https://www.mariposa.lv/kontakti
+https://www.mariposa.lv/frizetava
+https://www.mariposa.lv/manikirs
+https://www.mariposa.lv/pedikirs
+https://www.mariposa.lv/sejas-kopsana
+https://www.mariposa.lv/biorevitalizacija
+https://www.mariposa.lv/vaksacija
+https://www.mariposa.lv/lazerepilacija
+https://www.mariposa.lv/masazas
+https://www.mariposa.lv/skaistumkopsana
+
+Image source URLs:
+
+logos:
+https://www.mariposa.lv/wp-content/uploads/2025/05/Logo_balts-3-scaled.png
+https://www.mariposa.lv/wp-content/uploads/2022/06/favicon.png
+
+product_images:
+
+other_images:
+https://www.mariposa.lv/wp-content/uploads/2025/05/Logo_balts-3-scaled.png
+https://www.mariposa.lv/wp-content/uploads/2022/06/favicon.png

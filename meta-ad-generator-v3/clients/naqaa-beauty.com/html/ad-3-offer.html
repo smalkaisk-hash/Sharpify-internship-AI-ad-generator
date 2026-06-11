@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; display:flex; position:relative; overflow:hidden; }
+
+.left {
+  width:500px; flex-shrink:0; height:1080px;
+  background:#E9D9C8;
+  display:flex; flex-direction:column;
+  padding:52px 48px 52px;
+  position:relative; z-index:2;
+}
+.left::after {
+  content:''; position:absolute; right:0; top:80px; bottom:80px; width:1px;
+  background:linear-gradient(180deg, transparent, rgba(166,132,78,0.45) 25%, rgba(166,132,78,0.45) 75%, transparent);
+}
+
+.logo-zone { align-self:flex-start; }
+.spacer { flex:1; }
+
+.badge {
+  display:inline-block; align-self:flex-start;
+  background:#BC6C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:600;
+  letter-spacing:0.20em; text-transform:uppercase;
+  padding:6px 16px; margin-bottom:18px;
+}
+.headline {
+  font-family:'Playfair Display', serif; font-size:68px; font-weight:400; font-style:italic;
+  line-height:0.94; color:#3E4C54; margin-bottom:22px;
+}
+.rule { width:52px; height:2px; background:#A6844E; margin-bottom:20px; }
+.body {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:300;
+  color:rgba(62,76,84,0.68); line-height:1.58; margin-bottom:26px;
+}
+.price-row {
+  display:flex; align-items:baseline; gap:10px; margin-bottom:28px;
+}
+.price-label {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:400;
+  color:rgba(62,76,84,0.50); letter-spacing:0.14em; text-transform:uppercase;
+}
+.price {
+  font-family:'Playfair Display', serif; font-size:56px; font-weight:400;
+  color:#BC6C54; line-height:1;
+}
+.spacer2 { flex:1; }
+.cta {
+  display:block; background:#3E4C54; color:#E9D9C8;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:24px 24px; text-align:center; letter-spacing:0.08em;
+}
+
+.right { flex:1; position:relative; overflow:hidden; }
+.right img { width:100%; height:100%; object-fit:cover; object-position:55% 25%; }
+.fade {
+  position:absolute; inset:0;
+  background:linear-gradient(90deg, #E9D9C8 0%, rgba(233,217,200,0.72) 6%, rgba(233,217,200,0.20) 18%, transparent 32%);
+}
+/* bullet-style-start */
+.benefit,.brow{background:rgba(155,159,145,0.14);border-left:5px solid #9B9F91;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="left">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+    <div class="spacer"></div>
+    <div class="badge">Jaunums</div>
+    <div class="headline">Sāc spa rituālu par 24,99€.</div>
+    <div class="rule"></div>
+    <div class="body">Pasūti virs 100€ un saņem dāvanu kasti bez maksas. Naqaa Beauty komplekti apvieno filtru, aromātus un ilgtspēju vienā paketē.</div>
+    <div class="price-row">
+      <span class="price-label">No</span>
+      <span class="price">24,99€</span>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+  <div class="right">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/007-jaunais-naqaa-beauty-du-as-filtru-dizains-ir-kl-t-t-ras-l-nijas-luksusa-saj-ta-u.png" alt="">
+    <div class="fade"></div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

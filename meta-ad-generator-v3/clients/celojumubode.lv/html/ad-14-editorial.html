@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;background:#111111;display:flex;flex-direction:column;padding:0 72px;overflow:hidden}
+.spacer{flex:1}
+.rule{height:1px;background:rgba(255,255,255,0.15);flex-shrink:0}
+.rule-pink{height:1px;background:rgba(229,0,126,0.45);flex-shrink:0}
+/* Logo row */
+.logo-row{display:flex;align-items:center;justify-content:space-between;padding:44px 0 36px}
+.logo img{height:116px;max-width:360px;width:auto;object-fit:contain;filter:drop-shadow(0 0 4px rgba(255,255,255,0.20))}
+.logo-right{text-align:right}
+.logo-right span{display:block;font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.38);text-transform:uppercase;letter-spacing:0.16em}
+.logo-right strong{display:block;font-family:'Raleway',sans-serif;font-size:26px;font-weight:700;color:#E5007E;letter-spacing:0.04em;margin-top:4px}
+/* Editorial headline */
+.hd-block{padding:36px 0 32px;flex-shrink:0}
+.issue{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.22em;margin-bottom:20px}
+.hd{font-family:'DM Serif Display',serif;font-style:italic;font-size:96px;font-weight:400;color:#FFFFFF;line-height:0.90;letter-spacing:-0.01em;hyphens:none;-webkit-hyphens:none}
+.hd em{color:#E5007E;font-style:normal}
+.sub{font-family:'Raleway',sans-serif;font-size:24px;font-weight:400;color:rgba(255,255,255,0.48);margin-top:16px}
+/* Photo strip */
+.photo-strip{height:196px;flex-shrink:0;overflow:hidden;position:relative;margin:0 -72px}
+.photo-strip img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;filter:brightness(0.50) saturate(0.60)}
+.photo-strip::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,18,18,0.65) 0%,transparent 28%,transparent 72%,rgba(18,18,18,0.65) 100%)}
+
+/* Bottom: numbered-badge + CTA */
+.content-bottom{padding:28px 0 44px;flex-shrink:0}
+$136px}
+.bullet{display:flex;align-items:center;gap:12px}
+.bnum{display:flex;align-items:center;justify-content:center;min-width:32px;width:32px;height:32px;
+  background:rgba(229,0,126,0.12);border:1px solid rgba(229,0,126,0.42);color:#E5007E;
+  font-family:'Raleway',sans-serif;font-size:20px;font-weight:700;border-radius:50%;flex-shrink:0}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;color:rgba(255,255,255,0.72);line-height:1.3}
+.cta{display:block;background:#E5007E;color:#FFFFFF;font-family:'Raleway',sans-serif;font-size:24px;font-weight:700;padding:22px 36px;border-radius:8px;text-align:center;letter-spacing:0.03em}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#E5007E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="logo-row">
+    <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div class="logo-right"><span>Vērtējums</span><strong>4.9★ · 351</strong></div>
+  </div>
+  <div class="rule-pink"></div>
+  <div class="hd-block">
+    <div class="issue">Vasaras ceļojumi · 2026</div>
+    <div class="hd">Turcijā vasarā.<br><em>Bez</em> iekrājumiem.</div>
+    <div class="sub">1000+ maršruti no Rīgas. Viss iekļauts.</div>
+  </div>
+  <div class="rule"></div>
+  <div class="photo-strip">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-4.jpg" alt="">
+  </div>
+  <div class="rule"></div>
+  <div class="content-bottom">
+    <div class="bullets">
+      <div class="bullet"><span class="bnum">1</span><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+      <div class="bullet"><span class="bnum">2</span><span class="btext">Bezprocentu nomaksa.</span></div>
+      <div class="bullet"><span class="bnum">3</span><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+      <div class="bullet"><span class="bnum">4</span><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+    </div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#F6F6F6}
+
+/* decorative diamond ring — slightly larger, accent blue, behind photo */
+.diamond-ring{position:absolute;left:598px;top:330px;
+  width:420px;height:420px;
+  border:2.5px solid rgba(229,0,126,0.40);
+  transform:rotate(45deg);z-index:1}
+
+/* diamond photo frame — 390×390 CSS box rotated 45° */
+/* center at x=800, y=540: left=800-195=605, top=540-195=345 */
+.diamond-outer{position:absolute;left:610px;top:345px;
+  width:390px;height:390px;
+  transform:rotate(45deg);overflow:hidden;z-index:2;
+  filter:drop-shadow(0 18px 52px rgba(18,18,18,0.22))}
+.diamond-outer img{
+  width:100%;height:100%;object-fit:cover;
+  transform:rotate(-45deg) scale(1.42);
+  transform-origin:center}
+
+/* small yellow accent triangle in bottom-right of diamond area */
+.diamond-accent{position:absolute;left:810px;top:660px;
+  width:0;height:0;
+  border-left:28px solid transparent;
+  border-right:28px solid transparent;
+  border-top:48px solid #E5007E;
+  z-index:3}
+
+/* text column — width 460px; diamond leftmost point at x=800-276=524; gap=64px ✓ */
+.col{position:absolute;left:0;top:0;bottom:0;width:460px;
+  display:flex;flex-direction:column;padding:56px 52px 160px 64px;z-index:10}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{height:88px;max-width:340px;width:auto;object-fit:contain}
+.spacer{flex:1;min-height:0}
+.eyebrow{font-family:'Raleway',sans-serif;font-size:20px;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;color:rgba(18,18,18,0.48);
+  margin-bottom:14px;flex-shrink:0}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:80px;font-weight:800;
+  color:#2A2A2A;line-height:0.90;text-transform:uppercase;letter-spacing:-0.01em;
+  margin-bottom:22px;flex-shrink:0}
+.hd em{color:#E5007E;font-style:normal}
+.rule{height:1px;background:linear-gradient(90deg,#E5007E66,transparent);
+  margin-bottom:18px;flex-shrink:0}
+.bullets{display:flex;flex-direction:column;gap:0;flex-shrink:0}
+.bullet{display:flex;align-items:flex-start;gap:12px;
+  padding:10px 0;border-bottom:1px solid rgba(42,42,42,0.10)}
+.bullet:last-child{border-bottom:none}
+.bullet::before{content:'';display:block;width:9px;height:9px;min-width:9px;
+  margin-top:8px;border-radius:50%;background:#E5007E;flex-shrink:0}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:500;
+  line-height:1.28;color:#2A2A2A}
+/* override for light bg — must survive bullet-style injection */
+.col .btext{color:#2A2A2A}
+.spacer2{height:28px;flex-shrink:0}
+.cta{align-self:flex-start;flex-shrink:0;display:block;
+  background:#E5007E;color:#FFFFFF;
+  font-family:'Raleway',sans-serif;font-size:22px;font-weight:700;
+  padding:22px 44px;border-radius:8px;letter-spacing:0.03em}
+
+/* bullet-style-start */
+.benefit,.brow{background:rgba(229,0,126,0.14);border-left:5px solid #E5007E;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#E5007E;fill:#E5007E;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</head>
+<body>
+<div class="ad">
+  <div class="diamond-ring"></div>
+  <div class="diamond-outer">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-3.jpg" alt="">
+  </div>
+  <div class="diamond-accent"></div>
+  <div class="col">
+    <div class="logo-zone"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt="Ceļojumu Bode"></div>
+    <div class="spacer"></div>
+    <div class="eyebrow">No Rīgas. Visur.</div>
+    <div class="hd"><em>1000+</em> maršruti,<br>viss iekļauts.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet"><span class="btext">1000+ ceļojumi no Rīgas.</span></div>
+      <div class="bullet"><span class="btext">Bezprocentu nomaksa.</span></div>
+      <div class="bullet"><span class="btext">Atmaksa atcelšanas gadījumā.</span></div>
+      <div class="bullet"><span class="btext">Lidojums + viesnīca + transfērs.</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <a class="cta">Rezervēt ceļojumu</a>
+  </div>
+</div>
+</body>
+</html>

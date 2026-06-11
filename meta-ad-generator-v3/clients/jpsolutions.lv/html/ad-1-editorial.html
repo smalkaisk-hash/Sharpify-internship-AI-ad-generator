@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html lang="lv">
+    <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { width:1080px; height:1080px; overflow:hidden; }
+    .ad { width:1080px; height:1080px; position:relative; overflow:hidden; display:flex; }
+
+    .left { width:510px; height:1080px; flex-shrink:0; display:flex; flex-direction:column; position:relative; z-index:10; }
+
+    .left-header {
+      height:112px; flex-shrink:0;
+      background:linear-gradient(135deg, #39445B 0%, #39445B 100%);
+      display:flex; align-items:center; padding:0 52px; position:relative;
+    }
+    .left-header::after {
+      content:''; position:absolute; bottom:0; left:52px; right:0; height:1px;
+      background:linear-gradient(90deg, rgba(255,255,255,0.22) 0%, transparent 100%);
+    }
+    .logo-img { height:58px; max-width:240px; width:auto; display:block; object-fit:contain; filter:brightness(1) invert(1); opacity:0.88; }
+    .logo-txt {
+      font-family:'Cormorant Garamond', serif; font-size:28px; font-weight:300; font-style:italic;
+      color:rgba(255,255,255,0.88); letter-spacing:0.12em;
+    }
+
+    .left-body {
+      flex:1; background:linear-gradient(162deg, #ECE9E6 0%, #C1CBCA 100%);
+      padding:36px 52px 150px; display:flex; flex-direction:column;
+    }
+    .left::after {
+      content:''; position:absolute; top:112px; right:0; bottom:80px; width:1px;
+      background:linear-gradient(180deg, transparent 0%, #9F97B888 30%, #9F97B8aa 50%, #9F97B888 80%, transparent 100%);
+    }
+
+    .hook {
+      font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:300; font-style:italic;
+      color:#9F97B8cc; letter-spacing:0.01em; margin-bottom:14px;
+    }
+    .headline {
+      font-family:'Cormorant Garamond', serif; font-size:62px; line-height:0.89;
+      font-weight:300; font-style:italic; color:#39445B; letter-spacing:-0.022em; margin-bottom:16px;
+    }
+    .headline em { font-weight:600; font-style:italic; color:#9F97B8; }
+
+    .divider { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+    .divider-line { flex:1; height:1px; background:linear-gradient(90deg, #9F97B866 0%, transparent 100%); }
+    .divider-gem { width:5px; height:5px; background:#9F97B8aa; transform:rotate(45deg); flex-shrink:0; }
+
+    .services { display:flex; flex-direction:column; }
+    .service-item {
+      display:flex; align-items:center; gap:16px; padding:14px 0;
+      border-bottom:1px solid #9F97B822;
+    }
+    .service-item:first-child { border-top:1px solid #9F97B822; }
+    .service-dot {
+      width:8px; height:8px; border-radius:50%; flex-shrink:0;
+      background:#9F97B8; opacity:0.70;
+    }
+    .service-name {
+      font-family:'DM Sans', sans-serif; font-size:15px; font-weight:500;
+      color:#39445B; text-transform:uppercase; letter-spacing:0.06em;
+    }
+
+    .cta-wrap { margin-top:auto; }
+    .cta {
+      display:block; background:#39445B; color:#ECE9E6;
+      font-family:'DM Sans', sans-serif; font-size:17px; font-weight:600;
+      padding:24px 32px; border-radius:10px; text-align:center; letter-spacing:0.05em;
+    }
+
+    .right { flex:1; position:relative; overflow:hidden;  }
+    .right-img { width:100%; height:100%; object-fit:cover; object-position:50% 18%; }
+    .vignette-l {
+      position:absolute; inset:0;
+      background:linear-gradient(90deg, #C1CBCA 0%, #C1CBCAcc 5%,
+        #C1CBCA88 13%, #C1CBCA44 24%, #C1CBCA17 38%, transparent 58%);
+    }
+    </style>
+    </head>
+    <body>
+    <div class="ad">
+      <div class="left">
+        <div class="left-header"><span class="logo-txt">Industriālā alpīnisma pakalpojumi</span></div>
+        <div class="left-body">
+          <div class="hook">Viens līgums. Visa drošība.</div>
+          <div class="headline">Ikgadējo inspekciju nokārtojam <em>mēs.</em></div>
+          <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div></div>
+          <div class="services"><div class="service-item">
+          <div class="service-dot"></div>
+          <span class="service-name">Inventārs no Petzl, Skylotec, Kong, Marlow.</span>
+        </div><div class="service-item">
+          <div class="service-dot"></div>
+          <span class="service-name">Ikgadējās drošības pārbaudes saskaņā ar likumu.</span>
+        </div><div class="service-item">
+          <div class="service-dot"></div>
+          <span class="service-name">20+ realizēti projekti dažādos objektos.</span>
+        </div><div class="service-item">
+          <div class="service-dot"></div>
+          <span class="service-name">No projektēšanas līdz uzturēšanai vienā līgumā.</span>
+        </div></div>
+          <div class="cta-wrap"><div class="cta">Pieteikties konsultācijai</div></div>
+        </div>
+      </div>
+      <div class="right">
+        <svg style="position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden"
+     width="100%" height="100%" viewBox="0 0 570 1080" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="555" cy="50"   r="330" stroke="#9F97B8"  stroke-width="1.1" fill="none" opacity="0.16"/>
+  <circle cx="555" cy="50"   r="215" stroke="#3030CF" stroke-width="0.8" fill="none" opacity="0.11"/>
+  <circle cx="555" cy="50"   r="110" stroke="#9F97B8"  stroke-width="0.6" fill="none" opacity="0.08"/>
+  <circle cx="15"  cy="1065" r="210" stroke="#9F97B8"  stroke-width="0.9" fill="none" opacity="0.12"/>
+  <circle cx="15"  cy="1065" r="120" stroke="#3030CF" stroke-width="0.6" fill="none" opacity="0.09"/>
+  <line x1="320" y1="1080" x2="570" y2="830" stroke="#9F97B8"  stroke-width="0.7" opacity="0.11"/>
+  <line x1="365" y1="1080" x2="570" y2="875" stroke="#9F97B8"  stroke-width="0.5" opacity="0.07"/>
+  <circle cx="305" cy="610" r="2.4" fill="#9F97B8"  opacity="0.28"/>
+  <circle cx="330" cy="586" r="1.8" fill="#9F97B8"  opacity="0.22"/>
+  <circle cx="283" cy="632" r="2.0" fill="#3030CF" opacity="0.20"/>
+  <circle cx="352" cy="600" r="1.5" fill="#9F97B8"  opacity="0.17"/>
+  <circle cx="315" cy="650" r="1.9" fill="#3030CF" opacity="0.16"/>
+</svg>
+        <img class="right-img" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/jpsolutions.lv/scrape/product_images/027-1757074024-8785.png" alt="">
+        <div class='vignette-l'></div>
+      </div>
+    </div>
+    <script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+    </body>
+    </html>

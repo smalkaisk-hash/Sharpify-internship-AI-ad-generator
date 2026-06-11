@@ -1,0 +1,17 @@
+Client: Mariposa – Skaistumkopšanas salons Āgenskalnā
+Website: https://www.mariposa.lv/
+Source URL: https://www.mariposa.lv/
+Language: en-US
+Location: unknown
+Primary logo for palette: C:\Users\User\Meta-ad-generator-v2\meta-ad-generator-v3\clients\mariposa.lv\scrape\logo\001-mariposa-skaistumkop-anas-salons-genskaln.png
+
+Scraped assets:
+- Logos: 2 files in logo/
+- Product images: 0 files in product_images/
+- Other images: 2 files in other_images/
+- Colors: accent_colors.txt
+- Page and image URLs: scraped_urls.txt
+- Full structured data: manifest.json
+
+Chat context:
+This brand was scraped by the Meta Ad Generator pipeline. The scrape output sits under clients/<domain>/scrape/ and is consumed by the copy and palette stages. See info.txt for human-readable summary, manifest.json for structured data, accent_colors.txt for the extracted color palette.

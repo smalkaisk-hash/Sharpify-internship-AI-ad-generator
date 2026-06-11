@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+*{hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#E9D9C8}
+
+/* THICK CORAL BORDERED PHOTO — the hero element */
+/* Outer glow ring */
+.frame-glow{
+  position:absolute;right:52px;top:76px;bottom:76px;width:452px;
+  box-shadow:0 0 60px rgba(188,108,84,0.38), 0 0 120px rgba(188,108,84,0.18);
+  z-index:0;
+}
+/* Outer decorative frame (thin, gold) */
+.frame-outer{
+  position:absolute;right:44px;top:68px;bottom:68px;width:468px;
+  border:1px solid rgba(166,132,78,0.35);
+  z-index:1;
+}
+/* BOLD coral frame */
+.frame-coral{
+  position:absolute;right:52px;top:76px;bottom:76px;width:452px;
+  border:10px solid #BC6C54;
+  overflow:hidden;
+  z-index:2;
+}
+.frame-coral img{
+  width:100%;height:100%;object-fit:cover;object-position:50% 12%;
+  display:block;
+}
+
+/* text column — left */
+.text-col{
+  position:absolute;left:0;top:0;bottom:0;width:500px;
+  display:flex;flex-direction:column;
+  padding:64px 28px 80px 72px;
+  z-index:10;
+}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{height:116px;max-width:340px;width:auto;display:block;object-fit:contain;filter:brightness(0);opacity:0.70}
+.spacer{flex:1;min-height:0}
+.eyebrow{
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:#A6844E;margin-bottom:14px;flex-shrink:0;
+}
+.hd-wrap{flex-shrink:0;padding-bottom:18px}
+.hd{
+  font-family:'Cormorant Garamond',serif;
+  font-size:72px;line-height:0.90;font-weight:600;font-style:italic;
+  color:#3E4C54;
+}
+.rule{height:1px;background:linear-gradient(90deg,rgba(166,132,78,0.48),transparent);flex-shrink:0;margin-bottom:18px}
+.benefits{display:flex;flex-direction:column;gap:14px;flex-shrink:0}
+.brow{display:flex;align-items:flex-start;gap:12px}
+.bicon{width:24px;height:24px;flex-shrink:0;margin-top:2px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:500;line-height:1.30;color:rgba(62,76,84,0.85)}
+.spacer2{flex:1;min-height:0}
+.cta{
+  display:block;background:#BC6C54;color:#E9D9C8;
+  font-family:'Raleway',sans-serif;font-size:21px;font-weight:600;
+  padding:22px 8px;border-radius:4px;
+  text-align:center;letter-spacing:0.08em;text-transform:uppercase;flex-shrink:0;
+}
+/* bullet-style-start */
+.benefit,.brow{background:rgba(155,159,145,0.14);border-left:5px solid #9B9F91;border-radius:0 10px 10px 0;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;font-weight:500;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{display:none;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="frame-glow"></div>
+  <div class="frame-outer"></div>
+  <div class="frame-coral">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/image/generated-7.jpg" alt="">
+  </div>
+  <div class="text-col">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/scrape/logo/001-mariposa-skaistumkop-anas-salons-genskaln.png" alt="Mariposa">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Optimas · Rīga</div>
+    <div class="hd-wrap">
+      <div class="hd">2500+ klientu.<br>95% atgriežas.</div>
+    </div>
+    <div class="rule"></div>
+    <div class="benefits">
+      <div class="brow"><svg class="bicon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#BC6C54" stroke-width="1.5"/><path d="M7.5 12l3.5 3.5 5.5-5.5" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="btext">Redzami rezultāti jau pēc 2 sesijām</span></div>
+      <div class="brow"><svg class="bicon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#BC6C54" stroke-width="1.5"/><path d="M7.5 12l3.5 3.5 5.5-5.5" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="btext">Bezmaksas konsultācija, vērtība 40€</span></div>
+      <div class="brow"><svg class="bicon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#BC6C54" stroke-width="1.5"/><path d="M7.5 12l3.5 3.5 5.5-5.5" stroke="#BC6C54" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="btext">Katrs protokols kalibrēts Tavam ādas tipam</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Piesakies bezmaksas<br>konsultācijai</div>
+  </div>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  return Promise.all([
+    document.fonts.load('400 22px Raleway','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+    document.fonts.load('600 72px "Cormorant Garamond"','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+  ]);
+}).then(()=>{ document.title="fonts-ready"; });
+</script>
+</body>
+</html>

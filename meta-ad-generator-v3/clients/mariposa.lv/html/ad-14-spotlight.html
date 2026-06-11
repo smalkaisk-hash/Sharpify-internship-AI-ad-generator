@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+*{hyphens:none;-webkit-hyphens:none}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#E9D9C8}
+
+/* full-bleed photo */
+.bg-photo{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:68% 12%;z-index:0;
+}
+/* cream scrim — covers left text zone, fades right into photo */
+.bg-scrim{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to right,
+    rgba(233,217,200,0.98) 0%,
+    rgba(233,217,200,0.88) 36%,
+    rgba(233,217,200,0.40) 52%,
+    transparent 66%
+  );
+}
+/* concentric circle rings over photo — decorative */
+.rings-svg{
+  position:absolute;inset:0;
+  width:1080px;height:1080px;
+  z-index:2;pointer-events:none;
+}
+
+/* text column */
+.text-col{
+  position:absolute;left:0;top:0;bottom:0;
+  width:580px;
+  display:flex;flex-direction:column;
+  padding:64px 36px 80px 68px;
+  z-index:10;
+}
+.logo-zone{align-self:flex-start;flex-shrink:0}
+.logo-zone img{
+  height:116px;max-width:340px;width:auto;display:block;object-fit:contain;
+  filter:brightness(0);opacity:0.70;
+}
+.spacer{flex:1;min-height:0}
+.eyebrow{
+  font-family:'Raleway',sans-serif;
+  font-size:20px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
+  color:#A6844E;margin-bottom:14px;flex-shrink:0;
+}
+.hd-wrap{flex-shrink:0;padding-bottom:20px;width:460px}
+.hd{
+  font-family:'Cormorant Garamond',serif;
+  font-size:74px;line-height:0.92;font-weight:600;font-style:italic;
+  color:#3E4C54;hyphens:none;-webkit-hyphens:none;
+}
+.rule{
+  height:1px;background:linear-gradient(90deg,rgba(166,132,78,0.48),transparent);
+  flex-shrink:0;margin-bottom:20px;width:460px;
+}
+.benefits{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;
+  flex-shrink:0;width:460px;
+}
+.brow{display:flex;align-items:flex-start;gap:10px}
+.bdot{width:6px;height:6px;border-radius:50%;background:#BC6C54;flex-shrink:0;margin-top:9px}
+.btext{font-family:'Raleway',sans-serif;font-size:22px;font-weight:400;line-height:1.32;color:rgba(62,76,84,0.78)}
+.spacer2{flex:1;min-height:0}
+.cta{
+  display:block;background:#BC6C54;color:#E9D9C8;
+  font-family:'Raleway',sans-serif;font-size:21px;font-weight:600;
+  padding:22px 36px;border-radius:4px;
+  text-align:center;letter-spacing:0.08em;text-transform:uppercase;
+  flex-shrink:0;width:460px;
+}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#9B9F91;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <img class="bg-photo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/image/generated-9.jpg" alt="">
+  <div class="bg-scrim"></div>
+  <!-- decorative concentric rings centred on right photo area -->
+  <svg class="rings-svg" viewBox="0 0 1080 1080" fill="none">
+    <circle cx="800" cy="540" r="300" stroke="rgba(166,132,78,0.30)" stroke-width="1.5"/>
+    <circle cx="800" cy="540" r="360" stroke="rgba(166,132,78,0.18)" stroke-width="1"/>
+    <circle cx="800" cy="540" r="420" stroke="rgba(166,132,78,0.10)" stroke-width="1"/>
+  </svg>
+  <div class="text-col">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/mariposa.lv/scrape/logo/001-mariposa-skaistumkop-anas-salons-genskaln.png" alt="Mariposa">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Optimas · Rīga</div>
+    <div class="hd-wrap">
+      <div class="hd">Āda mainās<br>no iekšpuses.</div>
+    </div>
+    <div class="rule"></div>
+    <div class="benefits">
+      <div class="brow"><span class="bdot"></span><span class="btext">95% klientu atgriežas pēc pirmās procedūras</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Bezmaksas konsultācija, vērtība 40€</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Bez sāpēm, atpakaļ uz darbu tajā pašā dienā</span></div>
+      <div class="brow"><span class="bdot"></span><span class="btext">Katrs protokols kalibrēts Tavam ādas tipam</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Piesakies bezmaksas konsultācijai</div>
+  </div>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  return Promise.all([
+    document.fonts.load('400 22px Raleway','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+    document.fonts.load('600 74px "Cormorant Garamond"','āēīūģķļņšžĀĒĪŪĢĶĻŅŠŽ'),
+  ]);
+}).then(()=>{ document.title="fonts-ready"; });
+</script>
+</body>
+</html>

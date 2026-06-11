@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;hyphens:none;-webkit-hyphens:none;}
+.ad{
+  width:1080px;height:1080px;
+  font-family:'Inter',sans-serif;
+  position:relative;overflow:hidden;
+}
+/* full-bleed destination photo */
+.photo{position:absolute;inset:0;}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;}
+
+/* ascending panel — smooth diagonal like a plane climbing, bottom-left to upper-right */
+.panel{
+  position:absolute;left:0;bottom:0;
+  width:100%;height:100%;
+  background:#1E0B16;
+  clip-path:polygon(0 100%,0 38%,68% 62%,68% 100%);
+}
+/* hot-pink accent stripe along the diagonal edge */
+.panel-edge{
+  position:absolute;left:0;bottom:0;
+  width:100%;height:100%;
+  background:#FF6BAD;
+  clip-path:polygon(0 38%,68% 62%,68% 65%,0 41%);
+}
+/* dotted perforation line along the edge — travel-ticket feel */
+.perf{
+  position:absolute;
+  left:0;bottom:0;
+  width:100%;height:100%;
+  z-index:4;
+  pointer-events:none;
+}
+
+/* logo top-left with small corner scrim */
+.logo-scrim{
+  position:absolute;top:0;left:0;
+  width:340px;height:200px;
+  background:radial-gradient(ellipse at top left,rgba(30,11,22,0.72) 30%,transparent 75%);
+}
+.logo{position:absolute;top:40px;left:44px;z-index:10; height:76px; max-width:360px; object-fit:contain;}
+.logo img{height:116px;max-width:360px;object-fit:contain;}
+
+/* stats panel — floating frosted cards top-right */
+.stats{
+  position:absolute;right:44px;top:44px;z-index:10;
+  display:flex;flex-direction:column;gap:14px;align-items:flex-end;
+}
+.stat-card{
+  background:rgba(30,11,22,0.80);
+  backdrop-filter:blur(14px);
+  border:1.5px solid rgba(229,0,126,0.50);
+  border-radius:16px;
+  padding:16px 26px;text-align:center;
+  min-width:160px;
+}
+.stat-num{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:54px;line-height:1;
+  color:#E5007E;display:block;
+}
+.stat-lbl{font-size:20px;color:rgba(255,255,255,0.75);font-weight:600;}
+
+/* destination strip — bridges the gap between stats and panel content */
+.dest-strip{
+  position:absolute;right:44px;top:310px;z-index:10;
+  display:flex;flex-direction:column;gap:8px;align-items:flex-end;
+}
+.dest-chip{
+  background:rgba(229,0,126,0.18);
+  border:1px solid rgba(229,0,126,0.50);
+  border-radius:50px;
+  padding:8px 20px;
+  display:flex;align-items:center;gap:8px;
+}
+.dest-icon{font-size:20px;line-height:1;}
+.dest-lbl{font-size:20px;font-weight:600;color:#fff;letter-spacing:0.02em;}
+
+/* content area inside the ascending panel */
+.panel-content{
+  position:absolute;bottom:0;left:0;
+  width:720px;height:640px;
+  display:flex;flex-direction:column;
+  padding:32px 48px 48px 48px;
+  z-index:5;
+}
+.hd{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:800;font-size:100px;line-height:0.98;
+  color:#FFFFFF;text-transform:uppercase;
+  hyphens:none;-webkit-hyphens:none;
+  margin-bottom:28px;
+}
+.hd em{color:#E5007E;font-style:normal;}
+
+/* numbered-badge bullets */
+.benefits{counter-reset:benefit-num;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;display:flex;align-items:center;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#E5007E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;font-size:22px;line-height:1.3;}
+.spacer{flex:1;}
+.spacer2{height:28px;}
+.cta{
+  display:inline-block;background:#E5007E;color:#fff;
+  font-size:24px;font-weight:700;padding:22px 40px;
+  border-radius:50px;text-align:center;width:fit-content;
+}
+/* bullet-style-start */
+.benefits{counter-reset:benefit-num;}
+.benefit,.brow{counter-increment:benefit-num;gap:14px;}
+.benefit::before,.brow::before{content:counter(benefit-num);min-width:34px;height:34px;background:#E5007E;border-radius:50%;font-size:15px;font-weight:700;color:#fff;text-align:center;line-height:34px;flex-shrink:0;}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;font-weight:500;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/image/generated-2.jpg" alt=""></div>
+  <div class="panel"></div>
+  <div class="panel-edge"></div>
+  <svg class="perf" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+    <!-- perforation dots along the diagonal panel edge — boarding pass feel -->
+    <line x1="0" y1="410" x2="735" y2="670" stroke="rgba(229,0,126,0.30)" stroke-width="1.5" stroke-dasharray="6 10"/>
+  </svg>
+  <div class="logo-scrim"></div>
+  <div class="logo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/celojumubode.lv/scrape/logo/001-ce-ojumu-bode.png" alt=""></div>
+  <div class="stats">
+    <div class="stat-card">
+      <span class="stat-num">1000+</span>
+      <span class="stat-lbl">maršruti</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">4.9/5</span>
+      <span class="stat-lbl">vērtējums</span>
+    </div>
+  </div>
+  <div class="dest-strip">
+    <div class="dest-chip"><span class="dest-icon">✈</span><span class="dest-lbl">Turcija · Ēģipte</span></div>
+    <div class="dest-chip"><span class="dest-icon">🌊</span><span class="dest-lbl">Grieķija · 50+ valstis</span></div>
+  </div>
+  <div class="panel-content">
+    <div class="hd">Viss iekļauts.<br><em>Sāc šodien.</em></div>
+    <div class="spacer"></div>
+    <div class="benefits">
+      <div class="benefit"><span class="btext">Lidojums, viesnīca un transfērs vienā cenā.</span></div>
+      <div class="benefit"><span class="btext">Bezprocentu nomaksa. Sadaliet pa daļām.</span></div>
+      <div class="benefit"><span class="btext">Naudas atmaksa ceļojuma atcelšanas gadījumā.</span></div>
+      <div class="benefit"><span class="btext">Turcija, Ēģipte, Grieķija un 50+ valstis.</span></div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Rezervēt ceļojumu</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

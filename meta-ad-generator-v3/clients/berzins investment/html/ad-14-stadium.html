@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; position:relative; overflow:hidden; background:#1C2128; }
+
+/* Stadium/pill photo crop at top */
+.stadium-wrap {
+  position:absolute;
+  top:52px; left:60px; right:60px;
+  height:488px;
+  border-radius:244px 244px 60px 60px;
+  overflow:hidden;
+  border:2px solid rgba(200,169,110,0.30);
+}
+.stadium-wrap img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:50% 22%;
+  filter:brightness(0.90) contrast(1.04);
+}
+
+/* Dark gradient fade at bottom of stadium for smooth transition */
+.stadium-fade {
+  position:absolute; bottom:0; left:0; right:0; height:120px;
+  background:linear-gradient(180deg, transparent 0%, rgba(28,33,40,0.85) 100%);
+  pointer-events:none;
+}
+
+/* Logo over stadium photo (top-left inside pill) */
+.logo-zone {
+  position:absolute; top:88px; left:104px; z-index:10;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,0.70));
+}
+.logo-name {
+  font-family:'Barlow Condensed', sans-serif; font-size:30px; font-weight:700;
+  color:#F2F0EC; letter-spacing:0.14em; text-transform:uppercase; line-height:1;
+}
+.logo-sub {
+  font-family:'Raleway', sans-serif; font-size:12px; font-weight:400;
+  color:rgba(242,240,236,0.55); letter-spacing:0.26em; text-transform:uppercase; margin-top:5px;
+}
+
+/* Amber separator bar */
+.separator {
+  position:absolute; top:556px; left:60px; right:60px;
+  height:3px;
+  background:linear-gradient(90deg, rgba(200,169,110,0.20) 0%, #C8A96E 30%, #C8A96E 70%, rgba(200,169,110,0.20) 100%);
+}
+
+/* Bottom content zone */
+.content {
+  position:absolute; top:575px; bottom:52px; left:60px; right:60px;
+  display:flex; flex-direction:column;
+}
+
+.eyebrow {
+  font-family:'Raleway', sans-serif; font-size:20px; font-weight:500;
+  color:#C8A96E; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:12px;
+}
+.headline {
+  font-family:'Barlow Condensed', sans-serif; font-size:76px; font-weight:700;
+  line-height:0.88; color:#F2F0EC; letter-spacing:-0.01em; margin-bottom:10px;
+}
+.spacer { flex:1; }
+
+.bullets { display:flex; flex-wrap:wrap; margin-bottom:28px; }
+.bullet { width:50%; display:flex; align-items:flex-start; gap:10px; padding:6px 8px 6px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.bnum {
+  min-width:34px; height:34px;
+  background:#C8A96E; border-radius:50%;
+  font-family:'Barlow Condensed', sans-serif; font-size:17px; font-weight:700;
+  color:#1C2128; text-align:center; line-height:34px;
+  flex-shrink:0; display:inline-flex; align-items:center; justify-content:center;
+}
+.btext {
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:400;
+  color:rgba(242,240,236,0.80); line-height:1.28;
+}
+.cta {
+  display:block; background:#C8A96E; color:#1C2128;
+  font-family:'Raleway', sans-serif; font-size:22px; font-weight:600;
+  padding:26px 40px; text-align:center; letter-spacing:0.08em;
+}
+/* bullet-style-start */
+.benefit,.brow{gap:14px;padding:8px 0;border-bottom:1px solid rgba(200,169,110,0.2);}
+.benefit:last-child,.brow:last-child{border-bottom:none;}
+.benefit::before,.brow::before{content:'';width:10px;height:10px;border-radius:50%;background:#C8A96E;flex-shrink:0;margin-top:7px;box-shadow:0 0 8px rgba(200,169,110,0.55);}
+.bicon,.bdot{display:none;}
+.btext{color:#ffffff;}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="stadium-wrap">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/berzins%20investment/scrape/other_images/web_terase_1.png" alt="">
+    <div class="stadium-fade"></div>
+  </div>
+  <div class="separator"></div>
+
+  <div class="logo-zone">
+    <div class="logo-name">Miera 1</div>
+    <div class="logo-sub">Biroju centrs</div>
+  </div>
+
+  <div class="content">
+    <div class="eyebrow">Jumta terase · Panorāma · 8. stāvs</div>
+    <div class="headline">Biroja vide<br>no 140 līdz 1000 m².</div>
+    <div class="spacer"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <span class="bnum">1</span>
+        <div class="btext">Velonovietne un duša komandai</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">2</span>
+        <div class="btext">Priekšnoma pieejama pirms atklāšanas</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">3</span>
+        <div class="btext">Nomas maksa no 16 €/m² mēnesī</div>
+      </div>
+      <div class="bullet benefit">
+        <span class="bnum">4</span>
+        <div class="btext">Berzins Investment: 32 gadi tirgū</div>
+      </div>
+    </div>
+    <div class="cta">Rezervēt telpas</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

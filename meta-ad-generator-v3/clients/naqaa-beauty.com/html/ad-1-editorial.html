@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; display:flex; position:relative; overflow:hidden; }
+.left {
+  width:460px; flex-shrink:0; height:1080px;
+  background:#E9D9C8;
+  display:flex; flex-direction:column;
+  padding:52px 44px 52px;
+  position:relative; z-index:2;
+}
+.left::after {
+  content:''; position:absolute; right:0; top:100px; bottom:100px; width:1px;
+  background:linear-gradient(180deg, transparent, rgba(166,132,78,0.45) 25%, rgba(166,132,78,0.45) 75%, transparent);
+}
+.logo-zone { align-self:flex-start; }
+.spacer { flex:1; }
+.eyebrow { font-family:'Raleway',sans-serif; font-size:20px; font-weight:500; color:#BC6C54; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:14px; }
+.headline { font-family:'Playfair Display',serif; font-size:72px; font-weight:400; font-style:italic; line-height:0.94; color:#3E4C54; margin-bottom:18px; }
+.rule { height:1px; background:rgba(62,76,84,0.18); margin-bottom:20px; }
+.bullets { display:flex; flex-direction:column; margin-bottom:0; }
+.bullet { display:flex; align-items:flex-start; gap:10px; padding:6px 0; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.btext { font-family:'Raleway',sans-serif; font-size:22px; font-weight:400; color:rgba(62,76,84,0.78); line-height:1.28; }
+.spacer2 { height:28px; flex-shrink:0; }
+.cta { display:block; background:#3E4C54; color:#E9D9C8; font-family:'Raleway',sans-serif; font-size:22px; font-weight:600; padding:24px; text-align:center; letter-spacing:0.08em; }
+.right { flex:1; position:relative; overflow:hidden; }
+.right img { width:100%; height:100%; object-fit:cover; object-position:50% 18%; }
+.vignette-l { position:absolute; inset:0; background:linear-gradient(90deg, #E9D9C8 0%, rgba(233,217,200,0.72) 7%, rgba(233,217,200,0.20) 20%, transparent 38%); }
+/* bullet-style-start */
+.benefit,.brow{background:linear-gradient(105deg,#9B9F91,#A6844E);border-radius:28px;padding:11px 20px;box-shadow:0 4px 18px rgba(155,159,145,0.55);gap:12px;}
+.btext{color:#fff;font-weight:600;}
+.bicon,.bicon svg{color:#fff;fill:#fff;}
+.bdot{background:rgba(255,255,255,0.65);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="left">
+    <div class="logo-zone">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+    <div class="spacer"></div>
+    <div class="eyebrow">Dušas filtrs</div>
+    <div class="headline">Āda mīkstāka jau pēc pirmās dušas.</div>
+    <div class="rule"></div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="btext">Attīra ūdeni no kaitīgām daļiņām</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 015 5c0 3.5-5 11-5 11S7 10.5 7 7a5 5 0 015-5z"/><circle cx="12" cy="7" r="2"/></svg></div>
+        <div class="btext">Aromāti: lavanda, mango, roze, CLEAR+</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="btext">Mitrināšana un relaksācija katrā dušā</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+  <div class="right">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/001-dens-ir-skaistumkop-anas-produkts-ko-tu-lieto-katru-dienu-ja-dens-ir-ka-ains-vai.png" alt="">
+    <div class="vignette-l"></div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

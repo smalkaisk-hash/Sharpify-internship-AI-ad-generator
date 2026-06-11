@@ -1,0 +1,139 @@
+    <!DOCTYPE html>
+    <html lang="lv">
+    <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { width:1080px; height:1080px; overflow:hidden; }
+    .ad { width:1080px; height:1080px; position:relative; overflow:hidden; display:flex; }
+
+    .left { width:480px; height:1080px; flex-shrink:0; position:relative; overflow:hidden; }
+    .left-img { width:100%; height:100%; object-fit:cover; object-position:68% 18%; filter:saturate(0.92) contrast(1.04); }
+    .left-gradient {
+      position:absolute; inset:0;
+      background:linear-gradient(145deg, #C1CBCA 0%, #ECE9E6 50%, #39445B44 100%);
+    }
+    .fade-right {
+      position:absolute; inset:0;
+      background:linear-gradient(90deg,
+        transparent 42%, #39445B55 65%, #39445Bbb 82%, #39445B 100%);
+    }
+
+    .right {
+      flex:1; background:#39445B;
+      display:flex; flex-direction:column;
+      padding:52px 52px 0 48px; position:relative;
+    }
+    .right::before {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(ellipse 85% 58% at 60% 28%, #9F97B81a 0%, transparent 58%);
+    }
+
+    .panel-header { display:flex; flex-direction:column; gap:10px; margin-bottom:38px; position:relative; z-index:2; }
+    .logo-img { height:42px; max-width:200px; width:auto; display:block; object-fit:contain; filter:invert(1) brightness(1.5); opacity:0.66; }
+    .logo-txt {
+      font-family:'Cormorant Garamond', serif; font-size:28px; font-weight:300; font-style:italic;
+      color:rgba(255,255,255,0.88); letter-spacing:0.12em;
+    }
+    .brand-tag {
+      font-family:'DM Sans', sans-serif; font-size:10px; font-weight:400;
+      color:rgba(255,255,255,0.36); text-transform:uppercase; letter-spacing:0.28em;
+    }
+
+    .offer-wrap { position:relative; z-index:2; margin-bottom:6px; }
+    .offer-anchor {
+      font-family:'Cormorant Garamond', serif; font-size:48px; line-height:0.90;
+      font-weight:300; font-style:italic; color:#9F97B8;
+      letter-spacing:-0.02em; margin-bottom:6px;
+    }
+    .offer-free {
+      font-family:'DM Sans', sans-serif; font-size:18px; font-weight:600;
+      color:#ECE9E6; text-transform:uppercase; letter-spacing:0.14em;
+    }
+
+    .divider {
+      width:100%; height:1px;
+      background:linear-gradient(90deg, #9F97B866 0%, #9F97B81a 70%, transparent 100%);
+      margin-bottom:26px; position:relative; z-index:2;
+    }
+
+    .headline {
+      font-family:'DM Sans', sans-serif; font-size:16px; font-weight:500;
+      color:#ECE9E6; text-transform:uppercase; letter-spacing:0.09em;
+      margin-bottom:12px; position:relative; z-index:2;
+    }
+    .body-text {
+      font-family:'DM Sans', sans-serif; font-size:14px; font-weight:300; line-height:1.78;
+      color:rgba(255,255,255,0.54); position:relative; z-index:2;
+    }
+
+    .chips {
+      display:flex; flex-direction:column; gap:7px;
+      margin-top:auto; padding-bottom:20px; position:relative; z-index:2;
+    }
+    .chip {
+      font-family:'DM Sans', sans-serif; font-size:10px; font-weight:500;
+      color:#9F97B8cc; text-transform:uppercase; letter-spacing:0.16em;
+      padding:7px 14px; border-radius:5px;
+      border:1px solid #9F97B82e; background:#9F97B80a;
+      display:inline-block; align-self:flex-start;
+    }
+
+    .cta-wrap { padding:0 0 150px 0; position:relative; z-index:2; }
+    .cta {
+      display:block; width:100%;
+      background:linear-gradient(135deg, #39445B 0%, #9F97B8 55%, #3030CF 100%);
+      color:#ECE9E6; font-family:'DM Sans', sans-serif;
+      font-size:16px; font-weight:600; padding:22px 16px; border-radius:10px;
+      text-align:center; letter-spacing:0.05em;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="ad">
+      <div class="left">
+        <svg style="position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden"
+     width="100%" height="100%" viewBox="0 0 480 1080" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="-15" cy="95"   r="290" stroke="#9F97B8"  stroke-width="1.1" fill="none" opacity="0.17"/>
+  <circle cx="-15" cy="95"   r="185" stroke="#3030CF" stroke-width="0.8" fill="none" opacity="0.12"/>
+  <circle cx="495" cy="985"  r="270" stroke="#9F97B8"  stroke-width="1.0" fill="none" opacity="0.14"/>
+  <circle cx="495" cy="985"  r="165" stroke="#3030CF" stroke-width="0.7" fill="none" opacity="0.10"/>
+  <line x1="0" y1="720" x2="300" y2="1080" stroke="#9F97B8"  stroke-width="0.7" opacity="0.10"/>
+  <line x1="0" y1="780" x2="250" y2="1080" stroke="#9F97B8"  stroke-width="0.5" opacity="0.07"/>
+  <circle cx="255" cy="510" r="2.3" fill="#9F97B8"  opacity="0.26"/>
+  <circle cx="278" cy="486" r="1.7" fill="#9F97B8"  opacity="0.20"/>
+  <circle cx="234" cy="532" r="2.0" fill="#3030CF" opacity="0.19"/>
+  <circle cx="298" cy="500" r="1.5" fill="#9F97B8"  opacity="0.17"/>
+</svg>
+        <img class="left-img" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/jpsolutions.lv/scrape/product_images/027-1757074024-8785.png" alt=""><div class="fade-right"></div>
+      </div>
+      <div class="right">
+        <svg style="position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden"
+     width="100%" height="100%" viewBox="0 0 600 1080" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="590" cy="45"   r="300" stroke="#9F97B8"  stroke-width="1.0" fill="none" opacity="0.12"/>
+  <circle cx="590" cy="45"   r="190" stroke="#3030CF" stroke-width="0.7" fill="none" opacity="0.08"/>
+  <circle cx="10"  cy="1070" r="220" stroke="#9F97B8"  stroke-width="0.9" fill="none" opacity="0.10"/>
+  <circle cx="10"  cy="1070" r="130" stroke="#3030CF" stroke-width="0.6" fill="none" opacity="0.08"/>
+  <line x1="380" y1="1080" x2="600" y2="860" stroke="#9F97B8"  stroke-width="0.6" opacity="0.09"/>
+  <line x1="420" y1="1080" x2="600" y2="900" stroke="#3030CF" stroke-width="0.4" opacity="0.06"/>
+</svg>
+        <div class="panel-header">
+          <span class="logo-txt">Industriālā alpīnisma pakalpojumi</span>
+          <span class="brand-tag">Industriālā alpīnisma pakalpojumi</span>
+        </div>
+        <div class="offer-wrap">
+          <div class="offer-anchor">30 min. Konkrēts piedāvājums.</div>
+        </div>
+        <div class="divider"></div>
+        <div class="headline">Ikgadējo inspekciju nokārtojam mēs.</div>
+        <div class="body-text">Bezmaksas konsultācija par nepieciešamo drošības sistēmu.<br>Pastāstiet par objekta specifiku.<br>Mēs piedāvāsim risinājumu ar konkrētu apjomu un cenu.</div>
+        <div class="chips">
+          <div class="chip">No projektēšanas līdz uzturēšanai vienā līgumā.</div><div class="chip">Aprīkojuma noma. Bez lieliem sākuma ieguldījumiem.</div><div class="chip">Bezmaksas konsultācija par nepieciešamo sistēmu.</div>
+        </div>
+        <div class="cta-wrap"><div class="cta">Pieteikties konsultācijai</div></div>
+      </div>
+    </div>
+    <script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+    </body>
+    </html>

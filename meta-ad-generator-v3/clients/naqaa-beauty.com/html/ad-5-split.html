@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; hyphens:none; -webkit-hyphens:none; }
+html, body { width:1080px; height:1080px; overflow:hidden; }
+.ad { width:1080px; height:1080px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+.photo { width:1080px; height:560px; flex-shrink:0; position:relative; overflow:hidden; }
+.photo img { width:100%; height:100%; object-fit:cover; object-position:50% 30%; }
+.photo-fade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(233,217,200,0.12) 0%, transparent 40%, rgba(233,217,200,0.92) 88%, #E9D9C8 100%); }
+.logo-overlay { position:absolute; top:40px; left:48px; z-index:5; }
+.panel {
+  flex:1; background:#E9D9C8;
+  display:flex; flex-direction:column;
+  padding:28px 52px 48px;
+}
+.anchor-label { font-family:'Raleway',sans-serif; font-size:20px; font-weight:500; color:#BC6C54; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:12px; flex-shrink:0; }
+.headline { font-family:'Playfair Display',serif; font-size:52px; font-weight:400; font-style:italic; line-height:0.96; color:#3E4C54; margin-bottom:20px; flex-shrink:0; }
+.bullets { display:grid; grid-template-columns:1fr 1fr; gap:8px 32px; flex-shrink:0; margin-bottom:0; }
+.bullet { display:flex; align-items:flex-start; gap:10px; }
+.bicon { width:24px; height:24px; flex-shrink:0; margin-top:2px; }
+.btext { font-family:'Raleway',sans-serif; font-size:22px; font-weight:400; color:rgba(62,76,84,0.78); line-height:1.35; }
+.spacer2 { flex:1; min-height:16px; }
+.cta { display:block; background:#3E4C54; color:#E9D9C8; font-family:'Raleway',sans-serif; font-size:22px; font-weight:600; padding:24px; text-align:center; letter-spacing:0.08em; flex-shrink:0; }
+/* bullet-style-start */
+.benefit,.brow{background:rgba(255,255,255,0.13);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.22);border-radius:14px;padding:11px 18px;gap:12px;}
+.btext{color:#ffffff;}
+.bicon,.bicon svg{color:#9B9F91;fill:#9B9F91;}
+.bdot{background:rgba(255,255,255,0.6);}
+/* bullet-style-end */
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/product_images/008-naqaa-beauty-clear-du-as-dens-filtrs.-att-ri-du-as-deni-no-kait-giem-piemais-jum.png" alt="">
+    <div class="photo-fade"></div>
+    <div class="logo-overlay">
+      <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/naqaa-beauty.com/scrape/logo/001-naqaa_beauty_horizontal_hires.png" alt="Naqaa Beauty" style="height:68px;max-width:340px;width:auto;display:block;object-fit:contain;">
+    </div>
+  </div>
+  <div class="panel">
+    <div class="anchor-label">Tīrs ūdens. Maiga āda.</div>
+    <div class="headline">Krāna ūdens bojā ādu. Naqaa filtrs to maina.</div>
+    <div class="bullets">
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="btext">Attīra ūdeni no kaitīgām daļiņām</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+        <div class="btext">Dāvanu kaste bezmaksas virs 100€</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="btext">Mitrināšana un relaksācija katrā dušā</div>
+      </div>
+      <div class="bullet benefit">
+        <div class="bicon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B9F91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+        <div class="btext">Komplekti sākot no 42,49€</div>
+      </div>
+    </div>
+    <div class="spacer2"></div>
+    <div class="cta">Iegādāties</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

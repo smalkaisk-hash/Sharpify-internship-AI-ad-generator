@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Diagonal white panel + full-bleed photo: yellow slash cut, corner triangle, right-side label -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+
+/* Full-bleed photo */
+.photo{position:absolute;inset:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:72% 22%;filter:contrast(1.12) brightness(0.78) saturate(0.88)}
+
+/* Dark gradient on photo right half */
+.photo-grad{position:absolute;inset:0;background:linear-gradient(95deg, transparent 42%, rgba(8,16,34,0.72) 62%, rgba(8,16,34,0.96) 100%)}
+
+/* White panel — left side, hard diagonal right edge */
+.panel{
+  position:absolute;inset:0;
+  background:#FFFFFF;
+  clip-path:polygon(0 0, 572px 0, 500px 1080px, 0 1080px);
+}
+
+/* Yellow slash — 14px strip along the diagonal cut edge */
+.slash{
+  position:absolute;inset:0;
+  background:#F5C200;
+  clip-path:polygon(570px 0, 584px 0, 512px 1080px, 498px 1080px);
+  z-index:5;
+}
+
+/* Small yellow triangle accent at top-right of slash line */
+.slash-dot{
+  position:absolute;
+  top:0;left:571px;
+  width:0;height:0;
+  border-style:solid;
+  border-width:0 44px 44px 0;
+  border-color:transparent #F5C200 transparent transparent;
+  z-index:6;
+}
+
+/* Content sits within white panel */
+.content{
+  position:absolute;top:0;left:0;bottom:0;width:495px;
+  padding:52px 44px 52px 54px;
+  display:flex;flex-direction:column;
+  z-index:10;
+}
+
+/* Logo on white — white PNG bg merges with white panel */
+.logo{height:116px;max-width:320px;width:auto;display:block;object-fit:contain;margin-bottom:22px;flex-shrink:0}
+
+.badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:#1C2D4A;padding:9px 16px;border-radius:4px;
+  margin-bottom:22px;align-self:flex-start;flex-shrink:0;
+}
+.badge span{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#FFF;letter-spacing:0.07em;text-transform:uppercase}
+
+/* Middle block — headline + rule + benefits; centered vertically in remaining space */
+.middle{flex:1;display:flex;flex-direction:column;justify-content:center;gap:0}
+
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:82px;font-weight:900;line-height:0.87;letter-spacing:0.01em;text-transform:uppercase;color:#1C2D4A;margin-bottom:22px}
+.hd em{color:#F5C200;font-style:normal}
+
+.rule{width:48px;height:4px;background:#F5C200;border-radius:2px;margin-bottom:20px}
+
+/* 2×2 benefit grid */
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px 10px}
+.benefit{display:flex;align-items:flex-start;gap:9px;padding:10px 8px;background:#F2F4F7;border-radius:4px}
+.check{flex-shrink:0;margin-top:1px;color:#3558AA}
+.btext{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:#1C2D4A;line-height:1.3}
+
+.cta{
+  display:block;flex-shrink:0;
+  background:#F5C200;color:#1C2D4A;
+  font-family:'Inter',sans-serif;font-size:22px;font-weight:800;
+  padding:21px;border-radius:6px;
+  text-align:center;letter-spacing:0.05em;text-transform:uppercase;
+  margin-top:28px;
+}
+
+/* Right side — bold overlay label on dark photo area */
+.right-label{
+  position:absolute;right:52px;top:80px;
+  z-index:15;text-align:right;
+}
+.rl-eye{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:rgba(245,194,0,0.9);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px}
+.rl-hd{font-family:'Barlow Condensed',sans-serif;font-size:74px;font-weight:900;line-height:0.88;color:#FFFFFF;text-transform:uppercase;letter-spacing:0.02em}
+
+/* Horizontal yellow rule under right label */
+.right-rule{
+  position:absolute;right:52px;top:244px;
+  width:180px;height:4px;background:#F5C200;border-radius:2px;
+  z-index:15;
+}
+
+/* Right bottom info block */
+.right-info{
+  position:absolute;right:52px;bottom:168px;
+  z-index:15;text-align:right;
+}
+.ri-line{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:rgba(210,225,245,0.82);letter-spacing:0.03em;line-height:1.6}
+
+/* Bottom-right corner triangle — yellow accent */
+.corner{
+  position:absolute;bottom:0;right:0;
+  width:0;height:0;
+  border-style:solid;
+  border-width:0 0 110px 110px;
+  border-color:transparent transparent #F5C200 transparent;
+  z-index:14;
+}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo"><img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated-1.jpg" alt=""></div>
+  <div class="photo-grad"></div>
+  <div class="panel"></div>
+  <div class="slash"></div>
+  <div class="slash-dot"></div>
+
+  <div class="content">
+    <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+    <div class="badge"><span>Mēs pieņemam darbā</span></div>
+    <div class="middle">
+      <div class="hd">Stabils<br>darbs.<br><em>Laba alga.</em></div>
+      <div class="rule"></div>
+      <div class="benefits">
+        <div class="benefit"><div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 12h20"/></svg></div><span class="btext">Pilnas slodzes darbs</span></div>
+        <div class="benefit"><div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v12H5z"/><rect x="9" y="11" width="4" height="4" rx=".5"/><path d="M13 3l3 4h5v7h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg></div><span class="btext">Transports uz objektiem</span></div>
+        <div class="benefit"><div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/><path d="M10 10V5a2 2 0 1 1 4 0v5"/><path d="M4 15v-3a8 8 0 0 1 16 0v3"/></svg></div><span class="btext">Darba apģērbs un aprīkojums</span></div>
+        <div class="benefit"><div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><span class="btext">Alga + bonusi par rezultātu</span></div>
+      </div>
+    </div>
+    <div class="cta">Piesakies darbam →</div>
+  </div>
+
+  <div class="right-label">
+    <div class="rl-eye">Apdares darbu strādnieks</div>
+    <div class="rl-hd">Visa<br>Latvija</div>
+  </div>
+  <div class="right-rule"></div>
+
+  <div class="right-info">
+    <div class="ri-line">Transports nodrošināts</div>
+    <div class="ri-line">Apmācības darba vietā</div>
+    <div class="ri-line">Ilgtermiņa stabilitāte</div>
+  </div>
+
+  <div class="corner"></div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

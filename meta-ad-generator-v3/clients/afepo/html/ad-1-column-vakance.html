@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Dark fullbleed poster: yellow left accent bar, 130px headline, arrow bullets -->
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden}
+
+.photo{position:absolute;inset:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:52% 24%;filter:contrast(1.20) brightness(0.78) saturate(0.70)}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,16,34,0.08) 0%,rgba(8,16,34,0.52) 38%,rgba(8,16,34,0.93) 60%,rgba(8,16,34,0.98) 100%)}
+
+/* Yellow left accent bar — construction industry signature */
+.bar{position:absolute;top:0;left:0;bottom:0;width:9px;background:#F5C200;z-index:20}
+
+.ui{position:absolute;inset:0;display:flex;flex-direction:column;padding:44px 52px 48px 64px;z-index:10}
+
+.logo{height:96px;max-width:260px;width:auto;display:block;object-fit:contain;flex-shrink:0}
+.middle{flex:1;display:flex;flex-direction:column;justify-content:center;width:100%}
+
+.eyebrow{font-family:'Inter',sans-serif;font-size:20px;font-weight:800;color:#F5C200;letter-spacing:0.10em;text-transform:uppercase;margin-bottom:16px}
+.hd{font-family:'Barlow Condensed',sans-serif;font-size:130px;font-weight:900;line-height:0.83;letter-spacing:0.01em;text-transform:uppercase;color:#FFFFFF}
+.hd em{color:#F5C200;font-style:normal}
+
+.bullets{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;flex-shrink:0;margin-bottom:28px}
+.bullet{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:rgba(255,255,255,0.90);display:flex;align-items:center;gap:12px;line-height:1.2}
+.bicon{flex-shrink:0;width:26px;height:26px;color:#F5C200}
+
+.cta{display:block;background:#3558AA;color:#FFFFFF;font-family:'Inter',sans-serif;font-size:21px;font-weight:800;padding:22px;border-radius:7px;text-align:center;letter-spacing:0.06em;text-transform:uppercase;flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="photo">
+    <img src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/image/generated-1.jpg" alt="">
+    <div class="overlay"></div>
+  </div>
+  <div class="bar"></div>
+  <div class="ui">
+    <img class="logo" src="file:///C:/Users/User/Meta-ad-generator-v2/meta-ad-generator-v3/clients/afepo/Screenshot_2021-09-13_at_22_16_10.png" alt="Afepo">
+    <div class="middle">
+      <div class="eyebrow">Mēs pieņemam darbā</div>
+      <div class="hd">Apdares<br>darbu<br><em>strādnieks</em></div>
+    </div>
+    <div class="bullets">
+      <div class="bullet">
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 12h20"/></svg>
+        Pilnas slodzes darbs
+      </div>
+      <div class="bullet">
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v12H5z"/><rect x="9" y="11" width="4" height="4" rx=".5"/><path d="M13 3l3 4h5v7h-2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg>
+        Transports uz objektiem
+      </div>
+      <div class="bullet">
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/><path d="M10 10V5a2 2 0 1 1 4 0v5"/><path d="M4 15v-3a8 8 0 0 1 16 0v3"/></svg>
+        Darba apģērbs un aprīkojums
+      </div>
+      <div class="bullet">
+        <svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        Alga + bonusi par rezultātu
+      </div>
+    </div>
+    <div class="cta">Piesakies darbam →</div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body>
+</html>

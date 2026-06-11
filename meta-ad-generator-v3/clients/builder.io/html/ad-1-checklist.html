@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Template: t51 — benefit checklist, dark + accent corner -->
+<html lang="en">
+<head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+.ad{width:1080px;height:1080px;position:relative;overflow:hidden;background:#0D0D12;display:flex;flex-direction:column;padding:48px 56px 52px}
+
+/* Purple corner accent top-right */
+.corner{position:absolute;top:0;right:0;width:180px;height:180px;background:#6C47FF;clip-path:polygon(100% 0,0 0,100% 100%);pointer-events:none}
+.corner-dot{position:absolute;top:22px;right:22px;width:10px;height:10px;border-radius:50%;background:#0D0D12}
+
+/* Logo */
+.logo-img{height:80px;max-width:260px;object-fit:contain;opacity:0.90;flex-shrink:0;margin-bottom:12px}
+
+/* Stats bar */
+.stats-bar{display:flex;align-items:center;gap:20px;margin-bottom:20px;flex-shrink:0}
+.brand-stat{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#FFFFFF}
+.stat-sep{font-family:'Inter',sans-serif;font-size:13px;color:#444455}
+.stat-item{font-family:'Inter',sans-serif;font-size:13px;color:#A8A8B8;letter-spacing:0.02em}
+
+/* Qualifier row */
+.qual-row{display:flex;align-items:center;gap:12px;margin-bottom:40px;flex-shrink:0}
+.qual-badge{background:#1A1A2A;border:1px solid #333355;border-radius:4px;padding:7px 14px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:#A8A8B8;letter-spacing:0.06em;text-transform:uppercase}
+.qual-check{display:flex;align-items:center;gap:6px;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:#6C47FF;letter-spacing:0.04em}
+.check-icon{width:16px;height:16px;border-radius:3px;background:#6C47FF;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;color:#FFF}
+
+/* Niche label */
+.niche{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:#6C47FF;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:14px;flex-shrink:0}
+
+/* Headlines */
+.hd1{font-family:'Space Grotesk',sans-serif;font-size:96px;font-weight:800;color:#FFFFFF;line-height:0.88;letter-spacing:-0.03em;flex-shrink:0}
+.hd2{font-family:'Space Grotesk',sans-serif;font-size:96px;font-weight:800;color:#6C47FF;line-height:0.88;letter-spacing:-0.03em;margin-bottom:20px;flex-shrink:0}
+.sub{font-family:'Inter',sans-serif;font-size:16px;font-weight:400;color:#A8A8B8;line-height:1.55;margin-bottom:36px;flex-shrink:0;max-width:680px}
+
+/* Checkbox benefits */
+.benefits{display:flex;flex-direction:column;gap:16px;flex-shrink:0;margin-bottom:0;flex:1}
+.brow{display:flex;align-items:center;gap:16px}
+.checkbox{width:28px;height:28px;background:#6C47FF22;border:1.5px solid #6C47FF;border-radius:5px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.check-svg{width:14px;height:14px;fill:none;stroke:#6C47FF;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.btext{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#FFFFFF;letter-spacing:-0.01em}
+
+/* Footer CTA bar */
+.footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:28px;border-top:1px solid #1E1E2E;flex-shrink:0}
+.free-wrap{display:flex;align-items:center;gap:14px}
+.free-strike{font-family:'Inter',sans-serif;font-size:15px;color:#555566;text-decoration:line-through}
+.free-label{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:800;color:#6C47FF;letter-spacing:-0.02em}
+.free-terms{font-family:'Inter',sans-serif;font-size:11px;color:#444455;letter-spacing:0.06em;text-transform:uppercase}
+.cta{background:#6C47FF;color:#FFFFFF;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;padding:18px 52px;border-radius:50px;letter-spacing:0.02em;white-space:nowrap}
+</style></head>
+<body>
+<div class="ad">
+  <div class="corner"></div><div class="corner-dot"></div>
+
+  <img class="logo-img" src="../scrape/logo/002-builder.io-logo-white.svg" alt="Builder.io">
+
+  <div class="stats-bar">
+    <span class="stat-item">10,000+ teams</span>
+    <span class="stat-sep">·</span>
+    <span class="stat-item">50+ integrations</span>
+    <span class="stat-sep">·</span>
+    <span class="stat-item">React, Next.js &amp; more</span>
+  </div>
+
+  <div class="qual-row">
+    <div class="qual-badge">For dev &amp; product teams</div>
+    <div class="qual-check"><div class="check-icon"><svg viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4L3.5 6.5L9 1" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>YOU QUALIFY</div>
+  </div>
+
+  <div class="niche">Development &amp; Product Teams —</div>
+  <div class="hd1">SHIP FASTER.</div>
+  <div class="hd2">ZERO HANDOFFS.</div>
+  <div class="sub">AI that builds on your real codebase, design system, and tech stack. Production-ready from the start.</div>
+
+  <div class="benefits">
+    <div class="brow"><div class="checkbox"><svg class="check-svg" viewBox="0 0 16 16"><polyline points="3,8 6.5,12 13,4"/></svg></div><span class="btext">AI converts Figma designs to production code</span></div>
+    <div class="brow"><div class="checkbox"><svg class="check-svg" viewBox="0 0 16 16"><polyline points="3,8 6.5,12 13,4"/></svg></div><span class="btext">Marketers edit pages without touching code</span></div>
+    <div class="brow"><div class="checkbox"><svg class="check-svg" viewBox="0 0 16 16"><polyline points="3,8 6.5,12 13,4"/></svg></div><span class="btext">Engineers approve every change before it ships</span></div>
+  </div>
+
+  <div class="footer">
+    <div class="cta">Start for Free →</div>
+    <div class="free-wrap">
+      <div>
+        <div class="free-label">FREE TRIAL.</div>
+        <div class="free-terms">No credit card required</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>document.fonts.ready.then(()=>{ document.title="fonts-ready"; });</script>
+</body></html>
